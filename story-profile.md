@@ -9,7 +9,7 @@
 
 ## Style
 - Register: Dark fantasy and sci-fi; grounded, visceral, pulp-inflected
-- Notes: Female characters who push back. Open to kinky pitches.
+- Notes: Female characters who push back. Open to kinky pitches. Prose runs through the pulp-voice skill (anti-slop and style).
 
 ## Kinks and themes
 - Noncon
@@ -27,6 +27,7 @@
 ## Recurring characters
 
 ## Settings
+- [[Imperial Sector]]: sci-fi setting of Empire core, colonial Rim and deep void. Species roster in `settings/sci-fi-species.md`: Aedling, Aedelvass, Human, Therian, Draxian, Cephalite, Vreth, Remnant Synthetic.
 
 ## Active stories
 
