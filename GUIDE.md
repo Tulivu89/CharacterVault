@@ -140,13 +140,26 @@ cd /sdcard/Documents/<your-vault> && claude
 
 The first run prints a sign-in link. Open it, sign in with your Claude account, and paste the code back into Termux (long-press to paste).
 
-**A one-word shortcut.** Run this once in Termux itself, not inside Ubuntu:
+**A one-word shortcut.** Run these in Termux itself, not inside Ubuntu (the prompt shows `~ $`, not `root@localhost`). Replace `MyVault` with your vault folder's name. The full path to `claude` is deliberate: the shortcut starts Ubuntu without reading `.bashrc`, so the PATH line from step 2 doesn't apply there.
 
 ```bash
-echo "alias vault='proot-distro login ubuntu -- bash -lc \"cd /sdcard/Documents/<your-vault> && claude\"'" >> ~/.bashrc
+echo "alias vault='proot-distro login ubuntu -- bash -lc \"cd /sdcard/Documents/MyVault && /root/.local/bin/claude\"'" >> ~/.bashrc
 ```
 
-From then on, open Termux and type `vault`.
+```bash
+source ~/.bashrc
+```
+
+From then on, open Termux and type `vault`. If you typed a wrong line, remove every shortcut line with `sed -i '/alias vault=/d' ~/.bashrc` and add it again.
+
+**Check your setup.** If `vault` fails, log in to Ubuntu (`proot-distro login ubuntu`) and check each piece:
+
+| Check | Expect | If not |
+|---|---|---|
+| `ls /root/.local/bin/claude` | the path prints | Redo step 2's installer. |
+| `ls /sdcard/Documents` | your vault folder | Redo step 3's clone, or the `--bind` login. |
+| `python3 --version` | Python 3.x | `apt install -y python3` |
+| `gh auth status` | Logged in | `gh auth login`, then `gh auth setup-git` |
 
 **Keep it alive.** Android kills background apps. Pull down the Termux notification and tap *Acquire wakelock* during long sessions, and exclude Termux from battery optimization.
 
