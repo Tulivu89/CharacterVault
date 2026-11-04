@@ -22,7 +22,8 @@ TEMPLATES = ROOT / "Templates"
 SKIP_DIRS = {".git", ".obsidian", ".trash", ".claude", "Templates", "node_modules"}
 ADULT_STAGES = {"adult", "elder"}
 MINOR_STAGES = {"child", "teen"}
-HUMAN = {"", "human", "humans"}
+ADULT_WORDS = re.compile(r"twent|thirt|fort|fift|sixt|sevent|eight|ninet|hundred|centur|millenn|adult|elder|ancient", re.I)
+CREATURE_WORDS = re.compile(r"feral|beast|monster|creature|animal|hound|wolf|dragon|tentacl|insect|hive|drone|serpent|eldritch", re.I)
 
 TEMPLATE_SHORTCUTS = {
     "character": "Character",
@@ -452,35 +453,46 @@ def cmd_cast(args):
     print("Story cast lines (the scope check reads these first):")
     print(stated or "  (none written)")
     print()
-    profiles = [find(notes, p) for p in as_list(story.fm.get("profiles"))]
-    profiles = [p for p in profiles if p]
+    profiles = [p for p in (find(notes, x) for x in as_list(story.fm.get("profiles"))) if p]
     for member in as_list(story.fm.get("cast")):
         c = find(notes, member)
         if not c:
             print(f"- {link_name(member)}: no character page")
             continue
-        p = next((p for p in profiles if link_name(p.fm.get("character", "")).lower() == c.name.lower()), None)
-        src = p.fm if p else {}
-        age = src.get("age") or c.fm.get("age") or "not stated"
-        body_age = src.get("body_age") or c.fm.get("body_age") or ""
-        stage = src.get("stage") or ""
-        species = c.fm.get("species") or "unspecified"
-        mind = c.fm.get("mind") or ""
-        adult = [n.name for n in notes if n.type == "adult" and link_name(n.fm.get("character", "")).lower() == c.name.lower()
-                 and (not link_name(n.fm.get("profile", "")) or (p and link_name(n.fm.get("profile")).lower() == p.name.lower()))]
-        if str(stage).lower() in MINOR_STAGES:
+        # A story that crosses time can list several versions of one character.
+        mine = [p for p in profiles if link_name(p.fm.get("character", "")).lower() == c.name.lower()]
+        for p in mine or [None]:
+            print(describe_member(c, p, notes))
+
+
+def describe_member(c, p, notes):
+    src = p.fm if p else {}
+    age = src.get("age") or c.fm.get("age") or "not stated"
+    body_age = src.get("body_age") or c.fm.get("body_age") or ""
+    stage = str(src.get("stage") or "")
+    species = c.fm.get("species") or "unspecified"
+    mind = c.fm.get("mind") or ""
+    adult = [n.name for n in notes if n.type == "adult" and link_name(n.fm.get("character", "")).lower() == c.name.lower()
+             and (not link_name(n.fm.get("profile", "")) or (p and link_name(n.fm.get("profile")).lower() == p.name.lower()))]
+    note = ""
+    if stage.lower() in MINOR_STAGES:
+        adult, stage = [], f"{stage} (non-sexual role; no adult files load)"
+    elif not p:
+        minor = [v.name for v in notes if v.type == "profile" and link_name(v.fm.get("character", "")).lower() == c.name.lower()
+                 and str(v.fm.get("stage", "")).lower() in MINOR_STAGES]
+        if minor:
             adult = []
-            stage = f"{stage} (no adult files load)"
-        bits = [f"age {age}"]
-        if body_age:
-            bits.append(f"body {body_age}")
-        if stage:
-            bits.append(f"stage {stage}")
-        bits.append(f"species {species}")
-        if mind:
-            bits.append(f"mind: {mind}")
-        print(f"- {c.name}" + (f" as {p.name}" if p else "") + ": " + " · ".join(bits)
-              + (f" · adult file: {', '.join(adult)}" if adult else ""))
+            note = f" · has younger variants ({', '.join(minor)}): name the profile this story uses before any adult file loads"
+    bits = [f"age {age}"]
+    if body_age:
+        bits.append(f"body {body_age}")
+    if stage:
+        bits.append(f"stage {stage}")
+    bits.append(f"species {species}")
+    if mind:
+        bits.append(f"mind: {mind}")
+    return (f"- {c.name}" + (f" as {p.name}" if p else "") + ": " + " · ".join(bits)
+            + (f" · adult file: {', '.join(adult)}" if adult else "") + note)
 
 
 def cmd_state(args):
@@ -508,12 +520,17 @@ def cmd_lint(_args):
         if n.type == "adult":
             for p in adult_problems(n, notes):
                 errors.append(f"{n.rel()}: {p}")
-            ages = [first_int(s.fm.get("age")) for s in filter(None, [n, find(notes, fm.get("profile", "")) if link_name(fm.get("profile", "")) else None, find(notes, fm.get("character", ""))])]
-            if all(a is None for a in ages):
+            srcs = [s for s in (n, find(notes, fm.get("profile", "")) if link_name(fm.get("profile", "")) else None,
+                                find(notes, fm.get("character", ""))) if s]
+            ages = [str(s.fm.get("age") or "").strip() for s in srcs]
+            ages = [a for a in ages if a]
+            if not ages:
                 warns.append(f"{n.rel()}: no `age` in frontmatter on this file, its profile or its character")
+            elif not any(first_int(a) is not None or ADULT_WORDS.search(a) for a in ages):
+                warns.append(f"{n.rel()}: age '{ages[0]}' states no adult age; the scope check will ask")
             char = find(notes, fm.get("character", ""))
-            if char and str(char.fm.get("species", "")).lower() not in HUMAN and not char.fm.get("mind"):
-                warns.append(f"{char.rel()}: nonhuman with an adult file but no `mind` field")
+            if char and CREATURE_WORDS.search(str(char.fm.get("species", ""))) and not char.fm.get("mind"):
+                warns.append(f"{char.rel()}: creature-type species with an adult file but no `mind` line")
         if n.type == "profile":
             stage = str(fm.get("stage", "")).lower()
             if not stage:
