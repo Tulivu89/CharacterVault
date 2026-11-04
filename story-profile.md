@@ -1,5 +1,5 @@
 # Story profile
-*Taste and continuity only. Scope is set by the project instructions.*
+*Taste and continuity only. Scope is set by CLAUDE.md.*
 
 ## Defaults
 - Mode: DIRECT
@@ -28,8 +28,6 @@
 ## Recurring characters
 
 ## Settings
-- [[Imperial Sector]]: sci-fi setting of Empire core, colonial Rim and deep void. Species roster in `settings/sci-fi-species.md`: Aedling, Aedelvass, Human, Therian, Draxian, Cephalite, Vreth, Remnant Synthetic.
-
-## Active stories
+- [[Imperial Sector]]: sci-fi setting of Empire core, colonial Rim and deep void. Species roster in `Settings/sci-fi-species.md`: Aedling, Aedelvass, Human, Therian, Draxian, Cephalite, Vreth, Remnant Synthetic.
 
 ## Completed stories
