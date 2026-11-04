@@ -10,6 +10,7 @@
 ## Style
 - Register: Dark fantasy and sci-fi; grounded, visceral, pulp-inflected
 - Notes: Female characters who push back. Open to kinky pitches. Prose runs through the pulp-voice skill (anti-slop and style).
+- Naming: names follow real-world language conventions, anglicized; no invented-syllable names.
 
 ## Kinks and themes
 - Noncon
