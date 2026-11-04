@@ -85,7 +85,7 @@ proot-distro login ubuntu
 ```
 
 ```bash
-apt update && apt install -y curl git python3 gh ca-certificates
+apt update && apt install -y curl git python3 ca-certificates
 ```
 
 Install Claude Code with the official installer, then put it on your PATH:
@@ -100,20 +100,23 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
 
 ### 3. Get your vault
 
-Sign in to GitHub. Choose the browser login and paste the code it shows:
+Git needs permission to read and push your private vault. A GitHub access token is the simplest way on a phone:
+
+1. On GitHub, open Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token.
+2. Under Repository access, choose *Only select repositories* and pick your vault.
+3. Under Permissions → Repository permissions, set **Contents** to *Read and write*.
+4. Generate it and copy the token. GitHub shows it only once.
+
+Tell git to remember the token after the first use:
 
 ```bash
-gh auth login
+git config --global credential.helper store
 ```
 
-```bash
-gh auth setup-git
-```
-
-Clone your vault into shared storage, where Obsidian can see it:
+Clone your vault into shared storage, where Obsidian can see it. When git asks, the username is your GitHub username and the password is the token (long-press to paste):
 
 ```bash
-mkdir -p /sdcard/Documents && cd /sdcard/Documents && gh repo clone <you>/<your-vault>
+mkdir -p /sdcard/Documents && cd /sdcard/Documents && git clone https://github.com/<you>/<your-vault>.git
 ```
 
 Shared storage confuses git about file ownership and permissions. These two settings fix it:
@@ -159,7 +162,7 @@ From then on, open Termux and type `vault`. If you typed a wrong line, remove ev
 | `ls /root/.local/bin/claude` | the path prints | Redo step 2's installer. |
 | `ls /sdcard/Documents` | your vault folder | Redo step 3's clone, or the `--bind` login. |
 | `python3 --version` | Python 3.x | `apt install -y python3` |
-| `gh auth status` | Logged in | `gh auth login`, then `gh auth setup-git` |
+| `git -C /sdcard/Documents/MyVault pull` | Already up to date | Check the token: Contents set to Read and write, and your vault selected. |
 
 **Keep it alive.** Android kills background apps. Pull down the Termux notification and tap *Acquire wakelock* during long sessions, and exclude Termux from battery optimization.
 
