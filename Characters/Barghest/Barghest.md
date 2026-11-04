@@ -4,6 +4,7 @@ aliases: []
 cover:
 world:
 species: "Hellhound (feral or anthro)"
+mind: "Equally intelligent in either form. Anthro: talks, asks, needles. Feral: driven by physical pursuits, eating and breeding, and communicates through vocalizations, gestures and clear intent."
 status: active
 rating: sfw
 based_on:

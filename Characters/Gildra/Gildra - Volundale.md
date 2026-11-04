@@ -3,7 +3,7 @@ type: profile
 character: "[[Gildra]]"
 profile_type: story-bio
 stage: adult
-age: "unknown; perhaps ageless"
+age: "ageless; unknown centuries"
 used_for: Volundale
 setting: Volundale
 rating: suggestive

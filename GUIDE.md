@@ -4,6 +4,7 @@ A Claude Code setup for adult roleplay and fiction, built as an Obsidian vault. 
 
 - [How it fits together](#how-it-fits-together)
 - [Getting started](#getting-started)
+- [Running on Android with Termux](#running-on-android-with-termux)
 - [The notes](#the-notes)
 - [Age variants and stories that cross time](#age-variants-and-stories-that-cross-time)
 - [Running a story](#running-a-story)
@@ -47,7 +48,111 @@ Two rules hold the design together:
 
    The first time, Claude asks three quick questions (mode, POV and tense, explicitness) and one about your kinks and limits, writes your profile, and pitches stories.
 
-**Where to run it.** Claude Code runs in the terminal, the desktop app, the web, and the Claude mobile app (as a cloud session). On a phone you can also drive a session running on your own computer with Remote Control. Hooks and the status line need Python 3 wherever Claude Code itself runs.
+**Where to run it.** Claude Code runs in the terminal, the desktop app, the web, and the Claude mobile app (as a cloud session). On a phone you can also drive a session running on your own computer with Remote Control, or run Claude Code on the phone itself with Termux (next section). Hooks and the status line need Python 3 wherever Claude Code itself runs.
+
+## Running on Android with Termux
+
+Anthropic doesn't ship an Android build of Claude Code. It does ship a Linux build, and that runs inside an Ubuntu install that lives in Termux. The vault goes in your phone's shared storage, so Obsidian and Claude Code open the same folder and nothing needs syncing on the phone.
+
+### 1. Install Termux and Ubuntu
+
+Install Termux from F-Droid or its GitHub releases page, not the Play Store (that version is years out of date). Open it and run:
+
+```bash
+termux-setup-storage
+```
+
+Allow storage access when Android asks. Then:
+
+```bash
+pkg update && pkg upgrade
+```
+
+```bash
+pkg install proot-distro
+```
+
+```bash
+proot-distro install ubuntu
+```
+
+### 2. Set up Ubuntu
+
+Log in to Ubuntu (from now on, these commands run inside it):
+
+```bash
+proot-distro login ubuntu
+```
+
+```bash
+apt update && apt install -y curl git python3 gh ca-certificates
+```
+
+Install Claude Code with the official installer, then put it on your PATH:
+
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+```
+
+### 3. Get your vault
+
+Sign in to GitHub. Choose the browser login and paste the code it shows:
+
+```bash
+gh auth login
+```
+
+```bash
+gh auth setup-git
+```
+
+Clone your vault into shared storage, where Obsidian can see it:
+
+```bash
+mkdir -p /sdcard/Documents && cd /sdcard/Documents && gh repo clone <you>/<your-vault>
+```
+
+Shared storage confuses git about file ownership and permissions. These two settings fix it:
+
+```bash
+git config --global --add safe.directory '*'
+```
+
+```bash
+git -C /sdcard/Documents/<your-vault> config core.fileMode false
+```
+
+If `/sdcard` doesn't exist inside Ubuntu, exit and log in again with `proot-distro login ubuntu --bind /storage/emulated/0:/sdcard`.
+
+### 4. Open it in Obsidian
+
+In Obsidian on the phone: Open folder as vault → `Documents/<your-vault>`. Don't also run Obsidian Git on the phone. Claude Code commits and pushes from Termux, and two git clients on one folder conflict.
+
+### 5. Play
+
+```bash
+cd /sdcard/Documents/<your-vault> && claude
+```
+
+The first run prints a sign-in link. Open it, sign in with your Claude account, and paste the code back into Termux (long-press to paste).
+
+**A one-word shortcut.** Run this once in Termux itself, not inside Ubuntu:
+
+```bash
+echo "alias vault='proot-distro login ubuntu -- bash -lc \"cd /sdcard/Documents/<your-vault> && claude\"'" >> ~/.bashrc
+```
+
+From then on, open Termux and type `vault`.
+
+**Keep it alive.** Android kills background apps. Pull down the Termux notification and tap *Acquire wakelock* during long sessions, and exclude Termux from battery optimization.
+
+**Updating.** The official installer keeps Claude Code updated. Update Ubuntu's packages now and then with `apt update && apt upgrade`.
+
+**If it stops working.** Community scripts that patch the Linux binary to run in plain Termux exist, but they're unofficial and break with updates. The dependable fallbacks are a cloud session in the Claude app, or Remote Control to a computer.
 
 ## The notes
 
