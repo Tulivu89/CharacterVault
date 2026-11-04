@@ -23,6 +23,7 @@ SKIP_DIRS = {".git", ".obsidian", ".trash", ".claude", "Templates", "node_module
 ADULT_STAGES = {"adult", "elder"}
 MINOR_STAGES = {"child", "teen"}
 ADULT_WORDS = re.compile(r"twent|thirt|fort|fift|sixt|sevent|eight|ninet|hundred|centur|millenn|adult|elder|ancient", re.I)
+PERSON_WORDS = re.compile(r"anthro|therian|kin\b|girl|boy|folk|elf|human", re.I)
 CREATURE_WORDS = re.compile(r"feral|beast|monster|creature|animal|hound|wolf|dragon|tentacl|insect|hive|drone|serpent|eldritch", re.I)
 
 TEMPLATE_SHORTCUTS = {
@@ -522,6 +523,10 @@ def cmd_lint(_args):
                 errors.append(f"{n.rel()}: {p}")
             srcs = [s for s in (n, find(notes, fm.get("profile", "")) if link_name(fm.get("profile", "")) else None,
                                 find(notes, fm.get("character", ""))) if s]
+            if not link_name(fm.get("profile", "")):
+                # A general adult file covers every version, so any profile's age counts.
+                cname = link_name(fm.get("character", "")).lower()
+                srcs += [v for v in notes if v.type == "profile" and link_name(v.fm.get("character", "")).lower() == cname]
             ages = [str(s.fm.get("age") or "").strip() for s in srcs]
             ages = [a for a in ages if a]
             if not ages:
@@ -529,7 +534,8 @@ def cmd_lint(_args):
             elif not any(first_int(a) is not None or ADULT_WORDS.search(a) for a in ages):
                 warns.append(f"{n.rel()}: age '{ages[0]}' states no adult age; the scope check will ask")
             char = find(notes, fm.get("character", ""))
-            if char and CREATURE_WORDS.search(str(char.fm.get("species", ""))) and not char.fm.get("mind"):
+            species = str(char.fm.get("species", "")) if char else ""
+            if char and CREATURE_WORDS.search(species) and not PERSON_WORDS.search(species) and not char.fm.get("mind"):
                 warns.append(f"{char.rel()}: creature-type species with an adult file but no `mind` line")
         if n.type == "profile":
             stage = str(fm.get("stage", "")).lower()
