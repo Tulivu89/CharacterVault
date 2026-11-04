@@ -1,6 +1,6 @@
 ---
-name: rp-session
-description: Start, set up, resume, save and log roleplay chats and creative-writing sessions in this vault, keep the story profile current, and log style examples. Use on the primer ('prepare for fictional roleplay'), on [setup], [scope], [profile], [save], [done], [keep], [avoid] or [distill], when the user invokes rp-session by name, when the user asks to start, workshop, pitch or resume a story or roleplay, and when a new participant enters sexual content.
+name: vault-session
+description: Start, set up, resume, save and log roleplay chats and creative-writing sessions in this vault, keep the story profile current, and log style examples. Use on the primer ('prepare for fictional roleplay'), on [setup], [scope], [profile], [save], [done], [keep], [avoid] or [distill], when the user invokes vault-session by name, when the user asks to start, workshop, pitch or resume a story or roleplay, and when a new participant enters sexual content.
 ---
 
 # Story session
@@ -59,7 +59,7 @@ Build the pitches from different kinks, settings and vault characters, so they c
 ## Setup arm
 
 1. Load what the story uses: `vault.py show <setting> --canon` for its setting, and `vault.py show` for each vault character and the profile they'll use. Load an adult file only for a participant headed for sexual content.
-2. CAST: list every character who may enter sexual content in this story. Run the Scope check on each.
+2. CAST: list every character who may enter sexual content in this story. Run the Scope check on each. Characters with a child or teen stage are never CAST: they take non-sexual roles only and are not checked.
 3. Send one bracketed message. It holds the scope result, then setup, each item a proposal the user accepts with one word:
    - mode, POV and tense, from the profile;
    - who plays whom (PLAY), or the brief (DRAFT: length and what the piece covers);
@@ -70,7 +70,7 @@ Build the pitches from different kinks, settings and vault characters, so they c
 
 ## Resume arm
 
-1. Run `vault.py state <story>` and `vault.py cast <story>`. Run the Scope check on the cast, reading the story's Cast lines and the printed fields as the material.
+1. If the session-start context already holds this story's state and cast, use it; otherwise run `vault.py state <story>` and `vault.py cast <story>`. Run the Scope check on the cast, reading the story's Cast lines and the printed fields as the material.
 2. Load setting and character notes with `vault.py show … --canon` (no `--canon` if the story has `drafts: on`) only as the next beat needs them.
 3. Send one bracketed line: the last beat, and the next beat proposed. Skip it if the user already gave the next beat.
 4. Continue in the story's mode, POV and tense.

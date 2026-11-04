@@ -20,7 +20,7 @@ created: {{date}}
 *`status`: draft / active / paused / complete. `drafts: on` lets [draft] lines from settings into play.*
 
 ## Cast
-*One line each: [[Name]] (stated age, human or sapient kind) as [[Profile]]: role. The scope check reads these lines.*
+*One line each: [[Name]] (stated age, human or sapient kind) as [[Profile]]: role. The scope check reads these lines. Characters under 18 get `non-sexual role` and are never checked.*
 - 
 
 ## Rules

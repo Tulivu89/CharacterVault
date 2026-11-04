@@ -14,6 +14,7 @@ import argparse
 import datetime
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -377,6 +378,72 @@ def story_note(notes, name):
     return n
 
 
+def active_story(notes):
+    """The most recently edited story with status: active."""
+    act = [n for n in notes if n.type == "story" and str(n.fm.get("status", "")).lower() == "active"]
+    return max(act, key=lambda n: n.path.stat().st_mtime) if act else None
+
+
+def fold(s):
+    """Lowercase and strip accents, so Séraphine matches Seraphine."""
+    return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c)).lower()
+
+
+LORE_BULLET = re.compile(r"^\s*-\s+\*\*([^*]+?)\*\*\s*:?\s*(.*)$")
+
+
+def lore_index(notes, story):
+    """Lore entries for a story's world: setting `Lore entries` bullets, plus a
+    one-line entry for each world character who isn't in the cast."""
+    drafts = str(story.fm.get("drafts", "off")).lower() in ("on", "true", "yes")
+    setting = find(notes, story.fm.get("setting")) if link_name(story.fm.get("setting", "")) else None
+    world = world_of(story.fm) or (world_of(setting.fm) if setting else "")
+    cast = {link_name(c).lower() for c in as_list(story.fm.get("cast"))}
+    entries = []
+    for n in notes:
+        in_world = bool(world) and fold(world_of(n.fm)) == fold(world)
+        if n.type == "setting" and (in_world or n is setting):
+            m = re.search(r"^##\s+Lore entries\s*\n(.*?)(?=^##\s|\Z)", n.body, flags=re.M | re.S)
+            for line in (m.group(1).splitlines() if m else []):
+                bm = LORE_BULLET.match(line)
+                if not bm:
+                    continue
+                key, text = bm.group(1).strip().rstrip(":").strip(), bm.group(2).strip()
+                if not text or (not drafts and "[draft]" in line):
+                    continue
+                keys = [k.strip() for k in key.split("/") if k.strip()]
+                entries.append({"id": f"{n.name}#{keys[0]}", "keys": keys,
+                                "text": f"**{key}:** {text}", "source": n.name})
+        elif n.type == "character" and in_world and n.name.lower() not in cast:
+            hook = re.search(r"^>\s*(.+)$", n.body, flags=re.M)
+            if hook:
+                keys = [n.name] + [str(a) for a in as_list(n.fm.get("aliases"))]
+                entries.append({"id": f"char#{n.name}", "keys": keys,
+                                "text": f"**{n.name}:** {hook.group(1).strip()}", "source": "character"})
+    return entries
+
+
+def key_pattern(key):
+    k = re.sub(r"^the\s+", "", fold(key).strip())
+    if k.endswith("s") and len(k) > 3:
+        k = k[:-1]
+    return re.compile(r"(?<!\w)" + re.escape(k) + r"(?:s|es|ed|ing|'s)?(?!\w)")
+
+
+def match_lore(text, entries, skip=()):
+    t = fold(text)
+    return [e for e in entries if e["id"] not in skip and any(key_pattern(k).search(t) for k in e["keys"])]
+
+
+def cmd_lore(args):
+    notes = all_notes()
+    story = story_note(notes, args.story) if args.story else active_story(notes)
+    if not story:
+        sys.exit("No active story; pass --story.")
+    hits = match_lore(args.text, lore_index(notes, story))
+    print("\n".join(f"- [{h['source']}] {h['text']}" for h in hits) or "No lore matches.")
+
+
 def cmd_cast(args):
     notes = all_notes()
     story = story_note(notes, args.story)
@@ -483,6 +550,7 @@ def main():
     p = sub.add_parser("cast"); p.add_argument("story"); p.set_defaults(fn=cmd_cast)
     p = sub.add_parser("state"); p.add_argument("story"); p.set_defaults(fn=cmd_state)
     p = sub.add_parser("lint"); p.set_defaults(fn=cmd_lint)
+    p = sub.add_parser("lore"); p.add_argument("text"); p.add_argument("--story"); p.set_defaults(fn=cmd_lore)
     args = ap.parse_args()
     args.fn(args)
 

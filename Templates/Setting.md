@@ -52,7 +52,7 @@ created: {{date}}
 - 
 
 ## Lore entries
-*One bullet each: a bold key, then a short entry. These load into play when the key comes up.*
+*One bullet each: a bold key, then a short entry. An entry loads into play when its key comes up; add more keys with slashes: **The Aedling Kingdom / gilts / chalks:***
 - **Entry:** 
 
 ## Open questions
