@@ -29,7 +29,8 @@
 
 ## Settings
 - [[Imperial Sector]]: sci-fi setting of Empire core, colonial Rim and deep void. Species roster in `Settings/sci-fi-species.md`: Aedling, Aedelvass, Human, Therian, Draxian, Cephalite, Vreth, Remnant Synthetic.
-- [[Volundale]]: dark fantasy of the dark lord's court and the Spire.
+- [[Volungraiv]]: the grim world of the Aedling Kingdom and [[The Aerie]].
+- [[Volundale]]: a slightly lighter, more comedic and magical version of Volungraiv, with overlapping characters.
 - [[Dark Lord Funk]]: a warband, a harem and a human insurgency.
 - [[The Litterbox]]: Pops and the five cats he signed for.
 - [[House Castellane]]: the Kestrel Reach lock-in. Bodies are printed, and visual age has come loose from family role.

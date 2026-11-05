@@ -17,10 +17,10 @@ created: 2026-11-05
 ## Premise
 *Stub built from the character notes. Nothing here is new canon; the gaps are yours to fill.*
 
-A dark fantasy world of a dark lord's court, magic older than the Ordering, and the generation raised in the Spire. Different stories sit at different points in its timeline: Viola as Nostromandu's apprentice, then Viola as matriarch with grown daughters.
+A slightly lighter, more comedic and more magical version of [[Volungraiv]], with overlapping characters. A dark fantasy world of a dark lord's court, magic older than the Ordering, and the generation raised in the Spire. Different stories sit at different points in its timeline: Viola as Nostromandu's apprentice, then Viola as matriarch with grown daughters.
 
 ## Tone
-
+Slightly lighter, more comedic and more magical than [[Volungraiv]].
 
 ## Core rules
 *How magic, power and the setting's key mechanics work.*
@@ -29,7 +29,7 @@ A dark fantasy world of a dark lord's court, magic older than the Ordering, and 
 
 ## The wider world
 *Only what presses on this setting. Leave the rest of the map alone.*
-- 
+- **Volungraiv.** The world Volundale is a lighter version of. Some characters appear in both.
 
 ## Places
 - **The Spire.** The tower where the next generation lives: Sarith, Morith and Rekka among them.
@@ -79,7 +79,7 @@ A dark fantasy world of a dark lord's court, magic older than the Ordering, and 
 
 ## Open questions
 - What was the Ordering, and who is the dark lord?
-- Is Volundale part of Volungraiv, or are they separate? The names are close, so they're kept apart until you say.
+- Which characters overlap with Volungraiv?
 - Morith and Isavel are named but have no pages.
 
 ## Characters

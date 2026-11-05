@@ -1,10 +1,11 @@
 ---
 type: character
 aliases: []
-cover: "[[Escrutia - 01.png]]"
+cover:
 world:
 species: "Not set yet"
 age: "ageless; centuries old"
+body_age: "19"
 status: draft
 rating: sfw
 based_on:
@@ -143,5 +144,5 @@ views:
 
 ## Notes
 - Adult (ageless). Image prompts keep `child, aged down` in the negatives.
-- Drafted from her picture only. Notes to come.
-- `body_age` is unset: her picture reads child-sized. No adult file.
+- `Escrutia - 01.png` belongs to a different story and isn't her current look. It stays in the gallery and isn't her cover.
+- Her appearance above was drafted from that picture, so it needs her current look. Notes to come.
