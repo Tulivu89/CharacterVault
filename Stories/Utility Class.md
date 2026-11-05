@@ -1,6 +1,6 @@
 ---
 type: story
-status: draft
+status: active
 world: "[[Imperial Sector]]"
 setting: "[[Imperial Sector]]"
 cast: []
@@ -61,6 +61,7 @@ created: 2026-11-05
 ## Log
 *One line per [save], newest last.*
 - 2026-11-05: setup workshopped and written. Scene not yet opened.
+- 2026-11-05: setup locked; scene opened (Day 9, start of shift).
 
 ## Story
 *DRAFT output, or links to chapter notes.*
