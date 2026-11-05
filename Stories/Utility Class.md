@@ -10,7 +10,7 @@ pov: third
 tense: past
 rating: explicit
 drafts: off
-last_beat: "Not started. Opening: Day 9, start of shift. Hale locks Ilse into the Penalty Frame; ends on the first badge scan."
+last_beat: "Day 9, 1300. Charlie used her while Chuck watched; Ilse spat Lucan's load and drew a complaint; Hale raised her hips for the dock shift and dodged the brace-bolt question. Vuk Dragan is stepping onto the plinth with Bogdan behind him."
 words:
 created: 2026-11-05
 ---
@@ -24,12 +24,13 @@ created: 2026-11-05
 - Ilse Brandt (21, human): lead. Corporal, framed for Shaft Nine, Utility Class with 40 L to serve.
 - Imin-Dumu Hale (41 standard, sapient Vreth agent, human donor): her handler, an Overseer and Utility Compliance Officer. Chipper.
 - Juno Reyes (27, human): utility, Tier 3 veteran.
-- Ysolde Varre (29, sapient Aedling): utility, a fallen aristocrat. Her use history is written on her thighs.
+- Ysolde Varre (29, sapient Aedling): utility, a fallen aristocrat. Her penal service is inscribed on her inner thighs.
 - Seren Morvah (31, sapient Aedelvass): utility, undocumented. Her glow gives her away.
 - Dale Pruitt (44, human): user, a life-support tech.
 - Lucan Aurel (26, sapient Aedling): user, a junior Combine auditor.
 - Vuk Dragan (35, sapient Therian canine): user, dock-crew foreman.
 - Bogdan Kral (31, sapient Therian canine): user, Vuk's packmate.
+- Hoss (38, sapient uplifted Terran pig): user, Day 10. Vocal in the porcine Terran language of grunts and oinks, which Ilse doesn't speak.
 - Charlie Brandt (28, human): user, Ilse's older brother. Station crew. Teasing asshole; has distanced himself since her conviction.
 - Chuck Brandt (50, human): Ilse's father. Station crew, widower. Calls her rebellious; tells coworkers she's no relation.
 
@@ -43,6 +44,9 @@ created: 2026-11-05
 - Yield Program: when assigned as punishment, she's credited only for the sire's volume. When volunteered, one pregnancy carried to term clears the entire sentence.
 - Only the handler can trigger the compliance pulse. Users file complaints instead.
 - Hale doesn't use his own caseload, as a matter of professional conduct. If he ever does, it's an event.
+- Aedling transaction script is a cultural practice, tattooed by custom, not written by the body. It records standing arrangements, not single uses: Ysolde carries one inscription for her whole penal service, and a man who uses a utility once carries nothing.
+- Uplifted Terran pigs are a sapient Terran species (a scientist's tweak on the nearest-to-human brain). They speak a developed language of grunts and oinks.
+- The Frame adjusts posture by species when a badge scans. For an uplifted pig it lowers and slides her feet back to all fours.
 
 ## In play
 *Kinks and themes this story explores, in the profile's words.*
@@ -59,11 +63,17 @@ created: 2026-11-05
 - Day 9 of Ilse's sentence. **39.2 L remaining.**
 - Ilse is on **Tier 0** for 5 days, with 2 L added, for breaking a dockhand's nose. This is day 3 of the 5.
 - Ilse is certain she was framed for Shaft Nine and keeps a mental list of names from that night. Hale knows something about Shaft Nine that isn't in her file.
+- Hale let slip that the Shaft Nine brace bolts were cut halfway through. The tribunal never mentioned bolts. Pressed, he deflected.
+- Day 9 shift so far: 31.6 mL by 1200 (Charlie 3.7; Lucan 0.0, spat). Column still reads 39.2 L.
+- **Violation review pending:** Lucan Aurel's complaint, *Deliberate Waste of Deposit*.
+- Hale reset the Frame at 1200: hips higher, feet back and wider, "for tie geometry."
+- Charlie and Chuck have seen her on the Frame. Chuck tells coworkers she's a second cousin. Charlie rated her 2 stars. The Yield brochure is still in the yoke.
 
 ## Log
 *One line per [save], newest last.*
 - 2026-11-05: setup workshopped and written. Scene not yet opened.
 - 2026-11-05: setup locked; scene opened (Day 9, start of shift).
+- 2026-11-05: Charlie and Chuck replace Dale as the first user; Lucan, Hale check-in played. Aedling script retconned to cultural, one inscription per arrangement. Hoss added for Day 10.
 
 ## Story
 *DRAFT output, or links to chapter notes.*
@@ -167,12 +177,12 @@ Ratings use a 7-day rolling average.
 
 **The Rack**
 - **Juno Reyes (27, human):** ex-smuggler and Tier 3 veteran, top of the board. Knows every exchange rate by heart and teaches the tricks. Ally or informant: undecided.
-- **Ysolde Varre (29, Aedling):** fallen aristocrat, sentenced for debt. Ivory skin, black sclera, gold pupils, and gold hair to match. Under Aedling biology every sexual transaction marks her inner thighs in **very fine script that becomes part of larger designs**: vines, filigree, lacework. From a distance it looks like ornament; up close any Aedling can read the whole history. She's still bewildered that the universe stopped accommodating her.
+- **Ysolde Varre (29, Aedling):** fallen aristocrat, sentenced for debt. Ivory skin, black sclera, gold pupils, and gold hair to match. By Aedling custom her sentence was tattooed on her inner thighs at intake: **one inscription for the whole penal service**, in very fine script worked into vines, filigree and lacework. From a distance it looks like ornament; up close any Aedling can read what she is. She's still bewildered that the universe stopped accommodating her.
 - **Seren Morvah (31, Aedelvass):** undocumented, taken as an "unregistered asset." Copper-brown skin. Black hair fading to luminescent teal, with tattoos in the same gradient. Her glow shows every user her fear and her arousal, and she can't suppress it. She refuses on principle and has the most liters remaining on the board.
 
 **Established users**
 - **Dale Pruitt (44, human):** life-support tech. Uses her on his lunch break and eats his sandwich throughout.
-- **Lucan Aurel (26, Aedling):** junior Combine auditor. Entitled, and bewildered by any resistance. Under Aedling biology, *his* thighs get the purchaser's mark too.
+- **Lucan Aurel (26, Aedling):** junior Combine auditor. Entitled, and bewildered by any resistance.
 - **Vuk Dragan (35, Therian canine):** dock-crew foreman. Big, heavy, pack-dominant. Knots.
 - **Bogdan Kral (31, Therian canine):** Vuk's packmate and second. Follows Vuk's lead.
 
