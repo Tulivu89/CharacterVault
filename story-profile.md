@@ -11,6 +11,9 @@
 - Register: Dark fantasy and sci-fi; grounded, visceral, pulp-inflected
 - Notes: Female characters who push back. Open to kinky pitches. Prose runs through the pulp-voice skill (anti-slop and style).
 - Naming: names follow real-world language conventions, anglicized; no invented-syllable names.
+- Sex on the page: when characters talk during sex, keep the act physically present in every exchange; shift POV between participants to show the scene from more than one side.
+- Male orgasm is a focus: write it in full, never glossed.
+- Noncon/dubcon: don't lean on the woman counting (strokes, seconds, men) as her coping device; it repeats.
 
 ## Kinks and themes
 - Noncon
