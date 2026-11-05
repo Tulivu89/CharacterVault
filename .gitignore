@@ -5,3 +5,7 @@
 
 # Hook state (per-session lore memory)
 .claude/state/
+
+# Python bytecode
+__pycache__/
+*.pyc

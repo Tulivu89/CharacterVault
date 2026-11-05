@@ -54,6 +54,8 @@ Two rules hold the design together:
 
 Anthropic doesn't ship an Android build of Claude Code. It does ship a Linux build, and that runs inside an Ubuntu install that lives in Termux. The vault goes in your phone's shared storage, so Obsidian and Claude Code open the same folder and nothing needs syncing on the phone.
 
+**Watch the prompt.** `~ $` means you're in Termux. `root@localhost:~#` means you're inside Ubuntu. Steps 2 and 3 only work inside Ubuntu. Run there from Termux, `apt` reaches Termux's own mirrors and the Claude installer fails with *required file not found*.
+
 ### 1. Install Termux and Ubuntu
 
 Install Termux from F-Droid or its GitHub releases page, not the Play Store (that version is years out of date). Open it and run:
@@ -78,14 +80,14 @@ proot-distro install ubuntu
 
 ### 2. Set up Ubuntu
 
-Log in to Ubuntu (from now on, these commands run inside it):
+Log in to Ubuntu. The prompt changes to `root@localhost:~#`, and every command until step 5 runs here:
 
 ```bash
 proot-distro login ubuntu
 ```
 
 ```bash
-apt update && apt install -y curl git python3 gh ca-certificates
+apt update && apt install -y curl git python3 ca-certificates
 ```
 
 Install Claude Code with the official installer, then put it on your PATH:
@@ -100,20 +102,23 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
 
 ### 3. Get your vault
 
-Sign in to GitHub. Choose the browser login and paste the code it shows:
+Git needs permission to read and push your private vault. A GitHub access token is the simplest way on a phone:
+
+1. On GitHub, open Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token.
+2. Under Repository access, choose *Only select repositories* and pick your vault.
+3. Under Permissions → Repository permissions, set **Contents** to *Read and write*.
+4. Generate it and copy the token. GitHub shows it only once.
+
+Tell git to remember the token after the first use:
 
 ```bash
-gh auth login
+git config --global credential.helper store
 ```
 
-```bash
-gh auth setup-git
-```
-
-Clone your vault into shared storage, where Obsidian can see it:
+Clone your vault into shared storage, where Obsidian can see it. When git asks, the username is your GitHub username and the password is the token (long-press to paste):
 
 ```bash
-mkdir -p /sdcard/Documents && cd /sdcard/Documents && gh repo clone <you>/<your-vault>
+mkdir -p /sdcard/Documents && cd /sdcard/Documents && git clone https://github.com/<you>/<your-vault>.git
 ```
 
 Shared storage confuses git about file ownership and permissions. These two settings fix it:
@@ -126,7 +131,7 @@ git config --global --add safe.directory '*'
 git -C /sdcard/Documents/<your-vault> config core.fileMode false
 ```
 
-If `/sdcard` doesn't exist inside Ubuntu, exit and log in again with `proot-distro login ubuntu --bind /storage/emulated/0:/sdcard`.
+`ls /sdcard` inside Ubuntu should list your phone's folders (Download, Documents and so on). proot-distro connects it by default; if it's empty, exit and log in with `proot-distro login ubuntu --bind /storage/emulated/0:/sdcard`. A warning that the binding *overlaps with an existing one* means it was already connected.
 
 ### 4. Open it in Obsidian
 
@@ -140,13 +145,26 @@ cd /sdcard/Documents/<your-vault> && claude
 
 The first run prints a sign-in link. Open it, sign in with your Claude account, and paste the code back into Termux (long-press to paste).
 
-**A one-word shortcut.** Run this once in Termux itself, not inside Ubuntu:
+**A one-word shortcut.** Run these in Termux itself, not inside Ubuntu (the prompt shows `~ $`, not `root@localhost`). Replace `MyVault` with your vault folder's name. The full path to `claude` is deliberate: the shortcut starts Ubuntu without reading `.bashrc`, so the PATH line from step 2 doesn't apply there.
 
 ```bash
-echo "alias vault='proot-distro login ubuntu -- bash -lc \"cd /sdcard/Documents/<your-vault> && claude\"'" >> ~/.bashrc
+echo "alias vault='proot-distro login ubuntu -- bash -lc \"cd /sdcard/Documents/MyVault && /root/.local/bin/claude\"'" >> ~/.bashrc
 ```
 
-From then on, open Termux and type `vault`.
+```bash
+source ~/.bashrc
+```
+
+From then on, open Termux and type `vault`. If you typed a wrong line, remove every shortcut line with `sed -i '/alias vault=/d' ~/.bashrc` and add it again.
+
+**Check your setup.** If `vault` fails, log in to Ubuntu (`proot-distro login ubuntu`) and check each piece:
+
+| Check | Expect | If not |
+|---|---|---|
+| `ls /root/.local/bin/claude` | the path prints | Redo step 2's installer. |
+| `ls /sdcard/Documents` | your vault folder | Redo step 3's clone, or the `--bind` login. |
+| `python3 --version` | Python 3.x | `apt install -y python3` |
+| `git -C /sdcard/Documents/MyVault pull` | Already up to date | Check the token: Contents set to Read and write, and your vault selected. |
 
 **Keep it alive.** Android kills background apps. Pull down the Termux notification and tap *Acquire wakelock* during long sessions, and exclude Termux from battery optimization.
 
