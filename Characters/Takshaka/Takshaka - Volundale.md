@@ -3,9 +3,11 @@ type: profile
 character: "[[Takshaka]]"
 profile_type: story-bio
 stage: adult
-age: "unknown; predates the Ordering"
+age: "ageless; predates the Ordering, centuries old"
+body_age: "adult; shows no age"
 used_for: Volundale
 setting: Volundale
+world: "[[Volundale]]"
 rating: suggestive
 version: 1
 created: 2026-10-19
@@ -17,7 +19,7 @@ created: 2026-10-19
 - Summoned to the material plane; father of [[Sarith]] and [[Morith]] by [[Viola]].
 
 ## Bio
-**Species:** Naga Demon (planar, summoned) | Age: Unknown; predates the Ordering
+**Species:** Naga Demon (planar, summoned) | Age: Ageless; predates the Ordering
 **Build:** Humanoid torso of lean, dense muscle above a serpent's lower body. Capable of exerting pressure that cracks stone.
 **Scales:** Alabaster white.
 **Head:** Pure serpent — tapered skull, forked tongue that tastes fear from across a room, jaw that unhinges when he chooses.

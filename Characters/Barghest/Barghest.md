@@ -150,7 +150,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

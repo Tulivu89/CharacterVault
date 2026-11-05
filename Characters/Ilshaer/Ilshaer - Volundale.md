@@ -6,6 +6,7 @@ stage: adult
 age: "60 (appears late 30s)"
 used_for: Volundale
 setting: Volundale
+world: "[[Volundale]]"
 rating: sfw
 version: 3
 created: 2026-10-19

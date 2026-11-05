@@ -2,7 +2,7 @@
 type: character
 aliases: []
 cover:
-world:
+world: "[[Volundale]]"
 species: "Human (artificially extended)"
 status: active
 rating: sfw
@@ -140,7 +140,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

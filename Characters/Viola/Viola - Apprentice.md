@@ -2,23 +2,24 @@
 type: profile
 character: "[[Viola]]"
 profile_type: story-bio
-stage: teen
-age: "17"
+stage: adult
+age: "18"
 used_for: Volundale
 setting: Volundale
+world: "[[Volundale]]"
 rating: sfw
-version: 1
+version: 2
 created: 2026-10-19
 ---
 # Viola - Apprentice
 *A version of the character for one story, stage or form. Note what differs from the main page.*
 
 ## Differences from the main version
-- Teen stage: Nostromandu's apprentice, before she becomes a mother.
+- Nostromandu's apprentice, before she becomes a mother.
 
 ## Bio
 **Title:** Viola Hargrave, "The Apprentice"
-**Species:** Human | Age: 17
+**Species:** Human | Age: 18
 **Build:** 5'4", willowy and pale, long-limbed.
 **Skin:** Porcelain, rarely sees sun by choice. Ink stains on her fingers she considers aesthetic.
 **Hair:** Black with deep green undertones, worn in a loose practical braid with escaped strands she's learned to let frame her face. Tucks bones, dried flowers, and small trinkets into it absentmindedly.
@@ -37,4 +38,5 @@ Nostromandu's apprentice.
 
 
 ## Changelog
+- v2 (2026-11-05): corrected to 18, adult stage. Rating unchanged.
 - v1 (2026-10-19): imported from Untitled 7. Build line reworded to a plain description for this teen stage.

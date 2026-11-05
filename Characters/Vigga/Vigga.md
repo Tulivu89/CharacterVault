@@ -4,6 +4,7 @@ aliases: []
 cover: "[[Vigga - 01.png]]"
 world:
 species: "Wolven (therian)"
+mind: Fully sapient: a Wolven who talks and reasons like a person, with a wolf's appetites.
 status: active
 rating: sfw
 based_on:
@@ -144,7 +145,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

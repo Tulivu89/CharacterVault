@@ -2,8 +2,9 @@
 type: character
 aliases: []
 cover: "[[Sunny - 01.png]]"
-world:
+world: "[[The Litterbox]]"
 species: "Cat girl (orange tabby)"
+mind: Fully sapient: talks, reasons and chooses like a person, with cat instincts and cat body language.
 status: active
 rating: sfw
 based_on:
@@ -153,7 +154,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

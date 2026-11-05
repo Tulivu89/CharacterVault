@@ -2,8 +2,9 @@
 type: character
 aliases: []
 cover: "[[Morith and Sarith - 01.png]]"
-world:
+world: "[[Volundale]]"
 species: "Half-human, half-naga"
+mind: Fully sapient: half-human, half-naga, patient and coldly intelligent.
 status: active
 rating: sfw
 based_on:
@@ -144,7 +145,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

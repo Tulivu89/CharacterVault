@@ -2,8 +2,9 @@
 type: character
 aliases: []
 cover: "[[Gildra - 01.png]]"
-world:
+world: "[[Volundale]]"
 species: "Dark Elf"
+mind: Fully sapient: a dark elf with centuries of old magic behind her.
 status: active
 rating: sfw
 based_on:
@@ -143,7 +144,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

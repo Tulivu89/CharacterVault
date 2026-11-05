@@ -2,8 +2,9 @@
 type: character
 aliases: []
 cover: "[[Ilshaer - 00.png]]"
-world:
+world: "[[Volundale]]"
 species: Untellian (Aedless)
+mind: Fully sapient: an Untellian who talks and reasons like a person.
 status: active
 rating: sfw
 based_on:
@@ -155,7 +156,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

@@ -2,8 +2,9 @@
 type: character
 aliases: []
 cover:
-world:
+world: "[[Volundale]]"
 species: "Wolven (therian), White Wolf Clan"
+mind: Fully sapient: a Wolven tracker who talks and reasons like a person, with a wolf's senses.
 status: active
 rating: sfw
 based_on:
@@ -139,7 +140,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

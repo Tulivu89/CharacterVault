@@ -4,6 +4,7 @@ aliases: []
 cover: "[[Escrutia - 01.png]]"
 world:
 species: "Not set yet"
+age: "ageless; centuries old"
 status: draft
 rating: sfw
 based_on:
@@ -137,9 +138,10 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes
 - Adult (ageless). Image prompts keep `child, aged down` in the negatives.
 - Drafted from her picture only. Notes to come.
+- `body_age` is unset: her picture reads child-sized. No adult file.

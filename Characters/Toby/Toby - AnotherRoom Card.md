@@ -6,6 +6,7 @@ stage: adult
 age: 20
 used_for: NovelAI Xialong
 setting: Neon Nights
+world: "[[The Litterbox]]"
 rating: sfw
 version: 1
 created: 2026-10-19

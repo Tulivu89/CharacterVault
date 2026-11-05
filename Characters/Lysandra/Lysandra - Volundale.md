@@ -3,9 +3,11 @@ type: profile
 character: "[[Lysandra]]"
 profile_type: story-bio
 stage: adult
-age: "appears early 20s"
+age: "ageless adult; appears early 20s"
+body_age: "early 20s"
 used_for: Volundale
 setting: Volundale
+world: "[[Volundale]]"
 rating: suggestive
 version: 1
 created: 2026-10-19
@@ -17,7 +19,7 @@ created: 2026-10-19
 - Mother of [[Isavel]].
 
 ## Bio
-**Species:** High Elf | Age: Appears early 20s;
+**Species:** High Elf | Age: Ageless; appears early 20s
 **Build:** 5'6", slender with pure elven grace.
 **Skin:** White as new snow.
 **Hair:** White-silver, pin-straight, kept in elaborate styles that require an hour and two handmaidens. Always immaculate. The first thing to come undone under duress.

@@ -2,7 +2,7 @@
 type: character
 aliases: []
 cover:
-world:
+world: "[[Dark Lord Funk]]"
 species: "Human"
 status: active
 rating: sfw
@@ -138,7 +138,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

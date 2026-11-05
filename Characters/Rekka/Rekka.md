@@ -2,8 +2,9 @@
 type: character
 aliases: []
 cover: "[[Rekka - 01.png]]"
-world:
+world: "[[Volundale]]"
 species: "Half-wolven, half-hellhound"
+mind: Fully sapient: talks and reasons like a person, with wolven and hellhound appetites.
 status: active
 rating: sfw
 based_on:
@@ -142,7 +143,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

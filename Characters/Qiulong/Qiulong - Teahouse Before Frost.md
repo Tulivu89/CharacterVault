@@ -3,9 +3,10 @@ type: profile
 character: "[[Qiulong]]"
 profile_type: chatbot-card
 stage: adult
-age:
+age: "ageless; centuries old"
 used_for: NovelAI Xialong
 setting: Teahouse Before Frost
+world: "[[Teahouse Before Frost]]"
 rating: suggestive
 version: 1
 created: 2026-10-19

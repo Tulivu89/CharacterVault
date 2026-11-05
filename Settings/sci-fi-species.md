@@ -1,3 +1,14 @@
+---
+type: setting
+aliases: [Species, sci-fi species]
+cover:
+world: "[[Imperial Sector]]"
+status: draft
+rating: suggestive
+version: 1
+tags: [setting]
+created: 2026-11-05
+---
 SPECIES
 
 ---

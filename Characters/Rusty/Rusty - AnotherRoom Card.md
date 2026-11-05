@@ -6,6 +6,7 @@ stage: adult
 age: 19
 used_for: NovelAI Xialong
 setting: The Litterbox
+world: "[[The Litterbox]]"
 rating: suggestive
 version: 1
 created: 2026-10-19

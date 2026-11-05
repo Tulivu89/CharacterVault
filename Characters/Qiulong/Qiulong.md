@@ -2,8 +2,11 @@
 type: character
 aliases: []
 cover: Reference.png
-world:
+world: "[[Teahouse Before Frost]]"
 species: Dragon
+mind: Fully sapient: a dragon who talks, gambles and bargains like a person, and hoards people and things.
+age: "ageless; centuries old"
+body_age: "adult, petite"
 status: active
 rating: sfw
 based_on:
@@ -153,7 +156,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

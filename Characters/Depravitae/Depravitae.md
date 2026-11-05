@@ -4,6 +4,7 @@ aliases: ["Tae"]
 cover:
 world:
 species: "Half-succubus, half-imp"
+mind: Fully sapient: a half-succubus, half-imp who talks, schemes and bargains.
 status: active
 rating: sfw
 based_on:
@@ -150,7 +151,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

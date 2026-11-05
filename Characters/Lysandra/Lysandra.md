@@ -2,8 +2,9 @@
 type: character
 aliases: []
 cover:
-world:
+world: "[[Volundale]]"
 species: "High Elf"
+mind: Fully sapient: a high elf who talks and reasons like a person.
 status: active
 rating: sfw
 based_on:
@@ -141,7 +142,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

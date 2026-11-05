@@ -2,7 +2,7 @@
 type: character
 aliases: []
 cover:
-world:
+world: "[[Volundale]]"
 species: "Human"
 status: active
 rating: sfw
@@ -46,9 +46,8 @@ created: 2026-10-19
 
 ## Variants
 *Recurring versions: life stages, forms, later fates, one-off reuses. One line each on what changes; the details live in that version's profile.*
-- **Apprentice** (teen, 17, Volundale): Nostromandu's apprentice. Sfw. [[Viola - Apprentice]]
+- **Apprentice** (adult, 18, Volundale): Nostromandu's apprentice. [[Viola - Apprentice]]
 - **Matriarch** (adult, Volundale): mother of Sarith and Morith by Takshaka. No profile yet.
-- **Sekmawl's mother** (adult, one-off): see [[Sekmawl - Viola's Son]].
 
 ## Core history
 *Only what's true in every story. Story-specific backstory goes in profiles.*
@@ -146,7 +145,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

@@ -6,6 +6,7 @@ stage: adult
 age: "18"
 used_for: Dark Lord Funk
 setting: Dark Lord Funk
+world: "[[Dark Lord Funk]]"
 rating: suggestive
 version: 1
 created: 2026-10-19

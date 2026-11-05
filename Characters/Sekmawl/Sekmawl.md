@@ -2,8 +2,9 @@
 type: character
 aliases: []
 cover:
-world:
+world: "[[Volundale]]"
 species: "Saurian (crocodilian)"
+mind: Fully sapient: reads people like an apex predator and speaks in long, deliberate pauses.
 status: active
 rating: sfw
 based_on:
@@ -46,7 +47,7 @@ created: 2026-10-19
 ## Variants
 *Recurring versions: life stages, forms, later fates, one-off reuses. One line each on what changes; the details live in that version's profile.*
 - **Old crocodilian** (elder): his usual form.
-- **Viola's son** (18, Volundale one-off): a teenager raised in the Spire with his father's size. [[Sekmawl - Viola's Son]]
+- His age changes from story to story. Each story sets it on its own profile.
 
 ## Core history
 *Only what's true in every story. Story-specific backstory goes in profiles.*
@@ -142,7 +143,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

@@ -2,8 +2,9 @@
 type: character
 aliases: []
 cover:
-world:
+world: "[[The Litterbox]]"
 species: "Dog boy (golden retriever)"
+mind: Fully sapient: talks, reasons and chooses like a person, with a dog's instincts and a tail he can't control.
 status: active
 rating: sfw
 based_on:
@@ -150,7 +151,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

@@ -2,8 +2,9 @@
 type: character
 aliases: []
 cover:
-world:
+world: "[[Volundale]]"
 species: "Damsent (Succori subspecies)"
+mind: Fully sapient: a Succori who talks and reasons like a person.
 status: active
 rating: sfw
 based_on:
@@ -143,7 +144,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

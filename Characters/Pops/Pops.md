@@ -2,8 +2,9 @@
 type: character
 aliases: []
 cover: "[[Pops - 01.png]]"
-world:
+world: "[[The Litterbox]]"
 species: "Wolf (anthro)"
+mind: Fully sapient: an anthro wolf who talks and reasons like a person, with a wolf's scent and body language.
 status: draft
 rating: sfw
 based_on:
@@ -139,7 +140,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

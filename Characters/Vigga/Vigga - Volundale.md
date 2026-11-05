@@ -6,6 +6,7 @@ stage: adult
 age: "34"
 used_for: Volundale
 setting: Volundale
+world: "[[Volundale]]"
 rating: suggestive
 version: 1
 created: 2026-10-19

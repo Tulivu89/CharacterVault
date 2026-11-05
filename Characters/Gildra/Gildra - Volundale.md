@@ -4,8 +4,10 @@ character: "[[Gildra]]"
 profile_type: story-bio
 stage: adult
 age: "ageless; unknown centuries"
+body_age: "adult; shows no age"
 used_for: Volundale
 setting: Volundale
+world: "[[Volundale]]"
 rating: suggestive
 version: 1
 created: 2026-10-19
@@ -18,7 +20,7 @@ created: 2026-10-19
 
 ## Bio
 **Title:** "The Witch Queen"
-**Species:** Dark Elf | Age: Unknown; perhaps ageless
+**Species:** Dark Elf | Age: Ageless; unknown centuries
 **Build:** 6'2", statuesque — the curves of a pleasure girl on the body of a warrior queen.
 **Skin:** Mocha brown flecked with glinting gold freckles that seem to shimmer when her emotions run high.
 **Hair:** White in a single long braid laced with silver, hanging to her thighs.

@@ -6,6 +6,7 @@ stage: elder
 age: "appears old; is much older"
 used_for: Volundale
 setting: Volundale
+world: "[[Volundale]]"
 rating: sfw
 version: 1
 created: 2026-10-19

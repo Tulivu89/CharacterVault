@@ -2,8 +2,9 @@
 type: character
 aliases: []
 cover:
-world:
+world: "[[Volundale]]"
 species: "Naga demon (planar, summoned)"
+mind: Fully sapient: a planar demon, ancient, coldly intelligent and patient. Speaks in a sibilant voice.
 status: active
 rating: sfw
 based_on:
@@ -142,7 +143,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes

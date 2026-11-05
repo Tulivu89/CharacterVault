@@ -4,6 +4,8 @@ aliases: []
 cover: "[[Pixie - 01.png]]"
 world:
 species: "Cat girl"
+mind: Fully sapient: a cat girl who talks and reasons like a person.
+age: "18"
 status: draft
 rating: sfw
 based_on:
@@ -136,7 +138,7 @@ views:
     imageFit: cover
     order:
       - file.name
-      - universe
+      - world
 ```
 
 ## Notes
