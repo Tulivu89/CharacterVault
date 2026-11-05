@@ -1,6 +1,6 @@
 ---
 type: story
-status: draft
+status: active
 world: "[[Imperial Sector]]"
 setting: "[[Imperial Sector]]"
 cast: []
@@ -30,6 +30,8 @@ created: 2026-11-05
 - Lucan Aurel (26, sapient Aedling): user, a junior Combine auditor.
 - Vuk Dragan (35, sapient Therian canine): user, dock-crew foreman.
 - Bogdan Kral (31, sapient Therian canine): user, Vuk's packmate.
+- Charlie Brandt (28, human): user, Ilse's older brother. Station crew. Teasing asshole; has distanced himself since her conviction.
+- Chuck Brandt (50, human): Ilse's father. Station crew, widower. Calls her rebellious; tells coworkers she's no relation.
 
 ## Rules
 *The story's own mechanics: stakes, leverage, what can and can't happen.*
@@ -61,6 +63,7 @@ created: 2026-11-05
 ## Log
 *One line per [save], newest last.*
 - 2026-11-05: setup workshopped and written. Scene not yet opened.
+- 2026-11-05: setup locked; scene opened (Day 9, start of shift).
 
 ## Story
 *DRAFT output, or links to chapter notes.*
