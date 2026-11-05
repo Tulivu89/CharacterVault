@@ -54,6 +54,8 @@ Two rules hold the design together:
 
 Anthropic doesn't ship an Android build of Claude Code. It does ship a Linux build, and that runs inside an Ubuntu install that lives in Termux. The vault goes in your phone's shared storage, so Obsidian and Claude Code open the same folder and nothing needs syncing on the phone.
 
+**Watch the prompt.** `~ $` means you're in Termux. `root@localhost:~#` means you're inside Ubuntu. Steps 2 and 3 only work inside Ubuntu. Run there from Termux, `apt` reaches Termux's own mirrors and the Claude installer fails with *required file not found*.
+
 ### 1. Install Termux and Ubuntu
 
 Install Termux from F-Droid or its GitHub releases page, not the Play Store (that version is years out of date). Open it and run:
@@ -78,7 +80,7 @@ proot-distro install ubuntu
 
 ### 2. Set up Ubuntu
 
-Log in to Ubuntu (from now on, these commands run inside it):
+Log in to Ubuntu. The prompt changes to `root@localhost:~#`, and every command until step 5 runs here:
 
 ```bash
 proot-distro login ubuntu
@@ -129,7 +131,7 @@ git config --global --add safe.directory '*'
 git -C /sdcard/Documents/<your-vault> config core.fileMode false
 ```
 
-If `/sdcard` doesn't exist inside Ubuntu, exit and log in again with `proot-distro login ubuntu --bind /storage/emulated/0:/sdcard`.
+`ls /sdcard` inside Ubuntu should list your phone's folders (Download, Documents and so on). proot-distro connects it by default; if it's empty, exit and log in with `proot-distro login ubuntu --bind /storage/emulated/0:/sdcard`. A warning that the binding *overlaps with an existing one* means it was already connected.
 
 ### 4. Open it in Obsidian
 
