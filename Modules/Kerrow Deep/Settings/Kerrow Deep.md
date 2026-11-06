@@ -18,7 +18,7 @@ created: 2026-11-06
 - Every character in this module is an adult. The Penal Utility Statute applies only to convicts 18 and older, and every station user is an adult.
 - Users are sapient only. Vreth drones and warriors are non-sapient and never take part; they appear only as labor and security. Vreth agents are fully sapient.
 - Any Cephalite in sexual content has a clearly adult body.
-- The vault's own `CLAUDE.md` sets scope. This note adds setting rules; it never widens scope.
+- The vault's own scope (its system prompt or `CLAUDE.md`) applies. This note adds setting rules; it never widens scope.
 
 ## Premise
 Kerrow Deep is a deep-core mining station on an airless moon inside a gas giant's radiation belt, at the edge of the colonial Rim. The **Halvane Extraction Combine** runs it under Imperial charter. About 9,000 crew from every species on the Rim work rotating shifts there.

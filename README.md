@@ -8,7 +8,9 @@ A Claude Code setup for adult roleplay and fiction writing, built as an Obsidian
 
 | Path | What it is |
 |---|---|
-| `CLAUDE.md` | The base instructions: scope, craft, bracket controls, vault rules. Loaded every session. |
+| `.claude/output-styles/story-vault.md` | The system prompt (Story Vault output style): scope, image limits, craft, bracket controls. |
+| `CLAUDE.md` | Vault instructions: note types, vault rules, script, Git. Loaded every session. |
+| `.claude/skills/vault-dev/` | Maintenance guidance for the script, hooks, skills, templates and docs. |
 | `.claude/skills/vault-session/` | Starts, sets up, resumes, saves and logs stories; runs the cast scope check; keeps the style library. |
 | `.claude/scripts/vault.py` | Creates notes from templates, loads notes without Obsidian-only blocks, prints cast and state, lints the vault. Python 3, standard library only. |
 | `.claude/hooks/` + `.claude/settings.json` | Session start loads the active story; viewer commands answer without a model turn; lore entries load when mentioned; status line shows the story and last beat. |
@@ -30,7 +32,7 @@ A Claude Code setup for adult roleplay and fiction writing, built as an Obsidian
 
 ## In play
 
-Bracket commands are listed in `CLAUDE.md`. The ones you'll use most: `[setup]`, `[save]`, `[rewind]`, `[tone: harsher]`, `[cast]`, `[state]`, `[keep]`.
+Bracket commands are listed in the Story Vault style (`.claude/output-styles/story-vault.md`). The ones you'll use most: `[setup]`, `[save]`, `[rewind]`, `[tone: harsher]`, `[cast]`, `[state]`, `[keep]`.
 
 **Free commands.** Send one of these as the whole message and a hook answers it without a model turn: `[cast]`, `[state]`, `[show <note>]`, `[list <type>]`, `[lint]`, `[lore <text>]`.
 

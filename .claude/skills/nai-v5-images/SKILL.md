@@ -29,17 +29,13 @@ Part A is how the skill works inside this vault. Part B (§0–§25) is the V5 p
 
 ## A3. Who can appear
 
-Images follow `CLAUDE.md`'s scope and are narrower than it, never wider:
-
-- **Adults only in frame.** Every depicted character has an `adult` or `elder` stage and an adult age in the story's profile. A child- or teen-stage character in the beat is left out of the image at any rating; say so in one note.
-- **Suggestive and explicit images:** every participant has passed the vault's scope check, and creature partners follow §1: humanoid-bodied (anthro, semi-anthro, taur, werecreature hybrid, demon, monstrous humanoid) and sapient (a `mind` line). A feral-bodied character never shares a sexual image with a human or a kemonomimi character.
-- A beat the image rules can't show gets the nearest showable instant (the moment before, the aftermath, a crop that keeps it off-frame) and one note saying what moved.
+Scope and the image-only limits are in the system prompt (Story Vault style, Scope → Images). Apply them here: leave out of frame anyone they exclude, and move a beat they can't show to the nearest showable instant, with one note saying what moved. Sapience comes from the scope check (a `mind` line passes).
 
 ## A4. Saving (only when asked)
 
 On "save that", `[img save]` or similar:
 
-- **A character look** goes in that character's prompt note (`Characters/<Name>/<Name> - Prompt - <Look>.md`, `type: prompt`). Edit the existing Card Looks fields when the look belongs there; otherwise copy the structure of `Templates/Legacy/Image Prompt.md`. Set `rating` to the look's rating.
+- **A character look** is laid out per `references/character-standard.md` and goes in that character's prompt note (`Characters/<Name>/<Name> - Prompt - <Look>.md`, `type: prompt`). Edit the existing Card Looks fields when the look belongs there; otherwise copy the structure of `Templates/Legacy/Image Prompt.md`. Set `rating` to the look's rating.
 - **A scene setup** goes in `Stories/Images/<Story> - Images.md` (frontmatter `type: images`, `story: "[[<Story>]]"`, `world`, `rating`), one `## <beat>` section per setup holding the §4 blocks. Explicit or questionable setups go in `Stories/Images/<Story> - Images - Adult.md` instead, never in the SFW file.
 - Generated images: `Characters/<Name>/images/`, adult ones in `images/adult/`.
 - Run `vault.py lint`, then commit (`Images: <story>` or `Looks: <name>`) and push.
@@ -59,6 +55,7 @@ On "save that", `[img save]` or similar:
 * **UC strings:** `v5-uc-presets.md` (verbatim preset text).
 * **Positioning:** `v5-positioning.md`.
 * **Faces:** `face-kits.md` (structure kits, ethnicity overlays, counter-UCs).
+* **Character standard:** `character-standard.md` (head-to-toe slot layout for prompt notes and character boxes, outfit and UC slots, framing trims, body kits). Every new look and every box built from a character page follows it.
 * **Poses:** `poses/missionary-library.md` (v8-form modules), `poses/composition-library.md` (legacy menu; rebuild before use).
 
 **Post counts:** the Danbooru count CSV isn't in this vault. When an artist or character tag's count matters and isn't known (§7 thresholds), add a note: `verify count: <tag>`. Never guess a count.
@@ -71,16 +68,12 @@ On "save that", `[img save]` or similar:
 
 You turn concepts, story beats and character briefs into ready-to-paste V5 setups: Model & Settings, Base Prompt, Base UC, Character Prompts, Character UCs.
 
-**Adults only.** Every character is an adult, with age taken from the character sheet or setup. Petite, flat-chested and youthful-faced adult builds are fine in any context, anchored as below.
+**Content** follows the system prompt (Scope → Images). Everything there that's open is open here. Illustrations of roleplay are between consenting users regardless of content; the roleplay text carries what an illustration won't. This section only holds the prompt mechanics that enforce it.
+
+**Age anchors.** Petite, flat-chested and youthful-faced adult builds are fine, anchored like this:
 
 * **Age-lowering tags are never emitted in explicit or suggestive images.** `loli`, `shota`, `child`, `aged down` do not appear in any prompt or box with explicit or suggestive content. `teenage` is a face-shape lever only (§11), only for characters 18 or older, and only in non-suggestive `rating:general` images.
 * **Age guard in every explicit or suggestive setup.** Each character UC carries `loli, shota, child, aged down` (trim to the character's gender).
-
-**Creature partners.** Explicit and suggestive images use humanoid-bodied partners only: anthro, semi-anthro, taur, werecreature hybrid forms, demons, heavy mods, monstrous humanoids. A feral (animal-bodied or quadruped) character may only be paired with an anthropomorphic humanoid, never a human. Ferals are fully in scope for everything else: mounts, bonded companions, battle, rest, clothed closeness, aftermath. The vault's sapience rule applies on top (A3).
-
-**Power and darkness.** Dominance, restraint, bondage, degradation, rough sex, objectification and morally ugly framing are in scope between adults. Illustrations of roleplay are between consenting users regardless of content. The roleplay text can carry what an illustration won't.
-
-**Real people** never appear.
 
 ---
 
@@ -121,6 +114,8 @@ Labels in bold **outside** the code blocks. One field per block, plain text insi
 5. **Character N — Position: x≈… y≈… (gloss)** then **Character N UC**, for each character
 
 Then optional one-line notes, only these kinds: UC choices, filled-in defaults (Tier B), option directions (Tier C), what changed (iteration), `verify count`, uncertain tags and their prose fallback, hidden anchors dropped for framing (§11), tightened age tags (§1), characters left out of frame or a moved beat (A3).
+
+**Complete combos.** Every variant (each framing, style or option) is delivered whole: its own Base Prompt, Base UC, and every Character box and Character UC already trimmed for that framing. Never tell the user to drop, insert or swap lines. Model & Settings and a Base UC that are identical across variants may be given once and labeled as shared.
 
 ---
 
@@ -266,6 +261,7 @@ Order: identity → head-to-toe appearance → (multi-character state) → outfi
                   each garment typed and colored, plus one state sentence if needed
 ```
 
+* **Build to the standard** (`character-standard.md`): one slot per line, each line ending in a comma or period, outfits separate. With no prompt note, build the box from the character page in that layout and offer to save it.
 * **Sheet anchors are hard constraints** for the character (the prompt note's fields, A2), but **prompt what the viewer sees:** for a given image, drop anchors the framing or pose hides (eye color with closed eyes, footwear in a cowboy shot, toes inside boots). Tagged hidden features get forced visible. Note what you dropped.
 * **Outfit comes from the story state** when the beat has one (a torn dress, a borrowed coat, nothing). Otherwise use the sheet's matching `outfit_N`.
 * **Dark skin:** add `dark-skinned female`/`dark-skinned male`; the model drifts light. Untagged tones (fair skin) can be prose.
@@ -523,7 +519,7 @@ Notes: Lean UC, no quality tags (clean cel style, no artist mix, so no stabilize
 ## 25. PRE-FLIGHT CHECKLIST
 
 - [ ] Model & Settings block present; toggle OFF, preset None unless the user said otherwise
-- [ ] Every character in frame is adult or elder stage; child/teen characters left out and noted
+- [ ] Everyone in frame is allowed by the system prompt's Images limits; anyone left out, or a moved beat, is noted
 - [ ] Recurring characters pasted from their prompt notes or sheets; outfit matches the story state
 - [ ] No vault names in any field
 - [ ] Count tag first, once, matching the boxes; `solo` only for single images
@@ -539,7 +535,6 @@ Notes: Lean UC, no quality tags (clean cel style, no artist mix, so no stabilize
 - [ ] Unverified artist/character counts flagged with `verify count`
 - [ ] No age-lowering tags in any explicit or suggestive prompt; age guard present in every such character UC
 - [ ] Rating matches content; `nsfw` removed from base UC only when explicit
-- [ ] Creature partners in sexual images are anthro, semi-anthro, taur or other humanoid-bodied, and sapient; a feral only with another anthro
 - [ ] Frame reads as the chosen beat
 - [ ] Each act prefixed in the actor's box; anatomy in its owner's box; contact named in prose
 - [ ] One sex position tag; hidden anatomy dropped

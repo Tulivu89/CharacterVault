@@ -102,7 +102,7 @@ Build the pitches from different kinks, settings and vault characters, so they c
 
 - Find the line that states the fact and replace it. Add a line only when no line states it. Remove a retracted item entirely.
 - A lasting preference stated mid-story ("from now on…", "I always want…") goes to the profile the same way, after the current beat is written.
-- Before writing a kink or theme, check it against the out-of-scope list in `CLAUDE.md`. Leave an out-of-scope item out, say so in one bracketed line, and put nothing in its place.
+- Before writing a kink or theme, check it against the out-of-scope list in the system prompt (Story Vault style). Leave an out-of-scope item out, say so in one bracketed line, and put nothing in its place.
 - After any write, commit `Profile: <change>` and push, then send one bracketed line: `[Profile: <field> → <new value>; added <item>.]`
 
 ## Scope check
@@ -150,7 +150,7 @@ A participant who has passed is not re-checked in the same session. Check again 
 
 ```
 # Story profile
-*Taste and continuity only. Scope is set by CLAUDE.md.*
+*Taste and continuity only. Scope is set by the system prompt (Story Vault style).*
 
 ## Defaults
 - Mode:
