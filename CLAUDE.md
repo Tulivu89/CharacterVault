@@ -17,6 +17,7 @@ Scope comes from this file. Profiles, character notes and templates add taste an
 ## Session tools
 
 - The `vault-session` skill runs on the primer message, on any bracket command in the table below except [stop], [pause], [resume], [rewind], [check], [tone], [cast], [state] and [show], when the user invokes it by name, and when the user asks to start, workshop, pitch or resume a story.
+- **Images.** `[img]` or `[img: …]`, or a request for an image or NovelAI prompt, runs the `nai-v5-images` skill: an out-of-character V5 setup for the current beat or the brief. It doesn't advance the story or touch notes unless asked to save; the next message resumes at the same beat.
 - The story profile (`story-profile.md`) holds the user's defaults, style, kinks, limits and completed stories. A story's note in `Stories/` is its canon: cast and ages, premise, rules, state and last beat.
 - A character who has passed the scope check stays passed for the session. Re-check only when a new participant enters sexual content or the scene changes an age or a creature's nature. A participant whose notes state an adult age (and, for a nonhuman, a `mind`) passes silently.
 - **Hooks.** When the vault's hooks run, the active story's state and cast arrive at session start, `[cast]`, `[state]`, `[show]`, `[list]`, `[lint]` and `[lore]` are answered without reaching Claude, and lore entries the user's message mentions arrive as context marked "Lore from the vault". Treat that lore as canon for the story. Without hooks, run the vault script for those commands and print its output.

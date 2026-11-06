@@ -10,6 +10,7 @@ A Claude Code setup for adult roleplay and fiction, built as an Obsidian vault. 
 - [Running a story](#running-a-story)
 - [Settings and lore](#settings-and-lore)
 - [The style library](#the-style-library)
+- [Images](#images)
 - [How the scope checks work](#how-the-scope-checks-work)
 - [Customizing](#customizing)
 - [Bringing in an existing vault](#bringing-in-an-existing-vault)
@@ -23,6 +24,7 @@ A Claude Code setup for adult roleplay and fiction, built as an Obsidian vault. 
 |---|---|---|
 | Base instructions | `CLAUDE.md` | What's in and out of scope, how Claude writes, the bracket controls. Loaded every session. |
 | Session skill | `.claude/skills/vault-session/` | Pitches, sets up, resumes, saves and finishes stories; runs the cast check; keeps your style library. |
+| Image skill | `.claude/skills/nai-v5-images/` | Writes NovelAI Diffusion V5 image setups for a story beat or a character, on `[img]`. Its tag lists, artist and style references and pose libraries live in its `references/` folder and load only when it runs. |
 | Vault script | `.claude/scripts/vault.py` | Makes notes from templates, loads notes cleanly, prints cast and state, checks the vault for mistakes. |
 | Hooks | `.claude/hooks/`, `.claude/settings.json` | Load the active story at session start, answer viewer commands for free, load lore when you mention it, show the status line. |
 | Templates | `Templates/` | One per note type. |
@@ -325,6 +327,15 @@ Characters in the same world who aren't in the cast work the same way: mention o
 | `[distill]` | Turn the logged examples into short style rules for your profile, for your approval. |
 
 Claude matches the quality of your Keep entries but never reuses their wording. When a category fills up, Claude suggests `[distill]` and archives the raw examples, so the library stays small.
+
+## Images
+
+`[img]` asks for a NovelAI Diffusion V5 setup of the current beat: a short plan, the settings line, base prompt, base UC, and one character prompt and UC per character, ready to paste into NovelAI. `[img: …]` points it somewhere else: `[img: Cleo, portrait, Painterly Warm]`, `[img: the moment before the door opens]`. A plain request ("make an image of Qiulong in her tea shop") works too.
+
+- Characters come from their prompt notes (`<Name> - Prompt - Card Looks`) when they have one, otherwise from the character page and the story's profile; clothing and injuries come from the story's state.
+- Images are stricter than the stories: only adult and elder characters appear in frame, and explicit images need humanoid, sapient partners. Anything the image can't show stays in the story text.
+- Nothing is saved unless you say so ("save that" or `[img save]`). Scene setups then go in `Stories/Images/<Story> - Images.md` (explicit ones in a separate `- Adult` file), character looks in the character's prompt note.
+- The rules follow the v8 prompt instructions: Quality Tags off, UC Preset None, everything written out. Name a style block (Vivid Pop, Painterly Comic with a theme, Anime Pinup) to use it.
 
 ## How the scope checks work
 
