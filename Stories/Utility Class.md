@@ -10,7 +10,7 @@ pov: third
 tense: past
 rating: explicit
 drafts: off
-last_beat: "Day 9, 1300. Charlie used her while Chuck watched; Ilse spat Lucan's load and drew a complaint; Hale raised her hips for the dock shift and dodged the brace-bolt question. Vuk Dragan is stepping onto the plinth with Bogdan behind him."
+last_beat: "Day 10, after Hoss. Ilse asks Hale what a 3.5 average takes. Previously: Day 9, 1300. Charlie used her while Chuck watched; Ilse spat Lucan's load and drew a complaint; Hale raised her hips for the dock shift and dodged the brace-bolt question. Vuk Dragan is stepping onto the plinth with Bogdan behind him."
 words:
 created: 2026-11-05
 ---
@@ -47,6 +47,8 @@ created: 2026-11-05
 - Aedling transaction script is a cultural practice, tattooed by custom, not written by the body. It records standing arrangements, not single uses: Ysolde carries one inscription for her whole penal service, and a man who uses a utility once carries nothing.
 - Uplifted Terran pigs are a sapient Terran species (a scientist's tweak on the nearest-to-human brain). They speak a developed language of grunts and oinks.
 - The Frame adjusts posture by species when a badge scans. For an uplifted pig it lowers and slides her feet back to all fours.
+- **Cross-section view.** On a user's request either hologram flips to a live x-ray cutaway: the penetration, the anatomy, and the ejaculation as it happens.
+- **Porcine mating.** The corkscrew tip hunts and works at the cervix for a minute or more, with short shallow thrusts, before it notches in and locks. The thin pre-fraction pours out around the shaft meanwhile, logged on entry anyway. Once locked the boar goes still; the sperm-rich fraction flows into the womb in long surges with backflow, then a gel fraction sets as a partial plug. About 8 to 10 minutes.
 
 ## In play
 *Kinks and themes this story explores, in the profile's words.*
@@ -65,7 +67,9 @@ created: 2026-11-05
 - Ilse is certain she was framed for Shaft Nine and keeps a mental list of names from that night. Hale knows something about Shaft Nine that isn't in her file.
 - Hale let slip that the Shaft Nine brace bolts were cut halfway through. The tribunal never mentioned bolts. Pressed, he deflected.
 - Day 9 shift so far: 31.6 mL by 1200 (Charlie 3.7; Lucan 0.0, spat). Column still reads 39.2 L.
-- **Violation review pending:** Lucan Aurel's complaint, *Deliberate Waste of Deposit*.
+- Lucan's complaint (*Deliberate Waste of Deposit*) ended in a written warning; Hale called it an allergic response.
+- Day 10 (Thursday): Hoss set a Concourse single-deposit record, +438.2 mL. **38.5 L remaining.** Seven-day average 2.4. Hale used the exceptional yield clause to commute Tier 0 day 5: she moves to **Tier 1, Concourse Stand**, on Day 11.
+- Hoss is a Thursday regular and uses the Stand too. Porcine Terrans don't use the Shower Block (they have their own wallow deck). Ilse has asked Hale what a 3.5 takes.
 - Hale reset the Frame at 1200: hips higher, feet back and wider, "for tie geometry."
 - Charlie and Chuck have seen her on the Frame. Chuck tells coworkers she's a second cousin. Charlie rated her 2 stars. The Yield brochure is still in the yoke.
 
@@ -74,6 +78,7 @@ created: 2026-11-05
 - 2026-11-05: setup workshopped and written. Scene not yet opened.
 - 2026-11-05: setup locked; scene opened (Day 9, start of shift).
 - 2026-11-05: Charlie and Chuck replace Dale as the first user; Lucan, Hale check-in played. Aedling script retconned to cultural, one inscription per arrangement. Hoss added for Day 10.
+- 2026-11-06: Dock shift and Day 10 (Hoss) played. Added the cross-section hologram and porcine mating accuracy. Manuscript compiled: [[Utility Class — Manuscript]].
 
 ## Story
 *DRAFT output, or links to chapter notes.*
