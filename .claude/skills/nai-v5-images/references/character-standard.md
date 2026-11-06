@@ -70,7 +70,7 @@ One guard per line, each ending with a comma:
 | Full body, wide | 1, 2, 4, 5 (tags only), 7, 9–13 | 6, Sentence 1 when the face is small |
 | From behind, head down | 1, 2, 3, 9–13 | 5–8 |
 
-Note every dropped anchor in the setup's notes (SKILL.md §11).
+Claude applies these trims before delivering. Each framing variant goes out as a complete, already-trimmed box (SKILL.md §4); the user never edits lines out. Note dropped anchors in the setup's notes (SKILL.md §11).
 
 ## Body kits (v0, untested)
 

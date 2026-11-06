@@ -52,6 +52,14 @@ girl, toned, long hair, low ponytail, brown hair, brown eyes, thick eyebrows, fr
 ```
 UC: `tareme, petite, long eyelashes, makeup, round face, button nose, furrowed brow, frown, sweat, shiny skin`
 
+Tomboy Vixen (petite, sharp, unmade-up) — v0, untested
+```
+girl, petite, 0.4::mature female::, toned, medium hair, straight hair, black hair, grey eyes, tsurime. Face heart-shaped, wide cheekbones tapering to small pointed chin, upturned eyes, small straight nose. Straight dark eyebrows, clean angular cheekbones, wide mouth with full lower lip, no makeup. grey tank top
+```
+UC: `tareme, round face, chubby cheeks, button nose, freckles, makeup, eyeliner, eyeshadow, long eyelashes, lipstick, thick eyebrows`
+
+Vixen with the glamour removed: no eyeliner or lashes, straight brows instead of arched. Built for Ilse Brandt after Ranger read too severe in a semi-real mix.
+
 ## Ethnicity overlays
 
 Skin tag in identity slot, hair texture in hair slot, descriptor sentence where Sentence 1 sits. Western/e621-heavy artists respond best; anime leads pull back toward their average.
@@ -108,6 +116,14 @@ girl, tall female, 0.6::mature female::, dark-skinned female, very dark skin, lo
 UC: `pale skin, straight hair, tareme, petite, round face, chubby cheeks, button nose`
 
 Natural pairings: Willow + East African, Siren + Middle Eastern, Doll + East Asian, Ranger + Northern European, Vixen + South Asian.
+
+## To revisit
+
+| Date | Finding | Next step |
+| --- | --- | --- |
+| 2026-11-06 | Ranger and Willow overshoot in realistic and semi-real mixes (Semirealistic, pinup + photoreal skin): gaunt, severe, heavy brow and jaw. | Bench each kit per style family. Try Sentence 2 at reduced strength or dropped in semi-real; tie a kit strength to each style block. |
+| 2026-11-06 | "Deep-set" eyes plus cold overhead light gives dark under-eye bands in every style. | Front fill light in face tests; A/B `bags under eyes` in UC (not in the tag files). |
+| 2026-11-06 | `scar on face` renders crossed or stitched slashes, sometimes several. | `0.5::scar on face::` plus a prose sentence naming one thin faded line; `stitches` in UC. Bench a proper scar recipe. |
 
 ## Troubleshooting
 

@@ -1,5 +1,5 @@
 # Story profile
-*Taste and continuity only. Scope is set by CLAUDE.md.*
+*Taste and continuity only. Scope is set by the system prompt (Story Vault style).*
 
 ## Defaults
 - Mode: DIRECT

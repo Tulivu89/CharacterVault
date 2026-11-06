@@ -2,7 +2,7 @@
 
 On a Rim mining station, convicts are reclassified as infrastructure for public use, and they work off sentences measured in liters. This module is a drop-in setting for a **Claude is Claude (CiC) story vault**, the Claude Code and Obsidian vault with `vault.py`, the `vault-session` skill and the hooks. Play any role, utility, client or overseer, with your own species and gender, against a ready-made cast. Or direct, and Claude writes everyone.
 
-**Adult fiction.** Every character is an adult. Users are sapient only. Your vault's `CLAUDE.md` sets scope, and this module never widens it.
+**Adult fiction.** Every character is an adult. Users are sapient only. Your vault's own scope (its system prompt or `CLAUDE.md`) applies, and this module never widens it.
 
 ## What's inside
 

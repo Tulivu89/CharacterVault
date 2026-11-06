@@ -1,4 +1,5 @@
 {
+  "outputStyle": "Story Vault",
   "hooks": {
     "SessionStart": [
       {

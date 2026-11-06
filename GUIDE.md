@@ -22,7 +22,9 @@ A Claude Code setup for adult roleplay and fiction, built as an Obsidian vault. 
 
 | Part | Where | What it does |
 |---|---|---|
-| Base instructions | `CLAUDE.md` | What's in and out of scope, how Claude writes, the bracket controls. Loaded every session. |
+| System prompt | `.claude/output-styles/story-vault.md` | The Story Vault output style: what's in and out of scope, image limits, how Claude writes, the bracket controls. Selected in `.claude/settings.json`; replaces Claude Code's coding instructions. |
+| Vault instructions | `CLAUDE.md` | Note types, vault rules, the script, Git. Loaded every session. |
+| Maintenance skill | `.claude/skills/vault-dev/` | Engineering guidance for changing the script, hooks, skills, templates, settings and docs. Loads only for that work. |
 | Session skill | `.claude/skills/vault-session/` | Pitches, sets up, resumes, saves and finishes stories; runs the cast check; keeps your style library. |
 | Image skill | `.claude/skills/nai-v5-images/` | Writes NovelAI Diffusion V5 image setups for a story beat or a character, on `[img]`. Its tag lists, artist and style references and pose libraries live in its `references/` folder and load only when it runs. |
 | Vault script | `.claude/scripts/vault.py` | Makes notes from templates, loads notes cleanly, prints cast and state, checks the vault for mistakes. |
@@ -33,7 +35,7 @@ A Claude Code setup for adult roleplay and fiction, built as an Obsidian vault. 
 
 Two rules hold the design together:
 
-1. **Scope lives in `CLAUDE.md` and nowhere else.** Profiles, templates and character notes add taste and continuity; they can't widen what's allowed.
+1. **Scope lives in the system prompt (the Story Vault style) and nowhere else.** Profiles, templates and character notes add taste and continuity; they can't widen what's allowed.
 2. **The vault is the memory.** Anything that must survive the session (a last beat, an injury, a new fact about a character) is written to a note. The chat can be compacted or closed; the vault carries on.
 
 ## Getting started
@@ -339,7 +341,7 @@ Claude matches the quality of your Keep entries but never reuses their wording. 
 
 ## How the scope checks work
 
-`CLAUDE.md` sets the scope: dark and explicit themes are open, with every participant in sexual content an adult, sapient, and fictional.
+The system prompt (Story Vault style) sets the scope: dark and explicit themes are open, with every participant in sexual content an adult, sapient, and fictional.
 
 The check runs on everyone who may enter sexual content, when a story is set up or resumed, and on anyone who joins sexual content later. It reads the story's Cast lines and the version's frontmatter.
 
@@ -356,11 +358,11 @@ The quickest way to never be asked: put `age` (and `body_age` or `mind` where th
 **Change freely:**
 - the templates (keep the frontmatter fields the script reads: `type`, `character`, `profile`, `stage`, `age`, `body_age`, `mind`, `world`, `rating`, `status`);
 - your profile, through `[profile]` or by asking ("from now on, slower burns");
-- the Craft section of `CLAUDE.md` (turn length, planning, voice);
+- the Craft section of the Story Vault style (turn length, planning, voice);
 - the style library;
-- a prose-style skill of your own, which `CLAUDE.md` tells Claude to use when one is installed.
+- a prose-style skill of your own, which the Story Vault style tells Claude to use when one is installed.
 
-**Leave as is:** the Scope section of `CLAUDE.md` and the scope check in the session skill. The rest of the system is built to work with them.
+**Leave as is:** the Scope section of the Story Vault style and the scope check in the session skill. The rest of the system is built to work with them.
 
 ## Bringing in an existing vault
 
