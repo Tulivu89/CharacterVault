@@ -21,6 +21,7 @@ created: {{date}}
 # {{title}}
 *Edit in the boxes below (Meta Bind) or in the Properties panel. The copy-ready prompts rebuild themselves from these fields. For more looks, add `outfit_3_name`, `outfit_3_prompt` and `outfit_3_negative` and copy an Outfit block.*
 *Small-statured adults keep `child, aged down` in the negative prompt.*
+*Lay out every field per `.claude/skills/nai-v5-images/references/character-standard.md`: one slot per line, head to toe, each line ending in a comma or period. In Properties, multi-line fields save as block scalars (`|`).*
 
 ## Base
 **Prompt**
@@ -54,17 +55,17 @@ created: {{date}}
 *Long-press to select and copy.*
 
 ### `VIEW[{outfit_1_name}][text]`
-`VIEW[{base_prompt}, {outfit_1_prompt}][text]`
+`VIEW[{base_prompt} {outfit_1_prompt}][text]`
 
 ### `VIEW[{outfit_2_name}][text]`
-`VIEW[{base_prompt}, {outfit_2_prompt}][text]`
+`VIEW[{base_prompt} {outfit_2_prompt}][text]`
 
 ## Negative / undesired
 **`VIEW[{outfit_1_name}][text]`**
-`VIEW[{base_negative}, {outfit_1_negative}][text]`
+`VIEW[{base_negative} {outfit_1_negative}][text]`
 
 **`VIEW[{outfit_2_name}][text]`**
-`VIEW[{base_negative}, {outfit_2_negative}][text]`
+`VIEW[{base_negative} {outfit_2_negative}][text]`
 
 ## Emotion tags
 | Emotion | Tags |
