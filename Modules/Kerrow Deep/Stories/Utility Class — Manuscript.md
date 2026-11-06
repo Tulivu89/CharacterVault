@@ -1,7 +1,7 @@
 ---
 type: manuscript
 story: "[[Utility Class]]"
-world: "[[Imperial Sector]]"
+world: "[[Kerrow Deep]]"
 rating: explicit
 status: draft
 covers: Days 9–10
