@@ -81,7 +81,7 @@ created: 2026-11-05
 - 2026-11-06: Dock shift and Day 10 (Hoss) played. Added the cross-section hologram and porcine mating accuracy. Manuscript compiled: [[Utility Class — Manuscript]].
 
 ## Story
-*DRAFT output, or links to chapter notes.*
+*Links to the story text, added as it saves after each story turn (`<Title> - Part 01` and on). Briefs and planning notes can sit below them.*
 
 ### Session setup
 | | |

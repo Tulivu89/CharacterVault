@@ -2,7 +2,8 @@
 """UserPromptSubmit hook.
 
 - A prompt that is only a viewer command ([cast], [state], [show X], [list ...],
-  [lint], [lore text]) is answered here and blocked, so no model turn is spent.
+  [lint], [lore text], [help] or [menu]) is answered here and blocked, so no
+  model turn is spent.
 - Any other prompt: lore entries whose keys it mentions are injected once per
   session, scoped to the active story's world.
 Fails open: any error lets the prompt through untouched.
@@ -20,7 +21,7 @@ STATE = HERE.parent / "state"
 sys.path.insert(0, str(SCRIPT.parent))
 import vault  # noqa: E402
 
-VIEW = re.compile(r"^\s*\[(cast|state|show|list|lint|lore)(?:[:\s]+([^\]]*))?\]\s*$", re.I)
+VIEW = re.compile(r"^\s*\[(cast|state|show|list|lint|lore|help|menu)(?:[:\s]+([^\]]*))?\]\s*$", re.I)
 MAX_LORE = 8
 
 
@@ -37,6 +38,8 @@ def viewer(cmd, arg):
         arg = story.name
     if cmd == "list":
         return run(["list", *shlex.split(arg)])
+    if cmd in ("help", "menu"):
+        return run(["help"])
     return run([cmd, arg] if arg else [cmd])
 
 

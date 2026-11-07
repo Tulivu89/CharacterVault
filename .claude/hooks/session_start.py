@@ -45,6 +45,8 @@ def main():
 
     if source in ("startup", "clear", "compact"):
         (STATE / f"lore-{session_id}.json").unlink(missing_ok=True)
+    if source == "clear":
+        (STATE / f"play-{session_id}").unlink(missing_ok=True)  # autosave waits for vault-session again
 
     notes = vault.all_notes()
     story = vault.active_story(notes)

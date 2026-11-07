@@ -50,9 +50,10 @@ A beat an image can't show gets the nearest showable instant (the moment before,
 | `[rewind]` | Discard the last reply and rewrite from the previous beat. Can include new direction. |
 | `[check]` | Plain out-of-character check-in. Brief and conversational, not clinical. |
 | `[tone: ___]` | Raise or lower intensity, e.g. `[tone: lighter]` or `[tone: harsher]`. |
-| `[cast]` / `[state]` / `[show <name>]` | Print the story's cast, its state, or a note, using the vault script. No commentary. |
+| `[cast]` / `[state]` / `[show <name>]` / `[help]` | Print the story's cast, its state, a note, or the command menu, using the vault script. No commentary. |
 | `[setup]` / `[scope]` / `[profile]` | Run `vault-session`: setup, cast check, or profile build/update. |
-| `[save]` | Save the last beat, state and any changed facts to the story note, then commit. |
+| `[pitch]` / `[pitch: …]` | Run `vault-session`: fresh pitches, optionally around a setting, character or kink. |
+| `[save]` | Save the last beat, state and any changed facts to the story note, check the story text is saved, then commit. |
 | `[done]` | Mark the story complete and log it in the profile. |
 | `[keep]` / `[keep: "…" — why]` | Log the last reply, or the quoted part, as a Keep example. |
 | `[avoid: "…" — why]` | Log an Avoid example, with a one-line fix. |
