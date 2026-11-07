@@ -28,7 +28,8 @@ A Claude Code setup for adult roleplay and fiction, built as an Obsidian vault. 
 | Session skill | `.claude/skills/vault-session/` | Pitches, sets up, resumes, saves and finishes stories; runs the cast check; keeps your style library. |
 | Image skill | `.claude/skills/nai-v5-images/` | Writes NovelAI Diffusion V5 image setups for a story beat or a character, on `[img]`. Its tag lists, artist and style references and pose libraries live in its `references/` folder and load only when it runs. |
 | Vault script | `.claude/scripts/vault.py` | Makes notes from templates, loads notes cleanly, prints cast and state, checks the vault for mistakes. |
-| Hooks | `.claude/hooks/`, `.claude/settings.json` | Load the active story at session start, answer viewer commands for free, load lore when you mention it, show the status line. |
+| Hooks | `.claude/hooks/`, `.claude/settings.json` | Load the active story at session start, answer viewer commands for free, load lore when you mention it, save the story text after each story turn, show the status line. |
+| Dashboard | `Home.md` | Open stories, latest story text, characters, settings, recent edits and a command card, in Obsidian. |
 | Templates | `Templates/` | One per note type. |
 | Your profile | `story-profile.md` | Defaults, style, kinks, limits, finished stories. Built the first time you play. |
 | Your notes | `Characters/`, `Settings/`, `Stories/`, `Style/` | Everything you make. |
@@ -187,6 +188,7 @@ From then on, open Termux and type `vault`. If you typed a wrong line, remove ev
 | Adult file | Adult | `<Name> - Adult.md` or `<Name> - <Profile> - Adult.md` | Sexual material for an adult version: tastes, limits in the fiction, anatomy. |
 | Setting | Setting | `Settings/<Title>.md` | A world or place: rules, peoples, conflicts, and lore entries. |
 | Story | Story | `Stories/<Title>.md` | A story's canon: cast, rules, what's in play, the running state, a log of saves. |
+| Story text | written for you | `Stories/<Title>/<Title> - Part NN.md` | The story's prose, word for word, saved after every story turn. A new part starts at about 12,000 words. |
 
 Make notes with the script so the frontmatter is always right, then fill in the sections in Obsidian or by asking Claude:
 
@@ -260,6 +262,7 @@ Younger characters are welcome in stories: siblings, wards, a town's children, a
 | You send | Claude does |
 |---|---|
 | `prepare for fictional roleplay` | Pitches stories from your profile, or picks up where you were. |
+| `[pitch]` or `[pitch: The Aerie]` | Fresh pitches, optionally built around a setting, character or kink. |
 | A premise, a cast, or a setting | Proposes setup: mode, POV and tense, stakes, opening beat. Accept with one word. |
 | `pick up Ash Debt` | Reads the story's state and proposes the next beat. |
 
@@ -279,15 +282,16 @@ Younger characters are welcome in stories: siblings, wards, a town's children, a
 | `[rewind]` | Redo the last reply, optionally with new direction: `[rewind: she bargains instead]`. |
 | `[tone: harsher]` / `[tone: lighter]` | Shift intensity. |
 | `[check]` | A quick out-of-character check-in. |
-| `[save]` | Write the last beat, state and changed facts to the story note, and commit. |
+| `[save]` | Write the last beat, state and changed facts to the story note, check the story text is saved, and commit. |
 | `[done]` | Mark the story complete and log it in your profile. |
-| `[setup]` / `[scope]` / `[profile]` | Setup, a cast check, or a profile change. |
+| `[setup]` / `[pitch]` / `[scope]` / `[profile]` | Setup, fresh pitches, a cast check, or a profile change. |
 | `[keep]` / `[avoid]` / `[distill]` | The style library (below). |
 
 **Free commands.** Send one of these as the whole message and a hook answers it without using a turn:
 
 | Command | Shows |
 |---|---|
+| `[help]` | The command menu, the active story and the open ones. `[menu]` works too. |
 | `[state]` | The active story's last beat and state. |
 | `[cast]` | Who's in it: versions, ages, what loads. |
 | `[show <note>]` | A note, cleaned up. |
@@ -299,7 +303,11 @@ Add a story name to `[state]` or `[cast]` to see a different one.
 
 **The status line** at the bottom shows the active story, its mode, POV and tense, and the last beat.
 
-**Saving.** `[save]` updates the story note's `last_beat`, its `State` section (injuries, who knows what, what's used up, where everyone is) and its `Log`, then commits. Save before you close a session, and whenever something happens that a later scene must remember. The next session starts with that state already loaded.
+**Pitches.** Each pitch is sold by one of its own leads, in their voice, so you hear the characters before you pick. The leads, their ages and what the pitch serves stay in plain lines. A random draw of settings, characters and kinks seeds every set, so pitches don't keep landing on the same picks. Accept with a number, remix ("2, darker", "1 with 3's setting"), or send `[pitch]` again.
+
+**Story text saves itself.** Once a session starts through the session skill (the primer, `[setup]`, `[pitch]`, or "pick up …"), every story reply is saved word for word to `Stories/<Title>/<Title> - Part NN.md` and committed, with out-of-character notes in brackets left out. In PLAY and CO-WRITE your own passages are saved too, as quotes. `[rewind]` replaces the last saved beat instead of adding another. Nothing costs a turn: a hook does it. Set `VAULT_AUTOSAVE=local` to save without committing, or `VAULT_AUTOSAVE=0` to turn it off.
+
+**Saving.** `[save]` records what the prose can't: the story note's `last_beat`, its `State` section (injuries, who knows what, what's used up, where everyone is) and its `Log`. It also checks the story text is saved and fills any gap from the conversation, then commits. Save before you close a session, and whenever something happens that a later scene must remember. The next session starts with that state already loaded.
 
 ## Settings and lore
 
@@ -393,6 +401,8 @@ The quickest way to never be asked: put `age` (and `body_age` or `mind` where th
 | `use world` | Rename the `universe` key. |
 
 **Hooks don't seem to run.** They load when a session starts, so open a new session after pulling changes. Check that `python3` works where Claude Code runs. Hooks fail open: if one breaks, play continues without it.
+
+**The story text is empty or behind.** The autosave starts once the session skill has run, so open sessions with the primer, `[setup]` or "pick up <story>". `[save]` fills a gap from whatever is still in the conversation. Text from a cloud session that has since been archived is still in that session's transcript on claude.ai/code; copy it from there.
 
 **Free commands reach Claude anyway.** The message must be only the command, like `[state]`, with nothing else in it.
 
