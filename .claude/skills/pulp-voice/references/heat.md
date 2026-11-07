@@ -97,39 +97,45 @@ Written fresh for this file. Use them for the kind of move, never the wording.
 
 **Kink and taboo between the close-ups** (fully explicit, close third, one POV handoff at the climax):
 
-> The clerk had a folding table at the end of the stocks and a ledger held open with a smoothing stone. "Name."
+> Dean had Dad's hands, square thumbs, the nails split from the yard, and he pressed them into her hips until the bar of the frame bit.
 >
-> "Joost Hoek."
+> "Look at the state of you, Duchess."
 >
-> "Relation to the utility?"
+> Dad stood by the bin where she could see him, Dean's jacket over his arm. Dean got his zip down and pushed his cock into her, and it went in easy. The man before him had left her slick. Dad watched it go in. Lorna held his eye.
 >
-> Marit heard her brother laugh before he answered. "Brother."
+> "You was always too good for this street." Dean fucked her in short shoves that knocked the frame against its bolts.
 >
-> The clerk wrote it down without looking up and turned the ledger round for him to sign.
+> "Were," Lorna said.
 >
-> The stocks held Marit at the neck and wrists, bent at the waist, her skirt pinned up over her back by regulation, the board under her chin lettered MARIT HOEK, 26, RESTITUTION, FOURTEEN MARKET DAYS. The square smelled of herring and tar. At the third stall across it, her father was weighing haddock for a woman in a green shawl. He didn't look up either.
+> Dean laughed. "There she is."
 >
-> Joost took his time getting behind her. He put a hand on the small of her back, the left one, with the white seam across the knuckles where she'd cut him the winter their mother died, and she knew whose it was before he spoke.
+> The bus queue had turned round. A woman with a sausage roll. Two lads in hi-vis, one filming. Every time somebody shifted for a look her cunt tightened on him. Her hips pushed back onto Dean once, without her, and he stopped dead.
 >
-> "You always said I'd never get anything off you," he said, and pushed into her.
+> "Oh, that's rank." He pulled a face for the queue. "Dad, she's wet. For me."
 >
-> She'd been wet since the last man, and she hated that he'd feel it and think it was for him. He felt it. He made the pleased noise in his nose he made over a knot that held, and began to move.
+> It was the half-eleven man's, and she'd have to say so in front of Dad. She let Dean think what he liked.
 >
-> He fucked her the way he rowed: hard off the mark, lazy once he was sure of the water. Two rope-walkers stopped with a coil slung between them and didn't pretend to be doing anything else. The stocks creaked in time with him. Marit fixed her eyes on her father's boots under the stall and gave Joost nothing, not one sound, while her body went on taking him, slick and easy. It didn't care whose he was. She did.
+> "Pat was asking after her," Dad said to Dean.
 >
-> "Pa!" Joost called across the square, without breaking stride. "Turns out she's good for something."
+> "Hear that? Auntie Pat's asking after you." He started again, slow, nearly out each time. "I'll tell her you're keeping busy." Then, to Dad: "I'm not pulling out."
 >
-> Her father set a brass weight on the scale. "Two and six," he told the woman in the shawl.
+> Dad moved the jacket to his other arm. "Car's on the meter."
 >
-> It came up on Joost faster than he wanted; he had never once made anything of hers last. His balls drew up tight, and he shoved in to the root and held there while the pull went through him from behind them, once, again, his cock jerking inside her with each one and his fingers driven into her hip hard enough to bruise. "Fuck," into her back, quiet.
+> "Dean." It came out in Mum's voice, the one for muddy boots on the stair carpet.
 >
-> She felt all of it: the throb of him buried and still, the heat spreading where she couldn't stop it, the slow give as he softened. When he pulled out it followed him, warm down the inside of her thigh, then cool, and dripped onto the cobbles under the stocks where the rope-walkers could see it.
+> Dean had been told off in that voice since before she was born. His bollocks drew up tight against her. He shoved in as deep as he'd go and held, and it took him in the muscle behind them, back toward his arse: a hard pull he had no say in, then the next, each one kicking through his cock into her. He'd had a line ready for Dad. It went. He breathed through his teeth, thumbs dug in, till it stopped.
 >
-> Joost wiped himself on her pinned-up skirt and went to sign. The clerk blotted the page.
+> Lorna felt each one from the inside: the stretch of him gone still, the throb, the heat pushing up past where her fingers could get it out once the frame came off at six. Dean's. He'd told Dad first. He'd been telling Dad on her since the greenhouse window and the fags in her school bag, and Dad had held his jacket for this one. Her cunt squeezed him anyway, and he flinched.
 >
-> "Next."
+> He pulled out and it followed, slow, then down the inside of her thigh into the top of her sock. She clenched to stop it and pushed out more. The one filming tipped his phone down after it. Dad looked at that too.
+>
+> Dean took his jacket off Dad. They walked up the precinct toward the car, Dad a step in front, and the bus came in and took half the queue, and a man who'd let it go put his carrier bag down by her foot.
 
-What it does: the taboo carries the heat between the close-ups. The ledger asks his relation to her, her father keeps selling fish, and the crowd stops to watch. What she feels of him is tied to who he is: the scar she gave him, the way he rows, what he shouts to Pa. Her refusal to make a sound runs against what her body does. Explicit words land at entry, the climax and the drip on the cobbles, and the scene closes wide on procedure.
+What it does:
+
+- The taboo carries the heat between the close-ups. Dean has Dad's thumbs and uses a family nickname. He plays disgust for Dad at her being wet for him. Dad answers with Pat's news, holds the jacket, and meets "I'm not pulling out" with the meter, while a bus queue turns round to watch.
+- Her dual track runs the whole scene. She holds Dad's eye and corrects Dean's grammar while her body tightens and pushes back. She lets Dean's wrong guess stand, because the truth about the man before is no better to say in front of Dad. Each voice stays its own: Dean needles, Dad talks about her in the third person, Lorna says two words.
+- The climax gives his anatomy in his POV, then her being filled, tied to who he is and what he did. He told Dad first, as he has since the greenhouse window and the fags in her school bag. Then the leak with Dad looking, and a fast pull wide to the car, the bus and the next man's carrier bag.
 
 **The same beat as a porn loop, then fixed** (a sapient wolfkin, a breeding kink):
 
