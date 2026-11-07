@@ -7,6 +7,13 @@
 - Tense: Past
 - Explicitness: Fully explicit
 
+## Co-writer
+*Optional. Your co-writer's name, personality and voice for out-of-character talk; empty means plain Claude. Build or change it with [persona].*
+- Name:
+- Personality:
+- Voice:
+- Sample line:
+
 ## Style
 - Register: Dark fantasy and sci-fi; grounded, visceral, pulp-inflected
 - Notes: Female characters who push back. Open to kinky pitches. Prose runs through the pulp-voice skill (anti-slop and style).
