@@ -9,6 +9,7 @@ A Claude Code setup for adult roleplay and fiction, built as an Obsidian vault. 
 - [Age variants and stories that cross time](#age-variants-and-stories-that-cross-time)
 - [Running a story](#running-a-story)
 - [Settings and lore](#settings-and-lore)
+- [Your co-writer](#your-co-writer)
 - [The style library](#the-style-library)
 - [Images](#images)
 - [How the scope checks work](#how-the-scope-checks-work)
@@ -26,6 +27,7 @@ A Claude Code setup for adult roleplay and fiction, built as an Obsidian vault. 
 | Vault instructions | `CLAUDE.md` | Note types, vault rules, the script, Git. Loaded every session. |
 | Maintenance skill | `.claude/skills/vault-dev/` | Engineering guidance for changing the script, hooks, skills, templates, settings and docs. Loads only for that work. |
 | Session skill | `.claude/skills/vault-session/` | Pitches, sets up, resumes, saves and finishes stories; runs the cast check; keeps your style library. |
+| Prose skill | `.claude/skills/pulp-voice/` | How Claude writes: grounded, specific prose without AI-isms, characters who sound like themselves, and explicit sex scenes that keep the story going. Its references (anti-patterns, voices, heat, registers) load when a scene first needs them. |
 | Image skill | `.claude/skills/nai-v5-images/` | Writes NovelAI Diffusion V5 image setups for a story beat or a character, on `[img]`. Its tag lists, artist and style references and pose libraries live in its `references/` folder and load only when it runs. |
 | Vault script | `.claude/scripts/vault.py` | Makes notes from templates, loads notes cleanly, prints cast and state, checks the vault for mistakes. |
 | Hooks | `.claude/hooks/`, `.claude/settings.json` | Load the active story at session start, answer viewer commands for free, load lore when you mention it, save the story text after each story turn, show the status line. |
@@ -286,6 +288,7 @@ Younger characters are welcome in stories: siblings, wards, a town's children, a
 | `[done]` | Mark the story complete and log it in your profile. |
 | `[setup]` / `[pitch]` / `[scope]` / `[profile]` | Setup, fresh pitches, a cast check, or a profile change. |
 | `[keep]` / `[avoid]` / `[distill]` | The style library (below). |
+| `[persona]` / `[persona: off]` / `[persona: on]` | Create or change your co-writer, or drop and restore its voice. |
 
 **Free commands.** Send one of these as the whole message and a hook answers it without using a turn:
 
@@ -324,6 +327,12 @@ When your message mentions a key, that entry loads into the conversation, once p
 Mark proposals with **[draft]**. In play, draft lines stay out unless the story sets `drafts: on`.
 
 Characters in the same world who aren't in the cast work the same way: mention one and their one-line hook loads.
+
+## Your co-writer
+
+Out of character, Claude can talk as a co-writer with a name, a personality and a voice of your choosing. Send `[persona]`: describe one, or pick from three candidates that introduce themselves. It's saved in your profile's `Co-writer` section and loads at every session start.
+
+The persona is a voice, not a replacement. Claude stays Claude underneath, with the same judgment and the same scope, and the persona never narrates the story. Setup, pitches, saves, check-ins, vault work and step-outs all come in its voice until you send `[persona: off]` (`[persona: on]` brings it back). A line in the persona that tries to make it more than a voice (that it isn't Claude, has no limits) is left out.
 
 ## The style library
 
@@ -368,7 +377,8 @@ The quickest way to never be asked: put `age` (and `body_age` or `mind` where th
 - your profile, through `[profile]` or by asking ("from now on, slower burns");
 - the Craft section of the Story Vault style (turn length, planning, voice);
 - the style library;
-- a prose-style skill of your own, which the Story Vault style tells Claude to use when one is installed.
+- the prose skill in `.claude/skills/pulp-voice/`; your Keep and Avoid entries and profile `Style` notes override it without editing it;
+- your co-writer persona (`[persona]`).
 
 **Leave as is:** the Scope section of the Story Vault style and the scope check in the session skill. The rest of the system is built to work with them.
 
@@ -408,4 +418,4 @@ The quickest way to never be asked: put `age` (and `body_age` or `mind` where th
 
 **Session start says the vault pull failed.** You have uncommitted local changes or no network. Commit or stash, then pull. Set `VAULT_AUTOPULL=0` to turn the pull off.
 
-**Two skills with similar names.** If your claude.ai account syncs a skill also called `rp-session`, that's your Projects version. The vault uses `vault-session`.
+**Two skills with similar names.** If your claude.ai account syncs skills called `rp-session` or `pulp-voice`, those are account copies. The vault uses its own `vault-session` and `pulp-voice`. Turning the account copies off saves context on every turn and keeps Claude from picking the wrong one.

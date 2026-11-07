@@ -109,6 +109,7 @@ views:
 |---|---|
 | **In a scene** | `[stop]` · `[pause]` / `[resume]` · `[rewind]` or `[rewind: new direction]` · `[tone: harsher]` · `[check]` |
 | **Story** | `[setup]` · `[pitch]` or `[pitch: a setting, character or kink]` · `[save]` · `[done]` · `[scope]` · `[profile]` |
+| **Co-writer** | `[persona]` · `[persona: off]` / `[persona: on]` |
 | **Style library** | `[keep]` · `[keep: "…" — why]` · `[avoid: "…" — why]` · `[distill]` |
 | **Free** (no turn used) | `[help]` · `[state]` · `[cast]` · `[show <note>]` · `[list <type>]` · `[lore <words>]` · `[lint]` |
 

@@ -11,13 +11,14 @@ A Claude Code setup for adult roleplay and fiction writing, built as an Obsidian
 | `.claude/output-styles/story-vault.md` | The system prompt (Story Vault output style): scope, image limits, craft, bracket controls. |
 | `CLAUDE.md` | Vault instructions: note types, vault rules, script, Git. Loaded every session. |
 | `.claude/skills/vault-dev/` | Maintenance guidance for the script, hooks, skills, templates and docs. |
+| `.claude/skills/pulp-voice/` | The prose skill: anti-patterns, voices, heat (sex scenes), registers. |
 | `.claude/skills/vault-session/` | Starts, sets up, resumes, saves and logs stories; runs the cast scope check; keeps the style library. |
 | `.claude/scripts/vault.py` | Creates notes from templates, loads notes without Obsidian-only blocks, prints cast and state, lints the vault. Python 3, standard library only. |
 | `.claude/hooks/` + `.claude/settings.json` | Session start loads the active story; viewer commands answer without a model turn; lore entries load when mentioned; story text saves after each story turn; status line shows the story and last beat. |
 | `Home.md` | Obsidian dashboard: open stories, latest text, characters, settings, commands. |
 | `Templates/` | Character, roleplay profile, user persona, story bio, adult file, setting, story. |
 | `Style/reference.md` | Your Keep and Avoid examples, logged in play with `[keep]` and `[avoid]`. |
-| `story-profile.md` | Your defaults, style, kinks, limits and finished stories. Built on first use. |
+| `story-profile.md` | Your defaults, co-writer persona, style, kinks, limits and finished stories. Built on first use. |
 
 ## Setup
 
