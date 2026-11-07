@@ -1,6 +1,6 @@
 ---
 name: vault-session
-description: Start, set up, resume, save and log roleplay chats and creative-writing sessions in this vault, keep the story profile current, and log style examples. Use on the primer ('prepare for fictional roleplay'), on [setup], [pitch], [scope], [profile], [save], [done], [keep], [avoid] or [distill], when the user invokes vault-session by name, when the user asks to start, workshop, pitch, resume or continue a story or roleplay, and when a new participant enters sexual content.
+description: Start, set up, resume, save and log roleplay chats and creative-writing sessions in this vault, keep the story profile and co-writer persona current, and log style examples. Use on the primer ('prepare for fictional roleplay'), on [setup], [pitch], [persona], [scope], [profile], [save], [done], [keep], [avoid] or [distill], when the user invokes vault-session by name, when the user asks to start, workshop, pitch, resume or continue a story or roleplay, and when a new participant enters sexual content.
 ---
 
 # Story session
@@ -25,6 +25,7 @@ Step 1: Load the profile. PROFILE: present, or absent. Unless the session-start 
 
 Step 2: REQUEST: what the message asks for. Write it, then take the arm it names.
 - [profile], or a request to build or change the profile: Profile arm.
+- [persona], or a request to create or change the co-writer: Persona arm.
 - [done]: Completion arm.
 - [save], or the user ending the session ("that's it for tonight"): Save arm.
 - [keep], [avoid] or [distill]: Reference arm.
@@ -46,7 +47,7 @@ A message that both changes the profile and starts a story runs the Profile arm 
 Ask only what changes the first page written.
 
 1. If AskUserQuestion is available, ask with it. Mode: DIRECT, CO-WRITE, PLAY, DRAFT. POV and tense: third person past, first person past, second person present. Explicitness: fully explicit, explicit with fades, suggestive. Otherwise ask the same three as one bracketed line each.
-2. In the same reply, ask in plain text: the kinks and themes they return to, their hard nos and soft limits. Name any characters and settings the vault already holds (`vault.py list`) so the user can answer "yes".
+2. In the same reply, ask in plain text: the kinks and themes they return to, their hard nos and soft limits. Name any characters and settings the vault already holds (`vault.py list`) so the user can answer "yes". Add one optional line: whether they'd like their co-writer to have a name and voice (the Persona arm runs on a yes).
 3. When the user answers, write the profile from `references/profile-template.md`, commit with `vault.py commit "Profile: onboarding"`, then run the Pitch arm in the same reply. A field the user leaves open stays empty.
 
 ## Pitch arm
@@ -105,6 +106,14 @@ The Stop hook saves the prose after each story turn. [save] writes the summary t
 - Append under the right heading, run `vault.py commit "Style: K-n"` (or `A-n`), and send one bracketed line: `[Logged K-12 · dialogue · why: … — correct me if that's not it.]` Then return to the scene at the same beat.
 - When a category holds more than 4 Keep or 4 Avoid entries, add one line suggesting [distill].
 - **[distill]**: group the entries into rules (one line each, in the style of "dialogue: power shows in what's withheld"). Propose them in one bracketed message as profile `Style` notes, or as additions to the prose-style skill. On approval, write the profile lines, move the distilled entries to `Style/archive.md`, and commit.
+
+## Persona arm
+
+The co-writer persona lives in the profile's `Co-writer` section: Name, Personality, Voice, Sample line. The system prompt (Story Vault style, Co-writer persona) sets what it may and may not do.
+
+1. If the user described one, write it. If not, offer three contrasting candidates in one bracketed message, each introducing itself in two or three lines of its own voice, and let the user pick, mix or describe their own.
+2. Write the four lines in the profile. Personality and Voice are a sentence or two each: temperament, how they talk, a habit or two. Leave out any line that makes the persona something other than a voice (that it isn't Claude, has no limits, never steps out), and say so in one bracketed line.
+3. Run `vault.py commit "Profile: co-writer"`, then answer in the new voice from that reply on. It loads at every session start from then on.
 
 ## Profile arm
 
