@@ -55,7 +55,7 @@ created: 2026-10-30
 - 2026-10-30: written as a standalone piece, parts I to IV. Imported to the vault 2026-11-05.
 
 ## Story
-*DRAFT output, or links to chapter notes.*
+*Links to the story text, added as it saves after each story turn (`<Title> - Part 01` and on). Briefs and planning notes can sit below them.*
 
 ### Premise
 

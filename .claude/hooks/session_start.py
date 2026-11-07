@@ -5,7 +5,8 @@
 - On startup, clear and compact, resets this session's lore memory so lore
   entries can load again into the fresh context.
 - Injects the active story's state and cast, so resuming needs no skill run
-  and continuity survives compaction.
+  and continuity survives compaction, and the profile's co-writer persona
+  when one is set.
 Fails open: any error starts the session without the extra context.
 """
 import json
@@ -28,6 +29,17 @@ def run(args):
     return (r.stdout + r.stderr).strip()
 
 
+def co_writer():
+    """The profile's filled-in Co-writer lines, or [] when it's empty or missing."""
+    prof = ROOT / "story-profile.md"
+    if not prof.exists():
+        return []
+    m = re.search(r"^##\s+Co-writer\s*\n(.*?)(?=^##\s|\Z)", prof.read_text(encoding="utf-8"), flags=re.M | re.S)
+    filled = [l.strip() for l in (m.group(1).splitlines() if m else [])
+              if re.match(r"^-\s*[^:]+:\s*\S", l.strip())]
+    return filled if any(l.lower().startswith("- name:") for l in filled) else []
+
+
 def main():
     data = json.load(sys.stdin)
     source = data.get("source") or "startup"
@@ -45,6 +57,13 @@ def main():
 
     if source in ("startup", "clear", "compact"):
         (STATE / f"lore-{session_id}.json").unlink(missing_ok=True)
+    if source == "clear":
+        (STATE / f"play-{session_id}").unlink(missing_ok=True)  # autosave waits for vault-session again
+
+    persona = co_writer()
+    if persona:
+        lines.append("Co-writer persona (from the profile; out-of-character talk only, until the user says otherwise):")
+        lines += persona
 
     notes = vault.all_notes()
     story = vault.active_story(notes)

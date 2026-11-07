@@ -14,11 +14,12 @@ The Story Vault output style leaves out Claude Code's built-in software-engineer
 | Scope, craft, controls | `.claude/output-styles/story-vault.md` | The system prompt. The only place scope is written. |
 | Vault facts and tools | `CLAUDE.md` | Note types, vault rules, script usage, Git. Loaded every session. |
 | Script | `.claude/scripts/vault.py` | Python 3, standard library only. Notes, cast/state, show, list, lint. |
-| Hooks | `.claude/hooks/*.py`, `.claude/settings.json` | Session start, prompt (viewer commands, lore), status line. They fail open. |
+| Hooks | `.claude/hooks/*.py`, `.claude/settings.json` | Session start, prompt (viewer commands, lore), stop (story text autosave), status line. They fail open. |
 | Skills | `.claude/skills/<name>/SKILL.md` + `references/` | References load only when the skill reads them. |
 | Templates | `Templates/`, `Templates/Legacy/` | `vault.py new` reads them; frontmatter fields are load-bearing. |
 | Docs | `GUIDE.md`, `README.md` | User-facing. Update them when behavior changes. |
 | Modules | `Modules/<Name>/` | Drop-in settings for other vaults; they defer to the host vault's scope. |
+| Shared template | `AmbiguousProphet/CiC-Vault` (public) | Gets the machinery and docs, never the user's notes, profile or style library. `nai-v5-images`, the output style's Images subsection, the `[img]` row and image lines in `CLAUDE.md` and `GUIDE.md` are personal and stay out. |
 
 ## How to work
 
@@ -36,7 +37,7 @@ Run what you changed before you report it done:
 
 - `python3 .claude/scripts/vault.py lint`. It must end with 0 errors.
 - The command you touched, on a real note: `show`, `cast`, `state`, `list`, `new` (create a test note in the scratchpad, never in the vault).
-- A hook: pipe sample JSON into it, e.g. `echo '{"prompt":"[cast]"}' | python3 .claude/hooks/prompt.py`, and check both the output and that an error passes through.
+- A hook: pipe sample JSON into it, e.g. `echo '{"prompt":"[cast]"}' | python3 .claude/hooks/prompt.py`, and check both the output and that an error passes through. Test `stop.py` only in a scratch copy of the vault with a fake transcript: it writes and commits story text.
 - A skill: re-read the edited section against its checklist, and check that every file it names exists.
 
 Report what changed, what you ran and the result. If something couldn't be tested, say so.

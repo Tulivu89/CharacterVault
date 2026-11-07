@@ -40,5 +40,5 @@ created: {{date}}
 - 
 
 ## Story
-*DRAFT output, or links to chapter notes.*
+*Links to the story text, added as it saves after each story turn (`<Title> - Part 01` and on). Briefs and planning notes can sit below them.*
 

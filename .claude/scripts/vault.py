@@ -2,18 +2,25 @@
 """Vault helper for the story engine. Standard library only.
 
   vault.py new <template> "<Title>" [--character NAME] [--profile NAME]
-  vault.py show <note> [--canon] [--full]
+  vault.py show <note> [<note> ...] [--canon] [--full]
   vault.py list [type] [--world W] [--character NAME]
   vault.py cast <story>
   vault.py state <story>
+  vault.py text <story> --status | [--you] [--rewind] < text
+  vault.py save <story>            lint, commit "Save: <story>", push
+  vault.py commit "<message>"      lint, commit note changes, push
+  vault.py seeds [--n 3] [--focus TEXT]   random pitch seeds
   vault.py lint
+  vault.py help
 
 Notes are found by file name or by an entry in `aliases`.
 """
 import argparse
 import datetime
 import re
+import subprocess
 import sys
+import time
 import unicodedata
 from pathlib import Path
 
@@ -327,18 +334,29 @@ def compact_fm(fm):
 
 
 def cmd_show(args):
+    """Show one or more notes; several in one call saves a tool round trip."""
     notes = all_notes()
-    note = find(notes, args.note)
-    if not note:
-        sys.exit(f"No note '{args.note}'.")
-    if note.type == "adult":
-        probs = adult_problems(note, notes)
-        if probs:
-            sys.exit(f"Refused to load {note.name}: " + "; ".join(probs))
-    print(f"# {note.rel()}")
-    print(f"[{compact_fm(note.fm)}]")
-    print()
-    print(clean_body(note.body, canon=args.canon, full=args.full))
+    failed = False
+    for i, name in enumerate(args.note):
+        if i:
+            print("\n" + "-" * 40 + "\n")
+        note = find(notes, name)
+        if not note:
+            print(f"No note '{name}'.")
+            failed = True
+            continue
+        if note.type == "adult":
+            probs = adult_problems(note, notes)
+            if probs:
+                print(f"Refused to load {note.name}: " + "; ".join(probs))
+                failed = True
+                continue
+        print(f"# {note.rel()}")
+        print(f"[{compact_fm(note.fm)}]")
+        print()
+        print(clean_body(note.body, canon=args.canon, full=args.full))
+    if failed:
+        sys.exit(1)
 
 
 def cmd_list(args):
@@ -507,6 +525,318 @@ def cmd_state(args):
     print(st or "  (empty)")
 
 
+# ---------- story text ----------
+# A story's prose lives in text parts beside its note:
+# Stories/<Title>/<Title> - Part NN.md, type: text. The Stop hook appends each
+# story turn word for word; `vault.py text` does the same from stdin when hooks
+# aren't running.
+
+PART_WORDS = 12000
+BEAT_MARK = re.compile(r"^<!-- (beat|you) (\d{4}-\d\d-\d\d) (\d\d:\d\d) -->$", re.M)
+
+
+def strip_ooc(text):
+    """Drop out-of-character material: fenced code, and [bracketed] spans that
+    start a line or end one. Brackets inside a prose line stay."""
+    text = re.sub(r"```.*?```", "", text, flags=re.S)
+    out, i, n = [], 0, len(text)
+    while i < n:
+        ch = text[i]
+        if ch == "[":
+            depth, j = 0, i
+            while j < n:
+                if text[j] == "[":
+                    depth += 1
+                elif text[j] == "]":
+                    depth -= 1
+                    if depth == 0:
+                        break
+                j += 1
+            if j < n:
+                line_start = text.rfind("\n", 0, i) + 1
+                nl = text.find("\n", j)
+                rest = text[j + 1: nl if nl != -1 else n]
+                if not text[line_start:i].strip() or not rest.strip():
+                    i = j + 1
+                    continue
+        out.append(ch)
+        i += 1
+    text = "".join(out)
+    text = "\n".join(l.rstrip() for l in text.splitlines())
+    return re.sub(r"\n{3,}", "\n\n", text).strip()
+
+
+def word_count(text):
+    text = BEAT_MARK.sub("", text)
+    text = re.sub(r"^#.*$", "", text, flags=re.M)
+    return len(re.findall(r"[\w'’-]+", text))
+
+
+def text_parts(notes, story):
+    parts = [n for n in notes if n.type == "text" and link_name(n.fm.get("story", "")).lower() == story.name.lower()]
+    return sorted(parts, key=lambda n: first_int(n.fm.get("part")) or 0)
+
+
+def _set_fm(text, key, value):
+    return re.sub(rf"^{key}:.*$", f"{key}: {value}", text, count=1, flags=re.M)
+
+
+def _link_part(story, part_name):
+    """Add `- Text: [[part]]` under the story note's ## Story heading."""
+    text = story.path.read_text(encoding="utf-8")
+    line = f"- Text: [[{part_name}]]"
+    if line in text:
+        return False
+    lines = text.splitlines()
+    head = next((i for i, l in enumerate(lines) if re.match(r"^##\s+Story\s*$", l)), None)
+    if head is None:
+        lines += ["", "## Story", line]
+    else:
+        at = head + 1
+        texts = [i for i in range(head + 1, len(lines)) if lines[i].startswith("- Text: [[")]
+        if texts:
+            at = texts[-1] + 1
+        elif at < len(lines) and re.fullmatch(r"\*[^*].*[^*]\*", lines[at].strip()):
+            at += 1
+        lines.insert(at, line)
+    story.path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return True
+
+
+def append_text(story, text, you=None, rewind=False, now=None):
+    """Append one story turn to the story's latest text part, starting a new
+    part when the latest passes PART_WORDS. With rewind, the last captured beat
+    is removed first. Returns the paths written."""
+    now = now or datetime.datetime.now()
+    day, clock = now.strftime("%Y-%m-%d"), now.strftime("%H:%M")
+    notes = all_notes()
+    parts = text_parts(notes, story)
+    changed = []
+    body = parts[-1].path.read_text(encoding="utf-8") if parts else ""
+    if rewind and parts:
+        marks = [m for m in BEAT_MARK.finditer(body) if m.group(1) == "beat"]
+        if marks:
+            body = body[:marks[-1].start()].rstrip() + "\n"
+            parts[-1].path.write_text(body, encoding="utf-8")
+            changed.append(parts[-1].path)
+    if parts and word_count(body) < PART_WORDS:
+        path = parts[-1].path
+    else:
+        num = (first_int(parts[-1].fm.get("part")) or len(parts)) + 1 if parts else 1
+        name = f"{story.name} - Part {num:02d}"
+        path = story.path.parent / story.name / f"{name}.md"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        src = story.path.read_text(encoding="utf-8")
+        copied = [m.group(0) for k in ("world", "rating") for m in [re.search(rf"^{k}:.*$", src, flags=re.M)] if m]
+        body = (f"---\ntype: text\nstory: \"[[{story.name}]]\"\npart: {num}\n"
+                + "".join(l + "\n" for l in copied) + "words: 0\n---\n"
+                f"# {story.name} · Part {num:02d}\n")
+        if _link_part(story, name):
+            changed.append(story.path)
+    days = re.findall(r"^### (\d{4}-\d\d-\d\d)\s*$", body, flags=re.M)
+    add = []
+    if not days or days[-1] != day:
+        add.append(f"### {day}")
+    if you:
+        quoted = "\n".join(("> " + l) if l.strip() else ">" for l in you.strip().splitlines())
+        add.append(f"<!-- you {day} {clock} -->\n{quoted}")
+    if text.strip():
+        add.append(f"<!-- beat {day} {clock} -->\n{text.strip()}")
+    body = body.rstrip() + "\n\n" + "\n\n".join(add) + "\n"
+    body = _set_fm(body, "words", word_count(body.split("\n---", 1)[-1]))
+    path.write_text(body, encoding="utf-8")
+    if path not in changed:
+        changed.append(path)
+    return changed
+
+
+def text_status(notes, story):
+    parts = text_parts(notes, story)
+    if not parts:
+        return "Text: none saved yet."
+    lines = []
+    for p in parts:
+        lines.append(f"- {p.name}: {p.fm.get('words', '?')} words")
+    body = parts[-1].path.read_text(encoding="utf-8")
+    marks = list(BEAT_MARK.finditer(body))
+    if marks:
+        last = marks[-1]
+        snippet = " ".join(body[last.end():].split())[:100]
+        lines.append(f"Last captured: {last.group(2)} {last.group(3)} · {snippet}…")
+    return "Text:\n" + "\n".join(lines)
+
+
+def cmd_text(args):
+    notes = all_notes()
+    story = story_note(notes, args.story)
+    if args.status:
+        print(text_status(notes, story))
+        return
+    raw = sys.stdin.read()
+    text = strip_ooc(raw)
+    if not text:
+        sys.exit("No story text on stdin.")
+    changed = append_text(story, "", you=text) if args.you else append_text(story, text, rewind=args.rewind)
+    for p in changed:
+        print(p.relative_to(ROOT).as_posix())
+
+
+# ---------- git ----------
+# Note commits only stage the note folders, never the machinery.
+
+NOTE_PATHS = ["Characters", "Settings", "Stories", "Style", "Modules", "story-profile.md", "Home.md"]
+
+
+def git(*args, timeout=30):
+    return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True, timeout=timeout)
+
+
+def git_push(retries=4):
+    """Push the current branch, with backoff on failure. Returns a status line."""
+    if not git("remote").stdout.strip():
+        return "no remote; not pushed"
+    upstream = git("rev-parse", "--abbrev-ref", "@{u}").returncode == 0
+    cmd = ["push", "-q"] if upstream else ["push", "-q", "-u", "origin", "HEAD"]
+    for attempt in range(retries + 1):
+        r = git(*cmd, timeout=60)
+        if r.returncode == 0:
+            return "pushed"
+        if attempt < retries:
+            time.sleep(2 ** (attempt + 1))
+    return "push failed: " + (r.stderr.strip().splitlines() or ["unknown error"])[-1]
+
+
+def commit_notes(message, paths=None):
+    """Stage note changes (or the given paths), commit, push. Returns status lines."""
+    targets = [str(p) for p in (paths or NOTE_PATHS) if (ROOT / p).exists()]
+    if not targets:
+        return ["nothing to commit"]
+    git("add", "-A", "--", *targets)
+    if git("diff", "--cached", "--quiet", "--", *targets).returncode == 0:
+        return ["nothing to commit", git_push()]
+    r = git("commit", "-q", "-m", message, "--", *targets)
+    if r.returncode != 0:
+        return ["commit failed: " + (r.stderr.strip().splitlines() or ["unknown error"])[-1]]
+    return [f"committed: {message}", git_push()]
+
+
+def lint_errors():
+    r = subprocess.run([sys.executable, __file__, "lint"], capture_output=True, text=True, timeout=60)
+    return [l for l in r.stdout.splitlines() if l.startswith("ERROR")], r.stdout.strip().splitlines()[-1:]
+
+
+def cmd_commit(args):
+    errors, summary = lint_errors()
+    if errors:
+        print("\n".join(errors))
+        sys.exit("Lint errors; nothing committed.")
+    print("\n".join(summary + commit_notes(args.message)))
+
+
+def cmd_save(args):
+    notes = all_notes()
+    story = story_note(notes, args.story)
+    print(text_status(notes, story))
+    errors, summary = lint_errors()
+    if errors:
+        print("\n".join(errors))
+        sys.exit("Lint errors; nothing committed.")
+    print("\n".join(summary + commit_notes(f"Save: {story.name}")))
+
+
+# ---------- pitch seeds ----------
+
+def adult_capable(c, notes):
+    """A character who can lead an adult pitch: an adult or elder profile, or an adult age on the page."""
+    age = str(c.fm.get("age") or "")
+    if (first_int(age) or 0) >= 18 or ADULT_WORDS.search(age):
+        return True
+    return any(n.type == "profile" and link_name(n.fm.get("character", "")).lower() == c.name.lower()
+               and str(n.fm.get("stage", "")).lower() in ADULT_STAGES for n in notes)
+
+
+def cmd_seeds(args):
+    """Random setting, character and kink combinations for the Pitch arm, so
+    pitches don't drift to the same picks."""
+    import random
+    notes = all_notes()
+    rng = random.Random(args.seed)
+    settings = [n for n in notes if n.type == "setting"]
+    chars = [n for n in notes if n.type == "character" and adult_capable(n, notes)]
+    prof = ROOT / "story-profile.md"
+    kinks = []
+    if prof.exists():
+        m = re.search(r"^##\s+Kinks and themes\s*\n(.*?)(?=^##\s|\Z)", prof.read_text(encoding="utf-8"), flags=re.M | re.S)
+        kinks = [l.strip()[2:].strip() for l in (m.group(1).splitlines() if m else []) if l.strip().startswith("- ") and l.strip()[2:].strip()]
+    used = {}
+    for s in notes:
+        if s.type == "story":
+            used.setdefault(fold(world_of(s.fm)), []).append(f"{s.name} ({s.fm.get('status', '')})")
+    focus = find(notes, args.focus) if args.focus else None
+    if focus is not None and focus.type == "setting":
+        pool = [focus] * args.n
+    elif focus is not None and focus.type == "character" and any(fold(world_of(s.fm)) == fold(world_of(focus.fm)) for s in settings):
+        home = [s for s in settings if fold(world_of(s.fm)) == fold(world_of(focus.fm))]
+        pool = [rng.choice(home) for _ in range(args.n)]
+    else:
+        pool = rng.sample(settings, min(args.n, len(settings))) if settings else []
+    rng.shuffle(kinks)
+    print("Pitch seeds (random; use them unless the user's request overrides):")
+    if args.focus and (focus is None or focus.type not in ("setting", "character")):
+        print(f"Focus from the user: {args.focus}")
+    for i, s in enumerate(pool or [None] * args.n):
+        world = fold(world_of(s.fm)) if s else ""
+        here = [c for c in chars if world and fold(world_of(c.fm)) == world]
+        picks = rng.sample(here, min(2, len(here)))
+        if focus is not None and focus.type == "character":
+            picks = [focus] + [c for c in picks if c is not focus][:1]
+        k = kinks[i * 2:(i * 2) + 2] or kinks[:2]
+        line = f"{i + 1}. setting: {s.name if s else 'new'}"
+        line += f" · characters: {', '.join(c.name for c in picks) or 'new'}"
+        line += f" · kinks: {', '.join(k) or 'from the profile'}"
+        if s and used.get(world):
+            line += f" · stories already in this world: {', '.join(used[world])}"
+        print(line)
+
+
+# ---------- help ----------
+
+def cmd_help(_args):
+    notes = all_notes()
+    story = active_story(notes)
+    out = ["Story Vault · commands", ""]
+    if story:
+        fm = story.fm
+        out.append(f"Active story: {story.name} · {fm.get('mode', '')} · {fm.get('pov', '')} {fm.get('tense', '')}")
+        if fm.get("last_beat"):
+            out.append(f"Last beat: {fm.get('last_beat')}")
+    else:
+        out.append("No active story. Send `prepare for fictional roleplay` or [setup].")
+    others = [n.name for n in notes if n.type == "story" and n is not story
+              and str(n.fm.get("status", "")).lower() in ("active", "paused")]
+    if others:
+        out.append("Other open stories: " + ", ".join(others))
+    groups = [
+        ("In a scene", "[stop] · [pause] / [resume] · [rewind] or [rewind: new direction] · [tone: harsher / lighter] · [check]"),
+        ("Story", "[setup] · [pitch] or [pitch: a setting, character or kink] · [save] · [done] · [scope] · [profile]"),
+        ("Co-writer", "[persona] to create or change one · [persona: off] / [persona: on]"),
+        ("Style library", "[keep] · [keep: \"…\" — why] · [avoid: \"…\" — why] · [distill]"),
+    ]
+    if (ROOT / ".claude" / "skills" / "nai-v5-images").exists():
+        groups.append(("Images", "[img] · [img: a character, look or moment]"))
+    groups += [
+        ("Free (no turn used)", "[help] · [state] · [cast] · [show <note>] · [list <type>] · [lore <words>] · [lint]"),
+        ("New notes", "ask, or: vault.py new character|roleplay|persona|bio|adult|setting|story \"<Title>\""),
+    ]
+    out.append("")
+    for head, line in groups:
+        out.append(f"{head}: {line}")
+    out += ["", "Story text saves itself after each story turn; [save] also records the state."]
+    if (ROOT / "Home.md").exists():
+        out.append("Dashboard: Home.md in Obsidian. Guide: GUIDE.md.")
+    print("\n".join(out))
+
+
 def cmd_lint(_args):
     notes = all_notes()
     errors, warns = [], []
@@ -565,7 +895,7 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     p = sub.add_parser("new"); p.add_argument("template"); p.add_argument("title")
     p.add_argument("--character"); p.add_argument("--profile"); p.set_defaults(fn=cmd_new)
-    p = sub.add_parser("show"); p.add_argument("note")
+    p = sub.add_parser("show"); p.add_argument("note", nargs="+")
     p.add_argument("--canon", action="store_true", help="leave out [draft] lines")
     p.add_argument("--full", action="store_true", help="keep the Changelog"); p.set_defaults(fn=cmd_show)
     p = sub.add_parser("list"); p.add_argument("type", nargs="?")
@@ -574,6 +904,16 @@ def main():
     p = sub.add_parser("state"); p.add_argument("story"); p.set_defaults(fn=cmd_state)
     p = sub.add_parser("lint"); p.set_defaults(fn=cmd_lint)
     p = sub.add_parser("lore"); p.add_argument("text"); p.add_argument("--story"); p.set_defaults(fn=cmd_lore)
+    p = sub.add_parser("text"); p.add_argument("story")
+    p.add_argument("--status", action="store_true", help="list parts and the last captured beat")
+    p.add_argument("--you", action="store_true", help="stdin is the user's passage (PLAY, CO-WRITE)")
+    p.add_argument("--rewind", action="store_true", help="replace the last captured beat"); p.set_defaults(fn=cmd_text)
+    p = sub.add_parser("save"); p.add_argument("story"); p.set_defaults(fn=cmd_save)
+    p = sub.add_parser("commit"); p.add_argument("message"); p.set_defaults(fn=cmd_commit)
+    p = sub.add_parser("help"); p.set_defaults(fn=cmd_help)
+    p = sub.add_parser("seeds"); p.add_argument("--n", type=int, default=3)
+    p.add_argument("--focus", help="a setting, a character, or a theme from [pitch: …]")
+    p.add_argument("--seed", type=int, help="repeatable output for tests"); p.set_defaults(fn=cmd_seeds)
     args = ap.parse_args()
     args.fn(args)
 
