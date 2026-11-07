@@ -95,35 +95,41 @@ The camera list above frames the scene; this is the grain inside the frame. Brie
 
 Written fresh for this file. Use them for the kind of move, never the wording.
 
-**The camera at work** (fully explicit, close third, one POV handoff at the climax):
+**Kink and taboo between the close-ups** (fully explicit, close third, one POV handoff at the climax):
 
-> The radio on the desk spat static and then Kev's voice, asking for an address he'd already been given twice. Agnieszka keyed the handset and gave it to him a third time. Tolley waited until she'd finished before he lifted her skirt.
+> The clerk had a folding table at the end of the stocks and a ledger held open with a smoothing stone. "Name."
 >
-> "Keep going," he said. "Phones don't stop for me."
+> "Joost Hoek."
 >
-> So she worked. She took a booking from the Feathers for two lads going to the hospital and sent it to car fourteen, and while she wrote it Tolley pushed into her from behind, one slow stroke to the root, and her pen dragged a line through *hospital* that she had to write over. He was thick enough that she breathed around him, through her nose, the way she breathed at the dentist.
+> "Relation to the utility?"
 >
-> He fucked her without hurrying. The desk edge bit across her thighs. The kettle on the filing cabinet came to the boil and clicked off. When car six came on asking whether to wait for Mrs. Okafor outside the chemist, Tolley stopped dead inside her until Agnieszka had answered, steady, *give her five minutes*, and his hand on the small of her back had gone damp.
+> Marit heard her brother laugh before he answered. "Brother."
 >
-> "Your brother," he said, starting again, "never ran a shift this tidy."
+> The clerk wrote it down without looking up and turned the ledger round for him to sign.
 >
-> "He can't read a map."
+> The stocks held Marit at the neck and wrists, bent at the waist, her skirt pinned up over her back by regulation, the board under her chin lettered MARIT HOEK, 26, RESTITUTION, FOURTEEN MARKET DAYS. The square smelled of herring and tar. At the third stall across it, her father was weighing haddock for a woman in a green shawl. He didn't look up either.
 >
-> "He can't read a map," Tolley agreed, and the last word came out of him as a grunt. His rhythm went ragged. He took both her hips and pulled her onto him hard enough that the chair skidded.
+> Joost took his time getting behind her. He put a hand on the small of her back, the left one, with the white seam across the knuckles where she'd cut him the winter their mother died, and she knew whose it was before he spoke.
 >
-> It started low for him, behind his balls, a tightening he'd been putting off since she answered car six. He let it come. His balls drew up hard and the first contraction went through him, and he jammed in to the hilt and held there while his cock pulsed, and again, each one wringing a hitch out of his breath. "Hhn," through his teeth, into her blouse.
+> "You always said I'd never get anything off you," he said, and pushed into her.
 >
-> She felt the stroke that didn't finish. Then the jump of him inside her and the heat behind it, spreading, each pulse weaker than the one before, the head of him pressed so deep it ached. Her hand had closed on the handset without her deciding to.
+> She'd been wet since the last man, and she hated that he'd feel it and think it was for him. He felt it. He made the pleased noise in his nose he made over a knot that held, and began to move.
 >
-> He stayed in her while he softened. When he pulled out it came with him, a warm slide down the inside of her thigh that reached the top of her stocking and went cold there. She clenched and felt more of it run.
+> He fucked her the way he rowed: hard off the mark, lazy once he was sure of the water. Two rope-walkers stopped with a coil slung between them and didn't pretend to be doing anything else. The stocks creaked in time with him. Marit fixed her eyes on her father's boots under the stall and gave Joost nothing, not one sound, while her body went on taking him, slick and easy. It didn't care whose he was. She did.
 >
-> Tolley was already doing up his belt. He tore the top sheet off the pad, checked her bookings, and initialled the corner in small square letters.
+> "Pa!" Joost called across the square, without breaking stride. "Turns out she's good for something."
 >
-> "Thursday," he said.
+> Her father set a brass weight on the scale. "Two and six," he told the woman in the shawl.
 >
-> The radio crackled. Car fourteen had picked up at the Feathers.
+> It came up on Joost faster than he wanted; he had never once made anything of hers last. His balls drew up tight, and he shoved in to the root and held there while the pull went through him from behind them, once, again, his cock jerking inside her with each one and his fingers driven into her hip hard enough to bruise. "Fuck," into her back, quiet.
+>
+> She felt all of it: the throb of him buried and still, the heat spreading where she couldn't stop it, the slow give as he softened. When he pulled out it followed him, warm down the inside of her thigh, then cool, and dripped onto the cobbles under the stocks where the rope-walkers could see it.
+>
+> Joost wiped himself on her pinned-up skirt and went to sign. The clerk blotted the page.
+>
+> "Next."
 
-What it does: four plain explicit words in about 440, landing at entry, the climax and the aftermath, with the act carried in between by rhythm, position and sound. The wide shot (radio, kettle, bookings) runs the whole way, and the one moment Tolley freezes tells you what he's afraid of. Talk during the act is about her brother. The climax gets his anatomy from his side, then hers. The scene closes wide on procedure.
+What it does: the taboo carries the heat between the close-ups. The ledger asks his relation to her, her father keeps selling fish, and the crowd stops to watch. What she feels of him is tied to who he is: the scar she gave him, the way he rows, what he shouts to Pa. Her refusal to make a sound runs against what her body does. Explicit words land at entry, the climax and the drip on the cobbles, and the scene closes wide on procedure.
 
 **The same beat as a porn loop, then fixed** (a sapient wolfkin, a breeding kink):
 
