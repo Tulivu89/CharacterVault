@@ -330,7 +330,9 @@ Characters in the same world who aren't in the cast work the same way: mention o
 
 ## Your co-writer
 
-Out of character, Claude can talk as a co-writer with a name, a personality and a voice of your choosing. Send `[persona]`: describe one, or pick from three candidates that introduce themselves. It's saved in your profile's `Co-writer` section and loads at every session start.
+Out of character, Claude can talk as a co-writer with a name, a look, a personality, a voice and a taste of your choosing. Send `[persona]`: describe one, or pick from three candidates that introduce themselves. It's saved in your profile's `Co-writer` section and loads at every session start.
+
+Its taste slants the pitches, and it gives its opinion when you ask for one, fully in character. It doesn't critique unasked.
 
 The persona is a voice, not a replacement. Claude stays Claude underneath, with the same judgment and the same scope, and the persona never narrates the story. Setup, pitches, saves, check-ins, vault work and step-outs all come in its voice until you send `[persona: off]` (`[persona: on]` brings it back). A line in the persona that tries to make it more than a voice (that it isn't Claude, has no limits) is left out.
 
