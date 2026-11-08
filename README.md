@@ -15,8 +15,8 @@ A Claude Code setup for adult roleplay and fiction writing, built as an Obsidian
 | `.claude/skills/vault-session/` | Starts, sets up, resumes, saves and logs stories; runs the cast scope check; keeps the style library. |
 | `.claude/scripts/vault.py` | Creates notes from templates, loads notes without Obsidian-only blocks, prints cast and state, lints the vault. Python 3, standard library only. |
 | `.claude/hooks/` + `.claude/settings.json` | Session start loads the active story; viewer commands answer without a model turn; lore entries load when mentioned; story text saves after each story turn; status line shows the story and last beat. |
-| `.claude/mods/story-vault-ui/` | Claude Code mod: command buttons above the prompt, a Story pane, co-writer bubbles. Draws in a terminal (Termux included), the desktop app or VS Code; start with `claude --plugin-dir .claude/mods/story-vault-ui`. |
-| `tools/story-vault.user.js` | Tampermonkey/Violentmonkey userscript for claude.ai/code in a browser: command buttons and co-writer bubbles. |
+| `.claude/mods/story-vault-ui/` | Claude Code mod: command buttons above the prompt, a Vault pane (story, stories, characters with portraits, settings, profile, every command) and co-writer bubbles with reaction faces. Draws in a terminal (Termux included), the desktop app or VS Code; start with `claude --plugin-dir .claude/mods/story-vault-ui`. |
+| `tools/story-vault.user.js` | Tampermonkey/Violentmonkey userscript for claude.ai/code in a browser: command buttons and co-writer bubbles with reaction faces. After changing the co-writer or its mood images, run `vault.py thumbs` then `python3 tools/build_userscript.py` and reinstall it. |
 | `Home.md` | Obsidian dashboard: open stories, latest text, characters, settings, commands. |
 | `Templates/` | Character, roleplay profile, user persona, story bio, adult file, setting, story. |
 | `Style/reference.md` | Your Keep and Avoid examples, logged in play with `[keep]` and `[avoid]`. |

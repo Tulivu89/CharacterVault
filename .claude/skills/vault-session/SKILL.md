@@ -109,7 +109,7 @@ The Stop hook saves the prose after each story turn. [save] writes the summary t
 
 ## Persona arm
 
-The co-writer persona lives in the profile's `Co-writer` section: Name, Look, Personality, Voice, Taste, and a few Examples. The system prompt (Story Vault style, Co-writer persona) sets how it's used.
+The co-writer persona lives in the profile's `Co-writer` section: Name, Look, Personality, Voice, Moods, Taste, and a few Examples. Moods are optional: each names a reaction image, `Characters/<Name>/images/<Name> - mood - <mood>.png`, and the persona opens an out-of-character reply with one in braces (`[{smug} ...]`) for the vault UI to show. The system prompt (Story Vault style, Co-writer persona) sets how it's used.
 
 1. If the user described one, build from that. If not, offer three contrasting candidates in one bracketed message, each introducing itself in two or three lines of its own voice, and let the user pick, mix or describe their own.
 2. Before writing, show three sample lines in the new voice: a greeting, an opinion when asked, and the quieter register after a heavy scene. Adjust until the user's happy.
