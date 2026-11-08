@@ -290,7 +290,7 @@ Younger characters are welcome in stories: siblings, wards, a town's children, a
 | `[keep]` / `[avoid]` / `[distill]` | The style library (below). |
 | `[persona]` / `[persona: off]` / `[persona: on]` | Create or change your co-writer, or drop and restore its voice. |
 
-**Free commands.** Send one of these as the whole message and a hook answers it without using a turn:
+**Free commands.** Send one of these as the whole message and a hook answers it. In the terminal that uses no turn. The Claude apps (web, desktop, mobile) don't show a hook's answer directly, so there the hook hands it to Claude to print, which takes one short turn:
 
 | Command | Shows |
 |---|---|
