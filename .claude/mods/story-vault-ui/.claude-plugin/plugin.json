@@ -1,0 +1,1 @@
+{ "name": "story-vault-ui", "version": "0.1.0", "description": "Story Vault: command buttons above the prompt, a Story pane, and a styled co-writer bubble", "types": "./types/index.d.ts" }

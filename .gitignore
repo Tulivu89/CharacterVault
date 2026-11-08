@@ -9,3 +9,6 @@
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Type files Claude Code writes beside a mod when it loads it
+.claude/mods/*/.claude-plugin/types/
