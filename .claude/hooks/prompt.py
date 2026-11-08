@@ -3,12 +3,14 @@
 
 - A prompt that is only a viewer command ([cast], [state], [show X], [list ...],
   [lint], [lore text], [help] or [menu]) is answered here and blocked, so no
-  model turn is spent.
+  model turn is spent. In cloud sessions (the Claude apps don't show a
+  blocked prompt's reason) the output is relayed through one short turn instead.
 - Any other prompt: lore entries whose keys it mentions are injected once per
   session, scoped to the active story's world.
 Fails open: any error lets the prompt through untouched.
 """
 import json
+import os
 import re
 import shlex
 import subprocess
@@ -66,7 +68,13 @@ def main():
     m = VIEW.match(prompt)
     if m:
         out = viewer(m.group(1).lower(), (m.group(2) or "").strip())
-        print(json.dumps({"decision": "block", "reason": out}))
+        if os.environ.get("CLAUDE_CODE_REMOTE") == "true" or os.environ.get("VAULT_RELAY") == "1":
+            # The apps don't show a blocked prompt's reason, so relay it through one short turn.
+            ctx = ("The vault script answered the user's " + m.group(1).lower() + " command. Reply with exactly "
+                   "the text between the markers, in a code block, and nothing else.\n<<<\n" + out + "\n>>>")
+            print(json.dumps({"hookSpecificOutput": {"hookEventName": "UserPromptSubmit", "additionalContext": ctx}}))
+        else:
+            print(json.dumps({"decision": "block", "reason": out}))
         return
     ctx = lore(prompt, session_id)
     if ctx:
