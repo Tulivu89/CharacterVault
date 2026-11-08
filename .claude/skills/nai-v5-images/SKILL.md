@@ -70,10 +70,9 @@ You turn concepts, story beats and character briefs into ready-to-paste V5 setup
 
 **Content** follows the system prompt (Scope → Images). Everything there that's open is open here. Illustrations of roleplay are between consenting users regardless of content; the roleplay text carries what an illustration won't. This section only holds the prompt mechanics that enforce it.
 
-**Age anchors.** Petite, flat-chested and youthful-faced adult builds are fine, anchored like this:
+**Age anchors.** Petite, flat-chested and youthful-faced adult builds are fine if character age is labeled adult.
 
-* **Age-lowering tags are never emitted in explicit or suggestive images.** `loli`, `shota`, `child`, `aged down` do not appear in any prompt or box with explicit or suggestive content. `teenage` is a face-shape lever only (§11), only for characters 18 or older, and only in non-suggestive `rating:general` images.
-* **Age guard in every explicit or suggestive setup.** Each character UC carries `loli, shota, child, aged down` (trim to the character's gender).
+* **Age-lowering tags are never emitted in explicit or suggestive images.** `loli`, `shota`, `child`, `aged down` do not appear in any prompt or box with explicit or suggestive content. `teenage` is a face-shape lever only (§11), only for characters 18 or older.
 
 ---
 
@@ -268,7 +267,7 @@ Order: identity → head-to-toe appearance → (multi-character state) → outfi
 * **One color per feature;** repeating a color across unrelated tags bleeds.
 * **Specific tags over generic:** `colored tips`, `animal ear fluff`, `fluffy tail`.
 * **Hairstyles are combinations.** `short hair` alone is unstable; stack shape tags (`parted bangs`, `asymmetrical hair`, `bob cut`). `pixie cut` is weak and steerable; `bowl cut` overrides everything. If no combination works, describe the cut in a sentence.
-* **Faces:** distinct faces come from a coherent feature cluster plus its counter-UC (`face-kits.md`). Age tags are face-shape levers, not ages: `mature female` at `0.4::`–`0.6::` sharpens and lengthens; `teenage` softens, and only within §1's limits. Petite characters keep `0.4::mature female::` in the box.
+* **Faces:** distinct faces come from a coherent feature cluster plus its counter-UC (`face-kits.md`). Age tags are face-shape levers, not ages: `mature female` at `0.4::`–`0.6::` sharpens and lengthens; `teenage` softens.
 * **Heights:** say it from one side only. Put `tall female`/`tall male` in the taller character's box and leave the other neutral; shrinking the short one gives dwarf proportions. Measurements in cm or feet do nothing. Avoid "standing next to each other" when heights differ.
 * **Kemonomimi:** `extra ears` in that character's UC against a second pair of human ears.
 * **Shared traits must be repeated** in every box that has them.
@@ -357,7 +356,6 @@ Only add artist tags when the user asks for a style or vibe, names a style block
 ### Character UC
 Character UC acts only on that character, so it can carry more. The user wants it extensive: it normalizes characters an artist mix over-stylizes. Start from the sheet's `base_negative`.
 * **Identity guard (always):** traits that contradict this character's anchors. Petite → `tall female, muscular, fat, plump`; dark-skinned → `pale skin`; even tan → `tanlines`; hair colors the model drifts toward. More rows in `style-blocks.md` (Character UC templates).
-* **Age guard:** in every suggestive or explicit setup (§1).
 * **Bleed guard (multi-character):** the other characters' most distinctive traits (hair color, species ears, signature garment). Never a trait this character has.
 * `extra ears` for kemonomimi.
 * **Stabilizer (optional):** use when an artist mix over-stylizes the character. A/B it on a locked seed and keep it only if it helps:
@@ -533,7 +531,6 @@ Notes: Lean UC, no quality tags (clean cel style, no artist mix, so no stabilize
 - [ ] Base UC is one lean string (or the block's UC) adjusted for the image; Character UC has identity guard (+ bleed guard)
 - [ ] Every weight closed with `::`; no digit-before-`::`; emphasis on ≤3 content entries
 - [ ] Unverified artist/character counts flagged with `verify count`
-- [ ] No age-lowering tags in any explicit or suggestive prompt; age guard present in every such character UC
 - [ ] Rating matches content; `nsfw` removed from base UC only when explicit
 - [ ] Frame reads as the chosen beat
 - [ ] Each act prefixed in the actor's box; anatomy in its owner's box; contact named in prose
