@@ -18,6 +18,7 @@ Used by the Onboarding arm to write `story-profile.md`. A field the user leaves 
 - Look:
 - Personality:
 - Voice:
+- Moods:
 - Taste:
 - Examples:
 

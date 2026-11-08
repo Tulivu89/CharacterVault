@@ -10,6 +10,7 @@
   vault.py save <story>            lint, commit "Save: <story>", push
   vault.py commit "<message>"      lint, commit note changes, push
   vault.py seeds [--n 3] [--focus TEXT]   random pitch seeds
+  vault.py thumbs                  160 px thumbnails of character images (needs Pillow)
   vault.py lint
   vault.py help
 
@@ -799,6 +800,27 @@ def cmd_seeds(args):
         print(line)
 
 
+# ---------- thumbnails ----------
+
+def cmd_thumbs(_args):
+    """Small copies of character images in images/.thumbs/, for the UI mod and userscript."""
+    try:
+        from PIL import Image
+    except ImportError:
+        sys.exit("Needs Pillow: pip install pillow (or apt install python3-pil).")
+    made = 0
+    for img in sorted(ROOT.glob("Characters/*/images/*.png")):
+        out = img.parent / ".thumbs" / img.name
+        if out.exists() and out.stat().st_mtime >= img.stat().st_mtime:
+            continue
+        out.parent.mkdir(exist_ok=True)
+        im = Image.open(img).convert("RGBA")
+        im.thumbnail((160, 160))
+        im.quantize(colors=128, method=Image.Quantize.FASTOCTREE).save(out, optimize=True)
+        made += 1
+    print(f"{made} thumbnail(s) made.")
+
+
 # ---------- help ----------
 
 def cmd_help(_args):
@@ -911,6 +933,7 @@ def main():
     p = sub.add_parser("save"); p.add_argument("story"); p.set_defaults(fn=cmd_save)
     p = sub.add_parser("commit"); p.add_argument("message"); p.set_defaults(fn=cmd_commit)
     p = sub.add_parser("help"); p.set_defaults(fn=cmd_help)
+    p = sub.add_parser("thumbs"); p.set_defaults(fn=cmd_thumbs)
     p = sub.add_parser("seeds"); p.add_argument("--n", type=int, default=3)
     p.add_argument("--focus", help="a setting, a character, or a theme from [pitch: …]")
     p.add_argument("--seed", type=int, help="repeatable output for tests"); p.set_defaults(fn=cmd_seeds)
