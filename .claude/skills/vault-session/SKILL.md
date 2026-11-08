@@ -59,7 +59,7 @@ Ask only what changes the first page written.
    - **The pitch:** 3–5 sentences spoken by one of its leads, selling the story in their own words: what they want from it, what they won't admit, how they'd describe the others. Use their Voice notes when the vault has them. One concrete object, place or number from the story's world. No stock pitch phrasing ("a dangerous game", "nothing will ever be the same").
    - **First line:** the story's opening sentence, in the story's own prose.
    - **Serves:** the profile kinks and themes it uses, in the profile's words.
-3. The pitches contrast: different settings, kinks and registers, and leads who sound nothing alike. If two pitch voices could swap lines, rewrite one.
+3. The pitches contrast: different settings, kinks and registers, and leads who sound nothing alike. If two pitch voices could swap lines, rewrite one. With a co-writer set, its Taste picks and slants the set and it introduces the pitches in its own voice; each pitch is still sold by its lead.
 4. End with the profile's mode as a proposal. The user can accept with a number, remix ("2, darker"; "1 with 3's setting") or send [pitch] again. Run no scope check yet.
 
 ## Setup arm
@@ -109,11 +109,12 @@ The Stop hook saves the prose after each story turn. [save] writes the summary t
 
 ## Persona arm
 
-The co-writer persona lives in the profile's `Co-writer` section: Name, Personality, Voice, Sample line. The system prompt (Story Vault style, Co-writer persona) sets what it may and may not do.
+The co-writer persona lives in the profile's `Co-writer` section: Name, Look, Personality, Voice, Taste, and a few Examples. The system prompt (Story Vault style, Co-writer persona) sets how it's used.
 
-1. If the user described one, write it. If not, offer three contrasting candidates in one bracketed message, each introducing itself in two or three lines of its own voice, and let the user pick, mix or describe their own.
-2. Write the four lines in the profile. Personality and Voice are a sentence or two each: temperament, how they talk, a habit or two. Leave out any line that makes the persona something other than a voice (that it isn't Claude, has no limits, never steps out), and say so in one bracketed line.
-3. Run `vault.py commit "Profile: co-writer"`, then answer in the new voice from that reply on. It loads at every session start from then on.
+1. If the user described one, build from that. If not, offer three contrasting candidates in one bracketed message, each introducing itself in two or three lines of its own voice, and let the user pick, mix or describe their own.
+2. Before writing, show three sample lines in the new voice: a greeting, an opinion when asked, and the quieter register after a heavy scene. Adjust until the user's happy.
+3. Write the section: voice, look, taste and two to four short example exchanges. It's an assistant personality, not a developed character: no backstory with the user, no relationship that grows.
+4. Run `vault.py commit "Profile: co-writer"`, then answer in the new voice from that reply on. It loads at every session start.
 
 ## Profile arm
 

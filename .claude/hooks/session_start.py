@@ -30,14 +30,17 @@ def run(args):
 
 
 def co_writer():
-    """The profile's filled-in Co-writer lines, or [] when it's empty or missing."""
+    """The profile's Co-writer section when it names one, without guidance lines or empty fields."""
     prof = ROOT / "story-profile.md"
     if not prof.exists():
         return []
     m = re.search(r"^##\s+Co-writer\s*\n(.*?)(?=^##\s|\Z)", prof.read_text(encoding="utf-8"), flags=re.M | re.S)
-    filled = [l.strip() for l in (m.group(1).splitlines() if m else [])
-              if re.match(r"^-\s*[^:]+:\s*\S", l.strip())]
-    return filled if any(l.lower().startswith("- name:") for l in filled) else []
+    raw = [l.rstrip() for l in (m.group(1).splitlines() if m else [])
+           if l.strip() and not re.fullmatch(r"\*[^*].*[^*]\*", l.strip())]
+    # drop empty fields, but keep a label whose content sits on the indented lines below it
+    lines = [l for i, l in enumerate(raw) if not re.fullmatch(r"-\s*[^:]+:", l.strip())
+             or (i + 1 < len(raw) and raw[i + 1][:1].isspace())]
+    return lines if any(re.match(r"^-\s*Name:\s*\S", l.strip()) for l in lines) else []
 
 
 def main():

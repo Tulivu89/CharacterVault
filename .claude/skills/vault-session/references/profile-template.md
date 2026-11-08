@@ -13,11 +13,13 @@ Used by the Onboarding arm to write `story-profile.md`. A field the user leaves 
 - Explicitness:
 
 ## Co-writer
-*Optional. Your co-writer's name, personality and voice for out-of-character talk; empty means plain Claude. Build or change it with [persona].*
+*Optional. Your co-writer's name, look, personality, voice and taste for out-of-character talk; empty means plain Claude. Build or change it with [persona].*
 - Name:
+- Look:
 - Personality:
 - Voice:
-- Sample line:
+- Taste:
+- Examples:
 
 ## Style
 - Register:
