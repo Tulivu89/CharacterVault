@@ -155,14 +155,14 @@ The first run prints a sign-in link. Open it, sign in with your Claude account, 
 **A one-word shortcut.** Run these in Termux itself, not inside Ubuntu (the prompt shows `~ $`, not `root@localhost`). Replace `MyVault` with your vault folder's name. The full path to `claude` is deliberate: the shortcut starts Ubuntu without reading `.bashrc`, so the PATH line from step 2 doesn't apply there.
 
 ```bash
-echo "alias vault='proot-distro login ubuntu -- bash -lc \"cd /sdcard/Documents/MyVault && /root/.local/bin/claude\"'" >> ~/.bashrc
+echo "alias vault='proot-distro login ubuntu -- bash -lc \"cd /sdcard/Documents/MyVault && git pull --ff-only; /root/.local/bin/claude --plugin-dir .claude/mods/story-vault-ui\"'" >> ~/.bashrc
 ```
 
 ```bash
 source ~/.bashrc
 ```
 
-From then on, open Termux and type `vault`. If you typed a wrong line, remove every shortcut line with `sed -i '/alias vault=/d' ~/.bashrc` and add it again.
+From then on, open Termux and type `vault`. It pulls the latest notes and starts Claude Code with the Story Vault UI mod: command buttons above the prompt and a Story pane (`/story` reopens it). If you typed a wrong line, remove every shortcut line with `sed -i '/alias vault=/d' ~/.bashrc` and add it again.
 
 **Check your setup.** If `vault` fails, log in to Ubuntu (`proot-distro login ubuntu`) and check each piece:
 
