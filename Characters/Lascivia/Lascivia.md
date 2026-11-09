@@ -20,18 +20,18 @@ created: 2026-11-09
 
 ## Signature features
 - Tall, slender and svelte, everything her daughter isn't: six feet before heels, a narrow waist, medium breasts, wide hips, long legs, a slow walk.
-- Coloring not settled. Lead option: classic red, crimson deepening to oxblood at the horns and tail. Alternate: white tinged with red. Either has to mix with an imp's coloring to make Depravitae's lavender. Settle it in [img].
+- Warm rose-pink skin, black curled horns, long black waves, gold eyes. Rose-pink and her imp lover's indigo made their daughter lavender.
 - Long swept-back horns, a long spade tail, gold eyes.
 - Treats seduction as a craft and a career, and takes a surgeon's pride in her technique.
 - Thinks her daughter's muse work is a waste of her.
 
 ## Appearance
 - **Build:** 6'0", slender and svelte. Narrow waist, medium breasts, wide hips, long legs.
-- **Skin:** Not set (see above).
-- **Hair:** Black, long, in heavy waves.
+- **Skin:** Warm rose-pink.
+- **Hair:** Black, very long, in heavy waves with parted bangs.
 - **Eyes:** Gold, slit-pupilled.
 - **Face:** A face that looks forty and means it: high cheekbones, full mouth, lines at the eyes she keeps on purpose.
-- **Distinguishing marks:** Her family sigil, the one copied into Dennis's PDF, worked into the skin at the base of her spine. A woodcut of her is on the PDF's cover.
+- **Distinguishing marks:** Long black curled horns, pointy ears, a mole under one eye, a long spade tail. Her family sigil, the one copied into Dennis's PDF, worked into the skin at the base of her spine. A woodcut of her is on the PDF's cover.
 - **Default outfit:** Work clothes: a pelvic-curtain skirt and a small top of straps and gold. Off the clock: a tailored coat, heels, sunglasses at night.
 
 ## Personality

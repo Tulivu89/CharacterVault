@@ -14,7 +14,7 @@ created: 2026-11-09
 # Lascivia - Moved Back Home
 
 ## Differences from the main version
-- First appearance. Coloring still open (see the main page).
+- First appearance. Coloring set by the [img] test: warm rose-pink.
 
 ## Bio
 Depravitae's mother, a succubus of the old trade. The sigil in Dennis's PDF is a bad copy of her family mark, and the woodcut on its cover is her. She has wanted her daughter in the business for nineteen years. The binding is the best news she's had in a century.
