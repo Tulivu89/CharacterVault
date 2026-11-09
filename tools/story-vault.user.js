@@ -269,7 +269,8 @@
 
   // ---- Co-writer bubbles --------------------------------------------------
   // Paragraphs from one that opens with "[" to the one that closes with "]" are out of
-  // character. "[{smug} ..." drops the tag and shows that mood's face from the repo.
+  // character. "[{smug} ..." drops the tag and shows that mood's face from the repo;
+  // "[{off} ..." (persona off) drops it and shows a plain bubble, no face or name.
   function addFace(p) {
     const cw = index && index.coWriter;
     if (!cw || p.dataset.svuiFace) return;
@@ -280,6 +281,7 @@
       const m = first.nodeValue.match(/^(\s*\[)\{([a-z-]+)\}\s*/i);
       if (m) { mood = m[2].toLowerCase(); first.nodeValue = m[1] + first.nodeValue.slice(m[0].length); }
     }
+    if (mood === 'off') { p.dataset.svuiOff = '1'; p.dataset.svuiName = 'Out of character'; return; }
     const pic = (mood && cw.moods[mood]) || cw.portrait;
     if (!pic || !pic.thumb) return;
     picUrl(pic.thumb).then(url => {
@@ -295,7 +297,7 @@
       const text = p.textContent.trim();
       if (!open && text.startsWith('[') && !text.startsWith('[[')) {
         p.classList.add('svui-ooc', 'svui-ooc-first');
-        p.dataset.svuiName = (index && index.coWriter && index.coWriter.short) || 'Out of character';
+        p.dataset.svuiName = (!p.dataset.svuiOff && index && index.coWriter && index.coWriter.short) || 'Out of character';
         addFace(p);
         open = !text.endsWith(']');
       } else if (open) {

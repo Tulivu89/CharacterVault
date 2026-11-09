@@ -22,6 +22,9 @@ Used by the Onboarding arm to write `story-profile.md`. A field the user leaves 
 - Taste:
 - Examples:
 
+## Other co-writers
+*Optional. Saved co-writers to switch to with [persona: <name>], each under its own ### heading with the same fields as Co-writer. Only the Co-writer section above loads at session start.*
+
 ## Style
 - Register:
 - Notes:

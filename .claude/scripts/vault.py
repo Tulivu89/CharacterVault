@@ -972,7 +972,7 @@ def cmd_help(_args):
     groups = [
         ("In a scene", "[stop] · [pause] / [resume] · [rewind] or [rewind: new direction] · [tone: harsher / lighter] · [check]"),
         ("Story", "[setup] · [pitch] or [pitch: a setting, character or kink] · [save] · [done] · [scope] · [profile]"),
-        ("Co-writer", "[persona] to create or change one · [persona: off] / [persona: on]"),
+        ("Co-writer", "[persona] to create or change one · [persona: <name>] to switch to a saved one · [persona: off] / [persona: on]"),
         ("Style library", "[keep] · [keep: \"…\" — why] · [avoid: \"…\" — why] · [distill]"),
     ]
     if (ROOT / ".claude" / "skills" / "nai-v5-images").exists():
