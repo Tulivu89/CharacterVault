@@ -16,7 +16,8 @@ created: 2026-11-09
 ## Differences from the main version
 - 19 in this story. Canon stays mid-twenties.
 - Four feet even.
-- Look follows the newer gens: black hair with hot-pink streaks, worn in a high bun with a black bow. The main page still says plum, pending the [img] pass.
+- Look follows her newer gens, and in this story they override the main page: lavender skin; near-black hair in a messy single bun with a hot-magenta inner layer and sidelocks, a black bow tied round the bun; small purple horns, pointy ears; sharp upturned eyes with black eyeliner, yellow slit-pupil eyes; one fang; black nails; rectangular black-framed glasses; a black choker; a thin spade tail.
+- Signature going-out look: a black frilled skater dress with a tiny white bat print, black thighhighs, often barefoot.
 - Has never worked as a succubus. A muse and familiar by choice, and this is her first binding.
 - Her parents are named here: Lascivia, a full succubus, and an imp father.
 

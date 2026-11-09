@@ -27,7 +27,7 @@ created: 2026-11-09
 
 ## Anatomy
 - Hung thick and heavy in proportion to the rest of him. He's always been embarrassed by it.
-- Comes hard and a lot. Open: whether the binding makes him produce more to keep her fed.
+- Comes hard and a lot, and it builds: the binding makes his balls hang heavier and his loads grow over time, much to her chagrin. She has to take all of it, and there's always more.
 
 ## Changelog
 - v1 (2026-11-09): created for Moved Back Home

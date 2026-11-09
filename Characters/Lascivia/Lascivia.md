@@ -19,14 +19,14 @@ created: 2026-11-09
 *Draft for Moved Back Home. She becomes general canon when the user says so.*
 
 ## Signature features
-- Tall and lush, everything her daughter isn't: six feet before heels, heavy breasts, wide hips, a slow walk.
+- Tall, slender and svelte, everything her daughter isn't: six feet before heels, a narrow waist, medium breasts, wide hips, long legs, a slow walk.
 - Coloring not settled. Lead option: classic red, crimson deepening to oxblood at the horns and tail. Alternate: white tinged with red. Either has to mix with an imp's coloring to make Depravitae's lavender. Settle it in [img].
 - Long swept-back horns, a long spade tail, gold eyes.
 - Treats seduction as a craft and a career, and takes a surgeon's pride in her technique.
 - Thinks her daughter's muse work is a waste of her.
 
 ## Appearance
-- **Build:** 6'0", hourglass, heavy and soft where it shows, strong underneath.
+- **Build:** 6'0", slender and svelte. Narrow waist, medium breasts, wide hips, long legs.
 - **Skin:** Not set (see above).
 - **Hair:** Black, long, in heavy waves.
 - **Eyes:** Gold, slit-pupilled.

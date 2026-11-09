@@ -21,8 +21,8 @@ created: 2026-11-09
 - She feeds on semen. It tastes, smells and feels exactly like semen, and she doesn't like it. It isn't a delicacy, and she'll say so with her mouth full.
 - It's compulsive. Hunger builds through the day: stomach noises, a restless tail, a shorter fuse, the glamour thinning at the edges. Past a point she can't think about anything else.
 - Fed, she feels filled, like an itch finally scratched. The relief is the part she hates, because it's good.
-- Any way it gets into her counts. The more she takes, the longer the quiet lasts.
-- The binding points the hunger at her summoner first. Open: whether other men scratch it as well.
+- Any cum inside her body helps, any way it gets in and from any man. The more she takes, the longer the quiet lasts.
+- Dennis is the steady supply because the leash keeps him in reach, not because the hunger prefers him.
 
 ## Limits in the fiction
 - Being a participant at all. She fights it, and the story pushes past it.
