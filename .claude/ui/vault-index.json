@@ -137,6 +137,14 @@
    }
   },
   {
+   "name": "Errata",
+   "world": "Inkwyrm",
+   "species": "Ink dragon",
+   "age": "adult",
+   "hook": "Inkwyrm's mascot and house muse: a goth ink dragon who reads your drafts and won't write them for you.",
+   "portrait": null
+  },
+  {
    "name": "Aynur Toprak",
    "world": "Kerrow Deep",
    "species": "Draxian",
