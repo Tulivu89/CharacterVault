@@ -137,6 +137,18 @@
    }
   },
   {
+   "name": "Errata",
+   "world": "Inkwyrm",
+   "species": "Inkwyrm (ink dragon)",
+   "age": "412",
+   "hook": "An ink dragon who edits like it's personal, hoards your mistakes, and leaves ink on whatever holds her interest.",
+   "portrait": {
+    "image": "Characters/Errata/images/Errata - 01.png",
+    "thumb": "Characters/Errata/images/.thumbs/Errata - 01.png",
+    "cells": "Characters/Errata/images/.thumbs/Errata - 01.cells"
+   }
+  },
+  {
    "name": "Aynur Toprak",
    "world": "Kerrow Deep",
    "species": "Draxian",
