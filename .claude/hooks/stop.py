@@ -140,6 +140,12 @@ def main():
 
     if mode == "local" or not (vault.ROOT / ".git").exists():
         return
+    try:
+        idx = vault.write_index()
+        if idx:
+            changed.append(idx)
+    except Exception:
+        pass
     rel = [str(p.relative_to(vault.ROOT)) for p in changed]
     vault.git("add", "--", *rel)
     if vault.git("commit", "-q", "-m", f"Text: {story.name}", "--", *rel).returncode == 0 and vault.git("remote").stdout.strip():

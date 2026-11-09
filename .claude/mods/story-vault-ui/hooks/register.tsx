@@ -8,6 +8,9 @@ const view = atom({ plugin: 'story-vault-ui', key: 'view' } as const, null, { sh
 const tab = atom({ plugin: 'story-vault-ui', key: 'tab' } as const, 'story', { shape: 'tab-1' })
 
 const TAE = '#8e44ad'
+// Terminal portraits: 20 x 20 pixels as half blocks (vault.py thumbs writes them).
+const CELL_COLS = 20
+const CELL_ROWS = 10
 const PALETTE = ['#c0392b', '#2471a3', '#1e8449', '#b9770e', '#7d3c98', '#117a65', '#a04000', '#5d6d7e']
 const TABS: { id: Tab; label: string }[] = [
   { id: 'story', label: 'Story' },
@@ -136,9 +139,9 @@ export const register: Register = on => {
 
     const pic = (name: string, p: Picture | null | undefined, size: number) => {
       if (e.surface === 'terminal') {
-        if (p) {
-          const { Image } = $.ui.resolve(e)
-          return <Image key={`img-${name}`} source={{ file: p.file, format: 'png' }} columns={Math.round(size / 4)} rows={Math.round(size / 8)} alt={initials(name)} />
+        if (p?.cells) {
+          const { Raster } = $.ui.resolve(e)
+          return <Raster key={`px-${name}`} cells={p.cells} columns={CELL_COLS} rows={CELL_ROWS} />
         }
         return <Text color="#ffffff" backgroundColor={colorFor(name)} bold>{` ${initials(name)} `}</Text>
       }
@@ -317,9 +320,9 @@ export const register: Register = on => {
     const face = (mood && cw.moods[mood[1]!.toLowerCase()]) || cw.portrait
     const { Box, Text, Markdown } = $.ui.resolve(e)
     let faceEl = null
-    if (face && e.surface === 'terminal') {
-      const { Image } = $.ui.resolve(e)
-      faceEl = <Image key="face" source={{ file: face.file, format: 'png' }} columns={10} rows={5} alt={cw.short} />
+    if (face?.cells && e.surface === 'terminal') {
+      const { Raster } = $.ui.resolve(e)
+      faceEl = <Raster key="face" cells={face.cells} columns={CELL_COLS} rows={CELL_ROWS} />
     } else if (face?.thumb && e.surface !== 'terminal') {
       const { Svg } = $.ui.resolve(e)
       faceEl = <Svg source={photoSvg(face.thumb, 56)} alt={cw.short} width={56} height={56} />

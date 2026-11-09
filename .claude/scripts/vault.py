@@ -10,7 +10,8 @@
   vault.py save <story>            lint, commit "Save: <story>", push
   vault.py commit "<message>"      lint, commit note changes, push
   vault.py seeds [--n 3] [--focus TEXT]   random pitch seeds
-  vault.py thumbs                  160 px thumbnails of character images (needs Pillow)
+  vault.py thumbs                  thumbnails and terminal portraits of character images (needs Pillow)
+  vault.py index                   rebuild .claude/ui/vault-index.json for the browser userscript
   vault.py lint
   vault.py help
 
@@ -685,7 +686,7 @@ def cmd_text(args):
 # ---------- git ----------
 # Note commits only stage the note folders, never the machinery.
 
-NOTE_PATHS = ["Characters", "Settings", "Stories", "Style", "Modules", "story-profile.md", "Home.md"]
+NOTE_PATHS = ["Characters", "Settings", "Stories", "Style", "Modules", "story-profile.md", "Home.md", ".claude/ui"]
 
 
 def git(*args, timeout=30):
@@ -709,6 +710,10 @@ def git_push(retries=4):
 
 def commit_notes(message, paths=None):
     """Stage note changes (or the given paths), commit, push. Returns status lines."""
+    try:
+        write_index()
+    except Exception as e:  # the index is a convenience; never block a commit on it
+        print(f"UI index not rebuilt: {e}", file=sys.stderr)
     targets = [str(p) for p in (paths or NOTE_PATHS) if (ROOT / p).exists()]
     if not targets:
         return ["nothing to commit"]
@@ -802,6 +807,36 @@ def cmd_seeds(args):
 
 # ---------- thumbnails ----------
 
+CELL_PX = 20  # terminal portraits: 20 x 20 pixels, drawn as 20 columns x 10 rows of half blocks
+
+
+def _cells(im, px):
+    """A picture as terminal cells: base64 of little-endian u32 triplets [char, fg, bg] per
+    cell, two pixels per cell (upper half block), transparent pixels left to the terminal."""
+    import base64
+    import struct
+    side = max(im.size)
+    square = im.crop(((im.width - side) // 2, 0, (im.width - side) // 2 + side, side)) if im.width < im.height else im
+    square = square.resize((px, px))
+    pix = square.load()
+    default = 0x01000000
+    words = []
+    for row in range(0, px, 2):
+        for x in range(px):
+            top, bottom = pix[x, row], pix[x, row + 1]
+            rgb = lambda c: (c[0] << 16) | (c[1] << 8) | c[2]
+            t_on, b_on = top[3] >= 128, bottom[3] >= 128
+            if t_on and b_on:
+                words += [0x2580, rgb(top), rgb(bottom)]
+            elif t_on:
+                words += [0x2580, rgb(top), default]
+            elif b_on:
+                words += [0x2584, rgb(bottom), default]
+            else:
+                words += [0x20, default, default]
+    return base64.b64encode(struct.pack(f"<{len(words)}I", *words)).decode()
+
+
 def cmd_thumbs(_args):
     """Small copies of character images in images/.thumbs/, for the UI mod and userscript."""
     try:
@@ -815,10 +850,106 @@ def cmd_thumbs(_args):
             continue
         out.parent.mkdir(exist_ok=True)
         im = Image.open(img).convert("RGBA")
+        small = im.copy()
         im.thumbnail((160, 160))
         im.quantize(colors=128, method=Image.Quantize.FASTOCTREE).save(out, optimize=True)
+        out.with_suffix(".cells").write_text(_cells(small, CELL_PX), encoding="ascii")
         made += 1
     print(f"{made} thumbnail(s) made.")
+
+
+# ---------- UI index ----------
+# .claude/ui/vault-index.json: what the browser userscript reads from the repo (through the
+# person's GitHub login) to show the vault. Rebuilt on every commit the vault makes.
+
+UI_INDEX = ROOT / ".claude" / "ui" / "vault-index.json"
+
+
+def _picture(path):
+    thumb = path.parent / ".thumbs" / path.name
+    cells = thumb.with_suffix(".cells")
+    rel = lambda p: p.relative_to(ROOT).as_posix()
+    return {"image": rel(path), "thumb": rel(thumb) if thumb.exists() else "",
+            "cells": rel(cells) if cells.exists() else ""}
+
+
+def _portrait(note):
+    folder = note.path.parent / "images"
+    pics = sorted(p for p in folder.glob("*.png") if " - mood - " not in p.name) if folder.is_dir() else []
+    return _picture(pics[0]) if pics else None
+
+
+def _bullets(text):
+    return [l[2:].strip() for l in text.splitlines() if l.startswith("- ") and l[2:].strip()]
+
+
+def build_index(notes=None):
+    notes = notes if notes is not None else all_notes()
+    by_name = {n.name.lower(): n for n in notes}
+    out = {"stories": [], "characters": [], "settings": [], "active": None, "coWriter": None,
+           "profile": {"defaults": [], "style": [], "kinks": [], "limits": []}}
+    for s in sorted((n for n in notes if n.type == "story"), key=lambda n: n.name):
+        fm = s.fm
+        out["stories"].append({"name": s.name, "status": str(fm.get("status", "")), "mode": str(fm.get("mode", "")),
+                               "world": world_of(fm), "lastBeat": str(fm.get("last_beat") or "")})
+    act = active_story(notes)
+    if act:
+        cast = []
+        for line in _bullets(section(act.body, "Cast")):
+            name = re.sub(r"[\[\]]", "", line.split("(")[0]).split(" as ")[0].strip()
+            ch = by_name.get(name.lower())
+            cast.append({"name": name, "line": line, "portrait": _portrait(ch) if ch else None})
+        out["active"] = {"story": act.name, "mode": str(act.fm.get("mode", "")),
+                         "pov": f"{act.fm.get('pov', '')} {act.fm.get('tense', '')}".strip(),
+                         "lastBeat": str(act.fm.get("last_beat") or ""),
+                         "state": _bullets(section(act.body, "State")), "cast": cast}
+    for c in sorted((n for n in notes if n.type == "character"), key=lambda n: (world_of(n.fm).lower(), n.name)):
+        hook = re.search(r"^>\s*(.+)$", c.body, flags=re.M)
+        out["characters"].append({"name": c.name, "world": world_of(c.fm) or "No world",
+                                  "species": str(c.fm.get("species") or ""), "age": str(c.fm.get("age") or ""),
+                                  "hook": hook.group(1).strip() if hook else "", "portrait": _portrait(c)})
+    for s in sorted((n for n in notes if n.type == "setting"), key=lambda n: n.name):
+        hook = re.search(r"^>\s*(.+)$", s.body, flags=re.M)
+        out["settings"].append({"name": s.name, "world": world_of(s.fm), "status": str(s.fm.get("status", "")),
+                                "hook": hook.group(1).strip() if hook else ""})
+    prof = ROOT / "story-profile.md"
+    if prof.exists():
+        text = prof.read_text(encoding="utf-8")
+
+        def sec(title):
+            m = re.search(rf"^##\s+{re.escape(title)}\s*\n(.*?)(?=^##\s|\Z)", text, flags=re.M | re.S)
+            return m.group(1) if m else ""
+
+        out["profile"] = {"defaults": _bullets(sec("Defaults")), "style": _bullets(sec("Style")),
+                          "kinks": _bullets(sec("Kinks and themes")), "limits": _bullets(sec("Limits"))}
+        name = re.search(r"^-\s*Name:\s*(.+)$", sec("Co-writer"), flags=re.M)
+        if name:
+            full = name.group(1).strip()
+            short = (re.search(r"\(([^)]+)\)", full) or re.match(r"(.+)", full)).group(1).strip()
+            base = re.sub(r"\s*\(.*\)\s*$", "", full)
+            ch = by_name.get(base.lower())
+            moods = {}
+            if ch and (ch.path.parent / "images").is_dir():
+                for p in sorted((ch.path.parent / "images").glob(f"{ch.name} - mood - *.png")):
+                    moods[p.stem.split(" - mood - ", 1)[1].strip().lower()] = _picture(p)
+            out["coWriter"] = {"name": base, "short": short, "portrait": _portrait(ch) if ch else None, "moods": moods}
+    return out
+
+
+def write_index(notes=None):
+    """Rewrites the UI index when it changed. Returns its path, or None when unchanged."""
+    import json
+    text = json.dumps(build_index(notes), indent=1, ensure_ascii=False) + "\n"
+    if UI_INDEX.exists() and UI_INDEX.read_text(encoding="utf-8") == text:
+        return None
+    UI_INDEX.parent.mkdir(parents=True, exist_ok=True)
+    UI_INDEX.write_text(text, encoding="utf-8")
+    return UI_INDEX
+
+
+def cmd_index(_args):
+    path = write_index()
+    print(f"Wrote {path.relative_to(ROOT).as_posix()}" if path else "UI index unchanged.")
 
 
 # ---------- help ----------
@@ -934,6 +1065,7 @@ def main():
     p = sub.add_parser("commit"); p.add_argument("message"); p.set_defaults(fn=cmd_commit)
     p = sub.add_parser("help"); p.set_defaults(fn=cmd_help)
     p = sub.add_parser("thumbs"); p.set_defaults(fn=cmd_thumbs)
+    p = sub.add_parser("index"); p.set_defaults(fn=cmd_index)
     p = sub.add_parser("seeds"); p.add_argument("--n", type=int, default=3)
     p.add_argument("--focus", help="a setting, a character, or a theme from [pitch: …]")
     p.add_argument("--seed", type=int, help="repeatable output for tests"); p.set_defaults(fn=cmd_seeds)
