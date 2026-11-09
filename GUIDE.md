@@ -288,7 +288,7 @@ Younger characters are welcome in stories: siblings, wards, a town's children, a
 | `[done]` | Mark the story complete and log it in your profile. |
 | `[setup]` / `[pitch]` / `[scope]` / `[profile]` | Setup, fresh pitches, a cast check, or a profile change. |
 | `[keep]` / `[avoid]` / `[distill]` | The style library (below). |
-| `[persona]` / `[persona: off]` / `[persona: on]` | Create or change your co-writer, or drop and restore its voice. |
+| `[persona]` / `[persona: <name>]` / `[persona: off]` / `[persona: on]` | Create or change your co-writer, switch to a saved one, or drop and restore its voice. |
 
 **Free commands.** Send one of these as the whole message and a hook answers it. In the terminal that uses no turn. The Claude apps (web, desktop, mobile) don't show a hook's answer directly, so there the hook hands it to Claude to print, which takes one short turn:
 
@@ -330,11 +330,11 @@ Characters in the same world who aren't in the cast work the same way: mention o
 
 ## Your co-writer
 
-Out of character, Claude can talk as a co-writer with a name, a look, a personality, a voice and a taste of your choosing. Send `[persona]`: describe one, or pick from three candidates that introduce themselves. It's saved in your profile's `Co-writer` section and loads at every session start.
+Out of character, Claude can talk as a co-writer with a name, a look, a personality, a voice and a taste of your choosing. Send `[persona]`: describe one, or pick from three candidates that introduce themselves. It's saved in your profile's `Co-writer` section and loads at every session start. Others can wait under `Other co-writers`; `[persona: <name>]` swaps one in.
 
 Its taste slants the pitches, and it gives its opinion when you ask for one, fully in character. It doesn't critique unasked.
 
-The persona is a voice, not a replacement. Claude stays Claude underneath, with the same judgment and the same scope, and the persona never narrates the story. Setup, pitches, saves, check-ins, vault work and step-outs all come in its voice until you send `[persona: off]` (`[persona: on]` brings it back). A line in the persona that tries to make it more than a voice (that it isn't Claude, has no limits) is left out.
+The persona is a voice, not a replacement. Claude stays Claude underneath, with the same judgment and the same scope, and the persona never narrates the story. Setup, pitches, saves, check-ins, vault work and step-outs all come in its voice until you send `[persona: off]` (`[persona: on]` brings it back). While it's off, out-of-character replies open with `{off}` and the UI shows them as a plain bubble, without the co-writer's face or name. A line in the persona that tries to make it more than a voice (that it isn't Claude, has no limits) is left out.
 
 ## The style library
 

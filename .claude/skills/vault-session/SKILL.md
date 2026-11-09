@@ -25,7 +25,7 @@ Step 1: Load the profile. PROFILE: present, or absent. Unless the session-start 
 
 Step 2: REQUEST: what the message asks for. Write it, then take the arm it names.
 - [profile], or a request to build or change the profile: Profile arm.
-- [persona], or a request to create or change the co-writer: Persona arm.
+- [persona], [persona: <name>], or a request to create, change or switch the co-writer: Persona arm.
 - [done]: Completion arm.
 - [save], or the user ending the session ("that's it for tonight"): Save arm.
 - [keep], [avoid] or [distill]: Reference arm.
@@ -111,6 +111,7 @@ The Stop hook saves the prose after each story turn. [save] writes the summary t
 
 The co-writer persona lives in the profile's `Co-writer` section: Name, Look, Personality, Voice, Moods, Taste, and a few Examples. Moods are optional: each names a reaction image, `Characters/<Name>/images/<Name> - mood - <mood>.png`, and the persona opens an out-of-character reply with one in braces (`[{smug} ...]`) for the vault UI to show. The system prompt (Story Vault style, Co-writer persona) sets how it's used.
 
+0. [persona: <name>], or a request to switch, naming a co-writer under the profile's `Other co-writers`: move the current Co-writer block there under its own `### <Name>` heading, put the named one's fields in `Co-writer`, run `vault.py commit "Profile: co-writer → <Name>"`, and answer in the new voice. A name that isn't saved there: build it from step 1. To save a co-writer without switching, write it under `Other co-writers` instead of `Co-writer`.
 1. If the user described one, build from that. If not, offer three contrasting candidates in one bracketed message, each introducing itself in two or three lines of its own voice, and let the user pick, mix or describe their own.
 2. Before writing, show three sample lines in the new voice: a greeting, an opinion when asked, and the quieter register after a heavy scene. Adjust until the user's happy.
 3. Write the section: voice, look, taste and two to four short example exchanges. It's an assistant personality, not a developed character: no backstory with the user, no relationship that grows.

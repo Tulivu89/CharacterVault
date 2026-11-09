@@ -308,7 +308,8 @@ export const register: Register = on => {
   })
 
   // Out-of-character replies wholly in [brackets] draw as the co-writer's bubble, with a
-  // reaction face when the reply opens with a mood in braces: [{smug} ...].
+  // reaction face when the reply opens with a mood in braces: [{smug} ...]. [{off} ...] (persona off)
+  // draws a plain bubble labelled "Out of character".
   on('ui.render', { component: 'AssistantMessage' }, async ($, e, next) => {
     const text = e.props.text.trim()
     const v = await read($, view)
@@ -317,7 +318,8 @@ export const register: Register = on => {
     let inner = text.slice(1, -1).trim()
     const mood = inner.match(/^\{([a-z-]+)\}\s*/i)
     if (mood) inner = inner.slice(mood[0].length)
-    const face = (mood && cw.moods[mood[1]!.toLowerCase()]) || cw.portrait
+    const off = mood?.[1]!.toLowerCase() === 'off'  // persona off: plain bubble, no face or name
+    const face = off ? null : (mood && cw.moods[mood[1]!.toLowerCase()]) || cw.portrait
     const { Box, Text, Markdown } = $.ui.resolve(e)
     let faceEl = null
     if (face?.cells && e.surface === 'terminal') {
@@ -331,7 +333,7 @@ export const register: Register = on => {
       <Box flexDirection="row" gap="sm" borderStyle="round" borderColor={TAE} paddingX={1} marginY={1}>
         {faceEl}
         <Box flexDirection="column" flexShrink={1}>
-          <Text bold color={TAE}>{cw.short}</Text>
+          <Text bold color={TAE}>{off ? 'Out of character' : cw.short}</Text>
           <Markdown text={inner} />
         </Box>
       </Box>
