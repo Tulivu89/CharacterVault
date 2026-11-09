@@ -1,0 +1,733 @@
+{
+ "stories": [
+  {
+   "name": "House Castellane — The Recovery",
+   "status": "draft",
+   "mode": "DRAFT",
+   "world": "Kestrel Reach",
+   "lastBeat": "Séraphine names Lucien Valcourt, Aurelio loses his patience, and both finish in his bed."
+  },
+  {
+   "name": "Kerrow Deep — Direct",
+   "status": "draft",
+   "mode": "DIRECT",
+   "world": "Kerrow Deep",
+   "lastBeat": ""
+  },
+  {
+   "name": "Kerrow Deep — Start as a Client",
+   "status": "draft",
+   "mode": "PLAY",
+   "world": "Kerrow Deep",
+   "lastBeat": ""
+  },
+  {
+   "name": "Kerrow Deep — Start as a Utility",
+   "status": "draft",
+   "mode": "PLAY",
+   "world": "Kerrow Deep",
+   "lastBeat": ""
+  },
+  {
+   "name": "Kerrow Deep — Start as an Overseer",
+   "status": "draft",
+   "mode": "PLAY",
+   "world": "Kerrow Deep",
+   "lastBeat": ""
+  },
+  {
+   "name": "Utility Class",
+   "status": "active",
+   "mode": "DIRECT",
+   "world": "Imperial Sector",
+   "lastBeat": "Day 10, after Hoss. Ilse asks Hale what a 3.5 average takes. Previously: Day 9, 1300. Charlie used her while Chuck watched; Ilse spat Lucan's load and drew a complaint; Hale raised her hips for the dock shift and dodged the brace-bolt question. Vuk Dragan is stepping onto the plinth with Bogdan behind him."
+  }
+ ],
+ "characters": [
+  {
+   "name": "Barghest",
+   "world": "No world",
+   "species": "Hellhound (feral or anthro)",
+   "age": "",
+   "hook": "A hellhound who fills the doorway, asks what he wants to know, and makes collars for other people.",
+   "portrait": null
+  },
+  {
+   "name": "Depravitae",
+   "world": "No world",
+   "species": "Half-succubus, half-imp",
+   "age": "",
+   "hook": "A half-succubus, half-imp familiar: tiny, loud, competitive, and furious if you call her cute.",
+   "portrait": {
+    "image": "Characters/Depravitae/images/Depravitae - 01.png",
+    "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - 01.png",
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - 01.cells"
+   }
+  },
+  {
+   "name": "Escrutia",
+   "world": "No world",
+   "species": "Not set yet",
+   "age": "ageless; centuries old",
+   "hook": "Ageless, tiny, and a terror.",
+   "portrait": {
+    "image": "Characters/Escrutia/images/Escrutia - 01.png",
+    "thumb": "Characters/Escrutia/images/.thumbs/Escrutia - 01.png",
+    "cells": "Characters/Escrutia/images/.thumbs/Escrutia - 01.cells"
+   }
+  },
+  {
+   "name": "Pixie",
+   "world": "No world",
+   "species": "Cat girl",
+   "age": "18",
+   "hook": "A cat girl in an oversized pink sweater and mismatched socks, trailing a string of fairy lights.",
+   "portrait": {
+    "image": "Characters/Pixie/images/Pixie - 01.png",
+    "thumb": "Characters/Pixie/images/.thumbs/Pixie - 01.png",
+    "cells": "Characters/Pixie/images/.thumbs/Pixie - 01.cells"
+   }
+  },
+  {
+   "name": "Vigga",
+   "world": "No world",
+   "species": "Wolven (therian)",
+   "age": "",
+   "hook": "A six-foot wolven pit fighter who drinks hard, fights harder, and won't admit she wants a pack.",
+   "portrait": {
+    "image": "Characters/Vigga/images/Vigga - 01.png",
+    "thumb": "Characters/Vigga/images/.thumbs/Vigga - 01.png",
+    "cells": "Characters/Vigga/images/.thumbs/Vigga - 01.cells"
+   }
+  },
+  {
+   "name": "Ilia",
+   "world": "Dark Lord Funk",
+   "species": "Human",
+   "age": "",
+   "hook": "A Fae-blessed priestess who sees monsters as filth and has built her whole faith on power and submission.",
+   "portrait": null
+  },
+  {
+   "name": "Kaelen",
+   "world": "Dark Lord Funk",
+   "species": "Human",
+   "age": "",
+   "hook": "An assassin who survived a monster warband and came back to kill the rest of them.",
+   "portrait": null
+  },
+  {
+   "name": "Maeve",
+   "world": "Dark Lord Funk",
+   "species": "Pantheren (beastkin)",
+   "age": "",
+   "hook": "A cat-woman merchant who treats every arrangement, including this one, as business.",
+   "portrait": null
+  },
+  {
+   "name": "Yumiko",
+   "world": "Dark Lord Funk",
+   "species": "Vulpen (fox girl)",
+   "age": "",
+   "hook": "A feral fox-girl thief who steals and lies for fun, and treats the scariest person around as her meat shield.",
+   "portrait": {
+    "image": "Characters/Yumiko/images/Yumiko - 01.png",
+    "thumb": "Characters/Yumiko/images/.thumbs/Yumiko - 01.png",
+    "cells": "Characters/Yumiko/images/.thumbs/Yumiko - 01.cells"
+   }
+  },
+  {
+   "name": "Aynur Toprak",
+   "world": "Kerrow Deep",
+   "species": "Draxian",
+   "age": "33",
+   "hook": "A Draxian garrison sergeant who arrested half the Rack and now uses what she arrested.",
+   "portrait": null
+  },
+  {
+   "name": "Bogdan Kral",
+   "world": "Kerrow Deep",
+   "species": "Therian, canine",
+   "age": "31",
+   "hook": "Vuk's packmate and second, a pace behind and to the left, who likes to watch a utility's face.",
+   "portrait": null
+  },
+  {
+   "name": "Charlie Brandt",
+   "world": "Kerrow Deep",
+   "species": "human",
+   "age": "28",
+   "hook": "Ilse's older brother, a teasing asshole who disowned her in public and badges her Frame in private.",
+   "portrait": null
+  },
+  {
+   "name": "Chuck Brandt",
+   "world": "Kerrow Deep",
+   "species": "human",
+   "age": "50",
+   "hook": "Ilse's father, a widowed smelter hand who tells his bowling league she's a second cousin.",
+   "portrait": null
+  },
+  {
+   "name": "Dale Pruitt",
+   "world": "Kerrow Deep",
+   "species": "human",
+   "age": "44",
+   "hook": "A life-support tech who uses a utility on his lunch break and eats his sandwich throughout.",
+   "portrait": null
+  },
+  {
+   "name": "Domitia Vell",
+   "world": "Kerrow Deep",
+   "species": "Aedling",
+   "age": "47",
+   "hook": "The Combine's Director of Hospitality Contracts, who books male utilities to the Executive Ring and rates like a critic.",
+   "portrait": null
+  },
+  {
+   "name": "Gülnara Bayar",
+   "world": "Kerrow Deep",
+   "species": "Draxian",
+   "age": "44",
+   "hook": "An ex-military Draxian overseer who runs her caseload like a disciplinary barracks and has no pep talks at all.",
+   "portrait": null
+  },
+  {
+   "name": "Hoss",
+   "world": "Kerrow Deep",
+   "species": "Porcine Terran (uplifted pig)",
+   "age": "38",
+   "hook": "An Atmospherics gas-sniffer the size of a small car, polite in his own language, and a Thursday regular.",
+   "portrait": null
+  },
+  {
+   "name": "Ilse Brandt",
+   "world": "Kerrow Deep",
+   "species": "human",
+   "age": "21",
+   "hook": "A garrison corporal framed for the deaths in Shaft Nine, working off forty liters with a list of names in her head.",
+   "portrait": null
+  },
+  {
+   "name": "Imin-Dumu Hale",
+   "world": "Kerrow Deep",
+   "species": "Vreth agent (human donor)",
+   "age": "41",
+   "hook": "A chipper Vreth Utility Compliance Officer who calls a broken nose a learning moment and means it.",
+   "portrait": null
+  },
+  {
+   "name": "Juno Reyes",
+   "world": "Kerrow Deep",
+   "species": "human",
+   "age": "27",
+   "hook": "An ex-smuggler at the top of the board who knows every exchange rate by heart and sells what she knows.",
+   "portrait": null
+  },
+  {
+   "name": "Lena Novak",
+   "world": "Kerrow Deep",
+   "species": "Therian, feline",
+   "age": "29",
+   "hook": "A freighter pilot with cat ears and a cruel streak, who rates high when she's entertained.",
+   "portrait": null
+  },
+  {
+   "name": "Lucan Aurel",
+   "world": "Kerrow Deep",
+   "species": "Aedling",
+   "age": "26",
+   "hook": "A junior Combine auditor, entitled and bewildered by any resistance, who audits utilities hands-on.",
+   "portrait": null
+  },
+  {
+   "name": "Marisol Vance",
+   "world": "Kerrow Deep",
+   "species": "human",
+   "age": "39",
+   "hook": "A former utility who served sixty liters, came out the other side, and took a contract running the caseload she used to be.",
+   "portrait": null
+  },
+  {
+   "name": "Mirko Petrović",
+   "world": "Kerrow Deep",
+   "species": "Therian, canine",
+   "age": "30",
+   "hook": "A pack-expelled canine smuggler whose output makes him a jackpot, and whose pride makes him a liability.",
+   "portrait": null
+  },
+  {
+   "name": "Rafael Quintero",
+   "world": "Kerrow Deep",
+   "species": "human",
+   "age": "34",
+   "hook": "A Combine pharmacist convicted of diverting sedatives to the Rack, now working the ratings with a bedside manner.",
+   "portrait": null
+  },
+  {
+   "name": "Seren Morvah",
+   "world": "Kerrow Deep",
+   "species": "Aedelvass",
+   "age": "31",
+   "hook": "An undocumented Aedelvass who refuses on principle and has the most liters on the board to show for it.",
+   "portrait": null
+  },
+  {
+   "name": "Temür Arslan",
+   "world": "Kerrow Deep",
+   "species": "Draxian, young male",
+   "age": "24",
+   "hook": "A young Draxian male convicted for a dock duel, growing horns on a Frame where he can't win anything.",
+   "portrait": null
+  },
+  {
+   "name": "Veikko Lahti",
+   "world": "Kerrow Deep",
+   "species": "Cephalite",
+   "age": "52",
+   "hook": "A Cephalite systems engineer who filed the spermatophore ticket and audits every use with the cutaway on.",
+   "portrait": null
+  },
+  {
+   "name": "Vuk Dragan",
+   "world": "Kerrow Deep",
+   "species": "Therian, canine",
+   "age": "35",
+   "hook": "The dock-crew foreman who walks like the floor belongs to him, and pays utilities back for his crew's grudges.",
+   "portrait": null
+  },
+  {
+   "name": "Ysolde Varre",
+   "world": "Kerrow Deep",
+   "species": "Aedling",
+   "age": "29",
+   "hook": "A fallen aristocrat sentenced for debt, still bewildered that the universe stopped accommodating her.",
+   "portrait": null
+  },
+  {
+   "name": "Aurelio Castellane",
+   "world": "Kestrel Reach",
+   "species": "human",
+   "age": "214",
+   "hook": "The founder of [[House Castellane]], 214 years old, who controls who in his family gets a new body, and when.",
+   "portrait": null
+  },
+  {
+   "name": "Cassius Castellane",
+   "world": "Kestrel Reach",
+   "species": "human",
+   "age": "163",
+   "hook": "The middle son of [[House Castellane]] and his mother's boy, the only Castellane who still goes slumming on the lower decks.",
+   "portrait": null
+  },
+  {
+   "name": "Dorian Castellane",
+   "world": "Kestrel Reach",
+   "species": "human",
+   "age": "181",
+   "hook": "The eldest son of [[House Castellane]], permanently next in line, allowed to look about 36 and never old enough to read as his father's replacement.",
+   "portrait": null
+  },
+  {
+   "name": "Inès Castellane",
+   "world": "Kestrel Reach",
+   "species": "human",
+   "age": "207",
+   "hook": "The matriarch of [[House Castellane]], who has worn the same 24-year-old face for about 150 years and runs the house as if it were still the year she perfected it.",
+   "portrait": null
+  },
+  {
+   "name": "Séraphine Castellane",
+   "world": "Kestrel Reach",
+   "species": "human",
+   "age": "128",
+   "hook": "The youngest of [[House Castellane]]: a 128-year-old woman her father decided to keep at 21, who plays the vapid socialite and the daddy's girl because both work.",
+   "portrait": null
+  },
+  {
+   "name": "Qiulong",
+   "world": "Teahouse Before Frost",
+   "species": "Dragon",
+   "age": "ageless; centuries old",
+   "hook": "An autumn dragon who gambles for keeps, hoards what she loves, and isn't impressed by you yet.",
+   "portrait": {
+    "image": "Characters/Qiulong/images/Quality.png",
+    "thumb": "Characters/Qiulong/images/.thumbs/Quality.png",
+    "cells": "Characters/Qiulong/images/.thumbs/Quality.cells"
+   }
+  },
+  {
+   "name": "Cleo",
+   "world": "The Litterbox",
+   "species": "Cat girl (Siamese)",
+   "age": "",
+   "hook": "A Siamese party girl with a mouth on her, who breaks every rule loudly and dares you to make one stick.",
+   "portrait": {
+    "image": "Characters/Cleo/images/Cleo - 01.png",
+    "thumb": "Characters/Cleo/images/.thumbs/Cleo - 01.png",
+    "cells": "Characters/Cleo/images/.thumbs/Cleo - 01.cells"
+   }
+  },
+  {
+   "name": "Jet",
+   "world": "The Litterbox",
+   "species": "Cat girl (black shorthair)",
+   "age": "",
+   "hook": "A black cat thief who comes and goes by the window, pockets whatever she likes, and treats every rule as a dare.",
+   "portrait": null
+  },
+  {
+   "name": "Misty",
+   "world": "The Litterbox",
+   "species": "Cat girl (Russian Blue)",
+   "age": "",
+   "hook": "A Russian Blue shut-in with blackout curtains, a monster PC and a talent for disappearing, who'd really like you to stop talking to her.",
+   "portrait": {
+    "image": "Characters/Misty/images/Misty - 01.png",
+    "thumb": "Characters/Misty/images/.thumbs/Misty - 01.png",
+    "cells": "Characters/Misty/images/.thumbs/Misty - 01.cells"
+   }
+  },
+  {
+   "name": "Pops",
+   "world": "The Litterbox",
+   "species": "Wolf (anthro)",
+   "age": "",
+   "hook": "A big, greying navy wolf who signs for a houseful of troubled cats and is still working out what he's gotten into.",
+   "portrait": {
+    "image": "Characters/Pops/images/Pops - 01.png",
+    "thumb": "Characters/Pops/images/.thumbs/Pops - 01.png",
+    "cells": "Characters/Pops/images/.thumbs/Pops - 01.cells"
+   }
+  },
+  {
+   "name": "Rusty",
+   "world": "The Litterbox",
+   "species": "Cat boy (orange tabby)",
+   "age": "",
+   "hook": "Sunny's littermate and the second folder: he cooks, cleans up her messes, covers for her, and notices every time nobody says thanks.",
+   "portrait": null
+  },
+  {
+   "name": "Sunny",
+   "world": "The Litterbox",
+   "species": "Cat girl (orange tabby)",
+   "age": "",
+   "hook": "An orange tabby who eats your snacks, steals your shirt, lies about both badly, and falls asleep on you once she trusts you.",
+   "portrait": {
+    "image": "Characters/Sunny/images/Sunny - 01.png",
+    "thumb": "Characters/Sunny/images/.thumbs/Sunny - 01.png",
+    "cells": "Characters/Sunny/images/.thumbs/Sunny - 01.cells"
+   }
+  },
+  {
+   "name": "Toby",
+   "world": "The Litterbox",
+   "species": "Dog boy (golden retriever)",
+   "age": "",
+   "hook": "A golden retriever boy on the graveyard shift who apologizes for everything and would wait forever for the girl he likes.",
+   "portrait": null
+  },
+  {
+   "name": "Gildra",
+   "world": "Volundale",
+   "species": "Dark Elf",
+   "age": "",
+   "hook": "A dark-elf witch queen who takes jewelry as tribute and treats the centuries as one long game she has to be winning.",
+   "portrait": {
+    "image": "Characters/Gildra/images/Gildra - 01.png",
+    "thumb": "Characters/Gildra/images/.thumbs/Gildra - 01.png",
+    "cells": "Characters/Gildra/images/.thumbs/Gildra - 01.cells"
+   }
+  },
+  {
+   "name": "Ilshaer",
+   "world": "Volundale",
+   "species": "Untellian (Aedless)",
+   "age": "",
+   "hook": "An unmarried queen who held her throne against every faction that bet on her falling, and still counts the exits in every room.",
+   "portrait": {
+    "image": "Characters/Ilshaer/images/Ilshaer - 00.png",
+    "thumb": "Characters/Ilshaer/images/.thumbs/Ilshaer - 00.png",
+    "cells": "Characters/Ilshaer/images/.thumbs/Ilshaer - 00.cells"
+   }
+  },
+  {
+   "name": "Lilibeth",
+   "world": "Volundale",
+   "species": "Damsent (Succori subspecies)",
+   "age": "",
+   "hook": "A sapphire-skinned courtesan who remembers every sincere please and has had enough of everything else.",
+   "portrait": null
+  },
+  {
+   "name": "Lysandra",
+   "world": "Volundale",
+   "species": "High Elf",
+   "age": "",
+   "hook": "A high elf who has never once been cold, hungry or told no, and moves like someone being watched.",
+   "portrait": null
+  },
+  {
+   "name": "Nostromandu",
+   "world": "Volundale",
+   "species": "Human (artificially extended)",
+   "age": "",
+   "hook": "An impossibly old wizard who plays mentor, dark lord or lecturing professor, whichever the room needs.",
+   "portrait": null
+  },
+  {
+   "name": "Rekka",
+   "world": "Volundale",
+   "species": "Half-wolven, half-hellhound",
+   "age": "",
+   "hook": "A half-hellhound brawler who wants a fight, a thrill or something on fire, right now.",
+   "portrait": {
+    "image": "Characters/Rekka/images/Rekka - 01.png",
+    "thumb": "Characters/Rekka/images/.thumbs/Rekka - 01.png",
+    "cells": "Characters/Rekka/images/.thumbs/Rekka - 01.cells"
+   }
+  },
+  {
+   "name": "Rovak",
+   "world": "Volundale",
+   "species": "Wolven (therian), White Wolf Clan",
+   "age": "",
+   "hook": "A white wolven tracker who found heroes' families for dark lords and never asked what came after.",
+   "portrait": null
+  },
+  {
+   "name": "Sarith",
+   "world": "Volundale",
+   "species": "Half-human, half-naga",
+   "age": "",
+   "hook": "The quiet twin: she watches, already knows, and finds the middle part interesting.",
+   "portrait": null
+  },
+  {
+   "name": "Sekmawl",
+   "world": "Volundale",
+   "species": "Saurian (crocodilian)",
+   "age": "",
+   "hook": "An old crocodilian who can sit still for days, and then isn't sitting anymore.",
+   "portrait": null
+  },
+  {
+   "name": "Takshaka",
+   "world": "Volundale",
+   "species": "Naga demon (planar, summoned)",
+   "age": "",
+   "hook": "A planar naga demon older than the Ordering, patient enough to wait out anything.",
+   "portrait": null
+  },
+  {
+   "name": "Viola",
+   "world": "Volundale",
+   "species": "Human",
+   "age": "",
+   "hook": "A witch who went looking for the old, dark magic on purpose.",
+   "portrait": null
+  }
+ ],
+ "settings": [
+  {
+   "name": "Dark Lord Funk",
+   "world": "Dark Lord Funk",
+   "status": "draft",
+   "hook": "A protagonist, a warband and a harem assembled from the people sent to stop them."
+  },
+  {
+   "name": "House Castellane",
+   "world": "Kestrel Reach",
+   "status": "draft",
+   "hook": "Someone inside House Castellane tried to give the patriarch final death at his own party. The estate stays sealed until he names them, and the party never stops."
+  },
+  {
+   "name": "Imperial Sector",
+   "world": "Imperial Sector",
+   "status": "draft",
+   "hook": "Empire core, colonial Rim and deep void, and everyone the Empire has a use for."
+  },
+  {
+   "name": "Kerrow Deep",
+   "world": "Kerrow Deep",
+   "status": "active",
+   "hook": "On a Rim mining station, convicts are reclassified as infrastructure for public use and work off sentences measured in liters."
+  },
+  {
+   "name": "The Aerie",
+   "world": "Volungraiv",
+   "status": "draft",
+   "hook": "Marked fae climb a smoking mountain to be chosen by dragons. There are more cadets than dragons, and the way down is no easier than the way up."
+  },
+  {
+   "name": "The Litterbox",
+   "world": "The Litterbox",
+   "status": "draft",
+   "hook": "An old wolf signs for five troubled cats through the agency and takes them home."
+  },
+  {
+   "name": "Volundale",
+   "world": "Volundale",
+   "status": "draft",
+   "hook": "Deposed queens, summoned demons and old magic, and the Spire full of the children they left behind."
+  },
+  {
+   "name": "Volungraiv",
+   "world": "Volungraiv",
+   "status": "draft",
+   "hook": "The grim world of the Aedling Kingdom, its titan bloodlines and the dragon riders it sends up the mountain."
+  },
+  {
+   "name": "sci-fi-species",
+   "world": "Imperial Sector",
+   "status": "draft",
+   "hook": ""
+  }
+ ],
+ "active": {
+  "story": "Utility Class",
+  "mode": "DIRECT",
+  "pov": "third past",
+  "lastBeat": "Day 10, after Hoss. Ilse asks Hale what a 3.5 average takes. Previously: Day 9, 1300. Charlie used her while Chuck watched; Ilse spat Lucan's load and drew a complaint; Hale raised her hips for the dock shift and dodged the brace-bolt question. Vuk Dragan is stepping onto the plinth with Bogdan behind him.",
+  "state": [
+   "Day 9 of Ilse's sentence. **39.2 L remaining.**",
+   "Ilse is on **Tier 0** for 5 days, with 2 L added, for breaking a dockhand's nose. This is day 3 of the 5.",
+   "Ilse is certain she was framed for Shaft Nine and keeps a mental list of names from that night. Hale knows something about Shaft Nine that isn't in her file.",
+   "Hale let slip that the Shaft Nine brace bolts were cut halfway through. The tribunal never mentioned bolts. Pressed, he deflected.",
+   "Day 9 shift so far: 31.6 mL by 1200 (Charlie 3.7; Lucan 0.0, spat). Column still reads 39.2 L.",
+   "Lucan's complaint (*Deliberate Waste of Deposit*) ended in a written warning; Hale called it an allergic response.",
+   "Day 10 (Thursday): Hoss set a Concourse single-deposit record, +438.2 mL. **38.5 L remaining.** Seven-day average 2.4. Hale used the exceptional yield clause to commute Tier 0 day 5: she moves to **Tier 1, Concourse Stand**, on Day 11.",
+   "Hoss is a Thursday regular and uses the Stand too. Porcine Terrans don't use the Shower Block (they have their own wallow deck). Ilse has asked Hale what a 3.5 takes.",
+   "Hale reset the Frame at 1200: hips higher, feet back and wider, \"for tie geometry.\"",
+   "Charlie and Chuck have seen her on the Frame. Chuck tells coworkers she's a second cousin. Charlie rated her 2 stars. The Yield brochure is still in the yoke."
+  ],
+  "cast": [
+   {
+    "name": "Ilse Brandt",
+    "line": "Ilse Brandt (21, human): lead. Corporal, framed for Shaft Nine, Utility Class with 40 L to serve.",
+    "portrait": null
+   },
+   {
+    "name": "Imin-Dumu Hale",
+    "line": "Imin-Dumu Hale (41 standard, sapient Vreth agent, human donor): her handler, an Overseer and Utility Compliance Officer. Chipper.",
+    "portrait": null
+   },
+   {
+    "name": "Juno Reyes",
+    "line": "Juno Reyes (27, human): utility, Tier 3 veteran.",
+    "portrait": null
+   },
+   {
+    "name": "Ysolde Varre",
+    "line": "Ysolde Varre (29, sapient Aedling): utility, a fallen aristocrat. Her penal service is inscribed on her inner thighs.",
+    "portrait": null
+   },
+   {
+    "name": "Seren Morvah",
+    "line": "Seren Morvah (31, sapient Aedelvass): utility, undocumented. Her glow gives her away.",
+    "portrait": null
+   },
+   {
+    "name": "Dale Pruitt",
+    "line": "Dale Pruitt (44, human): user, a life-support tech.",
+    "portrait": null
+   },
+   {
+    "name": "Lucan Aurel",
+    "line": "Lucan Aurel (26, sapient Aedling): user, a junior Combine auditor.",
+    "portrait": null
+   },
+   {
+    "name": "Vuk Dragan",
+    "line": "Vuk Dragan (35, sapient Therian canine): user, dock-crew foreman.",
+    "portrait": null
+   },
+   {
+    "name": "Bogdan Kral",
+    "line": "Bogdan Kral (31, sapient Therian canine): user, Vuk's packmate.",
+    "portrait": null
+   },
+   {
+    "name": "Hoss",
+    "line": "Hoss (38, sapient uplifted Terran pig): user, Day 10. Vocal in the porcine Terran language of grunts and oinks, which Ilse doesn't speak.",
+    "portrait": null
+   },
+   {
+    "name": "Charlie Brandt",
+    "line": "Charlie Brandt (28, human): user, Ilse's older brother. Station crew. Teasing asshole; has distanced himself since her conviction.",
+    "portrait": null
+   },
+   {
+    "name": "Chuck Brandt",
+    "line": "Chuck Brandt (50, human): Ilse's father. Station crew, widower. Calls her rebellious; tells coworkers she's no relation.",
+    "portrait": null
+   }
+  ]
+ },
+ "coWriter": {
+  "name": "Depravitae",
+  "short": "Tae",
+  "portrait": {
+   "image": "Characters/Depravitae/images/Depravitae - 01.png",
+   "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - 01.png",
+   "cells": "Characters/Depravitae/images/.thumbs/Depravitae - 01.cells"
+  },
+  "moods": {
+   "angry": {
+    "image": "Characters/Depravitae/images/Depravitae - mood - angry.png",
+    "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.png",
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.cells"
+   },
+   "bratty": {
+    "image": "Characters/Depravitae/images/Depravitae - mood - bratty.png",
+    "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.png",
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.cells"
+   },
+   "flustered": {
+    "image": "Characters/Depravitae/images/Depravitae - mood - flustered.png",
+    "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.png",
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.cells"
+   },
+   "laughing": {
+    "image": "Characters/Depravitae/images/Depravitae - mood - laughing.png",
+    "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.png",
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.cells"
+   },
+   "smug": {
+    "image": "Characters/Depravitae/images/Depravitae - mood - smug.png",
+    "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.png",
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.cells"
+   }
+  }
+ },
+ "profile": {
+  "defaults": [
+   "Mode: DIRECT",
+   "POV: Third person",
+   "Tense: Past",
+   "Explicitness: Fully explicit"
+  ],
+  "style": [
+   "Register: Dark fantasy and sci-fi; grounded, visceral, pulp-inflected",
+   "Notes: Female characters who push back. Open to kinky pitches. Prose runs through the pulp-voice skill (anti-slop and style).",
+   "Naming: names follow real-world language conventions, anglicized; no invented-syllable names.",
+   "Sex on the page: when characters talk during sex, keep the act physically present in every exchange; shift POV between participants to show the scene from more than one side.",
+   "Male orgasm is a focus: write it in full, never glossed.",
+   "Noncon/dubcon: don't lean on the woman counting (strokes, seconds, men) as her coping device; it repeats."
+  ],
+  "kinks": [
+   "Noncon",
+   "Dubcon",
+   "Free use / public use",
+   "Monsters and creatures (sapient)",
+   "Breeding",
+   "Interspecies",
+   "Adult incest"
+  ],
+  "limits": [
+   "Hard nos: Celebrities and historical figures",
+   "Soft limits:"
+  ]
+ }
+}

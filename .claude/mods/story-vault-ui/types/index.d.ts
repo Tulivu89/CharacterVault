@@ -1,4 +1,4 @@
-export type Picture = { file: string; thumb: string }
+export type Picture = { file: string; thumb: string; cells: string }
 export type CastLine = { name: string; line: string; portrait: Picture | null }
 export type Active = { story: string; mode: string; pov: string; lastBeat: string; state: string[]; cast: CastLine[] }
 export type StoryRow = { name: string; status: string; mode: string; world: string; lastBeat: string }
