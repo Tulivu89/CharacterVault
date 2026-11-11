@@ -66,7 +66,7 @@ girl, petite, 0.4::mature female::,
 
 **SÉRA UC**
 ```
-tareme, round face, chubby cheeks, button nose, thick eyebrows, dark skin, tan, long hair, tall female, grey hair, facial hair, beard, loli, child, aged down, teenage
+tareme, round face, chubby cheeks, button nose, thick eyebrows, dark skin, tan, long hair, tall female, grey hair, facial hair, beard,
 ```
 
 ### Aurelio
@@ -85,7 +85,7 @@ boy, tall male, 0.6::mature male::. Fingertips of right hand plated in polished 
 
 **AURE UC**
 ```
-bishounen, androgynous, long hair, black hair, cyborg, mechanical arms, rose-gold hair, glowing hair, angled bob, choker, shota, child, aged down
+bishounen, androgynous, long hair, black hair, cyborg, mechanical arms, rose-gold hair, glowing hair, angled bob, choker,
 ```
 
 ### Hand trick
@@ -658,7 +658,7 @@ girl, boy, lower body, from behind, from below, deep penetration. Woman's legs l
 
 **Panel UC (all slots)**
 ```
-loli, shota, child, aged down, teenage, tareme, round face, chubby cheeks, long hair, black hair, bishounen, cyborg, mechanical arms
+tareme, round face, chubby cheeks, long hair, black hair, bishounen, cyborg, mechanical arms
 ```
 
 **Notes:**

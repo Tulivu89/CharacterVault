@@ -12,7 +12,7 @@ A heavy man whose bulk does a job in the frame. Most of the time it's a **modifi
 
 ### The three jobs
 
-1. **Cover (eclipse).** His body hides most of her. Name exactly which parts of her show past him, or V5 deletes her or shrinks him: hands clawing the sheets beside his forearm, feet or soles between his calves, face under his chin or over his shoulder, hair fanned on the pillow, a tail, crooked glasses. Offset his box a little from hers (x≈0.45 / 0.55) so an edge of her survives. *Refs 1, 2, 4.*
+1. **Cover (eclipse).** His body hides most of her. Name exactly which parts of her show past him, or V5 deletes her or shrinks him: hands clawing the sheets beside his forearm, feet or soles between his calves, face under his chin or over his shoulder, hair fanned on the pillow, a tail, crooked glasses. Offset his box a little from hers (x≈0.45 / 0.55) so an edge of her survives. From behind, keep her head and hair out of frame: showing them past his shoulder stretches her body under him to reach. Put what shows where it really is: her arms come out from under his hips, her feet between his calves. *Refs 1, 2, 4; FB-02 ★.*
 2. **Weight (crush).** His belly lies on her back or her stomach, his chest flattens her into the bedding, her face is pressed sideways into the sheet. The read is the deformation: thighs splayed flat, cheek squashed, fingers clawing. *Ref 3.*
 3. **Frame (wall).** He *is* the shot. From below he's a wall of flesh running out of the top edge; in his POV the belly fills the bottom of the frame and she shows past its curve; in a close-up the belly rests on her ass and crowds the crop. *Ref 5, OFC-09, OFC-11a.*
 
@@ -27,7 +27,7 @@ A heavy man whose bulk does a job in the frame. Most of the time it's a **modifi
 | Use | Tags | Prose fallback |
 |---|---|---|
 | Bulk | `fat` ✓, `plump` ✓◆, `belly` ✓◆, `mature male` ✓, `broad shoulders` ✓◆, `thick thighs` ◆, `musclegut` ✓◆ (old muscle under fat), `giant` ✓◆, `tall male` ◆ | `Huge soft belly.`, `Thick arms, hands like oven mitts.` |
-| Scale | `2::size difference::` ◆ (the one emphasis), `fat man` ?, `fat male` ◇, `giant male` ◇ | `Man's body three times width of woman's.` |
+| Scale | `2::size difference::` ◆ (the one emphasis), `prone sex` ◆ (FB-02 ★), `fat man` ?, `fat male` ◇, `giant male` ◇ | `Man's body three times width of woman's.` |
 | Ugly | `ugly man` ?, `ugly male` ◇, `old man` ✓, `facial hair` ✓, `beard` ✓, `stubble` | `Thinning hair, ruddy blotchy cheeks.` |
 | Hair | `male pubic hair` ✓, `hairy male` ◇, `chest hair` ? | `Thick dark hair on belly, chest and forearms.` |
 | Contact | `lying on person` ?◇, `crushing` ◇, `covered by another` ◇ (V4.5 pseudo-tags; use as `source#`/`target#` pairs only on retest) | `Man's belly presses down on woman's back, pinning woman flat.` |
@@ -60,9 +60,11 @@ boy, demon boy, tall male, giant, colored skin, grey skin, fat, belly, musclegut
 ```
 **FB·BODY** (any of the above, head out of frame): the kit's line 1 only, plus its body sentence.
 
+**Her side of it.** For a very small partner, `petite` plus a short sentence (`small imp girl.`) carries the build. `mature female`, `wide hips` and `thick thighs` turned a tiny woman fat and dwarfish next to him (FB-02 test).
+
 **FB UC** (frame guard, then add hair and skin drift for the variant)
 ```
-abs, skinny, toned male, muscular male, bishounen, young, long hair, shota, child, aged down,
+abs, skinny, toned male, muscular male, bishounen, young, long hair,
 ```
 
 Named builds: the boss (`sets/office-condom.md`, BOSS kits), Dennis (`sets/fat-bastard.md`, DEN kits).
@@ -79,5 +81,5 @@ boy, tall male, muscular male, broad shoulders, large pectorals, veins. Huge sla
 ```
 **BRUTE UC**
 ```
-skinny, toned male, fat, bishounen, shota, child, aged down,
+skinny, toned male, fat, bishounen,
 ```

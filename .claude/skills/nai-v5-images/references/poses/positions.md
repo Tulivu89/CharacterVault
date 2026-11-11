@@ -26,10 +26,11 @@ Heavy: `Woman's calves rest on top of man's belly.`
 Contact: `Woman's shoulders on mattress, hips raised overhead, man squatting over woman's upturned ass driving straight down.`
 Cameras: from side, from below.
 
-**Prone** (`prone bone` ?) · base `sex from behind` · her `lying, on stomach` · him `on top`
+**Prone** · base `prone sex` ◆ (`prone bone` ?) · her `prone` or `lying, on stomach` · him `on top` or `all fours` over her
 Contact: `Man lies flat on woman's back from behind, hips pinning woman's hips into mattress, woman's face turned to one side.`
 Cameras: from side (her squashed face), from behind and below.
-Heavy, the crush: `Man's belly and chest flatten woman into sheets, woman's cheek squashed against mattress, hands clawing sheets beside man's forearm.` → FB-03.
+Heavy, the crush: `Man's belly and chest flatten woman into sheets, woman's cheek squashed against mattress, hands clawing sheets beside man's forearm.` → FB-03, FB-11.
+Heavy, the cover from straight behind (★ FB-02): her head out of frame; `Woman's thin arms stretched under man's hips gripping sheets, small bare feet between man's calves, soles toward viewer.`
 
 **Spooning** (`spooning` ?) · base `sex from behind` · her `lying, on side, leg up` · him `lying, on side`
 Contact: `Man curled behind woman, one arm under woman's neck, other hand hooking woman's knee up.`
@@ -47,8 +48,9 @@ Cameras: from side, from behind (his back), from front (her face, him above), ro
 Heavy: `Man's huge belly rests on woman's lower back and ass.`
 
 **Face down, ass up** · base `sex from behind` · her `top-down bottom-up` ✓ · him `kneeling` or `all fours` over her
+Reads from the side or angled from behind; straight from behind it collapses, so use Prone there.
 Contact: `Woman's face and chest pressed into futon, hips raised. Man braced on hands over woman's back.`
-Heavy, the cover: `Man's broad body hides woman except arms stretched to pillow and feet between man's calves.` → FB-02.
+Heavy: `Man's belly rests on woman's raised ass.` → FB-10.
 
 **Bent over a surface** · base `sex from behind, standing sex` · her `bent over` · him `standing`
 Contact: `Woman bent over desk, propped on elbows. Man stands behind woman gripping woman's hips.` The surface is prose; force variant: `Man's hand presses back of woman's neck, cheek flat on desk.`

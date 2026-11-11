@@ -50,7 +50,7 @@ black bodysuit, skin tight, torn bodysuit, black gloves, barefoot. Seat of bodys
 ```
 **CASS UC**
 ```
-loli, child, aged down, ponytail, long hair, bob cut, red hair, blonde hair, blue eyes, red lipstick, pink lips, pale skin, dark-skinned female, veins, chubby, tall female, broad shoulders, large breasts, wide hips, curvy, huge ass, plump, mask, cowl, cape, shoes, boots, socks, 1.3::extra arms, extra hands, bad hands, fused fingers, extra legs::
+ponytail, long hair, bob cut, red hair, blonde hair, blue eyes, red lipstick, pink lips, pale skin, dark-skinned female, veins, chubby, tall female, broad shoulders, large breasts, wide hips, curvy, huge ass, plump, mask, cowl, cape, shoes, boots, socks, 1.3::extra arms, extra hands, bad hands, fused fingers, extra legs::
 ```
 In WAL-01, WAL-02 and WAL-03–05 (street clothes) add `bodysuit` to it.
 
@@ -72,7 +72,7 @@ topless male, black pants, pants down, black boots. Black pants shoved down belo
 ```
 **BANE UC**
 ```
-shota, child, aged down, tubes, mask removed, shirt, cape, long hair, ponytail, bodysuit, pale skin, skinny, 1.3::extra arms, extra hands, bad hands, fused fingers, extra legs::
+tubes, mask removed, shirt, cape, long hair, ponytail, bodysuit, pale skin, skinny, 1.3::extra arms, extra hands, bad hands, fused fingers, extra legs::
 ```
 WAL-03–05 draw his venom tubes: swap `tubes, … bodysuit` for `tank top, panties` there.
 

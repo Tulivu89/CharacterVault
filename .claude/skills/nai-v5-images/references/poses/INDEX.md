@@ -88,9 +88,9 @@ When the user reports a result, update the module's status and add a line under 
 | LHS-03 | The Offer | — | tease | POV, above | presenting, two women |
 | LHS-04 | Mating Press | mating press | her peak | full body, side | threesome, testicle cup |
 | LHS-05 | Cowgirl | cowgirl | her peak | full body, side | onlooker, pout |
-| **FB** | *Fat bastard set, Tae and Dennis, Painterly v2* | | | | |
+| **FB** | *Fat bastard set, Tae and Dennis, Painterly Comic v2 · Comic lean* | | | | |
 | FB-01 | Eclipse | mating press | rhythm | full body, side | cover, size difference |
-| FB-02 | Buried | face down ass up | spill | full body, behind | cover, faceless, overflow |
+| FB-02 ★ | Buried | prone | spill | full body, behind | cover, faceless, overflow |
 | FB-03 | Pinned | prone | her peak | cowboy, side | weight, leer, inset, tears |
 | FB-04 | Lap | lap facing | rhythm | full body, behind, below | cover, feet dangling |
 | FB-05 | Player Two | lap facing | rhythm | full body, side | bored, game, smother |
@@ -99,6 +99,8 @@ When the user reports a result, update the module's status and add a line under 
 | FB-08a | Belly Rest | doggystyle | rhythm | close-up, behind, below | belly rest, scale |
 | FB-08b | Belly Rest: Pulse | doggystyle | pulse | close-up, behind, below | x-ray, belly rest |
 | FB-09 | Carried | carry | hero | full body, side | scale, feet dangling |
+| FB-10 | Buried, Angled | face down ass up | pulse | full body, behind (¾) | belly rest, both faces |
+| FB-11 | Headboard | prone | his peak | upper body, straight-on, below | her face front, weight |
 
 ---
 
@@ -124,9 +126,9 @@ Where each position family has coverage, by rung and angle. **✗** marks a gap 
 | Lead-in | WAL-06 | WAL-01, 02 | ✗ | ✗ | ✗ |
 | Rhythm | OFC-04 · WAL-04 · LHS-01 | WAL-03, 05 | ✗ | OFC-09 | OFC-11a · WAL-10a · FB-08a |
 | Hero | WAL-07 | WAL-08 | ✗ | ✗ | ✗ |
-| His peak | OFC-10 | ✗ | ✗ | OFC-10 | ✗ |
+| His peak | OFC-10 | ✗ | FB-11 | OFC-10 | ✗ |
 | Her peak | WAL-09 · FB-03 | ✗ | ✗ | ✗ | ✗ |
-| Pulse | ✗ | ✗ | ✗ | ✗ | OFC-11b · WAL-10b · FB-08b |
+| Pulse | ✗ | FB-10 | ✗ | ✗ | OFC-11b · WAL-10b · FB-08b |
 | Spill | ✗ | FB-02 | ✗ | ✗ | OFC-11c · WAL-10c |
 | After | ✗ | ✗ | ✗ | ✗ | ✗ |
 
@@ -141,7 +143,7 @@ Where each position family has coverage, by rung and angle. **✗** marks a gap 
 
 **Outside the act:** tease OFC-01, 02 · LHS-03; lead-in OFC-03; after OFC-07, 08; epilogue OFC-12.
 
-**Biggest gaps:** *his peak* everywhere except OFC-10; *her face from the front* in any from-behind pose; the whole on-top climax; fat-bastard *after* shots (her starfished under his arm, the walk-away) and fat-bastard oral (belly over her forehead).
+**Biggest gaps:** *his peak* outside the from-behind family; *her face from the front* except FB-11; the whole on-top climax; fat-bastard *after* shots (her starfished under his arm, the walk-away) and fat-bastard oral (belly over her forehead).
 
 ---
 
@@ -155,6 +157,7 @@ The user's reference images, by what they taught. Metadata was read from NovelAI
 | ref 2 | Face down ass up under a huge man from low behind; only her arms and feet show; creampie, hearts, SFX | FB-02 | the cover read: name what of her shows |
 | ref 3 | User's V4.5 gen: prone crush, drooling grin over her head, inset close-up, candlelit | FB-03 | V4.5 boxes: `source#lying on person, source#crushing, source#covered by another` / `target#…`; `fat male, ugly male, hairy male, drooling male, giant male`; base `1.5::sex cutaway, low angle of vaginal sex::`. Seed 3828946209, Guidance 6.2. Retest on V5 |
 | ref 4 | Seated lap from behind him, her feet at his sides, face over his shoulder, TV glow, messy room | FB-04 | the swallow: his back as the frame |
+| ref 6 ★ | The user's FB-02 run: prone under him from low behind, her arms out under his hips, soles between his calves | FB-02 | `prone sex` + her `prone`; no head or hair of hers in frame; `petite, small imp girl.` without `mature female`, `wide hips`, `thick thighs`; no age terms in UC; Comic lean style. Seed 3310816504, Euler karras, 20 steps, Guidance 5.0, Rescale 0.1, positions off |
 | ref 5 | From below, faceless wall of a man, her on her side with a leg lifted, paid and polite ("Yes. Thank you.") | FB-06 | wall plus bored overlap |
 
 Missionary references are in `sets/missionary-castellane.md`, Reference map.

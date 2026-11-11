@@ -8,6 +8,7 @@ Snapshot of the "Style Block Library" doc (master copy: https://claude.ai/artifa
 | --- | --- | --- | --- |
 | Vivid Pop v1 | base + UC | Stable | Saturated pinup-comic look; the elf references' look (bm94199, calm, obj shep) |
 | Painterly Comic v2 | base + 6 theme add-ons + UC | Stable | Western painterly look that holds faces best; one theme add-on per image |
+| Painterly Comic v2 · Comic lean | base + the v2 add-ons + UC | Tested once (FB-02 ★) | Less paint, more comic line; holds tricky compositions better. Vault-only |
 | Anime Pinup v1 | base + UC | Stable | Gacha/Nikke polish; foundations for img2img and inpainting |
 | Semirealistic mix v0 | base + UC | WIP | Semi-real pinup experiments |
 | Cyber Comic (Style B) v1 | base + UC, color line per image | Vault-only | Cyberpunk comic look of the Castellane missionary set; not in the master doc yet |
@@ -65,6 +66,23 @@ UC
 1::artist:urushihara satoshi, artist:shirow masamune,::, lowres, worst quality, low quality, bad anatomy, bad hands, jpeg artifacts, watermark, signature, photorealistic, 3d, 2.5d, limited palette, thick lineart, monochrome, greyscale, simple background, halftone, sketch, glossy, shiny, dark, in shadows, multiple views, nsfw
 ```
 - With Dark fantasy or Moonlit, delete `dark, in shadows` from the UC. For transparent-background assets, delete `simple background`.
+
+## Painterly Comic v2 · Comic lean
+
+Vault-only; the user's variant, read from the FB-02 test image (2026-11-11). It turns the painterly down and the comic line up: lesly oh leads, skiba drops from 1.7 to 1, russell dauterman and dan mora come in, and the medium group drops to 1.5. Use the Painterly Comic v2 theme add-ons after it.
+
+Base
+```
+1.5::artist:lesly oh::, 1::artist:aleksandra skiba::, 1.2::artist:emmanuel viola::, 0.9::artist:russell dauterman::, 1::artist:dan mora::, 1.5::painterly, cel shading, colored lineart, western comics (style), oil painting (medium)::, Fantasy illustration blending crisp graphic-novel inking with loose painterly color. Thin elegant ink lines with tapering strokes define forms, while visible brushstrokes texture color fills. Shading falls in clear confident shapes with soft painted edges where light meets shadow.
+```
+UC (explicit; append `nsfw` for SFW)
+```
+1::artist:urushihara satoshi, artist:shirow masamune,::
+
+lowres, worst quality, low quality, bad anatomy, bad hands, jpeg artifacts, watermark, signature, photorealistic, 3d, 2.5d, thick lineart, monochrome, greyscale, halftone, sketch, dark, in shadows, multiple views, sepia, colorful
+```
+- Tested settings: Euler (not Ancestral), karras, 20 steps, Guidance 5.0, Rescale 0.1, 832×1216, character positions off.
+- With Dark fantasy or Moonlit, delete `dark, in shadows` from the UC. Speech bubbles: delete `watermark, signature`.
 
 ## Anime Pinup — v1
 
@@ -157,6 +175,7 @@ tall female, muscular, fat, inflation, plump, old, pale skin, tanlines, extra ea
 
 | Date | Block | Change |
 | --- | --- | --- |
+| 2026-11-11 | Painterly Comic v2 · Comic lean | Added from the user's FB-02 test (vault-only) |
 | 2026-11-11 | Cyber Comic (Style B) v1 | Moved in from the missionary pose set (vault-only) |
 | 2026-10-26 | All | Library started; blocks entered as supplied |
 | Before 2026-10-26 | Painterly Comic v2 | Artist mix trimmed from 8 to 3 |

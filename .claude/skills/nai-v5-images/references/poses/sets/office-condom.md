@@ -35,7 +35,7 @@ girl, petite, dark-skinned female. Warm medium-brown skin.
 ```
 **LOIS UC**
 ```
-tall female, muscular, fat, plump, curvy, large breasts, long hair, blonde hair, grey hair, pale skin, glasses, facial hair, stubble, necktie, suspenders, smile, happy, ahegao, heart-shaped pupils, superman, cape, loli, child, aged down
+tall female, muscular, fat, plump, curvy, large breasts, long hair, blonde hair, grey hair, pale skin, glasses, facial hair, stubble, necktie, suspenders, smile, happy, ahegao, heart-shaped pupils, superman, cape,
 ```
 
 **BOSS·FACE** — the office cut of the Fat Bastard archetype (`archetypes.md`)
@@ -48,7 +48,7 @@ boy, fat. Thick dark hair on belly and thighs.
 ```
 **BOSS UC**
 ```
-muscular, muscular male, abs, toned male, bishounen, young, long hair, black hair, dark-skinned male, pixie cut, earrings, superman, cape, shota, child, aged down
+muscular, muscular male, abs, toned male, bishounen, young, long hair, black hair, dark-skinned male, pixie cut, earrings, superman, cape,
 ```
 
 **CLARK·SHORT** (OFC-12 only) · count unverified: `clark kent`
@@ -57,7 +57,7 @@ boy, clark kent, my adventures with superman, tall male, muscular male, short ha
 ```
 **CLARK UC**
 ```
-fat, old man, grey hair, facial hair, stubble, bald, pixie cut, dark-skinned male, pregnant, superman, cape, bodysuit, superhero, emblem, shota, child, aged down
+fat, old man, grey hair, facial hair, stubble, bald, pixie cut, dark-skinned male, pregnant, superman, cape, bodysuit, superhero, emblem,
 ```
 
 ---

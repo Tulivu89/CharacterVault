@@ -14,7 +14,7 @@ Distinct faces in V5 come from coherent feature clusters plus a counter-UC, not 
 - Hair: blunt bangs and sidelocks hide the kit; parted, swept or tied-back hair shows it.
 - Expression reshapes faces; heavy brows read as a frown.
 - Lead artist's face template is the main override: lead to `0.7::` first; counter-UC survives mixes better than the positive side.
-- Age tags are shape levers, not ages (all characters 18+). `mature female` (`0.4::`–`0.6::`) sharpens and lengthens; `teenage` or `aged down` (`0.3::`–`0.5::`) soften and round features a style pushes older. Put the opposite tag in that character's UC to push further. Age-lowering tags only in non-suggestive `rating:general` images.
+- Age tags are shape levers, not ages (all characters 18+). `mature female` (`0.4::`–`0.6::`) sharpens and lengthens; `teenage` or `aged down` (`0.3::`–`0.5::`) soften and round features a style pushes older. Age-lowering tags only in non-suggestive `rating:general` images, and never in a UC: there they push faces younger (tested 2026-11-11).
 - Prose UC entries not confirmed as tags (A/B first if a UC seems inert): `round face`, `chubby cheeks`, `long face`, `sharp cheekbones`, `pointed chin`, `thin lips`, `broad nose`, `double eyelids`, `high nose bridge`, `light skin`.
 - Never `thick lips` (deforms); full lips = `lips` + prose.
 
