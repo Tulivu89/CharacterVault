@@ -10,6 +10,7 @@ Snapshot of the "Style Block Library" doc (master copy: https://claude.ai/artifa
 | Painterly Comic v2 | base + 6 theme add-ons + UC | Stable | Western painterly look that holds faces best; one theme add-on per image |
 | Anime Pinup v1 | base + UC | Stable | Gacha/Nikke polish; foundations for img2img and inpainting |
 | Semirealistic mix v0 | base + UC | WIP | Semi-real pinup experiments |
+| Cyber Comic (Style B) v1 | base + UC, color line per image | Vault-only | Cyberpunk comic look of the Castellane missionary set; not in the master doc yet |
 
 - Base Prompt order: subject → scene → camera → state → prose → style base → theme add-on (Painterly only) → tail. Vivid Pop and Anime Pinup carry their own year/quality tail; Painterly ends with `year 2026, rating:general, high complexity`.
 - The block's UC replaces the lean Base UC. Quality Tags toggle off, UC Preset None.
@@ -92,6 +93,23 @@ artist:urushihara satoshi, artist:shirow masamune, artist:yone kinji, artist:shi
 lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifacts, multiple views, very displeasing, too many watermarks, negative space, blank page, censored, mosaic censoring, 2::monochrome, sketch, line art, steam, plastic skin, fake skin::, comic books, magazines, background faces, artist name, artist logo,
 ```
 
+## Cyber Comic (Style B) — v1
+
+Vault-only: moved here from the missionary pose set on 2026-11-11 and not yet in the master doc. Pastes after the scene prose; a one-sentence color line follows it (the pose set names one), then the tail.
+
+Base
+```
+chromatic aberration, 1.2::artist:lesly oh::, 1.7::artist:aleksandra skiba::, 1::artist:dan mora::, 0.8::artist:emmanuel viola::, 2::cel shading, colored lineart, western comics (style), clip studio paint (medium)::. -1::sketch::, Sci-fi illustration blending crisp graphic-novel inking with cyberpunk vivid color. Thin elegant ink lines with tapering strokes define forms, while airbrush texture color fills. Shading falls in clear confident shapes with soft brushed edges where light meets shadow.
+```
+UC (explicit; add `nsfw` for SFW)
+```
+artist:urushihara satoshi, artist:shirow masamune, artist:yone kinji, artist:shichimenchou,
+
+lowres, worst quality, low quality, bad anatomy, bad hands, jpeg artifacts, watermark, signature, photorealistic, 3d, 2.5d, limited palette, thick lineart, monochrome, greyscale, simple background, halftone, sketch, dark, in shadows, multiple views
+```
+- Settings: Euler Ancestral, karras, 23 steps, Guidance 6.3 for solo portraits; 5.0–5.5 when two bodies touch and anatomy smears. With the extended mix (Obj Shep, Calm): Guidance 4.9, Rescale 0.1.
+- Targeted additions: `censored, mosaic censoring, bar censor` if the model censors; `comic` if Dan Mora pulls a single image into panels; drop `multiple views` for comic pages.
+
 ## Character UC templates
 
 | Character has | Add to that character's UC |
@@ -139,6 +157,7 @@ tall female, muscular, fat, inflation, plump, old, pale skin, tanlines, extra ea
 
 | Date | Block | Change |
 | --- | --- | --- |
+| 2026-11-11 | Cyber Comic (Style B) v1 | Moved in from the missionary pose set (vault-only) |
 | 2026-10-26 | All | Library started; blocks entered as supplied |
 | Before 2026-10-26 | Painterly Comic v2 | Artist mix trimmed from 8 to 3 |
 | Earlier | Painterly Comic v1 (retired) | atey ghailan 0.7, mike mignola 0.8, jamie hewlett 0.9, moebius 1, becky cloonan 1.1, lesly oh 1.2, aleksandra skiba 1.7, emmanuel viola 1; same medium group and prose |

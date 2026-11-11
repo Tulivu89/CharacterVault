@@ -1,6 +1,6 @@
-# Missionary Pose Library — V5 Modules (Castellane set)
+# MIS — Missionary set (Castellane)
 
-Missionary-family pose blocks built on Séraphine and Aurelio in Style B (cyberpunk comic). Each module is one frozen moment with its own camera, canvas and both partners' state. Characters are assembled from the kits below; scene, light and style come from the shared blocks. Swap the kits to reuse any module with another pair.
+Missionary-family pose blocks built on Séraphine and Aurelio in Cyber Comic (Style B). Every module is ○ untested as a module; the style itself is tested. Each module is one frozen moment with its own camera, canvas and both partners' state. Characters are assembled from the kits below; scene, light and style come from the shared blocks. Swap the kits to reuse any module with another pair.
 
 Module order follows a scene's arc: entry, slow rhythm, leg variants, heat, climax, after, then POV and a second location. Story beats from *The Recovery Suite* (Part III–IV) are marked where a module illustrates one.
 
@@ -19,25 +19,13 @@ Quality Tags toggle: OFF | UC Preset: None
 * With the extended mix (Obj Shep, Calm), use Guidance 4.9 and Rescale 0.1, as tested.
 * Landscape 1216×832 for side views of lying bodies; portrait 832×1216 for overhead, close-up and vertical stacks.
 
-## Base UC (Style B, explicit)
+## Base UC and style
 
-```
-artist:urushihara satoshi, artist:shirow masamune, artist:yone kinji, artist:shichimenchou,
-
-lowres, worst quality, low quality, bad anatomy, bad hands, jpeg artifacts, watermark, signature, photorealistic, 3d, 2.5d, limited palette, thick lineart, monochrome, greyscale, simple background, halftone, sketch, dark, in shadows, multiple views
-```
-
-Targeted additions, only when the problem appears: `censored, mosaic censoring, bar censor` if the model censors; `comic` if Dan Mora pulls a single image into panels; drop `multiple views` for comic pages.
+`[UC: Cyber Comic]` and `[STYLE B]` are the **Cyber Comic (Style B)** block in `style-blocks.md`, pasted whole. A module's color line follows the style base.
 
 ---
 
 ## Shared blocks
-
-### [STYLE B]
-Paste where a module says `[STYLE B]`. The cool color sentence from the portrait version is replaced per module by a color line.
-```
-chromatic aberration, 1.2::artist:lesly oh::, 1.7::artist:aleksandra skiba::, 1::artist:dan mora::, 0.8::artist:emmanuel viola::, 2::cel shading, colored lineart, western comics (style), clip studio paint (medium)::. -1::sketch::, Sci-fi illustration blending crisp graphic-novel inking with cyberpunk vivid color. Thin elegant ink lines with tapering strokes define forms, while airbrush texture color fills. Shading falls in clear confident shapes with soft brushed edges where light meets shadow.
-```
 
 ### Color lines
 * **[WARM]** (bedroom default): `Warm color: oxblood, amber and gold against magenta and cyan neon, deep soft shadows.`
@@ -110,7 +98,8 @@ Left/right is unreliable for hands. His gold fingertips solve it: give the **gol
 
 # I. ENTRY
 
-## Pose 1 — Arch Kiss (prelude)
+## MIS-01 — Arch Kiss (prelude)
+`prelude · foot worship · full body · from side · 1216×832` · ○ untested
 *Part III: he lifts her ankles and kisses the strap marks before he kneels between her knees.*
 Both legs up, him kneeling at the foot of the bed with one ankle in each hand, mouth on her arch. She's laughing. The tone-setter before the act.
 
@@ -140,7 +129,8 @@ Character 2 UC: AURE UC
 
 ---
 
-## Pose 2 — Guided Tip ("Look at me")
+## MIS-02 — Guided Tip ("Look at me")
+`entry · imminent vaginal · cowboy shot · from above · 832×1216` · ○ untested
 *Part III: gold hand on himself, tip running through her, eye contact before the push.*
 He kneels upright between her knees; she's on her back looking up the length of her body at him. Camera above, looking down her body.
 
@@ -170,7 +160,8 @@ Character 2 UC: AURE UC
 
 ---
 
-## Pose 3 — Entry Close-Up (cumulative)
+## MIS-03 — Entry Close-Up (cumulative)
+`entry · close-up · from above · cumulative variants` · ○ untested
 Tight anatomical crop, hips and thighs only. Gold fingers hold her open while the bare hand guides him in. Three variants walk the entry from tip to hilt.
 
 **Canvas:** 832×1216 or 1024×1024
@@ -204,7 +195,8 @@ Character 2 UC: AURE UC
 
 # II. SLOW RHYTHM
 
-## Pose 4 — Forearm Cradle
+## MIS-04 — Forearm Cradle
+`rhythm · cowboy shot · from side` · ○ untested
 *Part III: slow strokes, his weight on his forearms, faces close, the conversation about Marchetti.*
 Side profile of both bodies. Her knees up around his hips, his face just above hers, gold hand resting on her hip.
 
@@ -234,7 +226,8 @@ Character 2 UC: AURE UC
 
 ---
 
-## Pose 5 — Diamond Kisses
+## MIS-05 — Diamond Kisses
+`rhythm · kiss · close-up · from above` · ○ untested
 *Part III: he kisses the implants along her cheekbone one by one.*
 Close-up on two heads. Her face turned on the pillow, his mouth on the diamonds, gold hair light on his beard.
 
@@ -263,7 +256,8 @@ Character 2 UC: AURE UC
 
 ---
 
-## Pose 6 — Overhead Fan (Pixie view)
+## MIS-06 — Overhead Fan (Pixie view)
+`rhythm · overhead · from above` · ○ untested
 Straight down onto the bed. Her hair fanned gold across the dark sheet, fists in the pillow above her head, looking up into the drone's lens. His broad back covers her torso.
 
 **Canvas:** 832×1216
@@ -294,7 +288,8 @@ Character 2 UC: AURE UC
 
 # III. LEG VARIANTS
 
-## Pose 7 — Leg Lock: Low Rear (Pixie feed)
+## MIS-07 — Leg Lock: Low Rear (Pixie feed)
+`rhythm · leg lock · lower body · from behind · from below` · ○ untested
 *Part IV: Pixie drops behind him; her ankles crossed over the small of his back, the strap marks, his ass clenching.*
 Viewer low behind him at the foot of the bed. Her legs locked around his waist, soles toward the viewer, the connection below his testicles.
 
@@ -324,7 +319,8 @@ Character 2 UC: AURE UC
 
 ---
 
-## Pose 8 — Ankles Held High
+## MIS-08 — Ankles Held High
+`legs up · ankles held · full body · from side` · ○ untested
 Him kneeling upright, one ankle in each hand, her legs spread high in a V, head pressed back into the pillow. Side silhouette.
 
 **Canvas:** 1216×832
@@ -353,7 +349,8 @@ Character 2 UC: AURE UC
 
 ---
 
-## Pose 9 — Leg Over Shoulder, Cradled Head
+## MIS-09 — Leg Over Shoulder, Cradled Head
+`legs up · leg over shoulder · cowboy shot · from side` · ○ untested
 One leg up over his shoulder, the other bent by his hip. He leans in close, bare hand cradling the back of her head, gold hand on her raised thigh. Faces inches apart.
 
 **Canvas:** 832×1216
@@ -381,7 +378,8 @@ Character 2 UC: AURE UC
 
 ---
 
-## Pose 10 — Deep Fold
+## MIS-10 — Deep Fold
+`deep fold · mating press · full body · from side` · ○ untested
 Knees pressed to her chest, soles up beside his head, his weight driving straight down while he leans over her folded legs to kiss her. The position tag changes to `mating press`.
 
 **Canvas:** 1216×832
@@ -405,14 +403,15 @@ Character 2 UC: AURE UC
 
 **Notes:**
 - `mating press` replaces `missionary`; never both.
-- *Rear fold:* change camera to `from behind, from below`, drop faces and the kiss, and use Pose 7's body kits. Prose: `Woman's soles point up past man's shoulders, testicles pressed to woman's ass.`
+- *Rear fold:* change camera to `from behind, from below`, drop faces and the kiss, and use MIS-07's body kits. Prose: `Woman's soles point up past man's shoulders, testicles pressed to woman's ass.`
 - *Depth:* add `stomach bulge` to her box.
 
 ---
 
 # IV. HEAT
 
-## Pose 11 — Wrist Pin (the taunt)
+## MIS-11 — Wrist Pin (the taunt)
+`heat · wrist pin · upper body · from above` · ○ untested
 *Part IV: "He was nicer." She's smirking; he's furious.*
 His gold hand pins both her wrists to the pillow above her head. She smirks up at him; he glares down. Upper bodies only.
 
@@ -441,7 +440,8 @@ Character 2 UC: AURE UC
 
 ---
 
-## Pose 12 — Driven Up the Bed
+## MIS-12 — Driven Up the Bed
+`heat · rough · full body · from side · dutch angle` · ○ untested
 *Part IV: "Again. Again." Headboard knocking, her giggling and gasping.*
 Hard strokes shove her up the bed, pillow knocked askew, her heels skidding on the rumpled sheet. Tilted camera, motion lines.
 
@@ -473,7 +473,8 @@ Character 2 UC: AURE UC
 
 # V. CLIMAX
 
-## Pose 13 — Root Close-Up (cumulative)
+## MIS-13 — Root Close-Up (cumulative)
+`climax · root close-up · from behind · from below · pulse/x-ray/spill variants` · ○ untested
 *Part IV: Pixie fills the feed with where they're joined.*
 Extreme close from behind and below. Her thighs frame the shot, heels crossed at the top, his testicles drawn tight. Four variants run through the climax.
 
@@ -507,7 +508,8 @@ Character 2 UC: AURE UC
 
 ---
 
-## Pose 14 — The Arch
+## MIS-14 — The Arch
+`climax · her peak · arched back · full body · from side` · ○ untested
 *Part IV: her back clear off the bed, toes curled against his spine, hands on his shoulders.*
 Her orgasm in side profile. His face buried in her glowing hair, hips ground deep and still.
 
@@ -538,7 +540,8 @@ Character 2 UC: AURE UC
 
 # VI. AFTER
 
-## Pose 15 — Collapse
+## MIS-15 — Collapse
+`after · collapse` · ○ untested
 *Part IV end: he sags onto her, the electrodes gone cool.*
 From above. His weight sprawled across her, face in her hair. She looks past his shoulder straight into Pixie. One arm around his back, the other limp, palm up.
 
@@ -569,7 +572,8 @@ Character 2 UC: AURE UC
 
 # VII. POV & LOCATION
 
-## Pose 16 — POV: Gold Hands
+## MIS-16 — POV: Gold Hands
+`POV · hands` · ○ untested
 Viewer is the man. His gold-tipped right hand and bare left hand grip her hips; she looks up into the viewer's face.
 
 **Canvas:** 832×1216
@@ -594,7 +598,8 @@ Character 1 UC: SÉRA UC
 
 ---
 
-## Pose 17 — Cradle Edge (recovery suite)
+## MIS-17 — Cradle Edge (recovery suite)
+`second location · edge of surface · cowboy shot · from side` · ○ untested
 *Back in the clinic.* She lies back across the edge of the medical cradle, one leg up, the other hooked behind his thigh. He stands between her legs in the open black robe, leaning down to kiss her.
 
 **Canvas:** 832×1216
@@ -627,7 +632,7 @@ Character 2 UC: AURE UC
 
 Per the comic method: base establishes the comic and shared details; each panel gets its own character slot that describes that panel's composition and both characters as shown in it. Base UC drops `multiple views`.
 
-### Example — 3-panel page (Pose 2 → Pose 11 → Pose 7)
+### Example — 3-panel page (MIS-02 → MIS-11 → MIS-07)
 
 **Canvas:** 832×1216
 
@@ -666,14 +671,14 @@ loli, shota, child, aged down, teenage, tareme, round face, chubby cheeks, long 
 
 | Reference | Module |
 |---|---|
-| 5ff6d907 (side, leg up, head cradled) | Pose 9 |
-| 5e52769d (ankles held, V) | Pose 8 |
-| nick_and_kaitlyn (arm held, legs up) | Pose 8 wrist-hold variant |
-| df5ebde0 (overhead, arms up) | Pose 6 |
-| guinaifen (folded kiss) | Pose 10 |
-| calm-artist (rear fold, overflow) | Pose 10 rear fold, Pose 13 Spill |
-| dabe7848 (from behind, legs up) | Pose 7 |
-| 6fd6920c (edge of surface, kiss) | Pose 17 |
+| 5ff6d907 (side, leg up, head cradled) | MIS-09 |
+| 5e52769d (ankles held, V) | MIS-08 |
+| nick_and_kaitlyn (arm held, legs up) | MIS-08 wrist-hold variant |
+| df5ebde0 (overhead, arms up) | MIS-06 |
+| guinaifen (folded kiss) | MIS-10 |
+| calm-artist (rear fold, overflow) | MIS-10 rear fold, MIS-13 Spill |
+| dabe7848 (from behind, legs up) | MIS-07 |
+| 6fd6920c (edge of surface, kiss) | MIS-17 |
 | 87f7807d (oral, couch) | held for the oral library |
 
 ---
@@ -682,6 +687,6 @@ loli, shota, child, aged down, teenage, tareme, round face, chubby cheeks, long 
 
 - **Pixie in frame:** add `drone` to base with prose placing the drone above the headboard, lens toward the bed. Pairs with any wide module.
 - **Window press:** missionary against the rain-streaked window, her back on the glass, neon behind.
-- **Robe still on:** Pose 4 or 12 with his open robe draped over both of them.
+- **Robe still on:** MIS-04 or 12 with his open robe draped over both of them.
 - **Other pairs:** the modules take any kits. Swap SÉRA/AURE for another sheet and keep the scene, light and style blocks.
 - **Cowgirl and doggystyle libraries** in the same structure, then oral (the couch reference is saved for it).

@@ -40,6 +40,15 @@ On "save that", `[img save]` or similar:
 - Generated images: `Characters/<Name>/images/`, adult ones in `images/adult/`.
 - Run `vault.py lint`, then commit (`Images: <story>` or `Looks: <name>`) and push.
 
+## A5. Pose library
+
+`references/poses/INDEX.md` catalogs every saved pose module by ID (`FB-03`), name, position, climax rung, camera and themes, with grids showing which moments and angles each position covers.
+
+- A request naming an ID, a module name or its themes ("bored, from behind, fat guy") pulls that module; with no close match, build from `positions.md`, `layers.md` and `archetypes.md`. Say in one line which module a setup came from.
+- **Deliver it assembled.** Modules store kits, styles and UCs as markers; expand all of them, swap in the requested characters per A2, and write every variant as its own complete setup (§4). The user never pieces blocks together.
+- For an explicit beat, prefer the climactic rungs and vary the angle across a run (`layers.md`, Climax ladder).
+- "Save that pose" and reported results update the library per INDEX (Status). These are skill files, which `vault.py commit` doesn't cover: commit them with git as `Dev: poses — <change>` and push.
+
 ---
 
 # PART B — V5 PROMPT RULES (v8)
@@ -56,7 +65,7 @@ On "save that", `[img save]` or similar:
 * **Positioning:** `v5-positioning.md`.
 * **Faces:** `face-kits.md` (structure kits, ethnicity overlays, counter-UCs).
 * **Character standard:** `character-standard.md` (head-to-toe slot layout for prompt notes and character boxes, outfit and UC slots, framing trims, body kits). Every new look and every box built from a character page follows it.
-* **Poses:** `poses/missionary-library.md` (v8-form modules), `poses/composition-library.md` (legacy menu; rebuild before use).
+* **Poses:** `poses/INDEX.md` first (catalog, climax grids, references), then the set file it names; `poses/positions.md`, `poses/layers.md` and `poses/archetypes.md` when no module fits. See A5.
 
 **Post counts:** the Danbooru count CSV isn't in this vault. When an artist or character tag's count matters and isn't known (§7 thresholds), add a note: `verify count: <tag>`. Never guess a count.
 
@@ -417,7 +426,7 @@ Exclude backstory, lore, thoughts, named emotions, time-sequence words and non-v
 * `rating:explicit` for sex and exposed genitals; `rating:questionable` for nudity and suggestive framing without explicit acts.
 * Base UC: the lean default with `nsfw` removed (or the style block's UC without it). Add nothing else until a problem appears.
 
-**Tag source:** `tags/poses-and-explicit.md` first, then the general tag files. Same never-invent rule. Pose modules: `poses/missionary-library.md` (swap its kits for the vault's characters), then `poses/composition-library.md` rebuilt to these rules.
+**Tag source:** `tags/poses-and-explicit.md` first, then the general tag files. Same never-invent rule. Pose modules: `poses/INDEX.md` (A5).
 
 **Field division**
 | Goes in | Contents |
