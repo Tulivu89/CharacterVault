@@ -1,0 +1,3 @@
+build/
+test/smoke/node_modules/
+test/smoke/package-lock.json
