@@ -1,0 +1,11 @@
+{
+  "name": "nai-prompt-forge",
+  "displayName": "Prompt Forge",
+  "version": "0.1.0",
+  "description": "Turns ideas into NovelAI Diffusion V5 setups: the script applies the rules, GLM writes one small block at a time.",
+  "private": true,
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "test": "node tools/build.mjs test"
+  }
+}

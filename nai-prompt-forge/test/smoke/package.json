@@ -1,0 +1,7 @@
+{
+  "name": "prompt-forge-smoke",
+  "private": true,
+  "description": "Runs dist/prompt-forge.js against a mock NovelAI script API with real Preact in jsdom.",
+  "scripts": { "smoke": "node harness.mjs ../../dist/prompt-forge.js" },
+  "dependencies": { "jsdom": "25.0.1", "preact": "10.24.3" }
+}
