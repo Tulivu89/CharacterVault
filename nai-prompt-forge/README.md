@@ -24,9 +24,9 @@ NovelAI caps how many editor generations a script can start without you touching
 
 ## Install
 
-1. In NovelAI, open a new story to use as the workspace. Open its scripts and add a script. Paste in `dist/prompt-forge.js`, or import `dist/Prompt Forge.story` if you've packed one (see below).
+1. In NovelAI, import `dist/Prompt Forge.story`. It opens as a Forge workspace, and on first run the script clears the template's leftover text. Or, in a story of your own, add a script and paste in `dist/prompt-forge.js`.
 2. Open the **Prompt Forge** panel under the editor, or use the **Forge** toolbar button for a floating window.
-3. Click **Use this story**. Stories that aren't Forge workspaces are never touched; there, the script only acts on steps you start from its panel.
+3. In a story of your own, click **Use this story**; the packed story is already a workspace. Stories that aren't Forge workspaces are never touched; there, the script only acts on steps you start from its panel.
 4. Grant the permissions as they come up:
    - document editing writes the finished blocks into the story
    - clipboard copies blocks
@@ -74,7 +74,7 @@ node tools/build.mjs
 (cd test/smoke && npm install) && node test/smoke/harness.mjs dist/prompt-forge.js
 ```
 
-To pack a `.story`, export any NovelAI story with a script attached, to use as a template:
+To repack the `.story` after a build, use any exported story with a script attached as the template. Only its container format and document are kept; the script, lorebook, prompts and storage are all replaced:
 
 ```bash
 python3 -I tools/pack_story.py path/to/template.story

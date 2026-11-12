@@ -781,6 +781,15 @@ function SettingsTab(p: { s: AppState }) {
                     <span style={st.hint}>Press Refresh.</span>
                 )}
             </Panel>
+            <div style={st.row}>
+                <Btn kind="danger" onClick={() => {
+                        clearDocument().then(ok => {
+                            if (ok) toast('Document cleared.', 'success')
+                        })
+                    }} title="Removes every paragraph in this story, including archived setups">
+                    Clear the document
+                </Btn>
+            </div>
             <span style={st.hint}>
                 Vocab: {vocab().source} · {VOCAB_DATA.artists.split('|').length} artists for count checks.
             </span>

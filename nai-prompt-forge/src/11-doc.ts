@@ -94,3 +94,26 @@ async function saveSetupNow(): Promise<void> {
     await api.v1.storyStorage.set(KEYS.doc, st)
     toast('Saved, and archived in the document.', 'success')
 }
+
+const WELCOME = [
+    'Prompt Forge workspace.',
+    'Open the Prompt Forge panel under the editor, or the Forge button in the toolbar. Finished blocks are written at the end of this document; saved setups are archived above them.',
+]
+
+/** Empty the document and leave a short welcome. Used on a packed story's first run and from Settings. */
+async function clearDocument(): Promise<boolean> {
+    if (!(await ensurePerm('documentEdit', 'Prompt Forge clears this story so the workspace starts empty.'))) return false
+    await inTransaction(async () => {
+        const ids = await api.v1.document.sectionIds()
+        if (ids.length) await api.v1.document.removeParagraphs(ids)
+        await api.v1.document.appendParagraphs(WELCOME.map(t => para(t)))
+    })
+    await api.v1.storyStorage.set(KEYS.doc, { live: [] })
+    return true
+}
+
+/** A packed .story ships with forge.fresh set: clear the template text once. */
+async function firstRun() {
+    if ((await api.v1.storyStorage.get(KEYS.fresh)) !== true) return
+    if (await clearDocument()) await api.v1.storyStorage.set(KEYS.fresh, false)
+}

@@ -84,6 +84,7 @@ const KEYS = {
     enabled: 'forge.enabled',
     doc: 'forge.doc',
     sheets: 'forge.sheets.fallback',
+    fresh: 'forge.fresh',
 }
 
 function emptyLibrary(): Library {
