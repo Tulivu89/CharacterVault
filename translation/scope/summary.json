@@ -1,0 +1,196 @@
+{
+  "archive": "data.zip",
+  "archive_sha256": "70cea2ad1bfd670a3f09e4292f8132a5fcfa0db964503cca73221a9a4d5385dd",
+  "json_files_parsed": 155,
+  "japanese_player_facing_candidates": {
+    "occurrences": 4726,
+    "raw_characters": 57224,
+    "nonspace_characters": 56651,
+    "japanese_characters": 47477,
+    "exact_unique_strings": 2648,
+    "exact_unique_raw_characters": 42431,
+    "files": 137
+  },
+  "japanese_candidates_excluding_repeated_speaker_fields": {
+    "occurrences": 3551,
+    "raw_characters": 53094,
+    "nonspace_characters": 52580,
+    "japanese_characters": 43467,
+    "exact_unique_strings": 2589,
+    "exact_unique_raw_characters": 42076,
+    "files": 137
+  },
+  "categories": {
+    "exclude_choice_branch_mirror": {
+      "occurrences": 190,
+      "raw_characters": 885,
+      "nonspace_characters": 885,
+      "japanese_characters": 706,
+      "exact_unique_strings": 63,
+      "exact_unique_raw_characters": 465,
+      "files": 35
+    },
+    "exclude_internal_or_asset": {
+      "occurrences": 698,
+      "raw_characters": 5578,
+      "nonspace_characters": 5578,
+      "japanese_characters": 4056,
+      "exact_unique_strings": 290,
+      "exact_unique_raw_characters": 2107,
+      "files": 90
+    },
+    "exclude_plugin_editor_mirror": {
+      "occurrences": 4167,
+      "raw_characters": 54173,
+      "nonspace_characters": 45662,
+      "japanese_characters": 23874,
+      "exact_unique_strings": 299,
+      "exact_unique_raw_characters": 6050,
+      "files": 80
+    },
+    "exclude_plugin_identifiers": {
+      "occurrences": 1383,
+      "raw_characters": 11534,
+      "nonspace_characters": 11534,
+      "japanese_characters": 11279,
+      "exact_unique_strings": 43,
+      "exact_unique_raw_characters": 404,
+      "files": 84
+    },
+    "review_comments": {
+      "occurrences": 1922,
+      "raw_characters": 19022,
+      "nonspace_characters": 18805,
+      "japanese_characters": 13967,
+      "exact_unique_strings": 500,
+      "exact_unique_raw_characters": 6217,
+      "files": 50
+    },
+    "review_editor_map_names": {
+      "occurrences": 139,
+      "raw_characters": 875,
+      "nonspace_characters": 875,
+      "japanese_characters": 718,
+      "exact_unique_strings": 137,
+      "exact_unique_raw_characters": 861,
+      "files": 1
+    },
+    "review_event_parameters": {
+      "occurrences": 264,
+      "raw_characters": 2251,
+      "nonspace_characters": 2251,
+      "japanese_characters": 1609,
+      "exact_unique_strings": 82,
+      "exact_unique_raw_characters": 791,
+      "files": 10
+    },
+    "review_gab_text": {
+      "occurrences": 6,
+      "raw_characters": 103,
+      "nonspace_characters": 102,
+      "japanese_characters": 90,
+      "exact_unique_strings": 6,
+      "exact_unique_raw_characters": 103,
+      "files": 3
+    },
+    "review_notes_and_tags": {
+      "occurrences": 187,
+      "raw_characters": 9955,
+      "nonspace_characters": 9267,
+      "japanese_characters": 2821,
+      "exact_unique_strings": 109,
+      "exact_unique_raw_characters": 7898,
+      "files": 6
+    },
+    "review_plugin_arguments": {
+      "occurrences": 15,
+      "raw_characters": 135,
+      "nonspace_characters": 120,
+      "japanese_characters": 75,
+      "exact_unique_strings": 1,
+      "exact_unique_raw_characters": 9,
+      "files": 1
+    },
+    "review_scripts": {
+      "occurrences": 1,
+      "raw_characters": 72,
+      "nonspace_characters": 70,
+      "japanese_characters": 14,
+      "exact_unique_strings": 1,
+      "exact_unique_raw_characters": 72,
+      "files": 1
+    },
+    "translate_choices": {
+      "occurrences": 190,
+      "raw_characters": 885,
+      "nonspace_characters": 885,
+      "japanese_characters": 706,
+      "exact_unique_strings": 63,
+      "exact_unique_raw_characters": 465,
+      "files": 35
+    },
+    "translate_database": {
+      "occurrences": 526,
+      "raw_characters": 5287,
+      "nonspace_characters": 5174,
+      "japanese_characters": 3888,
+      "exact_unique_strings": 385,
+      "exact_unique_raw_characters": 3866,
+      "files": 8
+    },
+    "translate_dialogue": {
+      "occurrences": 2452,
+      "raw_characters": 40911,
+      "nonspace_characters": 40841,
+      "japanese_characters": 35186,
+      "exact_unique_strings": 1919,
+      "exact_unique_raw_characters": 33787,
+      "files": 98
+    },
+    "translate_map_display_name": {
+      "occurrences": 107,
+      "raw_characters": 693,
+      "nonspace_characters": 693,
+      "japanese_characters": 599,
+      "exact_unique_strings": 70,
+      "exact_unique_raw_characters": 428,
+      "files": 107
+    },
+    "translate_plugin_text": {
+      "occurrences": 202,
+      "raw_characters": 4705,
+      "nonspace_characters": 4403,
+      "japanese_characters": 2686,
+      "exact_unique_strings": 98,
+      "exact_unique_raw_characters": 3019,
+      "files": 24
+    },
+    "translate_speaker": {
+      "occurrences": 1175,
+      "raw_characters": 4130,
+      "nonspace_characters": 4071,
+      "japanese_characters": 4010,
+      "exact_unique_strings": 65,
+      "exact_unique_raw_characters": 388,
+      "files": 76
+    },
+    "translate_system_ui": {
+      "occurrences": 74,
+      "raw_characters": 613,
+      "nonspace_characters": 584,
+      "japanese_characters": 402,
+      "exact_unique_strings": 70,
+      "exact_unique_raw_characters": 568,
+      "files": 1
+    }
+  },
+  "all_language_player_facing_candidates": {
+    "occurrences": 4970,
+    "raw_characters": 58298,
+    "nonspace_characters": 57722,
+    "japanese_characters": 47477,
+    "exact_unique_strings": 2728,
+    "exact_unique_raw_characters": 42893,
+    "files": 137
+  }
+}

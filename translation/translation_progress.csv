@@ -1,0 +1,156 @@
+﻿file,status,contains,japanese_candidate_entries,japanese_candidate_characters,manual_review_entries,draft_output,notes
+data/Actors.json,NOT_STARTED,"Character names, nicknames and biographies",8,50,0,,Not translated; structural classification only.
+data/Animations.json,NO_STANDARD_TEXT_IDENTIFIED,Animation editor names and configuration,0,0,0,,Not translated; structural classification only.
+data/Armors.json,NOT_STARTED,Armor names and descriptions; plugin notes,35,646,2,,Not translated; structural classification only.
+data/Classes.json,NOT_STARTED,Class names and configuration,1,6,1,,Not translated; structural classification only.
+data/CommonEvents.json,NOT_STARTED,"Shared event dialogue, choices and plugin text",89,1559,1578,,Not translated; structural classification only.
+data/Enemies.json,NOT_STARTED,Enemy names and configuration,11,83,0,,Not translated; structural classification only.
+data/Items.json,NOT_STARTED,"Item names, descriptions and plugin notes",225,2258,124,,Not translated; structural classification only.
+data/Map001.json,REVIEW_ONLY,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,65,,Not translated; structural classification only.
+data/Map002.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=1, speaker=2",3,16,0,,Not translated; structural classification only.
+data/Map003.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map004.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=26, map_display_name=1, speaker=16",43,634,0,,Not translated; structural classification only.
+data/Map005.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,2,0,,Not translated; structural classification only.
+data/Map006.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=25, map_display_name=1, speaker=7",35,336,0,,Not translated; structural classification only.
+data/Map007.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=1",1,10,0,,Not translated; structural classification only.
+data/Map008.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=22, map_display_name=1",23,169,0,,Not translated; structural classification only.
+data/Map009.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map010.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=4, dialogue=22, map_display_name=1, plugin_text=1, speaker=9",37,539,1,,Not translated; structural classification only.
+data/Map011.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=45, map_display_name=1, speaker=19",65,878,0,,Not translated; structural classification only.
+data/Map012.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,7,0,,Not translated; structural classification only.
+data/Map013.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=19, map_display_name=1, speaker=10",30,278,2,,Not translated; structural classification only.
+data/Map014.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,8,0,,Not translated; structural classification only.
+data/Map015.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=33, map_display_name=1, plugin_text=3, speaker=14",51,816,16,,Not translated; structural classification only.
+data/Map016.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,5,16,,Not translated; structural classification only.
+data/Map017.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=16, map_display_name=1",17,173,16,,Not translated; structural classification only.
+data/Map018.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=2, map_display_name=1",3,27,16,,Not translated; structural classification only.
+data/Map019.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=16, map_display_name=1",17,154,0,,Not translated; structural classification only.
+data/Map020.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=15, map_display_name=1",16,162,0,,Not translated; structural classification only.
+data/Map021.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=2, map_display_name=1",3,27,16,,Not translated; structural classification only.
+data/Map022.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=14, map_display_name=1",15,109,16,,Not translated; structural classification only.
+data/Map023.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,5,16,,Not translated; structural classification only.
+data/Map024.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=6, map_display_name=1",7,53,17,,Not translated; structural classification only.
+data/Map025.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=2, map_display_name=1",3,27,16,,Not translated; structural classification only.
+data/Map026.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=2, map_display_name=1",3,27,16,,Not translated; structural classification only.
+data/Map027.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=2, map_display_name=1",3,27,16,,Not translated; structural classification only.
+data/Map028.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=3, map_display_name=1",4,37,16,,Not translated; structural classification only.
+data/Map029.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,6,0,,Not translated; structural classification only.
+data/Map030.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=12, map_display_name=1",13,94,0,,Not translated; structural classification only.
+data/Map031.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=7, dialogue=21, map_display_name=1, plugin_text=1, speaker=1",31,293,1,,Not translated; structural classification only.
+data/Map032.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=14, map_display_name=1",15,169,0,,Not translated; structural classification only.
+data/Map033.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=6, dialogue=29, map_display_name=1, speaker=10",46,504,3,,Not translated; structural classification only.
+data/Map034.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=26, map_display_name=1, speaker=10",37,385,0,,Not translated; structural classification only.
+data/Map035.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,6,0,,Not translated; structural classification only.
+data/Map036.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,6,0,,Not translated; structural classification only.
+data/Map037.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,6,0,,Not translated; structural classification only.
+data/Map038.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=4, map_display_name=1",5,51,0,,Not translated; structural classification only.
+data/Map039.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=24, map_display_name=1, speaker=3",28,255,0,,Not translated; structural classification only.
+data/Map040.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=2, map_display_name=1",5,54,0,,Not translated; structural classification only.
+data/Map041.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=4, dialogue=18, map_display_name=1, speaker=2",25,368,0,,Not translated; structural classification only.
+data/Map042.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=4, map_display_name=1",5,52,0,,Not translated; structural classification only.
+data/Map043.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,5,0,,Not translated; structural classification only.
+data/Map044.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,3,0,,Not translated; structural classification only.
+data/Map045.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=3, map_display_name=1",4,46,0,,Not translated; structural classification only.
+data/Map046.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=19, map_display_name=1, speaker=9",29,281,0,,Not translated; structural classification only.
+data/Map047.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,5,0,,Not translated; structural classification only.
+data/Map048.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,5,0,,Not translated; structural classification only.
+data/Map049.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,5,0,,Not translated; structural classification only.
+data/Map050.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=4, map_display_name=1, speaker=2",7,46,0,,Not translated; structural classification only.
+data/Map051.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,6,16,,Not translated; structural classification only.
+data/Map052.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=1, map_display_name=1",4,24,1,,Not translated; structural classification only.
+data/Map053.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=8, map_display_name=1, plugin_text=19, speaker=5",35,475,14,,Not translated; structural classification only.
+data/Map054.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=16, map_display_name=1, plugin_text=21, speaker=12",52,495,17,,Not translated; structural classification only.
+data/Map055.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=4, dialogue=5, map_display_name=1, speaker=2",12,94,0,,Not translated; structural classification only.
+data/Map056.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,6,3,,Not translated; structural classification only.
+data/Map057.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=49, plugin_text=1, speaker=19",69,1148,2,,Not translated; structural classification only.
+data/Map058.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=25, plugin_text=1, speaker=16",42,537,5,,Not translated; structural classification only.
+data/Map059.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=7, dialogue=115, map_display_name=1, plugin_text=2, speaker=66",191,2172,0,,Not translated; structural classification only.
+data/Map060.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=12, dialogue=70, map_display_name=1, plugin_text=2, speaker=37",122,1392,84,,Not translated; structural classification only.
+data/Map061.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=28, map_display_name=1, speaker=2",31,247,0,,Not translated; structural classification only.
+data/Map062.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=2, map_display_name=1",3,22,0,,Not translated; structural classification only.
+data/Map063.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=3, map_display_name=1, speaker=1",5,44,16,,Not translated; structural classification only.
+data/Map064.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=58, map_display_name=1, speaker=23",82,1257,0,,Not translated; structural classification only.
+data/Map065.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=21, speaker=10",31,344,0,,Not translated; structural classification only.
+data/Map066.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=73, map_display_name=1, plugin_text=1, speaker=32",109,1434,1,,Not translated; structural classification only.
+data/Map067.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=7, speaker=4",11,95,0,,Not translated; structural classification only.
+data/Map068.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,10,0,,Not translated; structural classification only.
+data/Map069.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,10,0,,Not translated; structural classification only.
+data/Map070.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,3,0,,Not translated; structural classification only.
+data/Map071.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=24, dialogue=202, map_display_name=1, plugin_text=6, speaker=114",347,3574,24,,Not translated; structural classification only.
+data/Map072.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=26, map_display_name=1, speaker=11",38,591,0,,Not translated; structural classification only.
+data/Map073.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=28, speaker=11",39,712,0,,Not translated; structural classification only.
+data/Map074.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=26, dialogue=206, map_display_name=1, plugin_text=8, speaker=111",352,4868,25,,Not translated; structural classification only.
+data/Map075.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=8, speaker=5",13,168,0,,Not translated; structural classification only.
+data/Map076.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=46, plugin_text=2, speaker=23",71,1048,6,,Not translated; structural classification only.
+data/Map077.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=4, speaker=1",5,106,0,,Not translated; structural classification only.
+data/Map078.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=6, dialogue=71, map_display_name=1, speaker=27",105,1470,7,,Not translated; structural classification only.
+data/Map079.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=12, speaker=8",20,233,0,,Not translated; structural classification only.
+data/Map080.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=2, speaker=1",3,31,0,,Not translated; structural classification only.
+data/Map081.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=69, map_display_name=1, speaker=39",109,1578,0,,Not translated; structural classification only.
+data/Map082.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map083.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=27, speaker=13",40,847,0,,Not translated; structural classification only.
+data/Map084.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=2, speaker=2",4,26,0,,Not translated; structural classification only.
+data/Map085.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=6, map_display_name=1, speaker=3",10,138,0,,Not translated; structural classification only.
+data/Map086.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map087.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=14, speaker=4",18,203,0,,Not translated; structural classification only.
+data/Map088.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=39, speaker=15",54,578,0,,Not translated; structural classification only.
+data/Map089.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=41, map_display_name=1, speaker=26",68,833,0,,Not translated; structural classification only.
+data/Map090.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=11, map_display_name=1, speaker=3",15,132,0,,Not translated; structural classification only.
+data/Map091.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=1, map_display_name=1",4,24,0,,Not translated; structural classification only.
+data/Map092.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=19, map_display_name=1, speaker=14",36,337,0,,Not translated; structural classification only.
+data/Map093.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=12, map_display_name=1, speaker=8",21,220,3,,Not translated; structural classification only.
+data/Map094.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,7,0,,Not translated; structural classification only.
+data/Map095.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=44, map_display_name=1, speaker=29",76,894,0,,Not translated; structural classification only.
+data/Map096.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=2, map_display_name=1, speaker=1",6,50,1,,Not translated; structural classification only.
+data/Map097.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=30, map_display_name=1, speaker=21",52,585,0,,Not translated; structural classification only.
+data/Map098.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=16, dialogue=12, map_display_name=1, plugin_text=3, speaker=9",41,443,0,,Not translated; structural classification only.
+data/Map099.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=6, map_display_name=1",7,36,0,,Not translated; structural classification only.
+data/Map100.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=8, dialogue=33, map_display_name=1, speaker=23",65,558,0,,Not translated; structural classification only.
+data/Map101.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=32, map_display_name=1, plugin_text=1, speaker=23",57,610,0,,Not translated; structural classification only.
+data/Map102.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=60, plugin_text=1, speaker=21",82,1351,4,,Not translated; structural classification only.
+data/Map103.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=21, map_display_name=1, speaker=17",39,330,0,,Not translated; structural classification only.
+data/Map104.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,3,0,,Not translated; structural classification only.
+data/Map105.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=18, map_display_name=1, speaker=15",34,328,0,,Not translated; structural classification only.
+data/Map106.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=22, map_display_name=1, speaker=15",38,399,0,,Not translated; structural classification only.
+data/Map107.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=13, map_display_name=1, speaker=7",21,263,1,,Not translated; structural classification only.
+data/Map108.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=4, dialogue=19, map_display_name=1, plugin_text=4, speaker=5",33,445,13,,Not translated; structural classification only.
+data/Map109.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,8,12,,Not translated; structural classification only.
+data/Map110.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=4, map_display_name=1, speaker=3",8,75,5,,Not translated; structural classification only.
+data/Map111.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=15, map_display_name=1, speaker=8",24,287,0,,Not translated; structural classification only.
+data/Map112.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=13, speaker=9",22,247,0,,Not translated; structural classification only.
+data/Map113.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=3, map_display_name=1, speaker=1",7,89,0,,Not translated; structural classification only.
+data/Map114.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=14, map_display_name=1, speaker=8",23,262,0,,Not translated; structural classification only.
+data/Map115.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=11, speaker=3",14,269,0,,Not translated; structural classification only.
+data/Map116.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=4, dialogue=7, map_display_name=1, plugin_text=12, speaker=6",30,235,6,,Not translated; structural classification only.
+data/Map117.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=4, map_display_name=1",5,16,8,,Not translated; structural classification only.
+data/Map118.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=4, map_display_name=1",5,16,12,,Not translated; structural classification only.
+data/Map119.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=4, map_display_name=1",5,16,0,,Not translated; structural classification only.
+data/Map120.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=4, map_display_name=1",5,16,4,,Not translated; structural classification only.
+data/Map121.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=3, map_display_name=1, plugin_text=11, speaker=3",18,243,11,,Not translated; structural classification only.
+data/Map122.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=9, map_display_name=1, plugin_text=20, speaker=9",39,371,17,,Not translated; structural classification only.
+data/Map123.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=92, map_display_name=1, speaker=45",138,2077,2,,Not translated; structural classification only.
+data/Map124.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map125.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,7,0,,Not translated; structural classification only.
+data/Map126.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,9,0,,Not translated; structural classification only.
+data/Map127.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=11, map_display_name=1, speaker=5",19,271,0,,Not translated; structural classification only.
+data/Map128.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: map_display_name=1",1,9,0,,Not translated; structural classification only.
+data/Map129.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=4, dialogue=55, map_display_name=1, plugin_text=2, speaker=33",95,1388,15,,Not translated; structural classification only.
+data/Map130.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=2, dialogue=3, map_display_name=1, speaker=1",7,73,0,,Not translated; structural classification only.
+data/Map131.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: choices=4, dialogue=54, map_display_name=1, plugin_text=2, speaker=33",94,1291,14,,Not translated; structural classification only.
+data/Map132.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map133.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map134.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map135.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map136.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map137.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map138.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map139.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map140.json,NO_STANDARD_TEXT_IDENTIFIED,"Map location name, event dialogue/choices and plugin commands; candidates: none detected",0,0,0,,Not translated; structural classification only.
+data/Map141.json,NOT_STARTED,"Map location name, event dialogue/choices and plugin commands; candidates: dialogue=56, map_display_name=1, speaker=26",83,1129,1,,Not translated; structural classification only.
+data/MapInfos.json,REVIEW_ONLY,Map editor index/names; plugin exposure needs review,0,0,139,,Not translated; structural classification only.
+data/Skills.json,NOT_STARTED,"Skill names, descriptions, battle messages and plugin notes",133,1401,5,,Not translated; structural classification only.
+data/States.json,NOT_STARTED,"Status names, battle messages and plugin notes",105,682,48,,Not translated; structural classification only.
+data/System.json,FIRST_PASS_UNREVIEWED,"Title, menus, battle messages, type labels and internal settings",74,613,0,vi_draft/data/System.json,Core UI translated; internal type labels and stat abbreviations retained. Title and terminology provisional. Not tested in game.
+data/Tilesets.json,NO_STANDARD_TEXT_IDENTIFIED,Tileset/asset configuration; no standard displayed text identified,0,0,0,,Not translated; structural classification only.
+data/Troops.json,NOT_STARTED,Battle-event dialogue and internal encounter setup,20,356,22,,Not translated; structural classification only.
+data/Weapons.json,NOT_STARTED,"Weapon names, descriptions and configuration",8,161,0,,Not translated; structural classification only.

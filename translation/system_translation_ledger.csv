@@ -1,0 +1,91 @@
+﻿file,path,source,vietnamese,english_meaning,status
+data/System.json,/gameTitle,蒼星のサフィーリア体験版　ver1.0.2,Saphiria của Ngôi Sao Xanh — Bản chơi thử ver1.0.2,Saphiria of the Blue Star — trial version; provisional title/romanization,FIRST_PASS_UNREVIEWED
+data/System.json,/currencyUnit,Ｃ,Ｃ,Currency symbol; retained,FIRST_PASS_UNREVIEWED
+data/System.json,/elements/1,汎用スキル,Kỹ năng thông dụng,General-purpose skills,FIRST_PASS_UNREVIEWED
+data/System.json,/elements/2,怪人,Quái nhân,Monster person / villain; context-dependent,FIRST_PASS_UNREVIEWED
+data/System.json,/elements/3,氷,Băng,Ice,FIRST_PASS_UNREVIEWED
+data/System.json,/elements/4,雷,Sét,Lightning,FIRST_PASS_UNREVIEWED
+data/System.json,/elements/5,水,Nước,Water,FIRST_PASS_UNREVIEWED
+data/System.json,/elements/6,追撃,Đòn đánh bồi,Follow-up attack,FIRST_PASS_UNREVIEWED
+data/System.json,/elements/7,拘束攻撃,Đòn trói buộc,Restraint attack,FIRST_PASS_UNREVIEWED
+data/System.json,/elements/8,属性攻撃,Đòn nguyên tố,Elemental attack,FIRST_PASS_UNREVIEWED
+data/System.json,/elements/9,必殺,Tuyệt kỹ,Finishing move,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/basic/0,レベル,Cấp độ,Level,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/basic/8,経験値,Kinh nghiệm,Experience,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/0,battle,Chiến đấu,Fight,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/1,escape,Rút lui,Escape,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/2,attack,Tấn công,Attack,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/3,guard,Phòng thủ,Guard,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/4,item,Vật phẩm,Item,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/5,skill,Kỹ năng,Skill,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/6,equip,Trang bị,Equipment,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/7,status,Trạng thái,Status,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/8,change,Đổi đội hình,Formation,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/9,save,Lưu,Save,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/10,shutdown,Thoát trò chơi,Quit game,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/11,option,Tùy chọn,Options,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/12,weapon,Vũ khí,Weapon,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/13,armor,Giáp,Armor,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/14,key item,Vật phẩm quan trọng,Key item,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/15,装備,Trang bị,Equip,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/16,最強装備,Trang bị tối ưu,Optimize equipment,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/17,全て外す,Tháo tất cả,Remove all equipment,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/18,はじめから,Trò chơi mới,New game,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/19,つづきから,Tiếp tục,Continue,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/21,タイトルへ,Về màn hình tiêu đề,Return to title,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/22,やめる,Hủy,Cancel,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/24,購入する,Mua,Buy,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/25,売却する,Bán,Sell,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/alwaysDash,常時ダッシュ,Luôn chạy,Always dash,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/commandRemember,コマンド記憶,Nhớ lệnh đã chọn,Remember selected command,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/touchUI,タッチUI,Giao diện cảm ứng,Touch UI,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/bgmVolume,BGM 音量,Âm lượng nhạc nền,Background music volume,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/bgsVolume,BGS 音量,Âm lượng âm thanh nền,Background sound volume,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/meVolume,ME 音量,Âm lượng nhạc hiệu,Music effect volume,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/seVolume,SE 音量,Âm lượng hiệu ứng,Sound effect volume,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/possession,持っている数,Số lượng đang có,Quantity owned,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/expTotal,現在の%1,%1 hiện tại,Current %1,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/expNext,次の%1まで,Còn lại đến %1 tiếp theo,Until next %1,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/saveMessage,どのファイルにセーブしますか？,Bạn muốn lưu vào tệp nào?,Which file would you like to save to?,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/loadMessage,どのファイルをロードしますか？,Bạn muốn tải tệp nào?,Which file would you like to load?,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/file,ファイル,Tệp,File,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/autosave,オートセーブ,Tự động lưu,Autosave,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/partyName,%1たち,Nhóm của %1,%1's party,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/emerge,%1が現れた！,%1 xuất hiện!,%1 appeared!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/preemptive,%1は先手を取った！,Nhóm của %1 giành được thế chủ động!,%1 got the initiative!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/surprise,%1は不意をつかれた！,Nhóm của %1 bị đánh úp!,%1 was caught off guard!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/escapeStart,戦闘から離脱した,Đã rút khỏi trận chiến.,Withdrew from battle,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/escapeFailure,しかし逃げることはできなかった！,Nhưng không thể chạy thoát!,But could not escape!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/victory,戦闘終了！,Trận chiến kết thúc!,Battle ended!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/defeat,戦いに敗北した…,Đã bại trận…,Defeated in battle...,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/obtainExp,%1 の%2を獲得！,Nhận được %1 %2!,Gained %1 %2!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/obtainGold,お金を %1\G 手に入れた！,Nhận được %1\G!,Obtained %1 currency!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/obtainItem,%1を手に入れた！,Nhận được %1!,Obtained %1!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/levelUp,LVアップ！　%2%3になった。,Tăng cấp! Đã đạt %2 %3.,Level up! Reached %2 %3.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/obtainSkill,%1を覚えた！,Đã học %1!,Learned %1!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/useItem,%1は%2を使った！,%1 sử dụng %2!,%1 used %2!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/criticalToEnemy,クリティカル！,Chí mạng!,Critical hit!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/criticalToActor,クリティカル！,Chí mạng!,Critical hit!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/actorDamage,%1に %2 ダメージ。,%1 chịu %2 sát thương.,%1 takes %2 damage.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/actorRecovery,%1の%2が %3 回復した！,%1 hồi phục %3 %2!,%1 recovered %3 of %2!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/actorGain,%1の%2が %3 増加した。,%2 của %1 tăng %3.,%1 gained %3 of %2.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/actorLoss,%1の%2が %3 減少した。,%2 của %1 giảm %3.,%1 lost %3 of %2.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/actorDrain,%1は%2を %3 奪われた！,%1 bị hút mất %3 %2!,%1 was drained of %3 %2!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/actorNoDamage,%1はダメージをうけなかった。,%1 không chịu sát thương.,%1 took no damage.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/actorNoHit,%1は攻撃をかわした。,%1 né được đòn tấn công.,%1 evaded the attack.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/enemyDamage,%1に %2 ダメージ。,%1 chịu %2 sát thương.,%1 takes %2 damage.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/enemyRecovery,%1の%2が %3 回復した！,%1 hồi phục %3 %2!,%1 recovered %3 of %2!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/enemyGain,%1の%2が %3 増えた！,%2 của %1 tăng %3!,%1 gained %3 of %2!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/enemyLoss,%1の%2が %3 減った！,%2 của %1 giảm %3!,%1 lost %3 of %2!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/enemyDrain,%1の%2を %3 奪った！,Hút được %3 %2 từ %1!,Drained %3 %2 from %1!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/enemyNoDamage,%1にダメージを与えられない。,Không thể gây sát thương cho %1.,Cannot damage %1.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/enemyNoHit,ミス！,Đánh trượt!,Miss!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/evasion,%1は攻撃をかわした。,%1 né được đòn tấn công.,%1 evaded the attack.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/magicEvasion,%1は魔法を打ち消した。,%1 vô hiệu hóa phép thuật.,%1 nullified the spell.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/magicReflection,%1は魔法を跳ね返した。,%1 phản lại phép thuật.,%1 reflected the spell.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/counterAttack,%1の反撃。,%1 phản công.,%1 counterattacks.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/substitute,%1が%2をかばった！,%1 che chắn cho %2!,%1 protected %2!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/buffAdd,%1の%2が上がった！,%2 của %1 tăng lên!,%1’s %2 increased!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/debuffAdd,%1の%2が下がった！,%2 của %1 giảm xuống!,%1’s %2 decreased!,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/buffRemove,%1の%2が元に戻った。,%2 của %1 trở lại bình thường.,%1’s %2 returned to normal.,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/messages/actionFailure,%1には効かなかった。,Không có tác dụng với %1.,It had no effect on %1.,FIRST_PASS_UNREVIEWED
