@@ -22,8 +22,6 @@ import uuid
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-# Stable id: the same script id across builds, so story storage carries over.
-SCRIPT_ID = str(uuid.uuid5(uuid.NAMESPACE_DNS, "prompt-forge.ambiprop"))
 
 
 def main(argv):
@@ -33,6 +31,7 @@ def main(argv):
     out = Path(argv[2]) if len(argv) > 2 else ROOT / "dist" / "Prompt Forge.story"
     code = (ROOT / "dist" / "prompt-forge.js").read_text(encoding="utf-8")
     pkg = json.loads((ROOT / "package.json").read_text(encoding="utf-8"))
+    SCRIPT_ID = pkg["scriptId"]  # stable across builds, so story storage carries over
     for k in ("displayName", "description", "author", "version"):
         if ":" in str(pkg.get(k, "")):
             sys.exit(f"package.json {k} contains a colon; NovelAI script metadata must not.")
@@ -50,7 +49,7 @@ def main(argv):
         "script": {
             "compatibilityVersion": shape["script"].get("compatibilityVersion", "naiscript-1.0"),
             "exportVersion": shape["script"].get("exportVersion", "unknwon"),
-            "createdAt": now,
+            "createdAt": pkg["createdAt"],
             "updatedAt": now,
             "id": SCRIPT_ID,
             "name": pkg["displayName"],
@@ -73,9 +72,9 @@ def main(argv):
             entry[k] = type(v)() if isinstance(v, (dict, list)) else v
     content["userScripts"] = [entry]
 
-    # Story storage values are stored JSON-encoded. Seeded under the script id and the container id.
+    # Story storage is keyed by script id (as NovelAI exports show), values JSON-encoded.
     seed = {"forge.enabled": json.dumps(True), "forge.fresh": json.dumps(True)}
-    content["scriptStorage"] = {"storyStorage": {SCRIPT_ID: dict(seed), entry["containerId"]: dict(seed)}, "historyStorage": {}}
+    content["scriptStorage"] = {"storyStorage": {SCRIPT_ID: seed}, "historyStorage": {}}
 
     # Nothing of the template's own setup comes along.
     lb = content.get("lorebook", {})

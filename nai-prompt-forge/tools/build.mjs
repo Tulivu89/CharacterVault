@@ -95,7 +95,24 @@ STORAGE
     mkdirSync(join(root, 'dist'), { recursive: true })
     const dist = join(root, 'dist/prompt-forge.js')
     writeFileSync(dist, header + body)
+    // .naiscript: YAML frontmatter in a /*--- … ---*/ block, then the code (format from NovelAI's own exports).
+    for (const k of ['displayName', 'description', 'author', 'version']) if (String(pkg[k]).includes(':')) throw new Error(`package.json ${k} contains a colon; script frontmatter values must not`)
+    const front = [
+        '/*---',
+        'compatibilityVersion: naiscript-1.0',
+        `id: ${pkg.scriptId}`,
+        `name: ${pkg.displayName}`,
+        `createdAt: ${pkg.createdAt}`,
+        `updatedAt: ${Date.now()}`,
+        `version: ${pkg.version}`,
+        `author: ${pkg.author}`,
+        `description: ${pkg.description}`,
+        `memoryLimit: ${pkg.memoryLimit}`,
+        '---*/',
+        '',
+    ].join('\n')
+    writeFileSync(join(root, 'dist/Prompt Forge.naiscript'), front + header + body)
     const kb = n => (n / 1024).toFixed(0) + ' KB'
-    console.log(`dist/prompt-forge.js ${kb(Buffer.byteLength(header + body))} (vocab ${kb(Buffer.byteLength(vocab))})`)
+    console.log(`dist/prompt-forge.js and dist/Prompt Forge.naiscript, ${kb(Buffer.byteLength(header + body))} (vocab ${kb(Buffer.byteLength(vocab))})`)
     if (existsSync(join(root, 'tools/pack_story.py'))) console.log('Pack into a .story with: python3 -I tools/pack_story.py')
 }

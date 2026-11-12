@@ -9,5 +9,7 @@
     "test": "node tools/build.mjs test"
   },
   "author": "AmbiProp",
-  "memoryLimit": 32
+  "memoryLimit": 32,
+  "scriptId": "4faa7209-e1c1-5f6e-837b-2f97f39091e8",
+  "createdAt": 1794525280614
 }

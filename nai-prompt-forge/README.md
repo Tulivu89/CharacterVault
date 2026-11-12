@@ -24,7 +24,7 @@ NovelAI caps how many editor generations a script can start without you touching
 
 ## Install
 
-1. In NovelAI, import `dist/Prompt Forge.story`. It opens as a Forge workspace, and on first run the script clears the template's leftover text. Or, in a story of your own, add a script and paste in `dist/prompt-forge.js`.
+1. In NovelAI, import `dist/Prompt Forge.story`. It opens as a Forge workspace, and on first run the script clears the template's leftover text. Or import `dist/Prompt Forge.naiscript` as a script (account-level or in a story of your own).
 2. Open the **Prompt Forge** panel under the editor, or use the **Forge** toolbar button for a floating window.
 3. In a story of your own, click **Use this story**; the packed story is already a workspace. Stories that aren't Forge workspaces are never touched; there, the script only acts on steps you start from its panel.
 4. Grant the permissions as they come up:
@@ -52,7 +52,9 @@ Five categories: `Forge · Characters`, `Forge · Styles`, `Forge · Kits`, `For
 |---|---|
 | `src/` | TypeScript/TSX source, concatenated in file-name order |
 | `data/vocab.json` | Tag vocab from Waifoundry's merged Danbooru/e621 table, plus the vault's tag files (`tools/extract_vocab.py`) |
-| `dist/prompt-forge.js` | The built script (about 1 MB, under the 2 MB account-script limit) |
+| `dist/Prompt Forge.naiscript` | The built script with its frontmatter header, ready to import (about 1 MB, under the 2 MB account-script limit) |
+| `dist/Prompt Forge.story` | A ready-to-import workspace story carrying the script |
+| `dist/prompt-forge.js` | The same code without the frontmatter, for pasting |
 | `docs/novelai/` | NovelAI's script typings and documentation, as supplied |
 | `docs/DESIGN.md` | How it works and why, and what still needs checking in NovelAI |
 | `test/` | Unit tests for the rules, assembler and job parsers; `test/smoke/` runs the built script against a mock API with real Preact |
