@@ -8,9 +8,12 @@ Snapshot of the "Style Block Library" doc (master copy: https://claude.ai/artifa
 | --- | --- | --- | --- |
 | Vivid Pop v1 | base + UC | Stable | Saturated pinup-comic look; the elf references' look (bm94199, calm, obj shep) |
 | Painterly Comic v2 | base + 6 theme add-ons + UC | Stable | Western painterly look that holds faces best; one theme add-on per image |
+| Painterly Comic v2 · Comic lean | base + the v2 add-ons + UC | Tested once (FB-02 ★) | Less paint, more comic line; holds tricky compositions better. Vault-only |
+| Comic lean × Semireal | Comic lean base + add-on + semireal tail + UC | Tested once (FB-11 ✓) | Comic line with semireal skin and highlights; flesh and close-ups. Vault-only. Pushes men muscular |
 | Anime Pinup v1 | base + UC | Stable | Gacha/Nikke polish; foundations for img2img and inpainting |
 | Semirealistic mix v0 | base + UC | WIP | Semi-real pinup experiments |
 | Cinematic Real v0 | base + UC | WIP | Photographic fantasy film still; artist slot before the tail |
+| Cyber Comic (Style B) v1 | base + UC, color line per image | Vault-only | Cyberpunk comic look of the Castellane missionary set; not in the master doc yet |
 
 - Base Prompt order: subject → scene → camera → state → prose → style base → theme add-on (Painterly only) → tail. Vivid Pop and Anime Pinup carry their own year/quality tail; Painterly ends with `year 2026, rating:general, high complexity`.
 - The block's UC replaces the lean Base UC. Quality Tags toggle off, UC Preset None.
@@ -66,6 +69,41 @@ UC
 ```
 - With Dark fantasy or Moonlit, delete `dark, in shadows` from the UC. For transparent-background assets, delete `simple background`.
 
+## Painterly Comic v2 · Comic lean
+
+Vault-only; the user's variant, read from the FB-02 test image (2026-11-11). It turns the painterly down and the comic line up: lesly oh leads, skiba drops from 1.7 to 1, russell dauterman and dan mora come in, and the medium group drops to 1.5. Use the Painterly Comic v2 theme add-ons after it.
+
+Base
+```
+1.5::artist:lesly oh::, 1::artist:aleksandra skiba::, 1.2::artist:emmanuel viola::, 0.9::artist:russell dauterman::, 1::artist:dan mora::, 1.5::painterly, cel shading, colored lineart, western comics (style), oil painting (medium)::, Fantasy illustration blending crisp graphic-novel inking with loose painterly color. Thin elegant ink lines with tapering strokes define forms, while visible brushstrokes texture color fills. Shading falls in clear confident shapes with soft painted edges where light meets shadow.
+```
+UC (explicit; append `nsfw` for SFW)
+```
+1::artist:urushihara satoshi, artist:shirow masamune,::
+
+lowres, worst quality, low quality, bad anatomy, bad hands, jpeg artifacts, watermark, signature, photorealistic, 3d, 2.5d, thick lineart, monochrome, greyscale, halftone, sketch, dark, in shadows, multiple views, sepia, colorful
+```
+- Tested settings: Euler (not Ancestral), karras, 20 steps, Guidance 5.0, Rescale 0.1, 832×1216, character positions off.
+- With Dark fantasy or Moonlit, delete `dark, in shadows` from the UC. Speech bubbles: delete `watermark, signature`.
+
+## Comic lean × Semireal
+
+Vault-only; the user's FB-11 run (2026-11-16). The Comic lean base, then a Painterly v2 theme add-on, then a blank line and this semireal tail, which carries its own year, complexity and rating, so no separate tail follows.
+
+Semireal tail (swap `rating:explicit` for the image's rating)
+```
+0.5::pinup (style)::, western comics (style), 1.0::fernando suarez::, 1.2::illyne cosplay::, 0.6::nekromaxxing::, 0.8::ginsky2000 ::, best quality, very aesthetic, year 2026, 1.5::digital illustration::, 0.25::gradient skin, body creases::, high complexity, sharp highlights, two-tone shading, gradient shading, semi-realistic, 0.5::colored lineart::, rating:explicit,
+```
+UC
+```
+artist:urushihara satoshi, artist:shirow masamune, artist:yone kinji, artist:shichimenchou,
+
+lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifacts, multiple views, very displeasing, too many watermarks, negative space, blank page, censored, mosaic censoring, 2::monochrome, sketch, line art, steam, plastic skin, fake skin::, comic books, magazines, background faces, artist name, artist logo, white outline, character outer glow, aura, retro artstyle,
+```
+- Tested settings: Euler Ancestral, karras, 20 steps, Guidance 5.0, Rescale 0.1, 1024×1024, character positions off.
+- It firms bodies up: a fat man came out beefy (big pecs, small belly). Put `muscular, large pectorals` in his UC and give the belly a sentence.
+- Panels and split views: delete `multiple views` and `comic books` from the UC.
+
 ## Anime Pinup — v1
 
 Base
@@ -107,6 +145,23 @@ doll, figure, 3d, anime coloring, cel shading, lineart, painterly, lowres, artis
 ```
 - Character boxes: describe appeal through structure and expression, never "attractive", "soft" or "glow". Leave out `mature female`, `toned` and `collarbone` (they age the face in photo mode), and art-medium words in prose ("drawn", "brushstrokes", "inked").
 - Drop `nsfw` from the UC for explicit setups.
+
+## Cyber Comic (Style B) — v1
+
+Vault-only: moved here from the missionary pose set on 2026-11-11 and not yet in the master doc. Pastes after the scene prose; a one-sentence color line follows it (the pose set names one), then the tail.
+
+Base
+```
+chromatic aberration, 1.2::artist:lesly oh::, 1.7::artist:aleksandra skiba::, 1::artist:dan mora::, 0.8::artist:emmanuel viola::, 2::cel shading, colored lineart, western comics (style), clip studio paint (medium)::. -1::sketch::, Sci-fi illustration blending crisp graphic-novel inking with cyberpunk vivid color. Thin elegant ink lines with tapering strokes define forms, while airbrush texture color fills. Shading falls in clear confident shapes with soft brushed edges where light meets shadow.
+```
+UC (explicit; add `nsfw` for SFW)
+```
+artist:urushihara satoshi, artist:shirow masamune, artist:yone kinji, artist:shichimenchou,
+
+lowres, worst quality, low quality, bad anatomy, bad hands, jpeg artifacts, watermark, signature, photorealistic, 3d, 2.5d, limited palette, thick lineart, monochrome, greyscale, simple background, halftone, sketch, dark, in shadows, multiple views
+```
+- Settings: Euler Ancestral, karras, 23 steps, Guidance 6.3 for solo portraits; 5.0–5.5 when two bodies touch and anatomy smears. With the extended mix (Obj Shep, Calm): Guidance 4.9, Rescale 0.1.
+- Targeted additions: `censored, mosaic censoring, bar censor` if the model censors; `comic` if Dan Mora pulls a single image into panels; drop `multiple views` for comic pages.
 
 ## Character UC templates
 
@@ -155,6 +210,9 @@ tall female, muscular, fat, inflation, plump, old, pale skin, tanlines, extra ea
 
 | Date | Block | Change |
 | --- | --- | --- |
+| 2026-11-16 | Comic lean × Semireal | Added from the user's FB-11 run (vault-only) |
+| 2026-11-11 | Painterly Comic v2 · Comic lean | Added from the user's FB-02 test (vault-only) |
+| 2026-11-11 | Cyber Comic (Style B) v1 | Moved in from the missionary pose set (vault-only) |
 | 2026-10-26 | All | Library started; blocks entered as supplied |
 | Before 2026-10-26 | Painterly Comic v2 | Artist mix trimmed from 8 to 3 |
 | Earlier | Painterly Comic v1 (retired) | atey ghailan 0.7, mike mignola 0.8, jamie hewlett 0.9, moebius 1, becky cloonan 1.1, lesly oh 1.2, aleksandra skiba 1.7, emmanuel viola 1; same medium group and prose |

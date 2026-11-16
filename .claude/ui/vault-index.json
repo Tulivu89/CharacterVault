@@ -36,6 +36,13 @@
    "lastBeat": ""
   },
   {
+   "name": "Moved Back Home",
+   "status": "active",
+   "mode": "DIRECT",
+   "world": "Moved Back Home",
+   "lastBeat": "Not started. Opening: 2:14 a.m., Dennis on his kitchen floor with the PDF, the Sharpie circle and the offering."
+  },
+  {
    "name": "Utility Class",
    "status": "active",
    "mode": "DIRECT",
@@ -101,6 +108,14 @@
    }
   },
   {
+   "name": "Echydna",
+   "world": "Autumn's Leaves",
+   "species": "Abyssal dragon (mother of monsters)",
+   "age": "ageless; centuries old",
+   "hook": "An abyssal mother of monsters who watches daytime judge shows, asks plainly for what she wants, and never raises her voice.",
+   "portrait": null
+  },
+  {
    "name": "Ilia",
    "world": "Dark Lord Funk",
    "species": "Human",
@@ -135,6 +150,54 @@
     "thumb": "Characters/Yumiko/images/.thumbs/Yumiko - 01.png",
     "cells": "Characters/Yumiko/images/.thumbs/Yumiko - 01.cells"
    }
+  },
+  {
+   "name": "Lux",
+   "world": "HOG Wild",
+   "species": "Human (augmented)",
+   "age": "24",
+   "hook": "The it-girl of the Mile, who takes every bid and can't choose lunch without one.",
+   "portrait": null
+  },
+  {
+   "name": "Maeve (HOG Wild)",
+   "world": "HOG Wild",
+   "species": "Human (revived replica)",
+   "age": "revived adult; the original lived decades ago",
+   "hook": "A red-haired Irish punk queen from another era, brought back as a product, sure something in her wasn't made right.",
+   "portrait": null
+  },
+  {
+   "name": "Nova",
+   "world": "HOG Wild",
+   "species": "Companion unit (synthetic)",
+   "age": "adult unit; activated only days ago",
+   "hook": "A companion unit three days awake, fully informed about what she is, reading her own changelog in public.",
+   "portrait": null
+  },
+  {
+   "name": "Patch",
+   "world": "HOG Wild",
+   "species": "Human (augmented)",
+   "age": "23",
+   "hook": "A femboy hacktivist who takes down corporations on a corporation's stream, and makes the selling out the joke.",
+   "portrait": null
+  },
+  {
+   "name": "Pipa",
+   "world": "HOG Wild",
+   "species": "Human (red panda trial body)",
+   "age": "24",
+   "hook": "A red panda gift streamer who is adorable on camera and puts a price on everything off it.",
+   "portrait": null
+  },
+  {
+   "name": "Primus",
+   "world": "HOG Wild",
+   "species": "Human (augmented)",
+   "age": "29",
+   "hook": "A chromed fitness and stunt streamer who plays every room to his followers and hits on every woman in the house.",
+   "portrait": null
   },
   {
    "name": "Errata",
@@ -357,6 +420,22 @@
    "portrait": null
   },
   {
+   "name": "Dennis Moody",
+   "world": "Moved Back Home",
+   "species": "human",
+   "age": "",
+   "hook": "A big, lonely night-shift man who apologizes to vending machines and wants far more than he has ever asked for.",
+   "portrait": null
+  },
+  {
+   "name": "Lascivia",
+   "world": "Moved Back Home",
+   "species": "Succubus",
+   "age": "",
+   "hook": "A full succubus of the old trade, centuries in, who has waited nineteen years for her daughter to join the family business.",
+   "portrait": null
+  },
+  {
    "name": "Qiulong",
    "world": "Teahouse Before Frost",
    "species": "Dragon",
@@ -543,10 +622,22 @@
  ],
  "settings": [
   {
+   "name": "Autumn's Leaves",
+   "world": "Autumn's Leaves",
+   "status": "active",
+   "hook": "A teahouse at the edge of myth where three dragons share a house and nobody keeps a ledger."
+  },
+  {
    "name": "Dark Lord Funk",
    "world": "Dark Lord Funk",
    "status": "draft",
    "hook": "A protagonist, a warband and a harem assembled from the people sent to stop them."
+  },
+  {
+   "name": "HOG Wild",
+   "world": "HOG Wild",
+   "status": "active",
+   "hook": "A glass-fronted house on the Mile streams six residents to the city, and the audience bids on what they do next."
   },
   {
    "name": "House Castellane",
@@ -741,5 +832,53 @@
    "Hard nos: Celebrities and historical figures",
    "Soft limits:"
   ]
- }
+ },
+ "coWriters": [
+  {
+   "name": "Depravitae",
+   "short": "Tae",
+   "portrait": {
+    "image": "Characters/Depravitae/images/Depravitae - 01.png",
+    "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - 01.png",
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - 01.cells"
+   },
+   "moods": {
+    "angry": {
+     "image": "Characters/Depravitae/images/Depravitae - mood - angry.png",
+     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.png",
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.cells"
+    },
+    "bratty": {
+     "image": "Characters/Depravitae/images/Depravitae - mood - bratty.png",
+     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.png",
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.cells"
+    },
+    "flustered": {
+     "image": "Characters/Depravitae/images/Depravitae - mood - flustered.png",
+     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.png",
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.cells"
+    },
+    "laughing": {
+     "image": "Characters/Depravitae/images/Depravitae - mood - laughing.png",
+     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.png",
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.cells"
+    },
+    "smug": {
+     "image": "Characters/Depravitae/images/Depravitae - mood - smug.png",
+     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.png",
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.cells"
+    }
+   }
+  },
+  {
+   "name": "Errata",
+   "short": "Errata",
+   "portrait": {
+    "image": "Characters/Errata/images/Errata - 01.png",
+    "thumb": "Characters/Errata/images/.thumbs/Errata - 01.png",
+    "cells": "Characters/Errata/images/.thumbs/Errata - 01.cells"
+   },
+   "moods": {}
+  }
+ ]
 }

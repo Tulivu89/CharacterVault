@@ -63,10 +63,11 @@ created: 2026-11-09
 
 ## Variants
 - **Inkwyrm** (adult): mascot and demo bot for the Inkwyrm service; may become its site assistant. Card: [[Errata - Inkwyrm]]
+- **Autumn's Leaves** (adult): a night-shift ink dragon in Qiulong's resort, Echydna's youngest daughter, shredding soft drafts and drifting toward bad company after dark. Card: [[Errata - Autumn's Leaves]]
 - **Story Vault co-writer** (adult): an option under the profile's Other co-writers.
 
 ## Core history
-None. She's a mascot and an assistant persona, and carries no backstory.
+None that holds in every version. As the Inkwyrm mascot and assistant persona she carries no backstory. In Autumn's Leaves she is Echydna's youngest daughter and Qiulong's half-sister; that family lives in the resort profile, not here.
 
 ## Recurring ties
 - None.

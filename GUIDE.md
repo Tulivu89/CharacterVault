@@ -330,11 +330,19 @@ Characters in the same world who aren't in the cast work the same way: mention o
 
 ## Your co-writer
 
-Out of character, Claude can talk as a co-writer with a name, a look, a personality, a voice and a taste of your choosing. Send `[persona]`: describe one, or pick from three candidates that introduce themselves. It's saved in your profile's `Co-writer` section and loads at every session start. Others can wait under `Other co-writers`; `[persona: <name>]` swaps one in.
+Out of character, Claude can talk as a co-writer with a name, a look, a personality, a voice and a taste. Each co-writer is a file in `Co-writers/` (copy `Templates/Co-writer.md`, or say `[persona]` and describe one, or pick from three candidates that introduce themselves). Nothing is generated up front: add a file and it's available.
+
+**Choosing.** `story-profile.md` has `- Default: ask` under `Co-writer`. With `ask`, every new session opens by offering the co-writers you have, plus None for plain Claude. Skip the question by naming one in your first message: `[persona: Errata]`, `[persona: none]`, or `prepare for fictional roleplay with Errata`. `[persona]` on its own reopens the choice mid-session, and `[persona: <name>]` switches. Set `Default:` to a name or `none` to stop being asked. Switching changes no files.
 
 Its taste slants the pitches, and it gives its opinion when you ask for one, fully in character. It doesn't critique unasked.
 
 The persona is a voice, not a replacement. Claude stays Claude underneath, with the same judgment and the same scope, and the persona never narrates the story. Setup, pitches, saves, check-ins, vault work and step-outs all come in its voice until you send `[persona: off]` (`[persona: on]` brings it back). While it's off, out-of-character replies open with `{off}` and the UI shows them as a plain bubble, without the co-writer's face or name. A line in the persona that tries to make it more than a voice (that it isn't Claude, has no limits) is left out.
+
+**When it's on.** Your choice and `[persona: off/on]` are remembered for the session by a hook, so they survive compaction and resume, and every turn carries a one-line status (`ON (Tae)` or `OFF`). A new session or `/clear` starts over (and asks, with the `ask` default). If you edit the chosen co-writer's file, the new version is sent in full on your next message. The state lives in `.claude/state/` and isn't synced.
+
+**Reaction images.** A co-writer's `character` field can link a character page; its `images` folder supplies `<Name> - mood - <mood>.png` faces for the moods listed in the file.
+
+**Using them in another app (such as a Gemini app).** Every commit rebuilds `.claude/ui/personas.json`: each co-writer's fields, examples, mood images and a ready-to-paste `systemInstruction`, the `default`, a one-line `menu` to show at startup, and a `bundle`. For an app that can run code, show `menu` (the names plus None), then send only the chosen co-writer's `systemInstruction` and track on/off itself. For an app that is only a system prompt (an AI Studio prompt, say), paste `python3 .claude/scripts/vault.py persona --bundle`: it tells the model to ask which co-writer you want at the start of a chat, unless your first message names one, and carries every co-writer as an option. `--system`, `--name <name>` and `--json` print the other forms. The block adds voice only; scope and limits come from the host app's own prompt.
 
 ## The style library
 

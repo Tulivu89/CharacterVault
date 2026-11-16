@@ -8,8 +8,8 @@ framing:
 preview:
 rating: sfw
 world: "Moved Back Home"
-base_prompt: "girl, demon girl, succubus, colored skin, purple skin, petite, 0.4::mature female::. Soft lavender skin. single hair bun, messy hair, sidelocks, black hair, colored inner hair. Near-black messy bun with hot magenta inner layer. small horns, purple horns, pointy ears, tsurime, black eyeliner, yellow eyes, slit pupils, fang, skin fang, black nails, wide hips, thick thighs, demon tail, spade tail, thin tail, glasses, rectangular eyewear, black-framed eyewear,"
-base_negative: "tall female, curvy, plump, skinny, large breasts, flat chest, tareme, round face, chubby cheeks, button nose, pale skin, tan, wings, large horns, long horns, round eyewear, multiple tails, old, loli, child, aged down,"
+base_prompt: "girl, demon girl, succubus, colored skin, purple skin, petite, small imp girl. Soft lavender skin. single hair bun, messy hair, sidelocks, black hair, colored inner hair. Near-black messy bun with hot magenta inner layer. small horns, purple horns, pointy ears, tsurime, black eyeliner, yellow eyes, slit pupils, fang, skin fang, black nails, demon tail, spade tail, thin tail, glasses, rectangular eyewear, black-framed eyewear,"
+base_negative: "tall female, curvy, plump, skinny, large breasts, flat chest, tareme, round face, chubby cheeks, button nose, pale skin, tan, wings, large horns, long horns, round eyewear, multiple tails, old,"
 avatar_prompt: "simple background, purple background, close-up, portrait, looking at viewer, grin, fang,"
 outfit_1_name: "Going out"
 outfit_1_prompt: "hair bow, choker. Black bow tied around hair bun. black dress, frilled dress. Black frilled skater dress with tiny white bat print. black thighhighs, no shoes, feet,"
@@ -78,6 +78,7 @@ created: 2026-11-09
 
 ## Style notes
 - From the user's `Depravitae - Full.png` metadata (Full.png mix: fernando suarez, po-ar, nekromaxxing, ginsky2000; Euler Ancestral karras, 23 steps, guidance 6.0, rescale 0.1). Changes: the vault's petite age guard, wide hips and thick thighs from canon.
+- 2026-11-11, from the user's FB-02 test: `0.4::mature female::`, `wide hips` and `thick thighs` made her come out fat and dwarfish, so they're out; `small imp girl.` carries the build. Age terms are out of the UC (they pushed her younger).
 - This story's look. The main Card Looks note is unchanged.
 - In pairs with Lascivia: add her bleed guard (`very long hair, wavy hair, curled horns, black horns, pink skin, red lips`) to this UC.
 

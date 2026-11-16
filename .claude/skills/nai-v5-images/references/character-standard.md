@@ -15,7 +15,7 @@ Every prompt note (`type: prompt`) and every character box is built to this stan
 
 | # | Slot | Contents |
 |---|---|---|
-| 1 | Identity | `girl` / `boy` / `other` first, then species or type, skin-tone tag, ONE frame tag (from a body kit below), age-shape lever (`0.4::mature female::` on every petite woman). `dark-skinned female`/`male` for dark skin. Sentence: skin tone when no tag fits. |
+| 1 | Identity | `girl` / `boy` / `other` first, then species or type, skin-tone tag, ONE frame tag (from a body kit below), optional age-shape lever (`0.4::mature female::`; on a very small build it can come out dwarfish and heavy, so A/B it). `dark-skinned female`/`male` for dark skin. Sentence: skin tone when no tag fits. |
 | 2 | Hair | length → style → color → color effects → bangs/sidelocks → ahoge. Sentence: the cut or color story. |
 | 3 | Hair, hidden part | Anything that shows from one angle only: undercut, shaved nape, back braid, hair tie. Own line so front views can drop it. |
 | 4 | Head extras | Animal ears + `animal ear fluff`, horns, halo, `pointy ears`. Nonhumans: muzzle or snout here. |
@@ -57,7 +57,7 @@ One guard per line, each ending with a comma:
 2. **Face counter-UC:** from the face kit.
 3. **Color drift:** hair, eye and skin colors the model drifts toward. Include a hidden hair color here when the front view must not show it.
 4. **Species guard:** `extra ears` for kemonomimi, `anthro` against fur creep on a human, and similar.
-5. **Age guard:** `loli, child, aged down` for women, `shota, child, aged down` for men. Required in every suggestive or explicit setup, and kept permanently in the note for petite characters.
+5. **No age terms.** Never put `loli`, `shota`, `child`, `aged down` or `teenage` in a UC: tested 2026-11-11, they push the face younger, not older. An adult read comes from the positive prompt. Remove them from older notes when they're next used.
 6. **Stabilizer** (optional): from `style-blocks.md`, kept only when an A/B on a locked seed shows it helps.
 
 ## Framing trims
