@@ -6,7 +6,8 @@
   entries can load again into the fresh context.
 - Injects the active story's state and cast, so resuming needs no skill run
   and continuity survives compaction, and the profile's co-writer persona
-  when one is set.
+  when one is set, with its on/off state (kept per session, so it survives
+  compaction and resume; a fresh session or /clear starts with it on).
 Fails open: any error starts the session without the extra context.
 """
 import json
@@ -29,20 +30,6 @@ def run(args):
     return (r.stdout + r.stderr).strip()
 
 
-def co_writer():
-    """The profile's Co-writer section when it names one, without guidance lines or empty fields."""
-    prof = ROOT / "story-profile.md"
-    if not prof.exists():
-        return []
-    m = re.search(r"^##\s+Co-writer\s*\n(.*?)(?=^##\s|\Z)", prof.read_text(encoding="utf-8"), flags=re.M | re.S)
-    raw = [l.rstrip() for l in (m.group(1).splitlines() if m else [])
-           if l.strip() and not re.fullmatch(r"\*[^*].*[^*]\*", l.strip())]
-    # drop empty fields, but keep a label whose content sits on the indented lines below it
-    lines = [l for i, l in enumerate(raw) if not re.fullmatch(r"-\s*[^:]+:", l.strip())
-             or (i + 1 < len(raw) and raw[i + 1][:1].isspace())]
-    return lines if any(re.match(r"^-\s*Name:\s*\S", l.strip()) for l in lines) else []
-
-
 def main():
     data = json.load(sys.stdin)
     source = data.get("source") or "startup"
@@ -62,11 +49,13 @@ def main():
         (STATE / f"lore-{session_id}.json").unlink(missing_ok=True)
     if source == "clear":
         (STATE / f"play-{session_id}").unlink(missing_ok=True)  # autosave waits for vault-session again
+    if source in ("startup", "clear"):
+        vault.clear_persona_state(session_id)  # a fresh session starts with the persona on
 
-    persona = co_writer()
+    # Resume and compact keep the session's on/off state; the full block is always re-sent here.
+    persona = vault.persona_context(session_id, force_full=True)
     if persona:
-        lines.append("Co-writer persona (from the profile; out-of-character talk only, until the user says otherwise):")
-        lines += persona
+        lines.append(persona)
 
     notes = vault.all_notes()
     story = vault.active_story(notes)

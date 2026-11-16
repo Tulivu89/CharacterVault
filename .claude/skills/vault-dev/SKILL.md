@@ -17,6 +17,7 @@ The Story Vault output style leaves out Claude Code's built-in software-engineer
 | Hooks | `.claude/hooks/*.py`, `.claude/settings.json` | Session start, prompt (viewer commands, lore), stop (story text autosave), status line. They fail open. |
 | Skills | `.claude/skills/<name>/SKILL.md` + `references/` | References load only when the skill reads them. |
 | Templates | `Templates/`, `Templates/Legacy/` | `vault.py new` reads them; frontmatter fields are load-bearing. |
+| Co-writers | `Co-writers/*.md`, `Templates/Co-writer.md`, `.claude/ui/personas.json` | One persona per file. The hooks pick and remember the session's choice; `personas.json` is generated on commit for other apps. |
 | Docs | `GUIDE.md`, `README.md` | User-facing. Update them when behavior changes. |
 | Modules | `Modules/<Name>/` | Drop-in settings for other vaults; they defer to the host vault's scope. |
 | Shared template | `AmbiguousProphet/CiC-Vault` (public) | Gets the machinery and docs, never the user's notes, profile or style library. `nai-v5-images`, the output style's Images subsection, the `[img]` row and image lines in `CLAUDE.md` and `GUIDE.md` are personal and stay out. |

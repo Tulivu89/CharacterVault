@@ -14,13 +14,15 @@ A Claude Code setup for adult roleplay and fiction writing, built as an Obsidian
 | `.claude/skills/pulp-voice/` | The prose skill: anti-patterns, voices, heat (sex scenes), registers. |
 | `.claude/skills/vault-session/` | Starts, sets up, resumes, saves and logs stories; runs the cast scope check; keeps the style library. |
 | `.claude/scripts/vault.py` | Creates notes from templates, loads notes without Obsidian-only blocks, prints cast and state, lints the vault. Python 3, standard library only. |
-| `.claude/hooks/` + `.claude/settings.json` | Session start loads the active story; viewer commands answer without a model turn; lore entries load when mentioned; story text saves after each story turn; status line shows the story and last beat. |
+| `Co-writers/` | One file per co-writer persona. A session asks which to use (`Default: ask` in `story-profile.md`), or you name one with `[persona: <name>]`. |
+| `.claude/ui/personas.json` | Every co-writer with a ready-to-paste system instruction, a startup menu line and a bundle, rebuilt on each commit (`vault.py persona`), for other apps to read. |
+| `.claude/hooks/` + `.claude/settings.json` | Session start loads the active story and asks which co-writer to use (its choice and on/off state are kept per session, and every prompt carries a one-line status); viewer commands answer without a model turn; lore entries load when mentioned; story text saves after each story turn; status line shows the story and last beat. |
 | `.claude/mods/story-vault-ui/` | Claude Code mod: command buttons above the prompt, a Vault pane (story, stories, characters with portraits, settings, profile, every command) and co-writer bubbles with reaction faces. Draws in a terminal (Termux included), the desktop app or VS Code; start with `claude --plugin-dir .claude/mods/story-vault-ui`. |
 | `tools/story-vault.user.js` | Tampermonkey/Violentmonkey userscript for claude.ai/code in a browser: command buttons, a Vault panel (stories, characters with portraits, settings, profile, commands) and co-writer bubbles with reaction faces. It reads `.claude/ui/vault-index.json` and the images from your repo through this browser's GitHub login, so no token is needed; set `REPO` at the top. |
 | `Home.md` | Obsidian dashboard: open stories, latest text, characters, settings, commands. |
 | `Templates/` | Character, roleplay profile, user persona, story bio, adult file, setting, story. |
 | `Style/reference.md` | Your Keep and Avoid examples, logged in play with `[keep]` and `[avoid]`. |
-| `story-profile.md` | Your defaults, co-writer persona, style, kinks, limits and finished stories. Built on first use. |
+| `story-profile.md` | Your defaults, co-writer default, style, kinks, limits and finished stories. Built on first use. |
 
 ## Setup
 
