@@ -55,6 +55,7 @@ On "save that", `[img save]` or similar:
 * **UC strings:** `v5-uc-presets.md` (verbatim preset text).
 * **Positioning:** `v5-positioning.md`.
 * **Faces:** `face-kits.md` (structure kits, ethnicity overlays, counter-UCs).
+* **Realism:** `realism-research.md` (photo vs CG vs painted levers, the Realism Bench and its rounds). Read it when the user asks for a realistic or photographic look, or for bench work.
 * **Character standard:** `character-standard.md` (head-to-toe slot layout for prompt notes and character boxes, outfit and UC slots, framing trims, body kits). Every new look and every box built from a character page follows it.
 * **Poses:** `poses/missionary-library.md` (v8-form modules), `poses/composition-library.md` (legacy menu; rebuild before use).
 
