@@ -109,6 +109,19 @@ When the user reports a result, update the module's status and add a line under 
 | CLU-05 | Inside the Canal | — | entry | inside view | zero pictured |
 | CLU-06 | Tied | Frame, from behind, anal | tie | full body, side, panel | knot, canine, hologram x-ray, restraints |
 | CLU-07 | Corkscrew Lock | — | tie, pulse | inside view | porcine, cervical lock, zero pictured |
+| **DEL** | *Delivery set, Echydna and the delivery man, Painterly v2 · Dark fantasy* | | | | |
+| DEL-01 △ | Delivery | — | tease | cowboy, behind, below | doorway, bathrobe, pizza |
+| DEL-02 ✓ | Wall Pin | wall pin, groping | tease | full body, side | throat grip, skeleton, bubble |
+| DEL-03 ✓ | The Walk | shoulder carry | lead-in | full body, behind | upside-down, skeletons, water |
+| DEL-04 ✓ | Guided Tip | cowgirl, guided | entry | close-up, POV, below | hand guiding |
+| DEL-05 ✓ | Pinned Down | cowgirl | rhythm | full body, side, below | hands on chest, tail wrap |
+| DEL-06 ✓ | Amazon | squat, his legs up | rhythm | full body, front | legs in V |
+| DEL-07 | Horns Held | missionary | her peak | cowboy, above | horn grip, leg lock, bubble |
+| DEL-08a | Leg Lock | mating press | his peak | full body, side | smug, rictus, bubble |
+| DEL-08b | Root, Side Macro | mating press | root | close-up, side | macro |
+| DEL-08c | Low and Behind | mating press | spill | close-up, behind, below | overflow, leg lock |
+| DEL-09 | Butter Churn | piledriver | pulse | full body, below | inverted, cross-section panel |
+| DEL-10 | After | legs up the wall | after | full body, side | TV, remote, skeleton, bubble |
 
 ---
 
@@ -121,11 +134,11 @@ Where each position family has coverage, by rung and angle. **✗** marks a gap 
 |---|---|---|---|---|---|
 | Lead-in | MIS-01 | ✗ | MIS-02 | ✗ | ✗ |
 | Entry | ✗ | ✗ | ✗ | ✗ | MIS-03 |
-| Rhythm | MIS-04, 08, 09, 17 · OFC-06 · FB-01 · LHS-02 | MIS-07 | MIS-05, 06 | MIS-16 · FB-07 | ✗ |
+| Rhythm | MIS-04, 08, 09, 17 · OFC-06 · FB-01 · LHS-02 | MIS-07 | MIS-05, 06 | MIS-16 · FB-07 | DEL-08b |
 | Hero | MIS-10, 12 | ✗ | MIS-11 | ✗ | ✗ |
-| His peak | ✗ | ✗ | ✗ | ✗ | ✗ |
-| Her peak | MIS-14 · LHS-04 | ✗ | ✗ | ✗ | ✗ |
-| Pulse / spill | ✗ | ✗ | ✗ | ✗ | MIS-13 |
+| His peak | DEL-08a | ✗ | ✗ | ✗ | ✗ |
+| Her peak | MIS-14 · LHS-04 | ✗ | DEL-07 | ✗ | ✗ |
+| Pulse / spill | ✗ | DEL-08c | ✗ | ✗ | MIS-13 |
 | After | MIS-15 | ✗ | ✗ | ✗ | ✗ |
 
 **From behind** (doggystyle, bent over, prone, wall)
@@ -143,17 +156,17 @@ Where each position family has coverage, by rung and angle. **✗** marks a gap 
 **On top, lap, carry, side**
 | Rung | Side | Behind | Front | Below | Close-up |
 |---|---|---|---|---|---|
-| Rhythm | FB-05 | FB-04 | OFC-05 | ✗ | ✗ |
+| Rhythm | FB-05 · DEL-05 | FB-04 | OFC-05 · DEL-06 | ✗ | ✗ |
 | Hero | FB-09 | ✗ | ✗ | ✗ | ✗ |
 | Her peak | LHS-05 | ✗ | ✗ | ✗ | ✗ |
-| Pulse | ✗ | ✗ | ✗ | FB-06 | ✗ |
-| Spill / after | ✗ | ✗ | ✗ | ✗ | ✗ |
+| Pulse | ✗ | ✗ | ✗ | FB-06 · DEL-09 | ✗ |
+| Spill / after | DEL-10 | ✗ | ✗ | ✗ | ✗ |
 
 **Close-ups and internals:** their own grid is in `sets/closeups.md`.
 
-**Outside the act:** tease OFC-01, 02 · LHS-03; lead-in OFC-03; after OFC-07, 08; epilogue OFC-12.
+**Outside the act:** tease OFC-01, 02 · LHS-03 · DEL-01, 02; lead-in OFC-03 · DEL-03; entry DEL-04; after OFC-07, 08 · DEL-10; epilogue OFC-12.
 
-**Biggest gaps:** *his peak* outside the from-behind family; *her face from the front* except FB-11; the whole on-top climax; fat-bastard *after* shots (her starfished under his arm, the walk-away) and fat-bastard oral (belly over her forehead).
+**Biggest gaps:** *his peak* from above, behind or POV (DEL-08a covers the side of a press only); *her face from the front* except FB-11 and DEL-06, 07; the whole on-top climax; fat-bastard *after* shots (her starfished under his arm, the walk-away) and fat-bastard oral (belly over her forehead); female-dominant oral (facesitting, her belly over his face); a back-to-viewer Amazon (DEL-06 came out front-facing).
 
 ---
 
@@ -181,5 +194,7 @@ The user's reference images, by what they taught. Metadata was read from NovelAI
 | ref 14 | Low side macro, huge dark scaled hands gripping her ass, thick shaft in, impact stars | partner hands as framing | a hand can be the contrast cue |
 | ref 15 | Anthro wolf knotted under a woman, tall cross-section panel down the left third (knot locked, womb flooded) | CLU-06; CANINE·KNOT kit | the internal panel takes a third of the canvas |
 | ref 16 | From low behind, heavy testicles hanging over the join, drip running to her anus | CLU-04 | prominent balls in mating press and prone |
+| ref 17 | Amazon: 3D render, woman squatting astride a man's hips with her back to the viewer and her face turned back over her shoulder, him on his back with knees folded up and feet in the air | DEL-06 | low three-quarter view from behind; V5 gave a front-facing version of the same squat with his legs in a V |
+| ref 18 | Butter churn, with metadata: big man standing upright over a partner inverted on her upper back, hips rolled over her head, legs in a V, his hands on her thighs | DEL-09 | prose "lying on upper back, hips rolled up over head, legs pointing at ceiling, weight on shoulders, knees loosely bent"; from low straight-on |
 
 Missionary references are in `sets/missionary-castellane.md`, Reference map.

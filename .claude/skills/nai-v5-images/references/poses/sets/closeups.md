@@ -33,12 +33,12 @@ Body tags for the partner box: anthro hybrid `anthro, canine, canis, muscular an
 
 | Moment | Side macro | From below (POV) | From behind and below | Top-down POV | Panel / split | Inside view |
 |---|---|---|---|---|---|---|
-| Entry | ✗ | CLU-02 | ✗ | ✗ | ✗ | CLU-05 |
+| Entry | ✗ | CLU-02 · DEL-04 | ✗ | ✗ | ✗ | CLU-05 |
 | Push / stretch | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ |
-| Root | ✗ | ✗ | OFC-11a · WAL-10a · FB-08a · CLU-04 | ✗ | ✗ | ✗ |
+| Root | DEL-08b | ✗ | OFC-11a · WAL-10a · FB-08a · CLU-04 | ✗ | ✗ | ✗ |
 | Tie / lock | ✗ | ✗ | ✗ | ✗ | CLU-06 (knot) | CLU-07 (corkscrew) |
 | Pulse | ✗ | ✗ | OFC-11b · WAL-10b · FB-08b | ✗ | CLU-03 | ✗ |
-| Overflow | CLU-01 | ✗ | OFC-11c · CLU-04 | ✗ | ✗ | ✗ |
+| Overflow | CLU-01 | ✗ | OFC-11c · CLU-04 · DEL-08c | ✗ | ✗ | ✗ |
 | Pull-out / strings | ✗ | ✗ | WAL-10c | ✗ | ✗ | ✗ |
 | After / drip | ✗ | ✗ | ✗ | ✗ | ✗ | ✗ |
 
