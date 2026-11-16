@@ -1,20 +1,19 @@
 ---
 type: story
 status: draft
-world: "[[Kerrow Deep]]"
-setting: "[[Kerrow Deep]]"
+world: '[[Kerrow Deep]]'
+setting: '[[Kerrow Deep]]'
 cast: []
 profiles: []
-mode: DIRECT
+mode: CO-WRITE
 pov: third
 tense: past
 rating: explicit
-drafts: off
-last_beat: ""
-words:
+drafts: 'off'
 module: kerrow-deep
-created: 2026-11-06
+created: '2026-11-06'
 ---
+
 # Kerrow Deep — Direct
 > You steer, Claude writes everyone. Pick a lead utility and a day.
 
