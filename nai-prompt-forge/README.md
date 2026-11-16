@@ -24,9 +24,9 @@ NovelAI caps how many editor generations a script can start without you touching
 
 ## Install
 
-1. In NovelAI, open a new story to use as the workspace. Open its scripts and add a script. Paste in `dist/prompt-forge.js`, or import `dist/Prompt Forge.story` if you've packed one (see below).
+1. In NovelAI, import `dist/Prompt Forge.story`. It opens as a Forge workspace, and on first run the script clears the template's leftover text. Or import `dist/Prompt Forge.naiscript` as a script (account-level or in a story of your own).
 2. Open the **Prompt Forge** panel under the editor, or use the **Forge** toolbar button for a floating window.
-3. Click **Use this story**. Stories that aren't Forge workspaces are never touched; there, the script only acts on steps you start from its panel.
+3. In a story of your own, click **Use this story**; the packed story is already a workspace. Stories that aren't Forge workspaces are never touched; there, the script only acts on steps you start from its panel.
 4. Grant the permissions as they come up:
    - document editing writes the finished blocks into the story
    - clipboard copies blocks
@@ -52,7 +52,9 @@ Five categories: `Forge · Characters`, `Forge · Styles`, `Forge · Kits`, `For
 |---|---|
 | `src/` | TypeScript/TSX source, concatenated in file-name order |
 | `data/vocab.json` | Tag vocab from Waifoundry's merged Danbooru/e621 table, plus the vault's tag files (`tools/extract_vocab.py`) |
-| `dist/prompt-forge.js` | The built script (about 1 MB, under the 2 MB account-script limit) |
+| `dist/Prompt Forge.naiscript` | The built script with its frontmatter header, ready to import (about 1 MB, under the 2 MB account-script limit) |
+| `dist/Prompt Forge.story` | A ready-to-import workspace story carrying the script |
+| `dist/prompt-forge.js` | The same code without the frontmatter, for pasting |
 | `docs/novelai/` | NovelAI's script typings and documentation, as supplied |
 | `docs/DESIGN.md` | How it works and why, and what still needs checking in NovelAI |
 | `test/` | Unit tests for the rules, assembler and job parsers; `test/smoke/` runs the built script against a mock API with real Preact |
@@ -74,7 +76,7 @@ node tools/build.mjs
 (cd test/smoke && npm install) && node test/smoke/harness.mjs dist/prompt-forge.js
 ```
 
-To pack a `.story`, export any NovelAI story with a script attached, to use as a template:
+To repack the `.story` after a build, use any exported story with a script attached as the template. Only its container format and document are kept; the script, lorebook, prompts and storage are all replaced:
 
 ```bash
 python3 -I tools/pack_story.py path/to/template.story

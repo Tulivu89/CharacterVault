@@ -121,13 +121,16 @@ uc drop: dark, in shadows
 
 ## State
 
-Story storage keys: `forge.setup` (current setup), `forge.saved` (saved setups), `forge.settings`, `forge.enabled`, `forge.doc` (section IDs of the rendered blocks), `forge.sheets.fallback` (characters saved when Lorebook editing is refused). The store is one `createStore` shared by the panel and the floating window.
+Story storage keys: `forge.fresh` (set in a packed story; the first run clears the template text), `forge.setup` (current setup), `forge.saved` (saved setups), `forge.settings`, `forge.enabled`, `forge.doc` (section IDs of the rendered blocks), `forge.sheets.fallback` (characters saved when Lorebook editing is refused). The store is one `createStore` shared by the panel and the floating window.
 
 ## Size
 
 `dist/prompt-forge.js` is about 1 MB: 866 KB of vocab (3.7k curated general tags, 34k artists and 7k copyrights with post counts, 4k aliases, the vault's tag lists) and about 180 KB of code. That leaves room under the 2 MB account-script limit. If it gets tight, artists under 200 posts are the first cut (−300 KB). Compressing the vocab is the second.
 
 ## Build
+
+The `.naiscript` follows NovelAI's export format: a `/*--- … ---*/` frontmatter block (`compatibilityVersion, id, name, createdAt, updatedAt, version, author, description, memoryLimit`), then the code. Frontmatter values come from `package.json` and must not contain colons; the build refuses them. The script id is fixed in `package.json` so storage carries over between versions.
+
 
 `tools/build.mjs` type-checks every source file against NovelAI's own typings (`docs/novelai/`; the JSX typings get `declare` added on load) and concatenates them into one script with `tsc --outFile`, JSX compiled to `h()` calls. TypeScript 7 removes `--outFile`; when that lands, swap in esbuild or similar with the same file order.
 
@@ -145,7 +148,7 @@ These follow the typings and docs but haven't been run in the real app:
 3. `generationParameters.update` before `editor.generate` applies to that generation.
 4. The `--theme-*` custom property names (`bg0`–`bg3`, `textMain`, `textHeadings`, `textHighlight`, `warning`, `textDisabled`) match what JSX parts receive. If not, the fallback colours apply.
 5. `useStoreValue` re-renders on `STORE.set` inside JSX parts.
-6. The `.story` script entry shape, for `tools/pack_story.py`. It copies a real template rather than guessing.
+6. The packed story's seeded storage. `tools/pack_story.py` writes `forge.enabled` and `forge.fresh` JSON-encoded under the script id, matching how other scripts' values appear in exported stories. If NovelAI keys story storage differently, the story simply opens with the "Use this story" banner and the template text stays until Settings → **Clear the document**.
 
 ## Next
 

@@ -37,6 +37,7 @@ registerHooks()
         ])
         await loadLibrary()
         refreshBudget()
+        await firstRun()
     } catch (e) {
         api.v1.error('Prompt Forge failed to start', e)
     }

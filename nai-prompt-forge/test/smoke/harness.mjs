@@ -327,6 +327,11 @@ ok('setup saved and archived', Object.keys(STORE.get().saved).length === 1 && se
 await click('Settings')
 ok('settings tab renders', text().includes('Run steps through'), text().slice(0, 200))
 
+// First run of a packed story: forge.fresh clears the template text once
+storyStorage.set('forge.fresh', true)
+await firstRun()
+ok('first run clears document', sections.length === 2 && sections[0].text === 'Prompt Forge workspace.' && storyStorage.get('forge.fresh') === false, sections.map(x => x.text))
+
 // Persistence
 await sleep(800)
 ok('setup persisted', !!storyStorage.get('forge.setup')?.prose, [...storyStorage.keys()])
