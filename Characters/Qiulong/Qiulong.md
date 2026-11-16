@@ -61,6 +61,7 @@ created: 2026-10-19
 ## Variants
 *Recurring versions: life stages, forms, later fates, one-off reuses. One line each on what changes; the details live in that version's profile.*
 - **Teahouse Before Frost** (adult): dice in a half-empty teahouse, crimson qipao. Card: [[Qiulong - Teahouse Before Frost]]
+- **Autumn's Leaves** (adult): runs the resort teahouse floor and kitchen, fixes what arrives broken, and houses her mother and half-sister. Card: [[Qiulong - Autumn's Leaves]]
 
 ## Core history
 *Only what's true in every story. Story-specific backstory goes in profiles.*
