@@ -36,6 +36,13 @@
    "lastBeat": ""
   },
   {
+   "name": "Moved Back Home",
+   "status": "active",
+   "mode": "DIRECT",
+   "world": "Moved Back Home",
+   "lastBeat": "Not started. Opening: 2:14 a.m., Dennis on his kitchen floor with the PDF, the Sharpie circle and the offering."
+  },
+  {
    "name": "Utility Class",
    "status": "active",
    "mode": "DIRECT",
@@ -354,6 +361,22 @@
    "species": "human",
    "age": "128",
    "hook": "The youngest of [[House Castellane]]: a 128-year-old woman her father decided to keep at 21, who plays the vapid socialite and the daddy's girl because both work.",
+   "portrait": null
+  },
+  {
+   "name": "Dennis Moody",
+   "world": "Moved Back Home",
+   "species": "human",
+   "age": "",
+   "hook": "A big, lonely night-shift man who apologizes to vending machines and wants far more than he has ever asked for.",
+   "portrait": null
+  },
+  {
+   "name": "Lascivia",
+   "world": "Moved Back Home",
+   "species": "Succubus",
+   "age": "",
+   "hook": "A full succubus of the old trade, centuries in, who has waited nineteen years for her daughter to join the family business.",
    "portrait": null
   },
   {
