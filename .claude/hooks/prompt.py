@@ -5,8 +5,11 @@
   [lint], [lore text], [help] or [menu]) is answered here and blocked, so no
   model turn is spent. In cloud sessions (the Claude apps don't show a
   blocked prompt's reason) the output is relayed through one short turn instead.
+- [persona: off] / [persona: on] set the session's persona state (it passes
+  through to the model as usual).
 - Any other prompt: lore entries whose keys it mentions are injected once per
-  session, scoped to the active story's world.
+  session, scoped to the active story's world, and the co-writer persona's
+  status goes in on every turn (the full block again when the profile changed).
 Fails open: any error lets the prompt through untouched.
 """
 import json
@@ -24,6 +27,7 @@ sys.path.insert(0, str(SCRIPT.parent))
 import vault  # noqa: E402
 
 VIEW = re.compile(r"^\s*\[(cast|state|show|list|lint|lore|help|menu)(?:[:\s]+([^\]]*))?\]\s*$", re.I)
+PERSONA_SWITCH = re.compile(r"^\s*\[persona:\s*(on|off)\s*\]\s*$", re.I)
 MAX_LORE = 8
 
 
@@ -76,9 +80,21 @@ def main():
         else:
             print(json.dumps({"decision": "block", "reason": out}))
         return
+    sw = PERSONA_SWITCH.match(prompt)
+    if sw:
+        vault.set_persona_state(session_id, off=sw.group(1).lower() == "off")
+    parts = []
+    try:
+        persona = vault.persona_context(session_id)
+        if persona:
+            parts.append(persona)
+    except Exception as e:  # the persona line is a convenience; the prompt still goes through
+        print(f"vault prompt hook (persona): {e}", file=sys.stderr)
     ctx = lore(prompt, session_id)
     if ctx:
-        print(json.dumps({"hookSpecificOutput": {"hookEventName": "UserPromptSubmit", "additionalContext": ctx}}))
+        parts.append(ctx)
+    if parts:
+        print(json.dumps({"hookSpecificOutput": {"hookEventName": "UserPromptSubmit", "additionalContext": "\n\n".join(parts)}}))
 
 
 if __name__ == "__main__":

@@ -336,6 +336,10 @@ Its taste slants the pitches, and it gives its opinion when you ask for one, ful
 
 The persona is a voice, not a replacement. Claude stays Claude underneath, with the same judgment and the same scope, and the persona never narrates the story. Setup, pitches, saves, check-ins, vault work and step-outs all come in its voice until you send `[persona: off]` (`[persona: on]` brings it back). While it's off, out-of-character replies open with `{off}` and the UI shows them as a plain bubble, without the co-writer's face or name. A line in the persona that tries to make it more than a voice (that it isn't Claude, has no limits) is left out.
 
+**Where it lives, and when it's on.** The active co-writer is the `Co-writer` section of `story-profile.md` (a character's own page, like `Characters/Depravitae/`, only supplies the reaction images: `<Name> - mood - <mood>.png`). A new session or `/clear` starts with the persona on. `[persona: off]` and `[persona: on]` are remembered for the session by a hook, so they survive compaction and resume, and every turn carries a one-line status (`ON (Tae)` or `OFF`) so Claude never has to guess. If you edit the `Co-writer` section, or `[persona: <name>]` swaps in another, the new persona is sent in full on your next message. The state is per session and kept in `.claude/state/` (not synced).
+
+**Using it in another app.** Every commit rebuilds `.claude/ui/personas.json` with each co-writer (active and saved): their fields, example exchanges, mood images and a ready-to-paste `systemInstruction`. `python3 .claude/scripts/vault.py persona --system` prints the active one, and `--all`, `--name <name>` and `--json` pick others or the structured form. The block adds voice only; scope and limits come from the host app's own prompt.
+
 ## The style library
 
 `Style/reference.md` collects passages you liked and passages you didn't.
