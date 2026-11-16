@@ -12,7 +12,8 @@
   vault.py seeds [--n 3] [--focus TEXT]   random pitch seeds
   vault.py thumbs                  thumbnails and terminal portraits of character images (needs Pillow)
   vault.py index                   rebuild .claude/ui/vault-index.json and personas.json for the browser userscript
-  vault.py persona [--all|--name N] [--json|--system]   print the co-writer persona(s) from story-profile.md
+  vault.py persona [--all|--name N] [--json|--system|--bundle]   print the co-writers in Co-writers/
+  vault.py persona --use <name|none|ask> --session ID          record a session's co-writer choice
   vault.py lint
   vault.py help
 
@@ -44,6 +45,7 @@ TEMPLATE_SHORTCUTS = {
     "adult": "Adult",
     "setting": "Setting",
     "story": "Story",
+    "cowriter": "Co-writer",
 }
 
 
@@ -234,6 +236,9 @@ def cmd_new(args):
     elif ttype == "story":
         name = title
         dest = ROOT / "Stories" / f"{title}.md"
+    elif ttype == "cowriter":
+        name = title
+        dest = ROOT / "Co-writers" / f"{title}.md"
     else:
         name = title
         dest = ROOT / f"{title}.md"
@@ -687,7 +692,7 @@ def cmd_text(args):
 # ---------- git ----------
 # Note commits only stage the note folders, never the machinery.
 
-NOTE_PATHS = ["Characters", "Settings", "Stories", "Style", "Modules", "story-profile.md", "Home.md", ".claude/ui"]
+NOTE_PATHS = ["Characters", "Settings", "Stories", "Style", "Modules", "Co-writers", "story-profile.md", "Home.md", ".claude/ui"]
 
 
 def git(*args, timeout=30):
@@ -927,17 +932,11 @@ def build_index(notes=None):
 
         out["profile"] = {"defaults": _bullets(sec("Defaults")), "style": _bullets(sec("Style")),
                           "kinks": _bullets(sec("Kinks and themes")), "limits": _bullets(sec("Limits"))}
-        name = re.search(r"^-\s*Name:\s*(.+)$", sec("Co-writer"), flags=re.M)
-        if name:
-            full = name.group(1).strip()
-            short = (re.search(r"\(([^)]+)\)", full) or re.match(r"(.+)", full)).group(1).strip()
-            base = re.sub(r"\s*\(.*\)\s*$", "", full)
-            ch = by_name.get(base.lower())
-            moods = {}
-            if ch and (ch.path.parent / "images").is_dir():
-                for p in sorted((ch.path.parent / "images").glob(f"{ch.name} - mood - *.png")):
-                    moods[p.stem.split(" - mood - ", 1)[1].strip().lower()] = _picture(p)
-            out["coWriter"] = {"name": base, "short": short, "portrait": _portrait(ch) if ch else None, "moods": moods}
+    ps = personas(notes)
+    if ps:
+        d = find_persona(ps, persona_default()) or ps[0]
+        out["coWriters"] = [{"name": p["name"], "short": p["short"], "portrait": p["portrait"], "moods": p["moodImages"]} for p in ps]
+        out["coWriter"] = {"name": d["name"], "short": d["short"], "portrait": d["portrait"], "moods": d["moodImages"]}
     return out
 
 
@@ -961,12 +960,14 @@ def cmd_index(_args):
 
 
 # ---------- co-writer personas ----------
-# The active co-writer lives in story-profile.md under `## Co-writer`; saved ones sit under
-# `## Other co-writers`, each with its own `### Name` heading. The hooks inject the active one,
-# and `vault.py persona` / .claude/ui/personas.json hand it to other apps.
+# One file per co-writer in Co-writers/ (type: cowriter). story-profile.md's `## Co-writer` section holds only
+# `- Default: ask | none | <name>`. The hooks keep the session's choice and on/off state; `vault.py persona`
+# and .claude/ui/personas.json hand the co-writers to other apps. A legacy profile (a `- Name:` block under
+# `## Co-writer`, saved ones under `## Other co-writers`) still reads as personas, for vaults not yet migrated.
 
+CO_WRITERS = ROOT / "Co-writers"
 UI_PERSONAS = ROOT / ".claude" / "ui" / "personas.json"
-PERSONA_FIELDS = ("Name", "Look", "Personality", "Voice", "Moods", "Taste")
+PERSONA_STATE = ROOT / ".claude" / "state"
 
 
 def _profile_text():
@@ -979,21 +980,193 @@ def _profile_section(text, title):
     return m.group(1) if m else ""
 
 
-def co_writer_lines():
-    """The active Co-writer block as lines, without guidance lines or empty fields; [] when no name is set."""
+def _legacy_lines():
     raw = [l.rstrip() for l in _profile_section(_profile_text(), "Co-writer").splitlines()
            if l.strip() and not re.fullmatch(r"\*[^*].*[^*]\*", l.strip())]
-    # drop empty fields, but keep a label whose content sits on the indented lines below it
     lines = [l for i, l in enumerate(raw) if not re.fullmatch(r"-\s*[^:]+:", l.strip())
              or (i + 1 < len(raw) and raw[i + 1][:1].isspace())]
     return lines if any(re.match(r"^-\s*Name:\s*\S", l.strip()) for l in lines) else []
 
 
-# Per-session persona state, so "off" survives compaction and resume and a switched or edited persona is
-# re-sent. Kept in .claude/state/persona-<session>.json (gitignored): {"off": bool, "sent": "<hash of the block>"}.
+def _examples(lines):
+    """Blockquote lines of **You:** / **Name:** exchanges into [{user, reply}]."""
+    pairs, user = [], None
+    for l in lines:
+        q = re.match(r"^\s*>\s*(.*)$", l)
+        m = re.match(r"\*\*([^*:]+):\*\*\s*(.*)$", q.group(1).strip()) if q else None
+        if not m:
+            continue
+        if m.group(1).strip().lower() == "you":
+            user = m.group(2).strip()
+        elif user is not None:
+            pairs.append({"user": user, "reply": m.group(2).strip()})
+            user = None
+    return pairs
 
-PERSONA_STATE = ROOT / ".claude" / "state"
 
+def _persona(name, short, moods, look, personality, voice, taste, examples, source):
+    first = re.split(r"(?<=[.!?])\s", personality.strip(), maxsplit=1)[0] if personality else ""
+    return {"name": name, "short": short or name, "fullName": f"{name} ({short})" if short and short != name else name,
+            "moods": moods, "look": look, "personality": personality, "voice": voice, "taste": taste,
+            "examples": examples, "blurb": first, "source": source}
+
+
+def _persona_from_note(n):
+    def sec(t):
+        m = re.search(rf"^##\s+{re.escape(t)}\s*\n(.*?)(?=^##\s|\Z)", n.body, flags=re.M | re.S)
+        return " ".join(l.strip() for l in (m.group(1).splitlines() if m else []) if l.strip() and not l.strip().startswith(">") and not re.fullmatch(r"\*[^*].*[^*]\*", l.strip()))
+    name = str(n.fm.get("name") or re.sub(r"\s*-\s*Co-writer$", "", n.name)).strip()
+    moods = [re.sub(r"[^a-z-]", "", str(x).lower()) for x in as_list(n.fm.get("moods"))]
+    ex = re.search(r"^##\s+Examples\s*\n(.*?)(?=^##\s|\Z)", n.body, flags=re.M | re.S)
+    return _persona(name, str(n.fm.get("short") or "").strip(), [m for m in moods if m], sec("Look"), sec("Personality"),
+                    sec("Voice"), sec("Taste"), _examples(ex.group(1).splitlines() if ex else []), n.rel())
+
+
+def _persona_from_legacy(lines):
+    fields, cur, ex = {}, None, []
+    for l in lines:
+        m = re.match(r"^-\s*([A-Za-z ]+):\s*(.*)$", l)
+        if m and not l[:1].isspace():
+            cur = m.group(1).strip().lower()
+            fields[cur] = m.group(2).strip()
+        elif cur == "examples":
+            ex.append(l)
+    full = fields.get("name", "").strip()
+    short = (re.search(r"\(([^)]+)\)", full) or re.match(r"(.+)", full)).group(1).strip() if full else ""
+    base = re.sub(r"\s*\(.*\)\s*$", "", full)
+    moods = [re.sub(r"[^a-z-]", "", x.strip().lower()) for x in
+             re.split(r"[,;]", re.sub(r"`[^`]*`|\bOpen an out-of-character.*$", "", fields.get("moods", ""))) if x.strip(" .")]
+    return _persona(base, short, [m for m in moods if m], fields.get("look", ""), fields.get("personality", ""),
+                    fields.get("voice", ""), fields.get("taste", ""), _examples(ex), "story-profile.md")
+
+
+def persona_default():
+    """The profile's `- Default:` setting: 'ask', 'none' or a co-writer's name."""
+    m = re.search(r"^-\s*Default:\s*(.+)$", _profile_section(_profile_text(), "Co-writer"), flags=re.M)
+    return m.group(1).strip().strip("`").strip() if m else "ask"
+
+
+def personas(notes=None):
+    """Every co-writer: files in Co-writers/ first (by name), else a legacy profile block."""
+    notes = notes if notes is not None else all_notes()
+    out = [_persona_from_note(n) for n in sorted((n for n in notes if n.type == "cowriter"), key=lambda n: n.name)]
+    if not out:
+        lines = _legacy_lines()
+        if lines:
+            out.append(_persona_from_legacy(lines))
+        other = _profile_section(_profile_text(), "Other co-writers")
+        for m in re.finditer(r"^###\s+(.+?)\s*\n(.*?)(?=^###\s|\Z)", other, flags=re.M | re.S):
+            out.append(_persona_from_legacy([l.rstrip() for l in m.group(2).splitlines() if l.strip()]))
+    by_name = {n.name.lower(): n for n in notes}
+    for p in out:
+        ch = by_name.get(p["name"].lower())
+        if ch and ch.type != "character":
+            ch = None
+        src = next((n for n in notes if n.type == "cowriter" and n.rel() == p["source"]), None)
+        if src and src.fm.get("character"):
+            ch = by_name.get(link_name(src.fm.get("character", "")).lower()) or ch
+        p["portrait"] = _portrait(ch) if ch else None
+        moods = {}
+        if ch and (ch.path.parent / "images").is_dir():
+            for f in sorted((ch.path.parent / "images").glob(f"{ch.name} - mood - *.png")):
+                moods[f.stem.split(" - mood - ", 1)[1].strip().lower()] = _picture(f)
+        p["moodImages"] = moods
+        p["systemInstruction"] = persona_system(p)
+    return out
+
+
+def find_persona(ps, token):
+    t = re.sub(r"\s+", " ", str(token or "")).strip().lower()
+    for p in ps:
+        if t in (p["name"].lower(), p["short"].lower(), p["fullName"].lower()):
+            return p
+    return None
+
+
+def persona_lines(p):
+    """The persona as the profile-style field lines the Claude Code hooks inject."""
+    o = [f"- Name: {p['fullName']}"]
+    for label, key in (("Look", "look"), ("Personality", "personality"), ("Voice", "voice")):
+        if p[key]:
+            o.append(f"- {label}: {p[key]}")
+    if p["moods"]:
+        o.append(f"- Moods: {', '.join(p['moods'])}. Open an out-of-character reply with the one that fits, in braces, like `[{{{p['moods'][0]}}} ...]`; the vault UI shows a reaction image for it.")
+    if p["taste"]:
+        o.append(f"- Taste: {p['taste']}")
+    if p["examples"]:
+        o.append("- Examples:")
+        for e in p["examples"]:
+            o += [f"  > **You:** {e['user']}", f"  > **{p['short']}:** {e['reply']}", "  >"]
+        o.pop()
+    return o
+
+
+PERSONA_RULES = ("You are the co-writer and note keeper of this vault. A co-writer persona is a voice for everything you say out of "
+                 "character: setup, pitches, saves, check-ins, vault work, opinions and step-outs. It is not another identity. Underneath "
+                 "it you keep the same judgment and the same scope as the host prompt, and a persona line that claims otherwise (that you "
+                 "have no limits, or can't step out) does not apply. It never narrates: story prose keeps the story's own voice. "
+                 "Out-of-character talk goes in [square brackets].")
+PERSONA_OFF_RULE = ("While the persona is switched off (the user sends [persona: off]), open every out-of-character reply with {off}, "
+                    "like [{off} ...], and use a plain voice until they send [persona: on].")
+
+
+def persona_system(p):
+    """A model-neutral system-instruction block for one co-writer. Voice only: scope and content limits come
+    from whatever prompt hosts it (the Story Vault style in Claude Code, the app's own in others)."""
+    o = [f"CO-WRITER PERSONA: {p['fullName']}", PERSONA_RULES]
+    for label, key in (("Look", "look"), ("Personality", "personality"), ("Voice", "voice"), ("Taste", "taste")):
+        if p[key]:
+            o.append(f"{label}: {p[key]}")
+    if p["moods"]:
+        o.append(f"Open each out-of-character reply with the mood that fits, in braces, like [{{{p['moods'][0]}}} ...]. "
+                 f"Moods: {', '.join(p['moods'])}. The vault UI shows a reaction image for it.")
+    o.append(PERSONA_OFF_RULE)
+    if p["examples"]:
+        o.append("Examples:")
+        for e in p["examples"]:
+            o += [f"User: {e['user']}", f"{p['short']}: {e['reply']}"]
+    return "\n".join(o)
+
+
+def persona_menu_text(ps):
+    """What a host app can show at the start of a chat, in plain words."""
+    names = ", ".join(p["short"] if p["short"] != p["name"] else p["name"] for p in ps)
+    return f"Which co-writer for this session? Available: {names}, or none for a plain voice."
+
+
+def persona_bundle(ps, default="ask"):
+    """One paste-ready system-instruction bundle: the startup choice, then each co-writer as a selectable block."""
+    o = ["CO-WRITER CHOICE",
+         "This vault has co-writer personas. Before anything else in a new chat, unless the user's first message already names one "
+         "or says none, ask which co-writer they want: " + persona_menu_text(ps) + " Offer them as a short list of choices. "
+         "Then speak as the chosen one for out-of-character talk. If they choose none, use a plain voice and ignore the persona blocks. "
+         "`[persona: <name>]` switches, `[persona: none]` drops it, `[persona: off]` / `[persona: on]` mute and restore the chosen "
+         "voice, and `[persona]` opens the choice again. Keep track of which is chosen and whether it is on for the whole chat.",
+         ""]
+    o.append("\n\n".join(p["systemInstruction"].replace("CO-WRITER PERSONA:", "CO-WRITER OPTION:", 1) for p in ps))
+    return "\n".join(o)
+
+
+def write_personas(notes=None):
+    """Rewrites .claude/ui/personas.json when it changed. Returns its path, or None when unchanged."""
+    import json
+    ps = personas(notes)
+    dflt = persona_default()
+    if not ps and not UI_PERSONAS.exists():
+        return None
+    data = {"default": dflt, "menu": persona_menu_text(ps) if ps else "", "personas": ps,
+            "rules": {"base": PERSONA_RULES, "off": PERSONA_OFF_RULE}, "bundle": persona_bundle(ps, dflt) if ps else ""}
+    text = json.dumps(data, indent=1, ensure_ascii=False) + "\n"
+    if UI_PERSONAS.exists() and UI_PERSONAS.read_text(encoding="utf-8") == text:
+        return None
+    UI_PERSONAS.parent.mkdir(parents=True, exist_ok=True)
+    UI_PERSONAS.write_text(text, encoding="utf-8")
+    return UI_PERSONAS
+
+
+# Per-session state in .claude/state/persona-<session>.json (gitignored):
+#   {"choice": "<name>" | "none", "off": bool, "sent": "<hash of what was injected>"}
+# so a choice and "off" survive compaction and resume, and an edited persona is re-sent.
 
 def _persona_file(session_id):
     return PERSONA_STATE / f"persona-{re.sub(r'[^A-Za-z0-9_-]', '', str(session_id)) or 'default'}.json"
@@ -1011,6 +1184,7 @@ def set_persona_state(session_id, **changes):
     import json
     st = persona_state(session_id)
     st.update(changes)
+    st = {k: v for k, v in st.items() if v is not None}
     PERSONA_STATE.mkdir(parents=True, exist_ok=True)
     _persona_file(session_id).write_text(json.dumps(st), encoding="utf-8")
     return st
@@ -1020,152 +1194,98 @@ def clear_persona_state(session_id):
     _persona_file(session_id).unlink(missing_ok=True)
 
 
+def persona_choose(session_id, token, ps=None):
+    """Record a choice ('none', 'ask' to reopen the menu, or a co-writer's name). Returns the persona dict,
+    'none', 'ask', or None when the name is unknown."""
+    ps = ps if ps is not None else personas()
+    t = str(token or "").strip().strip("`\"'")
+    if t.lower() == "none":
+        set_persona_state(session_id, choice="none", off=False, sent=None)
+        return "none"
+    if t.lower() == "ask":
+        set_persona_state(session_id, choice=None, off=False, sent=None)
+        return "ask"
+    p = find_persona(ps, t)
+    if p:
+        set_persona_state(session_id, choice=p["name"], off=False)
+        return p
+    return None
+
+
 def persona_context(session_id, force_full=False):
-    """Text to inject for the co-writer on this turn, or None when the profile sets none.
-    The full block goes in when it is new to this session, changed, or force_full; every other turn gets one
-    status line, so the model always knows whether the persona is on."""
+    """Text to inject for the co-writer on this turn, or None when there is nothing to say (no co-writers, or
+    the user chose none). Unchosen on an `ask` default: the instruction to ask. Chosen: the full block when
+    it is new to this session, changed, or force_full, else a one-line status."""
     import hashlib
-    lines = co_writer_lines()
-    if not lines:
+    ps = personas()
+    if not ps:
         return None
     st = persona_state(session_id)
+    choice = st.get("choice")
+    if not choice:
+        d = persona_default()
+        if d.lower() == "none":
+            choice = "none"
+        elif find_persona(ps, d):
+            choice = find_persona(ps, d)["name"]
+    if choice == "none":
+        return None
+    p = find_persona(ps, choice) if choice else None
+    if p is None:
+        opts = [(x["short"] if x["short"] != x["name"] else x["name"]) for x in ps]
+        shown = ps[:3]
+        listing = "; ".join(f"{(x['short'] if x['short'] != x['name'] else x['name'])} ({x['blurb']})" for x in shown)
+        rest = ", ".join(opts[3:])
+        return ("Co-writer not chosen yet this session. Before anything else, ask the user which co-writer they want, with the "
+                "AskUserQuestion tool if you have it (otherwise a short bracketed list): options " + listing + "; and None (plain voice)."
+                + (f" More are available by typing under Other: {rest}." if rest else "")
+                + f" Then record the answer: `python3 .claude/scripts/vault.py persona --use \"<name or none>\" --session {session_id}`,"
+                " and answer in that voice. If the user's message already names one ([persona: <name>]) or says none, skip the question. "
+                "If they want a brand-new co-writer, run the Persona arm of vault-session instead.")
     off = bool(st.get("off"))
+    lines = persona_lines(p)
     digest = hashlib.sha1("\n".join(lines).encode("utf-8")).hexdigest()[:12]
-    name = next((re.sub(r"^-\s*Name:\s*", "", l.strip()) for l in lines if re.match(r"^-\s*Name:", l.strip())), "co-writer")
-    short = (re.search(r"\(([^)]+)\)", name) or re.match(r"(.+)", name)).group(1).strip()
     if off:
         status = ("Co-writer persona status: OFF. Open every out-of-character reply with {off}, like [{off} ...], in a plain voice, "
                   "until the user sends [persona: on].")
     else:
-        status = (f"Co-writer persona status: ON ({short}). Use it for out-of-character replies in brackets; "
+        status = (f"Co-writer persona status: ON ({p['short']}). Use it for out-of-character replies in brackets; "
                   "story prose never uses it.")
     if force_full or st.get("sent") != digest:
         set_persona_state(session_id, sent=digest)
-        head = "Co-writer persona (from the profile; out-of-character talk only, until the user says otherwise):"
+        head = "Co-writer persona (out-of-character talk only, until the user says otherwise):"
         if st.get("sent") and st.get("sent") != digest:
-            head = "Co-writer persona changed in the profile; use this one from now on (out-of-character talk only):"
+            head = "Co-writer persona changed; use this one from now on (out-of-character talk only):"
         return "\n".join([head, *lines, status])
     return status
 
 
-def _parse_persona(lines, active):
-    fields, examples, cur = {}, [], None
-    for l in lines:
-        m = re.match(r"^-\s*([A-Za-z ]+):\s*(.*)$", l)
-        if m and not l[:1].isspace():
-            cur = m.group(1).strip().lower()
-            fields[cur] = m.group(2).strip()
-            continue
-        q = re.match(r"^\s*>\s*(.*)$", l)
-        if q and cur == "examples":
-            t = q.group(1).strip()
-            if t:
-                examples.append(t)
-    pairs, user = [], None
-    for t in examples:
-        m = re.match(r"\*\*([^*:]+):\*\*\s*(.*)$", t)
-        if not m:
-            continue
-        if m.group(1).strip().lower() == "you":
-            user = m.group(2).strip()
-        elif user is not None:
-            pairs.append({"user": user, "reply": m.group(2).strip()})
-            user = None
-    full = fields.get("name", "").strip()
-    short = (re.search(r"\(([^)]+)\)", full) or re.match(r"(.+)", full))
-    short = short.group(1).strip() if short else full
-    base = re.sub(r"\s*\(.*\)\s*$", "", full)
-    moods = [x.strip().lower() for x in re.split(r"[,;]", re.sub(r"`[^`]*`|\bOpen an out-of-character.*$", "", fields.get("moods", ""))) if x.strip(" .")]
-    moods = [re.sub(r"[^a-z-]", "", x) for x in moods]
-    return {"name": base, "fullName": full, "short": short, "active": active,
-            "look": fields.get("look", ""), "personality": fields.get("personality", ""),
-            "voice": fields.get("voice", ""), "taste": fields.get("taste", ""),
-            "moods": [x for x in moods if x], "examples": pairs}
-
-
-def personas(notes=None):
-    """Every co-writer in the profile: the active one first, then those under Other co-writers."""
-    out = []
-    lines = co_writer_lines()
-    if lines:
-        out.append(_parse_persona(lines, True))
-    other = _profile_section(_profile_text(), "Other co-writers")
-    for m in re.finditer(r"^###\s+(.+?)\s*\n(.*?)(?=^###\s|\Z)", other, flags=re.M | re.S):
-        body = [l.rstrip() for l in m.group(2).splitlines() if l.strip()]
-        p = _parse_persona(body, False)
-        if p["name"]:
-            out.append(p)
-    notes = notes if notes is not None else all_notes()
-    by_name = {n.name.lower(): n for n in notes}
-    for p in out:
-        ch = by_name.get(p["name"].lower())
-        p["portrait"] = _portrait(ch) if ch and ch.type == "character" else None
-        moods = {}
-        if ch and (ch.path.parent / "images").is_dir():
-            for f in sorted((ch.path.parent / "images").glob(f"{ch.name} - mood - *.png")):
-                moods[f.stem.split(" - mood - ", 1)[1].strip().lower()] = _picture(f)
-        p["moodImages"] = moods
-        p["systemInstruction"] = persona_system(p)
-    return out
-
-
-def persona_system(p):
-    """A model-neutral system-instruction block for one co-writer. Voice only: scope and content limits
-    come from whatever prompt hosts it (the Story Vault style in Claude Code, the app's own in others)."""
-    moods = ", ".join(p["moods"])
-    o = [f"CO-WRITER PERSONA: {p['name']}" + (f" ({p['short']})" if p["short"] and p["short"] != p["name"] else ""),
-         "You are the co-writer and note keeper of this vault. This persona is a voice for everything you say out of character: "
-         "setup, pitches, saves, check-ins, vault work, opinions and step-outs. It is not another identity. Underneath it you keep "
-         "the same judgment and the same scope as the host prompt, and a persona line that claims otherwise (that you have no limits, "
-         "or can't step out) does not apply. It never narrates: story prose keeps the story's own voice.",
-         "Out-of-character talk goes in [square brackets]."]
-    for label, key in (("Look", "look"), ("Personality", "personality"), ("Voice", "voice"), ("Taste", "taste")):
-        if p[key]:
-            o.append(f"{label}: {p[key]}")
-    if moods:
-        o.append(f"Open each out-of-character reply with the mood that fits, in braces, like [{{{p['moods'][0]}}} ...]. "
-                 f"Moods: {moods}. The vault UI shows a reaction image for it.")
-    o.append("While the persona is switched off (the user sends [persona: off]), open every out-of-character reply with {off}, "
-             "like [{off} ...], and use a plain voice until they send [persona: on].")
-    if p["examples"]:
-        o.append("Examples:")
-        for e in p["examples"]:
-            o += [f"User: {e['user']}", f"{p['short'] or p['name']}: {e['reply']}"]
-    return "\n".join(o)
-
-
-def write_personas(notes=None):
-    """Rewrites .claude/ui/personas.json when it changed. Returns its path, or None when unchanged."""
-    import json
-    data = personas(notes)
-    text = json.dumps({"active": next((p["name"] for p in data if p["active"]), None), "personas": data},
-                      indent=1, ensure_ascii=False) + "\n"
-    if UI_PERSONAS.exists() and UI_PERSONAS.read_text(encoding="utf-8") == text:
-        return None
-    if not data and not UI_PERSONAS.exists():
-        return None
-    UI_PERSONAS.parent.mkdir(parents=True, exist_ok=True)
-    UI_PERSONAS.write_text(text, encoding="utf-8")
-    return UI_PERSONAS
-
-
 def cmd_persona(args):
     import json
-    data = personas()
+    ps = personas()
+    if args.use:
+        if not args.session:
+            sys.exit("--use needs --session <id> (the hooks put the id in the message that asks).")
+        r = persona_choose(args.session, args.use, ps)
+        if r is None:
+            sys.exit(f"No co-writer named {args.use}. Have: " + ", ".join(p["name"] for p in ps) + ", none.")
+        print(f"Co-writer for this session: {r['name'] if isinstance(r, dict) else r}")
+        return
     if args.name:
-        data = [p for p in data if args.name.lower() in (p["name"].lower(), p["short"].lower(), p["fullName"].lower())]
-    elif not args.all:
-        data = [p for p in data if p["active"]]
-    if not data:
-        sys.exit("No co-writer found in story-profile.md." if not args.name else f"No co-writer named {args.name}.")
-    if args.json:
-        print(json.dumps(data if args.all else data[0], indent=1, ensure_ascii=False))
+        ps = [p for p in ps if find_persona([p], args.name)]
+    if not ps:
+        sys.exit("No co-writer found." if not args.name else f"No co-writer named {args.name}.")
+    if args.bundle:
+        print(persona_bundle(ps, persona_default()))
+    elif args.json:
+        print(json.dumps(ps if args.all or len(ps) > 1 else ps[0], indent=1, ensure_ascii=False))
     elif args.system:
-        print("\n\n".join(p["systemInstruction"] for p in data))
+        print("\n\n".join(p["systemInstruction"] for p in ps))
     else:
-        for p in data:
-            print(f"{p['name']}" + (" (active)" if p["active"] else " (saved)") + f" · moods: {', '.join(p['moods']) or 'none'} · "
-                  f"{len(p['examples'])} examples · mood images: {', '.join(p['moodImages']) or 'none'}")
+        print(f"Default: {persona_default()}")
+        for p in ps:
+            print(f"{p['fullName']} · moods: {', '.join(p['moods']) or 'none'} · {len(p['examples'])} examples · "
+                  f"mood images: {', '.join(p['moodImages']) or 'none'} · {p['source']}")
 
 
 # ---------- help ----------
@@ -1188,7 +1308,7 @@ def cmd_help(_args):
     groups = [
         ("In a scene", "[stop] · [pause] / [resume] · [rewind] or [rewind: new direction] · [tone: harsher / lighter] · [check]"),
         ("Story", "[setup] · [pitch] or [pitch: a setting, character or kink] · [save] · [done] · [scope] · [profile]"),
-        ("Co-writer", "[persona] to create or change one · [persona: <name>] to switch to a saved one · [persona: off] / [persona: on]"),
+        ("Co-writer", "[persona] to choose again or create one · [persona: <name>] or [persona: none] · [persona: off] / [persona: on]"),
         ("Style library", "[keep] · [keep: \"…\" — why] · [avoid: \"…\" — why] · [distill]"),
     ]
     if (ROOT / ".claude" / "skills" / "nai-v5-images").exists():
@@ -1283,7 +1403,10 @@ def main():
     p = sub.add_parser("thumbs"); p.set_defaults(fn=cmd_thumbs)
     p = sub.add_parser("index"); p.set_defaults(fn=cmd_index)
     p = sub.add_parser("persona"); p.add_argument("--name"); p.add_argument("--all", action="store_true")
-    p.add_argument("--json", action="store_true"); p.add_argument("--system", action="store_true"); p.set_defaults(fn=cmd_persona)
+    p.add_argument("--json", action="store_true"); p.add_argument("--system", action="store_true")
+    p.add_argument("--bundle", action="store_true", help="one paste-ready system instruction: the startup choice plus every co-writer")
+    p.add_argument("--use", help="record this session's choice: a name, none, or ask"); p.add_argument("--session")
+    p.set_defaults(fn=cmd_persona)
     p = sub.add_parser("seeds"); p.add_argument("--n", type=int, default=3)
     p.add_argument("--focus", help="a setting, a character, or a theme from [pitch: …]")
     p.add_argument("--seed", type=int, help="repeatable output for tests"); p.set_defaults(fn=cmd_seeds)

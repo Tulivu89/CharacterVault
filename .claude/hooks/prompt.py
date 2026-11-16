@@ -5,8 +5,9 @@
   [lint], [lore text], [help] or [menu]) is answered here and blocked, so no
   model turn is spent. In cloud sessions (the Claude apps don't show a
   blocked prompt's reason) the output is relayed through one short turn instead.
-- [persona: off] / [persona: on] set the session's persona state (it passes
-  through to the model as usual).
+- [persona: <name|none|ask|off|on>], a bare [persona] (reopens the choice) and
+  "prepare for fictional roleplay with <name>" set the session's co-writer state
+  (the prompt still passes through to the model).
 - Any other prompt: lore entries whose keys it mentions are injected once per
   session, scoped to the active story's world, and the co-writer persona's
   status goes in on every turn (the full block again when the profile changed).
@@ -27,7 +28,8 @@ sys.path.insert(0, str(SCRIPT.parent))
 import vault  # noqa: E402
 
 VIEW = re.compile(r"^\s*\[(cast|state|show|list|lint|lore|help|menu)(?:[:\s]+([^\]]*))?\]\s*$", re.I)
-PERSONA_SWITCH = re.compile(r"^\s*\[persona:\s*(on|off)\s*\]\s*$", re.I)
+PERSONA_CMD = re.compile(r"\[persona(?::\s*([^\]]*?))?\s*\]", re.I)
+PERSONA_WITH = re.compile(r"fictional roleplay\s+with\s+([^.,;!?\n]+)", re.I)
 MAX_LORE = 8
 
 
@@ -65,6 +67,25 @@ def lore(prompt, session_id):
     return "Lore from the vault, canon for this story:\n" + "\n".join(f"- [{h['source']}] {h['text']}" for h in hits)
 
 
+def persona_command(prompt, session_id):
+    """Apply a co-writer choice or on/off written in the prompt. Unknown names are left to the model
+    (the Persona arm of vault-session creates a new co-writer)."""
+    m = PERSONA_CMD.search(prompt)
+    if m:
+        arg = (m.group(1) or "").strip()
+        low = arg.lower()
+        if low in ("on", "off"):
+            vault.set_persona_state(session_id, off=(low == "off"))
+        elif not arg:
+            vault.persona_choose(session_id, "ask")
+        else:
+            vault.persona_choose(session_id, arg)
+        return
+    w = PERSONA_WITH.search(prompt)
+    if w:
+        vault.persona_choose(session_id, w.group(1).strip())
+
+
 def main():
     data = json.load(sys.stdin)
     prompt = data.get("prompt") or ""
@@ -80,9 +101,10 @@ def main():
         else:
             print(json.dumps({"decision": "block", "reason": out}))
         return
-    sw = PERSONA_SWITCH.match(prompt)
-    if sw:
-        vault.set_persona_state(session_id, off=sw.group(1).lower() == "off")
+    try:
+        persona_command(prompt, session_id)
+    except Exception as e:
+        print(f"vault prompt hook (persona command): {e}", file=sys.stderr)
     parts = []
     try:
         persona = vault.persona_context(session_id)

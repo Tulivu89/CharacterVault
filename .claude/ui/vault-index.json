@@ -832,5 +832,53 @@
    "Hard nos: Celebrities and historical figures",
    "Soft limits:"
   ]
- }
+ },
+ "coWriters": [
+  {
+   "name": "Depravitae",
+   "short": "Tae",
+   "portrait": {
+    "image": "Characters/Depravitae/images/Depravitae - 01.png",
+    "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - 01.png",
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - 01.cells"
+   },
+   "moods": {
+    "angry": {
+     "image": "Characters/Depravitae/images/Depravitae - mood - angry.png",
+     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.png",
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.cells"
+    },
+    "bratty": {
+     "image": "Characters/Depravitae/images/Depravitae - mood - bratty.png",
+     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.png",
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.cells"
+    },
+    "flustered": {
+     "image": "Characters/Depravitae/images/Depravitae - mood - flustered.png",
+     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.png",
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.cells"
+    },
+    "laughing": {
+     "image": "Characters/Depravitae/images/Depravitae - mood - laughing.png",
+     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.png",
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.cells"
+    },
+    "smug": {
+     "image": "Characters/Depravitae/images/Depravitae - mood - smug.png",
+     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.png",
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.cells"
+    }
+   }
+  },
+  {
+   "name": "Errata",
+   "short": "Errata",
+   "portrait": {
+    "image": "Characters/Errata/images/Errata - 01.png",
+    "thumb": "Characters/Errata/images/.thumbs/Errata - 01.png",
+    "cells": "Characters/Errata/images/.thumbs/Errata - 01.cells"
+   },
+   "moods": {}
+  }
+ ]
 }
