@@ -26,7 +26,7 @@ base_prompt_b: |
   freckles, body freckles, scales. Tiny pale freckles on shoulders, chest, breasts, ribs and hips glow faintly. Indigo, violet and teal scales on shoulders, forearms and outer thighs.
   medium breasts, sharp nails. Broad soft shoulders.
   curvy, narrow waist, navel, gills. Soft bare belly marked with pale mother-of-pearl stretchmarks. Gill-slits along ribs breathe dim teal light.
-  wide hips, thick thighs, long legs, barefoot.
+  wide hips, thick thighs, long legs, barefoot. Bare human legs ending in high-arched feet.
   tail, fins. Heavy thick dark-scaled tail with iridescent scales and translucent webbed fins along ridge and tip.
 base_negative: |
   petite, skinny, muscular, abs, flat chest, short, pale skin, light skin, tan, blonde hair, white hair, red hair, wings, dragon wings, animal ears, ram horns, curled horns, spiral horns, antlers, thin horns, small horns, third eye, forehead mark, extra eyes, lamia, snake lower body, no legs, belly scales, scutes, star (symbol), pasties, star pasties,
@@ -51,8 +51,8 @@ created: 2026-11-16
 
 ## Two versions to compare
 - **A (`base_prompt`)** is the text as issued and rolled on DEL-01 to DEL-06, with the small-feet sentence.
-- **B (`base_prompt_b`)** is A after the rolls: the "small high-arched feet" sentence is dropped (it clashed with her body) and `barefoot` stays. Nothing else differs, so a locked-seed A/B isolates the feet.
-- **Large breasts.** This style pushes breasts smaller. Where it matters, swap `medium breasts` for `large breasts, natural breasts` (`bouncing breasts` for motion) and add `small breasts` to the negative (DEL-05).
+- **B (`base_prompt_b`)** is A after the rolls: "small high-arched feet" becomes "high-arched feet" (the word "small" clashed with her body). Nothing else differs, so a locked-seed A/B isolates that word.
+- **Large breasts.** This style pushes breasts smaller. Where it matters, swap `medium breasts` for `large breasts, natural breasts` ("Large natural breasts" ran on DEL-07, 08a, 09, 10; `bouncing breasts` for motion) and add `small breasts` to the negative (DEL-05).
 - **Eye above her head.** `eye-glyph` gives an eye outline (DEL-05, 06). `eye-halo` gave an eye on one run and a flat ring on another. `third eye`, "above brow" and "between horns" can give a literal forehead eye, so `third eye, forehead mark, extra eyes` stay in the negative.
 - **Horns.** Bull horns, not spirals: no `ammonite`, `ridged` or `curled horns` in the positive.
 
