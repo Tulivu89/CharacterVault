@@ -82,6 +82,7 @@ created: 2026-11-05
 
 ## Story
 *Links to the story text, added as it saves after each story turn (`<Title> - Part 01` and on). Briefs and planning notes can sit below them.*
+- Text: [[Utility Class - Part 01]]
 
 ### Session setup
 | | |

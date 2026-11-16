@@ -10,7 +10,7 @@
   {
    "name": "Kerrow Deep — Direct",
    "status": "draft",
-   "mode": "DIRECT",
+   "mode": "CO-WRITE",
    "world": "Kerrow Deep",
    "lastBeat": ""
   },
