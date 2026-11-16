@@ -116,12 +116,12 @@ When the user reports a result, update the module's status and add a line under 
 | DEL-04 ✓ | Guided Tip | cowgirl, guided | entry | close-up, POV, below | hand guiding |
 | DEL-05 ✓ | Pinned Down | cowgirl | rhythm | full body, side, below | hands on chest, tail wrap |
 | DEL-06 ✓ | Amazon | squat, his legs up | rhythm | full body, front | legs in V |
-| DEL-07 | Horns Held | missionary | her peak | cowboy, above | horn grip, leg lock, bubble |
-| DEL-08a | Leg Lock | mating press | his peak | full body, side | smug, rictus, bubble |
+| DEL-07 ✓ | Horns Held | missionary | her peak | cowboy, above | horn grip, leg lock, bubble |
+| DEL-08a ✓ | Leg Lock | mating press | his peak | full body, side | smug, rictus, bubble |
 | DEL-08b | Root, Side Macro | mating press | root | close-up, side | macro |
 | DEL-08c | Low and Behind | mating press | spill | close-up, behind, below | overflow, leg lock |
-| DEL-09 | Butter Churn | piledriver | pulse | full body, below | inverted, cross-section panel |
-| DEL-10 | After | legs up the wall | after | full body, side | TV, remote, skeleton, bubble |
+| DEL-09 △ | Butter Churn | piledriver | pulse | full body, below | inverted, cutaway panel |
+| DEL-10 ✓ | After | legs up, knees to chest | after | full body, side | TV, remote, skeleton, bubble |
 
 ---
 

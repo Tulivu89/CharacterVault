@@ -2,18 +2,21 @@
 
 A monster-mother run in twelve frames: she answers the door in a bathrobe, pins the pizza guy to the wall, carries him past the bones of the earlier ones, and breeds him on her divan, ending with her legs up the wall watching the judge show. The size gap runs the other way from `fat-bastard.md`: she is the big one, he is lean. Built on Echydna (`Characters/Echydna/`, ageless, mature adult body, sapient) and a generic young man (Jonah Pell, 26 in the story pitch; the kit is generic and swaps for any lean adult man). Style is Painterly Comic v2 with one theme add-on, except the flesh close-ups, which use Comic lean × Semireal.
 
-Built 2026-11-16. DEL-01 to DEL-06 were rolled by the user and are marked from their images; the rest are ○ untested. Markers are expanded at delivery (`poses/INDEX.md`, Assembly).
+Built 2026-11-16. DEL-01 to DEL-07, 08a, 09 and 10 were rolled by the user and are marked from their images; DEL-08b and 08c are ○ untested. Markers are expanded at delivery (`poses/INDEX.md`, Assembly).
 
 **Learned on the rolls:**
 - **Horns.** `ammonite`, `spiral-ridged` and `curled horns` give ram spirals (DEL-01's first run). `cow horns` plus "thick smooth black bull horns curve out from temples and sweep up to forward-pointing tips" gives bull horns (DEL-03, 05, 06). Ram, curled and spiral horns go in her UC.
 - **The eye above her head is not a third eye.** `third eye` or "above brow" in the positive gives a literal forehead eye (DEL-01's first run). "One glowing eye-glyph floats above head" gives an eye outline above her head (DEL-05, 06). "Eye-halo" gave an eye on the first pin and a flat ring in DEL-03. `third eye, forehead mark, extra eyes` stay in her UC.
 - **No "star" wording on the nipples.** `star nipples` gave star-shaped pasties. Nipples are `nipples, dark nipples` plus "smooth and plain", with the glowing freckles on the breasts and chest instead. `star (symbol), pasties, star pasties` go in her UC.
-- **Feet.** "Bare human legs ending in small high-arched feet" clashed with her body. Version B of the kit drops the sentence and keeps `barefoot`.
-- **Breasts.** `medium breasts` is her canon size, but this style pushes smaller. Where it matters, the large variant is `large breasts, natural breasts` (DEL-05 also used `bouncing breasts` and added `small breasts` to her UC).
+- **Feet.** "Small" in "small high-arched feet" clashed with her body. Version B of the kit says "Bare human legs ending in high-arched feet." (DEL-07, 08a, 09, 10 ran it). DEL-03 dropped the sentence and kept `barefoot`.
+- **Breasts.** `medium breasts` is her canon size, but this style pushes smaller. Where it matters, the large variant is `large breasts, natural breasts`. DEL-05 used `big breasts, natural breasts, bouncing breasts` with `small breasts` in her UC; DEL-07, 08a, 09 and 10 used "Large natural breasts" in line 6.
 - **Robe.** "Open from chest to hips, belt knotted low" reads as a wrap skirt. Say sleeves on both arms, shawl collar, belt untied, hem to mid-calf, and put `skirt, sarong, loincloth` in her UC.
 - **Size gap.** `0.8::size difference::` is the default. DEL-05 held at `1.2::size difference::` plus `shorter male` in the base.
-- **Bubbles.** `speech bubble` plus `text that says "…"` letters cleanly on short lines (DEL-02). NovelAI adds `teXt:` to the prompt itself.
+- **Bubbles.** `speech bubble` plus `text that says "…"` letters cleanly on short lines (DEL-02, 10). The strongest wording: `English text.` then "Huge black speech bubble beside horned woman's head, large glowing teal font text that says "…"" (DEL-07, 08a), which gives a big black bubble with teal glowing letters. NovelAI adds `teXt:` to the prompt itself.
 - **Amazon (DEL-06)** came out front-facing, her squat facing the viewer with his legs in a V, not back to the viewer as in the reference. See that module.
+- **Canvas and steps.** The user rolled the later frames bigger: DEL-08a 1536×1024 at 34 steps, DEL-09 1472×1472 at 32 steps (Euler), DEL-10 at 33 steps with Guidance 6.0 (Euler). DEL-07 stayed 832×1216 at 20 steps.
+- **Keeping her in focus beside a smaller man.** `head out of frame, female focus` in his box crops his head and keeps her the subject (DEL-09). With her tall and him lean, anything that makes him lift or hold her whole weight strains (see DEL-09).
+- **Belly guards.** A bulge-and-fluid scene can swell her whole belly: `pregnant, inflation` went into her UC on DEL-09.
 
 ---
 
@@ -78,7 +81,7 @@ curvy, narrow waist, navel, gills. Soft bare belly marked with pale mother-of-pe
 ```
 **ECH·8 LOWER**
 - Version A (as issued): `wide hips, thick thighs, long legs, barefoot. Bare human legs ending in small high-arched feet.`
-- Version B (after the rolls): `wide hips, thick thighs, long legs, barefoot.`
+- Version B (after the rolls): `wide hips, thick thighs, long legs, barefoot. Bare human legs ending in high-arched feet.`
 
 Add `ass, pussy` when visible. Cowboy shot: `wide hips, thick thighs.`
 
@@ -302,14 +305,15 @@ nude.
 ---
 
 ## DEL-07 — Horns Held
-`her peak · missionary · horn grip · speech bubble · cowboy shot · from above · 832×1216` · ○ untested
+`her peak · missionary · horn grip · speech bubble · cowboy shot · from above · 832×1216` · ✓ tested
+Results: 2026-11-16 ✓ seed 3496505213, Euler Ancestral karras, 20 steps, Guidance 5.0, Rescale 0.1, positions off. Held: his hands on her horn bases pinning her head into the cushion, her open-mouthed surprise with blue eyes, the eye-glyph flaring above her head, her legs wrapped round his waist, the big black bubble with glowing teal lettering, the lamp and curtains at the top right. Ran with the stronger bubble wording and "Large natural breasts" (ECH·6L).
 Her canon yield: he pins her by the bases of her horns, the eye-glyph flares, her gills glow hot, and her legs lock round his waist as she comes under him. She starts the breeding talk.
 
 **Canvas:** 832×1216 · **[UC V2]**
 
 **Base Prompt**
 ```
-1girl, 1boy, hetero, sex, vaginal, missionary, boy on top, deep penetration, female orgasm, speech bubble, 0.8::size difference::, indoors, night, lamp, detailed background, cowboy shot, from above. Horned woman lies on back on low dark-plum divan, legs wrapped round man's waist, heels locked at small of man's back. Man braces over horned woman on forearms, hips flush between her thighs, both hands gripping bases of horned woman's horns, pinning her head into cushion. Eye-glyph above head of horned woman flares bright, gill-slits along her ribs glow hot teal. Speech bubble beside horned woman's head, text that says "Give it deep. I'll carry it." Warm lamp at right rims man's back, cold teal glow lights horned woman's skin from below. [STYLE: v2 · Dark fantasy]
+1girl, 1boy, hetero, sex, vaginal, missionary, boy on top, deep penetration, female orgasm, speech bubble, 0.8::size difference::, indoors, night, lamp, detailed background, cowboy shot, from above. Horned woman lies on back on low dark-plum divan, legs wrapped round man's waist, heels locked at small of man's back. Man braces over horned woman on forearms, hips flush between her thighs, both hands gripping bases of horned woman's horns, pinning her head into cushion. Eye-glyph above head of horned woman flares bright, gill-slits along her ribs glow hot teal. English text. Huge black speech bubble beside horned woman's head, large glowing teal font text that says "Give it deep. I'll carry it." Warm lamp at right rims man's back, cold teal glow lights horned woman's skin from below. [STYLE: v2 · Dark fantasy]
 ```
 **Character 1 — Position: x≈0.45 y≈0.62** · UC: ECH UC·NUDE + `short hair, stubble,`
 ```
@@ -318,7 +322,7 @@ Her canon yield: he pins her by the bases of her horns, the eye-glyph flares, he
 [ECH·3 HEAD]
 [ECH·4 FACE]
 [ECH·5 SKIN]
-[ECH·6 UPPER]
+[ECH·6L UPPER]
 [ECH·7 TORSO]
 wide hips, thick thighs.
 lying, on back, spread legs, leg lock, crossed ankles, target#sex, female orgasm, surprised, open mouth, half-closed eyes, blush, heavy breathing, looking at another. Both scaled hands grip man's upper arms, nails digging in.
@@ -333,14 +337,15 @@ nude.
 ---
 
 ## DEL-08a — Leg Lock
-`his peak · mating press · leg lock · smug · rictus · speech bubble · full body · from side · 1216×832` · ○ untested · from MIS-10, FB-01
+`his peak · mating press · leg lock · smug · rictus · speech bubble · full body · from side · 1216×832` · ✓ tested · from MIS-10, FB-01
+Results: 2026-11-16 ✓ seed 3885185062, Euler Ancestral karras, **1536×1024**, 34 steps, Guidance 5.0, Rescale 0.1, positions off. Held: her folded on the divan at the left with her smirk and her hand on his jaw, him on top with his teeth bared and his face in rictus, her calves and the tail coiled round him, the lamp behind his back, the large black bubble with glowing teal lettering. Ran with the stronger bubble wording, "Large natural breasts" (ECH·6L) and the feet fix (version B).
 She locks him in with her calves and smirks while he comes in rictus.
 
 **Canvas:** 1216×832 · **[UC V2]**
 
 **Base Prompt**
 ```
-1girl, 1boy, hetero, sex, vaginal, mating press, boy on top, deep penetration, ejaculation, internal cumshot, speech bubble, 0.8::size difference::, indoors, night, lamp, detailed background, full body, from side. Horned woman lies folded on back on low dark-plum divan at left, knees pressed up beside own ribs, calves wrapped over man's lower back with ankles locked tight, holding man buried. Man crouches over horned woman at right, hips driven down flush between her thighs, back arched, mouth stretched in rictus, teeth bared, eyes wide and unfocused, veins standing in neck. Horned woman smirks up at man's face. Heavy scaled tail coils round man's thigh. Speech bubble above horned woman, text that says "Now you're useful." Warm lamp behind man rims his back, cold teal glow breathes from horned woman's freckles and ribs. Slate wall behind. [STYLE: v2 · Dark fantasy]
+1girl, 1boy, hetero, sex, vaginal, mating press, boy on top, deep penetration, ejaculation, internal cumshot, speech bubble, 0.8::size difference::, indoors, night, lamp, detailed background, full body, from side. Horned woman lies folded on back on low dark-plum divan at left, knees pressed up beside own ribs, calves wrapped over man's lower back with ankles locked tight, holding man buried. Man crouches over horned woman at right, hips driven down flush between her thighs, back arched, mouth stretched in rictus, teeth bared, eyes wide and unfocused, veins standing in neck. Horned woman smirks up at man's face. Heavy scaled tail coils round man's thigh. English text. Huge black speech bubble beside horned woman's head, large glowing teal font text that says "Now you're useful." Warm lamp behind man rims his back, cold teal glow breathes from horned woman's freckles and ribs. Slate wall behind. [STYLE: v2 · Dark fantasy]
 ```
 **Character 1 — Position: x≈0.35 y≈0.60** · UC: ECH UC·NUDE + `short hair, stubble,`
 ```
@@ -409,7 +414,9 @@ ass, penis, testicles, ejaculation, source#sex, sweat. Buttocks clench, heavy te
 ---
 
 ## DEL-09 — Butter Churn
-`pulse · piledriver (standing over) · internal panel · full body · from below, straight-on · 832×1216` · ○ untested · ref 18
+`pulse · piledriver (standing over) · internal panel · full body · from below, straight-on · 832×1216` · △ tried · ref 18
+Results: 2026-11-16 △ seed 1399723983, Euler karras, **1472×1472**, 32 steps, Guidance 5.0, Rescale 0.1, positions off. Needs testing and fixing. The pose reads (her inverted on the floor with her hips rolled over, legs apart and knees bent, his feet planted either side of her head, her tail coiled round his waist, a lit candle at the left, a tall cutaway panel at the upper right) but the size gap fights it: a lean man standing over a tall woman in a shoulder stand strains the legs and hips, and keeping her the subject took `head out of frame, female focus` in his box. The user's edits: canvas 1472×1472, `cum inflation` dropped, the panel recast as "Cutaway in background" with the penis pointed down, "Large natural breasts", the feet fix, `pregnant, inflation` in her UC.
+**Next tries (one change at a time, locked seed):** (1) split it: this frame without the panel, and the cross-section as its own full frame (`closeups.md` rule: no small inset, no side strip); (2) `0.4::size difference::` instead of 0.8 so his hips can reach hers, or `tall female` only; (3) give her the weight with the tail as a brace (`tail hug` + prose "tail coils round man's waist and braces floor") and drop his "hands gripping thighs" for "hands on hips"; (4) a 832×1216 canvas without the panel before the square one; (5) check the order of the panel vs the pose in the prose, since the panel's penis came out pointing the wrong way until "pointed down" was added.
 Reference: a big man standing upright over a partner inverted on her upper back, hips rolled up overhead, legs in a V, his hands on her thighs. Here she is the big one, so her tail braces his hips and she supports herself on one hand. A tall cross-section panel takes the right third (a small inset goes muddy: `closeups.md`). She smiles down along her body at her belly.
 
 **Canvas:** 832×1216 · **[UC V2]**
@@ -441,19 +448,20 @@ nude.
 ---
 
 ## DEL-10 — After
-`after · legs up the wall · TV · bubble · full body · from side · 1216×832` · ○ untested
+`after · legs up · TV · bubble · full body · from side · 1216×832` · ✓ tested
+Results: 2026-11-16 ✓ seed 1183837227, Euler karras, 20-step prompt ran at 33 steps, Guidance 6.0, Rescale 0.1, positions off. Held: her propped on the divan with her knees held to her chest and her soles up, remote in the other hand, TV showing a judge at the left, him sprawled on the floor with an arm over his face, the skeleton in the red cap with its pizza box and thought bubbles at the right, the speech bubble. The user's edit: knees held to chest in place of calves up the wall (no wall in frame), plus "Large natural breasts" and the feet fix.
 After: she lies with a pillow under her hips and her calves against the wall, a palm on her belly and the remote in her other hand, watching the judge show. He lies wrecked on the floor. The skeleton in the corner watches too.
 
 **Canvas:** 1216×832 · **[UC V2]**
 
 **Base Prompt**
 ```
-1girl, 1boy, skeleton, speech bubble, remote control, 0.8::size difference::, indoors, night, detailed background, full body, from side. Horned woman lies on back at center on low dark-plum divan, head at left toward television, hips raised on pillow, legs stretched up with calves resting against slate wall at right, ankles crossed, soles toward ceiling. Man lies wrecked on slate floor in foreground below divan, limp, chest heaving. Television on low stand at left glows cold blue, showing courtroom scene with judge at bench. Skeleton in red delivery cap sits in corner at right, skull turned toward television, open pizza box in lap. Speech bubble above horned woman, text that says "Quiet. They're reading the verdict." Cold blue television glow is only light, edging forms in silver-blue, faint teal glow from horned woman's freckles. [STYLE: v2 · Moonlit]
+1girl, 1boy, skeleton, speech bubble, remote control, 0.8::size difference::, indoors, night, detailed background, full body, from side. Horned woman lies on back at center on low dark-plum divan, head at left toward television, hips raised on pillow, soles toward ceiling. Man lies wrecked on slate floor in foreground below divan, limp, chest heaving. Television on low stand at left glows cold blue, showing courtroom scene with judge at bench. Skeleton in red delivery cap sits in corner at right, skull turned toward television, open pizza box in lap. Speech bubble above horned woman, text that says "Quiet. They're reading the verdict." Cold blue television glow is only light, edging forms in silver-blue, faint teal glow from horned woman's freckles. [STYLE: v2 · Moonlit]
 ```
 **Character 1 — Position: x≈0.45 y≈0.45** · UC: ECH UC·NUDE + `short hair, stubble,`
 ```
 [ECH·FULL]
-lying, on back, legs up, crossed ankles, looking to the side, expressionless, sweat. Pillow under hips raises hips, calves rest against wall, soles up. One palm rests flat on lower belly, other hand holds remote control pointed at television at left.
+lying, on back, legs up, holding knees to chest, looking to the side, expressionless, sweat. Pillow under hips raises hips, soles up. One hand holds knees to chest, other hand holds remote control pointed at television at left.
 ```
 **Character 2 — Position: x≈0.35 y≈0.78** · UC: MAN UC
 ```

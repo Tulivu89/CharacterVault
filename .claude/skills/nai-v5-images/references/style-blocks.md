@@ -7,6 +7,8 @@ Snapshot of the "Style Block Library" doc (master copy: https://claude.ai/artifa
 | Block | Parts | Status | Use it for |
 | --- | --- | --- | --- |
 | Vivid Pop v1 | base + UC | Stable | Saturated pinup-comic look; the elf references' look (bm94199, calm, obj shep) |
+| Vivid Pop v2 (candidate) | base + UC + theme lines | Untested. Vault-only | v1 after a standards review: weighted lead artist, trimmed shading stack, style sentence, fuller UC. Test it against v1 on a locked seed |
+| Vivid Pop v2 · Dark fantasy | v2 base + dark color line + UC | Untested. Vault-only | The swap-in for dark scenes, to compare with Painterly v2 · Dark fantasy |
 | Painterly Comic v2 | base + 6 theme add-ons + UC | Stable | Western painterly look that holds faces best; one theme add-on per image |
 | Painterly Comic v2 · Comic lean | base + the v2 add-ons + UC | Tested once (FB-02 ★) | Less paint, more comic line; holds tricky compositions better. Vault-only |
 | Comic lean × Semireal | Comic lean base + add-on + semireal tail + UC | Tested once (FB-11 ✓) | Comic line with semireal skin and highlights; flesh and close-ups. Vault-only. Pushes men muscular |
@@ -30,6 +32,60 @@ UC
 artist:yone kinji, artist:shichimenchou, lowres, adversarial noise, jpeg artifacts, photograph, flat color, worst quality, very displeasing,
 ```
 - Add `rating:general` (or matching rating) before `year 2026`. Append `nsfw` to UC for SFW.
+
+## Vivid Pop v2 (candidate)
+
+Vault-only, untested; from the 2026-11-16 review of v1 against SKILL.md §14–17. v1 stays as written above until a locked-seed A/B shows a change helps.
+
+**What the review found in v1**
+- **Equal artist weights.** `bm94199`, `calm (artist)` and `obj shep` are all at `1::`, so whichever is strongest wins at random (§14). Lead one and drop the others to `0.7::`; the existing Review notes row already says so.
+- **A contradiction inside the negation.** `-2::monochrome, sketch, lineart::` removes line art while `western comics (style)` asks for it (§7, contradictory tags smear). The `-2` is also the hardest weight in the block. Drop `lineart` from the group and soften it to `-1`.
+- **A shading stack that argues with itself.** `realistic shading` and `subsurface scattering` (soft, volumetric) sit beside `two-tone shading` and `sharp highlights` (hard, graphic), plus `vivid colors` and `high contrast`. Six lighting words is the Semirealistic note's problem too (`two-tone` vs `gradient`). Keep the graphic pair and test the soft pair as an A/B.
+- **Tags only, no anchor sentence.** Painterly v2 carries a short medium sentence that fixes the inking and shading. Vivid Pop has none, so its look depends on three artists alone.
+- **No theme mechanism.** `vivid colors, high contrast` are baked in, which fights any dark or moody scene. Painterly v2's one-line add-ons (color and light, one per image) are the model; a dark scene needs its own swap.
+- **Emphasis budget.** The block uses three weighted content groups (`-2::…::`, `1.5::digital illustration::`, `0.25::gradient skin, body creases::`), and a scene's own emphasis (`size difference`) makes four (§17, at most two or three). Cut the `0.25::` group first if a render smears.
+- **UC is thin.** It lacks the lean default's `multiple views`, `artistic error`, `bad quality` and `too many watermarks`, and has nothing against the plastic skin that `subsurface scattering` and high gloss invite. `adversarial noise` is the odd entry: keep it only if you have seen it help.
+- **Missing the tail's rating.** The block already notes "add `rating:general`"; v2 puts the rating in the tail so it can't be forgotten. Quality tags are kept at the two allowed (`best quality, very aesthetic`, last).
+- **Not verified:** `verify count: bm94199, calm (artist), obj shep`. V5 trained on Danbooru and e621 only up to mid-2026, and the counts aren't in the vault.
+
+**What other blocks could lend it**
+- **Painterly v2:** the one-sentence medium anchor, and the theme-line mechanism (done below).
+- **Comic lean:** a weighted lead plus a comic-line artist that "holds tricky compositions better". Test `0.6::artist:dan mora::` for two-body scenes.
+- **Comic lean × Semireal:** `0.5::colored lineart::` in the tail to keep a line under the saturation, and the `2::plastic skin, fake skin::` negative if skin goes waxy. It also warns the style pushes men muscular, so keep a muscular guard in his UC.
+
+Base (no theme)
+```
+pinup (style), western comics (style), 1::artist:bm94199 ::, 0.7::artist:calm (artist)::, 0.7::artist:obj shep::, -1::monochrome, sketch::, 1.5::digital illustration::, 0.25::gradient skin, body creases::, vivid colors, sharp highlights, high contrast, two-tone shading, Pinup comic illustration with saturated color fills, clean confident ink edges and crisp specular highlights on skin.
+```
+Tail (paste after the base or after a theme line)
+```
+year 2026, rating:explicit, high complexity, best quality, very aesthetic
+```
+UC (explicit; append `nsfw` for SFW)
+```
+artist:yone kinji, artist:shichimenchou, lowres, artistic error, adversarial noise, jpeg artifacts, photograph, flat color, worst quality, bad quality, very displeasing, multiple views, too many watermarks, plastic skin,
+```
+- Settings to start from: Euler Ancestral, karras, 20 steps, Guidance 5.0, Rescale 0.1 (the tested comic settings). If it over-sharpens or smears hands, try Guidance 3.5–4.5 (§5). Panels or split views: delete `multiple views`.
+
+**Test ladder (lock a seed, change one thing, keep it only if it helps)**
+1. Weights: `calm` and `obj shep` from `1::` to `0.7::`.
+2. Negation: `-2::monochrome, sketch, lineart::` to `-1::monochrome, sketch::`.
+3. Shading stack: drop `realistic shading` and `subsurface scattering` (A); or keep `0.5::subsurface scattering::` only (B).
+4. Add the style sentence.
+5. UC: the added entries.
+6. Optional: `0.6::artist:dan mora::`; `0.5::colored lineart::` in the tail.
+
+## Vivid Pop v2 · Dark fantasy
+
+Vault-only, untested; the swap-in for the Delivery set's dark frames to compare with Painterly v2 · Dark fantasy on the same seed. It drops `vivid colors` (it fights a low-key scene) and `high contrast` moves into the dark line, so the saturation comes from jewel accents against deep black.
+
+Base
+```
+pinup (style), western comics (style), 1::artist:bm94199 ::, 0.7::artist:calm (artist)::, 0.7::artist:obj shep::, -1::monochrome, sketch::, 1.5::digital illustration::, 0.25::gradient skin, body creases::, sharp highlights, two-tone shading, Pinup comic illustration with saturated color fills, clean confident ink edges and crisp specular highlights on skin. dark fantasy, high contrast, Low-key saturated color: deep black shadows with vivid jewel accents of teal, violet and amber, one warm light source carving form out of shadow, strong rim light on skin, heavy cast shadows.
+```
+Tail: `year 2026, rating:explicit, high complexity, best quality, very aesthetic`. UC: the Vivid Pop v2 UC above (it has no `dark, in shadows` to remove).
+- Swap the jewel colors for the scene's own (for Echydna: teal, violet, amber; for a red-lit scene: crimson and gold).
+- To test it on the Delivery frames: DEL-05, 07 and 08a with their own rolled seeds, only the style block and UC swapped.
 
 ## Painterly Comic — v2
 
@@ -203,13 +259,15 @@ tall female, muscular, fat, inflation, plump, old, pale skin, tanlines, extra ea
 | Semirealistic base | No `artist:` prefixes | Add unless bare fuses better. verify count: fernando suarez, illyne cosplay, nekromaxxing, ginsky2000 |
 | Semirealistic UC | `line art` | `lineart` |
 | Anime Pinup base | `2::masterpiece::` and "anime screenshot" prose push a samey look | First to cut; try "anime coloring" |
-| Vivid Pop base | All artists at `1::` | If it drifts, lead bm94199 at 1, others 0.7 |
+| Vivid Pop base | All artists at `1::` | If it drifts, lead bm94199 at 1, others 0.7 (applied in the v2 candidate) |
+| Vivid Pop base | `-2::…lineart::` vs `western comics (style)`; `realistic shading` and `subsurface scattering` vs `two-tone shading`; no style sentence; thin UC | See Vivid Pop v2 (candidate) and its test ladder |
 | Painterly Comic base | skiba at 1.7, above ~1.5 | Re-check when switching add-ons |
 
 ## Changelog
 
 | Date | Block | Change |
 | --- | --- | --- |
+| 2026-11-16 | Vivid Pop v2 (candidate) and v2 · Dark fantasy | Added from a review of v1 against the standards (vault-only, untested) |
 | 2026-11-16 | Comic lean × Semireal | Added from the user's FB-11 run (vault-only) |
 | 2026-11-11 | Painterly Comic v2 · Comic lean | Added from the user's FB-02 test (vault-only) |
 | 2026-11-11 | Cyber Comic (Style B) v1 | Moved in from the missionary pose set (vault-only) |
