@@ -101,10 +101,14 @@ When the user reports a result, update the module's status and add a line under 
 | FB-09 | Carried | carry | hero | full body, side | scale, feet dangling |
 | FB-10 | Buried, Angled | face down ass up | pulse | full body, behind (¾) | belly rest, both faces |
 | FB-11 ✓ | Headboard | prone | his peak | upper body, straight-on, below | her face front, weight |
-| **CLU** | *Close-up and internal set, Tae and Dennis, Comic lean × Semireal* | | | | |
-| CLU-01 | Overflow, Side Macro | vaginal | overflow | close-up, side | macro, cum overflow |
-| CLU-02 | Spread, from Below | vaginal | entry | POV, close-up, below | spreading, anus |
-| CLU-03 | Flood | cowgirl | pulse | POV, split view | cross-section, womb |
+| **CLU** | *Close-up and internal set: Tae and Dennis, Ilse and Vuk, Hoss's anatomy; Comic lean × Semireal; partner anatomy kits* | | | | |
+| CLU-01 ✓ | Overflow, Side Macro | vaginal | overflow | close-up, side | macro, cum overflow |
+| CLU-02 ✓ | Spread, from Below | vaginal | entry | POV, close-up, below | spreading, anus |
+| CLU-03 ✓ | Flood | cowgirl | pulse | POV, split view | cross-section, womb |
+| CLU-04 | Balls Over | mating press | root, overflow | close-up, behind, below | prominent balls, drip |
+| CLU-05 | Inside the Canal | — | entry | inside view | zero pictured |
+| CLU-06 | Tied | Frame, from behind, anal | tie | full body, side, panel | knot, canine, hologram x-ray, restraints |
+| CLU-07 | Corkscrew Lock | — | tie, pulse | inside view | porcine, cervical lock, zero pictured |
 
 ---
 
@@ -171,5 +175,11 @@ The user's reference images, by what they taught. Metadata was read from NovelAI
 | ref 9 | Side macro of the join at hip height, cum overflowing and stringing onto the testicles (3D render) | CLU-01 | macro angle, overflow strings |
 | ref 10 | From below between her thighs, her hands spreading, tip at the entrance, anus above | CLU-02 | POV from below, hands as framing |
 | ref 11 | Cowgirl POV composite with big cross-section panels (cervix, flooded womb) beside her reaction | CLU-03 | internal views take half the page, not a corner |
+
+| ref 12 | View from inside the canal, ridged walls spiraling, glans pushing through | CLU-05, CLU-07 | inside views: anatomy as the setting, nobody pictured |
+| ref 13 | Inside view of a tapered, ridged draconic head jetting cum | CLU-07; DRACONIC kit | nonhuman inside view |
+| ref 14 | Low side macro, huge dark scaled hands gripping her ass, thick shaft in, impact stars | partner hands as framing | a hand can be the contrast cue |
+| ref 15 | Anthro wolf knotted under a woman, tall cross-section panel down the left third (knot locked, womb flooded) | CLU-06; CANINE·KNOT kit | the internal panel takes a third of the canvas |
+| ref 16 | From low behind, heavy testicles hanging over the join, drip running to her anus | CLU-04 | prominent balls in mating press and prone |
 
 Missionary references are in `sets/missionary-castellane.md`, Reference map.
