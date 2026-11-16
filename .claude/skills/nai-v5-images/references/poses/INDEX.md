@@ -27,7 +27,7 @@ What the user gets is paste-ready. Before delivering any module:
 
 ## Status
 
-`○ untested` · `✓ tested` (held at least once; Results line says how) · `★ favorite` (the user's pick: keep its wording and don't retune it unasked).
+`○ untested` · `△ tried` (ran but didn't hold; Results says what broke and the next try) · `✓ tested` (held at least once; Results line says how) · `★ favorite` (the user's pick: keep its wording and don't retune it unasked).
 When the user reports a result, update the module's status and add a line under its tag line: `Results: <date> ✓ seed <n>, <what held or broke>`. When the user says to save a setup as a pose: add it to the set it fits (or a new `sets/<name>.md` with a new 3-letter prefix) as ○, kits turned into markers, plus its row here and its grid cells. Commit as `Dev: poses — <change>`.
 
 ---
@@ -91,7 +91,7 @@ When the user reports a result, update the module's status and add a line under 
 | **FB** | *Fat bastard set, Tae and Dennis, Painterly Comic v2 · Comic lean* | | | | |
 | FB-01 | Eclipse | mating press | rhythm | full body, side | cover, size difference |
 | FB-02 ★ | Buried | prone | spill | full body, behind | cover, faceless, overflow |
-| FB-03 | Pinned | prone | her peak | cowboy, side | weight, leer, inset, tears |
+| FB-03 △ | Pinned | prone | her peak | cowboy, side | weight, leer, inset, tears |
 | FB-04 | Lap | lap facing | rhythm | full body, behind, below | cover, feet dangling |
 | FB-05 | Player Two | lap facing | rhythm | full body, side | bored, game, smother |
 | FB-06 | "Thanks, Dad." | on side, leg lifted | pulse | from below | wall, faceless, bored, bubble |
@@ -100,7 +100,11 @@ When the user reports a result, update the module's status and add a line under 
 | FB-08b | Belly Rest: Pulse | doggystyle | pulse | close-up, behind, below | x-ray, belly rest |
 | FB-09 | Carried | carry | hero | full body, side | scale, feet dangling |
 | FB-10 | Buried, Angled | face down ass up | pulse | full body, behind (¾) | belly rest, both faces |
-| FB-11 | Headboard | prone | his peak | upper body, straight-on, below | her face front, weight |
+| FB-11 ✓ | Headboard | prone | his peak | upper body, straight-on, below | her face front, weight |
+| **CLU** | *Close-up and internal set, Tae and Dennis, Comic lean × Semireal* | | | | |
+| CLU-01 | Overflow, Side Macro | vaginal | overflow | close-up, side | macro, cum overflow |
+| CLU-02 | Spread, from Below | vaginal | entry | POV, close-up, below | spreading, anus |
+| CLU-03 | Flood | cowgirl | pulse | POV, split view | cross-section, womb |
 
 ---
 
@@ -141,6 +145,8 @@ Where each position family has coverage, by rung and angle. **✗** marks a gap 
 | Pulse | ✗ | ✗ | ✗ | FB-06 | ✗ |
 | Spill / after | ✗ | ✗ | ✗ | ✗ | ✗ |
 
+**Close-ups and internals:** their own grid is in `sets/closeups.md`.
+
 **Outside the act:** tease OFC-01, 02 · LHS-03; lead-in OFC-03; after OFC-07, 08; epilogue OFC-12.
 
 **Biggest gaps:** *his peak* outside the from-behind family; *her face from the front* except FB-11; the whole on-top climax; fat-bastard *after* shots (her starfished under his arm, the walk-away) and fat-bastard oral (belly over her forehead).
@@ -159,5 +165,11 @@ The user's reference images, by what they taught. Metadata was read from NovelAI
 | ref 4 | Seated lap from behind him, her feet at his sides, face over his shoulder, TV glow, messy room | FB-04 | the swallow: his back as the frame |
 | ref 6 ★ | The user's FB-02 run: prone under him from low behind, her arms out under his hips, soles between his calves | FB-02 | `prone sex` + her `prone`; no head or hair of hers in frame; `petite, small imp girl.` without `mature female`, `wide hips`, `thick thighs`; no age terms in UC; Comic lean style. Seed 3310816504, Euler karras, 20 steps, Guidance 5.0, Rescale 0.1, positions off |
 | ref 5 | From below, faceless wall of a man, her on her side with a leg lifted, paid and polite ("Yes. Thank you.") | FB-06 | wall plus bored overlap |
+
+| ref 7 ✓ | The user's FB-11 run: her squashed face in front, his arch behind | FB-11 | Comic lean × Semireal style; he came out beefy, not fat |
+| ref 8 △ | The user's FB-03 run: prone from the side with an inset | FB-03 | her face weak from the side, inset muddy, feet lost |
+| ref 9 | Side macro of the join at hip height, cum overflowing and stringing onto the testicles (3D render) | CLU-01 | macro angle, overflow strings |
+| ref 10 | From below between her thighs, her hands spreading, tip at the entrance, anus above | CLU-02 | POV from below, hands as framing |
+| ref 11 | Cowgirl POV composite with big cross-section panels (cervix, flooded womb) beside her reaction | CLU-03 | internal views take half the page, not a corner |
 
 Missionary references are in `sets/missionary-castellane.md`, Reference map.

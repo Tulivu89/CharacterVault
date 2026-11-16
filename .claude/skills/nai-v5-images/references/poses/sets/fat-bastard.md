@@ -112,7 +112,8 @@ Results: 2026-11-11 ★ seed 3310816504, Euler karras, 20 steps, Guidance 5.0, R
 ---
 
 ## FB-03 — Pinned
-`her peak · prone · weight · leer · inset · cowboy shot · from side · 1216×832` · ○ untested · ref 3
+`her peak · prone · weight · leer · inset · cowboy shot · from side · 1216×832` · △ tried · ref 3
+Results: 2026-11-16 △ seed 1285587548, Euler karras, 20 steps, Guidance 5.0, Rescale 0.1, positions off (her box without `clenched teeth, full-face blush`). Her face struggled at this side angle, the inset close-up came out muddy, and her feet dropped out of frame. Next try: no inset (the internal view gets its own frame, `closeups.md`), camera turned toward three-quarter front, `full body` with her feet named.
 FB-02's pose from the side, where her face reads. He lies on her back and flattens her into the mattress, grinning down over her head. Her cheek is squashed against the sheet and her glasses are knocked askew. An inset panel shows the join.
 
 **Canvas:** 1216×832 · **[UC CL·night]**
@@ -297,14 +298,15 @@ FB-02's room from the back corner of the bed, where top-down bottom-up reads. He
 ---
 
 ## FB-11 — Headboard
-`his peak · prone · her face front · weight · upper body · straight-on · from below · 1216×832` · ○ untested
+`his peak · prone · her face front · weight · upper body · straight-on · from below · 1024×1024` · ✓ tested
+Results: 2026-11-16 ✓ seed 328085685, Euler Ancestral karras, 20 steps, Guidance 5.0, Rescale 0.1, 1024×1024, positions off, Comic lean × Semireal · Warm. Better than FB-03. He came out beefy rather than fat: next run adds `muscular, large pectorals` to his UC and a belly sentence.
 The reverse angle on FB-02. The viewer is at mattress level at the head of the bed. Her squashed face fills the foreground, and his bulk rises behind her as he arches and comes. This fills two gaps: his peak, and her face during a from-behind pose.
 
-**Canvas:** 1216×832 · **[UC CL]**
+**Canvas:** 1024×1024 · **[UC CL×SR]** (the Comic lean × Semireal UC)
 
 **Base Prompt**
 ```
-1girl, 1boy, hetero, sex, prone sex, vaginal, internal cumshot, 2::size difference::, indoors, bedroom, bed, pillow, night, lamp, detailed background, upper body, straight-on, from below. Viewer at mattress level at head of bed. Tiny lavender demon girl lies flat on stomach in foreground, cheek squashed on pillow facing viewer, glasses knocked askew, small hands clawing pillow on either side of face. Huge pale man lies over demon girl from behind, belly pinning demon girl's ass, arms planted on either side of demon girl's shoulders. Man's back arches, head thrown back toward ceiling, sweat flying. Drool pools on pillow under demon girl's mouth. Warm lamp behind man rims shoulders and belly. [STYLE: Comic lean · Warm] year 2026, rating:explicit, high complexity
+1girl, 1boy, hetero, sex, prone sex, vaginal, internal cumshot, 2::size difference::, indoors, bedroom, bed, pillow, night, lamp, detailed background, upper body, straight-on, from below. Viewer at mattress level at head of bed. Tiny lavender demon girl lies flat on stomach in foreground, cheek squashed on pillow facing viewer, glasses knocked askew, small hands clawing pillow on either side of face. Huge pale man lies over demon girl from behind, belly pinning demon girl's ass, arms planted on either side of demon girl's shoulders. Man's back arches, head thrown back toward ceiling, sweat flying. Drool pools on pillow under demon girl's mouth. Warm lamp behind man rims shoulders and belly. [STYLE: Comic lean × Semireal · Warm]
 ```
 **Character 1 — Position: x≈0.50 y≈0.70 (foreground, face on pillow)** · UC: TAE UC
 ```

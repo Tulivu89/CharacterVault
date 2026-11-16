@@ -63,7 +63,7 @@ For noncon and rough beats. Name the grip, not the feeling (SKILL.md §20).
 
 ## X-ray and inset
 
-An inset sentence goes in base prose after the act; `cross-section` ✓ and `x-ray` ✓ go in the base tags. If the inset doesn't appear, use `x-ray` alone. One inset per image.
+An inset sentence goes in base prose after the act; `cross-section` ✓ and `x-ray` ✓ go in the base tags. If the inset doesn't appear, use `x-ray` alone. One inset per image. **A small inset in a wide shot comes out muddy** (FB-03): give the internal view its own frame or half the canvas (`sets/closeups.md`).
 
 - Vaginal: `Cross-section inset shows penis deep inside pussy, tip pressed against cervix.`
 - Through the cervix: `Cross-section inset shows tip pushed through cervix into womb.` (+ `cervical penetration` ✓)

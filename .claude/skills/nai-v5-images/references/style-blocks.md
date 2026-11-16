@@ -9,6 +9,7 @@ Snapshot of the "Style Block Library" doc (master copy: https://claude.ai/artifa
 | Vivid Pop v1 | base + UC | Stable | Saturated pinup-comic look; the elf references' look (bm94199, calm, obj shep) |
 | Painterly Comic v2 | base + 6 theme add-ons + UC | Stable | Western painterly look that holds faces best; one theme add-on per image |
 | Painterly Comic v2 · Comic lean | base + the v2 add-ons + UC | Tested once (FB-02 ★) | Less paint, more comic line; holds tricky compositions better. Vault-only |
+| Comic lean × Semireal | Comic lean base + add-on + semireal tail + UC | Tested once (FB-11 ✓) | Comic line with semireal skin and highlights; flesh and close-ups. Vault-only. Pushes men muscular |
 | Anime Pinup v1 | base + UC | Stable | Gacha/Nikke polish; foundations for img2img and inpainting |
 | Semirealistic mix v0 | base + UC | WIP | Semi-real pinup experiments |
 | Cyber Comic (Style B) v1 | base + UC, color line per image | Vault-only | Cyberpunk comic look of the Castellane missionary set; not in the master doc yet |
@@ -83,6 +84,24 @@ lowres, worst quality, low quality, bad anatomy, bad hands, jpeg artifacts, wate
 ```
 - Tested settings: Euler (not Ancestral), karras, 20 steps, Guidance 5.0, Rescale 0.1, 832×1216, character positions off.
 - With Dark fantasy or Moonlit, delete `dark, in shadows` from the UC. Speech bubbles: delete `watermark, signature`.
+
+## Comic lean × Semireal
+
+Vault-only; the user's FB-11 run (2026-11-16). The Comic lean base, then a Painterly v2 theme add-on, then a blank line and this semireal tail, which carries its own year, complexity and rating, so no separate tail follows.
+
+Semireal tail (swap `rating:explicit` for the image's rating)
+```
+0.5::pinup (style)::, western comics (style), 1.0::fernando suarez::, 1.2::illyne cosplay::, 0.6::nekromaxxing::, 0.8::ginsky2000 ::, best quality, very aesthetic, year 2026, 1.5::digital illustration::, 0.25::gradient skin, body creases::, high complexity, sharp highlights, two-tone shading, gradient shading, semi-realistic, 0.5::colored lineart::, rating:explicit,
+```
+UC
+```
+artist:urushihara satoshi, artist:shirow masamune, artist:yone kinji, artist:shichimenchou,
+
+lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifacts, multiple views, very displeasing, too many watermarks, negative space, blank page, censored, mosaic censoring, 2::monochrome, sketch, line art, steam, plastic skin, fake skin::, comic books, magazines, background faces, artist name, artist logo, white outline, character outer glow, aura, retro artstyle,
+```
+- Tested settings: Euler Ancestral, karras, 20 steps, Guidance 5.0, Rescale 0.1, 1024×1024, character positions off.
+- It firms bodies up: a fat man came out beefy (big pecs, small belly). Put `muscular, large pectorals` in his UC and give the belly a sentence.
+- Panels and split views: delete `multiple views` and `comic books` from the UC.
 
 ## Anime Pinup — v1
 
@@ -175,6 +194,7 @@ tall female, muscular, fat, inflation, plump, old, pale skin, tanlines, extra ea
 
 | Date | Block | Change |
 | --- | --- | --- |
+| 2026-11-16 | Comic lean × Semireal | Added from the user's FB-11 run (vault-only) |
 | 2026-11-11 | Painterly Comic v2 · Comic lean | Added from the user's FB-02 test (vault-only) |
 | 2026-11-11 | Cyber Comic (Style B) v1 | Moved in from the missionary pose set (vault-only) |
 | 2026-10-26 | All | Library started; blocks entered as supplied |
