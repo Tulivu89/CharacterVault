@@ -10,6 +10,7 @@ Snapshot of the "Style Block Library" doc (master copy: https://claude.ai/artifa
 | Painterly Comic v2 | base + 6 theme add-ons + UC | Stable | Western painterly look that holds faces best; one theme add-on per image |
 | Anime Pinup v1 | base + UC | Stable | Gacha/Nikke polish; foundations for img2img and inpainting |
 | Semirealistic mix v0 | base + UC | WIP | Semi-real pinup experiments |
+| Cinematic Real v0 | base + UC | WIP | Photographic fantasy film still; artist slot before the tail |
 
 - Base Prompt order: subject → scene → camera → state → prose → style base → theme add-on (Painterly only) → tail. Vivid Pop and Anime Pinup carry their own year/quality tail; Painterly ends with `year 2026, rating:general, high complexity`.
 - The block's UC replaces the lean Base UC. Quality Tags toggle off, UC Preset None.
@@ -91,6 +92,21 @@ artist:urushihara satoshi, artist:shirow masamune, artist:yone kinji, artist:shi
 
 lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifacts, multiple views, very displeasing, too many watermarks, negative space, blank page, censored, mosaic censoring, 2::monochrome, sketch, line art, steam, plastic skin, fake skin::, comic books, magazines, background faces, artist name, artist logo,
 ```
+
+## Cinematic Real — v0 (WIP)
+
+Photographic fantasy: a film still with practical creature features. Started 2026-11-16 from the Realism Bench (see `realism-research.md`). Settings: DPM++ 2M SDE, guidance 5.5, rescale 0, 23 steps. Paste after the scene prose. The artist slot sits between the block and the tail; start any artist at `0.3::`–`0.4::`.
+
+Base
+```
+Cinematic film still from big-budget fantasy film, shot on full-frame camera with 85mm lens, sharp focus on eyes. Real skin with fine pores and natural color variation across cheeks, nose and lips. Hair falls in fine separate strands that catch light. Horns, scales and fur share same light as skin, with real weight and surface wear. Rich film color grading, deep shadows, clean highlights, subtle film grain. photo (medium), -1::anime::, -1::illustration::, -1::3d render::, -1::doll::,
+```
+UC
+```
+doll, figure, 3d, anime coloring, cel shading, lineart, painterly, lowres, artistic error, worst quality, bad quality, jpeg artifacts, multiple views, very displeasing, artist:sakimichan, nsfw
+```
+- Character boxes: describe appeal through structure and expression, never "attractive", "soft" or "glow". Leave out `mature female`, `toned` and `collarbone` (they age the face in photo mode), and art-medium words in prose ("drawn", "brushstrokes", "inked").
+- Drop `nsfw` from the UC for explicit setups.
 
 ## Character UC templates
 
