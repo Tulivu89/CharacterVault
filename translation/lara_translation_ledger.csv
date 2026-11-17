@@ -114,10 +114,12 @@ B88,database,1,data/Items.json/1/description,回復アイテムより上位に�
 B89,database,1,data/Items.json/1/name,-----予備,-----Dự phòng,MACHINE_DRAFT_UNREVIEWED,
 B90,database,1,data/Items.json/6/name,-----回復系,-----Hệ phục hồi,MACHINE_DRAFT_UNREVIEWED,
 B91,database,1,data/Items.json/7/description,"ＡＰを１０％回復させることができる
-１日に {0} 回まで{1}{2}残り：{3} 回",Có thể hồi phục 10% AP Tối đa {0} lần/ngày{1}{2}Còn lại: {3} lần,MACHINE_DRAFT_UNREVIEWED,
+１日に {0} 回まで{1}{2}残り：{3} 回","Có thể phục hồi 10% AP
+Tối đa {0} lần/ngày{1}{2}Còn lại: {3} lần",MACHINE_DRAFT_UNREVIEWED,
 B92,database,1,data/Items.json/7/name,蒼玉の裸石,Đá thô Ngọc Lam,MACHINE_DRAFT_UNREVIEWED,
 B93,database,1,data/Items.json/8/description,"ＡＰを１０％消費し、裸石の欠片を精製する
-精製する裸石の数：{0} 個",Tiêu hao 10% AP và tinh chế mảnh đá thô Số lượng đá thô được tinh chế: {0} viên,MACHINE_DRAFT_UNREVIEWED,
+精製する裸石の数：{0} 個","Tiêu hao 10% AP để tinh chế các mảnh đá thô
+Số lượng đá thô cần tinh chế: {0} viên",MACHINE_DRAFT_UNREVIEWED,
 B94,database,1,data/Items.json/9/description,HPを25%回復する,Hồi phục 25% HP,MACHINE_DRAFT_UNREVIEWED,
 B95,database,1,data/Items.json/9/name,治療キット-α,Bộ dụng cụ sơ cứu - α,MACHINE_DRAFT_UNREVIEWED,
 B96,database,1,data/Items.json/10/description,HPを50%回復する,Hồi phục 50% HP,MACHINE_DRAFT_UNREVIEWED,
@@ -472,7 +474,9 @@ D1,dialogue,2,data/CommonEvents.json/30/list/27,"校舎内に存在する特定�
 Hãy thử sử dụng khi bạn muốn đến một nơi nào đó.",MACHINE_DRAFT_UNREVIEWED,
 P29,plugin_text,2,data/CommonEvents.json/30/list/37/parameters/3/text,"痴漢に遭った回数{0}{1}＋１
 {2}お尻{3}{4}＋２{5}{6}最近したＨなこと{7}
-満員電車で痴漢にお尻を触られた",Số lần bị sàm sỡ{0}{1}+1{2}Mông{3}{4}+2{5}{6}Hành vi khiêu dâm gần đây{7}Bị một kẻ sàm sỡ chạm vào mông trên chuyến tàu đông đúc,MACHINE_DRAFT_UNREVIEWED,
+満員電車で痴漢にお尻を触られた","Số lần bị sàm sỡ{0}{1}+1
+{2}Mông{3}{4}+2{5}{6}Hành vi khiêu dâm gần đây{7}
+Bị kẻ sàm sỡ sờ mông trên tàu điện chật cứng",MACHINE_DRAFT_UNREVIEWED,
 P30,plugin_text,1,data/CommonEvents.json/51/list/90/parameters/3/text,下着を着用していません,Không mặc đồ lót,MACHINE_DRAFT_UNREVIEWED,
 P31,plugin_text,1,data/CommonEvents.json/71/list/64/parameters/3/text,水着を着用していません,Tôi không mặc đồ bơi.,MACHINE_DRAFT_UNREVIEWED,
 P32,plugin_text,2,data/CommonEvents.json/102/list/574/parameters/3/text,{0}は衣服の乱れを直した,{0} đã chỉnh lại quần áo bị xộc xệch,MACHINE_DRAFT_UNREVIEWED,
@@ -494,26 +498,33 @@ P41,plugin_text,1,data/CommonEvents.json/242/list/12/parameters/3/message,感情
 P42,plugin_text,3,data/CommonEvents.json/242/list/20/parameters/3/message,は様子を見ている。,đang quan sát tình hình.,MACHINE_DRAFT_UNREVIEWED,
 P43,plugin_text,2,data/CommonEvents.json/243/list/21/parameters/3/message,たちから視線を感じる。,Tôi cảm nhận được ánh mắt của mọi người.,MACHINE_DRAFT_UNREVIEWED,
 P44,plugin_text,1,data/CommonEvents.json/243/list/31/parameters/3/message,"胸を見られている……{0}
-　{1}感情値：{2}羞恥心＋",Bị nhìn ngực……{0}　{1}Giá trị cảm xúc: {2}Cảm giác xấu hổ +,MACHINE_DRAFT_UNREVIEWED,
+　{1}感情値：{2}羞恥心＋","Bị nhìn ngực……{0}
+　{1}Điểm cảm xúc: {2}Xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
 P45,plugin_text,1,data/CommonEvents.json/243/list/55/parameters/3/message,"股間部を見られている……{0}
-　{1}感情値：{2}羞恥心＋",Bị nhìn vào vùng kín……{0}　{1}Điểm cảm xúc: {2}Cảm giác xấu hổ +,MACHINE_DRAFT_UNREVIEWED,
+　{1}感情値：{2}羞恥心＋","Bị nhìn vào vùng kín……{0}
+　{1}Điểm cảm xúc: {2}Xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
 P46,plugin_text,1,data/CommonEvents.json/244/list/18/parameters/3/message,怪人が胸を触ってきた……！,Kẻ lạ mặt đã sờ vào ngực tôi……!,MACHINE_DRAFT_UNREVIEWED,
 P47,plugin_text,1,data/CommonEvents.json/244/list/28/parameters/3/message,"{0}
 　「っく…………」
-　{1}感情値：{2}羞恥心＋","{0}　「Hức…………」
-　{1}Điểm cảm xúc: {2}Cảm giác xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
+　{1}感情値：{2}羞恥心＋","{0}
+　「Hức…………」
+　{1}Điểm cảm xúc: {2}Xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
 P48,plugin_text,1,data/CommonEvents.json/244/list/47/parameters/3/message,怪人が陰部を触ってきた……！,Tên quái nhân đã chạm vào bộ phận kín của tôi...!,MACHINE_DRAFT_UNREVIEWED,
 P49,plugin_text,1,data/CommonEvents.json/244/list/57/parameters/3/message,"{0}
 　「ッ…………！」
-　{1}感情値：{2}羞恥心＋","{0}　「Hứ…………！」
-　{1}Điểm cảm xúc: {2}Cảm giác xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
+　{1}感情値：{2}羞恥心＋","{0}
+　「Hự…………!」
+　{1}Điểm cảm xúc: {2}Xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
 P50,plugin_text,1,data/CommonEvents.json/244/list/71/parameters/3/message,"{0}
-　「この……っ！　はなれて……！」","{0}　「Cái này……Hứ!　Tránh ra……!""",MACHINE_DRAFT_UNREVIEWED,
+　「この……っ！　はなれて……！」","{0}
+　「Đồ…… khốn! Buông ra……!」",MACHINE_DRAFT_UNREVIEWED,
 P51,plugin_text,1,data/CommonEvents.json/244/list/90/parameters/3/message,"怪人の手をふりほどいた。{0}
-　{1}拘束ゲージ-2",Tôi gạt tay của tên quái nhân ra. {0}　{1}Thanh trói buộc -2,MACHINE_DRAFT_UNREVIEWED,
+　{1}拘束ゲージ-2","Đã gạt được tay của quái nhân ra.{0}
+　{1}Thanh trói buộc -2",MACHINE_DRAFT_UNREVIEWED,
 P52,plugin_text,1,data/CommonEvents.json/244/list/98/parameters/3/message,さらに拘束を解くことに成功した！,Bạn đã thành công trong việc cởi trói thêm lần nữa!,MACHINE_DRAFT_UNREVIEWED,
 P53,plugin_text,1,data/CommonEvents.json/401/list/5/parameters/3/text,"淫乱度{0}{1}＋１{2}{3}最近したＨなこと{4}
-怪人から恥辱を受けた",Mức độ dâm đãng {0}{1}+1{2}{3}Hành vi khiêu dâm gần đây{4}Bị kẻ lạ mặt làm nhục,MACHINE_DRAFT_UNREVIEWED,
+怪人から恥辱を受けた","Mức độ dâm đãng{0}{1}+1{2}{3}Hành vi khiêu dâm gần đây{4}
+Bị quái nhân làm nhục",MACHINE_DRAFT_UNREVIEWED,
 P54,plugin_text,5,data/Troops.json/2/pages/1/list/8/parameters/3/message,不意打ち！,Tấn công bất ngờ!,MACHINE_DRAFT_UNREVIEWED,
 P55,plugin_text,1,data/Troops.json/3/pages/1/list/0/parameters/3/message,敵の増援が{0}を取り囲んでいる……！,Quân tiếp viện của địch đang bao vây {0}……!,MACHINE_DRAFT_UNREVIEWED,
 P56,plugin_text,2,data/Troops.json/3/pages/1/list/5/parameters/3/message,敵勢力が上昇した！【０→２】,Sức mạnh của kẻ địch đã tăng lên!【0→2】,MACHINE_DRAFT_UNREVIEWED,
@@ -717,9 +728,12 @@ P62,plugin_text,1,data/Map015.json/events/13/pages/0/list/22/parameters/3/text,"
 男女問わず交友関係を持ち
 人当たりが良い。
 そのため意外と教師たちからの評価も
-悪くない様子。{3}頻繁に“パパ”のことを話す。","{0}　Không còn trinh{1}Cao 158cm, nặng 55kg, vòng 1 100, vòng eo 60, vòng 3 91{2}Câu lạc bộ về nhà.
-Có quan hệ bạn bè với cả nam lẫn nữ và rất dễ gần.
-Vì vậy, thật bất ngờ là đánh giá của các giáo viên về em ấy cũng không tệ. {3}Thường xuyên nói về “bố”.",MACHINE_DRAFT_UNREVIEWED,
+悪くない様子。{3}頻繁に“パパ”のことを話す。","{0}　Không còn trinh{1}Cao 158cm, nặng 55kg
+Vòng 1: 100, vòng eo: 60, vòng 3: 91{2}Không tham gia câu lạc bộ nào.
+Có bạn bè cả nam lẫn nữ,
+rất dễ gần.
+Vì vậy, đánh giá của các giáo viên về cô ấy
+cũng không tệ như người ta nghĩ.{3}Thường xuyên nhắc đến “bố”.",MACHINE_DRAFT_UNREVIEWED,
 D92,dialogue,1,data/Map015.json/events/13/pages/0/list/48,"おはよう。
 二人とも早いね。部活の朝練？","Chào buổi sáng.
 Cả hai đều dậy sớm nhỉ.Luyện tập buổi sáng của câu lạc bộ à?",MACHINE_DRAFT_UNREVIEWED,
@@ -727,9 +741,11 @@ P63,plugin_text,1,data/Map015.json/events/13/pages/0/list/56/parameters/3/text,"
 バスト88、ウエスト55、ヒップ85{3}バレー部に所属。
 {4}とは対照的に交友関係は限定的。
 しかしバレー部の後輩の女子からは
-熱烈に慕われている。{5}年の離れた弟がいる。","{0}　{1} (Izumi Misaki)　Còn trinh{2}Cao 162 cm, nặng 52 kg, vòng 1 88, vòng eo 55, vòng 3 85{3}Thuộc câu lạc bộ bóng chuyền.
+熱烈に慕われている。{5}年の離れた弟がいる。","{0}　{1} (Izumi Misaki)　Còn trinh{2}Cao 162cm, nặng 52kg
+Vòng 1: 88, vòng eo: 55, vòng 3: 85{3}Thành viên câu lạc bộ bóng chuyền.
 Trái ngược với {4}, cô có ít bạn bè.
-Tuy nhiên, cô được các bạn nữ khóa dưới trong câu lạc bộ bóng chuyền rất yêu quý. {5}Cô có một người em trai kém mình nhiều tuổi.",MACHINE_DRAFT_UNREVIEWED,
+Tuy vậy, cô được các nữ sinh khóa dưới
+trong câu lạc bộ ngưỡng mộ nhiệt thành.{5}Có một em trai kém nhiều tuổi.",MACHINE_DRAFT_UNREVIEWED,
 D93,dialogue,1,data/Map015.json/events/13/pages/0/list/84,みさっちは部活の朝錬だけど、うちは“朝活”みたいな？,"Misa thì có buổi luyện tập buổi sáng của câu lạc bộ, còn tôi thì giống như là “hoạt động buổi sáng” vậy?",MACHINE_DRAFT_UNREVIEWED,
 D94,dialogue,1,data/Map015.json/events/13/pages/0/list/88,……朝活？　それって部活とは違うの？,……Hoạt động buổi sáng?　Nó khác với câu lạc bộ à?,MACHINE_DRAFT_UNREVIEWED,
 D95,dialogue,1,data/Map015.json/events/13/pages/0/list/91,"んん～……って、それよりも今日ってＨＲが終わったら身体測定だよね？
@@ -1141,7 +1157,10 @@ D271,dialogue,1,data/Map058.json/events/5/pages/0/list/16,"…………
 P72,plugin_text,1,data/Map058.json/events/5/pages/0/list/24/parameters/3/text,"淫乱度{0}{1}＋１
 {2}オナニーした回数{3}{4}＋１{5}{6}最近したＨなこと{7}
 自室でオナニーした{8}媚薬効果{9}が解除され、
-{10}性欲がリセットされました","Mức độ dâm đãng{0}{1}+1{2}Số lần thủ dâm{3}{4}+1{5}{6}Hành vi khiêu dâm gần đây{7}Thủ dâm trong phòng riêng{8}Tác dụng của thuốc kích dục{9}đã được giải trừ, {10}ham muốn tình dục đã được thiết lập lại.",MACHINE_DRAFT_UNREVIEWED,
+{10}性欲がリセットされました","Mức độ dâm đãng{0}{1}+1
+{2}Số lần thủ dâm{3}{4}+1{5}{6}Hành vi khiêu dâm gần đây{7}
+Thủ dâm trong phòng riêng{8}Hiệu ứng thuốc kích dục{9} đã được giải trừ,
+{10}ham muốn tình dục đã được đặt lại",MACHINE_DRAFT_UNREVIEWED,
 D272,dialogue,2,data/Map058.json/events/5/pages/0/list/73,ただいま。,Về rồi đây.,MACHINE_DRAFT_UNREVIEWED,
 D273,dialogue,1,data/Map058.json/events/5/pages/0/list/87,おかえり。,Chào mừng em về nhà.,MACHINE_DRAFT_UNREVIEWED,
 D274,dialogue,1,data/Map058.json/events/5/pages/0/list/91,どう、体の調子は。もう大丈夫そう？,Cơ thể em thế nào rồi?Có vẻ như đã ổn rồi nhỉ?,MACHINE_DRAFT_UNREVIEWED,
@@ -1340,9 +1359,11 @@ D377,dialogue,1,data/Map060.json/events/23/pages/0/list/59,"じゃあうちも�
 手伝ってくれてありがとね～っ。","Vậy thì tôi đi đây.
 Cảm ơn vì đã giúp đỡ nhé.",MACHINE_DRAFT_UNREVIEWED,
 P74,plugin_text,1,data/Map060.json/events/23/pages/0/list/75/parameters/3/text,"淫乱度{0}{1}＋１{2}{3}最近したＨなこと{4}
-{5}におっぱいを揉まれた",Mức độ dâm đãng {0}{1}+1{2}{3}Chuyện khiêu dâm gần đây đã làm{4}{5}Bị sờ ngực,MACHINE_DRAFT_UNREVIEWED,
+{5}におっぱいを揉まれた","Mức độ dâm đãng{0}{1}+1{2}{3}Hành vi khiêu dâm gần đây{4}
+Bị {5} bóp ngực",MACHINE_DRAFT_UNREVIEWED,
 P75,plugin_text,1,data/Map060.json/events/23/pages/0/list/121/parameters/3/text,"淫乱度{0}{1}＋２{2}{3}最近したＨなこと{4}
-{5}におっぱいを揉まれた",Mức độ dâm đãng {0}{1}+2{2}{3}Chuyện khiêu dâm gần đây đã làm{4}{5}Bị sờ ngực,MACHINE_DRAFT_UNREVIEWED,
+{5}におっぱいを揉まれた","Mức độ dâm đãng{0}{1}+2{2}{3}Hành vi khiêu dâm gần đây{4}
+Bị {5} bóp ngực",MACHINE_DRAFT_UNREVIEWED,
 D378,dialogue,1,data/Map060.json/events/26/pages/0/list/15,どお？　うちと同じサイズでいけると思うんだけど。,Thế nào?　Tôi nghĩ là có thể mặc vừa cỡ của tôi.,MACHINE_DRAFT_UNREVIEWED,
 D379,dialogue,2,data/Map060.json/events/26/pages/0/list/20,うん、大丈夫だと思う。,"Ừm, tôi nghĩ là ổn.",MACHINE_DRAFT_UNREVIEWED,
 D380,dialogue,4,data/Map060.json/events/26/pages/0/list/76,"てかさー、スク水ってうちらには窮屈だよね。
@@ -1423,7 +1444,8 @@ D418,dialogue,1,data/Map064.json/events/7/pages/0/list/58,"（ま、{0}ちゃん
 ぜったい僕と相性もいいはずなんだ……っ）","(Ừm, có vẻ như {0} cũng có ham muốn tình dục mạnh mẽ……
 Chắc chắn là sẽ rất hợp với tôi……chứ nhỉ)",MACHINE_DRAFT_UNREVIEWED,
 D419,dialogue,1,data/Map064.json/events/7/pages/0/list/61,"（あぁ……{0}ちゃんとセックスしたい……っ
-このまま後ろから――）","(A... {0}Tôi muốn quan hệ tình dục đàng hoàng……Cứ như thế này, từ phía sau――)",MACHINE_DRAFT_UNREVIEWED,
+このまま後ろから――）","(Aa…… muốn làm tình với {0}-chan quá……
+Cứ thế này, từ phía sau――)",MACHINE_DRAFT_UNREVIEWED,
 D420,dialogue,1,data/Map064.json/events/7/pages/0/list/69,"おっぱいに負けないほどのどっしりとしたお尻を鷲づかみにして
 何度も引き寄せては突き上げる。","Tôi nắm chặt lấy cặp mông to không kém gì bộ ngực của cô, kéo cô lại gần rồi đẩy mạnh vào nhiều lần.",MACHINE_DRAFT_UNREVIEWED,
 D421,dialogue,1,data/Map064.json/events/7/pages/0/list/72,（こんな人と毎日セックス出来たらどんなにいいか……っ）,(Thật tuyệt biết bao nếu ngày nào cũng được quan hệ với một người như thế này……...'),MACHINE_DRAFT_UNREVIEWED,
@@ -1503,8 +1525,8 @@ D458,dialogue,1,data/Map066.json/events/4/pages/0/list/2,"おはようござい�
 Vui lòng kiểm tra tài liệu.",MACHINE_DRAFT_UNREVIEWED,
 D459,dialogue,1,data/Map066.json/events/7/pages/0/list/3,あ、今日の資料テーブルに置いてありますよ。,"À, tài liệu hôm nay được để trên bàn rồi ạ.",MACHINE_DRAFT_UNREVIEWED,
 D460,dialogue,1,data/Map066.json/events/7/pages/0/list/7,"うん。
-……{0}くんはまだ帰らないの？","Vâng.
-……{0}Cậu vẫn chưa về à?",MACHINE_DRAFT_UNREVIEWED,
+……{0}くんはまだ帰らないの？","Ừ.
+……{0}-kun vẫn chưa về à?",MACHINE_DRAFT_UNREVIEWED,
 D461,dialogue,1,data/Map066.json/events/7/pages/0/list/12,あ、えっと……ま、まだやることがあって……,"À, ừm……À, tôi vẫn còn việc phải làm……",MACHINE_DRAFT_UNREVIEWED,
 D462,dialogue,1,data/Map066.json/events/7/pages/0/list/16,そう。,Vậy à.,MACHINE_DRAFT_UNREVIEWED,
 D463,dialogue,1,data/Map066.json/events/10/pages/0/list/11,"（き、今日こそやるぞ……！　
@@ -1992,11 +2014,18 @@ P84,plugin_text,1,data/Map074.json/events/9/pages/6/list/26/parameters/3/text,"�
 抑制効果{1}が付与されました{2}抑制効果：
 性欲のリセット
 変身能力の喪失
-変身状態の強制解除",Hiệu ứng thuốc kích dục {0} đã được xóa và hiệu ứng ức chế {1} đã được áp dụng{2}Hiệu ứng ức chế: Đặt lại ham muốn tình dục Mất khả năng biến hình Bắt buộc hủy trạng thái biến hình,MACHINE_DRAFT_UNREVIEWED,
+変身状態の強制解除","Hiệu ứng thuốc kích dục{0} đã được giải trừ
+Hiệu ứng ức chế{1} đã được áp dụng{2}Hiệu ứng ức chế:
+Đặt lại ham muốn tình dục
+Mất khả năng biến hình
+Buộc hủy trạng thái biến hình",MACHINE_DRAFT_UNREVIEWED,
 P85,plugin_text,1,data/Map074.json/events/9/pages/6/list/36/parameters/3/text,"媚薬効果{0}が解除され
 抑制効果{1}が付与されました{2}抑制効果：
 性欲のリセット
-変身能力の喪失",Hiệu ứng thuốc kích dục {0} đã được xóa và hiệu ứng ức chế {1} đã được áp dụng{2}Hiệu ứng ức chế: Đặt lại ham muốn tình dục Mất khả năng biến hình,MACHINE_DRAFT_UNREVIEWED,
+変身能力の喪失","Hiệu ứng thuốc kích dục{0} đã được giải trừ
+Hiệu ứng ức chế{1} đã được áp dụng{2}Hiệu ứng ức chế:
+Đặt lại ham muốn tình dục
+Mất khả năng biến hình",MACHINE_DRAFT_UNREVIEWED,
 D711,dialogue,1,data/Map074.json/events/9/pages/6/list/95,"開発プランはこっちで用意するから{0}は気になる装備をどんどん
 作っていってちょうだいね。","Bên này sẽ chuẩn bị kế hoạch phát triển, nên {0} cứ tiếp tục chế tạo thật nhiều trang bị mà bạn quan tâm nhé.",MACHINE_DRAFT_UNREVIEWED,
 C33,choices,1,data/Map074.json/events/9/pages/6/list/97/parameters/0/0,話をする,Trò chuyện,MACHINE_DRAFT_UNREVIEWED,
@@ -2136,8 +2165,10 @@ Này, cái này nè.Quà tặng đây.",MACHINE_DRAFT_UNREVIEWED,
 P88,plugin_text,1,data/Map076.json/events/5/pages/0/list/17/parameters/3/text,"神代　{0}（かみしろ　まや）　36歳　既婚{1}身長163cm、体重59kg
 バスト99、ウエスト63、ヒップ93{2}{3}の母。
 先進的な変身グッズメーカーとしても有名な
-コランダライズテック社の技術開発部主任。{4}現在はシングルマザー。","Kamishiro {0} (Kamishiro Maya) 36 tuổi, đã kết hôn{1}Cao 163cm, nặng 59kg, vòng 1 99, vòng eo 63, vòng 3 93{2}{3}Là một người mẹ.
-Trưởng phòng phát triển công nghệ của công ty Corandarize Tech, cũng nổi tiếng là một nhà sản xuất các sản phẩm biến hình tiên tiến. {4}Hiện tại là một bà mẹ đơn thân.",MACHINE_DRAFT_UNREVIEWED,
+コランダライズテック社の技術開発部主任。{4}現在はシングルマザー。","Kamishiro　{0} (Kamishiro Maya)　36 tuổi　Đã kết hôn{1}Cao 163cm, nặng 59kg
+Vòng 1: 99, vòng eo: 63, vòng 3: 93{2}Mẹ của {3}.
+Trưởng phòng phát triển kỹ thuật của Corandarize Tech,
+hãng đồ biến hình tiên tiến nổi tiếng.{4}Hiện là mẹ đơn thân.",MACHINE_DRAFT_UNREVIEWED,
 D769,dialogue,1,data/Map076.json/events/5/pages/0/list/43,"私の誕生日まだ先なんだけど……
 いくら何でも早すぎない？","Sinh nhật của tôi vẫn còn lâu mà……
 Dù sao thì cũng hơi sớm quá phải không?",MACHINE_DRAFT_UNREVIEWED,
@@ -2194,8 +2225,10 @@ D790,dialogue,1,data/Map076.json/events/15/pages/0/list/20,コード：{0}……
 P89,plugin_text,1,data/Map076.json/events/15/pages/0/list/34/parameters/3/text,"神代　{0}（かみしろ　あやこ）　処女{1}身長160cm、体重50.2kg
 バスト96、ウエスト59、ヒップ86{2}神代{3}の娘。本作の主人公。
 母の影響で変身ヒロインに強い憧れを持ち
-現在は蒼晶学園の生徒会長を務める。{4}小さい頃からの夢：正義のヒロインになること","Kamishiro {0} (Kamishiro Ayako) Còn trinh{1}Cao 160 cm, nặng 50,2 kg, vòng 1 96, vòng eo 59, vòng 3 86{2}Con gái của Kamishiro {3}.Nhân vật chính của tác phẩm này.
-Dưới ảnh hưởng của mẹ, cô có một khát khao mạnh mẽ được trở thành nữ chính biến hình và hiện đang là chủ tịch hội học sinh của Học viện Sōshō. {4}Ước mơ từ nhỏ: Trở thành nữ chính của chính nghĩa",MACHINE_DRAFT_UNREVIEWED,
+現在は蒼晶学園の生徒会長を務める。{4}小さい頃からの夢：正義のヒロインになること","Kamishiro　{0} (Kamishiro Ayako)　Còn trinh{1}Cao 160cm, nặng 50,2kg
+Vòng 1: 96, vòng eo: 59, vòng 3: 86{2}Con gái của Kamishiro {3}. Nhân vật chính.
+Chịu ảnh hưởng của mẹ, cô rất ngưỡng mộ các nữ anh hùng biến hình,
+hiện là hội trưởng hội học sinh Học viện Sōshō.{4}Ước mơ từ nhỏ: Trở thành nữ anh hùng chính nghĩa",MACHINE_DRAFT_UNREVIEWED,
 D791,dialogue,1,data/Map076.json/events/15/pages/0/list/57,"すごい、本当になれたんだ……
 ありがとうママ。","Thật tuyệt vời, mình thực sự đã trở thành như vậy rồi……
 Cảm ơn mẹ.",MACHINE_DRAFT_UNREVIEWED,
@@ -2567,7 +2600,7 @@ D967,dialogue,1,data/Map095.json/events/4/pages/0/list/12,レコード屋……�
 D968,dialogue,1,data/Map095.json/events/4/pages/0/list/14,"{0}ちゃんがレコードを聴くとは思えないし
 {1}ちゃんもそんな趣味はなかったはずだけど……","Tôi không nghĩ rằng {0} sẽ nghe đĩa than, và {1} cũng không có sở thích như vậy, nhưng mà……",MACHINE_DRAFT_UNREVIEWED,
 D969,dialogue,1,data/Map095.json/events/4/pages/0/list/18,中に入って見つかるわけにもいかないし、出てくるまで待つか。,"Cũng không thể vào trong để tìm, hay là đợi đến khi họ ra nhỉ?",MACHINE_DRAFT_UNREVIEWED,
-D970,dialogue,1,data/Map095.json/events/11/pages/0/list/29,（いまのは……{0}さん？　買い物、かな）,(Người vừa rồi là…… {0}chăng?　Chắc là đi mua sắm nhỉ),MACHINE_DRAFT_UNREVIEWED,
+D970,dialogue,1,data/Map095.json/events/11/pages/0/list/29,（いまのは……{0}さん？　買い物、かな）,(Người vừa rồi là…… {0}-san à?　Chắc là đi mua sắm nhỉ),MACHINE_DRAFT_UNREVIEWED,
 D971,dialogue,1,data/Map095.json/events/11/pages/0/list/37,（{0}さんからだ）,(Là từ anh {0}),MACHINE_DRAFT_UNREVIEWED,
 D972,dialogue,1,data/Map095.json/events/11/pages/0/list/42,{0}さん、どうしたの？,"Chị {0}, có chuyện gì vậy?",MACHINE_DRAFT_UNREVIEWED,
 D973,dialogue,1,data/Map095.json/events/11/pages/0/list/46,"みさっちが昨日の夜出てったきり帰ってないって、さっき電話があったの。
@@ -3019,8 +3052,8 @@ D1196,dialogue,1,data/Map123.json/events/6/pages/0/list/43,"トイレの隠し�
 ちょうど{0}が排尿をする瞬間を捉えているようだった。","Đoạn phim quay lén trong nhà vệ sinh được phát lại.
 Có vẻ như nó đã ghi lại đúng khoảnh khắc {0} đang đi tiểu.",MACHINE_DRAFT_UNREVIEWED,
 D1197,dialogue,1,data/Map123.json/events/6/pages/0/list/51,"……{0}さんは{1}さんと違って随分とお上品ですな。
-音が聞こえないように加減しているんでしょうかねぇ。","……{0}khác với {1}, quả là rất thanh lịch nhỉ.
-Có lẽ là đang điều chỉnh để không phát ra tiếng động nhỉ.",MACHINE_DRAFT_UNREVIEWED,
+音が聞こえないように加減しているんでしょうかねぇ。","……Cô {0} khác hẳn cô {1}, thanh lịch hơn nhiều nhỉ.
+Chắc là đang cố tiết chế để không phát ra tiếng đây mà.",MACHINE_DRAFT_UNREVIEWED,
 D1198,dialogue,1,data/Map123.json/events/6/pages/0/list/54,"しかしまぁこの特製マイクの前では……ひひっ。
 恥ずかしい音も全部録音させてもらってますがね。","Tuy nhiên, trước chiếc micrô đặc biệt này thì……Hì hì.
 Tất cả những âm thanh đáng xấu hổ cũng được ghi âm lại hết rồi.",MACHINE_DRAFT_UNREVIEWED,
@@ -3167,7 +3200,10 @@ Dù sao thì, bây giờ hãy nghĩ đến việc quay lại phòng thí nghiệ
 P95,plugin_text,2,data/Map129.json/events/9/pages/0/list/98/parameters/3/text,"媚薬効果{0}が付与され
 {1}性欲が大きく上昇した{2}{3}{4}コンディション項目が解放{5}
 メニュー画面
-着替え画面",Hiệu ứng thuốc kích dục {0} được áp dụng{1}Ham muốn tình dục tăng lên đáng kể{2}{3}{4}Mục trạng thái được mở khóa{5}Màn hình menu Màn hình thay đồ,MACHINE_DRAFT_UNREVIEWED,
+着替え画面","Hiệu ứng thuốc kích dục{0} đã được áp dụng
+{1}Ham muốn tình dục tăng mạnh{2}{3}{4}Đã mở khóa mục Thể trạng{5}
+Màn hình menu
+Màn hình thay đồ",MACHINE_DRAFT_UNREVIEWED,
 D1268,dialogue,2,data/Map129.json/events/10/pages/0/list/10,ぐぉっ！！,Hự!!,MACHINE_DRAFT_UNREVIEWED,
 D1269,dialogue,2,data/Map129.json/events/10/pages/0/list/17,"ハァ……ハァ……っ
 チッ、こんなに強えとはなァ……だが、オレサマの役目は果たしたぜ……","Ha...Ha...Chậc, không ngờ lại mạnh đến thế này……Nhưng ta đã hoàn thành nhiệm vụ của mình rồi……",MACHINE_DRAFT_UNREVIEWED,
@@ -3186,10 +3222,12 @@ D1277,dialogue,2,data/Map129.json/events/10/pages/0/list/73,"（でも何かさ�
 とにかく、いまはラボに戻ることを考えよう……）","(Nhưng chắc chắn là có chuyện gì đó đã xảy ra.
 Dù sao thì, bây giờ hãy nghĩ đến việc quay lại phòng thí nghiệm thôi……)",MACHINE_DRAFT_UNREVIEWED,
 P96,plugin_text,2,data/Map131.json/events/9/pages/0/list/96/parameters/3/text,"媚薬効果{0}が付与され
-{1}性欲が大きく上昇した",Hiệu ứng thuốc kích dục {0} được áp dụng {1} và ham muốn tình dục tăng lên rất nhiều.,MACHINE_DRAFT_UNREVIEWED,
+{1}性欲が大きく上昇した","Hiệu ứng thuốc kích dục{0} đã được áp dụng
+{1}Ham muốn tình dục tăng mạnh",MACHINE_DRAFT_UNREVIEWED,
 M62,map_display_name,1,data/Map141.json/displayName,コランダライズテック：研究棟,Công nghệ Corandalis: Tòa nhà nghiên cứu,MACHINE_DRAFT_UNREVIEWED,
 D1278,dialogue,2,data/Map141.json/events/11/pages/0/list/4,"こうして……{0}たちは結社アク・メーンによって身柄を拘束され
-二度と日の当たらぬ閉所に幽閉されることとなった……",Như vậy……{0}bị tổ chức Ác-Mên bắt giữ và bị giam cầm trong một nơi kín đáo không bao giờ có ánh sáng mặt trời chiếu đến nữa……,MACHINE_DRAFT_UNREVIEWED,
+二度と日の当たらぬ閉所に幽閉されることとなった……","Và thế là…… {0} cùng mọi người bị tổ chức Ác-Mên bắt giữ
+và bị giam cầm mãi mãi ở một nơi kín không bao giờ thấy ánh mặt trời……",MACHINE_DRAFT_UNREVIEWED,
 D1279,dialogue,2,data/Map141.json/events/11/pages/0/list/16,"それからおよそ数か月。
 結社アク・メーンは順調に勢力を拡大させており――","Khoảng vài tháng sau đó.
 Tổ chức Ak-Mean đang mở rộng thế lực một cách thuận lợi――",MACHINE_DRAFT_UNREVIEWED,
