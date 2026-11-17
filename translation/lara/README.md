@@ -48,6 +48,16 @@ Codes at the very start or end of a string are taken off before upload and put b
 
 If Lara loses or duplicates a placeholder, or leaves an ID out, `apply` **keeps the Japanese for that string** rather than risk breaking the game. The ledger marks it `KEPT_JAPANESE` and says why. Fix the line in Lara's returned file (or translate it by hand there) and run `apply` again. Rerunning is free: it always starts from the original `data.zip`.
 
+## First result (from_lara.json)
+
+The first apply kept 11 strings in Japanese. In each, Lara had dropped or repeated a name placeholder. Those 11 are retranslated by hand in `fixes.json`, which goes **last** on the command line so it overrides Lara's versions:
+
+```bash
+python3 translation/lara/lara.py apply translation/lara/from_lara.json translation/lara/fixes.json
+```
+
+Lara translates each line separately. Where the Japanese broke a line mid-sentence, it returned two half-sentences, often with part of the first half repeated (`Đó là mùi của xịt khử mùi\nkhông phải là mùi của xịt khử mùi đó sao?`). `lara.py resend` collects the 233 entries with such breaks into `for_lara_resend.json` (8,461 characters of text, 11,017 for the whole file), joining each broken sentence so Lara sees it whole. Translate it, save the result as e.g. `from_lara_resend.json`, and add it to the apply command before `fixes.json`.
+
 ## Names
 
 `glossary.csv` sets one spelling per name: Ayako, Saphiria, Maya, Rio, Misaki, Kagehisa Kayato, Fukumi Shinta and so on. Spellings with furigana in the game data are reliable. The others are marked *provisional* in the note column. **To change a spelling, edit `glossary.csv` and run `apply` again; there's no need to send anything to Lara.** To lock a new name, add a row and run `extract` again **before** uploading. `ブラックメノー` has no spelling yet, so Lara will translate it freely until you add one.
