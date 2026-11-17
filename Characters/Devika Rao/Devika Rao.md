@@ -117,5 +117,5 @@ views:
 
 ## Notes
 - Keystone (personality only): Vi.
-- Old gen: `images/Devika Rao - 01.webp` shows her off-duty outfit and predates the current image standard. The body box is still a reconstruction; use the user's exact version when it's supplied.
+- Old gen: `images/Devika Rao - 01.webp` shows her off-duty outfit and predates the current image standard. The user's exact body box (recovered from the old nude gen's metadata) has `petite, .7::toned, abs::` and `muscular, mature female` in the UC; it's the base for the new body test.
 

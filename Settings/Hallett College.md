@@ -33,7 +33,7 @@ Characters are built from their situation, not from sources. Each of the five or
 - **Unaffiliated.** Staff children attend free on tuition remission, but they come in with no house sponsor. They eat at the overflow table.
 - **Magic is a major.** PRAC 101, Foundations of Practice, is the weed-out course every first year takes. A third of the class drops it. Practicals injure people.
 - **Money sorts people:** trusts, athletic scholarships, need-based aid with work-study, and sponsor contracts that come with strings.
-- **Academic dress.** The black hooded uniform dress (see the bible) is formal academic dress, worn to lectures, practicals and formal hall. Nobody wears it to the dining hall.
+- **Academic dress.** Worn to lectures, practicals and formal hall, never to the dining hall. Women wear the black hooded uniform dress (see the bible). **[draft]** Men wear a black hooded blazer, a white dress shirt and black slacks, with the same pentagram pendant and rune embroidery on the blazer.
 - **Hurl.** Hallett's full-contact warded field sport, part rugby and part rite, with men's and women's teams. It's Oxblood's pride and Ashen Gold's money, and it's played in Lindqvist Stadium.
 
 ## The wider world
@@ -112,7 +112,6 @@ Characters are built from their situation, not from sources. Each of the five or
 - What did Julian see in his practical?
 - What did the order send Linh to find?
 - What's past the iron door, and where did Caleb go?
-- Academic dress for men.
 - Where do the house colors go on the uniform: the hood lining, the rune thread or the pendant cord?
 
 ## Characters
@@ -148,7 +147,7 @@ views:
 
 ## Notes
 - **Cast rules (user):** there are no gay men. Men are straight, or bi at most, and no romance between men is written. No relationship pairs two lesbians. A lesbian with a bi or pan woman, or any other mix of orientations among women, is fine.
-- The visual bible is the Witch Cast handoff (2026-10-20). Before the visual pass: remove `teenage` from Saga's headshot box, get the user's exact Dev body box, and build Selam on the Willow kit with the East African overlay.
+- The visual bible is the Witch Cast handoff (2026-10-20). Before the visual pass: remove `teenage` from Saga's headshot box, the exact Dev body box is recovered from the old gen metadata; build Selam on the Willow kit with the East African overlay.
 
 ## Changelog
 - v1 (2026-11-17): created from the Witch Cast bible and the cast workshop
