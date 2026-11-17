@@ -10,6 +10,10 @@
       writes lara_translation_ledger.csv and updates translation_progress.csv.
       With --out, writes the game files to DIR only and leaves the trackers alone.
 
+  python3 translation/lara/lara.py resend
+      Writes lara/for_lara_resend.json: entries whose Japanese broke a line mid-sentence,
+      joined up so Lara translates whole sentences. Apply its result after the main file.
+
   python3 translation/lara/lara.py verify [DIR]
       Checks the translated files against the ZIP: same structure, same event commands,
       same escape codes; counts dialogue still in Japanese and boxes over 4 lines.
@@ -189,6 +193,30 @@ def dump(entries):
                               for k, v in entries.items()) + '\n}\n'
 
 
+MID_SENTENCE_OK = set('。…？！）」』】♡―?!～〜ー♪.')
+
+
+def resend(args):
+    """Entries whose Japanese breaks a line mid-sentence, with that break removed.
+    Lara translates each line on its own, so those came back as two half-sentences."""
+    data = json.loads(MAP.read_text(encoding='utf-8'))
+    out = {}
+    for eid, jp in data['entries'].items():
+        if eid in data['local']:
+            continue
+        lines = jp.split('\n')
+        if not any(l and l[-1] not in MID_SENTENCE_OK for l in lines[:-1]):
+            continue
+        text = lines[0]
+        for prev, line in zip(lines, lines[1:]):
+            text += ('' if prev and prev[-1] not in MID_SENTENCE_OK else '\n') + line
+        out[eid] = text
+    path = HERE / 'for_lara_resend.json'
+    path.write_text(dump(out), encoding='utf-8')
+    print(json.dumps({'entries': len(out), 'characters_in_values': sum(len(v) for v in out.values()),
+                      'characters_in_whole_file': len(path.read_text(encoding='utf-8')), 'file': str(path)}, indent=1))
+
+
 def visible_len(s):
     return len(VISIBLE_CODE.sub(lambda m: ' ' * (6 if re.search(r'\\[NnPpVv]\[', m.group(0)) else 0), s))
 
@@ -270,7 +298,7 @@ def apply(args):
         if problem:
             row['status'], row['problem'] = 'KEPT_JAPANESE', problem
             continue
-        if JP.search(text):
+        if JP.search(text.replace('・', '').replace('ー', '')):  # ・ and ー alone are just punctuation
             row['status'] = 'MACHINE_DRAFT_CHECK_JAPANESE_LEFT'
         new = safe_join(loc['head'], text) + loc['tail']
         per_file[f][0] += 1
@@ -451,7 +479,8 @@ if __name__ == '__main__':
     a.add_argument('translated', nargs='+', help='the file(s) Lara returned; several parts are merged')
     a.add_argument('--width', type=int, default=70, help='max visible characters per dialogue line')
     a.add_argument('--out', help='write game files here instead of vi_draft/data, trackers untouched')
+    sub.add_parser('resend')
     v = sub.add_parser('verify')
     v.add_argument('dir', nargs='?', help='folder of translated game files (default vi_draft/data)')
     args = ap.parse_args()
-    {'extract': extract, 'apply': apply, 'verify': verify}[args.cmd](args)
+    {'extract': extract, 'apply': apply, 'verify': verify, 'resend': resend}[args.cmd](args)
