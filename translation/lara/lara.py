@@ -265,6 +265,48 @@ def restore(text, tokens, terms):
     return safe_join(out, text[pos:]), None
 
 
+def balance(text, n):
+    """Split one line into n lines of similar visible length at spaces."""
+    words = text.replace('\n', ' ').split(' ')
+    target = -(-visible_len(text) // n)
+    while True:
+        lines, cur = [], ''
+        for w in words:
+            if cur and visible_len(cur + ' ' + w) > target:
+                lines.append(cur)
+                cur = w
+            else:
+                cur = (cur + ' ' + w) if cur else w
+        lines.append(cur)
+        if len(lines) <= n:
+            return '\n'.join(lines)
+        target += 2
+
+
+MANUAL = HERE / 'manual.json'
+MANUAL_CATEGORIES = {'review_event_parameters', 'review_gab_text', 'review_scripts'}
+
+
+def apply_manual(docs):
+    """Hand translations for text the audit held for review (variables shown on the status
+    screen, gab popups, one battle-log script line). Keyed by the exact original string."""
+    if not MANUAL.exists():
+        return 0
+    table = json.loads(MANUAL.read_text(encoding='utf-8'))
+    done = 0
+    with zipfile.ZipFile(ZIP) as z:
+        for r in csv.DictReader(LOCATIONS.open(encoding='utf-8-sig')):
+            if r['japanese_bearing'] != 'True' or r['category'] not in MANUAL_CATEGORIES:
+                continue
+            if r['file'] not in docs:
+                docs[r['file']] = json.loads(z.read(r['file']))
+            parent, key = resolve(docs[r['file']], r['path'])
+            if parent[key] in table:
+                parent[key] = table[parent[key]]
+                done += 1
+    return done
+
+
 def apply(args):
     data = json.loads(MAP.read_text(encoding='utf-8'))
     terms = load_glossary()  # current values; edit glossary.csv and rerun apply to rename
@@ -300,6 +342,9 @@ def apply(args):
             continue
         if JP.search(text.replace('・', '').replace('ー', '')):  # ・ and ー alone are just punctuation
             row['status'] = 'MACHINE_DRAFT_CHECK_JAPANESE_LEFT'
+        want = data['entries'][eid].count('\n') + 1
+        if loc['category'] == 'translate_database' and text.count('\n') + 1 < want:
+            text = balance(text, want)  # descriptions don't wrap in game; Lara joined the lines
         new = safe_join(loc['head'], text) + loc['tail']
         per_file[f][0] += 1
         doc = docs[f]
@@ -332,6 +377,7 @@ def apply(args):
                         cmd['parameters'][j] = label + new
                     elif shown.endswith('…') and len(shown) > 1 and loc['source'].startswith(shown[:-1]):
                         cmd['parameters'][j] = label + new[:len(shown) - 1] + '…'  # editor preview, truncated
+    manual_done = apply_manual(docs)  # before box edits: its paths use the original command indices
     overflow = []
     for (f, list_path), edits in box_edits.items():
         lst, _ = resolve(docs[f], list_path + '/0')
@@ -359,7 +405,7 @@ def apply(args):
     counts = collections.Counter(r['status'] for r in ledger_rows.values())
     report = {'entries_returned': len(returned) - len(data['local']), 'entries_expected': len(data['entries']) - len(data['local']),
               'ledger_status': dict(counts), 'files_written': len(docs), 'output': str(out_dir),
-              'boxes_split_for_length': len(overflow)}
+              'boxes_split_for_length': len(overflow), 'manual_strings_applied': manual_done}
     if args.out:
         print(json.dumps(report, indent=1))
         for o in overflow[:20]:

@@ -11,8 +11,7 @@ B8,database,1,data/Skills.json/1/name,攻撃,Tấn công,MACHINE_DRAFT_UNREVIEWE
 B9,database,1,data/Skills.json/2/message1,{0}は身を守っている。,{0} đang tự vệ.,MACHINE_DRAFT_UNREVIEWED,
 B10,database,2,data/Skills.json/2/name,防御,Phòng thủ,MACHINE_DRAFT_UNREVIEWED,
 B11,database,1,data/Skills.json/3/description,"以下は、メニューを開いたとき、戦闘用のスキルより
-上部に表示したいスキル用の枠です。","Dưới đây là các ô dành cho các kỹ năng muốn hiển thị ở vị trí cao hơn các kỹ năng chiến đấu
-Đây là khung dành cho các kỹ năng mà bạn muốn hiển thị ở phía trên.",MACHINE_DRAFT_UNREVIEWED,
+上部に表示したいスキル用の枠です。",Dưới đây là khung dành cho các kỹ năng mà bạn muốn hiển thị ở vị trí cao hơn các kỹ năng dùng trong trận chiến khi mở menu.,MACHINE_DRAFT_UNREVIEWED,
 B12,database,1,data/Skills.json/3/name,-----変化追撃系,-----Loại thay đổi và tấn công liên tiếp,MACHINE_DRAFT_UNREVIEWED,
 B13,database,3,data/Skills.json/4/description,ダメージを与え、相手に弱体効果を付与,Gây sát thương và áp dụng hiệu ứng suy yếu lên đối thủ,MACHINE_DRAFT_UNREVIEWED,
 B14,database,1,data/Skills.json/4/name,攻撃追撃あり,Có tấn công truy kích,MACHINE_DRAFT_UNREVIEWED,
@@ -24,39 +23,30 @@ B19,database,1,data/Skills.json/25/name,----通常passive,---- Kỹ năng thụ 
 B20,database,1,data/Skills.json/26/description,ずべての与ダメージ+10%,Tất cả sát thương gây ra +10%,MACHINE_DRAFT_UNREVIEWED,
 B21,database,2,data/Skills.json/26/name,攻撃性能アップ,Tăng khả năng tấn công,MACHINE_DRAFT_UNREVIEWED,
 B22,database,1,data/Skills.json/27/description,"ターン終了時HP回復+10
-被ダメージ軽減10%","Hồi phục +10 HP khi kết thúc lượt
-Giảm 10% sát thương phải chịu",MACHINE_DRAFT_UNREVIEWED,
+被ダメージ軽減10%","Khi kết thúc lượt, HP hồi phục +10, giảm 10% sát thương phải chịu",MACHINE_DRAFT_UNREVIEWED,
 B23,database,2,data/Skills.json/27/name,防御性能アップ,Tăng khả năng phòng thủ,MACHINE_DRAFT_UNREVIEWED,
 B24,database,1,data/Skills.json/28/description,"ターン終了時SP回復+2
-最大SP+5、戦闘開始時SP+3","Hồi phục +2 SP khi kết thúc lượt
-SP tối đa +5, SP +3 khi bắt đầu trận chiến",MACHINE_DRAFT_UNREVIEWED,
+最大SP+5、戦闘開始時SP+3","Khi kết thúc lượt, SP hồi phục +2, SP tối đa +5; khi bắt đầu trận chiến, SP +3",MACHINE_DRAFT_UNREVIEWED,
 B25,database,1,data/Skills.json/28/name,精神性能アップ,Tăng hiệu suất tinh thần,MACHINE_DRAFT_UNREVIEWED,
 B26,database,1,data/Skills.json/29/description,"先制攻撃時:ATK/CRT上昇
-不意打ち時:ガード効果（大）","Khi tấn công phủ đầu: Tăng ATK/CRT
-Khi tấn công bất ngờ: Hiệu ứng phòng thủ (lớn)",MACHINE_DRAFT_UNREVIEWED,
+不意打ち時:ガード効果（大）",Khi tấn công phủ đầu: Tăng ATK/CRT Khi tấn công bất ngờ: Hiệu ứng phòng thủ (lớn),MACHINE_DRAFT_UNREVIEWED,
 B27,database,1,data/Skills.json/29/name,敏捷性能アップ,Tăng chỉ số Nhanh nhẹn,MACHINE_DRAFT_UNREVIEWED,
 B28,database,1,data/Skills.json/35/name,----変態passive,----Kỹ năng bị động biến thái,MACHINE_DRAFT_UNREVIEWED,
 B29,database,1,data/Skills.json/51/description,"ダメージを与え、敵勢力を1減少
-発動速度：2000","Gây sát thương, giảm 1 lực lượng địch
-Tốc độ kích hoạt: 2000",MACHINE_DRAFT_UNREVIEWED,
+発動速度：2000","Gây sát thương, giảm 1 lực lượng địch Tốc độ kích hoạt: 2000",MACHINE_DRAFT_UNREVIEWED,
 B30,database,41,data/Skills.json/51/message1,{0}の「{1}」,"""{1}"" của {0}",MACHINE_DRAFT_UNREVIEWED,
 B31,database,1,data/Skills.json/51/name,スパークルメレー,Đòn cận chiến lấp lánh,MACHINE_DRAFT_UNREVIEWED,
 B32,database,1,data/Skills.json/52/description,"ダメージを与え、被ダメージ上昇を付与
-ターン消費なし、使用間隔：5T","Gây sát thương và tăng sát thương phải chịu
-Không tiêu hao lượt, khoảng thời gian sử dụng: 5 lượt",MACHINE_DRAFT_UNREVIEWED,
+ターン消費なし、使用間隔：5T","Gây sát thương và áp dụng hiệu ứng tăng sát thương phải chịu Không tiêu hao lượt, khoảng thời gian sử dụng: 5 lượt",MACHINE_DRAFT_UNREVIEWED,
 B33,database,1,data/Skills.json/52/name,フラクチュア,Phân rã,MACHINE_DRAFT_UNREVIEWED,
 B34,database,1,data/Skills.json/53/description,"ダメージを与え、敵勢力を2減少
-敵勢力が0の場合、【殲滅効果】を付与","Gây sát thương, giảm 2 lực lượng địch
-Nếu lực lượng địch bằng 0, sẽ gây [Hiệu ứng tiêu diệt]",MACHINE_DRAFT_UNREVIEWED,
+敵勢力が0の場合、【殲滅効果】を付与","Gây sát thương, giảm 2 lực lượng địch. Nếu lực lượng địch bằng 0, sẽ áp dụng [Hiệu ứng tiêu diệt].",MACHINE_DRAFT_UNREVIEWED,
 B35,database,1,data/Skills.json/54/description,"ダメージを与え、敵勢力を0にする
-さらに【殲滅効果】を付与","Gây sát thương và giảm lực lượng địch xuống 0
-Ngoài ra, còn gây thêm [Hiệu ứng tiêu diệt]",MACHINE_DRAFT_UNREVIEWED,
+さらに【殲滅効果】を付与","Gây sát thương, giảm lực lượng địch xuống 0, đồng thời gây thêm 【Hiệu ứng tiêu diệt】",MACHINE_DRAFT_UNREVIEWED,
 B36,database,1,data/Skills.json/55/description,"ダメージを与え、敵勢力を1減少
-確率で即死効果","Gây sát thương, giảm 1 sức mạnh của địch
-Có xác suất gây hiệu ứng chết ngay lập tức",MACHINE_DRAFT_UNREVIEWED,
+確率で即死効果","Gây sát thương, giảm 1 lực lượng địch Có xác suất gây hiệu ứng chết ngay lập tức",MACHINE_DRAFT_UNREVIEWED,
 B37,database,1,data/Skills.json/56/description,"ダメージを与え、敵勢力を2減少
-確率でスタン効果、敵勢力を1減少","Gây sát thương, giảm 2 lực lượng địch
-Có xác suất gây hiệu ứng choáng, giảm 1 Lực lượng địch",MACHINE_DRAFT_UNREVIEWED,
+確率でスタン効果、敵勢力を1減少","Gây sát thương, giảm 2 lực lượng địch Có xác suất gây hiệu ứng choáng, giảm 1 lực lượng địch",MACHINE_DRAFT_UNREVIEWED,
 B38,database,1,data/Skills.json/57/description,"自身に【星彩効果】を付与（3T）
 ターン消費なし、使用間隔：6T","Tự áp dụng 【Hiệu ứng Tinh Sắc】 cho bản thân (3 lượt)
 Không tiêu hao lượt, khoảng thời gian sử dụng: 6 lượt",MACHINE_DRAFT_UNREVIEWED,
@@ -68,32 +58,27 @@ B41,database,1,data/Skills.json/59/description,"ATK/DEF/CRTが上昇（5T）
 ターン消費なし、使用間隔：6T","Tăng ATK/DEF/CRT (5 lượt)
 Không tiêu hao lượt, tần suất sử dụng: 6 lượt",MACHINE_DRAFT_UNREVIEWED,
 B42,database,1,data/Skills.json/61/description,"大ダメージを与える
-使用上限あり","Gây sát thương lớn
-Có giới hạn số lần sử dụng",MACHINE_DRAFT_UNREVIEWED,
+使用上限あり",Gây sát thương lớn Có giới hạn số lần sử dụng,MACHINE_DRAFT_UNREVIEWED,
 B43,database,1,data/Skills.json/61/name,ステラ・ディスパージョン,Stella Dispersion,MACHINE_DRAFT_UNREVIEWED,
 B44,database,1,data/Skills.json/62/description,"大ダメージを与え、敵勢力を0にする
-使用上限あり","Gây sát thương lớn, khiến lực lượng địch về 0
-Có giới hạn số lần sử dụng",MACHINE_DRAFT_UNREVIEWED,
+使用上限あり","Gây sát thương lớn, giảm sức mạnh của địch xuống 0. Có giới hạn số lần sử dụng.",MACHINE_DRAFT_UNREVIEWED,
 B45,database,1,data/Skills.json/71/description,"AP残量に応じて被ダメージ軽減（1T）
 使用間隔：2T{0}{1}軽減値[{2}]","Giảm sát thương phải chịu tùy theo lượng AP còn lại (1 lượt)
 Khoảng thời gian sử dụng: 2 lượt{0}{1}Giá trị giảm [{2}]",MACHINE_DRAFT_UNREVIEWED,
 B46,database,1,data/Skills.json/71/name,シールド,Khiên,MACHINE_DRAFT_UNREVIEWED,
 B47,database,1,data/Skills.json/72/description,"SPを8獲得する
-ターン消費なし、使用間隔：6T","Nhận 8 SP
-Không tiêu hao lượt, khoảng thời gian sử dụng: 6 lượt",MACHINE_DRAFT_UNREVIEWED,
+ターン消費なし、使用間隔：6T","Nhận 8 SP Không tốn lượt, khoảng thời gian sử dụng: 6 lượt",MACHINE_DRAFT_UNREVIEWED,
 B48,database,1,data/Skills.json/72/name,インクルージョン,Sự hòa nhập,MACHINE_DRAFT_UNREVIEWED,
 B49,database,1,data/Skills.json/73/description,感情値と汚染度を25回復,Phục hồi 25 điểm cảm xúc và mức độ ô nhiễm,MACHINE_DRAFT_UNREVIEWED,
 B50,database,1,data/Skills.json/74/description,"APを100%回復、HPを50％回復
-使用上限あり","Hồi phục 100% AP, hồi phục 50% HP
-Có giới hạn sử dụng",MACHINE_DRAFT_UNREVIEWED,
+使用上限あり","Hồi phục 100% AP, hồi phục 50% HP Có giới hạn số lần sử dụng",MACHINE_DRAFT_UNREVIEWED,
 B51,database,1,data/Skills.json/79/description,SPが１上昇する,SP tăng 1 điểm,MACHINE_DRAFT_UNREVIEWED,
 B52,database,1,data/Skills.json/79/message1,{0}は身構えた。,{0} đã sẵn sàng.,MACHINE_DRAFT_UNREVIEWED,
 B53,database,1,data/Skills.json/79/name,様子をみる,Quan sát tình hình,MACHINE_DRAFT_UNREVIEWED,
 B54,database,1,data/Skills.json/81/message1,身動きが取れない……！,Không thể cử động được...!,MACHINE_DRAFT_UNREVIEWED,
 B55,database,1,data/Skills.json/81/name,もがく,Vật lộn,MACHINE_DRAFT_UNREVIEWED,
 B56,database,1,data/Skills.json/83/description,"拘束ゲージの減少量が上昇する
-ターン消費なし、重ね掛け１回まで有効","Lượng giảm của thanh trói buộc tăng lên
-Không tiêu hao lượt, có hiệu lực khi áp dụng chồng lên nhau tối đa 1 lần",MACHINE_DRAFT_UNREVIEWED,
+ターン消費なし、重ね掛け１回まで有効","Lượng giảm của thanh ràng buộc tăng lên Không tiêu hao lượt, có hiệu lực khi dùng chồng lên nhau tối đa 1 lần",MACHINE_DRAFT_UNREVIEWED,
 B57,database,1,data/Skills.json/83/name,力を込める,Dồn sức,MACHINE_DRAFT_UNREVIEWED,
 B58,database,1,data/Skills.json/84/description,SPを消費して拘束状態を解除する,Tiêu hao SP để giải phóng trạng thái bị trói buộc,MACHINE_DRAFT_UNREVIEWED,
 B59,database,2,data/Skills.json/84/message1,{0}は力を解放した！,{0} đã giải phóng sức mạnh!,MACHINE_DRAFT_UNREVIEWED,
@@ -142,15 +127,12 @@ B97,database,1,data/Items.json/10/name,治療キット-β,Bộ dụng cụ sơ c
 B98,database,1,data/Items.json/11/description,HPを100%回復する,Hồi phục 100% HP,MACHINE_DRAFT_UNREVIEWED,
 B99,database,1,data/Items.json/11/name,治療キット-γ,Bộ dụng cụ sơ cứu - γ,MACHINE_DRAFT_UNREVIEWED,
 B100,database,1,data/Items.json/12/description,"HPを10%回復し、ランダムで強化ステートを１つ付与する
-強化効果：次の戦闘開始時に発動、または１日経過で解除","Hồi phục 10% HP và ngẫu nhiên áp dụng một trạng thái tăng cường
-Hiệu ứng tăng cường: Kích hoạt khi bắt đầu trận chiến tiếp theo hoặc bị hủy bỏ sau 1 ngày",MACHINE_DRAFT_UNREVIEWED,
+強化効果：次の戦闘開始時に発動、または１日経過で解除",Hồi phục 10% HP và ngẫu nhiên áp dụng một trạng thái cường hóa. Hiệu ứng cường hóa: Kích hoạt khi bắt đầu trận chiến tiếp theo hoặc bị hủy sau 1 ngày.,MACHINE_DRAFT_UNREVIEWED,
 B101,database,1,data/Items.json/13/description,"利尿作用を高める
-トイレに行った直後でもすぐに行きたくなる","Tăng tác dụng lợi tiểu
-Ngay cả khi vừa mới đi vệ sinh xong, vẫn lại muốn đi ngay lập tức.",MACHINE_DRAFT_UNREVIEWED,
+トイレに行った直後でもすぐに行きたくなる","Tăng tác dụng lợi tiểu Ngay cả khi vừa mới đi vệ sinh xong, cũng lại muốn đi ngay lập tức.",MACHINE_DRAFT_UNREVIEWED,
 B102,database,1,data/Items.json/22/name,---素材１,---Nguyên liệu 1,MACHINE_DRAFT_UNREVIEWED,
 B103,database,8,data/Items.json/23/description,"何らかの裸石から欠け落ちたもの
-微かに光を放っている……","Mảnh vỡ từ một loại đá quý nào đó.
-Nó đang phát ra một chút ánh sáng……",MACHINE_DRAFT_UNREVIEWED,
+微かに光を放っている……",Một mảnh vỡ từ một loại đá quý nào đó đang phát ra ánh sáng yếu ớt……,MACHINE_DRAFT_UNREVIEWED,
 B104,database,1,data/Items.json/23/name,裸石の欠片【青】,Mảnh đá thô [Màu xanh dương],MACHINE_DRAFT_UNREVIEWED,
 B105,database,1,data/Items.json/24/name,裸石の欠片【赤】,Mảnh đá thô [Màu đỏ],MACHINE_DRAFT_UNREVIEWED,
 B106,database,1,data/Items.json/25/name,裸石の欠片【緑】,Mảnh đá thô [Màu xanh lá],MACHINE_DRAFT_UNREVIEWED,
@@ -275,16 +257,13 @@ B218,database,1,data/Items.json/373/name,必殺,Tuyệt chiêu,MACHINE_DRAFT_UNR
 B219,database,1,data/Items.json/374/name,パッシブ,Thụ động,MACHINE_DRAFT_UNREVIEWED,
 B220,database,1,data/Items.json/380/name,---素材２,--- Nguyên liệu 2,MACHINE_DRAFT_UNREVIEWED,
 B221,database,1,data/Items.json/381/description,"開発のベースとなる素材
-【main】カテゴリの開発で使用する","Nguyên liệu làm nền tảng cho việc phát triển
-【main】 Được sử dụng để phát triển danh mục",MACHINE_DRAFT_UNREVIEWED,
+【main】カテゴリの開発で使用する",Nguyên liệu làm nền tảng cho việc phát triển Sử dụng trong việc phát triển danh mục 【main】,MACHINE_DRAFT_UNREVIEWED,
 B222,database,1,data/Items.json/381/name,イミテーションベース-α,Vật liệu cơ sở giả - α,MACHINE_DRAFT_UNREVIEWED,
 B223,database,1,data/Items.json/382/description,"開発のベースとなる素材
-【body】【legs】カテゴリの開発で使用する","Vật liệu làm cơ sở cho việc phát triển
-Sử dụng trong phát triển các danh mục 【body】【legs】",MACHINE_DRAFT_UNREVIEWED,
+【body】【legs】カテゴリの開発で使用する",Nguyên liệu làm nền tảng cho việc phát triển Được sử dụng trong việc phát triển các danh mục 【body】【legs】,MACHINE_DRAFT_UNREVIEWED,
 B224,database,1,data/Items.json/382/name,イミテーションベース-β,Vật liệu cơ sở giả - β,MACHINE_DRAFT_UNREVIEWED,
 B225,database,1,data/Items.json/383/description,"開発のベースとなる素材
-【slot1】【slot2】カテゴリの開発で使用する","Nguyên liệu làm nền tảng cho quá trình phát triển
-Sử dụng trong phát triển các danh mục 【slot1】【slot2】",MACHINE_DRAFT_UNREVIEWED,
+【slot1】【slot2】カテゴリの開発で使用する",Vật liệu làm nền tảng cho việc phát triển Được sử dụng trong việc phát triển các danh mục 【slot1】【slot2】,MACHINE_DRAFT_UNREVIEWED,
 B226,database,1,data/Items.json/383/name,イミテーションベース-γ,Vật liệu cơ sở giả - γ,MACHINE_DRAFT_UNREVIEWED,
 B227,database,1,data/Items.json/394/name,---開発画面用,--- Dùng cho màn hình phát triển,MACHINE_DRAFT_UNREVIEWED,
 B228,database,5,data/Items.json/395/description,開発したい項目を選択してください,Vui lòng chọn mục bạn muốn phát triển,MACHINE_DRAFT_UNREVIEWED,
@@ -300,8 +279,7 @@ B237,database,1,data/Items.json/408/name,繁華街までお使い２,Chạy vi�
 B238,database,2,data/Items.json/409/name,商店街の怪人,Kẻ kỳ lạ ở khu phố mua sắm,MACHINE_DRAFT_UNREVIEWED,
 B239,database,1,data/Items.json/450/name,---開発レシピslot2,--- Công thức phát triển ô 2,MACHINE_DRAFT_UNREVIEWED,
 B240,database,12,data/Items.json/451/description,"コアとセットで真価を発揮する
-対応コア：","Phát huy giá trị thực khi kết hợp với lõi
-Lõi tương thích:",MACHINE_DRAFT_UNREVIEWED,
+対応コア：",Lõi tương ứng phát huy giá trị thực khi kết hợp với lõi:,MACHINE_DRAFT_UNREVIEWED,
 B241,database,2,data/Items.json/451/name,拡張リング【攻撃】,Vòng mở rộng [Tấn công],MACHINE_DRAFT_UNREVIEWED,
 B242,database,2,data/Items.json/452/name,拡張リング【防御】,Vòng mở rộng [Phòng thủ],MACHINE_DRAFT_UNREVIEWED,
 B243,database,2,data/Items.json/453/name,拡張リング【精神】,Vòng mở rộng [Tinh thần],MACHINE_DRAFT_UNREVIEWED,
@@ -313,30 +291,24 @@ năng lực của {0}",MACHINE_DRAFT_UNREVIEWED,
 B247,database,2,data/Items.json/481/name,試作コア,Lõi thử nghiệm,MACHINE_DRAFT_UNREVIEWED,
 B248,database,1,data/Items.json/492/name,---開発レシピlegs,--- Công thức chế tạo chân,MACHINE_DRAFT_UNREVIEWED,
 B249,database,2,data/Items.json/493/description,"{0}クロスの補助装具
-オプション内容【スカートのみ】","Thiết bị hỗ trợ cho {0} Cross
-Nội dung tùy chọn [Chỉ váy]",MACHINE_DRAFT_UNREVIEWED,
+オプション内容【スカートのみ】",Nội dung tùy chọn trang bị phụ trợ cho Giáp {0} [Chỉ váy],MACHINE_DRAFT_UNREVIEWED,
 B250,database,2,data/Items.json/493/name,レッグユニットS,Bộ phận chân S,MACHINE_DRAFT_UNREVIEWED,
 B251,database,1,data/Items.json/498/name,---開発レシピbody,--- Công thức phát triển thân máy,MACHINE_DRAFT_UNREVIEWED,
 B252,database,2,data/Items.json/499/description,"基本性能がわずかに向上し
-ターン終了時にHPが少し回復する","Hiệu suất cơ bản được cải thiện một chút
-HP được hồi phục một chút khi kết thúc lượt",MACHINE_DRAFT_UNREVIEWED,
+ターン終了時にHPが少し回復する",Thông số cơ bản được tăng nhẹ và HP được hồi phục một chút khi kết thúc lượt,MACHINE_DRAFT_UNREVIEWED,
 B253,database,2,data/Items.json/499/name,{0}クロス改,{0} Thánh Y cải tiến,MACHINE_DRAFT_UNREVIEWED,
 B254,database,1,data/Items.json/510/name,---開発レシピmain,--- Công thức chế tạo chính,MACHINE_DRAFT_UNREVIEWED,
 B255,database,2,data/Items.json/511/description,"{0}が扱う蒼剣
-輝きが少し増している","Thanh kiếm xanh lam mà {0} sử dụng
-Sự lấp lánh đã tăng lên một chút",MACHINE_DRAFT_UNREVIEWED,
+輝きが少し増している",Ánh sáng của thanh kiếm xanh mà {0} sử dụng đã tăng lên một chút.,MACHINE_DRAFT_UNREVIEWED,
 B256,database,2,data/Items.json/511/name,{0}の光剣,Thanh kiếm ánh sáng của {0},MACHINE_DRAFT_UNREVIEWED,
 B257,database,1,data/Weapons.json/1/description,{0}が扱う蒼剣,Thanh kiếm xanh lam mà {0} sử dụng,MACHINE_DRAFT_UNREVIEWED,
 B258,database,1,data/Weapons.json/1/name,{0}の剣,Thanh kiếm của {0},MACHINE_DRAFT_UNREVIEWED,
 B259,database,1,data/Weapons.json/9/description,"{0}が扱う蒼剣
-輝きがさらに増している","Thanh kiếm xanh lam mà {0} sử dụng
-Sự lấp lánh càng thêm tăng lên",MACHINE_DRAFT_UNREVIEWED,
+輝きがさらに増している",Ánh sáng của thanh kiếm xanh mà {0} sử dụng càng thêm rực rỡ.,MACHINE_DRAFT_UNREVIEWED,
 B260,database,1,data/Weapons.json/10/description,"星のような煌きが美しい剣
-戦闘開始時【星彩】効果","Thanh kiếm có ánh sáng lấp lánh đẹp như những vì sao
-Hiệu ứng [Sắc Sao] khi bắt đầu trận chiến",MACHINE_DRAFT_UNREVIEWED,
+戦闘開始時【星彩】効果","Thanh kiếm có ánh sáng lấp lánh như những vì sao, rất đẹp. Hiệu ứng [Ánh sao] khi bắt đầu trận chiến.",MACHINE_DRAFT_UNREVIEWED,
 B261,database,1,data/Weapons.json/11/description,"星剣に改良を加えた蒼い輝きを放つ剣
-戦闘開始時【星彩】【燐光】効果","Thanh kiếm tỏa ra ánh sáng xanh, được cải tiến từ Kiếm Sao.
-Hiệu ứng [Sắc sao] [Ánh sáng lân tinh] khi bắt đầu trận chiến",MACHINE_DRAFT_UNREVIEWED,
+戦闘開始時【星彩】【燐光】効果",Thanh kiếm phát ra ánh sáng xanh được cải tiến từ Thanh kiếm sao. Hiệu ứng [Ánh sao][Ánh sáng lân tinh] khi bắt đầu trận chiến,MACHINE_DRAFT_UNREVIEWED,
 B262,database,1,data/Weapons.json/12/description,"エンドライトの最終形。
 戦闘開始時【星彩】【燐光】【強化】効果","Dạng cuối cùng của Endlight.
 Hiệu ứng [Sắc sao][Lân quang][Cường hóa] khi bắt đầu trận chiến",MACHINE_DRAFT_UNREVIEWED,
@@ -344,34 +316,26 @@ B263,database,1,data/Armors.json/10/name,-----パッシブ用,-----Dành cho k�
 B264,database,1,data/Armors.json/13/name,SP性能アップ,Tăng hiệu suất SP,MACHINE_DRAFT_UNREVIEWED,
 B265,database,1,data/Armors.json/14/name,先制・不意打ちボーナス,Thưởng tấn công phủ đầu/tấn công bất ngờ,MACHINE_DRAFT_UNREVIEWED,
 B266,database,2,data/Armors.json/31/description,"受けたダメージの80%をAPが肩代わりし
-被ダメージの上限を最大APの10%にする","AP gánh thay 80% sát thương phải chịu
-Giới hạn sát thương phải chịu là 10% AP tối đa",MACHINE_DRAFT_UNREVIEWED,
+被ダメージの上限を最大APの10%にする",AP sẽ gánh thay 80% sát thương phải chịu và giới hạn sát thương phải chịu là 10% AP tối đa,MACHINE_DRAFT_UNREVIEWED,
 B267,database,2,data/Armors.json/31/name,{0}クロス,{0} Cross,MACHINE_DRAFT_UNREVIEWED,
 B268,database,1,data/Armors.json/41/description,"{0}クロスの補助装具
-オプション内容【フルセット】","Thiết bị hỗ trợ cho {0} Cross
-Nội dung tùy chọn [Bộ đầy đủ]",MACHINE_DRAFT_UNREVIEWED,
+オプション内容【フルセット】",Nội dung tùy chọn trang bị phụ trợ của {0} Cross [Bộ đầy đủ],MACHINE_DRAFT_UNREVIEWED,
 B269,database,1,data/Armors.json/41/name,レッグユニットF,Bộ phận chân F,MACHINE_DRAFT_UNREVIEWED,
 B270,database,1,data/Armors.json/43/description,"{0}クロスの補助装具
-オプション内容【タイツのみ】","Thiết bị hỗ trợ cho {0} Giáp vải
-Nội dung tùy chọn [Chỉ quần tất]",MACHINE_DRAFT_UNREVIEWED,
+オプション内容【タイツのみ】",Nội dung tùy chọn trang bị phụ trợ của {0} Cross 【Chỉ có quần tất】,MACHINE_DRAFT_UNREVIEWED,
 B271,database,1,data/Armors.json/52/description,試作コアの改良型,Phiên bản cải tiến của lõi nguyên mẫu,MACHINE_DRAFT_UNREVIEWED,
 B272,database,1,data/Armors.json/60/description,{0}用に調整されたコア,Lõi được điều chỉnh cho {0},MACHINE_DRAFT_UNREVIEWED,
 B273,database,1,data/Armors.json/64/description,"破損していて使い物にならない
-どのチップも効果を発揮しない","Bị hỏng và không thể sử dụng được
-Không có chip nào phát huy được hiệu quả",MACHINE_DRAFT_UNREVIEWED,
+どのチップも効果を発揮しない",Bị hỏng và không thể sử dụng được. Không có chip nào phát huy được hiệu quả.,MACHINE_DRAFT_UNREVIEWED,
 B274,database,1,data/Armors.json/65/description,怪人用に調整されたコア,Lõi được điều chỉnh cho quái nhân,MACHINE_DRAFT_UNREVIEWED,
 B275,database,1,data/Armors.json/66/description,"攻撃性能だけをつきつめた
-危険なコア","Lõi nguy hiểm chỉ tập trung vào
-khả năng tấn công",MACHINE_DRAFT_UNREVIEWED,
+危険なコア",Lõi nguy hiểm chỉ tập trung vào khả năng tấn công,MACHINE_DRAFT_UNREVIEWED,
 B276,database,1,data/Armors.json/69/description,"マーヤーラボが開発した
-最高傑作のコア","Được phát triển bởi Phòng thí nghiệm Maya
-Lõi tuyệt tác nhất",MACHINE_DRAFT_UNREVIEWED,
+最高傑作のコア",Lõi tuyệt tác nhất do Phòng thí nghiệm Maya phát triển,MACHINE_DRAFT_UNREVIEWED,
 B277,database,3,data/Armors.json/75/description,"コアとセットで真価を発揮する
-対応コア：【蒼星】","Phát huy giá trị thực khi kết hợp với lõi
-Lõi tương thích: [Tinh tú Lam]",MACHINE_DRAFT_UNREVIEWED,
+対応コア：【蒼星】",Lõi tương thích phát huy giá trị thực khi kết hợp với lõi: [Tinh tú Lam],MACHINE_DRAFT_UNREVIEWED,
 B278,database,1,data/Armors.json/78/description,"コアとセットで真価を発揮する
-対応コア：【怪人】","Phát huy giá trị thực khi kết hợp với lõi
-Lõi tương thích: [Quái nhân]",MACHINE_DRAFT_UNREVIEWED,
+対応コア：【怪人】",Lõi tương thích phát huy giá trị thực khi kết hợp với lõi: [Kẻ lạ],MACHINE_DRAFT_UNREVIEWED,
 B279,database,2,data/Enemies.json/1/name,結社の怪人,Quái nhân của Hội,MACHINE_DRAFT_UNREVIEWED,
 B280,database,1,data/Enemies.json/2/name,BMS工作員,Điệp viên BMS,MACHINE_DRAFT_UNREVIEWED,
 B281,database,10,data/Enemies.json/3/name,BMS下級戦闘員,Chiến binh cấp thấp của BMS,MACHINE_DRAFT_UNREVIEWED,
@@ -511,8 +475,8 @@ Hãy thử sử dụng khi bạn muốn đến một nơi nào đó.",MACHINE_DR
 P29,plugin_text,2,data/CommonEvents.json/30/list/37/parameters/3/text,"痴漢に遭った回数{0}{1}＋１
 {2}お尻{3}{4}＋２{5}{6}最近したＨなこと{7}
 満員電車で痴漢にお尻を触られた","Số lần bị sàm sỡ{0}{1}+1
-{2}Mông{3}{4}+2{5}{6}Những việc liên quan đến tình dục đã làm gần đây{7}
-Bị kẻ sàm sỡ chạm vào mông trên chuyến tàu đông đúc",MACHINE_DRAFT_UNREVIEWED,
+{2}Mông{3}{4}+2{5}{6}Hành vi khiêu dâm gần đây{7}
+Bị kẻ sàm sỡ sờ mông trên tàu điện chật cứng",MACHINE_DRAFT_UNREVIEWED,
 P30,plugin_text,1,data/CommonEvents.json/51/list/90/parameters/3/text,下着を着用していません,Không mặc đồ lót,MACHINE_DRAFT_UNREVIEWED,
 P31,plugin_text,1,data/CommonEvents.json/71/list/64/parameters/3/text,水着を着用していません,Tôi không mặc đồ bơi.,MACHINE_DRAFT_UNREVIEWED,
 P32,plugin_text,2,data/CommonEvents.json/102/list/574/parameters/3/text,{0}は衣服の乱れを直した,{0} đã chỉnh lại quần áo bị xộc xệch,MACHINE_DRAFT_UNREVIEWED,
@@ -522,8 +486,7 @@ P34,plugin_text,1,data/CommonEvents.json/103/list/43/parameters/3/text,不意を
 C1,choices,1,data/CommonEvents.json/145/list/4/parameters/0/0,使用する,Sử dụng,MACHINE_DRAFT_UNREVIEWED,
 C2,choices,1,data/CommonEvents.json/145/list/4/parameters/0/1,使用しない,Không sử dụng,MACHINE_DRAFT_UNREVIEWED,
 D3,dialogue,1,data/CommonEvents.json/178/list/7,"く……っ
-（油断した……いったん退こう）","Chết tiệt……Hừ
-(Đã lơ là...Tạm thời rút lui thôi)",MACHINE_DRAFT_UNREVIEWED,
+（油断した……いったん退こう）",Hừ……Hừ (Mình đã bất cẩn……Tạm thời rút lui đã),MACHINE_DRAFT_UNREVIEWED,
 D4,dialogue,7,data/CommonEvents.json/181/list/12,コード：{0}――起動！,Mã: {0}――Kích hoạt!,MACHINE_DRAFT_UNREVIEWED,
 P35,plugin_text,1,data/CommonEvents.json/201/list/6/parameters/3/message,拘束ゲージが１上昇した。,Thanh trói buộc tăng 1 bậc.,MACHINE_DRAFT_UNREVIEWED,
 P36,plugin_text,1,data/CommonEvents.json/203/list/27/parameters/3/message,拘束を解くことに成功した！,Đã giải phóng thành công khỏi trạng thái bị trói buộc!,MACHINE_DRAFT_UNREVIEWED,
@@ -535,33 +498,33 @@ P41,plugin_text,1,data/CommonEvents.json/242/list/12/parameters/3/message,感情
 P42,plugin_text,3,data/CommonEvents.json/242/list/20/parameters/3/message,は様子を見ている。,đang quan sát tình hình.,MACHINE_DRAFT_UNREVIEWED,
 P43,plugin_text,2,data/CommonEvents.json/243/list/21/parameters/3/message,たちから視線を感じる。,Tôi cảm nhận được ánh mắt của mọi người.,MACHINE_DRAFT_UNREVIEWED,
 P44,plugin_text,1,data/CommonEvents.json/243/list/31/parameters/3/message,"胸を見られている……{0}
-　{1}感情値：{2}羞恥心＋","Họ đang nhìn vào ngực tôi……{0}
-　{1}Giá trị cảm xúc: {2}Tâm lý xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
+　{1}感情値：{2}羞恥心＋","Bị nhìn ngực……{0}
+　{1}Điểm cảm xúc: {2}Xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
 P45,plugin_text,1,data/CommonEvents.json/243/list/55/parameters/3/message,"股間部を見られている……{0}
-　{1}感情値：{2}羞恥心＋","Họ đang nhìn vào vùng kín của tôi……{0}
-　{1}Điểm cảm xúc: {2}Cảm giác xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
+　{1}感情値：{2}羞恥心＋","Bị nhìn vào vùng kín……{0}
+　{1}Điểm cảm xúc: {2}Xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
 P46,plugin_text,1,data/CommonEvents.json/244/list/18/parameters/3/message,怪人が胸を触ってきた……！,Kẻ lạ mặt đã sờ vào ngực tôi……!,MACHINE_DRAFT_UNREVIEWED,
 P47,plugin_text,1,data/CommonEvents.json/244/list/28/parameters/3/message,"{0}
 　「っく…………」
 　{1}感情値：{2}羞恥心＋","{0}
-　「Hứ…………」
-　{1}Điểm cảm xúc: {2}Cảm giác xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
+　「Hức…………」
+　{1}Điểm cảm xúc: {2}Xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
 P48,plugin_text,1,data/CommonEvents.json/244/list/47/parameters/3/message,怪人が陰部を触ってきた……！,Tên quái nhân đã chạm vào bộ phận kín của tôi...!,MACHINE_DRAFT_UNREVIEWED,
 P49,plugin_text,1,data/CommonEvents.json/244/list/57/parameters/3/message,"{0}
 　「ッ…………！」
 　{1}感情値：{2}羞恥心＋","{0}
-　「Hứ…………！」
-　{1}Điểm cảm xúc: {2}Cảm giác xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
+　「Hự…………!」
+　{1}Điểm cảm xúc: {2}Xấu hổ +",MACHINE_DRAFT_UNREVIEWED,
 P50,plugin_text,1,data/CommonEvents.json/244/list/71/parameters/3/message,"{0}
 　「この……っ！　はなれて……！」","{0}
-　「Cái tên……Hứ!　Tránh ra……!”",MACHINE_DRAFT_UNREVIEWED,
+　「Đồ…… khốn! Buông ra……!」",MACHINE_DRAFT_UNREVIEWED,
 P51,plugin_text,1,data/CommonEvents.json/244/list/90/parameters/3/message,"怪人の手をふりほどいた。{0}
-　{1}拘束ゲージ-2","Tôi gạt tay của tên quái nhân ra. {0}
+　{1}拘束ゲージ-2","Đã gạt được tay của quái nhân ra.{0}
 　{1}Thanh trói buộc -2",MACHINE_DRAFT_UNREVIEWED,
 P52,plugin_text,1,data/CommonEvents.json/244/list/98/parameters/3/message,さらに拘束を解くことに成功した！,Bạn đã thành công trong việc cởi trói thêm lần nữa!,MACHINE_DRAFT_UNREVIEWED,
 P53,plugin_text,1,data/CommonEvents.json/401/list/5/parameters/3/text,"淫乱度{0}{1}＋１{2}{3}最近したＨなこと{4}
-怪人から恥辱を受けた","Mức độ dâm đãng {0}{1}+1{2}{3}Những việc ""đen tối"" đã làm gần đây{4}
-Tôi bị tên quái nhân làm nhục",MACHINE_DRAFT_UNREVIEWED,
+怪人から恥辱を受けた","Mức độ dâm đãng{0}{1}+1{2}{3}Hành vi khiêu dâm gần đây{4}
+Bị quái nhân làm nhục",MACHINE_DRAFT_UNREVIEWED,
 P54,plugin_text,5,data/Troops.json/2/pages/1/list/8/parameters/3/message,不意打ち！,Tấn công bất ngờ!,MACHINE_DRAFT_UNREVIEWED,
 P55,plugin_text,1,data/Troops.json/3/pages/1/list/0/parameters/3/message,敵の増援が{0}を取り囲んでいる……！,Quân tiếp viện của địch đang bao vây {0}……!,MACHINE_DRAFT_UNREVIEWED,
 P56,plugin_text,2,data/Troops.json/3/pages/1/list/5/parameters/3/message,敵勢力が上昇した！【０→２】,Sức mạnh của kẻ địch đã tăng lên!【0→2】,MACHINE_DRAFT_UNREVIEWED,
@@ -598,8 +561,7 @@ D18,dialogue,1,data/Map004.json/events/5/pages/0/list/36,"さぁな。
 そんなことより、このデバイスを使って誰かを“変身”させてみたいと思わないか？","Chà, tôi cũng không biết nữa.
 Thôi bỏ qua chuyện đó đi, cậu có muốn dùng thiết bị này để ""biến hình"" cho ai đó không?",MACHINE_DRAFT_UNREVIEWED,
 D19,dialogue,1,data/Map004.json/events/5/pages/0/list/40,"そりゃ見たいけどさ、コランダライズテックの変身グッズって
-実際の身体データがいるし、まずはそれをどうや――あっ！　ひょっとして……？","Tất nhiên là tôi muốn xem rồi, nhưng đồ biến hình của Corandarize Tech
-Cần có dữ liệu cơ thể thực tế, và trước tiên phải làm thế nào để――Á!　Chẳng lẽ là……?",MACHINE_DRAFT_UNREVIEWED,
+実際の身体データがいるし、まずはそれをどうや――あっ！　ひょっとして……？","Tất nhiên là tôi muốn xem rồi, nhưng đồ biến hình của Công nghệ Corandarize cần có dữ liệu cơ thể thực tế, trước tiên phải làm thế nào để――Á!　Chẳng lẽ là……?",MACHINE_DRAFT_UNREVIEWED,
 D20,dialogue,1,data/Map004.json/events/5/pages/0/list/43,"……その通り。
 女子の身体データを収集するにはうってつけの日だと思わないか？","……Đúng vậy.
 Cậu không nghĩ đây là một ngày hoàn hảo để thu thập dữ liệu cơ thể của các bạn nữ sao?",MACHINE_DRAFT_UNREVIEWED,
@@ -616,19 +578,16 @@ D24,dialogue,1,data/Map006.json/events/8/pages/0/list/2,"はぁ……
 身体測定なんて必要か？","Haizz……
 Có cần thiết phải đo kiểm tra sức khỏe không?",MACHINE_DRAFT_UNREVIEWED,
 D25,dialogue,2,data/Map006.json/events/13/pages/1/list/6,"女子の測定って
-いい匂いしそうだよな～。","Đo của các bạn nữ
-Chắc là có mùi thơm lắm nhỉ～。",MACHINE_DRAFT_UNREVIEWED,
+いい匂いしそうだよな～。",Chắc là việc đo lường của các bạn nữ sẽ có mùi thơm lắm nhỉ～。,MACHINE_DRAFT_UNREVIEWED,
 D26,dialogue,2,data/Map006.json/events/13/pages/1/list/13,"それ制汗スプレーの
-匂いじゃない？","Đó là mùi của xịt khử mùi
-không phải là mùi của xịt khử mùi đó sao?",MACHINE_DRAFT_UNREVIEWED,
+匂いじゃない？",Đó không phải là mùi của xịt khử mùi sao?,MACHINE_DRAFT_UNREVIEWED,
 N2,speaker,5,data/Map006.json/events/19/pages/0/list/6/parameters/4,担任の教師,Giáo viên chủ nhiệm,MACHINE_DRAFT_UNREVIEWED,
 D27,dialogue,1,data/Map006.json/events/19/pages/0/list/7,はーい、それではホームルームを始めまーす。,"Vâng, vậy là chúng ta bắt đầu tiết sinh hoạt lớp nhé.",MACHINE_DRAFT_UNREVIEWED,
 D28,dialogue,1,data/Map006.json/events/19/pages/0/list/9,"今日は全学年、身体測定ね。
 事前にグループ分けした通り、各自指定の場所で測定を受けること。","Hôm nay, tất cả các khối sẽ tiến hành đo kiểm tra sức khỏe.
 Theo như đã phân nhóm trước, mỗi bạn sẽ được đo tại địa điểm được chỉ định.",MACHINE_DRAFT_UNREVIEWED,
 D29,dialogue,1,data/Map006.json/events/19/pages/0/list/12,"で、今年は２年が最初に測定するみたいだから
-ホームルームが終わったらすぐ移動するように。","Và năm nay, có vẻ như khối 10 sẽ được đo đầu tiên,
-Vậy nên ngay sau khi tiết sinh hoạt lớp kết thúc, các em hãy di chuyển ngay nhé.",MACHINE_DRAFT_UNREVIEWED,
+ホームルームが終わったらすぐ移動するように。","Và, có vẻ như năm nay khối 10 sẽ được đo đầu tiên, nên các em hãy di chuyển ngay sau khi tiết sinh hoạt lớp kết thúc nhé.",MACHINE_DRAFT_UNREVIEWED,
 D30,dialogue,1,data/Map006.json/events/20/pages/0/list/4,なあ{0}、はやくいこーぜ。,"Này {0}, đi thôi nào.",MACHINE_DRAFT_UNREVIEWED,
 D31,dialogue,1,data/Map006.json/events/21/pages/0/list/7,"うちらって確か保健室で測定だったよね。
 行こっか。","Hình như bọn mình được đo ở phòng y tế phải không nhỉ.
@@ -644,14 +603,12 @@ D35,dialogue,1,data/Map006.json/events/25/pages/0/list/2,ほら、急いで移�
 D36,dialogue,1,data/Map007.json/events/3/pages/0/list/2,はっ！　たぁッ！！,Hả!　Hừm!!,MACHINE_DRAFT_UNREVIEWED,
 M4,map_display_name,2,data/Map008.json/displayName,蒼晶学園前,Trước Học viện Sōshō,MACHINE_DRAFT_UNREVIEWED,
 D37,dialogue,1,data/Map008.json/events/6/pages/0/list/2,"怪人のウワサって
-本当なのかしら。","Tin đồn về quái nhân
-Liệu có phải là sự thật không nhỉ.",MACHINE_DRAFT_UNREVIEWED,
+本当なのかしら。",Liệu tin đồn về quái nhân có phải là sự thật không nhỉ?,MACHINE_DRAFT_UNREVIEWED,
 D38,dialogue,1,data/Map008.json/events/7/pages/0/list/2,"親の車を待ってるの。
 最近物騒だしね。","Tôi đang đợi xe của ba mẹ.
 Gần đây tình hình hơi bất ổn.",MACHINE_DRAFT_UNREVIEWED,
 D39,dialogue,2,data/Map008.json/events/8/pages/0/list/6,"なんか新しい先生
-来るらしいぜ。","Hình như có một giáo viên mới
-Hình như sắp đến rồi.",MACHINE_DRAFT_UNREVIEWED,
+来るらしいぜ。",Hình như có một giáo viên mới sắp đến.,MACHINE_DRAFT_UNREVIEWED,
 D40,dialogue,2,data/Map008.json/events/8/pages/0/list/13,"へー。
 いつから？","Ồ.
 Từ khi nào vậy?",MACHINE_DRAFT_UNREVIEWED,
@@ -687,15 +644,13 @@ D54,dialogue,2,data/Map010.json/events/12/pages/0/list/37,きっとこの先だ�
 D55,dialogue,4,data/Map010.json/events/13/pages/0/list/6,鍵がかかっている……,Cửa bị khóa......,MACHINE_DRAFT_UNREVIEWED,
 D56,dialogue,1,data/Map010.json/events/14/pages/0/list/33,"変身バンクはオプション項目より以下の設定が可能です
 【すべて見る】【決めポーズのみ】【エフェクトのみ】
-{0}※スキップしたい場合、エフェクトのみを選択してください","Có thể thực hiện các cài đặt sau đây cho phần biến hình từ các mục tùy chọn.
-【Xem tất cả】【Chỉ tư thế đặc trưng】【Chỉ hiệu ứng】
+{0}※スキップしたい場合、エフェクトのみを選択してください","Từ các mục tùy chọn của ngân hàng biến hình, bạn có thể thực hiện các cài đặt sau đây: [Xem tất cả] [Chỉ tư thế đặc trưng] [Chỉ hiệu ứng]
 {0}※Nếu bạn muốn bỏ qua, vui lòng chỉ chọn hiệu ứng.",MACHINE_DRAFT_UNREVIEWED,
 D57,dialogue,2,data/Map011.json/events/2/pages/0/list/2,"ここって女子が多いでしょ？
 だから私なんか見向きもされなくて。","Ở đây có nhiều bạn nữ lắm phải không?
 Vì vậy, người ta không thèm để ý đến tôi.",MACHINE_DRAFT_UNREVIEWED,
 D58,dialogue,1,data/Map011.json/events/3/pages/0/list/12,"……こちら“丸刈り”
-ターゲットはまだ現れていません。","……Đây là “Cắt trọc”
-Mục tiêu vẫn chưa xuất hiện.",MACHINE_DRAFT_UNREVIEWED,
+ターゲットはまだ現れていません。",……Mục tiêu “cạo trọc” ở đây vẫn chưa xuất hiện.,MACHINE_DRAFT_UNREVIEWED,
 D59,dialogue,1,data/Map011.json/events/3/pages/0/list/15,"焦るな新入生。
 必ずターゲットの“{0}”は現れる。","Đừng vội vàng, tân sinh viên.
 Chắc chắn mục tiêu ""{0}"" sẽ xuất hiện.",MACHINE_DRAFT_UNREVIEWED,
@@ -721,15 +676,13 @@ D69,dialogue,1,data/Map011.json/events/3/pages/0/list/82,"よし。
 ターゲットの測定データを聞き逃すなよ。","Được rồi.
 Đừng bỏ lỡ dữ liệu đo của mục tiêu nhé.",MACHINE_DRAFT_UNREVIEWED,
 D70,dialogue,1,data/Map011.json/events/3/pages/0/list/88,"機械が三人の身体データを測定し始めると同時に
-三人は他の生徒たちから羨望の眼差しを向けられる。","Ngay khi máy bắt đầu đo dữ liệu cơ thể của ba người,
-Cả ba người đều nhận được những ánh mắt ghen tị từ các học sinh khác.",MACHINE_DRAFT_UNREVIEWED,
+三人は他の生徒たちから羨望の眼差しを向けられる。","Ngay khi chiếc máy bắt đầu đo dữ liệu cơ thể của ba người, cả ba đều nhận được những ánh mắt ghen tị từ các học sinh khác.",MACHINE_DRAFT_UNREVIEWED,
 D71,dialogue,1,data/Map011.json/events/3/pages/0/list/91,"そして……
 それは息を潜め、覗き魔と化している{0}にとっても同じことだった。","Và rồi……
 Điều đó cũng tương tự với {0}, người đang nín thở và biến thành một kẻ dòm ngó.",MACHINE_DRAFT_UNREVIEWED,
 D72,dialogue,1,data/Map011.json/events/3/pages/0/list/94,三人ともおっぱい大きいなぁ……,Cả ba đều có bộ ngực lớn thật đấy……,MACHINE_DRAFT_UNREVIEWED,
 D73,dialogue,1,data/Map011.json/events/3/pages/0/list/96,"目と鼻の先にいる三人の下着姿に釘付けになっている{0}は
-無意識に前のめりになっていることに気がつかない。","{0} đang dán mắt vào bộ đồ lót của ba người ở ngay trước mặt,
-Cậu không nhận ra rằng mình đang vô thức nghiêng người về phía trước.",MACHINE_DRAFT_UNREVIEWED,
+無意識に前のめりになっていることに気がつかない。","{0} đang dán mắt vào ba người mặc đồ lót ở ngay trước mặt, không hề nhận ra rằng mình đang vô thức nghiêng người về phía trước.",MACHINE_DRAFT_UNREVIEWED,
 D74,dialogue,1,data/Map011.json/events/3/pages/0/list/99,"…………
 （やっぱ誰かいるよな……？）","…………
 (Chắc chắn là có ai đó ở đây nhỉ……?)",MACHINE_DRAFT_UNREVIEWED,
@@ -737,8 +690,7 @@ D75,dialogue,1,data/Map011.json/events/3/pages/0/list/102,"カーテンのわず
 しかし、今は動くわけにもいかず様子を伺うことしか出来ない。","Tôi cảm thấy có ánh mắt đang nhìn về phía mình qua khe hở nhỏ của tấm rèm.
 Tuy nhiên, bây giờ tôi không thể cử động, nên chỉ có thể quan sát tình hình.",MACHINE_DRAFT_UNREVIEWED,
 D76,dialogue,1,data/Map011.json/events/3/pages/0/list/105,"はい次、神代さんの身長は――160cm
-それから体重は――","Vâng, tiếp theo, chiều cao của Kamishiro-san là――160cm
-Sau đó là cân nặng――",MACHINE_DRAFT_UNREVIEWED,
+それから体重は――","Vâng, tiếp theo, chiều cao của Kamishiro-san là――160cm, còn cân nặng là――",MACHINE_DRAFT_UNREVIEWED,
 D77,dialogue,1,data/Map011.json/events/3/pages/0/list/110,"そうしている間にも測定は滞りなく進み……
 三人の測定は無事終了した。","Trong khi đó, việc đo đạc vẫn diễn ra suôn sẻ……
 Việc đo ba người đã kết thúc suôn sẻ.",MACHINE_DRAFT_UNREVIEWED,
@@ -761,11 +713,9 @@ D86,dialogue,1,data/Map013.json/events/3/pages/0/list/5,"（二人とも帰り�
 あの後ろ姿は……！）","(Cả hai đều về nhà muộn quá nhỉ……Hôm nay đành bỏ cuộc và về nhà vậy――hả?
 Cái bóng lưng đó là……!)",MACHINE_DRAFT_UNREVIEWED,
 D87,dialogue,1,data/Map013.json/events/4/pages/0/list/3,"先にコンビニでアイスを
-買っていこう。","Trước tiên, tôi sẽ ghé cửa hàng tiện lợi để mua kem.
-rồi về nhà thôi.",MACHINE_DRAFT_UNREVIEWED,
+買っていこう。","Trước tiên, hãy ghé cửa hàng tiện lợi mua kem đã.",MACHINE_DRAFT_UNREVIEWED,
 D88,dialogue,6,data/Map013.json/events/6/pages/0/list/3,"今日はもう外へ行くのは
-やめておこう。","Hôm nay thì thôi không ra ngoài nữa
-thôi vậy.",MACHINE_DRAFT_UNREVIEWED,
+やめておこう。",Hôm nay thôi không ra ngoài nữa.,MACHINE_DRAFT_UNREVIEWED,
 D89,dialogue,1,data/Map013.json/events/9/pages/0/list/4,"（最近、あの扉の向こうに立ち寄ってるみたいだけど……
 一体なにをしてるんだろう）","(Gần đây, hình như anh ấy có ghé qua phía bên kia cánh cửa đó……
 Rốt cuộc là anh ấy đang làm gì vậy nhỉ)",MACHINE_DRAFT_UNREVIEWED,
@@ -779,11 +729,11 @@ P62,plugin_text,1,data/Map015.json/events/13/pages/0/list/22/parameters/3/text,"
 人当たりが良い。
 そのため意外と教師たちからの評価も
 悪くない様子。{3}頻繁に“パパ”のことを話す。","{0}　Không còn trinh{1}Cao 158cm, nặng 55kg
-Vòng 1 100, vòng eo 60, vòng mông 91{2}Câu lạc bộ về nhà.
-Có quan hệ bạn bè với cả nam lẫn nữ
-Hòa đồng với mọi người.
-Vì vậy, thật bất ngờ là đánh giá của các giáo viên về em ấy
-cũng không tệ. {3}Thường xuyên nhắc đến “ba”.",MACHINE_DRAFT_UNREVIEWED,
+Vòng 1: 100, vòng eo: 60, vòng 3: 91{2}Không tham gia câu lạc bộ nào.
+Có bạn bè cả nam lẫn nữ,
+rất dễ gần.
+Vì vậy, đánh giá của các giáo viên về cô ấy
+cũng không tệ như người ta nghĩ.{3}Thường xuyên nhắc đến “bố”.",MACHINE_DRAFT_UNREVIEWED,
 D92,dialogue,1,data/Map015.json/events/13/pages/0/list/48,"おはよう。
 二人とも早いね。部活の朝練？","Chào buổi sáng.
 Cả hai đều dậy sớm nhỉ.Luyện tập buổi sáng của câu lạc bộ à?",MACHINE_DRAFT_UNREVIEWED,
@@ -791,11 +741,11 @@ P63,plugin_text,1,data/Map015.json/events/13/pages/0/list/56/parameters/3/text,"
 バスト88、ウエスト55、ヒップ85{3}バレー部に所属。
 {4}とは対照的に交友関係は限定的。
 しかしバレー部の後輩の女子からは
-熱烈に慕われている。{5}年の離れた弟がいる。","{0}　{1} (Izumi Misaki)　Còn trinh{2}Cao 162 cm, nặng 52 kg
-Vòng 1 88, vòng eo 55, vòng 3 85{3}Thuộc câu lạc bộ bóng chuyền.
-Trái ngược với {4}, cô ấy có ít bạn bè.
-Tuy nhiên, cô được các bạn nữ khóa dưới trong câu lạc bộ bóng chuyền
-được các em rất yêu quý. {5}Cô có một người em trai kém mình nhiều tuổi.",MACHINE_DRAFT_UNREVIEWED,
+熱烈に慕われている。{5}年の離れた弟がいる。","{0}　{1} (Izumi Misaki)　Còn trinh{2}Cao 162cm, nặng 52kg
+Vòng 1: 88, vòng eo: 55, vòng 3: 85{3}Thành viên câu lạc bộ bóng chuyền.
+Trái ngược với {4}, cô có ít bạn bè.
+Tuy vậy, cô được các nữ sinh khóa dưới
+trong câu lạc bộ ngưỡng mộ nhiệt thành.{5}Có một em trai kém nhiều tuổi.",MACHINE_DRAFT_UNREVIEWED,
 D93,dialogue,1,data/Map015.json/events/13/pages/0/list/84,みさっちは部活の朝錬だけど、うちは“朝活”みたいな？,"Misa thì có buổi luyện tập buổi sáng của câu lạc bộ, còn tôi thì giống như là “hoạt động buổi sáng” vậy?",MACHINE_DRAFT_UNREVIEWED,
 D94,dialogue,1,data/Map015.json/events/13/pages/0/list/88,……朝活？　それって部活とは違うの？,……Hoạt động buổi sáng?　Nó khác với câu lạc bộ à?,MACHINE_DRAFT_UNREVIEWED,
 D95,dialogue,1,data/Map015.json/events/13/pages/0/list/91,"んん～……って、それよりも今日ってＨＲが終わったら身体測定だよね？
@@ -813,8 +763,7 @@ D99,dialogue,1,data/Map015.json/events/13/pages/0/list/118,"もー♡　みさ�
 À, Aya-chan có việc ở hội học sinh à?　Vậy, lát nữa gặp lại nhé~.",MACHINE_DRAFT_UNREVIEWED,
 D100,dialogue,1,data/Map015.json/events/13/pages/0/list/133,（新しい下着、用意した方がよかったのかな……）,(Có lẽ mình nên chuẩn bị đồ lót mới thì hơn nhỉ……),MACHINE_DRAFT_UNREVIEWED,
 D101,dialogue,7,data/Map015.json/events/14/pages/1/list/3,"この先は男子トイレだから
-行くのはやめよう……","Phía trước là nhà vệ sinh nam nên
-Thôi đừng vào đó……",MACHINE_DRAFT_UNREVIEWED,
+行くのはやめよう……",Phía trước là nhà vệ sinh nam nên thôi đừng vào đó nữa……,MACHINE_DRAFT_UNREVIEWED,
 D102,dialogue,2,data/Map015.json/events/21/pages/0/list/2,モック寄ってく？,Ghé qua quán Mock nhé?,MACHINE_DRAFT_UNREVIEWED,
 D103,dialogue,2,data/Map015.json/events/21/pages/0/list/8,"ん～今日はやめとく。
 体重増えてたし。","Ừm... hôm nay thì thôi vậy.
@@ -834,11 +783,9 @@ M10,map_display_name,1,data/Map016.json/displayName,校舎西1F,"Tòa nhà phía
 M11,map_display_name,1,data/Map017.json/displayName,校舎東1F,"Tòa nhà phía Đông, tầng 1",MACHINE_DRAFT_UNREVIEWED,
 D109,dialogue,1,data/Map017.json/events/16/pages/0/list/2,まだ準備中なの。,Vẫn đang chuẩn bị.,MACHINE_DRAFT_UNREVIEWED,
 D110,dialogue,1,data/Map017.json/events/16/pages/1/list/2,"この時間が青春って
-カンジよねぇ。","Khoảng thời gian này là tuổi trẻ
-Cảm giác là vậy nhỉ.",MACHINE_DRAFT_UNREVIEWED,
+カンジよねぇ。",Khoảnh khắc này cảm giác thật là tuổi trẻ nhỉ.,MACHINE_DRAFT_UNREVIEWED,
 D111,dialogue,1,data/Map017.json/events/17/pages/0/list/2,"エスプレッソってあんなに
-小さいのね……","Espresso nhỏ đến
-nhỏ vậy sao……",MACHINE_DRAFT_UNREVIEWED,
+小さいのね……",Espresso nhỏ như vậy sao……,MACHINE_DRAFT_UNREVIEWED,
 D112,dialogue,2,data/Map017.json/events/17/pages/1/list/6,ここの問題なんだけど……,Đây là bài toán này……,MACHINE_DRAFT_UNREVIEWED,
 D113,dialogue,2,data/Map017.json/events/17/pages/1/list/12,"この公式使うんじゃない？
 ほら……これと同じで――","Không phải là dùng công thức này sao?
@@ -855,11 +802,9 @@ D116,dialogue,2,data/Map019.json/events/9/pages/0/list/6,"ダイヤモンドに�
 なにそれすご。","Ý cô là nó cũng có thể trở thành kim cương sao?
 Cái gì thế, thật tuyệt vời.",MACHINE_DRAFT_UNREVIEWED,
 D117,dialogue,2,data/Map019.json/events/9/pages/0/list/13,"でしょ、今度持ってきて
-見せたげる。","Đúng vậy, lần tới mang nó đến đây
-Tôi sẽ cho bạn xem.",MACHINE_DRAFT_UNREVIEWED,
+見せたげる。","Đúng vậy, lần tới tôi sẽ mang đến cho cô xem.",MACHINE_DRAFT_UNREVIEWED,
 D118,dialogue,2,data/Map019.json/events/11/pages/0/list/6,"子供用の変身グッズとか
-売ってなかったっけ？","Đồ biến hình cho trẻ em chẳng hạn
-Có bán không nhỉ?",MACHINE_DRAFT_UNREVIEWED,
+売ってなかったっけ？",Chẳng phải ở đây có bán đồ chơi hóa trang cho trẻ em sao?,MACHINE_DRAFT_UNREVIEWED,
 D119,dialogue,2,data/Map019.json/events/11/pages/0/list/13,"そうそう！
 でも今は違うんだって。","Đúng vậy!
 Nhưng bây giờ thì khác rồi.",MACHINE_DRAFT_UNREVIEWED,
@@ -874,11 +819,9 @@ Hóa ra là có tên như vậy.",MACHINE_DRAFT_UNREVIEWED,
 M15,map_display_name,2,data/Map021.json/displayName,部室棟1F,"Tòa nhà phòng câu lạc bộ, tầng 1",MACHINE_DRAFT_UNREVIEWED,
 M16,map_display_name,1,data/Map022.json/displayName,校舎南2F,"Tòa nhà phía Nam, tầng 2",MACHINE_DRAFT_UNREVIEWED,
 D123,dialogue,2,data/Map022.json/events/11/pages/0/list/6,"最近家出するコが
-多いんだって。","Gần đây có nhiều đứa
-rất nhiều.",MACHINE_DRAFT_UNREVIEWED,
+多いんだって。",Gần đây có nhiều đứa bỏ nhà ra đi lắm.,MACHINE_DRAFT_UNREVIEWED,
 D124,dialogue,2,data/Map022.json/events/11/pages/0/list/13,"家出じゃなくて
-誘拐だってば。","Không phải là bỏ nhà đi đâu.
-Mà là bị bắt cóc cơ.",MACHINE_DRAFT_UNREVIEWED,
+誘拐だってば。",Đó không phải là bỏ nhà đi mà là bị bắt cóc.,MACHINE_DRAFT_UNREVIEWED,
 D125,dialogue,2,data/Map022.json/events/14/pages/0/list/6,準備室の奥だろ？,Là phía sau phòng chuẩn bị phải không?,MACHINE_DRAFT_UNREVIEWED,
 D126,dialogue,2,data/Map022.json/events/14/pages/0/list/12,"そうそう。
 何の部屋なんだろな。","Đúng vậy.
@@ -896,24 +839,20 @@ M22,map_display_name,2,data/Map028.json/displayName,部室棟3F,Tòa nhà phòng
 M23,map_display_name,1,data/Map029.json/displayName,部室棟・屋上,Tòa nhà phòng câu lạc bộ/Sân thượng,MACHINE_DRAFT_UNREVIEWED,
 M24,map_display_name,1,data/Map030.json/displayName,教室1-A,Lớp học 1-A,MACHINE_DRAFT_UNREVIEWED,
 D129,dialogue,2,data/Map030.json/events/3/pages/0/list/6,"小テストとかマジやめて
-ってカンジ。","Thật sự là thôi đi mấy cái bài kiểm tra nhỏ đó
-Cảm giác là vậy đó.",MACHINE_DRAFT_UNREVIEWED,
+ってカンジ。","Kiểu như, thật sự là thôi đi mấy cái bài kiểm tra nhỏ nhỏ đó đi.",MACHINE_DRAFT_UNREVIEWED,
 D130,dialogue,2,data/Map030.json/events/3/pages/0/list/13,だねー。,Đúng vậy.,MACHINE_DRAFT_UNREVIEWED,
 D131,dialogue,2,data/Map030.json/events/5/pages/0/list/6,次の日曜さー……,Chủ nhật tới nè...,MACHINE_DRAFT_UNREVIEWED,
 D132,dialogue,2,data/Map030.json/events/5/pages/0/list/12,うん、いこいこ。,"Ừ, đi thôi, đi thôi.",MACHINE_DRAFT_UNREVIEWED,
 D133,dialogue,1,data/Map030.json/events/7/pages/0/list/2,"ここってマジで
-女子多いのな……","Ở đây thật sự là
-Có nhiều bạn nữ thật đó……",MACHINE_DRAFT_UNREVIEWED,
+女子多いのな……",Ở đây thực sự có nhiều bạn nữ nhỉ……,MACHINE_DRAFT_UNREVIEWED,
 D134,dialogue,2,data/Map031.json/events/3/pages/0/list/6,"２年の水泳の担任
-下津らしいよー。","Giáo viên dạy bơi của khối 11
-Hình như là thầy Shimotsu đó.",MACHINE_DRAFT_UNREVIEWED,
+下津らしいよー。","Hình như là thầy Shimotsu, giáo viên dạy bơi của khối 10.",MACHINE_DRAFT_UNREVIEWED,
 D135,dialogue,2,data/Map031.json/events/3/pages/0/list/13,"マジ？
 最悪なんだけどー。","Thật à?
 Tệ thật đấy.",MACHINE_DRAFT_UNREVIEWED,
 D136,dialogue,1,data/Map031.json/events/5/pages/0/list/2,（神代さんって彼氏とかいるのかな……）,(Không biết Kamishiro-san có bạn trai hay không nhỉ...),MACHINE_DRAFT_UNREVIEWED,
 D137,dialogue,2,data/Map031.json/events/6/pages/0/list/2,"もうすぐ戸締りしちゃうから
-忘れ物ないようにね。","Sắp khóa cửa rồi đó,
-Đừng có quên đồ gì nhé.",MACHINE_DRAFT_UNREVIEWED,
+忘れ物ないようにね。",Sắp khóa cửa rồi nên đừng có quên đồ đấy nhé.,MACHINE_DRAFT_UNREVIEWED,
 D138,dialogue,2,data/Map031.json/events/7/pages/2/list/5,"放課後まで時間を進めます。
 よろしいですか？","Sẽ chuyển thời gian đến sau giờ học.
 Bạn có chắc không?",MACHINE_DRAFT_UNREVIEWED,
@@ -930,8 +869,7 @@ M25,map_display_name,1,data/Map032.json/displayName,教室3-A,Lớp học 3-A,MA
 D144,dialogue,2,data/Map032.json/events/3/pages/0/list/6,また新しいのが出たんだって。,Nghe nói lại có sản phẩm mới ra mắt rồi.,MACHINE_DRAFT_UNREVIEWED,
 D145,dialogue,2,data/Map032.json/events/3/pages/0/list/12,この前買ったじゃん。,Mình vừa mới mua cái này mà.,MACHINE_DRAFT_UNREVIEWED,
 D146,dialogue,2,data/Map032.json/events/5/pages/0/list/6,"デジタルジュエリーって
-なんかビミョーじゃない？","Trang sức kỹ thuật số
-Có vẻ hơi kỳ lạ nhỉ?",MACHINE_DRAFT_UNREVIEWED,
+なんかビミョーじゃない？",Trang sức kỹ thuật số nghe có vẻ hơi kỳ lạ nhỉ?,MACHINE_DRAFT_UNREVIEWED,
 D147,dialogue,2,data/Map032.json/events/5/pages/0/list/13,でもホンモノなんて買えないしさー。,Nhưng mình đâu có đủ tiền để mua đồ thật.,MACHINE_DRAFT_UNREVIEWED,
 D148,dialogue,2,data/Map032.json/events/7/pages/0/list/6,今日どうする？,Hôm nay làm gì nhỉ?,MACHINE_DRAFT_UNREVIEWED,
 D149,dialogue,2,data/Map032.json/events/7/pages/0/list/12,ごめん、俺バイトだわ。,"Xin lỗi, tôi phải đi làm thêm.",MACHINE_DRAFT_UNREVIEWED,
@@ -939,8 +877,7 @@ M26,map_display_name,1,data/Map033.json/displayName,校舎南トイレ,Nhà vệ
 D150,dialogue,2,data/Map033.json/events/5/pages/1/list/7,ロックされているようだ,Hình như nó bị khóa rồi.,MACHINE_DRAFT_UNREVIEWED,
 D151,dialogue,1,data/Map033.json/events/7/pages/1/list/7,入ってまーす。,Tôi đang vào đây.,MACHINE_DRAFT_UNREVIEWED,
 D152,dialogue,2,data/Map033.json/events/12/pages/0/list/6,"なんか見られてる気が
-すんだよね。","Tôi có cảm giác như đang bị ai đó nhìn lén.
-Chắc là do tưởng tượng thôi nhỉ.",MACHINE_DRAFT_UNREVIEWED,
+すんだよね。",Mình có cảm giác như đang bị ai đó theo dõi ấy.,MACHINE_DRAFT_UNREVIEWED,
 D153,dialogue,2,data/Map033.json/events/12/pages/0/list/13,気のせいだって。,Chắc là do tưởng tượng thôi.,MACHINE_DRAFT_UNREVIEWED,
 D154,dialogue,4,data/Map033.json/events/15/pages/0/list/3,トイレを使いますか？,Bạn có muốn sử dụng nhà vệ sinh không?,MACHINE_DRAFT_UNREVIEWED,
 N6,speaker,32,data/Map033.json/events/16/pages/0/list/5/parameters/4,教頭の{0},{0} Phó Hiệu trưởng,MACHINE_DRAFT_UNREVIEWED,
@@ -955,11 +892,9 @@ D158,dialogue,1,data/Map033.json/events/17/pages/0/list/35,"こうして女生�
 それをコレクションすることだった。","Ông ta lén lút chụp ảnh đời tư của các nữ sinh như thế này……
 và sưu tầm chúng.",MACHINE_DRAFT_UNREVIEWED,
 D159,dialogue,1,data/Map033.json/events/17/pages/0/list/55,"トイレに仕掛けられているカメラは精巧にカモフラージュされているようで
-{0}が気づく様子はない。","Có vẻ như chiếc camera được lắp trong nhà vệ sinh đã được ngụy trang rất tinh vi
-{0} dường như không hề nhận ra.",MACHINE_DRAFT_UNREVIEWED,
+{0}が気づく様子はない。","Có vẻ như chiếc camera được lắp trong nhà vệ sinh đã được ngụy trang rất tinh vi, nên {0} không hề nhận ra.",MACHINE_DRAFT_UNREVIEWED,
 D160,dialogue,1,data/Map033.json/events/17/pages/0/list/58,"いまもなお、こうして教頭がこの学園にいることからも
-その緻密さ、綿密さが発揮されているようだった。","Ngay cả bây giờ, từ việc hiệu phó vẫn còn ở ngôi trường này như thế này,
-Có vẻ như sự tỉ mỉ và cẩn trọng của ông ta đã được thể hiện.",MACHINE_DRAFT_UNREVIEWED,
+その緻密さ、綿密さが発揮されているようだった。","Ngay cả bây giờ, khi hiệu phó vẫn còn ở ngôi trường này, dường như sự tỉ mỉ và cẩn trọng của ông vẫn được thể hiện.",MACHINE_DRAFT_UNREVIEWED,
 D161,dialogue,1,data/Map033.json/events/17/pages/0/list/61,"それにしても……
 親の彼女に似て{0}さんも実に素晴らしい……","Dù vậy……
 Giống như mẹ cô ấy, {0} cũng thực sự tuyệt vời……",MACHINE_DRAFT_UNREVIEWED,
@@ -972,8 +907,7 @@ D164,dialogue,2,data/Map033.json/events/17/pages/2/list/53,んっ……,Hừm…
 D165,dialogue,2,data/Map033.json/events/17/pages/2/list/59,ふぅ……,Phù……,MACHINE_DRAFT_UNREVIEWED,
 D166,dialogue,2,data/Map033.json/events/17/pages/2/list/66,（もう出ないかな……）,(Chắc là không còn nữa rồi...),MACHINE_DRAFT_UNREVIEWED,
 D167,dialogue,4,data/Map034.json/events/4/pages/0/list/6,"２キロも増えてて
-マジショックなんだけど。","Tôi tăng tận 2 kg.
-Thật sự sốc quá.",MACHINE_DRAFT_UNREVIEWED,
+マジショックなんだけど。","Tôi tăng tận 2 kg, thật sự sốc luôn.",MACHINE_DRAFT_UNREVIEWED,
 D168,dialogue,4,data/Map034.json/events/4/pages/0/list/13,"別にいいじゃん。
 ちょっと増えたくらいさ。","Cũng đâu có sao.
 Chỉ tăng có chút thôi mà.",MACHINE_DRAFT_UNREVIEWED,
@@ -1016,14 +950,11 @@ D182,dialogue,4,data/Map039.json/events/3/pages/0/list/2,"君は確か神代さ�
 Có việc gì không?",MACHINE_DRAFT_UNREVIEWED,
 D183,dialogue,4,data/Map039.json/events/4/pages/0/list/6,ここなんですけど……,Chỗ này ạ……,MACHINE_DRAFT_UNREVIEWED,
 D184,dialogue,4,data/Map039.json/events/4/pages/0/list/12,"これはね、助動詞が
-重要なの。例えば――","Cái này nè, động từ trợ nghĩa
-là quan trọng.Ví dụ như――",MACHINE_DRAFT_UNREVIEWED,
+重要なの。例えば――","Cái này nè, động từ trợ nghĩa rất quan trọng.Ví dụ――",MACHINE_DRAFT_UNREVIEWED,
 D185,dialogue,1,data/Map039.json/events/6/pages/0/list/2,"あまり遅く
-ならないようにね。","Đừng
-đến quá muộn nhé.",MACHINE_DRAFT_UNREVIEWED,
+ならないようにね。",Đừng về muộn quá nhé.,MACHINE_DRAFT_UNREVIEWED,
 D186,dialogue,3,data/Map039.json/events/7/pages/0/list/2,"この辺って朝は
-意外と車が多いのよね。","Khu vực này vào buổi sáng
-có khá nhiều xe hơi đấy.",MACHINE_DRAFT_UNREVIEWED,
+意外と車が多いのよね。",Khu vực này vào buổi sáng có khá nhiều xe cộ đấy.,MACHINE_DRAFT_UNREVIEWED,
 D187,dialogue,1,data/Map039.json/events/8/pages/0/list/7,"ん～……いないっぽい。
 もう帰っちゃったのかな。","Ừm……Hình như không có ai.
 Chắc là về nhà rồi nhỉ.",MACHINE_DRAFT_UNREVIEWED,
@@ -1054,20 +985,16 @@ D197,dialogue,1,data/Map041.json/events/5/pages/0/list/2,"『雄ヶ留守の夜�
 という本が目についた。","""Chợ đêm Ogarusu""
 Tôi để ý thấy cuốn sách có tên là",MACHINE_DRAFT_UNREVIEWED,
 D198,dialogue,1,data/Map041.json/events/5/pages/0/list/14,"雄ヶ留守地方で村の女性たちが地域外から男を
-招き入れるための神事として執り行ったことが始まり。","Ở vùng Oga-Rusu, các phụ nữ trong làng đã tổ chức một nghi lễ thần đạo
-bắt đầu từ một nghi lễ tôn giáo được tổ chức để mời những người đàn ông từ bên ngoài địa phương đến.",MACHINE_DRAFT_UNREVIEWED,
+招き入れるための神事として執り行ったことが始まり。",Nó bắt đầu từ một nghi lễ tôn giáo mà những người phụ nữ trong làng ở khu vực Ogasu thực hiện để mời những người đàn ông từ bên ngoài khu vực đến.,MACHINE_DRAFT_UNREVIEWED,
 D199,dialogue,1,data/Map041.json/events/5/pages/0/list/17,"現在でも伝統行事の一つとして、地域の女性たちが法被に褌といった様相で
-雄ヶ留守神社にて夜市が定期的に開催されている。","Ngày nay, đây vẫn là một trong những sự kiện truyền thống, nơi phụ nữ trong vùng mặc áo happi và khố,
-Chợ đêm được tổ chức thường xuyên tại Đền Oga Rusu.",MACHINE_DRAFT_UNREVIEWED,
+雄ヶ留守神社にて夜市が定期的に開催されている。","Ngay cả ngày nay, như một trong những sự kiện truyền thống, các phụ nữ trong vùng thường xuyên tổ chức chợ đêm tại đền Oga-Rus với trang phục là áo happi và khố.",MACHINE_DRAFT_UNREVIEWED,
 M30,map_display_name,1,data/Map042.json/displayName,用務員室,Phòng bảo vệ,MACHINE_DRAFT_UNREVIEWED,
 D200,dialogue,1,data/Map042.json/events/3/pages/0/list/2,"おや、知らない生徒さんが
-ここに来るなんて珍しいね。","Ồ, một học sinh mà tôi không quen biết
-Thật hiếm khi có học sinh đến đây nhỉ.",MACHINE_DRAFT_UNREVIEWED,
+ここに来るなんて珍しいね。","Ồ, thật hiếm khi có một học sinh mà tôi không quen biết đến đây nhỉ.",MACHINE_DRAFT_UNREVIEWED,
 D201,dialogue,1,data/Map042.json/events/3/pages/1/list/2,そろそろ見回りの時間かな。,Có lẽ sắp đến giờ đi tuần tra rồi.,MACHINE_DRAFT_UNREVIEWED,
 M31,map_display_name,1,data/Map043.json/displayName,生徒指導室,Phòng giáo vụ,MACHINE_DRAFT_UNREVIEWED,
 D202,dialogue,1,data/Map045.json/events/3/pages/0/list/2,"ここは静かで落ち着くんだけど
-たまに……ううん、なんでもない。","Nơi đây yên tĩnh và dễ chịu,
-nhưng thỉnh thoảng...À không, không có gì đâu.",MACHINE_DRAFT_UNREVIEWED,
+たまに……ううん、なんでもない。","Nơi đây yên tĩnh và thanh bình, nhưng thỉnh thoảng……À, không có gì đâu.",MACHINE_DRAFT_UNREVIEWED,
 D203,dialogue,1,data/Map045.json/events/3/pages/1/list/2,そろそろ戸締りしなくちゃ。,Đến lúc phải khóa cửa rồi.,MACHINE_DRAFT_UNREVIEWED,
 M32,map_display_name,2,data/Map046.json/displayName,生徒会室,Phòng Hội học sinh,MACHINE_DRAFT_UNREVIEWED,
 D204,dialogue,1,data/Map046.json/events/2/pages/0/list/3,"とっ、戸締り。
@@ -1131,8 +1058,7 @@ D229,dialogue,1,data/Map055.json/events/5/pages/0/list/4,公衆トイレのよ�
 C13,choices,1,data/Map055.json/events/5/pages/0/list/5/parameters/0/0,女子トイレ,Nhà vệ sinh nữ,MACHINE_DRAFT_UNREVIEWED,
 C14,choices,1,data/Map055.json/events/5/pages/0/list/5/parameters/0/1,男子トイレ,Nhà vệ sinh nam,MACHINE_DRAFT_UNREVIEWED,
 D230,dialogue,1,data/Map055.json/events/5/pages/0/list/19,"この先は男性用トイレだから
-行くのはやめよう……","Vì phía trước là nhà vệ sinh nam,
-Tốt hơn là không nên vào đó……",MACHINE_DRAFT_UNREVIEWED,
+行くのはやめよう……",Phía trước là nhà vệ sinh nam nên đừng đi vào đó nhé……,MACHINE_DRAFT_UNREVIEWED,
 D231,dialogue,1,data/Map057.json/events/3/pages/0/list/22,"ほう……これが先日のイレギュラーというやつか。
 随分と行動が早い。","Hừm……Đây có phải là kẻ bất thường hôm trước không nhỉ.
 Hành động nhanh thật đấy.",MACHINE_DRAFT_UNREVIEWED,
@@ -1146,8 +1072,7 @@ D234,dialogue,1,data/Map057.json/events/3/pages/0/list/30,"その必要はない
 D235,dialogue,1,data/Map057.json/events/3/pages/0/list/33,そして、その時こそが此奴らの最後となるのだ……ククク……ッ,Và đó chính là lúc bọn chúng kết thúc……Kukuku……Hứ!,MACHINE_DRAFT_UNREVIEWED,
 D236,dialogue,1,data/Map057.json/events/3/pages/1/list/23,いやはや……随分とあっけなかったですね、彼。,Thật là……Hắn ta thật là dễ dàng bị hạ gục nhỉ.,MACHINE_DRAFT_UNREVIEWED,
 D237,dialogue,1,data/Map057.json/events/3/pages/1/list/25,"ブラックマンサーズなんて内部組織を作るために自分の“力”を
-分け与えていたのが間違いなのよ。","Việc hắn chia sẻ “sức mạnh” của mình để thành lập một tổ chức nội bộ như Black Mansars
-Thật là một sai lầm khi chia sẻ “sức mạnh” của mình cho hắn.",MACHINE_DRAFT_UNREVIEWED,
+分け与えていたのが間違いなのよ。",Thật là một sai lầm khi chia sẻ “sức mạnh” của mình để thành lập một tổ chức nội bộ như Black Mansars.,MACHINE_DRAFT_UNREVIEWED,
 D238,dialogue,1,data/Map057.json/events/3/pages/1/list/28,"しかしヤツの作った組織は実際に役立っておる。
 これだけ早く規模を拡大できたのもヤツの功績といえよう。","Tuy nhiên, tổ chức mà hắn ta thành lập thực sự có ích.
 Việc chúng ta có thể mở rộng quy mô nhanh chóng như vậy cũng có thể coi là công lao của hắn.",MACHINE_DRAFT_UNREVIEWED,
@@ -1172,8 +1097,7 @@ D245,dialogue,1,data/Map057.json/events/3/pages/1/list/48,"例の実験体たち
 計画を進めるにはうってつけの人材となるだろう。","Theo lệnh của thủ lĩnh, hãy cho các đối tượng thí nghiệm đó dùng tinh thể cấp cao.
 Họ sẽ là những nhân tài lý tưởng để thúc đẩy kế hoạch.",MACHINE_DRAFT_UNREVIEWED,
 D246,dialogue,1,data/Map057.json/events/3/pages/1/list/51,"そしてこれは首領がお前の精製するアクメ結晶の品質に絶対的な信頼を
-置いているからこその作戦だということを忘れるな。","Và đừng quên rằng đây là kế hoạch mà thủ lĩnh đặt niềm tin tuyệt đối vào chất lượng của tinh thể Acme mà ngươi tinh chế
-Đừng quên rằng đây là kế hoạch được thực hiện vì ông ấy đặt niềm tin tuyệt đối vào chất lượng tinh thể Acme mà ngươi tinh chế.",MACHINE_DRAFT_UNREVIEWED,
+置いているからこその作戦だということを忘れるな。",Và đừng quên rằng đây là kế hoạch chỉ có thể thực hiện được vì Thủ lĩnh đặt niềm tin tuyệt đối vào chất lượng của tinh thể Acme mà ngươi tinh chế.,MACHINE_DRAFT_UNREVIEWED,
 D247,dialogue,1,data/Map057.json/events/3/pages/1/list/54,…………ま、まぁ、そういうことなら仕方ないわね。,"…………Ừm, ừm, nếu đã vậy thì cũng đành thôi.",MACHINE_DRAFT_UNREVIEWED,
 D248,dialogue,1,data/Map057.json/events/3/pages/1/list/56,"うむ、わかってくれたようだな。
 ではそこのギフトマンにも少し分けてやってくれ。","Ừm, có vẻ như cô đã hiểu rồi.
@@ -1235,8 +1159,8 @@ P72,plugin_text,1,data/Map058.json/events/5/pages/0/list/24/parameters/3/text,"�
 自室でオナニーした{8}媚薬効果{9}が解除され、
 {10}性欲がリセットされました","Mức độ dâm đãng{0}{1}+1
 {2}Số lần thủ dâm{3}{4}+1{5}{6}Hành vi khiêu dâm gần đây{7}
-Tôi đã thủ dâm trong phòng riêng {8}Tác dụng của thuốc kích dục{9} đã được giải trừ,
-{10}Ham muốn tình dục đã được thiết lập lại",MACHINE_DRAFT_UNREVIEWED,
+Thủ dâm trong phòng riêng{8}Hiệu ứng thuốc kích dục{9} đã được giải trừ,
+{10}ham muốn tình dục đã được đặt lại",MACHINE_DRAFT_UNREVIEWED,
 D272,dialogue,2,data/Map058.json/events/5/pages/0/list/73,ただいま。,Về rồi đây.,MACHINE_DRAFT_UNREVIEWED,
 D273,dialogue,1,data/Map058.json/events/5/pages/0/list/87,おかえり。,Chào mừng em về nhà.,MACHINE_DRAFT_UNREVIEWED,
 D274,dialogue,1,data/Map058.json/events/5/pages/0/list/91,どう、体の調子は。もう大丈夫そう？,Cơ thể em thế nào rồi?Có vẻ như đã ổn rồi nhỉ?,MACHINE_DRAFT_UNREVIEWED,
@@ -1249,15 +1173,12 @@ D277,dialogue,1,data/Map058.json/events/7/pages/0/list/8,"体験版はここま�
 Sau đây, chúng ta sẽ quay lại ngay trước thời điểm diễn ra sự kiện.",MACHINE_DRAFT_UNREVIEWED,
 M37,map_display_name,1,data/Map059.json/displayName,プール,Hồ bơi,MACHINE_DRAFT_UNREVIEWED,
 D278,dialogue,2,data/Map059.json/events/3/pages/0/list/2,"手伝わせちゃって
-ごめんね。","Xin lỗi vì đã nhờ em giúp đỡ.
-Xin lỗi nhé.",MACHINE_DRAFT_UNREVIEWED,
+ごめんね。",Xin lỗi vì đã nhờ em giúp đỡ.,MACHINE_DRAFT_UNREVIEWED,
 D279,dialogue,1,data/Map059.json/events/5/pages/0/list/2,今日は逃がさないから。,Hôm nay tôi sẽ không để cô trốn thoát đâu.,MACHINE_DRAFT_UNREVIEWED,
 D280,dialogue,1,data/Map059.json/events/6/pages/0/list/2,"ここめっちゃスベるから
-気をつけて。","Chỗ này trơn lắm đó,
-Cẩn thận nhé.",MACHINE_DRAFT_UNREVIEWED,
+気をつけて。","Cẩn thận nhé, chỗ này trơn lắm đó.",MACHINE_DRAFT_UNREVIEWED,
 D281,dialogue,1,data/Map059.json/events/7/pages/0/list/2,"教頭って何か隠し事してる
-気がするんだよね～。","Tôi cảm thấy hiệu phó đang giấu giếm điều gì đó
-Tôi có cảm giác như vậy đó.",MACHINE_DRAFT_UNREVIEWED,
+気がするんだよね～。",Mình cảm thấy hiệu phó đang giấu giếm điều gì đó.,MACHINE_DRAFT_UNREVIEWED,
 D282,dialogue,1,data/Map059.json/events/8/pages/0/list/11,"いやーほんと水泳部って大変だよねー。
 もっと部員増やせばいいのに。部活も掛け持ちできるんだしさー。","Ôi, câu lạc bộ bơi lội thật là vất vả nhỉ.
 Ước gì có thêm nhiều thành viên hơn.Cũng có thể tham gia nhiều câu lạc bộ cùng lúc mà.",MACHINE_DRAFT_UNREVIEWED,
@@ -1275,8 +1196,7 @@ D289,dialogue,1,data/Map059.json/events/8/pages/0/list/55,"いつの間にか数
 どうやら、ガラス越しにこちら側の様子を眺めているようだ。","Không biết từ lúc nào, có vài nam sinh đã đến.
 Có vẻ như họ đang nhìn qua tấm kính để quan sát tình hình bên này.",MACHINE_DRAFT_UNREVIEWED,
 D290,dialogue,1,data/Map059.json/events/8/pages/0/list/60,"そういやさ、他の部の男子がちょくちょく覗きに来るって
-水泳部のコたちが言ってたっけ。","À phải rồi, mấy đứa bên đội bơi có nói là thỉnh thoảng các bạn nam của các câu lạc bộ khác cũng hay đến đây để nhìn trộm.
-Các bạn trong câu lạc bộ bơi lội đã nói vậy.",MACHINE_DRAFT_UNREVIEWED,
+水泳部のコたちが言ってたっけ。","À mà này, các bạn nữ trong câu lạc bộ bơi lội có nói là thỉnh thoảng các bạn nam của các câu lạc bộ khác hay đến đó để nhìn trộm.",MACHINE_DRAFT_UNREVIEWED,
 D291,dialogue,1,data/Map059.json/events/8/pages/0/list/65,そうなんだ。,Vậy à.,MACHINE_DRAFT_UNREVIEWED,
 D292,dialogue,1,data/Map059.json/events/8/pages/0/list/71,あやっちってこういう男子の視線って気にならないの？,"Ayacchi, cậu không thấy phiền khi bị mấy cậu con trai nhìn như vậy sao?",MACHINE_DRAFT_UNREVIEWED,
 D293,dialogue,1,data/Map059.json/events/8/pages/0/list/77,……？　うん。気にならないけど……,……？　Ừm.Tớ không để ý lắm……,MACHINE_DRAFT_UNREVIEWED,
@@ -1391,21 +1311,17 @@ Lúc nào cũng kiếm cớ để trốn tránh, nhưng hôm nay thì không đ�
 D347,dialogue,1,data/Map059.json/events/9/pages/0/list/100,ってことなんだけど……あやっちも手伝ってくれない？,"Là vậy đó……Ayacchi, cậu cũng giúp tớ được không?",MACHINE_DRAFT_UNREVIEWED,
 D348,dialogue,1,data/Map059.json/events/9/pages/1/list/5,早く着替えに行こ。,Mau đi thay đồ thôi.,MACHINE_DRAFT_UNREVIEWED,
 D349,dialogue,1,data/Map059.json/events/12/pages/0/list/2,"男子ってエロいことしか
-考えてないよね。","Bọn con trai chỉ nghĩ đến
-chẳng nghĩ gì khác ngoài chuyện đó cả.",MACHINE_DRAFT_UNREVIEWED,
+考えてないよね。",Bọn con trai chỉ nghĩ đến mấy chuyện khiêu dâm thôi nhỉ.,MACHINE_DRAFT_UNREVIEWED,
 D350,dialogue,1,data/Map059.json/events/15/pages/0/list/2,"水泳部は女子しか
-いないの。","Câu lạc bộ bơi lội chỉ có
-đâu.",MACHINE_DRAFT_UNREVIEWED,
+いないの。",Câu lạc bộ bơi lội chỉ có nữ thôi.,MACHINE_DRAFT_UNREVIEWED,
 M38,map_display_name,1,data/Map060.json/displayName,更衣室（プール）,Phòng thay đồ (hồ bơi),MACHINE_DRAFT_UNREVIEWED,
 D351,dialogue,2,data/Map060.json/events/17/pages/0/list/3,"この先は男子更衣室だから
-行くのはやめよう……","Vì phía trước là phòng thay đồ của nam nên
-Đừng đi vào đó nhé……",MACHINE_DRAFT_UNREVIEWED,
+行くのはやめよう……",Phía trước là phòng thay đồ nam nên thôi đừng đi nữa……,MACHINE_DRAFT_UNREVIEWED,
 D352,dialogue,2,data/Map060.json/events/18/pages/0/list/5,水着に着替えますか？,Bạn có muốn thay đồ bơi không?,MACHINE_DRAFT_UNREVIEWED,
 D353,dialogue,1,data/Map060.json/events/18/pages/0/list/54,……ふぅ。,……Phù.,MACHINE_DRAFT_UNREVIEWED,
 D354,dialogue,1,data/Map060.json/events/18/pages/0/list/58,それにしても……,Dù vậy……,MACHINE_DRAFT_UNREVIEWED,
 D355,dialogue,1,data/Map060.json/events/18/pages/0/list/61,"ぴっちりと体にフィットする水着のシワをのばしながら
-{0}はふと思いにふける。","Trong khi đang vuốt phẳng các nếp nhăn của bộ đồ bơi ôm sát cơ thể,
-{0} chợt chìm vào suy nghĩ.",MACHINE_DRAFT_UNREVIEWED,
+{0}はふと思いにふける。","Trong khi đang vuốt phẳng các nếp nhăn trên bộ đồ bơi ôm sát cơ thể, {0} chợt chìm vào suy nghĩ.",MACHINE_DRAFT_UNREVIEWED,
 D356,dialogue,1,data/Map060.json/events/18/pages/0/list/64,（どうして水着で掃除するんだろう……）,(Tại sao lại phải mặc đồ bơi để dọn dẹp nhỉ...),MACHINE_DRAFT_UNREVIEWED,
 D357,dialogue,1,data/Map060.json/events/18/pages/0/list/66,（校則？　部活の方針？　それとも他になにか理由が――）,(Nội quy nhà trường?　Chính sách của câu lạc bộ?　Hay là còn lý do nào khác nữa――),MACHINE_DRAFT_UNREVIEWED,
 D358,dialogue,1,data/Map060.json/events/18/pages/0/list/68,しかし、考えを巡らせ始めてからほどなくしてその思考を中断させられる。,"Tuy nhiên, ngay sau khi bắt đầu suy nghĩ, cô lại bị gián đoạn.",MACHINE_DRAFT_UNREVIEWED,
@@ -1415,8 +1331,7 @@ D361,dialogue,1,data/Map060.json/events/18/pages/0/list/94,よし、滝野瀬さ
 D362,dialogue,1,data/Map060.json/events/18/pages/1/list/4,制服に着替えますか？,Bạn có muốn thay đồng phục không?,MACHINE_DRAFT_UNREVIEWED,
 D363,dialogue,2,data/Map060.json/events/18/pages/3/list/4,オマケCGを見ることができます,Bạn có thể xem CG tặng kèm.,MACHINE_DRAFT_UNREVIEWED,
 D364,dialogue,1,data/Map060.json/events/19/pages/0/list/2,"更衣室ってさ、なんか
-独特の臭いするよね。","Phòng thay đồ, sao ấy nhỉ,
-có mùi đặc biệt nhỉ.",MACHINE_DRAFT_UNREVIEWED,
+独特の臭いするよね。",Phòng thay đồ có mùi gì đó rất đặc biệt nhỉ.,MACHINE_DRAFT_UNREVIEWED,
 D365,dialogue,1,data/Map060.json/events/19/pages/2/list/2,"プールに戻ろっか。
 早く終わらせちゃお。","Quay lại bể bơi nhé.
 Hãy nhanh chóng kết thúc việc này thôi.",MACHINE_DRAFT_UNREVIEWED,
@@ -1433,8 +1348,7 @@ D370,dialogue,1,data/Map060.json/events/20/pages/0/list/30,"うわ、マジ大�
 Vậy thì hẹn gặp lại lần sau nhé♡ Tạm biệt♡",MACHINE_DRAFT_UNREVIEWED,
 D371,dialogue,1,data/Map060.json/events/21/pages/1/list/83,ふぅ。,Phù.,MACHINE_DRAFT_UNREVIEWED,
 D372,dialogue,1,data/Map060.json/events/22/pages/0/list/2,"泳ぐのは好きだけど
-授業になるとちょっとね……","Tớ thích bơi lắm, nhưng
-Nhưng khi thành tiết học thì hơi...",MACHINE_DRAFT_UNREVIEWED,
+授業になるとちょっとね……","Mình thích bơi, nhưng khi thành tiết học thì hơi...",MACHINE_DRAFT_UNREVIEWED,
 D373,dialogue,1,data/Map060.json/events/23/pages/0/list/43,あやっちとならプール掃除も悪くないね。,Nếu có Ayacchi thì dọn dẹp bể bơi cũng không tệ nhỉ.,MACHINE_DRAFT_UNREVIEWED,
 D374,dialogue,1,data/Map060.json/events/23/pages/0/list/47,"はぁ……
 （恥ずかしかった……）","Haizz……
@@ -1445,11 +1359,11 @@ D377,dialogue,1,data/Map060.json/events/23/pages/0/list/59,"じゃあうちも�
 手伝ってくれてありがとね～っ。","Vậy thì tôi đi đây.
 Cảm ơn vì đã giúp đỡ nhé.",MACHINE_DRAFT_UNREVIEWED,
 P74,plugin_text,1,data/Map060.json/events/23/pages/0/list/75/parameters/3/text,"淫乱度{0}{1}＋１{2}{3}最近したＨなこと{4}
-{5}におっぱいを揉まれた","Mức độ dâm đãng {0}{1}+1{2}{3}Những việc liên quan đến tình dục đã làm gần đây{4}
-{5} đã sờ ngực tôi",MACHINE_DRAFT_UNREVIEWED,
+{5}におっぱいを揉まれた","Mức độ dâm đãng{0}{1}+1{2}{3}Hành vi khiêu dâm gần đây{4}
+Bị {5} bóp ngực",MACHINE_DRAFT_UNREVIEWED,
 P75,plugin_text,1,data/Map060.json/events/23/pages/0/list/121/parameters/3/text,"淫乱度{0}{1}＋２{2}{3}最近したＨなこと{4}
-{5}におっぱいを揉まれた","Mức độ dâm đãng {0}{1}+2{2}{3}Những việc ""đen tối"" đã làm gần đây{4}
-Bị {5} sờ ngực",MACHINE_DRAFT_UNREVIEWED,
+{5}におっぱいを揉まれた","Mức độ dâm đãng{0}{1}+2{2}{3}Hành vi khiêu dâm gần đây{4}
+Bị {5} bóp ngực",MACHINE_DRAFT_UNREVIEWED,
 D378,dialogue,1,data/Map060.json/events/26/pages/0/list/15,どお？　うちと同じサイズでいけると思うんだけど。,Thế nào?　Tôi nghĩ là có thể mặc vừa cỡ của tôi.,MACHINE_DRAFT_UNREVIEWED,
 D379,dialogue,2,data/Map060.json/events/26/pages/0/list/20,うん、大丈夫だと思う。,"Ừm, tôi nghĩ là ổn.",MACHINE_DRAFT_UNREVIEWED,
 D380,dialogue,4,data/Map060.json/events/26/pages/0/list/76,"てかさー、スク水ってうちらには窮屈だよね。
@@ -1472,30 +1386,24 @@ D387,dialogue,1,data/Map061.json/events/8/pages/0/list/5,……何か用か？,�
 D388,dialogue,1,data/Map061.json/events/8/pages/1/list/5,どうした、何か用か？,"Sao thế, có việc gì không?",MACHINE_DRAFT_UNREVIEWED,
 D389,dialogue,1,data/Map061.json/events/9/pages/0/list/2,次いくよー！,Tiếp theo nào!,MACHINE_DRAFT_UNREVIEWED,
 D390,dialogue,1,data/Map061.json/events/10/pages/0/list/2,"近くにいると
-危ないよ。","Nếu ở gần đây
-thì nguy hiểm lắm đó.",MACHINE_DRAFT_UNREVIEWED,
+危ないよ。",Ở gần đó thì nguy hiểm lắm.,MACHINE_DRAFT_UNREVIEWED,
 D391,dialogue,2,data/Map061.json/events/11/pages/0/list/6,"先輩が来るまで
-そこで待ってて。","Cho đến khi tiền bối đến
-Hãy đợi ở đó.",MACHINE_DRAFT_UNREVIEWED,
+そこで待ってて。",Cứ đợi ở đó cho đến khi tiền bối đến nhé.,MACHINE_DRAFT_UNREVIEWED,
 D392,dialogue,2,data/Map061.json/events/11/pages/0/list/13,わかりましたっ。,Vâng ạ.,MACHINE_DRAFT_UNREVIEWED,
 D393,dialogue,2,data/Map061.json/events/11/pages/1/list/6,"新しく入った
-マネージャーくんってさぁ……","Cái anh quản lý
-Cái anh quản lý mới đó……",MACHINE_DRAFT_UNREVIEWED,
+マネージャーくんってさぁ……",Cậu quản lý mới đến ấy mà……,MACHINE_DRAFT_UNREVIEWED,
 D394,dialogue,2,data/Map061.json/events/11/pages/1/list/13,"ねー。背の高いイケメンだと
-思ってたのに残念～。","Này.Tôi đã nghĩ rằng anh ta là một anh chàng cao ráo, đẹp trai,
-Tôi đã nghĩ vậy, thật đáng tiếc~.",MACHINE_DRAFT_UNREVIEWED,
+思ってたのに残念～。","Này.Thật đáng tiếc, tôi đã nghĩ anh ấy là một anh chàng đẹp trai cao ráo.",MACHINE_DRAFT_UNREVIEWED,
 D395,dialogue,1,data/Map061.json/events/12/pages/0/list/2,（うーん……イマイチ）,(Ừm……Không được lắm),MACHINE_DRAFT_UNREVIEWED,
 D396,dialogue,2,data/Map061.json/events/13/pages/0/list/6,へー結構やるじゃん。,"Hừm, cũng khá đấy chứ.",MACHINE_DRAFT_UNREVIEWED,
 D397,dialogue,2,data/Map061.json/events/13/pages/0/list/12,"ねー。
 結構いいやつじゃん。","Này.
 Cũng khá ổn đấy chứ.",MACHINE_DRAFT_UNREVIEWED,
 D398,dialogue,1,data/Map061.json/events/15/pages/0/list/2,"あっ、片付けは全部
-自分がやるんで！","À, việc dọn dẹp tất cả
-Tôi sẽ tự làm!",MACHINE_DRAFT_UNREVIEWED,
+自分がやるんで！","À, tôi sẽ tự dọn dẹp tất cả!",MACHINE_DRAFT_UNREVIEWED,
 M40,map_display_name,1,data/Map062.json/displayName,体育倉庫,Kho dụng cụ thể dục thể thao,MACHINE_DRAFT_UNREVIEWED,
 D399,dialogue,1,data/Map062.json/events/3/pages/0/list/2,"ふー。倉庫整理は
-これくらいでいいか。","Phù.Dọn dẹp nhà kho
-đến đây là được rồi nhỉ.",MACHINE_DRAFT_UNREVIEWED,
+これくらいでいいか。",Phù.Dọn dẹp kho hàng đến đây là đủ rồi nhỉ.,MACHINE_DRAFT_UNREVIEWED,
 M41,map_display_name,1,data/Map063.json/displayName,更衣室（体育館）,Phòng thay đồ (Nhà thi đấu),MACHINE_DRAFT_UNREVIEWED,
 D400,dialogue,1,data/Map063.json/events/4/pages/0/list/5,……なんだよ、何か用か？,"……Gì thế, có việc gì không?",MACHINE_DRAFT_UNREVIEWED,
 D401,dialogue,1,data/Map064.json/events/6/pages/0/list/5,"今日のバスタイムは{0}ちゃんからか。
@@ -1503,11 +1411,9 @@ D401,dialogue,1,data/Map064.json/events/6/pages/0/list/5,"今日のバスタイ�
 Có vẻ như em mệt lắm nhỉ.Chắc là công việc cũng có nhiều điều vất vả lắm nhỉ……",MACHINE_DRAFT_UNREVIEWED,
 D402,dialogue,1,data/Map064.json/events/6/pages/0/list/8,僕だったら{0}ちゃんのために――,Nếu là tôi thì vì {0}――,MACHINE_DRAFT_UNREVIEWED,
 D403,dialogue,1,data/Map064.json/events/7/pages/0/list/7,"はぁ……はぁ……っ
-気持ちいいよ、{0}ちゃん……っ","Haa……Ha...Hứ
-{0} ơi, sướng quá……Hứ",MACHINE_DRAFT_UNREVIEWED,
+気持ちいいよ、{0}ちゃん……っ","Ha...Ha...Sướng quá, {0} ơi……Hứ",MACHINE_DRAFT_UNREVIEWED,
 D404,dialogue,1,data/Map064.json/events/7/pages/0/list/10,"わずかに開けた窓の隙間から見える{0}を覗きながら
-ズボンの中で勃起したペニスをしごく。","Vừa nhìn trộm {0} qua khe hở của cánh cửa sổ hé mở một chút,
-Tôi vuốt ve dương vật đang cương cứng trong quần.",MACHINE_DRAFT_UNREVIEWED,
+ズボンの中で勃起したペニスをしごく。","Tôi vừa thủ dâm cho dương vật đang cương cứng trong quần, vừa nhìn trộm {0} qua khe hở của cánh cửa sổ hé mở.",MACHINE_DRAFT_UNREVIEWED,
 D405,dialogue,1,data/Map064.json/events/7/pages/0/list/13,経産婦とは思えないあの身体……それにあのおっぱい――,Cơ thể đó trông không giống như của một người phụ nữ đã sinh con……Và cả bộ ngực đó nữa――,MACHINE_DRAFT_UNREVIEWED,
 D406,dialogue,1,data/Map064.json/events/7/pages/0/list/15,ま、まだ母乳とか出たりするんだろうか……,"Chà, liệu sữa mẹ có còn tiết ra không nhỉ……",MACHINE_DRAFT_UNREVIEWED,
 D407,dialogue,1,data/Map064.json/events/7/pages/0/list/17,（あぁ……{0}ちゃんのおっぱい触りたい……どんな感触なんだろう……）,"(Aa…… muốn sờ ngực {0}-chan quá……
@@ -1526,25 +1432,22 @@ D412,dialogue,1,data/Map064.json/events/7/pages/0/list/39,"そして、{0}が何
 それが性欲を搔き立ててくる。","Và mỗi khi {0} cử động, bộ ngực đầy đặn của cô ấy lại rung rinh……
 Điều đó khơi dậy ham muốn tình dục của tôi.",MACHINE_DRAFT_UNREVIEWED,
 D413,dialogue,1,data/Map064.json/events/7/pages/0/list/42,"（ごく……っ
-やっぱり{0}ちゃんのカラダ、エロいなぁ……）","(Hừm……Hứ
-Quả nhiên là cơ thể của {0}-chan thật khiêu gợi……)",MACHINE_DRAFT_UNREVIEWED,
+やっぱり{0}ちゃんのカラダ、エロいなぁ……）","(Thật là...Quả nhiên, cơ thể của {0} thật khiêu gợi……)",MACHINE_DRAFT_UNREVIEWED,
 D414,dialogue,1,data/Map064.json/events/7/pages/0/list/45,"（シングルマザーになってからどうしてるんだろう。
 僕と同じで毎晩オナニーしてるとか……）","(Từ khi trở thành bà mẹ đơn thân, không biết cô ấy đã làm gì nhỉ.
 Có phải cô ấy cũng giống như tôi, tối nào cũng thủ dâm không nhỉ......)",MACHINE_DRAFT_UNREVIEWED,
 D415,dialogue,1,data/Map064.json/events/7/pages/0/list/48,（相手なら僕がいつでもなってあげられるのになぁ……）,(Nếu có đối tác thì lúc nào tôi cũng có thể làm cho cô ấy thỏa mãn mà...),MACHINE_DRAFT_UNREVIEWED,
 D416,dialogue,1,data/Map064.json/events/7/pages/0/list/53,{0}とセックスすることを想像しながら……いっそう激しくペニスを刺激する。,Trong khi tưởng tượng cảnh quan hệ với {0}……Tôi kích thích dương vật của mình mạnh mẽ hơn nữa.,MACHINE_DRAFT_UNREVIEWED,
 D417,dialogue,1,data/Map064.json/events/7/pages/0/list/55,"はぁっ、はぁ……っ、はぁ……っ
-（{0}ちゃんとセックスしたい……っ）","Hả, hả……Hứ, haa……Hứ
-(Mình muốn quan hệ với {0}……...')",MACHINE_DRAFT_UNREVIEWED,
+（{0}ちゃんとセックスしたい……っ）","Haa, haa……Hừ, ha...(Mình muốn quan hệ với {0}.........')",MACHINE_DRAFT_UNREVIEWED,
 D418,dialogue,1,data/Map064.json/events/7/pages/0/list/58,"（ま、{0}ちゃんも性欲強そうだし……
 ぜったい僕と相性もいいはずなんだ……っ）","(Ừm, có vẻ như {0} cũng có ham muốn tình dục mạnh mẽ……
 Chắc chắn là sẽ rất hợp với tôi……chứ nhỉ)",MACHINE_DRAFT_UNREVIEWED,
 D419,dialogue,1,data/Map064.json/events/7/pages/0/list/61,"（あぁ……{0}ちゃんとセックスしたい……っ
-このまま後ろから――）","(A... {0}Anh muốn quan hệ tình dục đàng hoàng với em……Hứ
-Cứ thế này từ phía sau――)",MACHINE_DRAFT_UNREVIEWED,
+このまま後ろから――）","(Aa…… muốn làm tình với {0}-chan quá……
+Cứ thế này, từ phía sau――)",MACHINE_DRAFT_UNREVIEWED,
 D420,dialogue,1,data/Map064.json/events/7/pages/0/list/69,"おっぱいに負けないほどのどっしりとしたお尻を鷲づかみにして
-何度も引き寄せては突き上げる。","Anh nắm chặt lấy cặp mông đầy đặn không kém gì bộ ngực của cô,
-Anh kéo tôi lại gần rồi đẩy lên nhiều lần.",MACHINE_DRAFT_UNREVIEWED,
+何度も引き寄せては突き上げる。","Tôi nắm chặt lấy cặp mông to không kém gì bộ ngực của cô, kéo cô lại gần rồi đẩy mạnh vào nhiều lần.",MACHINE_DRAFT_UNREVIEWED,
 D421,dialogue,1,data/Map064.json/events/7/pages/0/list/72,（こんな人と毎日セックス出来たらどんなにいいか……っ）,(Thật tuyệt biết bao nếu ngày nào cũng được quan hệ với một người như thế này……...'),MACHINE_DRAFT_UNREVIEWED,
 D422,dialogue,1,data/Map064.json/events/7/pages/0/list/74,{0}とセックスをする妄想は膨らんでいく。,Những tưởng tượng về việc quan hệ tình dục với {0} ngày càng lớn dần.,MACHINE_DRAFT_UNREVIEWED,
 D423,dialogue,1,data/Map064.json/events/7/pages/0/list/79,はぁっ、はぁ……{0}……っ,"Haa, haa……{0}……Hứ",MACHINE_DRAFT_UNREVIEWED,
@@ -1552,8 +1455,7 @@ D424,dialogue,1,data/Map064.json/events/7/pages/0/list/81,"腰を揺らしなが
 まるで今、自分が{0}を犯しているかのように……","Tôi vừa lắc hông vừa vuốt ve dương vật.
 Như thể bây giờ mình đang cưỡng bức {0} vậy……",MACHINE_DRAFT_UNREVIEWED,
 D425,dialogue,1,data/Map064.json/events/7/pages/0/list/87,"はぁっ、はぁっ……う……っ
-ま、{0}……気持ちいいよ……っ","Hả, hả……U...Hứ
-Nào, {0}……Sướng quá……Hự",MACHINE_DRAFT_UNREVIEWED,
+ま、{0}……気持ちいいよ……っ","Haa, haa……U...À, {0}……Thật là sướng……Hức",MACHINE_DRAFT_UNREVIEWED,
 D426,dialogue,1,data/Map064.json/events/7/pages/0/list/93,（{0}っ、{1}……ッ）,"({0} này, {1}……Hứ)",MACHINE_DRAFT_UNREVIEWED,
 D427,dialogue,1,data/Map064.json/events/7/pages/0/list/95,"シャワーの湯気に混じってシャンプーの香りが漂ってくる。
 それがより感情を昂らせ、そして――","Mùi dầu gội đầu lẫn với hơi nước từ vòi sen bốc lên.
@@ -1569,8 +1471,7 @@ D433,dialogue,1,data/Map064.json/events/7/pages/0/list/124,"（はぁ～ぁ…�
 でも実際、現実では絶対に無理だよな……）","(Haizzz……
 Nhưng thực tế, ở ngoài đời thì tuyệt đối là không thể nhỉ……)",MACHINE_DRAFT_UNREVIEWED,
 D434,dialogue,1,data/Map064.json/events/7/pages/0/list/127,"（い、いや……でも、もし本当にセックスできたら
-{0}ちゃんが僕の子を妊娠したりして――）","(K-Không……Nhưng nếu thực sự có thể quan hệ tình dục
-{0} có thể sẽ mang thai đứa con của tôi――)",MACHINE_DRAFT_UNREVIEWED,
+{0}ちゃんが僕の子を妊娠したりして――）","(K-không……Nhưng nếu chúng ta thực sự quan hệ tình dục, thì liệu {0} có thể mang thai con của tôi không nhỉ――)",MACHINE_DRAFT_UNREVIEWED,
 D435,dialogue,1,data/Map064.json/events/7/pages/0/list/141,――さて、そろそろシャワータイムは終わりかな。,"――Nào, cũng sắp đến lúc kết thúc giờ tắm rồi nhỉ.",MACHINE_DRAFT_UNREVIEWED,
 D436,dialogue,1,data/Map064.json/events/7/pages/0/list/144,{0}がこちらの存在に気づく前に窓を閉じ、身を隠す。,Tôi đóng cửa sổ và trốn đi trước khi {0} nhận ra sự hiện diện của mình.,MACHINE_DRAFT_UNREVIEWED,
 D437,dialogue,1,data/Map064.json/events/7/pages/0/list/146,"シャワーを浴びて浴槽につかるまでのわずかな時間……
@@ -1607,16 +1508,14 @@ D451,dialogue,1,data/Map066.json/events/3/pages/0/list/10,書類の中から生�
 D452,dialogue,1,data/Map066.json/events/3/pages/0/list/14,これは……,Đây là……,MACHINE_DRAFT_UNREVIEWED,
 D453,dialogue,1,data/Map066.json/events/3/pages/0/list/18,"生徒会長　{0}殿
 折り入って貴女に相談したいことがあります。
-是非とも放課後「変身ヒロイン研究部」へ来ていただけませんか。","Kính gửi Chủ tịch Hội học sinh {0}
-Tôi có một việc rất muốn được tham khảo ý kiến của cô.
-Rất mong cô có thể đến ""Câu lạc bộ nghiên cứu nữ chính biến hình"" sau giờ học.",MACHINE_DRAFT_UNREVIEWED,
+是非とも放課後「変身ヒロイン研究部」へ来ていただけませんか。","Hội trưởng hội học sinh　{0} ơi, tôi có chuyện rất quan trọng muốn bàn bạc với bạn.
+Vậy nên, sau giờ học, cô có thể đến ""Câu lạc bộ nghiên cứu nữ chính biến hình"" được không?",MACHINE_DRAFT_UNREVIEWED,
 D454,dialogue,1,data/Map066.json/events/3/pages/0/list/23,"変身ヒロイン研究部……そういえばこんな部もあったっけ。
 放課後になったら行ってみよう。","Câu lạc bộ nghiên cứu nữ chính biến hình……Nhắc mới nhớ, hình như có một câu lạc bộ như vậy.
 Sau giờ học, tôi sẽ đến đó.",MACHINE_DRAFT_UNREVIEWED,
 P76,plugin_text,1,data/Map066.json/events/3/pages/0/list/29/parameters/3/text,スケジュールに【変身ヒロイン研究部の相談ごと】が追加されました,【Vấn đề cần tham khảo ý kiến của Câu lạc bộ nghiên cứu nữ chính biến hình】 đã được thêm vào lịch trình.,MACHINE_DRAFT_UNREVIEWED,
 D455,dialogue,1,data/Map066.json/events/3/pages/0/list/55,"スケジュールはメニュー画面の【スケジュール】コマンドから
-確認することが出来ます。","Bạn có thể kiểm tra lịch trình từ lệnh [Lịch trình] trên màn hình menu
-bạn có thể kiểm tra.",MACHINE_DRAFT_UNREVIEWED,
+確認することが出来ます。",Bạn có thể kiểm tra lịch trình từ lệnh [Lịch trình] trên màn hình menu.,MACHINE_DRAFT_UNREVIEWED,
 D456,dialogue,1,data/Map066.json/events/3/pages/2/list/8,定例会議の資料が束ねてある,Tài liệu cho cuộc họp thường kỳ được tập hợp lại.,MACHINE_DRAFT_UNREVIEWED,
 D457,dialogue,1,data/Map066.json/events/3/pages/2/list/12,（はやく済ませて帰ろう）,(Hãy nhanh chóng hoàn thành và về nhà thôi),MACHINE_DRAFT_UNREVIEWED,
 C21,choices,1,data/Map066.json/events/3/pages/2/list/13/parameters/0/0,作業を始める,Bắt đầu làm việc,MACHINE_DRAFT_UNREVIEWED,
@@ -1626,16 +1525,14 @@ D458,dialogue,1,data/Map066.json/events/4/pages/0/list/2,"おはようござい�
 Vui lòng kiểm tra tài liệu.",MACHINE_DRAFT_UNREVIEWED,
 D459,dialogue,1,data/Map066.json/events/7/pages/0/list/3,あ、今日の資料テーブルに置いてありますよ。,"À, tài liệu hôm nay được để trên bàn rồi ạ.",MACHINE_DRAFT_UNREVIEWED,
 D460,dialogue,1,data/Map066.json/events/7/pages/0/list/7,"うん。
-……{0}くんはまだ帰らないの？","Vâng.
-……{0}Cậu vẫn chưa về à?",MACHINE_DRAFT_UNREVIEWED,
+……{0}くんはまだ帰らないの？","Ừ.
+……{0}-kun vẫn chưa về à?",MACHINE_DRAFT_UNREVIEWED,
 D461,dialogue,1,data/Map066.json/events/7/pages/0/list/12,あ、えっと……ま、まだやることがあって……,"À, ừm……À, tôi vẫn còn việc phải làm……",MACHINE_DRAFT_UNREVIEWED,
 D462,dialogue,1,data/Map066.json/events/7/pages/0/list/16,そう。,Vậy à.,MACHINE_DRAFT_UNREVIEWED,
 D463,dialogue,1,data/Map066.json/events/10/pages/0/list/11,"（き、今日こそやるぞ……！　
-神代さんのスカートの、な、中を――）","(Hôm nay nhất định phải làm cho bằng được...!　
-Bên trong chiếc váy của cô Kamishiro――)",MACHINE_DRAFT_UNREVIEWED,
+神代さんのスカートの、な、中を――）",(H-hôm nay nhất định phải làm...!　Bên trong váy của Kamishiro-san――),MACHINE_DRAFT_UNREVIEWED,
 D464,dialogue,1,data/Map066.json/events/10/pages/0/list/14,"{0}（かげひさ）{1}は小遣いを貯めて購入した
-隠し撮り専用のスマホガジェットを手に意気込む。","{0}(Kagehisa){1} cầm trên tay chiếc điện thoại thông minh chuyên dụng để chụp lén
-Cậu ta đang hăng hái cầm trên tay một thiết bị gắn vào điện thoại thông minh chuyên dụng để chụp lén.",MACHINE_DRAFT_UNREVIEWED,
+隠し撮り専用のスマホガジェットを手に意気込む。",{0}(Kagehisa){1} hăng hái cầm trên tay chiếc phụ kiện điện thoại thông minh chuyên dụng để chụp ảnh lén mà cậu đã tiết kiệm tiền tiêu vặt để mua.,MACHINE_DRAFT_UNREVIEWED,
 D465,dialogue,1,data/Map066.json/events/10/pages/0/list/17,が、しかし……その一歩を踏み出せないでいた。,Nhưng mà……Cậu không thể bước ra khỏi bước đó.,MACHINE_DRAFT_UNREVIEWED,
 D466,dialogue,1,data/Map066.json/events/10/pages/0/list/19,（も、もしバレたらどうしよう……先生に言われて、そのあとは……停学に――）,"(Nếu, nếu bị phát hiện thì phải làm sao……Nếu bị thầy giáo phát hiện, thì sau đó……Bị đình chỉ học――)",MACHINE_DRAFT_UNREVIEWED,
 D467,dialogue,1,data/Map066.json/events/10/pages/0/list/23,――くん。,――Này cậu.,MACHINE_DRAFT_UNREVIEWED,
@@ -1687,21 +1584,18 @@ D492,dialogue,1,data/Map066.json/events/10/pages/0/list/193,微笑んだ表情�
 D493,dialogue,1,data/Map066.json/events/10/pages/0/list/196,――ねぇ、{0}くん。,"――Này, {0}-kun.",MACHINE_DRAFT_UNREVIEWED,
 D494,dialogue,1,data/Map066.json/events/10/pages/0/list/199,――どこ見てるの？,――Cậu đang nhìn đâu thế?,MACHINE_DRAFT_UNREVIEWED,
 D495,dialogue,1,data/Map066.json/events/10/pages/0/list/208,"あ、ああ……神代さん……っ
-あ……あっ……出る……っ","À, à……Chị Shinjiro……Hứ
-À...Á...Sắp ra rồi……Hứ",MACHINE_DRAFT_UNREVIEWED,
+あ……あっ……出る……っ","À, à...Bạn Kamishiro……Á......Á...Sắp ra rồi……Hứ",MACHINE_DRAFT_UNREVIEWED,
 D496,dialogue,1,data/Map066.json/events/10/pages/0/list/212,――うん、いいよ。,"――Ừm, được rồi.",MACHINE_DRAFT_UNREVIEWED,
 D497,dialogue,1,data/Map066.json/events/10/pages/0/list/217,うっ、あ……っ、あぁ……っ,"Ugh, á……Hứ, à...Hứ",MACHINE_DRAFT_UNREVIEWED,
 D498,dialogue,1,data/Map066.json/events/10/pages/0/list/225,妄想の中の{0}に自分の性欲を――精液をぶちまける。,Tôi trút ham muốn tình dục của mình――tinh dịch của mình lên {0} trong trí tưởng tượng.,MACHINE_DRAFT_UNREVIEWED,
 D499,dialogue,1,data/Map066.json/events/10/pages/0/list/227,はぁ……はぁ……はぁ…………,Ha...Haa……Ha…………,MACHINE_DRAFT_UNREVIEWED,
 D500,dialogue,1,data/Map066.json/events/10/pages/0/list/229,神代さん、ごめん……,"Kamishiro-san, em xin lỗi……",MACHINE_DRAFT_UNREVIEWED,
 D501,dialogue,1,data/Map066.json/events/10/pages/0/list/231,"……しかし満たされた感情はほんのわずかな一瞬で、そのあとは一気に
-現実へと引き戻されてしまう。","……Tuy nhiên, cảm giác thỏa mãn chỉ kéo dài trong một khoảnh khắc ngắn ngủi, sau đó tôi đột ngột
-Tôi bị kéo trở lại với thực tại.",MACHINE_DRAFT_UNREVIEWED,
+現実へと引き戻されてしまう。","……Tuy nhiên, cảm giác thỏa mãn đó chỉ kéo dài trong một khoảnh khắc ngắn ngủi, sau đó tôi lại bị kéo trở lại thực tại một cách đột ngột.",MACHINE_DRAFT_UNREVIEWED,
 D502,dialogue,1,data/Map066.json/events/10/pages/0/list/246,はぁ……いつか神代さんとエッチなことしてみたいなぁ……,"Haizz……Một ngày nào đó, mình muốn làm chuyện người lớn với anh Kamishiro……",MACHINE_DRAFT_UNREVIEWED,
 D503,dialogue,1,data/Map066.json/events/10/pages/0/list/248,こうして{0}{1}の密かな時間は虚しく過ぎていくのだった……,"Và như vậy, khoảng thời gian thầm kín của {0}{1} cứ thế trôi qua một cách vô vọng……",MACHINE_DRAFT_UNREVIEWED,
 D504,dialogue,1,data/Map067.json/events/19/pages/0/list/6,"えー、来週からいよいよ水泳の授業が始まるので
-みんな水着を忘れないように。","À, vì các tiết học bơi sẽ chính thức bắt đầu từ tuần tới,
-Mọi người đừng quên mang theo đồ bơi nhé.",MACHINE_DRAFT_UNREVIEWED,
+みんな水着を忘れないように。","À, từ tuần tới, các tiết học bơi sẽ chính thức bắt đầu, nên mọi người đừng quên mang theo đồ bơi nhé.",MACHINE_DRAFT_UNREVIEWED,
 N13,speaker,2,data/Map067.json/events/19/pages/0/list/14/parameters/4,生徒たちの声,Tiếng của các học sinh,MACHINE_DRAFT_UNREVIEWED,
 D505,dialogue,1,data/Map067.json/events/19/pages/0/list/15,えぇ～……,Hả~……,MACHINE_DRAFT_UNREVIEWED,
 D506,dialogue,1,data/Map067.json/events/19/pages/0/list/21,下津先生とかマジ無理ー！,"Thầy Shimotsu gì đó, thật sự không nổi!",MACHINE_DRAFT_UNREVIEWED,
@@ -1718,8 +1612,7 @@ D511,dialogue,1,data/Map071.json/events/2/pages/0/list/56,"ふぅ……
 よし、じゃあお風呂の掃除しちゃおう。","Phù……
 Được rồi, vậy thì dọn dẹp phòng tắm thôi.",MACHINE_DRAFT_UNREVIEWED,
 D512,dialogue,1,data/Map071.json/events/3/pages/0/list/2,"やっぱりアイスはバニラが
-一番よねぇ。","Quả nhiên là kem vani
-là ngon nhất nhỉ.",MACHINE_DRAFT_UNREVIEWED,
+一番よねぇ。",Dù sao thì kem vani vẫn là ngon nhất nhỉ.,MACHINE_DRAFT_UNREVIEWED,
 D513,dialogue,1,data/Map071.json/events/3/pages/1/list/2,"ふあぁ……
 そろそろ寝ようかしら。","Haaa……
 Có lẽ đã đến lúc đi ngủ rồi.",MACHINE_DRAFT_UNREVIEWED,
@@ -1785,8 +1678,7 @@ Vậy thì con xin mẹ đấy.",MACHINE_DRAFT_UNREVIEWED,
 D545,dialogue,1,data/Map071.json/events/11/pages/0/list/54,そろそろ学園に行く準備をしよう。,Đến lúc chuẩn bị đi học rồi.,MACHINE_DRAFT_UNREVIEWED,
 P78,plugin_text,1,data/Map071.json/events/11/pages/0/list/57/parameters/3/text,メニュー画面から【着替え】が出来るようになりました,Bây giờ bạn có thể [thay quần áo] từ màn hình menu.,MACHINE_DRAFT_UNREVIEWED,
 D546,dialogue,2,data/Map071.json/events/11/pages/1/list/2,"そろそろ支度した方が
-いいんじゃない？","Đã đến lúc chuẩn bị rồi đó.
-thì tốt nhỉ?",MACHINE_DRAFT_UNREVIEWED,
+いいんじゃない？",Có lẽ đã đến lúc nên chuẩn bị rồi nhỉ?,MACHINE_DRAFT_UNREVIEWED,
 D547,dialogue,1,data/Map071.json/events/12/pages/0/list/11,"ねぇ{0}、今日の帰りにお使いを頼めないかしら。
 繁華街にあるレコード屋さんにこれを渡してきて欲しいのよ。","Này {0}, hôm nay khi về nhà, tôi có thể nhờ bạn làm giúp một việc được không?
 Tớ muốn cậu mang cái này đến cho cửa hàng băng đĩa ở khu phố sầm uất.",MACHINE_DRAFT_UNREVIEWED,
@@ -1802,11 +1694,9 @@ D553,dialogue,1,data/Map071.json/events/12/pages/0/list/61,"それは分から�
 行けば気持ちも変わるかもよ。","Chị không biết điều đó đâu.
 Có thể tâm trạng của em sẽ thay đổi khi đến đó.",MACHINE_DRAFT_UNREVIEWED,
 D554,dialogue,1,data/Map071.json/events/13/pages/0/list/2,"お使いの件
-よろしくね。","Về việc nhờ vả
-Làm ơn nhé.",MACHINE_DRAFT_UNREVIEWED,
+よろしくね。",Nhờ em việc vặt nhé.,MACHINE_DRAFT_UNREVIEWED,
 D555,dialogue,1,data/Map071.json/events/13/pages/2/list/2,"私もお風呂
-入っちゃおうかしら。","Có lẽ tôi cũng nên
-đi tắm đây.",MACHINE_DRAFT_UNREVIEWED,
+入っちゃおうかしら。",Có lẽ tôi cũng nên đi tắm.,MACHINE_DRAFT_UNREVIEWED,
 D556,dialogue,1,data/Map071.json/events/13/pages/3/list/5,"おかえり。
 明日の準備？","Chào mừng trở về.
 Chuẩn bị cho ngày mai à?",MACHINE_DRAFT_UNREVIEWED,
@@ -1869,42 +1759,34 @@ D582,dialogue,1,data/Map071.json/events/18/pages/0/list/35,"服を脱ぎ、ベ�
 そして、少しだけ昔のことを思い返す。","Tôi cởi quần áo và nằm xuống giường.
 Và tôi nhớ lại một chút về quá khứ.",MACHINE_DRAFT_UNREVIEWED,
 D583,dialogue,1,data/Map071.json/events/18/pages/0/list/38,"興味本位で自慰行為に及んだ時は聞いていたほど
-気持ちよくなれたわけでもなく、途中で止めてしまった。","Khi tôi thử thủ dâm vì tò mò, tôi không thấy sướng như người ta nói
-Tôi cũng không cảm thấy sướng, nên đã dừng lại giữa chừng.",MACHINE_DRAFT_UNREVIEWED,
+気持ちよくなれたわけでもなく、途中で止めてしまった。","Khi tôi thử thủ dâm vì tò mò, tôi đã không cảm thấy sướng như những gì mình đã nghe, nên đã dừng lại giữa chừng.",MACHINE_DRAFT_UNREVIEWED,
 D584,dialogue,1,data/Map071.json/events/18/pages/0/list/41,"しかし、いまは当時の記憶と比べてはっきりと分かるくらい
-気分が高揚し、心臓がバクバクと高鳴っているのが分かる。","Tuy nhiên, bây giờ, so với ký ức lúc đó, tôi có thể cảm nhận rõ ràng
-Tôi cảm thấy phấn khích và có thể nhận ra tim mình đang đập thình thịch.",MACHINE_DRAFT_UNREVIEWED,
+気分が高揚し、心臓がバクバクと高鳴っているのが分かる。","Tuy nhiên, bây giờ, so với ký ức khi đó, tôi cảm thấy hưng phấn đến mức có thể nhận ra rõ ràng, và tôi có thể cảm thấy tim mình đang đập thình thịch.",MACHINE_DRAFT_UNREVIEWED,
 D585,dialogue,1,data/Map071.json/events/18/pages/0/list/46,んっ…………,Ngh…………,MACHINE_DRAFT_UNREVIEWED,
 D586,dialogue,1,data/Map071.json/events/18/pages/0/list/48,"ショーツの上から陰部をなぞるだけで身体がゾクりとして快感が走る。
 その感覚が怖くもあり……しかし心地がよくて繰り返してしまう。","Chỉ cần vuốt ve vùng kín qua lớp quần lót thôi cũng khiến cơ thể tôi rùng mình và cảm giác khoái cảm dâng trào.
 Cảm giác đó cũng thật đáng sợ……Nhưng nó lại rất dễ chịu, nên tôi cứ lặp đi lặp lại.",MACHINE_DRAFT_UNREVIEWED,
 D587,dialogue,1,data/Map071.json/events/18/pages/0/list/51,ふ、ぅ……んぅっ……,"Phù, ha……Uhh……",MACHINE_DRAFT_UNREVIEWED,
 D588,dialogue,1,data/Map071.json/events/18/pages/0/list/53,"そして、愛液で湿り気を帯びたショーツに恥ずかしさを覚えつつも
-さらに気分は高揚していく……","Và dù cảm thấy xấu hổ vì chiếc quần lót ẩm ướt vì dịch tiết âm đạo,
-Cảm xúc của tôi càng lúc càng dâng trào......",MACHINE_DRAFT_UNREVIEWED,
+さらに気分は高揚していく……","Và mặc dù cảm thấy xấu hổ vì chiếc quần lót ẩm ướt vì dịch âm đạo, nhưng tâm trạng của tôi lại càng thêm phấn khích……",MACHINE_DRAFT_UNREVIEWED,
 D589,dialogue,1,data/Map071.json/events/18/pages/0/list/56,はぁ……ん……く、ふぅ……っ,"Ha……Hn……Hừ, ha……Hứ",MACHINE_DRAFT_UNREVIEWED,
 D590,dialogue,1,data/Map071.json/events/18/pages/0/list/58,あっ……はぁ……ぁっ、く……んっ……,"Á......Ha...Á, khụ……Ngh...",MACHINE_DRAFT_UNREVIEWED,
 D591,dialogue,1,data/Map071.json/events/18/pages/0/list/61,"愛液が染み込み、ぴっちりと肌に張り付いたショーツの上から
-ぷっくりとした割れ目をかきわけるように指を這わせる。","Từ phía trên chiếc quần lót đã thấm đẫm dịch yêu và dính chặt vào da,
-Tôi lướt ngón tay như để tách khe rãnh phổng phao ra.",MACHINE_DRAFT_UNREVIEWED,
+ぷっくりとした割れ目をかきわけるように指を這わせる。",Tôi luồn ngón tay qua khe rãnh phổng phao trên chiếc quần lót đã thấm đẫm chất nhờn và dính chặt vào da.,MACHINE_DRAFT_UNREVIEWED,
 D592,dialogue,1,data/Map071.json/events/18/pages/0/list/65,（こんなに気持ちいいこと、だったんだ……）,(Hóa ra nó lại sướng đến thế này...),MACHINE_DRAFT_UNREVIEWED,
 D593,dialogue,1,data/Map071.json/events/18/pages/0/list/67,"初めて味わう快感にベッドの上で身をよじりながら
-甘い吐息を漏らす。","Tôi vặn vẹo người trên giường vì cảm giác khoái cảm lần đầu nếm trải,
-Tôi thở ra những hơi thở ngọt ngào.",MACHINE_DRAFT_UNREVIEWED,
+甘い吐息を漏らす。",Tôi vặn vẹo người trên giường và thở ra những hơi thở ngọt ngào trước cảm giác khoái cảm lần đầu được nếm trải.,MACHINE_DRAFT_UNREVIEWED,
 D594,dialogue,1,data/Map071.json/events/18/pages/0/list/70,"そして、ジンジンとした快感が体中を駆け巡るたび
-{0}の思考力は奪われ……","Và mỗi khi cảm giác khoái cảm tê dại chạy khắp cơ thể,
-Khả năng suy nghĩ của {0} bị tước đi……",MACHINE_DRAFT_UNREVIEWED,
+{0}の思考力は奪われ……","Và mỗi khi cảm giác khoái cảm tê dại chạy khắp cơ thể, {0} lại mất đi khả năng suy nghĩ……",MACHINE_DRAFT_UNREVIEWED,
 D595,dialogue,1,data/Map071.json/events/18/pages/0/list/75,はぁ…………ん……っ、はぁ……ぁ……,"Haa…………Hừm……Hứ, haa……Á......",MACHINE_DRAFT_UNREVIEWED,
 D596,dialogue,1,data/Map071.json/events/18/pages/0/list/77,頭がぼーっとするような心地よさがどんどん広がっていく。,Cảm giác dễ chịu như đầu óc đang lâng lâng dần lan rộng.,MACHINE_DRAFT_UNREVIEWED,
 D597,dialogue,1,data/Map071.json/events/18/pages/0/list/79,（下も脱いじゃおう、かな……）,(Có lẽ mình nên cởi luôn cả quần lót nữa nhỉ……),MACHINE_DRAFT_UNREVIEWED,
 D598,dialogue,1,data/Map071.json/events/18/pages/0/list/113,"今までショーツによって隔たれていた陰部を直接
-愛撫する。","Trực tiếp vuốt ve bộ phận kín mà trước giờ vẫn bị ngăn cách bởi chiếc quần lót.
-Vuốt ve.",MACHINE_DRAFT_UNREVIEWED,
+愛撫する。",Anh trực tiếp vuốt ve bộ phận kín mà trước giờ vẫn bị ngăn cách bởi chiếc quần lót.,MACHINE_DRAFT_UNREVIEWED,
 D599,dialogue,1,data/Map071.json/events/18/pages/0/list/116,ぁっ……あっ……ッ,Á...Á......Hứ!,MACHINE_DRAFT_UNREVIEWED,
 D600,dialogue,1,data/Map071.json/events/18/pages/0/list/118,（私のここ、こんなにヌルヌルになってたんだ……）,(Chỗ này của mình đã trở nên ướt át đến mức này rồi sao……),MACHINE_DRAFT_UNREVIEWED,
 D601,dialogue,1,data/Map071.json/events/18/pages/0/list/120,"身体を洗う目的以外で触れてこなかった部分を、今はただ
-快感を得るためだけに指を擦りつけている。","Những chỗ mà tôi chưa từng chạm vào ngoài mục đích tắm rửa cơ thể, bây giờ chỉ
-Bây giờ tôi đang cọ xát ngón tay vào đó chỉ để đạt được khoái cảm.",MACHINE_DRAFT_UNREVIEWED,
+快感を得るためだけに指を擦りつけている。","Những vùng cơ thể mà trước đây chưa từng được chạm vào ngoài mục đích tắm rửa, giờ đây đang được ngón tay cọ xát chỉ để đạt được khoái cảm.",MACHINE_DRAFT_UNREVIEWED,
 D602,dialogue,1,data/Map071.json/events/18/pages/0/list/124,"あっ……はぁ……ん、あぁ……んっ……
 はぁ……ぁ……っ、はぁ……はぁ……","Á......Ha...Ừm, ừm……Ngh...
 Ha...Á......Hứ, haa……Ha...",MACHINE_DRAFT_UNREVIEWED,
@@ -1913,8 +1795,7 @@ D603,dialogue,1,data/Map071.json/events/18/pages/0/list/127,"次第に下腹部�
 ……Và cùng với cảm giác đó, một cảm xúc khác cũng dâng trào lên.",MACHINE_DRAFT_UNREVIEWED,
 D604,dialogue,1,data/Map071.json/events/18/pages/0/list/131,（気持ちよすぎて……どうにかなりそう……）,(Cảm giác thật tuyệt vời......Mình sắp không chịu nổi rồi……),MACHINE_DRAFT_UNREVIEWED,
 D605,dialogue,1,data/Map071.json/events/18/pages/0/list/133,"今までに感じたことのない感情に怖れながらも
-快感をむさぼる行為を止めることはできない。","Dù cảm thấy sợ hãi trước những cảm xúc chưa từng trải qua trước đây,
-Tôi không thể ngừng hành động để thỏa mãn cơn thèm khoái cảm.",MACHINE_DRAFT_UNREVIEWED,
+快感をむさぼる行為を止めることはできない。","Dù sợ hãi trước những cảm xúc chưa từng trải qua, nhưng cô không thể ngừng hành vi khao khát khoái cảm.",MACHINE_DRAFT_UNREVIEWED,
 D606,dialogue,1,data/Map071.json/events/18/pages/0/list/136,んっ、あぁッ、はぁっ、は、あぁ……ッ,Ngh... Á... Ha... Ha... Á...Hứ!,MACHINE_DRAFT_UNREVIEWED,
 D607,dialogue,1,data/Map071.json/events/18/pages/0/list/138,愛撫の力加減も徐々に激しく抑制が効かなくなっていく。,Lực vuốt ve cũng dần trở nên mạnh hơn và không thể kiểm soát được nữa.,MACHINE_DRAFT_UNREVIEWED,
 D608,dialogue,1,data/Map071.json/events/18/pages/0/list/141,"あっ、はぁっ、あぁっ、あっ……！
@@ -1924,8 +1805,7 @@ D609,dialogue,1,data/Map071.json/events/18/pages/0/list/144,あっ、あぁっ�
 D610,dialogue,1,data/Map071.json/events/18/pages/0/list/146,（すごくジンジンして、止められない……っ）,"(Cảm giác ngứa ran quá mạnh, không thể dừng lại được……..."")",MACHINE_DRAFT_UNREVIEWED,
 D611,dialogue,1,data/Map071.json/events/18/pages/0/list/149,あっ、あっ……あぁッ、――ああぁッ！,"Á, á......Aa...!――Aa...!",MACHINE_DRAFT_UNREVIEWED,
 D612,dialogue,1,data/Map071.json/events/18/pages/0/list/151,"ついには快感によって引き起こされた感情が込みあがってくるのを抑えきれず
-それが溢れ出してしまう。","Cuối cùng, tôi không thể kìm nén được cảm xúc dâng trào do khoái cảm gây ra
-Nó cứ thế tuôn trào ra.",MACHINE_DRAFT_UNREVIEWED,
+それが溢れ出してしまう。","Cuối cùng, cô không thể kìm nén được cảm xúc dâng trào do khoái cảm gây ra và nó tuôn trào ra ngoài.",MACHINE_DRAFT_UNREVIEWED,
 D613,dialogue,1,data/Map071.json/events/18/pages/0/list/182,んッくぅぅッ！！,Ngh...hức!!,MACHINE_DRAFT_UNREVIEWED,
 D614,dialogue,1,data/Map071.json/events/18/pages/0/list/188,"全身がビクビクと痙攣しながら、液体が勢いよく放出されていく。
 同時に込みあがってきた感情が発散されていく心地よさに恍惚とする。","Toàn thân run rẩy và co giật, chất lỏng được phóng ra mạnh mẽ.
@@ -1933,14 +1813,12 @@ D614,dialogue,1,data/Map071.json/events/18/pages/0/list/188,"全身がビクビ�
 D615,dialogue,1,data/Map071.json/events/18/pages/0/list/193,はぁ……、はぁ…………っ,"Haa……, haa…………Hứ",MACHINE_DRAFT_UNREVIEWED,
 D616,dialogue,1,data/Map071.json/events/18/pages/0/list/195,（さっきの、すごく気持ちよくて……それにまだムズムズする感じ――）,"(Lúc nãy thật sự rất sướng……Hơn nữa, cảm giác ngứa ngáy vẫn còn――)",MACHINE_DRAFT_UNREVIEWED,
 D617,dialogue,1,data/Map071.json/events/18/pages/0/list/197,"ひときわ強い快感、何かがこみ上げてきて発散されるまでのあの心地よさに
-{0}は名残惜しいと感じてしまう。しかし……","Cảm giác khoái cảm đặc biệt mạnh mẽ, cảm giác dễ chịu đó cho đến khi có thứ gì đó dâng trào và được giải tỏa,
-{0} cảm thấy có chút tiếc nuối.Tuy nhiên……",MACHINE_DRAFT_UNREVIEWED,
+{0}は名残惜しいと感じてしまう。しかし……","{0} cảm thấy luyến tiếc cảm giác dễ chịu đó, cảm giác khoái cảm đặc biệt mạnh mẽ, cái gì đó dâng trào lên và được giải phóng.Nhưng mà……",MACHINE_DRAFT_UNREVIEWED,
 D618,dialogue,1,data/Map071.json/events/18/pages/0/list/200,"（ううん、今日はもうお終いにしないと。
 そろそろママが帰ってくるかも……）","(Không, hôm nay phải dừng lại thôi.
 Có lẽ sắp đến giờ mẹ về rồi……)",MACHINE_DRAFT_UNREVIEWED,
 D619,dialogue,1,data/Map071.json/events/18/pages/0/list/203,"そう思うと急に恥ずかしくなり、いそいそと身体を起こすと
-後片付けを始めるのだった……","Nghĩ đến đó, đột nhiên tôi cảm thấy xấu hổ, vội vàng ngồi dậy
-Và bắt đầu dọn dẹp......",MACHINE_DRAFT_UNREVIEWED,
+後片付けを始めるのだった……","Nghĩ vậy, đột nhiên cô cảm thấy xấu hổ, vội vàng ngồi dậy và bắt đầu dọn dẹp...",MACHINE_DRAFT_UNREVIEWED,
 M44,map_display_name,1,data/Map072.json/displayName,コンビニ,Cửa hàng tiện lợi,MACHINE_DRAFT_UNREVIEWED,
 N14,speaker,2,data/Map072.json/events/3/pages/0/list/2/parameters/4,店員,Nhân viên cửa hàng,MACHINE_DRAFT_UNREVIEWED,
 D620,dialogue,1,data/Map072.json/events/3/pages/0/list/3,中に入らないでくださーい。,Vui lòng đừng vào bên trong.,MACHINE_DRAFT_UNREVIEWED,
@@ -1958,23 +1836,19 @@ D627,dialogue,1,data/Map072.json/events/5/pages/0/list/40,"（{0}ちゃん、今
 一日の汚れが溜まったパンツがどんな具合か見せてもらうよ……）","({0}-chan, hôm nay cũng vất vả rồi nhé.
 Để anh xem cái quần dính đầy vết bẩn của cả ngày hôm nay trông như thế nào nhé......)",MACHINE_DRAFT_UNREVIEWED,
 D628,dialogue,1,data/Map072.json/events/5/pages/0/list/68,"カメラを連動させたスマートフォンの画面にはスカートの下からの
-アングルが映し出されている。","Trên màn hình điện thoại thông minh được kết nối với camera,
-Góc chụp được hiển thị.",MACHINE_DRAFT_UNREVIEWED,
+アングルが映し出されている。",Màn hình điện thoại thông minh được kết nối với camera hiển thị góc chụp từ dưới váy.,MACHINE_DRAFT_UNREVIEWED,
 D629,dialogue,1,data/Map072.json/events/5/pages/0/list/71,（よし……角度はこんなもんかな？）,(Được rồi……Góc chụp thế này được chưa nhỉ?),MACHINE_DRAFT_UNREVIEWED,
 D630,dialogue,1,data/Map072.json/events/5/pages/0/list/73,"男は画面いっぱいに映し出された盗撮映像にほくそ笑み、
-このわずかなひと時を堪能する。","Người đàn ông mỉm cười ranh mãnh trước đoạn video quay lén được chiếu kín màn hình,
-Anh ta tận hưởng khoảnh khắc ngắn ngủi này.",MACHINE_DRAFT_UNREVIEWED,
+このわずかなひと時を堪能する。",Người đàn ông mỉm cười ranh mãnh trước đoạn video quay lén được chiếu kín màn hình và tận hưởng khoảnh khắc ngắn ngủi này.,MACHINE_DRAFT_UNREVIEWED,
 D631,dialogue,1,data/Map072.json/events/5/pages/0/list/78,（ん？　なんだかいつもより汗ばんでる気がするな……）,(Hả?　Hình như cô ấy đổ mồ hôi nhiều hơn bình thường thì phải……),MACHINE_DRAFT_UNREVIEWED,
 D632,dialogue,1,data/Map072.json/events/5/pages/0/list/80,"湿り気を帯びたショーツは肌にぴったりと張りつき
-その周囲も汗で蒸れているようだった。","Chiếc quần lót ẩm ướt dính chặt vào da
-Vùng xung quanh đó dường như cũng ẩm ướt vì mồ hôi.",MACHINE_DRAFT_UNREVIEWED,
+その周囲も汗で蒸れているようだった。","Chiếc quần lót ẩm ướt dính chặt vào da, và xung quanh nó dường như cũng ẩm ướt vì mồ hôi.",MACHINE_DRAFT_UNREVIEWED,
 D633,dialogue,1,data/Map072.json/events/5/pages/0/list/83,"（きっと{0}ちゃんも生徒会で忙しいんだろうなぁ……
 ああ……僕だったら{1}ちゃんの支えになってあげられるのになぁ……）","(Chắc hẳn {0} cũng đang bận rộn với công việc của hội học sinh nhỉ……
 Ôi...Nếu là mình thì mình có thể hỗ trợ cho {1}-chan được mà...)",MACHINE_DRAFT_UNREVIEWED,
 D634,dialogue,1,data/Map072.json/events/5/pages/0/list/97,（よし、いつもの濃厚バニラソフトにしとこ）,"(Được rồi, cứ gọi món kem vani mềm đặc trưng như mọi khi vậy.)",MACHINE_DRAFT_UNREVIEWED,
 D635,dialogue,1,data/Map072.json/events/5/pages/0/list/99,"すぐ後ろで自分の恥部を盗み見されているとも知らず
-{0}は商品を手にレジへと向かう。","Không hề biết rằng chỗ kín của mình đang bị nhìn trộm ngay phía sau,
-{0} cầm sản phẩm trên tay và đi đến quầy tính tiền.",MACHINE_DRAFT_UNREVIEWED,
+{0}は商品を手にレジへと向かう。","Không hề biết rằng bộ phận kín của mình đang bị lén nhìn từ ngay phía sau, {0} cầm sản phẩm và đi về phía quầy thu ngân.",MACHINE_DRAFT_UNREVIEWED,
 D636,dialogue,1,data/Map072.json/events/5/pages/0/list/107,"（さて、次はいよいよ……だな。
 はやく{0}ちゃん帰ってこないかな）","(Nào, tiếp theo cuối cùng thì……Đúng vậy.
 Không biết {0} có sớm quay lại không nhỉ)",MACHINE_DRAFT_UNREVIEWED,
@@ -1984,14 +1858,12 @@ D638,dialogue,1,data/Map073.json/events/2/pages/0/list/11,"男はポケットか
 xuống dưới váy sao cho {0} không nhận ra.",MACHINE_DRAFT_UNREVIEWED,
 D639,dialogue,1,data/Map073.json/events/2/pages/0/list/15,（それじゃ、今日もまずは朝の綺麗なおぱんつ、撮っておこうか）,"(Vậy thì, hôm nay cũng vậy, trước tiên hãy chụp lại chiếc quần lót xinh đẹp buổi sáng này nhé.)",MACHINE_DRAFT_UNREVIEWED,
 D640,dialogue,1,data/Map073.json/events/2/pages/0/list/20,"極めて小さく調整されたシャッター音は周囲の駆動音などに交じり
-{0}に気づかれることはない。","Tiếng chụp ảnh được điều chỉnh cực nhỏ hòa lẫn với các tiếng động xung quanh như tiếng xe cộ qua lại, v.v.
-{0} không hề nhận ra.",MACHINE_DRAFT_UNREVIEWED,
+{0}に気づかれることはない。","Tiếng chụp ảnh được điều chỉnh cực nhỏ, hòa lẫn với tiếng ồn xung quanh như tiếng động cơ, nên {0} không hề nhận ra.",MACHINE_DRAFT_UNREVIEWED,
 D641,dialogue,1,data/Map073.json/events/2/pages/0/list/24,"わずかにアングルを調整しながら何枚もカメラに収めていく。
 ……それが盗撮画像を確認するまでのお楽しみの一つでもあった。","Anh ta chụp nhiều tấm ảnh bằng camera trong khi điều chỉnh góc chụp một chút.
 ……Đó cũng là một trong những niềm vui cho đến khi xem lại những bức ảnh chụp lén.",MACHINE_DRAFT_UNREVIEWED,
 D642,dialogue,1,data/Map073.json/events/2/pages/0/list/27,"そんな盗撮魔の餌食になっているとも知らず、
-{0}は無防備とも言える立ち姿のまま一階に到着するのを待つ……","Không hề biết rằng mình đang trở thành con mồi của tên chuyên chụp lén đó,
-{0} vẫn đứng ở tư thế có thể nói là không phòng bị, chờ đến tầng một......",MACHINE_DRAFT_UNREVIEWED,
+{0}は無防備とも言える立ち姿のまま一階に到着するのを待つ……","Không hề biết rằng mình đang trở thành con mồi của tên biến thái chuyên chụp lén, {0} vẫn đứng trong tư thế có thể nói là hoàn toàn không phòng bị, chờ thang máy xuống tầng một……",MACHINE_DRAFT_UNREVIEWED,
 D643,dialogue,1,data/Map073.json/events/2/pages/0/list/37,"（……それじゃまた夕方。
 {0}ちゃんの体液を吸い溜めたおぱんつ、楽しみにしてるからね）","（……Vậy thì hẹn gặp lại vào buổi tối nhé.
 Tôi rất mong được ngắm nhìn chiếc quần lót đã thấm đẫm dịch cơ thể của {0}-chan.)",MACHINE_DRAFT_UNREVIEWED,
@@ -2001,8 +1873,7 @@ D644,dialogue,3,data/Map073.json/events/3/pages/0/list/7,"（今日は休みの�
 D645,dialogue,1,data/Map073.json/events/3/pages/0/list/29,（でもこんな格好でどこに行くんだ……？）,(Nhưng mà ăn mặc thế này thì đi đâu chứ...? ),MACHINE_DRAFT_UNREVIEWED,
 D646,dialogue,1,data/Map073.json/events/3/pages/0/list/37,（それはそれとして……）,(Dù sao thì……),MACHINE_DRAFT_UNREVIEWED,
 D647,dialogue,1,data/Map073.json/events/3/pages/0/list/39,"いつものようにスマホを取り出すとスカートの下へと潜り込ませ
-{0}の下着を盗撮する。","Như thường lệ, tôi lấy điện thoại ra và luồn nó vào dưới váy
-Tôi chụp lén đồ lót của {0}.",MACHINE_DRAFT_UNREVIEWED,
+{0}の下着を盗撮する。","Như thường lệ, hắn lấy điện thoại ra, luồn vào dưới váy và chụp lén đồ lót của {0}.",MACHINE_DRAFT_UNREVIEWED,
 D648,dialogue,1,data/Map073.json/events/3/pages/0/list/45,（これは僕と{0}ちゃんの日課みたいなものだからね）,(Đây giống như là thói quen hằng ngày của tôi và {0}-chan vậy.),MACHINE_DRAFT_UNREVIEWED,
 D649,dialogue,1,data/Map073.json/events/3/pages/0/list/73,"（どれどれ……今日のおパンツは……
 いいね、今日も綺麗に撮れてるよ、{0}ちゃん）","(Để xem nào……Chiếc quần lót hôm nay là……
@@ -2032,30 +1903,24 @@ Bạn có chắc không?",MACHINE_DRAFT_UNREVIEWED,
 D658,dialogue,2,data/Map074.json/events/2/pages/3/list/15,-翌朝-,- Sáng hôm sau -,MACHINE_DRAFT_UNREVIEWED,
 N17,speaker,19,data/Map074.json/events/3/pages/0/list/1/parameters/4,ラボスタッフ,Nhân viên phòng thí nghiệm,MACHINE_DRAFT_UNREVIEWED,
 D659,dialogue,1,data/Map074.json/events/3/pages/0/list/2,"一歩ずつ着実に
-進んでいきましょ。","Hãy tiến lên từng bước một một cách vững chắc.
-Hãy tiến lên từng bước một.",MACHINE_DRAFT_UNREVIEWED,
+進んでいきましょ。","Hãy tiến lên một cách vững chắc, từng bước một nhé.",MACHINE_DRAFT_UNREVIEWED,
 D660,dialogue,1,data/Map074.json/events/3/pages/1/list/2,"{0}も
-まだまだ強くなるわね。","{0} cũng
-sẽ còn mạnh hơn nữa.",MACHINE_DRAFT_UNREVIEWED,
+まだまだ強くなるわね。",{0} vẫn còn mạnh lên nữa đó.,MACHINE_DRAFT_UNREVIEWED,
 D661,dialogue,2,data/Map074.json/events/4/pages/0/list/2,"まだ改良の余地が
-あるはず……","Vẫn còn chỗ để cải thiện
-Chắc chắn là có...",MACHINE_DRAFT_UNREVIEWED,
+あるはず……",Chắc chắn vẫn còn chỗ để cải thiện……,MACHINE_DRAFT_UNREVIEWED,
 N18,speaker,14,data/Map074.json/events/4/pages/1/list/2/parameters/4,ラボのスタッフ,Nhân viên phòng thí nghiệm,MACHINE_DRAFT_UNREVIEWED,
 D662,dialogue,1,data/Map074.json/events/4/pages/1/list/3,必要なものがあるなら声をかけてね。,Nếu bạn cần gì thì cứ nói nhé.,MACHINE_DRAFT_UNREVIEWED,
 C25,choices,1,data/Map074.json/events/4/pages/1/list/4/parameters/0/0,開発素材の購入,Mua nguyên liệu phát triển,MACHINE_DRAFT_UNREVIEWED,
 C26,choices,1,data/Map074.json/events/4/pages/1/list/4/parameters/0/1,通常アイテムの購入,Mua vật phẩm thông thường,MACHINE_DRAFT_UNREVIEWED,
 D663,dialogue,1,data/Map074.json/events/5/pages/0/list/2,"いま新しい設備を
-調整してるところなの。","Bây giờ tôi đang điều chỉnh
-đang được điều chỉnh.",MACHINE_DRAFT_UNREVIEWED,
+調整してるところなの。",Bây giờ tôi đang điều chỉnh thiết bị mới.,MACHINE_DRAFT_UNREVIEWED,
 D664,dialogue,1,data/Map074.json/events/5/pages/1/list/5,"ああちょうどいいところに。
 これ、渡そうと思ってたの。","Ồ, đúng lúc quá.
 Tôi đang định đưa cái này cho cô.",MACHINE_DRAFT_UNREVIEWED,
 D665,dialogue,2,data/Map074.json/events/5/pages/3/list/2,"一日に使える回数は決まってるから
-そこだけ注意してね。","Vì số lần có thể sử dụng trong một ngày là có hạn,
-Chỉ cần chú ý đến điều đó thôi nhé.",MACHINE_DRAFT_UNREVIEWED,
+そこだけ注意してね。","Số lần có thể sử dụng trong một ngày đã được quy định, nên hãy chú ý đến điểm đó nhé.",MACHINE_DRAFT_UNREVIEWED,
 D666,dialogue,2,data/Map074.json/events/6/pages/0/list/2,"結社アク・メーンの
-規模はまだ不明よ。","Quy mô của Tổ chức Ak-Men
-Quy mô của nó vẫn chưa được biết rõ.",MACHINE_DRAFT_UNREVIEWED,
+規模はまだ不明よ。",Quy mô của Tổ chức Ak-Meen vẫn chưa được biết rõ.,MACHINE_DRAFT_UNREVIEWED,
 D667,dialogue,2,data/Map074.json/events/6/pages/1/list/3,"{0}ちゃんが助けてくれた女性はうちで休ませているわ。
 目が覚めたらちゃんと送り届けるから安心して。","Người phụ nữ mà {0} đã giúp đỡ đang nghỉ ngơi ở chỗ chúng tôi.
 Đừng lo, khi cô ấy tỉnh dậy, tôi sẽ đưa cô ấy về tận nơi.",MACHINE_DRAFT_UNREVIEWED,
@@ -2070,29 +1935,23 @@ D669,dialogue,2,data/Map074.json/events/6/pages/2/list/8,"商店街のアーケ�
 Mặc dù không rõ mục đích của hắn là gì, nhưng hãy hạ gục hắn vì lợi ích của cư dân trong khu vực nhé!",MACHINE_DRAFT_UNREVIEWED,
 P83,plugin_text,2,data/Map074.json/events/6/pages/2/list/14/parameters/3/text,スケジュールに【商店街の怪人】が追加されました,【Kẻ lạ mặt ở khu phố mua sắm】 đã được thêm vào lịch trình.,MACHINE_DRAFT_UNREVIEWED,
 D670,dialogue,2,data/Map074.json/events/6/pages/2/list/46,"雄ヶ留守神社近辺にも出没しているらしいんだけど
-まだ情報が足りないの。","Dường như hắn cũng xuất hiện ở khu vực gần Đền Oga-Tomosu.
-Nhưng vẫn chưa có đủ thông tin.",MACHINE_DRAFT_UNREVIEWED,
+まだ情報が足りないの。","Dường như chúng cũng xuất hiện ở khu vực xung quanh Đền Oga-Rusyu, nhưng vẫn chưa có đủ thông tin.",MACHINE_DRAFT_UNREVIEWED,
 D671,dialogue,2,data/Map074.json/events/6/pages/2/list/52,"海水浴場近辺にも出没しているらしいんだけど
-まだ情報が足りないの。","Hình như hắn cũng xuất hiện ở khu vực gần bãi tắm biển,
-Nhưng vẫn chưa có đủ thông tin.",MACHINE_DRAFT_UNREVIEWED,
+まだ情報が足りないの。","Dường như chúng cũng xuất hiện ở khu vực gần bãi tắm biển, nhưng vẫn chưa có đủ thông tin.",MACHINE_DRAFT_UNREVIEWED,
 D672,dialogue,1,data/Map074.json/events/7/pages/0/list/2,"まずは誘拐事件を
-何とかしないとね。","Trước tiên, chúng ta phải giải quyết
-phải giải quyết bằng cách nào đó đã.",MACHINE_DRAFT_UNREVIEWED,
+何とかしないとね。","Trước tiên, chúng ta phải giải quyết vụ bắt cóc đã.",MACHINE_DRAFT_UNREVIEWED,
 D673,dialogue,1,data/Map074.json/events/7/pages/1/list/3,無理はしないでね。,Đừng cố quá nhé.,MACHINE_DRAFT_UNREVIEWED,
 C30,choices,1,data/Map074.json/events/7/pages/1/list/4/parameters/0/0,ＡＰを回復する,Hồi phục AP,MACHINE_DRAFT_UNREVIEWED,
 C31,choices,1,data/Map074.json/events/7/pages/1/list/4/parameters/0/1,ＨＰを回復する,Hồi phục HP,MACHINE_DRAFT_UNREVIEWED,
 D674,dialogue,1,data/Map074.json/events/8/pages/0/list/2,"たしか倉庫に仕舞ったと
-思ったんだけど……","Tôi nhớ là đã cất nó trong kho
-Tôi nghĩ vậy……",MACHINE_DRAFT_UNREVIEWED,
+思ったんだけど……",Tôi nhớ là mình đã cất nó vào nhà kho rồi mà……,MACHINE_DRAFT_UNREVIEWED,
 D675,dialogue,1,data/Map074.json/events/8/pages/1/list/2,"{0}ちゃんのママと私は
-学園でも同期だったの。","Mẹ của {0} và tôi
-cũng là bạn cùng khóa ở học viện.",MACHINE_DRAFT_UNREVIEWED,
+学園でも同期だったの。",Mẹ của {0} và tôi là bạn cùng khóa ở trường.,MACHINE_DRAFT_UNREVIEWED,
 D676,dialogue,1,data/Map074.json/events/9/pages/0/list/8,"おかえりなさい。
 ……さて、それじゃあまずは軽くおさらいしておきましょうか。","Chào mừng trở lại.
 ……Nào, vậy thì trước tiên chúng ta hãy ôn lại một chút nhé.",MACHINE_DRAFT_UNREVIEWED,
 D677,dialogue,1,data/Map074.json/events/9/pages/0/list/11,"結社アク・メーンはコランダライズテック社の技術を悪用して
-何かを成し遂げようとしているわ。","Tổ chức Ak-Mene đang lạm dụng công nghệ của Công ty Corandarize Tech
-để đạt được một mục đích nào đó.",MACHINE_DRAFT_UNREVIEWED,
+何かを成し遂げようとしているわ。",Tổ chức Ak-Mane đang tìm cách đạt được điều gì đó bằng cách lợi dụng công nghệ của Công ty Corandarize Tech.,MACHINE_DRAFT_UNREVIEWED,
 D678,dialogue,1,data/Map074.json/events/9/pages/0/list/16,何か、って……昨日は世界征服を企んでるとか言ってなかった？,"Cái gì đó, là……Hôm qua chẳng phải cô đã nói là chúng đang âm mưu chinh phục thế giới sao?",MACHINE_DRAFT_UNREVIEWED,
 D679,dialogue,1,data/Map074.json/events/9/pages/0/list/19,"……まぁそれはちょっと大げさに言いすぎたかもね。
 でも{0}人の感情を抽出して結晶化する技術{1}を悪用しようとしているのは事実よ。","……Ừm, có lẽ tôi đã nói hơi quá.
@@ -2102,8 +1961,7 @@ D681,dialogue,1,data/Map074.json/events/9/pages/0/list/27,（あのことはま�
 D682,dialogue,1,data/Map074.json/events/9/pages/0/list/30,…………どうしたの？,…………Có chuyện gì vậy?,MACHINE_DRAFT_UNREVIEWED,
 D683,dialogue,1,data/Map074.json/events/9/pages/0/list/34,ううん、なんでもないの。,"Không, không có gì đâu.",MACHINE_DRAFT_UNREVIEWED,
 D684,dialogue,1,data/Map074.json/events/9/pages/0/list/36,"とにかく、この技術の悪用と結びつくであろう事件を解決することが
-当面の私たちの目標ね。","Dù sao thì, mục tiêu trước mắt của chúng ta là giải quyết vụ án có khả năng liên quan đến việc lạm dụng công nghệ này.
-là mục tiêu trước mắt của chúng ta.",MACHINE_DRAFT_UNREVIEWED,
+当面の私たちの目標ね。","Dù sao thì, mục tiêu trước mắt của chúng ta là giải quyết những vụ việc có khả năng liên quan đến việc lạm dụng công nghệ này.",MACHINE_DRAFT_UNREVIEWED,
 D685,dialogue,1,data/Map074.json/events/9/pages/0/list/41,女の人を狙った誘拐事件のことだね。,Đó là vụ án bắt cóc nhắm vào phụ nữ phải không.,MACHINE_DRAFT_UNREVIEWED,
 D686,dialogue,1,data/Map074.json/events/9/pages/0/list/45,"で、ここからが今日の本題。
 この事件に関連しているかどうかは不確定だけど、一つ怪しい場所があるのよ。","Và từ đây trở đi là chủ đề chính của ngày hôm nay.
@@ -2132,13 +1990,11 @@ D699,dialogue,1,data/Map074.json/events/9/pages/3/list/13,"いま急ぎでやる
 それよりもこっちの方が大事かなって。","Bây giờ không có việc gì gấp cần phải làm cả.
 Tôi nghĩ việc này quan trọng hơn.",MACHINE_DRAFT_UNREVIEWED,
 D700,dialogue,1,data/Map074.json/events/9/pages/3/list/17,"そう、じゃあ早速で悪いけど昨日の地下基地にもう一度
-行ってもらえるかしら。","Vậy à, xin lỗi vì phải nhờ ngay bây giờ, nhưng cô có thể đến căn cứ ngầm hôm qua một lần nữa
-em có thể đến đó một lần nữa không?",MACHINE_DRAFT_UNREVIEWED,
+行ってもらえるかしら。","Vâng, vậy thì xin lỗi vì vội vàng, nhưng liệu bạn có thể quay lại căn cứ ngầm của hôm qua một lần nữa không?",MACHINE_DRAFT_UNREVIEWED,
 D701,dialogue,1,data/Map074.json/events/9/pages/3/list/23,今日は遅かったわね、生徒会の仕事？,"Hôm nay em đến muộn nhỉ, có việc của hội học sinh à?",MACHINE_DRAFT_UNREVIEWED,
 D702,dialogue,1,data/Map074.json/events/9/pages/3/list/27,そんなとこ。,Đại loại vậy.,MACHINE_DRAFT_UNREVIEWED,
 D703,dialogue,1,data/Map074.json/events/9/pages/3/list/30,"お疲れのところ悪いけど昨日の地下基地にもう一度
-行ってもらえるかしら。","Dù biết là em đã mệt rồi, nhưng em có thể đến căn cứ ngầm hôm qua một lần nữa
-được không?",MACHINE_DRAFT_UNREVIEWED,
+行ってもらえるかしら。","Xin lỗi vì làm phiền khi bạn đang mệt mỏi, nhưng bạn có thể đến căn cứ ngầm của hôm qua một lần nữa được không?",MACHINE_DRAFT_UNREVIEWED,
 D704,dialogue,1,data/Map074.json/events/9/pages/3/list/40,このメモリーを今から教える端末に接続してデータを取ってきて欲しいの。,Tôi muốn cậu kết nối bộ nhớ này với thiết bị đầu cuối mà tôi sẽ chỉ cho cậu ngay bây giờ và lấy dữ liệu về.,MACHINE_DRAFT_UNREVIEWED,
 D705,dialogue,1,data/Map074.json/events/9/pages/3/list/44,それだけ？,Chỉ vậy thôi sao?,MACHINE_DRAFT_UNREVIEWED,
 D706,dialogue,1,data/Map074.json/events/9/pages/3/list/47,"それだけ。
@@ -2152,28 +2008,26 @@ D709,dialogue,1,data/Map074.json/events/9/pages/6/list/6,{0}の負担になら�
 C32,choices,1,data/Map074.json/events/9/pages/6/list/7/parameters/0/0,抑制剤を使う,Sử dụng chất ức chế,MACHINE_DRAFT_UNREVIEWED,
 D710,dialogue,1,data/Map074.json/events/9/pages/6/list/11,"抑制剤を使用すると抑制効果が切れるまで{0}に変身できません
 よろしいですか？
-{1}{2}に変身している場合、変身が解除されます。","Nếu sử dụng chất ức chế, bạn sẽ không thể biến hình thành {0} cho đến khi hết tác dụng ức chế.
-Bạn có chắc chắn không?
+{1}{2}に変身している場合、変身が解除されます。","Nếu sử dụng chất ức chế, bạn sẽ không thể biến hình thành {0} cho đến khi hết tác dụng ức chế. Bạn có đồng ý không?
 Nếu đang biến hình thành {1}{2}, trạng thái biến hình sẽ bị hủy bỏ.",MACHINE_DRAFT_UNREVIEWED,
 P84,plugin_text,1,data/Map074.json/events/9/pages/6/list/26/parameters/3/text,"媚薬効果{0}が解除され
 抑制効果{1}が付与されました{2}抑制効果：
 性欲のリセット
 変身能力の喪失
-変身状態の強制解除","Hiệu ứng thuốc kích dục {0} đã được hủy bỏ
-Hiệu ứng ức chế {1} đã được áp dụng {2} Hiệu ứng ức chế:
+変身状態の強制解除","Hiệu ứng thuốc kích dục{0} đã được giải trừ
+Hiệu ứng ức chế{1} đã được áp dụng{2}Hiệu ứng ức chế:
 Đặt lại ham muốn tình dục
 Mất khả năng biến hình
-Bắt buộc hủy trạng thái biến hình",MACHINE_DRAFT_UNREVIEWED,
+Buộc hủy trạng thái biến hình",MACHINE_DRAFT_UNREVIEWED,
 P85,plugin_text,1,data/Map074.json/events/9/pages/6/list/36/parameters/3/text,"媚薬効果{0}が解除され
 抑制効果{1}が付与されました{2}抑制効果：
 性欲のリセット
-変身能力の喪失","Hiệu ứng thuốc kích dục {0} đã được gỡ bỏ
-Đã áp dụng hiệu ứng ức chế {1}{2}Hiệu ứng ức chế:
+変身能力の喪失","Hiệu ứng thuốc kích dục{0} đã được giải trừ
+Hiệu ứng ức chế{1} đã được áp dụng{2}Hiệu ứng ức chế:
 Đặt lại ham muốn tình dục
 Mất khả năng biến hình",MACHINE_DRAFT_UNREVIEWED,
 D711,dialogue,1,data/Map074.json/events/9/pages/6/list/95,"開発プランはこっちで用意するから{0}は気になる装備をどんどん
-作っていってちょうだいね。","Bên này sẽ chuẩn bị kế hoạch phát triển, nên {0} cứ tiếp tục chế tạo
-Cứ chế tạo những trang bị mà bạn quan tâm nhé.",MACHINE_DRAFT_UNREVIEWED,
+作っていってちょうだいね。","Bên này sẽ chuẩn bị kế hoạch phát triển, nên {0} cứ tiếp tục chế tạo thật nhiều trang bị mà bạn quan tâm nhé.",MACHINE_DRAFT_UNREVIEWED,
 C33,choices,1,data/Map074.json/events/9/pages/6/list/97/parameters/0/0,話をする,Trò chuyện,MACHINE_DRAFT_UNREVIEWED,
 D712,dialogue,1,data/Map074.json/events/9/pages/6/list/102,"抑制剤の効果だけど、明日の夕方には力も戻ってるはずよ。
 でもある意味、これは{0}の弱点とも言えるかしらね……","Đó là tác dụng của chất ức chế, nhưng đến tối mai thì sức mạnh của cậu sẽ trở lại thôi.
@@ -2194,8 +2048,7 @@ D719,dialogue,1,data/Map074.json/events/11/pages/0/list/15,"……どうやら�
 作用してるのは間違いないわね。","……Có vẻ chắc chắn là các yếu tố cảm xúc kích thích ham muốn tình dục
 đang tác động lên lõi của {0} rồi.",MACHINE_DRAFT_UNREVIEWED,
 D720,dialogue,1,data/Map074.json/events/11/pages/0/list/18,"とはいえ{0}のコアを支配するにはほど遠いから
-影響度としては小さい部類……なんだけど――","Tuy nhiên, vẫn còn cách xa việc có thể kiểm soát được lõi của {0},
-Về mức độ ảnh hưởng thì thuộc loại nhỏ……Tuy nhiên――",MACHINE_DRAFT_UNREVIEWED,
+影響度としては小さい部類……なんだけど――","Tuy nhiên, vì còn lâu mới có thể kiểm soát được lõi của {0}, nên mức độ ảnh hưởng thuộc loại nhỏ...Tuy nhiên――",MACHINE_DRAFT_UNREVIEWED,
 D721,dialogue,1,data/Map074.json/events/11/pages/0/list/27,（そろそろ“あのこと”も話しておいた方がいいわよね）,(Đã đến lúc nên nói về “chuyện đó” rồi nhỉ.),MACHINE_DRAFT_UNREVIEWED,
 D722,dialogue,1,data/Map074.json/events/11/pages/0/list/32,"とにかく、その症状を取り除く方法を教えるわね。
 ２通りあるんだけど……まず１つ目はこの抑制剤を使う方法。","Dù sao thì, tôi sẽ chỉ cho cậu cách để loại bỏ triệu chứng đó.
@@ -2210,14 +2063,11 @@ Việc ức chế cảm xúc có liên quan gì đến sức mạnh của {0} kh
 D726,dialogue,1,data/Map074.json/events/11/pages/0/list/52,感情を抽出して結晶化する装置の話をしたのは覚えてる？,Bạn có nhớ tôi đã nói về thiết bị chiết xuất và kết tinh cảm xúc không?,MACHINE_DRAFT_UNREVIEWED,
 D727,dialogue,1,data/Map074.json/events/11/pages/0/list/56,たしか、結社アク・メーンが悪用しようとしている技術、だっけ。,"Nếu tôi nhớ không nhầm, đó là công nghệ mà tổ chức Ác-Mên đang tìm cách lợi dụng.",MACHINE_DRAFT_UNREVIEWED,
 D728,dialogue,1,data/Map074.json/events/11/pages/0/list/59,"{0}のコアはその技術によって抽出された結晶そのもので
-{1}の内にある正義の感情を増幅して戦う力に変換しているの。","Lõi của {0} chính là tinh thể được chiết xuất bằng công nghệ đó
-Nó đang khuếch đại cảm xúc chính nghĩa bên trong {1} và chuyển hóa thành sức mạnh để chiến đấu.",MACHINE_DRAFT_UNREVIEWED,
+{1}の内にある正義の感情を増幅して戦う力に変換しているの。","Lõi của {0} chính là tinh thể được chiết xuất bằng công nghệ đó, nó khuếch đại cảm xúc chính nghĩa bên trong {1} và chuyển hóa thành sức mạnh chiến đấu.",MACHINE_DRAFT_UNREVIEWED,
 D729,dialogue,1,data/Map074.json/events/11/pages/0/list/64,"そういうわけだから、この抑制剤を使っちゃうと
-しばらくは変身もできなくなるのよ。","Vì vậy, nếu sử dụng chất ức chế này,
-thì sẽ không thể biến hình trong một thời gian.",MACHINE_DRAFT_UNREVIEWED,
+しばらくは変身もできなくなるのよ。","Vì vậy, nếu sử dụng chất ức chế này, cô sẽ không thể biến hình trong một thời gian.",MACHINE_DRAFT_UNREVIEWED,
 D730,dialogue,1,data/Map074.json/events/11/pages/0/list/69,"とは言っても、抑制効果はせいぜい１日ってところだから
-今回みたいなケースだとそれほど影響のある副作用ということでもないかしらね。","Dù vậy, tác dụng ức chế cũng chỉ kéo dài tối đa là một ngày thôi,
-Trong trường hợp như lần này, có lẽ nó không phải là một tác dụng phụ có ảnh hưởng lớn lắm.",MACHINE_DRAFT_UNREVIEWED,
+今回みたいなケースだとそれほど影響のある副作用ということでもないかしらね。","Tuy nhiên, tác dụng ức chế chỉ kéo dài tối đa là một ngày, nên trong trường hợp như lần này, có lẽ nó không phải là một tác dụng phụ có ảnh hưởng lớn lắm.",MACHINE_DRAFT_UNREVIEWED,
 D731,dialogue,1,data/Map074.json/events/11/pages/0/list/74,そうだったんだ。,Hóa ra là vậy.,MACHINE_DRAFT_UNREVIEWED,
 D732,dialogue,1,data/Map074.json/events/11/pages/0/list/78,"さて、それじゃあ２つ目の方法。
 ……自分でそのムラムラした感情を“なんとか”する。","Vậy thì, đây là cách thứ hai.
@@ -2225,8 +2075,7 @@ D732,dialogue,1,data/Map074.json/events/11/pages/0/list/78,"さて、それじ�
 D733,dialogue,1,data/Map074.json/events/11/pages/0/list/83,それって、つまり……,Điều đó có nghĩa là……,MACHINE_DRAFT_UNREVIEWED,
 D734,dialogue,1,data/Map074.json/events/11/pages/0/list/87,マスターベーションで性欲を解消しちゃうってこと。,Tức là giải tỏa ham muốn tình dục bằng cách thủ dâm.,MACHINE_DRAFT_UNREVIEWED,
 D735,dialogue,1,data/Map074.json/events/11/pages/0/list/91,"あ、もちろん素敵な相手がいるならそっちでもいいんだけど
-ちゃんと避妊具はつけること。","À, tất nhiên nếu có một đối tác tuyệt vời thì làm với người đó cũng được.
-Nhưng phải nhớ dùng biện pháp tránh thai nhé.",MACHINE_DRAFT_UNREVIEWED,
+ちゃんと避妊具はつけること。","À, tất nhiên nếu có một đối tác tuyệt vời thì cũng được, nhưng phải nhớ dùng biện pháp tránh thai nhé.",MACHINE_DRAFT_UNREVIEWED,
 D736,dialogue,1,data/Map074.json/events/11/pages/0/list/96,そんな相手いないから。,Vì tôi không có người như vậy.,MACHINE_DRAFT_UNREVIEWED,
 D737,dialogue,1,data/Map074.json/events/11/pages/0/list/100,"まぁとにかく、{0}の負担が少ないと思う方を選んでちょうだい。
 ちなみにママだったら――","Dù sao thì, hãy chọn cách mà {0} nghĩ là ít gánh nặng hơn nhé.
@@ -2279,21 +2128,17 @@ C35,choices,1,data/Map074.json/events/16/pages/0/list/1/parameters/0/1,装備開
 C36,choices,1,data/Map074.json/events/16/pages/0/list/1/parameters/0/2,装備開発について２,Về phát triển trang bị 2,MACHINE_DRAFT_UNREVIEWED,
 C37,choices,1,data/Map074.json/events/16/pages/0/list/1/parameters/0/3,装備開発について３,Về phát triển trang bị 3,MACHINE_DRAFT_UNREVIEWED,
 D756,dialogue,1,data/Map074.json/events/16/pages/0/list/10,"一部の素材はマーヤーラボのショップで購入できますが
-その他の素材についてはマップやバトルなどで入手する必要があります。","Một số nguyên liệu có thể mua tại cửa hàng của Phòng thí nghiệm Maya, nhưng
-Các nguyên liệu khác cần phải kiếm được trong bản đồ, trận chiến, v.v.",MACHINE_DRAFT_UNREVIEWED,
+その他の素材についてはマップやバトルなどで入手する必要があります。","Một số nguyên liệu có thể mua tại cửa hàng của Phòng thí nghiệm Maya, nhưng các nguyên liệu khác phải kiếm được thông qua bản đồ, trận chiến, v.v.",MACHINE_DRAFT_UNREVIEWED,
 D757,dialogue,1,data/Map074.json/events/16/pages/0/list/13,"体験版ではマーヤーラボのショップで購入できる素材に制限があります。
 {0}【イミテーションベース-γ】のみ購入可能","Trong phiên bản dùng thử, có giới hạn về các nguyên liệu có thể mua tại cửa hàng của Phòng thí nghiệm Maya.
 Chỉ có thể mua {0} [Vật liệu cơ bản giả - γ]",MACHINE_DRAFT_UNREVIEWED,
 D758,dialogue,1,data/Map074.json/events/16/pages/0/list/20,"評価 / 性能について
 値は固定されており、変動はしません。
-強敵が倒せない場合などは評価の高い装備が作れないかチェックしましょう。","Về chỉ số/hiệu suất
-Các giá trị được cố định và không thay đổi.
-Trong trường hợp không thể đánh bại kẻ địch mạnh, hãy kiểm tra xem có thể chế tạo trang bị có chỉ số cao hay không.",MACHINE_DRAFT_UNREVIEWED,
+強敵が倒せない場合などは評価の高い装備が作れないかチェックしましょう。","Các giá trị về đánh giá/hiệu suất là cố định và không thay đổi.
+Trong trường hợp không thể đánh bại kẻ địch mạnh, hãy kiểm tra xem có thể chế tạo được trang bị có chỉ số đánh giá cao hay không.",MACHINE_DRAFT_UNREVIEWED,
 D759,dialogue,1,data/Map074.json/events/16/pages/0/list/28,"エクステンドボーナスについて
 slot1とslot2はそれぞれに対応した装備品を身に着けることで
-{0}に追加で特殊能力が付与されます。","Về phần thưởng mở rộng
-Bằng cách trang bị các món đồ tương ứng với ô 1 và ô 2,
-{0} sẽ được cộng thêm các khả năng đặc biệt.",MACHINE_DRAFT_UNREVIEWED,
+{0}に追加で特殊能力が付与されます。","Về phần thưởng mở rộng, khi trang bị các món đồ tương ứng với ô 1 và ô 2, {0} sẽ được cộng thêm các khả năng đặc biệt.",MACHINE_DRAFT_UNREVIEWED,
 D760,dialogue,2,data/Map074.json/events/17/pages/0/list/3,"開発した装備を確認するために変身することができます。
 {0}マーヤーラボから出ると変身は解除されます。
 {1}変身バンクは再生されません","Bạn có thể biến hình để kiểm tra trang bị đã phát triển.
@@ -2320,10 +2165,10 @@ Này, cái này nè.Quà tặng đây.",MACHINE_DRAFT_UNREVIEWED,
 P88,plugin_text,1,data/Map076.json/events/5/pages/0/list/17/parameters/3/text,"神代　{0}（かみしろ　まや）　36歳　既婚{1}身長163cm、体重59kg
 バスト99、ウエスト63、ヒップ93{2}{3}の母。
 先進的な変身グッズメーカーとしても有名な
-コランダライズテック社の技術開発部主任。{4}現在はシングルマザー。","Kamishiro {0} (Kamishiro Maya) 36 tuổi, đã kết hôn{1}Cao 163 cm, nặng 59 kg
-Vòng 1 99, vòng eo 63, vòng mông 93{2}{3} Là một người mẹ.
-Là trưởng phòng phát triển công nghệ của công ty Corandarize Tech,
-Trưởng phòng phát triển công nghệ của Công ty Corandarize Tech. {4}Hiện tại là một bà mẹ đơn thân.",MACHINE_DRAFT_UNREVIEWED,
+コランダライズテック社の技術開発部主任。{4}現在はシングルマザー。","Kamishiro　{0} (Kamishiro Maya)　36 tuổi　Đã kết hôn{1}Cao 163cm, nặng 59kg
+Vòng 1: 99, vòng eo: 63, vòng 3: 93{2}Mẹ của {3}.
+Trưởng phòng phát triển kỹ thuật của Corandarize Tech,
+hãng đồ biến hình tiên tiến nổi tiếng.{4}Hiện là mẹ đơn thân.",MACHINE_DRAFT_UNREVIEWED,
 D769,dialogue,1,data/Map076.json/events/5/pages/0/list/43,"私の誕生日まだ先なんだけど……
 いくら何でも早すぎない？","Sinh nhật của tôi vẫn còn lâu mà……
 Dù sao thì cũng hơi sớm quá phải không?",MACHINE_DRAFT_UNREVIEWED,
@@ -2380,10 +2225,10 @@ D790,dialogue,1,data/Map076.json/events/15/pages/0/list/20,コード：{0}……
 P89,plugin_text,1,data/Map076.json/events/15/pages/0/list/34/parameters/3/text,"神代　{0}（かみしろ　あやこ）　処女{1}身長160cm、体重50.2kg
 バスト96、ウエスト59、ヒップ86{2}神代{3}の娘。本作の主人公。
 母の影響で変身ヒロインに強い憧れを持ち
-現在は蒼晶学園の生徒会長を務める。{4}小さい頃からの夢：正義のヒロインになること","Kamishiro　{0} (Kamishiro Ayako)　Trinh nữ{1}Cao 160 cm, nặng 50,2 kg
-Vòng 1 96, vòng eo 59, vòng 3 86{2}Con gái của Kamishiro{3}.Nhân vật chính của tác phẩm này.
-Dưới ảnh hưởng của mẹ, cô có khát khao mãnh liệt được trở thành một nữ chính biến hình.
-Hiện tại, cô đang giữ chức Chủ tịch Hội học sinh của Trường học viện Sōshō. {4}Ước mơ từ nhỏ: Trở thành một nữ chính chính nghĩa",MACHINE_DRAFT_UNREVIEWED,
+現在は蒼晶学園の生徒会長を務める。{4}小さい頃からの夢：正義のヒロインになること","Kamishiro　{0} (Kamishiro Ayako)　Còn trinh{1}Cao 160cm, nặng 50,2kg
+Vòng 1: 96, vòng eo: 59, vòng 3: 86{2}Con gái của Kamishiro {3}. Nhân vật chính.
+Chịu ảnh hưởng của mẹ, cô rất ngưỡng mộ các nữ anh hùng biến hình,
+hiện là hội trưởng hội học sinh Học viện Sōshō.{4}Ước mơ từ nhỏ: Trở thành nữ anh hùng chính nghĩa",MACHINE_DRAFT_UNREVIEWED,
 D791,dialogue,1,data/Map076.json/events/15/pages/0/list/57,"すごい、本当になれたんだ……
 ありがとうママ。","Thật tuyệt vời, mình thực sự đã trở thành như vậy rồi……
 Cảm ơn mẹ.",MACHINE_DRAFT_UNREVIEWED,
@@ -2410,8 +2255,7 @@ D798,dialogue,1,data/Map078.json/events/4/pages/0/list/33,"…………
 (Hình như bầu không khí hôm nay khác với hôm qua...)",MACHINE_DRAFT_UNREVIEWED,
 D799,dialogue,1,data/Map078.json/events/10/pages/0/list/6,ドーム状の端末……きっとこれだ。,Thiết bị đầu cuối hình mái vòm……Chắc chắn là cái này rồi.,MACHINE_DRAFT_UNREVIEWED,
 D800,dialogue,1,data/Map078.json/events/10/pages/0/list/12,"{0}から預かったメモリーを端末に接続すると、プログラムが起動したのか
-何らかの処理が目まぐるしく進行しているようだった。","Khi kết nối bộ nhớ nhận được từ {0} vào thiết bị đầu cuối, có vẻ như chương trình đã khởi động
-Có vẻ như một số quá trình đang diễn ra một cách chóng mặt.",MACHINE_DRAFT_UNREVIEWED,
+何らかの処理が目まぐるしく進行しているようだった。","Khi kết nối bộ nhớ nhận được từ {0} vào thiết bị, có vẻ như chương trình đã khởi động hoặc một số quá trình đang diễn ra rất nhanh.",MACHINE_DRAFT_UNREVIEWED,
 D801,dialogue,1,data/Map078.json/events/10/pages/0/list/16,（終わるまで残り時間は――）,(Thời gian còn lại cho đến khi kết thúc là――),MACHINE_DRAFT_UNREVIEWED,
 D802,dialogue,1,data/Map078.json/events/10/pages/0/list/32,（よし、終わった。ラボへ戻ろう）,"(Được rồi, xong rồi.Quay lại phòng thí nghiệm thôi.)",MACHINE_DRAFT_UNREVIEWED,
 D803,dialogue,1,data/Map078.json/events/23/pages/0/list/8,（待ち伏せ……でもこの程度なら――）,(Bị phục kích……Nhưng nếu chỉ ở mức độ này thì――),MACHINE_DRAFT_UNREVIEWED,
@@ -2447,8 +2291,7 @@ D815,dialogue,1,data/Map078.json/events/24/pages/0/list/88,"貴様のような�
 その不敬、この我輩が断じてやろう！","Thật là to gan khi một cô nhóc như ngươi lại dám mang danh hiệu Code Nine.
 Ta sẽ trừng phạt cái tội bất kính đó!",MACHINE_DRAFT_UNREVIEWED,
 D816,dialogue,1,data/Map078.json/events/25/pages/0/list/8,"ぐ……ッ
-お、おのれ…………こんな、ことが――ッ","Hừ……Hứ!
-Đồ... đồ khốn nạn…………Làm sao có thể xảy ra chuyện như vậy――!!",MACHINE_DRAFT_UNREVIEWED,
+お、おのれ…………こんな、ことが――ッ",Hừ……Đồ... đồ khốn nạn…………Làm sao có thể xảy ra chuyện như vậy――!,MACHINE_DRAFT_UNREVIEWED,
 D817,dialogue,1,data/Map078.json/events/31/pages/0/list/6,"ククク、所詮はこの程度。
 我らブラックマンサーズの敵ではなかったな。","Kukuku, dù sao thì cũng chỉ đến mức này thôi.
 Ngươi không phải là đối thủ của bọn ta, Black Mansers.",MACHINE_DRAFT_UNREVIEWED,
@@ -2459,8 +2302,7 @@ D819,dialogue,2,data/Map078.json/events/31/pages/0/list/18,"{0}は渾身の力�
 ……しかし、すでに勝敗は決していた。","{0} dồn hết sức lực, đứng dậy.
 ……Tuy nhiên, thắng bại đã được định đoạt từ trước.",MACHINE_DRAFT_UNREVIEWED,
 D820,dialogue,1,data/Map078.json/events/31/pages/0/list/52,"振るう剣筋も精彩に欠け、難なく倒せていた工作員に
-掠りもしない。","Cả đường kiếm vung ra cũng thiếu sắc bén, không thể chạm nổi vào tên đặc vụ mà trước đó đã có thể dễ dàng hạ gục.
-Thậm chí không thể chạm vào.",MACHINE_DRAFT_UNREVIEWED,
+掠りもしない。","Đường kiếm vung ra cũng thiếu sắc bén, thậm chí còn không chạm được vào tên đặc vụ mà trước đây có thể dễ dàng hạ gục.",MACHINE_DRAFT_UNREVIEWED,
 D821,dialogue,2,data/Map078.json/events/31/pages/0/list/56,く……ぅ……ッ,Hừ……Hừ……Hừ!,MACHINE_DRAFT_UNREVIEWED,
 D822,dialogue,1,data/Map078.json/events/31/pages/0/list/63,"{0}は再び膝をつき、そのまま地面に伏してしまう。
 工作員たちにその肢体を掴まれても抵抗する力は残されていない。","{0} lại quỳ xuống và gục xuống mặt đất.
@@ -2472,8 +2314,7 @@ D824,dialogue,1,data/Map078.json/events/31/pages/1/list/7,"フン、小娘風情
 だが……もはやここまで。","Hừ, một cô nhóc mà cũng làm khó người ta.
 Nhưng mà……Đến đây là hết rồi.",MACHINE_DRAFT_UNREVIEWED,
 D825,dialogue,1,data/Map078.json/events/31/pages/1/list/24,"振るう剣筋も精彩に欠け、ブラックメノーのボディに
-キズをつけることもできなくなっていた。","Đường kiếm vung lên cũng thiếu sắc bén, và không thể
-Thậm chí còn không thể làm xước cơ thể của Black Menow.",MACHINE_DRAFT_UNREVIEWED,
+キズをつけることもできなくなっていた。","Đường kiếm vung lên cũng thiếu sắc bén, đến mức không thể làm xước cơ thể của Black Menow.",MACHINE_DRAFT_UNREVIEWED,
 D826,dialogue,1,data/Map078.json/events/31/pages/1/list/35,"{0}は再び膝をつき、そのまま地面に伏してしまう。
 そして、意識はだんだんと遠のいていく……","{0} lại quỳ xuống, rồi cứ thế nằm sấp xuống đất.
 Và ý thức của cô dần dần rời xa……",MACHINE_DRAFT_UNREVIEWED,
@@ -2505,19 +2346,15 @@ D837,dialogue,1,data/Map081.json/events/3/pages/1/list/8,"ラボスタッフの�
 Có vẻ như cô đang xem chương trình thời sự đặc biệt của đài truyền hình địa phương.",MACHINE_DRAFT_UNREVIEWED,
 N21,speaker,8,data/Map081.json/events/3/pages/1/list/21/parameters/4,キャスター,Người dẫn chương trình,MACHINE_DRAFT_UNREVIEWED,
 D838,dialogue,1,data/Map081.json/events/3/pages/1/list/22,"最近、ここ雄ヶ留守市に“怪人”が出没するという噂で持ち切りですが
-彼らの目的は一体何なのでしょうか？","Gần đây, có rất nhiều tin đồn về việc ""những kẻ lạ mặt"" xuất hiện ở thành phố Ogarusu này.
-Rốt cuộc mục đích của chúng là gì?",MACHINE_DRAFT_UNREVIEWED,
+彼らの目的は一体何なのでしょうか？","Gần đây, thành phố Ogarusu này đang râm ran tin đồn về sự xuất hiện của “những kẻ lạ mặt”, nhưng mục đích của chúng rốt cuộc là gì?",MACHINE_DRAFT_UNREVIEWED,
 N22,speaker,6,data/Map081.json/events/3/pages/1/list/24/parameters/4,アナリスト,Nhà phân tích,MACHINE_DRAFT_UNREVIEWED,
 D839,dialogue,1,data/Map081.json/events/3/pages/1/list/25,"若い女性を攫うという明確な動機はありますが、被害に遭った女性たちは
-最長でも４８時間以内には解放されているんです。","Mặc dù có động cơ rõ ràng là bắt cóc phụ nữ trẻ, nhưng các nạn nhân nữ
-nhưng các nạn nhân đều được thả ra trong vòng tối đa là 48 giờ.",MACHINE_DRAFT_UNREVIEWED,
+最長でも４８時間以内には解放されているんです。","Mặc dù có động cơ rõ ràng là bắt cóc phụ nữ trẻ, nhưng các nạn nhân nữ đều được thả ra trong vòng tối đa 48 giờ.",MACHINE_DRAFT_UNREVIEWED,
 D840,dialogue,1,data/Map081.json/events/3/pages/1/list/28,"また、女性たちは攫われたことは記憶にないと証言しているため
-彼らの手がかりを掴めないでいるようですね。","Ngoài ra, vì các nạn nhân nữ đều khai rằng họ không nhớ gì về việc bị bắt cóc,
-Có vẻ như họ không thể tìm ra manh mối nào về bọn chúng.",MACHINE_DRAFT_UNREVIEWED,
+彼らの手がかりを掴めないでいるようですね。","Ngoài ra, các nạn nhân nữ đều khai rằng họ không nhớ gì về việc bị bắt cóc, nên dường như không thể tìm được manh mối nào về bọn chúng.",MACHINE_DRAFT_UNREVIEWED,
 D841,dialogue,1,data/Map081.json/events/3/pages/1/list/31,一種の洗脳か何かでしょうか……怖いですね。,Có phải là một kiểu tẩy não hay gì đó không nhỉ……Thật đáng sợ.,MACHINE_DRAFT_UNREVIEWED,
 D842,dialogue,1,data/Map081.json/events/3/pages/1/list/33,"そして何よりこの事件の捜査を困難にしているのは
-“怪人”と呼ばれる連中の身体能力です。","Và trên hết, điều khiến việc điều tra vụ án này trở nên khó khăn chính là
-là khả năng thể chất của những kẻ được gọi là “kẻ lạ”.",MACHINE_DRAFT_UNREVIEWED,
+“怪人”と呼ばれる連中の身体能力です。","Và trên hết, điều khiến cho việc điều tra vụ án này trở nên khó khăn chính là khả năng thể chất của những kẻ được gọi là “kẻ lạ mặt”.",MACHINE_DRAFT_UNREVIEWED,
 D843,dialogue,1,data/Map081.json/events/3/pages/1/list/36,訓練を受けた警官が複数人で取り押さえようとしてもまるで歯が立たない。,"Ngay cả khi nhiều cảnh sát được huấn luyện cố gắng khống chế họ, thì cũng hoàn toàn bất lực.",MACHINE_DRAFT_UNREVIEWED,
 D844,dialogue,1,data/Map081.json/events/3/pages/1/list/38,……では我々はどうすればいいのでしょうか？,……Vậy thì chúng ta phải làm gì?,MACHINE_DRAFT_UNREVIEWED,
 D845,dialogue,1,data/Map081.json/events/3/pages/1/list/40,"まず彼らの活動傾向から、夜中の外出を控えるのがいいでしょう。
@@ -2527,11 +2364,9 @@ D846,dialogue,1,data/Map081.json/events/3/pages/1/list/43,"……夜中の不要
 しかし、雄ヶ留守市は女性たちによる夜市が有名ですから、これにも影響しそうですね。","……Có lẽ tốt hơn hết là nên tránh việc ra ngoài vào nửa đêm khi không cần thiết và không gấp gáp.
 Tuy nhiên, thành phố Ogarusu nổi tiếng với chợ đêm do phụ nữ tổ chức, nên điều này cũng có vẻ sẽ ảnh hưởng đến chợ đêm.",MACHINE_DRAFT_UNREVIEWED,
 D847,dialogue,1,data/Map081.json/events/3/pages/1/list/46,"ええ、まったく非常に嘆かわしいことです……っ
-私はあの夜市が楽しみで楽しみで――","Vâng, đúng là một điều vô cùng đáng tiếc……H
-Tôi rất, rất mong chờ chợ đêm đó――",MACHINE_DRAFT_UNREVIEWED,
+私はあの夜市が楽しみで楽しみで――","Vâng, đúng là một điều vô cùng đáng tiếc……Tôi rất, rất mong chờ chợ đêm đó――",MACHINE_DRAFT_UNREVIEWED,
 D848,dialogue,2,data/Map081.json/events/3/pages/1/list/57,"これ以上被害を大きくしないためにも
-雄ヶ留守市の平和は警察ではなく私たちが守らなきゃ、ねっ。","Để không làm thiệt hại thêm nữa,
-Chúng ta phải bảo vệ sự bình yên của thành phố Ogarusu chứ không phải cảnh sát, phải không nào.",MACHINE_DRAFT_UNREVIEWED,
+雄ヶ留守市の平和は警察ではなく私たちが守らなきゃ、ねっ。","Để không làm thiệt hại thêm nữa, chúng ta chứ không phải cảnh sát phải bảo vệ sự bình yên của thành phố Ogarusu, phải không nào.",MACHINE_DRAFT_UNREVIEWED,
 D849,dialogue,1,data/Map081.json/events/4/pages/0/list/2,"うちの息子も{0}ちゃんと同じ学園に通ってるのよ。
 でも確か一つ上の学年だったかしらね。","Con trai cô cũng học cùng trường với {0}-chan đấy.
 Nhưng hình như nó học trên một lớp thì phải.",MACHINE_DRAFT_UNREVIEWED,
@@ -2545,8 +2380,7 @@ D852,dialogue,2,data/Map081.json/events/6/pages/1/list/5,"私たちはみんな�
 あなたのお母さんもその一人ね。","Tất cả chúng tôi đều từng là nhân viên của Corandarize Tech.
 Mẹ của bạn cũng là một trong số đó.",MACHINE_DRAFT_UNREVIEWED,
 D853,dialogue,1,data/Map081.json/events/7/pages/0/list/2,"コランダライズテックは変身グッズメーカーから
-デジタルジュエリーメーカーにイメージチェンジしたいようね。","Có vẻ như Corandarize Tech muốn thay đổi hình ảnh
-sang nhà sản xuất trang sức kỹ thuật số.",MACHINE_DRAFT_UNREVIEWED,
+デジタルジュエリーメーカーにイメージチェンジしたいようね。",Có vẻ như Corandrise Tech muốn thay đổi hình ảnh từ một nhà sản xuất đồ biến hình sang một nhà sản xuất trang sức kỹ thuật số.,MACHINE_DRAFT_UNREVIEWED,
 D854,dialogue,1,data/Map081.json/events/8/pages/0/list/21,よくやったわね、初めての戦いはどうだった？,"Làm tốt lắm, trận chiến đầu tiên của con thế nào?",MACHINE_DRAFT_UNREVIEWED,
 D855,dialogue,1,data/Map081.json/events/8/pages/0/list/29,あら、どうしてそんなに不機嫌そうなのかしら。,"Ôi, sao trông con lại có vẻ khó chịu thế nhỉ?",MACHINE_DRAFT_UNREVIEWED,
 D856,dialogue,1,data/Map081.json/events/8/pages/0/list/33,"だって、何の説明もなかったし。
@@ -2564,16 +2398,14 @@ D861,dialogue,1,data/Map081.json/events/8/pages/0/list/50,"それにママは先
 またあとで話ましょっ。","Hơn nữa, mẹ còn có việc phải làm trước đã.
 Chúng ta sẽ nói chuyện sau nhé.",MACHINE_DRAFT_UNREVIEWED,
 D862,dialogue,1,data/Map081.json/events/9/pages/0/list/2,"まずはみんなと
-話してあげて。","Trước tiên, hãy nói chuyện
-Hãy nói chuyện với mọi người trước nhé.",MACHINE_DRAFT_UNREVIEWED,
+話してあげて。","Trước tiên, hãy nói chuyện với mọi người đã nhé.",MACHINE_DRAFT_UNREVIEWED,
 D863,dialogue,1,data/Map081.json/events/9/pages/1/list/8,……これでよし、っと。,……Vậy là ổn rồi.,MACHINE_DRAFT_UNREVIEWED,
 D864,dialogue,1,data/Map081.json/events/9/pages/1/list/11,何してるの？,Bạn đang làm gì vậy?,MACHINE_DRAFT_UNREVIEWED,
 D865,dialogue,1,data/Map081.json/events/9/pages/1/list/14,"{0}の戦闘データをチェックしていたの。
 それよりもみんなから話は聞けた？","Tôi đang kiểm tra dữ liệu chiến đấu của {0}.
 Mà này, cậu đã nghe mọi người kể chuyện chưa?",MACHINE_DRAFT_UNREVIEWED,
 D866,dialogue,1,data/Map081.json/events/9/pages/1/list/18,"うん、色々。ていうか、ママってコランダライズテックで働いてると
-思ってたんだけど違ったんだ。","Vâng, nhiều chuyện lắm.À mà, con tưởng mẹ làm việc ở Corandalis Tech chứ nhỉ?
-Tôi đã nghĩ vậy, nhưng hóa ra không phải.",MACHINE_DRAFT_UNREVIEWED,
+思ってたんだけど違ったんだ。","Vâng, nhiều thứ lắm.À mà, con tưởng mẹ làm việc ở Corandarize Tech chứ, hóa ra không phải à.",MACHINE_DRAFT_UNREVIEWED,
 D867,dialogue,1,data/Map081.json/events/9/pages/1/list/22,"少し前まではね。
 でも安心して、次の就職先はちゃんと考えてあるから。","Đúng là như vậy cho đến cách đây không lâu.
 Nhưng con đừng lo, mẹ đã suy nghĩ kỹ về công việc tiếp theo rồi.",MACHINE_DRAFT_UNREVIEWED,
@@ -2589,19 +2421,16 @@ D872,dialogue,1,data/Map081.json/events/9/pages/1/list/46,"こうして――
 {0}の{1}としての日々が始まるのだった。","Và như vậy――
 Những ngày tháng của {0} với tư cách là {1} bắt đầu như vậy.",MACHINE_DRAFT_UNREVIEWED,
 D873,dialogue,1,data/Map083.json/events/3/pages/0/list/13,"ここにあるのはすべてデジタルイミテーション機能で実体化した宝石だそうですが
-どれも本物にしか見えません……一体どういう技術なんでしょうか。","Dường như tất cả những viên đá quý ở đây đều được hiện thực hóa bằng chức năng mô phỏng kỹ thuật số, nhưng
-Nhưng tất cả đều trông giống như thật vậy……Rốt cuộc đó là công nghệ gì vậy?",MACHINE_DRAFT_UNREVIEWED,
+どれも本物にしか見えません……一体どういう技術なんでしょうか。","Dường như tất cả những món đồ trang sức ở đây đều được hiện thực hóa bằng chức năng mô phỏng kỹ thuật số, nhưng tất cả đều trông giống như thật vậy……Rốt cuộc đó là công nghệ gì vậy?",MACHINE_DRAFT_UNREVIEWED,
 D874,dialogue,1,data/Map083.json/events/3/pages/0/list/16,"その質問にお答えするのは難しいのですが……
 今回は特別に次世代のデジタルジュエリーの新機能についてお話しましょう。","Thật khó để trả lời câu hỏi đó……
 Lần này, tôi sẽ đặc biệt chia sẻ về các tính năng mới của trang sức kỹ thuật số thế hệ tiếp theo.",MACHINE_DRAFT_UNREVIEWED,
 D875,dialogue,1,data/Map083.json/events/3/pages/0/list/19,宝石にはパワーストーンや宝石言葉といった概念や象徴とするものがありますよね。,"Đá quý có những khái niệm và biểu tượng như đá năng lượng và ngôn ngữ đá quý, phải không?",MACHINE_DRAFT_UNREVIEWED,
 D876,dialogue,2,data/Map083.json/events/3/pages/0/list/21,あ、それって例えばルビーなら「情熱」とか、そういう……“アレ”ですよねっ？,"À, ví dụ như đá ruby thì có ý nghĩa là ""đam mê"" hay gì đó đại loại như vậy…… """"Cái đó"" phải không ạ?",MACHINE_DRAFT_UNREVIEWED,
 D877,dialogue,2,data/Map083.json/events/3/pages/0/list/23,"その通り、よくご存知ですね。……他にはサファイアであれば、
-「知性」や「真実」……「慈愛」といった意味を持つとされています。","Đúng vậy, cô biết rõ nhỉ……Ngoài ra, nếu là đá sapphire,
-""Trí tuệ"" và ""Sự thật""......""được cho là có ý nghĩa như ""lòng từ bi"".",MACHINE_DRAFT_UNREVIEWED,
+「知性」や「真実」……「慈愛」といった意味を持つとされています。","Đúng vậy, anh biết rõ quá nhỉ……Ngoài ra, nếu là đá sapphire, thì nó được cho là có ý nghĩa ""trí tuệ"" và ""sự thật""...... ""được cho là có ý nghĩa như ""lòng từ bi"".",MACHINE_DRAFT_UNREVIEWED,
 D878,dialogue,2,data/Map083.json/events/3/pages/0/list/26,"まぁ人によってはスピリチュアルやオカルトのように感じるかも知れませんが
-我々はここ数年で人の感情に干渉・抽出する装置の開発に成功し――","Chà, tùy từng người mà có thể cảm thấy nó giống như tâm linh hay huyền bí.
-Trong vài năm gần đây, chúng tôi đã thành công trong việc phát triển một thiết bị có thể can thiệp và trích xuất cảm xúc của con người――",MACHINE_DRAFT_UNREVIEWED,
+我々はここ数年で人の感情に干渉・抽出する装置の開発に成功し――","Vâng, một số người có thể cảm thấy nó giống như tâm linh hay huyền bí, nhưng trong vài năm qua, chúng tôi đã thành công trong việc phát triển một thiết bị có thể can thiệp và trích xuất cảm xúc của con người――",MACHINE_DRAFT_UNREVIEWED,
 D879,dialogue,1,data/Map083.json/events/3/pages/0/list/42,"その後は{0}博士のうんちく話が延々と続き――
 番組コーナーは一旦コマーシャルへと切り替わったのだった……","Sau đó, bài diễn thuyết của Tiến sĩ {0} cứ thế tiếp diễn mãi――
 Chương trình tạm thời chuyển sang quảng cáo……",MACHINE_DRAFT_UNREVIEWED,
@@ -2609,8 +2438,7 @@ D880,dialogue,2,data/Map083.json/events/3/pages/0/list/47,"女性の誘拐事件
 何をするつもりか、必ず暴いてみせるわ。","Vụ bắt cóc người phụ nữ và cái thiết bị trích xuất đó……
 Tôi nhất định sẽ phơi bày xem ông ta định làm gì.",MACHINE_DRAFT_UNREVIEWED,
 D881,dialogue,1,data/Map083.json/events/3/pages/1/list/13,"ここにあるのはすべてデジタルイミテーション技術で実体化した宝石だそうですが
-今回はさらに新しい技術についてお話いただけるとか……？","Dường như tất cả những món đồ trang sức ở đây đều được hiện thực hóa bằng công nghệ mô phỏng kỹ thuật số.
-Lần này, ông có thể chia sẻ thêm về một công nghệ mới hơn không...?",MACHINE_DRAFT_UNREVIEWED,
+今回はさらに新しい技術についてお話いただけるとか……？","Dường như tất cả những viên đá quý ở đây đều được hiện thực hóa bằng công nghệ mô phỏng kỹ thuật số, nhưng lần này, ông có thể cho chúng tôi biết thêm về một công nghệ mới hơn không...?",MACHINE_DRAFT_UNREVIEWED,
 N23,speaker,3,data/Map083.json/events/3/pages/1/list/15/parameters/4,開発スタッフ,Nhân viên phát triển,MACHINE_DRAFT_UNREVIEWED,
 D882,dialogue,1,data/Map083.json/events/3/pages/1/list/16,"ええ。まだ試作段階ではありますが……
 宝石にはパワーストーンや宝石言葉といった概念や象徴とするものがありますよね。","Vâng.Dù vẫn còn trong giai đoạn thử nghiệm……
@@ -2654,8 +2482,7 @@ D902,dialogue,1,data/Map088.json/events/9/pages/0/list/20,"まぁね。
 Hình như trước đây thầy ấy còn chủ động làm cả việc trực đêm nữa.",MACHINE_DRAFT_UNREVIEWED,
 D903,dialogue,1,data/Map088.json/events/9/pages/0/list/23,へぇ～、そうだったんですね。,"Ồ, vậy sao ạ.",MACHINE_DRAFT_UNREVIEWED,
 D904,dialogue,1,data/Map088.json/events/9/pages/0/list/25,"あ、それじゃあ教頭先生に頼まれてた資料ここに置いておくから
-戻ってきたら伝えといてくれる？","À, vậy thì tôi sẽ để tài liệu mà thầy Hiệu phó nhờ ở đây nhé.
-Khi thầy ấy quay lại, em có thể nói với thầy ấy giúp chị không?",MACHINE_DRAFT_UNREVIEWED,
+戻ってきたら伝えといてくれる？","À, vậy thì tôi sẽ để tài liệu mà thầy Hiệu phó nhờ ở đây, khi nào thầy ấy quay lại thì cậu nói lại giúp tôi nhé?",MACHINE_DRAFT_UNREVIEWED,
 D905,dialogue,1,data/Map088.json/events/9/pages/0/list/28,はーい、了解です。,"Vâng, tôi hiểu rồi ạ.",MACHINE_DRAFT_UNREVIEWED,
 D906,dialogue,1,data/Map089.json/events/4/pages/0/list/8,"待っていたよ神代クン、変身ヒロイン研究部へようこそ。
 僕は部長の{0}。……そしてあっちが副部長の{1}だ。","Tôi đã chờ cậu đấy, cậu Kamishiro. Chào mừng đến với Câu lạc bộ nghiên cứu nữ chính biến hình.
@@ -2665,8 +2492,7 @@ D908,dialogue,1,data/Map089.json/events/4/pages/0/list/16,それで相談ごと�
 D909,dialogue,1,data/Map089.json/events/4/pages/0/list/18,本題に入る前にまずはキミにこれをプレゼントしよう。,"Trước khi đi vào vấn đề chính, trước tiên tôi muốn tặng cậu món quà này.",MACHINE_DRAFT_UNREVIEWED,
 D910,dialogue,1,data/Map089.json/events/4/pages/0/list/25,（これって……）,(Cái này là……),MACHINE_DRAFT_UNREVIEWED,
 D911,dialogue,1,data/Map089.json/events/4/pages/0/list/28,"{0}が{1}に手渡したのは{2}デバイスとよく似た形状の
-デジタルジュエリーだった。","{0} đưa cho {1} một món đồ trang sức kỹ thuật số có hình dạng rất giống với thiết bị {2}.
-Đó là một món trang sức kỹ thuật số.",MACHINE_DRAFT_UNREVIEWED,
+デジタルジュエリーだった。",{0} đã đưa cho {1} một món trang sức kỹ thuật số có hình dạng rất giống với thiết bị {2}.,MACHINE_DRAFT_UNREVIEWED,
 D912,dialogue,1,data/Map089.json/events/4/pages/0/list/33,キミは知らないだろうが、それはコランダライズテックという――,"Cậu có thể không biết, nhưng đó là công nghệ Corandalyze――",MACHINE_DRAFT_UNREVIEWED,
 D913,dialogue,1,data/Map089.json/events/4/pages/0/list/36,"{0}がうんちくを語り始める。
 しかし{1}の意識はこのデバイスの本質が気になっていた。","{0} bắt đầu nói những điều rườm rà.
@@ -2715,11 +2541,9 @@ D936,dialogue,1,data/Map090.json/events/7/pages/0/list/2,"これも怪人の仕�
 じゃないよね……","Đây cũng là do tên quái nhân làm……
 Chắc là không phải đâu nhỉ……",MACHINE_DRAFT_UNREVIEWED,
 D937,dialogue,1,data/Map090.json/events/8/pages/0/list/2,"タクシーとトラックが
-ぶつかったってさ。","Xe taxi và xe tải
-đã va chạm với nhau.",MACHINE_DRAFT_UNREVIEWED,
+ぶつかったってさ。",Nghe nói là một chiếc taxi và một chiếc xe tải đã va chạm nhau.,MACHINE_DRAFT_UNREVIEWED,
 D938,dialogue,1,data/Map090.json/events/9/pages/0/list/2,"こんなとこで事故とか
-マジ怖いんだけど。","Lại còn xảy ra tai nạn ở một nơi như thế này nữa.
-Thật sự đáng sợ đó.",MACHINE_DRAFT_UNREVIEWED,
+マジ怖いんだけど。",Thật sự rất sợ khi xảy ra tai nạn ở một nơi như thế này.,MACHINE_DRAFT_UNREVIEWED,
 N25,speaker,2,data/Map090.json/events/16/pages/0/list/10/parameters/4,学園の生徒たち,Các học sinh của trường,MACHINE_DRAFT_UNREVIEWED,
 D939,dialogue,1,data/Map090.json/events/16/pages/0/list/11,"衝突事故だって。
 トラックがタクシーに追突したって。","Bị tai nạn va chạm.
@@ -2771,14 +2595,12 @@ D965,dialogue,1,data/Map095.json/events/3/pages/0/list/11,"（やっぱり、{0}
 でもだったらどうして怪人と一緒にいるんだろう……）","(Quả nhiên, tôi cảm thấy đó là {0}……
 Nhưng nếu vậy thì tại sao lại đi cùng với những kẻ bí ẩn nhỉ...)",MACHINE_DRAFT_UNREVIEWED,
 D966,dialogue,1,data/Map095.json/events/3/pages/0/list/18,"{0}と思しき人物は怪人たちと合流すると
-そのままビルの中へ入っていってしまった……","Người được cho là {0} đã gặp gỡ bọn quái nhân,
-Và cứ thế đi thẳng vào trong tòa nhà……",MACHINE_DRAFT_UNREVIEWED,
+そのままビルの中へ入っていってしまった……",Người được cho là {0} đã gặp gỡ những kẻ lạ mặt và cùng nhau đi thẳng vào trong tòa nhà……,MACHINE_DRAFT_UNREVIEWED,
 D967,dialogue,1,data/Map095.json/events/4/pages/0/list/12,レコード屋……？,Cửa hàng đĩa nhạc...?,MACHINE_DRAFT_UNREVIEWED,
 D968,dialogue,1,data/Map095.json/events/4/pages/0/list/14,"{0}ちゃんがレコードを聴くとは思えないし
-{1}ちゃんもそんな趣味はなかったはずだけど……","Tôi không nghĩ là {0} lại nghe đĩa than,
-{1} cũng không có sở thích như vậy, nhưng mà……",MACHINE_DRAFT_UNREVIEWED,
+{1}ちゃんもそんな趣味はなかったはずだけど……","Tôi không nghĩ rằng {0} sẽ nghe đĩa than, và {1} cũng không có sở thích như vậy, nhưng mà……",MACHINE_DRAFT_UNREVIEWED,
 D969,dialogue,1,data/Map095.json/events/4/pages/0/list/18,中に入って見つかるわけにもいかないし、出てくるまで待つか。,"Cũng không thể vào trong để tìm, hay là đợi đến khi họ ra nhỉ?",MACHINE_DRAFT_UNREVIEWED,
-D970,dialogue,1,data/Map095.json/events/11/pages/0/list/29,（いまのは……{0}さん？　買い物、かな）,(Người vừa rồi là…… {0}chăng?　Chắc là đi mua sắm nhỉ),MACHINE_DRAFT_UNREVIEWED,
+D970,dialogue,1,data/Map095.json/events/11/pages/0/list/29,（いまのは……{0}さん？　買い物、かな）,(Người vừa rồi là…… {0}-san à?　Chắc là đi mua sắm nhỉ),MACHINE_DRAFT_UNREVIEWED,
 D971,dialogue,1,data/Map095.json/events/11/pages/0/list/37,（{0}さんからだ）,(Là từ anh {0}),MACHINE_DRAFT_UNREVIEWED,
 D972,dialogue,1,data/Map095.json/events/11/pages/0/list/42,{0}さん、どうしたの？,"Chị {0}, có chuyện gì vậy?",MACHINE_DRAFT_UNREVIEWED,
 D973,dialogue,1,data/Map095.json/events/11/pages/0/list/46,"みさっちが昨日の夜出てったきり帰ってないって、さっき電話があったの。
@@ -2896,8 +2718,7 @@ C47,choices,2,data/Map100.json/events/1/pages/0/list/9/parameters/0/0,グレー�
 C48,choices,2,data/Map100.json/events/1/pages/0/list/9/parameters/0/1,パステル調の下着,Đồ lót màu pastel,MACHINE_DRAFT_UNREVIEWED,
 C49,choices,2,data/Map100.json/events/1/pages/0/list/9/parameters/0/2,黒い下着,Đồ lót màu đen,MACHINE_DRAFT_UNREVIEWED,
 D1028,dialogue,1,data/Map100.json/events/3/pages/0/list/5,"こっちのが好きなんだけど
-でもパパは――","Tôi thích cái này hơn,
-Nhưng ba thì――",MACHINE_DRAFT_UNREVIEWED,
+でもパパは――","Con thích cái này hơn, nhưng ba thì――",MACHINE_DRAFT_UNREVIEWED,
 D1029,dialogue,3,data/Map100.json/events/3/pages/1/list/2,うーん……,Ừm……,MACHINE_DRAFT_UNREVIEWED,
 D1030,dialogue,1,data/Map100.json/events/4/pages/0/list/9,じゃ、次いこっか。,"Vậy, tiếp tục nhé.",MACHINE_DRAFT_UNREVIEWED,
 D1031,dialogue,1,data/Map100.json/events/4/pages/0/list/15,お前、マジであんな下着つけんの……？,Mày thật sự mặc cái đồ lót như thế à...?,MACHINE_DRAFT_UNREVIEWED,
@@ -2965,8 +2786,7 @@ D1065,dialogue,1,data/Map102.json/events/1/pages/0/list/14,（……今日はこ
 D1066,dialogue,1,data/Map102.json/events/1/pages/0/list/28,（それじゃあまずは君がどんなタイプか、診断させてもらうよ……）,"(Vậy thì trước tiên, để ta chẩn đoán xem em là kiểu người như thế nào đã nhé...)",MACHINE_DRAFT_UNREVIEWED,
 D1067,dialogue,1,data/Map102.json/events/1/pages/0/list/36,（すぐに悲鳴を上げたり騒ぐようなコじゃないとは思うけどね、フフフ）,"(Tôi không nghĩ cô ấy là kiểu người sẽ hét lên hoặc làm ầm ĩ ngay lập tức đâu, hehehe)",MACHINE_DRAFT_UNREVIEWED,
 D1068,dialogue,1,data/Map102.json/events/1/pages/0/list/45,"男は電車が大きくゆれるタイミングを狙いすまし
-{0}のスカートに手の甲を押しつける。","Gã đàn ông nhắm đúng thời điểm khi tàu lắc lư mạnh
-Anh ta áp mu bàn tay vào váy của {0}.",MACHINE_DRAFT_UNREVIEWED,
+{0}のスカートに手の甲を押しつける。",Người đàn ông nhắm đúng thời điểm khi tàu lắc lư mạnh và áp mu bàn tay của mình vào váy của {0}.,MACHINE_DRAFT_UNREVIEWED,
 D1069,dialogue,1,data/Map102.json/events/1/pages/0/list/48,"そして……
 {0}の反応を確かめるために押しつける行為を繰り返してみる。","Và rồi……
 Anh ta thử lặp lại hành động chạm vào để kiểm tra phản ứng của {0}.",MACHINE_DRAFT_UNREVIEWED,
@@ -2978,11 +2798,9 @@ D1072,dialogue,1,data/Map102.json/events/1/pages/0/list/62,"（やっぱり問�
 ま、分かってたことだけどね……）","(Có vẻ như vẫn không có vấn đề gì nhỉ.
 Dù sao thì, mình cũng đã biết điều đó rồi mà......)",MACHINE_DRAFT_UNREVIEWED,
 D1073,dialogue,1,data/Map102.json/events/1/pages/0/list/71,"今度は先ほどよりも明確に“さわる”という意思を感じさせるような感触が
-伝わってくる。","Lần này, cảm giác khiến người ta cảm nhận rõ ràng hơn ý định “chạm” so với lần trước
-truyền đến.",MACHINE_DRAFT_UNREVIEWED,
+伝わってくる。","Lần này, cảm giác truyền đến rõ ràng hơn trước, khiến người ta cảm nhận được ý định “chạm vào”.",MACHINE_DRAFT_UNREVIEWED,
 D1074,dialogue,1,data/Map102.json/events/1/pages/0/list/74,"お尻のカタチにぴったりと添えるように手のひらを押しつけ
-肌の感触を確かめているかのような……","Anh ta áp lòng bàn tay vào, vừa khít với đường cong của mông tôi
-Như thể đang kiểm tra cảm giác của làn da vậy……",MACHINE_DRAFT_UNREVIEWED,
+肌の感触を確かめているかのような……",Như thể hắn đang áp lòng bàn tay vào để vừa khít với hình dạng của mông và kiểm tra cảm giác của làn da vậy……,MACHINE_DRAFT_UNREVIEWED,
 D1075,dialogue,1,data/Map102.json/events/1/pages/0/list/83,"っ……
 （痴漢……だと思う、けど……）","Hứ......
 (Quấy rối tình dục……Tôi nghĩ vậy, nhưng mà……)",MACHINE_DRAFT_UNREVIEWED,
@@ -2996,13 +2814,11 @@ D1078,dialogue,1,data/Map102.json/events/1/pages/0/list/92,"（君みたいな�
 色々考えすぎちゃって、結局何もできないようなコが……さ）","(Kiểu như cậu là kiểu khiến tôi hứng thú nhất đó……
 Những cô gái suy nghĩ quá nhiều về đủ thứ, và cuối cùng lại chẳng thể làm được gì cả……Nào.)",MACHINE_DRAFT_UNREVIEWED,
 D1079,dialogue,1,data/Map102.json/events/1/pages/0/list/105,"恥辱に耐えながら色々と考えを巡らせているうちに
-簡単なことに思い当たる。","Trong khi đang chịu đựng sự sỉ nhục và suy nghĩ về đủ thứ chuyện,
-Tôi chợt nghĩ ra một điều đơn giản.",MACHINE_DRAFT_UNREVIEWED,
+簡単なことに思い当たる。","Trong khi chịu đựng sự sỉ nhục và suy nghĩ về nhiều điều, tôi chợt nghĩ ra một điều đơn giản.",MACHINE_DRAFT_UNREVIEWED,
 D1080,dialogue,1,data/Map102.json/events/1/pages/0/list/109,（やめてください……っ）,(Làm ơn dừng lại đi……(Hức),MACHINE_DRAFT_UNREVIEWED,
 D1081,dialogue,1,data/Map102.json/events/1/pages/0/list/113,心の中でそう叫びながら、痴漢の手を自らの手で払いのける。,"Trong khi thầm hét lên như vậy trong lòng, tôi dùng chính tay mình gạt bàn tay của tên sàm sỡ ra.",MACHINE_DRAFT_UNREVIEWED,
 D1082,dialogue,1,data/Map102.json/events/1/pages/0/list/115,"それが思いのほか強く当たったのか、痴漢の手はお尻から離れ
-不快感が消え去る。","Có lẽ vì cô hất mạnh hơn mức tưởng tượng, nên bàn tay của tên sàm sỡ đã rời khỏi mông cô
-Cảm giác khó chịu biến mất.",MACHINE_DRAFT_UNREVIEWED,
+不快感が消え去る。","Có lẽ vì cô đã đẩy mạnh hơn mức tưởng tượng, bàn tay của tên sàm sỡ rời khỏi mông cô và cảm giác khó chịu biến mất.",MACHINE_DRAFT_UNREVIEWED,
 D1083,dialogue,1,data/Map102.json/events/1/pages/0/list/119,（よかった……今度から痴漢に遭ったらこうやって――）,"(Thật may quá……Từ giờ trở đi, nếu gặp phải kẻ sàm sỡ thì cứ làm như vậy――)",MACHINE_DRAFT_UNREVIEWED,
 D1084,dialogue,1,data/Map102.json/events/1/pages/0/list/121,"安心したのも束の間、再び痴漢の手は{0}のお尻へと伸び……
 今度は力強く鷲掴みにしてくる。","Cảm giác yên tâm chỉ kéo dài trong chốc lát, bàn tay của tên sàm sỡ lại vươn tới mông của {0}……
@@ -3010,18 +2826,15 @@ Lần này, hắn nắm chặt mông cô một cách mạnh mẽ.",MACHINE_DRAFT
 D1085,dialogue,1,data/Map102.json/events/1/pages/0/list/127,ひぁッ……！,Hiaa……!,MACHINE_DRAFT_UNREVIEWED,
 D1086,dialogue,1,data/Map102.json/events/1/pages/0/list/129,不意の強烈な刺激に{0}の声は漏れ出てしまう。,{0} bật ra tiếng kêu vì sự kích thích mạnh mẽ bất ngờ.,MACHINE_DRAFT_UNREVIEWED,
 D1087,dialogue,1,data/Map102.json/events/1/pages/0/list/132,"そして、その声に乗客たちがわずかに周囲を見回す状況に
-体温が上がるのを実感する。","Và khi nghe thấy tiếng đó, các hành khách hơi liếc nhìn xung quanh,
-Tôi cảm thấy nhiệt độ cơ thể mình tăng lên.",MACHINE_DRAFT_UNREVIEWED,
+体温が上がるのを実感する。","Và khi nghe thấy giọng nói đó, cô cảm thấy nhiệt độ cơ thể mình tăng lên trong tình huống các hành khách hơi liếc nhìn xung quanh.",MACHINE_DRAFT_UNREVIEWED,
 D1088,dialogue,1,data/Map102.json/events/1/pages/0/list/135,"いま自分が痴漢に遭っていることを知られたくない、恥ずかしい。
 そんな感情が噴き出てくる。","Tôi không muốn người ta biết rằng mình đang bị sàm sỡ lúc này, thật xấu hổ.
 Những cảm xúc như vậy đang trào dâng.",MACHINE_DRAFT_UNREVIEWED,
 D1089,dialogue,2,data/Map102.json/events/1/pages/0/list/139,っ…………,Hứ…………,MACHINE_DRAFT_UNREVIEWED,
 D1090,dialogue,1,data/Map102.json/events/1/pages/0/list/141,"羞恥の感情に呑まれている最中にも痴漢の手は
-{0}のお尻をまさぐり続けている。","Trong khi đang bị nhấn chìm bởi cảm giác xấu hổ, bàn tay của tên sàm sỡ vẫn
-vẫn tiếp tục sờ soạng mông của {0}.",MACHINE_DRAFT_UNREVIEWED,
+{0}のお尻をまさぐり続けている。","Trong khi đang bị nhấn chìm trong cảm giác xấu hổ, bàn tay của tên sàm sỡ vẫn tiếp tục sờ soạng mông của {0}.",MACHINE_DRAFT_UNREVIEWED,
 D1091,dialogue,1,data/Map102.json/events/1/pages/0/list/144,"{0}は声を堪えることに必死で先ほどのように勢いよく痴漢の手を
-払いのけることも出来ない。","{0} đang cố gắng hết sức để kìm nén tiếng kêu, nên không thể mạnh mẽ gạt tay tên sàm sỡ ra như trước đó.
-cũng không thể gạt tay tên sàm sỡ ra được.",MACHINE_DRAFT_UNREVIEWED,
+払いのけることも出来ない。","{0} đang cố gắng hết sức để kìm nén tiếng kêu, nên không thể mạnh mẽ gạt tay tên sàm sỡ ra như trước đó.",MACHINE_DRAFT_UNREVIEWED,
 D1092,dialogue,1,data/Map102.json/events/1/pages/0/list/147,（そろそろ降参かな？　でも――）,(Có lẽ sắp đầu hàng rồi nhỉ?　Nhưng mà――),MACHINE_DRAFT_UNREVIEWED,
 D1093,dialogue,1,data/Map102.json/events/1/pages/0/list/149,ここからと言わんばかりに痴漢行為はエスカレートする。,"Hành vi sàm sỡ leo thang như thể muốn nói rằng ""từ đây trở đi"".",MACHINE_DRAFT_UNREVIEWED,
 D1094,dialogue,1,data/Map102.json/events/1/pages/0/list/163,"それでも{0}は強張らせた身体で必死にその恥辱に耐える。
@@ -3039,8 +2852,7 @@ D1098,dialogue,1,data/Map102.json/events/1/pages/0/list/185,"車内アナウン�
 駅に到着したという安堵から再び拒絶の意思が沸きあがってくる。","Thông báo trên tàu vang lên, và cuối cùng sự căng thẳng của {0} cũng được giải tỏa.
 Từ cảm giác nhẹ nhõm khi đã đến ga, ý chí từ chối lại trỗi dậy.",MACHINE_DRAFT_UNREVIEWED,
 D1099,dialogue,1,data/Map102.json/events/1/pages/0/list/188,"同時に周囲の乗客たちが我先にとドアへ向かおうとする気配が
-漂い始める。","Đồng thời, có dấu hiệu cho thấy các hành khách xung quanh đang cố gắng chen lấn nhau để ra cửa trước.
-bắt đầu lan tỏa.",MACHINE_DRAFT_UNREVIEWED,
+漂い始める。","Đồng thời, bắt đầu có dấu hiệu cho thấy các hành khách xung quanh đang cố gắng chen lấn nhau để ra cửa.",MACHINE_DRAFT_UNREVIEWED,
 D1100,dialogue,1,data/Map102.json/events/1/pages/0/list/194,"その流れに乗じて{0}もドアへと向かい……
 駅に到着するやいなや逃げるように電車から降りるのだった。","Nhân dòng người đó, {0} cũng hướng về phía cửa……
 Ngay khi vừa đến ga, cô vội vàng xuống tàu như thể đang chạy trốn.",MACHINE_DRAFT_UNREVIEWED,
@@ -3164,8 +2976,7 @@ D1163,dialogue,1,data/Map111.json/events/4/pages/0/list/19,"――ッ、なん�
 Hay là Shinjiro……?　Tại sao tôi lại ở cùng với cậu――",MACHINE_DRAFT_UNREVIEWED,
 D1164,dialogue,1,data/Map111.json/events/4/pages/0/list/24,って！　なんで裸！？,Cái gì!　Sao lại trần truồng thế này!?,MACHINE_DRAFT_UNREVIEWED,
 D1165,dialogue,1,data/Map111.json/events/4/pages/0/list/31,"{0}は{1}である事実は隠し、{2}がここにいる経緯を
-かいつまんで説明した。","{0} che giấu sự thật rằng mình là {1}, và giải thích ngắn gọn về lý do tại sao {2} lại ở đây
-Tôi đã giải thích ngắn gọn.",MACHINE_DRAFT_UNREVIEWED,
+かいつまんで説明した。",{0} che giấu sự thật rằng mình là {1} và giải thích ngắn gọn lý do tại sao {2} lại ở đây.,MACHINE_DRAFT_UNREVIEWED,
 D1166,dialogue,1,data/Map111.json/events/4/pages/0/list/41,"……それで神代が助けてくれたってことか？
 （てか、ちゃんとお礼言わないと……だよな……）","……Vậy là Shinjiro đã giúp đỡ sao?
 (À mà, mình phải cảm ơn cho đàng hoàng mới được……Đúng vậy nhỉ......)",MACHINE_DRAFT_UNREVIEWED,
@@ -3210,11 +3021,9 @@ D1182,dialogue,1,data/Map114.json/events/11/pages/0/list/44,やはりグレー�
 N33,speaker,3,data/Map115.json/events/21/pages/0/list/25/parameters/4,覗き好きの学生,Nam sinh thích dòm trộm,MACHINE_DRAFT_UNREVIEWED,
 D1183,dialogue,1,data/Map115.json/events/21/pages/0/list/26,（おっ、見えた見えた）,"(Ồ, thấy rồi, thấy rồi)",MACHINE_DRAFT_UNREVIEWED,
 D1184,dialogue,1,data/Map115.json/events/21/pages/0/list/28,"昼休み、この場所で女子のスカートを覗き見るのがこの男子生徒の
-楽しみになっていた。","Vào giờ nghỉ trưa, việc nhìn trộm dưới váy của các nữ sinh ở nơi này đã trở thành
-đã trở thành một thú vui.",MACHINE_DRAFT_UNREVIEWED,
+楽しみになっていた。","Vào giờ nghỉ trưa, việc nhìn trộm dưới váy của các nữ sinh ở nơi này đã trở thành thú vui của nam sinh này.",MACHINE_DRAFT_UNREVIEWED,
 D1185,dialogue,1,data/Map115.json/events/21/pages/0/list/31,"{0}はそんな男にスカートの中を覗き見られているとも知らず
-階段をのぼっていく。","{0} không hề biết rằng mình đang bị một tên như vậy nhìn trộm dưới váy
-cô đang đi lên cầu thang.",MACHINE_DRAFT_UNREVIEWED,
+階段をのぼっていく。","{0} không hề biết rằng mình đang bị một tên đàn ông như vậy nhìn trộm dưới váy, cứ thế bước lên cầu thang.",MACHINE_DRAFT_UNREVIEWED,
 D1186,dialogue,1,data/Map115.json/events/21/pages/0/list/34,そして、何故この場所で覗きをしているかというと――,Và lý do tại sao cậu ta lại đứng ở chỗ này để nhìn trộm là――,MACHINE_DRAFT_UNREVIEWED,
 D1187,dialogue,1,data/Map115.json/events/21/pages/0/list/40,――唐突に風が吹き抜け、スカートがわずかにめくれ上がる。,"――Đột nhiên một cơn gió thổi qua, làm váy của cô ấy hơi tốc lên.",MACHINE_DRAFT_UNREVIEWED,
 D1188,dialogue,1,data/Map115.json/events/21/pages/0/list/43,"（ここっていつも１階と２階の窓が開いてて、たまーに風が通るんだよね。
@@ -3230,37 +3039,31 @@ C56,choices,4,data/Map116.json/events/8/pages/0/list/0/parameters/0/3,５階,T�
 C57,choices,4,data/Map117.json/events/7/pages/0/list/0/parameters/0/0,１階,Tầng 1,MACHINE_DRAFT_UNREVIEWED,
 D1190,dialogue,1,data/Map123.json/events/6/pages/0/list/4,-深夜・蒼晶学園-,- Nửa đêm - Học viện Sōshō -,MACHINE_DRAFT_UNREVIEWED,
 D1191,dialogue,1,data/Map123.json/events/6/pages/0/list/13,"かつて宿直室として使用されていたこの部屋は現在ではほぼ使用されておらず、
-準備室という名の物置となっている。","Căn phòng này trước đây từng được sử dụng làm phòng trực đêm, nhưng hiện tại gần như không còn được sử dụng nữa,
-mà trở thành một cái kho được gọi là phòng chuẩn bị.",MACHINE_DRAFT_UNREVIEWED,
+準備室という名の物置となっている。","Căn phòng này trước đây từng được sử dụng làm phòng trực ban, nhưng hiện tại gần như không được sử dụng nữa và đã trở thành một cái kho được gọi là phòng chuẩn bị.",MACHINE_DRAFT_UNREVIEWED,
 D1192,dialogue,1,data/Map123.json/events/6/pages/0/list/16,"その物置の一角を教頭の{0}は私物化し、プライベートな場所として
-活用していた。","Hiệu phó {0} đã chiếm một góc của cái kho đó làm của riêng và sử dụng nó như một nơi riêng tư.
-để sử dụng cho mục đích cá nhân.",MACHINE_DRAFT_UNREVIEWED,
+活用していた。",Hiệu phó {0} đã chiếm một góc của cái kho đó làm của riêng và sử dụng nó như một nơi riêng tư.,MACHINE_DRAFT_UNREVIEWED,
 D1193,dialogue,1,data/Map123.json/events/6/pages/0/list/20,"ようやく{0}さんをコレクションに加える日が来ましたねぇ。
 どれどれ……","Cuối cùng thì cũng đến ngày được thêm cô {0} vào bộ sưu tập rồi nhỉ.
 Để xem nào……",MACHINE_DRAFT_UNREVIEWED,
 D1194,dialogue,1,data/Map123.json/events/6/pages/0/list/24,"{0}はいつものように自身の陰部を触りながら
-{1}の隠し撮りに成功したデータファイルを開く。","{0} vừa sờ vào bộ phận sinh dục của mình như thường lệ,
-Mở tệp dữ liệu chứa đoạn phim quay lén {1} thành công.",MACHINE_DRAFT_UNREVIEWED,
+{1}の隠し撮りに成功したデータファイルを開く。","Như thường lệ, {0} vừa sờ vào bộ phận sinh dục của mình vừa mở tệp dữ liệu chứa đoạn phim quay lén {1} thành công.",MACHINE_DRAFT_UNREVIEWED,
 D1195,dialogue,1,data/Map123.json/events/6/pages/0/list/27,さて、まずはおトイレのシーンからおさらいでもしておきますかな。,"Nào, trước tiên chúng ta hãy xem lại cảnh trong nhà vệ sinh nhé.",MACHINE_DRAFT_UNREVIEWED,
 D1196,dialogue,1,data/Map123.json/events/6/pages/0/list/43,"トイレの隠し撮りが再生される。
 ちょうど{0}が排尿をする瞬間を捉えているようだった。","Đoạn phim quay lén trong nhà vệ sinh được phát lại.
 Có vẻ như nó đã ghi lại đúng khoảnh khắc {0} đang đi tiểu.",MACHINE_DRAFT_UNREVIEWED,
 D1197,dialogue,1,data/Map123.json/events/6/pages/0/list/51,"……{0}さんは{1}さんと違って随分とお上品ですな。
-音が聞こえないように加減しているんでしょうかねぇ。","……{0}khác với {1}, quả là rất thanh lịch nhỉ.
-Có lẽ là đang điều chỉnh để không phát ra tiếng động nhỉ.",MACHINE_DRAFT_UNREVIEWED,
+音が聞こえないように加減しているんでしょうかねぇ。","……Cô {0} khác hẳn cô {1}, thanh lịch hơn nhiều nhỉ.
+Chắc là đang cố tiết chế để không phát ra tiếng đây mà.",MACHINE_DRAFT_UNREVIEWED,
 D1198,dialogue,1,data/Map123.json/events/6/pages/0/list/54,"しかしまぁこの特製マイクの前では……ひひっ。
 恥ずかしい音も全部録音させてもらってますがね。","Tuy nhiên, trước chiếc micrô đặc biệt này thì……Hì hì.
 Tất cả những âm thanh đáng xấu hổ cũng được ghi âm lại hết rồi.",MACHINE_DRAFT_UNREVIEWED,
 D1199,dialogue,1,data/Map123.json/events/6/pages/0/list/57,"誰もいない深夜の学園でこれまでに撮りためた映像を愉しむのが
-{0}の習慣となっていた。","Việc tận hưởng những đoạn video đã quay được cho đến nay tại ngôi trường vắng lặng vào đêm khuya
-Đó đã trở thành thói quen của {0}.",MACHINE_DRAFT_UNREVIEWED,
+{0}の習慣となっていた。",Việc tận hưởng những đoạn video đã quay được cho đến nay trong ngôi trường vắng lặng vào đêm khuya đã trở thành thói quen của {0}.,MACHINE_DRAFT_UNREVIEWED,
 D1200,dialogue,1,data/Map123.json/events/6/pages/0/list/60,それにしても{0}さんは当時の{1}さんと比べてもずいぶんと発育がいい。,"Dù sao thì, so với {1} thời đó, {0} phát triển tốt hơn nhiều.",MACHINE_DRAFT_UNREVIEWED,
 D1201,dialogue,1,data/Map123.json/events/6/pages/0/list/62,"衣類の上からでも存在感を主張しているバストサイズに
-舌なめずりをせずにはいられない。","Ngay cả khi mặc quần áo, kích cỡ vòng một của cô ấy vẫn khẳng định sự hiện diện của mình.
-Tôi không thể không liếm môi.",MACHINE_DRAFT_UNREVIEWED,
+舌なめずりをせずにはいられない。","Anh không thể không liếm môi khi nhìn thấy kích cỡ vòng một của cô, nó vẫn khẳng định sự hiện diện của mình ngay cả khi mặc quần áo.",MACHINE_DRAFT_UNREVIEWED,
 D1202,dialogue,1,data/Map123.json/events/6/pages/0/list/65,"これは将来的に{0}さん以上の持ち主になることは
-間違いないでしょうなぁ。","Chắc chắn trong tương lai, cô ấy sẽ có bộ ngực lớn hơn cả cô {0}
-Chắc chắn là vậy rồi.",MACHINE_DRAFT_UNREVIEWED,
+間違いないでしょうなぁ。","Chắc chắn trong tương lai, cô ấy sẽ còn sở hữu một bộ ngực lớn hơn cả {0} nhỉ.",MACHINE_DRAFT_UNREVIEWED,
 D1203,dialogue,1,data/Map123.json/events/6/pages/0/list/77,"……やはり{0}さんはこういう下着ですか。
 まだまだこの辺は年相応といったところですかな……ひひっ。","……Quả nhiên {0} mặc loại đồ lót này sao?
 Chỗ này vẫn còn khá phù hợp với tuổi tác của cô nhỉ……Hì hì.",MACHINE_DRAFT_UNREVIEWED,
@@ -3291,14 +3094,12 @@ D1214,dialogue,1,data/Map123.json/events/6/pages/0/list/118,"早くこの乳に�
 {0}さん以上に揉みがいがありそうだ……ひひひっ。","Tôi muốn được chạm vào bộ ngực này thật sớm.
 Có vẻ như chúng còn đáng để xoa bóp hơn cả của cô {0} nữa……Hì hì hì.",MACHINE_DRAFT_UNREVIEWED,
 D1215,dialogue,1,data/Map123.json/events/6/pages/0/list/121,"映し出されている{0}の乳房を凝視しながら
-{1}の乳房を揉みしだいた時の感触を思い起こす。","Trong khi nhìn chằm chằm vào bộ ngực của {0} đang được chiếu lên,
-Tôi nhớ lại cảm giác khi sờ nắn bầu ngực của {1}.",MACHINE_DRAFT_UNREVIEWED,
+{1}の乳房を揉みしだいた時の感触を思い起こす。","Trong khi nhìn chằm chằm vào bộ ngực của {0} đang được chiếu trên màn hình, {1} nhớ lại cảm giác khi sờ nắn bộ ngực của cô.",MACHINE_DRAFT_UNREVIEWED,
 D1216,dialogue,1,data/Map123.json/events/6/pages/0/list/124,"あのたぷたぷとした感触に重量感……
 それに乳首もぷっくりとしていて、やはり{0}さんの娘なだけはある。","Cảm giác mềm mại và nặng trĩu đó……
 Hơn nữa, núm vú cũng căng phồng, quả nhiên là con gái của {0}.",MACHINE_DRAFT_UNREVIEWED,
 D1217,dialogue,1,data/Map123.json/events/6/pages/0/list/127,"あぁ……早くこの乳首に吸いついて
-むしゃぶりつくしたいもんですなぁ……ひひひっ。","A...Tôi muốn nhanh chóng mút lấy núm vú này
-Và cắn mút nó thật mạnh...Hì hì hì.",MACHINE_DRAFT_UNREVIEWED,
+むしゃぶりつくしたいもんですなぁ……ひひひっ。",Aaaa……Thật muốn nhanh chóng được mút và cắn vào núm vú này quá……Hì hì hì.,MACHINE_DRAFT_UNREVIEWED,
 D1218,dialogue,4,data/Map123.json/events/6/pages/0/list/137,さて、パンティの下は……どんな様子か見せてもらいましょうかね。,"Nào, bên dưới cái quần lót này là……Để tôi xem bên dưới cái quần lót này trông như thế nào nhé.",MACHINE_DRAFT_UNREVIEWED,
 D1219,dialogue,1,data/Map123.json/events/6/pages/0/list/139,"ほほう、これはまた……
 まさか綺麗に剃り上げているとは……これは意外ですなぁ……","Hô hô, cái này lại là……
@@ -3333,8 +3134,7 @@ D1234,dialogue,1,data/Map123.json/events/6/pages/0/list/244,"ふぅ……
 {0}さんの件といい、今年は豊作になりそうだ……ひひひっ。","Phù……
 Cũng như trường hợp của {0}, năm nay có vẻ sẽ là một năm bội thu……Hì hì hì.",MACHINE_DRAFT_UNREVIEWED,
 D1235,dialogue,1,data/Map123.json/events/6/pages/0/list/247,"そして、この行為がいつの日か現実になることを確信しているかのように
-笑みを浮かべるのだった……","Và như thể anh ta tin chắc rằng hành động này sẽ trở thành hiện thực vào một ngày nào đó,
-Anh ta nở nụ cười……",MACHINE_DRAFT_UNREVIEWED,
+笑みを浮かべるのだった……","Và rồi, hắn nở nụ cười như thể hắn tin chắc rằng một ngày nào đó hành vi này sẽ trở thành hiện thực……",MACHINE_DRAFT_UNREVIEWED,
 D1236,dialogue,1,data/Map123.json/events/6/pages/0/list/275,"体験版はここまでです、プレイありがとうございました。
 このあと{0}の自宅エリアに戻ります。","Bản dùng thử kết thúc tại đây, cảm ơn bạn đã chơi.
 Sau đây, bạn sẽ trở lại khu vực nhà của {0}.",MACHINE_DRAFT_UNREVIEWED,
@@ -3345,8 +3145,7 @@ D1238,dialogue,2,data/Map127.json/events/7/pages/0/list/7,変身してアーケ�
 N35,speaker,2,data/Map127.json/events/8/pages/0/list/10/parameters/4,リポーター,Phóng viên,MACHINE_DRAFT_UNREVIEWED,
 D1239,dialogue,1,data/Map127.json/events/8/pages/0/list/11,えー私はいま雄ヶ留守郊外にある商店街へとやってきています。,"À, hiện tại tôi đang ở khu phố mua sắm nằm ở vùng ngoại ô của Oga Rusu.",MACHINE_DRAFT_UNREVIEWED,
 D1240,dialogue,1,data/Map127.json/events/8/pages/0/list/13,"ですがご覧の通り、数日前に怪人が現れてからというもの
-まるでゴーストタウンかのように静まり返っており――","Nhưng như các bạn thấy, kể từ khi tên quái nhân xuất hiện cách đây vài ngày,
-Nơi đây trở nên yên tĩnh như một thị trấn ma vậy――",MACHINE_DRAFT_UNREVIEWED,
+まるでゴーストタウンかのように静まり返っており――","Nhưng như các bạn thấy đấy, kể từ khi tên quái nhân xuất hiện vài ngày trước, nơi đây đã trở nên yên tĩnh như một thị trấn ma――",MACHINE_DRAFT_UNREVIEWED,
 D1241,dialogue,1,data/Map127.json/events/8/pages/0/list/16,地元のテレビ局がやってきているようだ……,Có vẻ như đài truyền hình địa phương đang đến đây……,MACHINE_DRAFT_UNREVIEWED,
 D1242,dialogue,2,data/Map127.json/events/8/pages/0/list/20,"（ひと目につくのは避けた方がいいかな……
 別のところからアーケードに入れないか探そう）","(Có lẽ tốt hơn là nên tránh bị người ta chú ý……
@@ -3383,7 +3182,7 @@ D1257,dialogue,2,data/Map129.json/events/9/pages/0/list/31,いったい、なん
 D1258,dialogue,2,data/Map129.json/events/9/pages/0/list/36,っ………,Hả………,MACHINE_DRAFT_UNREVIEWED,
 D1259,dialogue,2,data/Map129.json/events/9/pages/0/list/39,このツメにはな、雌の気分を上げる成分が染み込んでいるのさ。,Móng vuốt này được thấm đẫm các thành phần làm tăng hứng thú của con cái đó.,MACHINE_DRAFT_UNREVIEWED,
 D1260,dialogue,4,data/Map129.json/events/9/pages/0/list/42,"なんでも博士の野郎が言うには人間の感情に作用して発情期状態にする
-媚薬……だとかなんだか難しいこと言ってたっけなァ。",Theo lời của tên bác sĩ chết tiệt đó thì đó là một loại thuốc kích dục tác động đến cảm xúc của con người và khiến họ rơi vào trạng thái động dục……Hắn ta nói những điều khó hiểu như vậy.,MACHINE_DRAFT_UNREVIEWED,
+媚薬……だとかなんだか難しいこと言ってたっけなァ。",Theo lời của tên bác sĩ chết tiệt kia thì đó là một loại thuốc kích dục tác động đến cảm xúc của con người và khiến họ rơi vào trạng thái động dục……Hắn ta nói những điều khó hiểu như vậy.,MACHINE_DRAFT_UNREVIEWED,
 D1261,dialogue,2,data/Map129.json/events/9/pages/0/list/45,……まぁ要するにエロい気分になっちまうってことらしいぜ。,"……Tóm lại là, hình như nó sẽ khiến người ta cảm thấy hứng tình.",MACHINE_DRAFT_UNREVIEWED,
 D1262,dialogue,2,data/Map129.json/events/9/pages/0/list/49,く……ッ、そんなデタラメを……,"Chết tiệt……Hứ, toàn là mấy lời nhảm nhí...",MACHINE_DRAFT_UNREVIEWED,
 D1263,dialogue,2,data/Map129.json/events/9/pages/0/list/52,"そうかァ？
@@ -3401,14 +3200,13 @@ Dù sao thì, bây giờ hãy nghĩ đến việc quay lại phòng thí nghiệ
 P95,plugin_text,2,data/Map129.json/events/9/pages/0/list/98/parameters/3/text,"媚薬効果{0}が付与され
 {1}性欲が大きく上昇した{2}{3}{4}コンディション項目が解放{5}
 メニュー画面
-着替え画面","Được áp dụng hiệu ứng thuốc kích dục {0}
-{1}Ham muốn tình dục tăng lên đáng kể{2}{3}{4}Mục tình trạng được mở khóa{5}
+着替え画面","Hiệu ứng thuốc kích dục{0} đã được áp dụng
+{1}Ham muốn tình dục tăng mạnh{2}{3}{4}Đã mở khóa mục Thể trạng{5}
 Màn hình menu
 Màn hình thay đồ",MACHINE_DRAFT_UNREVIEWED,
 D1268,dialogue,2,data/Map129.json/events/10/pages/0/list/10,ぐぉっ！！,Hự!!,MACHINE_DRAFT_UNREVIEWED,
 D1269,dialogue,2,data/Map129.json/events/10/pages/0/list/17,"ハァ……ハァ……っ
-チッ、こんなに強えとはなァ……だが、オレサマの役目は果たしたぜ……","Ha...Ha...Hừm
-Chậc, không ngờ lại mạnh đến thế này……Nhưng ta đã hoàn thành nhiệm vụ của mình rồi……",MACHINE_DRAFT_UNREVIEWED,
+チッ、こんなに強えとはなァ……だが、オレサマの役目は果たしたぜ……","Ha...Ha...Chậc, không ngờ lại mạnh đến thế này……Nhưng ta đã hoàn thành nhiệm vụ của mình rồi……",MACHINE_DRAFT_UNREVIEWED,
 D1270,dialogue,2,data/Map129.json/events/10/pages/0/list/22,役目……？　いったい何を企んで――,Nhiệm vụ……?　Rốt cuộc là ngươi đang mưu đồ cái gì――,MACHINE_DRAFT_UNREVIEWED,
 D1271,dialogue,2,data/Map129.json/events/10/pages/0/list/28,"っ……
 （なに、この感じ……）","Hứ……
@@ -3424,20 +3222,19 @@ D1277,dialogue,2,data/Map129.json/events/10/pages/0/list/73,"（でも何かさ�
 とにかく、いまはラボに戻ることを考えよう……）","(Nhưng chắc chắn là có chuyện gì đó đã xảy ra.
 Dù sao thì, bây giờ hãy nghĩ đến việc quay lại phòng thí nghiệm thôi……)",MACHINE_DRAFT_UNREVIEWED,
 P96,plugin_text,2,data/Map131.json/events/9/pages/0/list/96/parameters/3/text,"媚薬効果{0}が付与され
-{1}性欲が大きく上昇した","Được áp dụng hiệu ứng thuốc kích dục {0}
-{1}Ham muốn tình dục tăng lên rất nhiều",MACHINE_DRAFT_UNREVIEWED,
+{1}性欲が大きく上昇した","Hiệu ứng thuốc kích dục{0} đã được áp dụng
+{1}Ham muốn tình dục tăng mạnh",MACHINE_DRAFT_UNREVIEWED,
 M62,map_display_name,1,data/Map141.json/displayName,コランダライズテック：研究棟,Công nghệ Corandalis: Tòa nhà nghiên cứu,MACHINE_DRAFT_UNREVIEWED,
 D1278,dialogue,2,data/Map141.json/events/11/pages/0/list/4,"こうして……{0}たちは結社アク・メーンによって身柄を拘束され
-二度と日の当たらぬ閉所に幽閉されることとなった……","Như vậy……{0}bị tổ chức Ak-Meen bắt giữ
-Và bị giam cầm trong một nơi kín đáo, không bao giờ thấy ánh mặt trời nữa……",MACHINE_DRAFT_UNREVIEWED,
+二度と日の当たらぬ閉所に幽閉されることとなった……","Và thế là…… {0} cùng mọi người bị tổ chức Ác-Mên bắt giữ
+và bị giam cầm mãi mãi ở một nơi kín không bao giờ thấy ánh mặt trời……",MACHINE_DRAFT_UNREVIEWED,
 D1279,dialogue,2,data/Map141.json/events/11/pages/0/list/16,"それからおよそ数か月。
 結社アク・メーンは順調に勢力を拡大させており――","Khoảng vài tháng sau đó.
 Tổ chức Ak-Mean đang mở rộng thế lực một cách thuận lợi――",MACHINE_DRAFT_UNREVIEWED,
 D1280,dialogue,2,data/Map141.json/events/11/pages/0/list/19,末端の研究員たちは何も知らぬまま、今日も研究に勤しむ。,Các nghiên cứu viên cấp dưới vẫn miệt mài nghiên cứu hôm nay mà không hề hay biết gì.,MACHINE_DRAFT_UNREVIEWED,
 N37,speaker,4,data/Map141.json/events/11/pages/0/list/29/parameters/4,中年の研究員,Nhà nghiên cứu trung niên,MACHINE_DRAFT_UNREVIEWED,
 D1281,dialogue,2,data/Map141.json/events/11/pages/0/list/30,"今日は新人研修だからな、マンネリ気味の私とは違って
-多少は純度の向上も期待できるだろう。","Hôm nay là buổi đào tạo nhân viên mới, không giống như tôi, người đã hơi nhàm chán với công việc.
-Có thể mong đợi độ tinh khiết sẽ được cải thiện đôi chút.",MACHINE_DRAFT_UNREVIEWED,
+多少は純度の向上も期待できるだろう。","Hôm nay là buổi đào tạo nhân viên mới, nên không giống như tôi đã trở nên nhàm chán, có thể mong đợi mức độ thuần khiết sẽ được cải thiện đôi chút.",MACHINE_DRAFT_UNREVIEWED,
 N38,speaker,6,data/Map141.json/events/11/pages/0/list/104/parameters/4,研修生たち,Các học viên,MACHINE_DRAFT_UNREVIEWED,
 D1282,dialogue,2,data/Map141.json/events/11/pages/0/list/105,うわ、すげー……,"Ôi, thật tuyệt vời……",MACHINE_DRAFT_UNREVIEWED,
 D1283,dialogue,2,data/Map141.json/events/11/pages/0/list/107,まじで裸の女がいる……,Thật sự có một người phụ nữ khỏa thân……,MACHINE_DRAFT_UNREVIEWED,
