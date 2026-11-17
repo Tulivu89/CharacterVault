@@ -10,7 +10,7 @@
   {
    "name": "Kerrow Deep — Direct",
    "status": "draft",
-   "mode": "DIRECT",
+   "mode": "CO-WRITE",
    "world": "Kerrow Deep",
    "lastBeat": ""
   },
@@ -638,6 +638,12 @@
    "world": "HOG Wild",
    "status": "active",
    "hook": "A glass-fronted house on the Mile streams six residents to the city, and the audience bids on what they do next."
+  },
+  {
+   "name": "Hallett College",
+   "world": "Hallett College",
+   "status": "draft",
+   "hook": "A first-year dorm at a magic college on the Maine coast, where everyone is paying for something and the building is older than the school admits."
   },
   {
    "name": "House Castellane",
