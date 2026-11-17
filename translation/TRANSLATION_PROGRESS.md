@@ -37,6 +37,10 @@ No playable build was supplied. Vietnamese font rendering, wrapping, custom UI w
 
 Keep the original project backed up. Copy `vi_draft/data/System.json` into the `data` folder of a **separate test copy** of the matching game version, replacing only that copy's System.json. This draft is a complete System.json with untranslated settings retained, not a standalone game. Do not overwrite the original ZIP or use the draft as a final release without testing.
 
+## Next batch: everything else, through Lara Translate (prepared, not yet sent)
+
+`lara/for_lara.json` holds every remaining Japanese-bearing candidate from the scope audit (all `translate_*` categories except System UI) as 1,933 unique strings / 41,857 characters, with dialogue boxes merged and escape codes and glossary names protected. It covers 3,827 text locations in 136 files. Steps, the quota check and the name glossary are in `lara/README.md`. Once Lara's result is applied, `translation_progress.csv` and `lara_translation_ledger.csv` record per-file and per-string status. Statuses stay at most FIRST_PASS_UNREVIEWED until human review and in-game QA.
+
 ## Continuing work
 
 Suggested next batches: item/skill names and descriptions to establish terminology, character names and speaker-name glossary, then dialogue grouped by map/scene. Review plugin text and variable-held text alongside each scene. Keep speaker relationships/pronouns in a shared glossary as context becomes available.
