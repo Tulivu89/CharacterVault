@@ -152,6 +152,102 @@
    }
   },
   {
+   "name": "Adeline Baek",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "19",
+   "hook": "The backup heir of an old Abyssal family, top of every section so nobody can say \"legacy.\"",
+   "portrait": null
+  },
+  {
+   "name": "Almaz Bekele",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "48",
+   "hook": "The professor whose course drops a third of the first-year class, and who put her daughter in a room with the student she tried to keep out.",
+   "portrait": null
+  },
+  {
+   "name": "Catalina Salgado",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "18",
+   "hook": "The work-study girl in the archive basement whose grandfather's name was cut off the dorm she lives in.",
+   "portrait": null
+  },
+  {
+   "name": "Devika Rao",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "19",
+   "hook": "A hurl scholarship with a 2.5 problem, running on black coffee and spite.",
+   "portrait": null
+  },
+  {
+   "name": "Gabe Thibodeau",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "19",
+   "hook": "The facilities supervisor's son, on tuition remission, who knows the building better than housing does.",
+   "portrait": null
+  },
+  {
+   "name": "Julian Baek",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "22",
+   "hook": "The Baek heir who broke in a practical, came back three years later as a first year, and is the best-liked person in the building.",
+   "portrait": null
+  },
+  {
+   "name": "Linh Tran",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "18",
+   "hook": "A polite girl from a closed hermetic order who treats college as fieldwork and everyone in it as a subject.",
+   "portrait": null
+  },
+  {
+   "name": "Marcus Webb",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "20",
+   "hook": "The third-floor RA, tired and decent, whose tuition is paid by reports on his residents.",
+   "portrait": null
+  },
+  {
+   "name": "Ray Thibodeau",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "52",
+   "hook": "North Hall's live-in facilities supervisor for twenty-four years, who keeps the tunnels locked and salt on the sills.",
+   "portrait": null
+  },
+  {
+   "name": "Saga Lindqvist",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "19",
+   "hook": "The reagent heiress whose name is on the stadium: bored, loud, and fixated on the one girl who stopped looking at her.",
+   "portrait": null
+  },
+  {
+   "name": "Selam Girma",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "18",
+   "hook": "The best student in PRAC 101, whose professor is secretly her mother.",
+   "portrait": null
+  },
+  {
+   "name": "Wes Harlan",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "19",
+   "hook": "Saga's boyfriend since sophomore year, the most normal person on the floor, and the one everyone confides in.",
+   "portrait": null
+  },
+  {
    "name": "Lux",
    "world": "HOG Wild",
    "species": "Human (augmented)",

@@ -5,7 +5,7 @@ cover:
 world: "[[Hallett College]]"
 status: draft
 rating: suggestive
-version: 1
+version: 2
 tags: [setting]
 created: 2026-11-17
 ---
@@ -63,7 +63,7 @@ Characters are built from their situation, not from sources. Each of the five or
 2. **Junior year.** Adeline and Saga were best friends at boarding school until something both of them did. Wes's father drafted the NDA, and Cata has read the sealed note in the admissions files. Saga wants Adeline back, and Adeline won't look at her.
 3. **The 2.5.** Dev's scholarship needs a 2.5 GPA, and she scored 54 on the first PRAC quiz. Her tutor is the professor's daughter, which nobody knows. Midterms are in week seven.
 4. **Room 3B.** Saga is sleeping with the RA, a fireable offense, and he files reports to her father's company. Cata knows. Wes says goodnight to Cata when Saga's in the shower.
-5. **The roommate report.** Dr. Bekele had housing room her daughter with Linh, and Selam reports on her. Linh knows, and she's running her own experiment on Selam. Selam is falling for her.
+5. **The roommate report.** Dr. Bekele had housing room her daughter with Linh, and Selam reports on her. Linh knows, and she's running her own experiment on Selam. Selam is falling for her. Linh's other subject is Julian, the one person on the floor who has heard what she's looking for, and Selam has noticed.
 6. **The tunnels.** Caleb Prentiss withdrew in week two, after asking Gabe how to get into the tunnels, and his things are still in his room. Linh goes down every night. Ray keeps the iron door shut. Julian hears something under the building that sounds like his practical.
 7. **The name on the lintel.** Ray has worked here for 24 years and recognizes Cata's face from a photograph in the boiler room.
 
@@ -79,24 +79,24 @@ Characters are built from their situation, not from sources. Each of the five or
 9. **Finals.** Who doesn't come back after winter break.
 
 ## Protagonist slot
-- **Fixed:** an adult first-year student who arrives in week three and takes an empty bed on the third floor of North Hall.
-- **Open:** gender, house or no house, money, why they're late, and whose stories they step into first. If the protagonist is a man, the bed is Caleb's, in Wes's room. If she's a woman, another resident withdraws in week two the same way.
+- **Fixed:** a man, an adult first-year student who arrives in week three and takes Caleb Prentiss's empty bed in Wes Harlan's room on the third floor of North Hall. Caleb's things are still on the shelf.
+- **Open:** his house (or none), his money, why he's late, and whose stories he steps into first.
 
 ## Cast notes
-*All ages are adult. Names are working names.*
-- **Adeline Baek** (19, Abyssal, room 3A): the backup heir. A legacy admit whose allowance is tied to her GPA. Keystone: Shiv Roy.
-- **Julian Baek** (22, Abyssal, boys' wing): her brother. He broke in a practical three years ago and is readmitted as a first year. Gay, and out to Adeline only.
-- **Devika "Dev" Rao** (19, Oxblood, 3A): on a hurl scholarship that needs a 2.5. Lesbian, with a girlfriend back in New Jersey. Keystone: Vi.
-- **Catalina "Cata" Salgado** (18, Verdigris, 3B): her legal name is Catalina Ybarra Salgado. Need-based aid, with work-study in the archive. Bi and private. Keystone: Amy Dunne in her quiet phase.
-- **Linh Tran** (18, Oxblood, 3C): from a closed hermetic order that practices threshold magic. To her, intimacy is an experiment. No label. Keystone: Makima.
-- **Saga Lindqvist** (19, Ashen Gold, 3B): the reagent heiress. Bi, never said it. Dating Wes, sleeping with Marcus, fixated on Adeline. Keystone: Maddy Perez.
-- **Selam Girma** (18, Verdigris, 3C): Dr. Bekele's daughter, though the surnames don't match. Top of PRAC 101, tutors for cash, informs on her roommate.
-- **Wes Harlan** (19, Ashen Gold, boys' wing): Saga's boyfriend since they were sophomores, on the men's hurl team. His father drafted the NDA.
-- **Gabe Thibodeau** (19, unaffiliated, boys' wing, rooms with Julian): Ray's son, on tuition remission. He knows the tunnels. Bi.
-- **Marcus Webb** (20, Ashen Gold, the RA): a junior on a sponsor contract that requires "community reports." Sleeping with Saga.
-- **Dr. Almaz Bekele** (48, Verdigris faculty): designed PRAC 101. She wrote up Linh's entrance practical and argued against admitting her.
-- **Ray Thibodeau** (52, facilities): North Hall's live-in supervisor for 24 years. A widower who keeps the tunnels locked.
-- **Offstage:** Grandmother Baek; Saga's father; Meena, Dev's girlfriend in Edison; Dev's little sister at home; Caleb Prentiss, who withdrew.
+*All ages are adult. Names are locked.*
+- [[Adeline Baek]] (19, Abyssal, room 3A): the backup heir. A legacy admit whose allowance is tied to her GPA. Bi, though she hasn't admitted it to herself. Keystone: Shiv Roy.
+- [[Julian Baek]] (22, Abyssal, boys' wing, rooms with Gabe): her brother. He broke in a practical three years ago and is readmitted as a first year. Straight. Drawn to Linh.
+- [[Devika Rao]] ("Dev", 19, Oxblood, 3A): on a hurl scholarship that needs a 2.5. Lesbian, with a bi girlfriend, Meena, back in New Jersey. Her roommate is getting under her skin. Keystone: Vi.
+- [[Catalina Salgado]] ("Cata", 18, Verdigris, 3B): her legal name is Catalina Ybarra Salgado. Need-based aid, with work-study in the archive. Bi and private, with a crush on Wes. Keystone: Amy Dunne in her quiet phase.
+- [[Linh Tran]] (18, Oxblood, 3C): from a closed hermetic order that practices threshold magic. To her, intimacy is an experiment, and her subjects are Selam and Julian. No label. Keystone: Makima.
+- [[Saga Lindqvist]] (19, Ashen Gold, 3B): the reagent heiress. Bi, never said it. Dating Wes, sleeping with Marcus, fixated on Adeline. Keystone: Maddy Perez.
+- [[Selam Girma]] (18, Verdigris, 3C): Dr. Bekele's daughter, though the surnames don't match. Top of PRAC 101, tutors for cash, informs on her roommate. Thinks she's straight.
+- [[Wes Harlan]] (19, Ashen Gold, boys' wing): Saga's boyfriend since they were sophomores, on the men's hurl team. His father drafted the NDA. The protagonist's roommate. Straight.
+- [[Gabe Thibodeau]] (19, unaffiliated, boys' wing): Ray's son, on tuition remission. He knows the tunnels, and he likes Cata. Straight.
+- [[Marcus Webb]] (20, Ashen Gold, the RA): a junior on a sponsor contract that requires "community reports." Sleeping with Saga. Straight.
+- [[Almaz Bekele]] (48, Verdigris faculty): designed PRAC 101. She wrote up Linh's entrance practical and argued against admitting her.
+- [[Ray Thibodeau]] (52, facilities): North Hall's live-in supervisor for 24 years. A widower who keeps the tunnels locked.
+- **Offstage:** Grandmother Baek; Saga's father; Meena, Dev's girlfriend in Edison (bi); Dev's little sister at home; Caleb Prentiss, who withdrew.
 
 ## Lore entries
 - **North Hall / Ybarra Hall / the lintel:** The only first-year dorm. It was built as Ybarra Hall with Tomás Ybarra's money. After the Ybarra Inquiry the college cut his name off the lintel and renamed it, and the old letters show when the stone is wet.
@@ -107,7 +107,6 @@ Characters are built from their situation, not from sources. Each of the five or
 - **Community reports:** The monthly wellbeing reports that sponsored RAs file on their residents. Ashen Gold's go to the Lindqvist Reagents student-success office.
 
 ## Open questions
-- Working names: does every name hold?
 - What did Adeline and Saga do in junior year?
 - What was the Ybarra Inquiry?
 - What did Julian see in his practical?
@@ -148,7 +147,9 @@ views:
 ```
 
 ## Notes
+- **Cast rules (user):** there are no gay men. Men are straight, or bi at most, and no romance between men is written. No relationship pairs two lesbians. A lesbian with a bi or pan woman, or any other mix of orientations among women, is fine.
 - The visual bible is the Witch Cast handoff (2026-10-20). Before the visual pass: remove `teenage` from Saga's headshot box, get the user's exact Dev body box, and build Selam on the Willow kit with the East African overlay.
 
 ## Changelog
 - v1 (2026-11-17): created from the Witch Cast bible and the cast workshop
+- v2 (2026-11-17): names locked; the protagonist is male and takes Caleb's bed; Julian and Gabe are straight (Julian is drawn to Linh, Gabe likes Cata); cast rules added; character pages linked
