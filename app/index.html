@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Story Vault</title>
+<meta name="description" content="Your Story Vault at a glance: stories, characters, worlds and co-writers, with their images.">
+<style>
+:root {
+  --bg: #f6f3f8; --surface: #ffffff; --surface-2: #efe9f3; --text: #1f1a24; --muted: #6b6274; --line: #e2d9e8;
+  --accent: #7a3b95; --accent-ink: #ffffff; --accent-soft: #f0e4f6; --danger: #a33a3a;
+  --shadow: 0 1px 2px rgba(30, 10, 40, .06), 0 10px 28px rgba(30, 10, 40, .08);
+  --radius: 14px; --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #131017; --surface: #1c1721; --surface-2: #251e2b; --text: #ece4f1; --muted: #a497ae; --line: #33293b;
+    --accent: #c98fe0; --accent-ink: #1a1020; --accent-soft: #2d2235; --danger: #e28a8a;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 28px rgba(0, 0, 0, .35); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #131017; --surface: #1c1721; --surface-2: #251e2b; --text: #ece4f1; --muted: #a497ae; --line: #33293b;
+  --accent: #c98fe0; --accent-ink: #1a1020; --accent-soft: #2d2235; --danger: #e28a8a;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 28px rgba(0, 0, 0, .35); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.55 var(--sans); overflow-x: hidden; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { display: block; max-width: 100%; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; margin: 0; }
+h1 { font-size: clamp(26px, 4vw, 36px); }
+h2 { font-size: 22px; }
+button { font: inherit; color: inherit; }
+.muted { color: var(--muted); }
+.small { font-size: 13px; }
+
+/* header */
+.top { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.top-in { max-width: 1240px; margin: 0 auto; padding: 10px 16px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.brand { font-family: var(--serif); font-size: 20px; font-weight: 700; color: var(--text); display: flex; align-items: center; gap: 8px; }
+.brand:hover { text-decoration: none; }
+.brand-mark { width: 26px; height: 26px; border-radius: 8px; background: var(--accent); color: var(--accent-ink);
+  display: grid; place-items: center; font-size: 15px; }
+.nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; flex: 1 1 auto; min-width: 0; }
+.nav::-webkit-scrollbar { display: none; }
+.nav a { padding: 7px 12px; border-radius: 999px; color: var(--muted); white-space: nowrap; font-weight: 500; }
+.nav a:hover { color: var(--text); background: var(--surface-2); text-decoration: none; }
+.nav a.on { color: var(--accent-ink); background: var(--accent); }
+.search { width: 190px; max-width: 40vw; }
+.iconbtn { border: 1px solid var(--line); background: var(--surface); border-radius: 10px; width: 36px; height: 36px;
+  display: grid; place-items: center; cursor: pointer; flex: 0 0 auto; }
+.iconbtn:hover { border-color: var(--accent); }
+@media (max-width: 720px) {
+  .top-in { gap: 8px; }
+  .nav { order: 3; flex-basis: 100%; }
+  .search { flex: 1 1 auto; max-width: none; width: auto; }
+}
+
+input[type="search"], input[type="text"], input[type="password"], select {
+  font: inherit; color: var(--text); background: var(--surface); border: 1px solid var(--line); border-radius: 10px;
+  padding: 7px 11px; min-width: 0; }
+input:focus, select:focus, button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+main { max-width: 1240px; margin: 0 auto; padding: 22px 16px 60px; }
+footer.status { max-width: 1240px; margin: 0 auto; padding: 14px 16px 40px; color: var(--muted); font-size: 13px;
+  display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; border-top: 1px solid var(--line); }
+footer.status button { background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0; }
+
+/* bits */
+.btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--surface);
+  color: var(--text); border-radius: 999px; padding: 7px 14px; cursor: pointer; font-weight: 500; white-space: nowrap; }
+.btn:hover { border-color: var(--accent); text-decoration: none; }
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 12px; padding: 3px 10px; border-radius: 999px; background: var(--surface-2); color: var(--muted);
+  border: 1px solid transparent; white-space: nowrap; }
+button.chip { cursor: pointer; font-size: 13px; padding: 5px 12px; }
+button.chip.on { background: var(--accent); color: var(--accent-ink); }
+.chip.status-active { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.badge { font-size: 11px; font-weight: 700; padding: 1px 6px; border-radius: 6px; background: var(--danger); color: #fff; margin-left: 6px; }
+.eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size: 12px; color: var(--accent); font-weight: 600; }
+.lede { font-size: 17px; margin: 10px 0 0; }
+.sec { margin-top: 34px; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.crumbs { font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+.phead { display: flex; flex-direction: column; gap: 8px; margin-bottom: 8px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; }
+.error { color: var(--danger); }
+.mono { display: grid; place-items: center; color: #fff; font-family: var(--serif); font-weight: 700; font-size: 20px;
+  background: linear-gradient(135deg, hsl(var(--hue) 42% 46%), hsl(calc(var(--hue) + 45) 48% 26%)); width: 100%; height: 100%; }
+.mono.big { font-size: 44px; aspect-ratio: 3 / 4; }
+img[data-path]:not([src]) { background: var(--surface-2); }
+
+/* hero */
+.hero { display: grid; grid-template-columns: minmax(220px, 380px) 1fr; gap: 26px; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); padding: 18px; }
+.hero h1 a { color: var(--text); }
+.hero-body { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.beat { font-family: var(--serif); font-size: 17px; margin: 4px 0 0; border-left: 3px solid var(--accent); padding-left: 12px; }
+.avatars { display: flex; flex-wrap: wrap; gap: 6px; }
+.av { display: block; flex: 0 0 auto; width: 40px; height: 40px; border-radius: 50%; overflow: hidden; border: 2px solid var(--surface); box-shadow: 0 0 0 1px var(--line); }
+.av img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.av .mono { font-size: 14px; }
+details.state { margin-top: 8px; border-top: 1px solid var(--line); padding-top: 10px; }
+details.state summary { cursor: pointer; color: var(--muted); font-weight: 500; }
+details.state ul { margin: 10px 0 0; padding-left: 20px; }
+details.state li { margin: 4px 0; }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; } }
+
+.collage { display: grid; gap: 3px; border-radius: 12px; overflow: hidden; aspect-ratio: 4 / 3; background: var(--surface-2); }
+.collage img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.collage.n2 { grid-template-columns: 1fr 1fr; }
+.collage.n3 { grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; }
+.collage.n3 img:first-child { grid-row: span 2; }
+.collage.n4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+.collage.empty .mono { aspect-ratio: auto; }
+
+/* grids */
+.cgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); gap: 14px; }
+.strip { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(150px, 170px); gap: 14px; overflow-x: auto;
+  padding-bottom: 8px; scroll-snap-type: x proximity; }
+.strip > * { scroll-snap-align: start; }
+.sgrid, .wgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.ccard { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); overflow: hidden; color: var(--text); box-shadow: var(--shadow); transition: transform .15s; }
+.ccard:hover { transform: translateY(-2px); text-decoration: none; border-color: var(--accent); }
+.ccard-img { aspect-ratio: 3 / 4; overflow: hidden; background: var(--surface-2); }
+.ccard-img img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.ccard-body { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.ccard-name { font-family: var(--serif); font-weight: 700; font-size: 16px; }
+.ccard-hook { font-size: 13px; color: var(--muted); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.scard, .wcard { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); overflow: hidden; color: var(--text); box-shadow: var(--shadow); }
+.scard:hover, .wcard:hover { border-color: var(--accent); text-decoration: none; }
+.scard .collage, .wcard .collage { border-radius: 0; aspect-ratio: 16 / 9; }
+.scard-body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 8px; }
+.scard-name { font-family: var(--serif); font-weight: 700; font-size: 18px; }
+.clamp3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; margin: 0; font-size: 14px; }
+.world-group { margin-top: 26px; }
+.world-group h2 { margin-bottom: 12px; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 14px 0 6px; }
+.toolbar input { flex: 0 1 260px; }
+
+/* character */
+.chero { display: grid; grid-template-columns: minmax(220px, 340px) 1fr; gap: 26px; align-items: start; }
+.chero-img .mono.big { border-radius: 16px; }
+.imgbtn { padding: 0; border: 0; background: none; cursor: zoom-in; display: block; width: 100%; }
+.chero-img img { width: 100%; border-radius: 16px; box-shadow: var(--shadow); aspect-ratio: 3 / 4; object-fit: cover; object-position: top; }
+.thumbs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.thumb { width: 64px; height: 64px; padding: 0; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; cursor: zoom-in; background: var(--surface-2); }
+.thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.tabs { display: flex; gap: 4px; overflow-x: auto; border-bottom: 1px solid var(--line); margin: 30px 0 0; scrollbar-width: thin; }
+.tab { padding: 9px 14px; color: var(--muted); border-bottom: 2px solid transparent; white-space: nowrap; font-weight: 500; }
+.tab.on { color: var(--accent); border-color: var(--accent); }
+.tab:hover { text-decoration: none; color: var(--text); }
+@media (max-width: 720px) { .chero { grid-template-columns: 1fr; } .chero-img { max-width: 320px; } }
+
+/* co-writers */
+.cw { display: grid; grid-template-columns: minmax(180px, 260px) 1fr; gap: 24px; margin-bottom: 30px; }
+.cw-portrait img { border-radius: 16px; aspect-ratio: 3 / 4; object-fit: cover; object-position: top; box-shadow: var(--shadow); width: 100%; }
+.moods { display: grid; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); gap: 10px; margin-top: 16px; }
+.mood { margin: 0; text-align: center; }
+.mood button { width: 100%; aspect-ratio: 1; padding: 0; border: 1px solid var(--line); border-radius: 50%; overflow: hidden; cursor: zoom-in; background: var(--surface-2); }
+.mood img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.mood figcaption { font-size: 13px; color: var(--muted); margin-top: 4px; }
+@media (max-width: 640px) { .cw { grid-template-columns: 1fr; } .cw-portrait { max-width: 260px; } }
+
+/* rendered notes */
+.md { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 24px; margin-top: 16px; overflow-wrap: anywhere; }
+.md h2 { margin: 26px 0 8px; } .md h3 { font-size: 18px; margin: 20px 0 6px; } .md h4 { margin: 16px 0 4px; }
+.md > :first-child { margin-top: 0; }
+.md p { margin: 8px 0; }
+.md ul, .md ol { padding-left: 22px; margin: 8px 0; }
+.md li { margin: 3px 0; }
+.md blockquote { margin: 10px 0; padding: 2px 14px; border-left: 3px solid var(--accent); color: var(--muted); }
+.md .callout { margin: 12px 0; padding: 10px 14px; border-radius: 10px; background: var(--accent-soft); }
+.md .callout-title { font-weight: 600; color: var(--accent); }
+.md code { background: var(--surface-2); padding: 1px 5px; border-radius: 5px; font-size: .92em; }
+.md pre { background: var(--surface-2); padding: 12px; border-radius: 10px; overflow-x: auto; }
+.md pre code { background: none; padding: 0; }
+.md hr { border: 0; border-top: 1px solid var(--line); margin: 20px 0; }
+.md hr.beat { border-top: 1px dashed var(--line); margin: 26px auto; width: 30%; }
+.md .table { overflow-x: auto; margin: 10px 0; }
+.md table { border-collapse: collapse; font-size: 14px; }
+.md th, .md td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+.md th { background: var(--surface-2); }
+.md img.md-img { max-height: 420px; border-radius: 10px; cursor: zoom-in; margin: 8px 0; }
+.md .missing { color: var(--muted); border-bottom: 1px dotted var(--muted); }
+.md mark { background: var(--accent-soft); color: inherit; }
+.md.reader { font-family: var(--serif); font-size: 18px; line-height: 1.7; max-width: 70ch; margin-left: auto; margin-right: auto; padding: 28px clamp(16px, 5vw, 48px); }
+.pager { display: flex; justify-content: space-between; align-items: center; gap: 10px; max-width: 70ch; margin: 16px auto 0; flex-wrap: wrap; }
+ol.parts { padding-left: 22px; } ol.parts li { margin: 6px 0; }
+
+/* lightbox */
+#lightbox { position: fixed; inset: 0; z-index: 50; background: rgba(8, 4, 12, .92); display: grid; grid-template-rows: 1fr auto; }
+#lightbox[hidden] { display: none; }
+.lb-stage { display: grid; place-items: center; min-height: 0; padding: 16px; position: relative; }
+#lb-img { max-width: 100%; max-height: calc(100vh - 110px); object-fit: contain; border-radius: 8px; }
+.lb-bar { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; padding: 10px 16px 18px; color: #e9e1ee; }
+.lb-bar .btn { background: rgba(255, 255, 255, .08); color: #fff; border-color: rgba(255, 255, 255, .2); }
+.lb-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%;
+  border: 0; background: rgba(255, 255, 255, .12); color: #fff; font-size: 22px; cursor: pointer; }
+.lb-prev { left: 12px; } .lb-next { right: 12px; }
+#lb-cap { width: 100%; text-align: center; font-size: 13px; opacity: .8; }
+
+#toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%) translateY(20px); opacity: 0; z-index: 60;
+  background: var(--text); color: var(--bg); padding: 10px 16px; border-radius: 999px; transition: .2s; pointer-events: none;
+  max-width: calc(100vw - 32px); text-align: center; }
+#toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+dialog { border: 1px solid var(--line); border-radius: 18px; background: var(--surface); color: var(--text);
+  padding: 0; width: min(560px, calc(100vw - 32px)); box-shadow: var(--shadow); }
+dialog::backdrop { background: rgba(10, 5, 15, .5); }
+.form { display: flex; flex-direction: column; gap: 14px; padding: 20px; }
+.form label { display: flex; flex-direction: column; gap: 5px; font-weight: 500; }
+.form label.row { flex-direction: row; align-items: center; gap: 10px; }
+.form .hint { font-size: 13px; color: var(--muted); font-weight: 400; }
+.form-actions { display: flex; justify-content: flex-end; gap: 8px; }
+.welcome { max-width: 760px; margin: 20px auto; display: flex; flex-direction: column; gap: 18px; }
+.welcome code { background: var(--surface-2); padding: 2px 6px; border-radius: 6px; }
+.notice { background: var(--accent-soft); border-radius: 12px; padding: 10px 14px; margin-bottom: 16px; font-size: 14px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true">✒</span>Story Vault</a>
+    <nav class="nav" id="nav">
+      <a href="#/" data-r="">Home</a>
+      <a href="#/stories" data-r="stories story read">Stories</a>
+      <a href="#/characters" data-r="characters character">Characters</a>
+      <a href="#/worlds" data-r="worlds world">Worlds</a>
+      <a href="#/cowriters" data-r="cowriters">Co-writers</a>
+    </nav>
+    <input class="search" id="search" type="search" placeholder="Search the vault" aria-label="Search the vault">
+    <button class="iconbtn" id="gear" type="button" title="Settings" aria-label="Settings">⚙</button>
+  </div>
+</header>
+<main id="view"></main>
+<footer class="status" id="status"></footer>
+
+<div id="lightbox" hidden>
+  <div class="lb-stage">
+    <button class="lb-nav lb-prev" id="lb-prev" type="button" aria-label="Previous image">‹</button>
+    <img id="lb-img" alt="">
+    <button class="lb-nav lb-next" id="lb-next" type="button" aria-label="Next image">›</button>
+  </div>
+  <div class="lb-bar">
+    <div id="lb-cap"></div>
+    <button class="btn" id="lb-copy" type="button">Copy image</button>
+    <a class="btn" id="lb-dl" href="#" download>Download</a>
+    <button class="btn" id="lb-close" type="button">Close</button>
+  </div>
+</div>
+<dialog id="settings"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+'use strict';
+/* Story Vault app. Reads .claude/ui/vault-index.json (written by vault.py on every commit) and the notes and
+   images it names, either straight from this machine (python3 .claude/scripts/vault.py app) or from GitHub
+   with a read-only token. Writes nothing. */
+
+const INDEX = '.claude/ui/vault-index.json';
+const $ = (s, r = document) => r.querySelector(s);
+const enc = encodeURIComponent;
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const unesc = s => String(s).replace(/&(amp|lt|gt|quot|#39);/g, (_, e) => ({ amp: '&', lt: '<', gt: '>', quot: '"', '#39': "'" }[e]));
+const basename = p => String(p).split('/').pop();
+
+function h(tag, attrs, ...kids) {
+  const el = document.createElement(tag);
+  if (attrs) for (const [k, v] of Object.entries(attrs)) {
+    if (v == null || v === false) continue;
+    if (k.startsWith('on')) el.addEventListener(k.slice(2), v);
+    else if (k === 'class') el.className = v;
+    else if (k === 'html') el.innerHTML = v;
+    else el.setAttribute(k, v === true ? '' : v);
+  }
+  for (const kid of kids.flat(Infinity)) if (kid != null && kid !== false && kid !== '' && kid !== 0) el.append(kid instanceof Node ? kid : String(kid));
+  return el;
+}
+
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('sv.' + k); return v == null ? d : v; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem('sv.' + k, v); } catch { /* private window: settings last this visit only */ } },
+};
+
+/* ---------- where the files come from ---------- */
+const S = { mode: '', repo: '', token: '', branch: '', branchNote: '', branches: [], def: '', error: '' };
+let IX = null;
+
+function localUrl(path) { return new URL('../' + path.split('/').map(enc).join('/'), location.href).href; }
+
+async function detectLocal() {
+  if (!/^https?:$/.test(location.protocol)) return false;
+  try { return (await fetch(localUrl(INDEX), { cache: 'no-store' })).ok; } catch { return false; }
+}
+
+async function gh(url, accept = 'application/vnd.github+json') {
+  const r = await fetch('https://api.github.com' + url, {
+    cache: 'no-store',
+    headers: { Accept: accept, Authorization: 'Bearer ' + S.token, 'X-GitHub-Api-Version': '2022-11-28' },
+  });
+  if (!r.ok) {
+    const why = r.status === 401 ? 'GitHub rejected the token' : r.status === 404 ? 'not found: check the repo name and that the token can read it' : r.statusText;
+    throw new Error(`${r.status}, ${why}`);
+  }
+  return r;
+}
+const contents = path => `/repos/${S.repo}/contents/${path.split('/').map(enc).join('/')}?ref=${enc(S.branch)}`;
+
+async function getText(path) {
+  if (S.mode === 'local') {
+    const r = await fetch(localUrl(path), { cache: 'no-store' });
+    if (!r.ok) throw new Error(`${r.status} for ${path}`);
+    return r.text();
+  }
+  return (await gh(contents(path), 'application/vnd.github.raw')).text();
+}
+async function getBlob(path) {
+  if (S.mode === 'local') return (await fetch(localUrl(path))).blob();
+  return (await gh(contents(path), 'application/vnd.github.raw')).blob();
+}
+
+async function pickBranch() {
+  const info = await (await gh(`/repos/${S.repo}`)).json();
+  const def = info.default_branch;
+  const list = (await (await gh(`/repos/${S.repo}/branches?per_page=100`)).json()).map(b => b.name);
+  const want = store.get('branch', 'auto');
+  if (want !== 'auto' && list.includes(want)) return { branch: want, branchNote: 'chosen in Settings', branches: list, def };
+  // Cloud sessions save to their own branches; read whichever holds the newest vault index.
+  const dated = await Promise.all(list.slice(0, 40).map(async name => {
+    try {
+      const c = await (await gh(`/repos/${S.repo}/commits?sha=${enc(name)}&path=${enc(INDEX)}&per_page=1`)).json();
+      return { name, date: (c[0] && c[0].commit && c[0].commit.committer.date) || '' };
+    } catch { return { name, date: '' }; }
+  }));
+  dated.sort((a, b) => (b.date > a.date) - (b.date < a.date) || (b.name === def) - (a.name === def));
+  const best = dated[0] && dated[0].date ? dated[0].name : def;
+  return { branch: best, branchNote: best === def ? 'default branch' : 'newest vault index', branches: list, def };
+}
+
+const imgCache = new Map();
+function imgUrl(path) {
+  if (!path) return Promise.resolve('');
+  if (S.mode === 'local') return Promise.resolve(localUrl(path));
+  if (!imgCache.has(path)) imgCache.set(path, getBlob(path).then(b => URL.createObjectURL(b)).catch(() => ''));
+  return imgCache.get(path);
+}
+const textCache = new Map();
+function cachedText(path) {
+  if (!textCache.has(path)) textCache.set(path, getText(path).catch(e => { textCache.delete(path); throw e; }));
+  return textCache.get(path);
+}
+
+async function boot() {
+  applyTheme();
+  const pref = store.get('source', 'auto');
+  S.repo = store.get('repo', '').trim(); S.token = store.get('token', '').trim();
+  S.error = ''; S.mode = ''; IX = null;
+  for (const u of imgCache.values()) u.then(x => x && x.startsWith('blob:') && URL.revokeObjectURL(x));
+  imgCache.clear(); textCache.clear();
+  render();
+  try {
+    if (pref !== 'github' && await detectLocal()) S.mode = 'local';
+    else if (pref !== 'local' && S.repo && S.token) { S.mode = 'github'; Object.assign(S, await pickBranch()); }
+    else { render(); return; }
+    IX = JSON.parse(await getText(INDEX));
+  } catch (e) { S.error = e.message || String(e); IX = null; }
+  render();
+}
+
+/* ---------- index helpers ---------- */
+const byName = (list, name) => (list || []).find(x => x.name.toLowerCase() === String(name).toLowerCase());
+const allNotes = () => (IX && IX.notes) || [];
+const adultOn = () => store.get('adult', '0') === '1';
+const isAdultPath = p => /\/images\/adult\//.test(p || '');
+const visible = n => adultOn() || n.type !== 'adult';
+function findNote(name) {
+  const k = String(name).trim().toLowerCase().replace(/\.md$/, '');
+  return allNotes().find(n => n.name.toLowerCase() === k || n.path.toLowerCase() === k + '.md');
+}
+function noteHref(n) {
+  if (n.type === 'character' && byName(IX.characters, n.name)) return '#/character/' + enc(n.name);
+  if (n.type === 'story') return '#/story/' + enc(n.name);
+  if (n.type === 'setting') return '#/world/' + enc(n.name);
+  if (n.type === 'text') return '#/read/' + enc(n.path);
+  const owner = n.character && byName(IX.characters, n.character);
+  if (owner) return '#/character/' + enc(owner.name) + '/' + enc(n.path);
+  return '#/note/' + enc(n.path);
+}
+const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`;
+const plain = s => String(s || '').replace(/\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]+))?\]\]/g, (_, a, b) => b || a).replace(/[*_`]/g, '');
+
+/* ---------- markdown (Obsidian flavour, enough for vault notes) ---------- */
+function inline(s) {
+  let t = esc(s);
+  const codes = [];
+  t = t.replace(/`([^`]+)`/g, (_, c) => { codes.push(c); return '\u0000' + (codes.length - 1) + '\u0000'; });
+  t = t.replace(/!\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]/g, (_, f) => embed(unesc(f)));
+  t = t.replace(/\[\[([^\]|#]+)(#[^\]|]*)?(?:\|([^\]]+))?\]\]/g, (_, target, _h, alias) => wikilink(unesc(target), alias));
+  t = t.replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/__([^_]+)__/g, '<strong>$1</strong>');
+  t = t.replace(/(^|[^*\w])\*([^*\s](?:[^*]*[^*\s])?)\*(?!\*)/g, '$1<em>$2</em>');
+  t = t.replace(/(^|[^\w])_([^_\s](?:[^_]*[^_\s])?)_(?!\w)/g, '$1<em>$2</em>');
+  t = t.replace(/~~([^~]+)~~/g, '<del>$1</del>').replace(/==([^=]+)==/g, '<mark>$1</mark>');
+  return t.replace(/\u0000(\d+)\u0000/g, (_, n) => '<code>' + codes[n] + '</code>');
+}
+function embed(file) {
+  const path = IX && IX.images && IX.images[basename(file).toLowerCase()];
+  if (path && (adultOn() || !isAdultPath(path))) return `<img class="md-img" data-path="${esc(path)}" alt="${esc(basename(file))}">`;
+  if (/\.(png|jpe?g|webp|gif)$/i.test(file)) return `<span class="missing">${esc(basename(file))}</span>`;
+  return wikilink(file);
+}
+function wikilink(target, alias) {
+  const label = alias || esc(target);
+  const n = findNote(target);
+  if (!n) return `<span class="missing" title="No note named ${esc(target)}">${label}</span>`;
+  if (!visible(n)) return '<span class="missing">adult file (hidden)</span>';
+  return `<a href="${esc(noteHref(n))}">${label}</a>`;
+}
+function renderList(buf) {
+  let html = '';
+  const stack = [];
+  for (const raw of buf) {
+    const m = raw.match(/^(\s*)([-*+]|\d+[.)])\s+(.*)$/);
+    if (!m) { html += '<br>' + inline(raw.trim()); continue; }
+    const ind = m[1].replace(/\t/g, '    ').length;
+    const tag = /\d/.test(m[2]) ? 'ol' : 'ul';
+    while (stack.length && ind < stack[stack.length - 1].ind) html += '</li></' + stack.pop().tag + '>';
+    if (!stack.length || ind > stack[stack.length - 1].ind) { stack.push({ ind, tag }); html += '<' + tag + '><li>'; }
+    else html += '</li><li>';
+    let body = m[3];
+    const task = body.match(/^\[( |x)\]\s+/i);
+    if (task) { body = body.slice(task[0].length); html += task[1] === ' ' ? '☐ ' : '☑ '; }
+    html += inline(body);
+  }
+  while (stack.length) html += '</li></' + stack.pop().tag + '>';
+  return html;
+}
+const BLOCK = /^\s*(#{1,6}\s|>|```|\||([-*+]|\d+[.)])\s|(---|\*\*\*|___)\s*$)/;
+function renderMd(src, opts = {}) {
+  let text = String(src).replace(/^﻿/, '').replace(/\r\n?/g, '\n');
+  if (!opts.nested) text = text.replace(/^---\n[\s\S]*?\n---\n?/, '');
+  text = text.replace(/```base\n[\s\S]*?```\n?/g, '').replace(/%%[\s\S]*?%%/g, '');
+  const lines = text.split('\n');
+  const out = [];
+  let skippedTitle = !opts.skipTitle;
+  for (let i = 0; i < lines.length;) {
+    const l = lines[i];
+    if (!l.trim()) { i++; continue; }
+    if (/^<!-- (beat|you) /.test(l.trim())) { out.push('<hr class="beat">'); i++; continue; }
+    if (/^\s*<!--/.test(l)) { while (i < lines.length && !lines[i].includes('-->')) i++; i++; continue; }
+    if (!opts.prose && /^\s*\*[^*\s](.*[^*\s])?\*\s*$/.test(l)) { i++; continue; } // template guidance lines
+    if (/^```/.test(l)) {
+      const buf = []; i++;
+      while (i < lines.length && !/^```/.test(lines[i])) buf.push(lines[i++]);
+      i++; out.push('<pre><code>' + esc(buf.join('\n')) + '</code></pre>'); continue;
+    }
+    let m = l.match(/^(#{1,6})\s+(.*)$/);
+    if (m) {
+      i++;
+      if (!skippedTitle && m[1].length === 1) { skippedTitle = true; continue; }
+      const lv = Math.min(m[1].length + 1, 6);
+      out.push(`<h${lv}>${inline(m[2])}</h${lv}>`); continue;
+    }
+    if (/^\s*(---|\*\*\*|___)\s*$/.test(l)) { out.push('<hr>'); i++; continue; }
+    if (/^\s*>/.test(l)) {
+      const buf = [];
+      while (i < lines.length && /^\s*>/.test(lines[i])) buf.push(lines[i++].replace(/^\s*> ?/, ''));
+      const c = buf[0].match(/^\[!(\w+)\][+-]?\s*(.*)$/);
+      const inner = renderMd((c ? buf.slice(1) : buf).join('\n'), { ...opts, nested: true, skipTitle: false });
+      out.push(c ? `<aside class="callout"><div class="callout-title">${inline(c[2] || c[1])}</div>${inner}</aside>` : `<blockquote>${inner}</blockquote>`);
+      continue;
+    }
+    if (/^\s*\|/.test(l) && i + 1 < lines.length && /^\s*\|?\s*:?-{2,}/.test(lines[i + 1])) {
+      const rows = [];
+      while (i < lines.length && /^\s*\|/.test(lines[i])) rows.push(lines[i++]);
+      const cells = r => r.trim().replace(/^\||\|$/g, '').split(/(?<!\\)\|/).map(c => c.trim().replace(/\\\|/g, '|'));
+      out.push('<div class="table"><table><thead><tr>' + cells(rows[0]).map(c => '<th>' + inline(c) + '</th>').join('') +
+        '</tr></thead><tbody>' + rows.slice(2).map(r => '<tr>' + cells(r).map(c => '<td>' + inline(c) + '</td>').join('') + '</tr>').join('') +
+        '</tbody></table></div>');
+      continue;
+    }
+    if (/^\s*([-*+]|\d+[.)])\s+/.test(l)) {
+      const buf = [];
+      while (i < lines.length && (/^\s*([-*+]|\d+[.)])\s+/.test(lines[i]) || (buf.length && /^\s{2,}\S/.test(lines[i])))) buf.push(lines[i++]);
+      out.push(renderList(buf)); continue;
+    }
+    const para = [];
+    while (i < lines.length && lines[i].trim() && !BLOCK.test(lines[i]) && !/^\s*<!--/.test(lines[i])) para.push(lines[i++]);
+    if (!para.length) { out.push('<p>' + inline(lines[i++]) + '</p>'); continue; }
+    out.push('<p>' + para.map(inline).join('<br>') + '</p>');
+  }
+  return out.join('\n');
+}
+
+/* ---------- images ---------- */
+const io = 'IntersectionObserver' in window
+  ? new IntersectionObserver(es => { for (const e of es) if (e.isIntersecting) { io.unobserve(e.target); loadImg(e.target); } }, { rootMargin: '500px' })
+  : null;
+function loadImg(img) { imgUrl(img.dataset.path).then(u => { if (u) img.src = u; }); }
+function hydrate(root) { root.querySelectorAll('img[data-path]:not([src])').forEach(img => (io ? io.observe(img) : loadImg(img))); }
+function picEl(p, size = 'card', alt = '') {
+  const path = !p ? '' : size === 'full' ? p.image : (p[size] || p.card || p.thumb || p.image);
+  return h('img', { 'data-path': path, alt, decoding: 'async' });
+}
+function mono(name, cls = 'mono') {
+  let x = 0;
+  for (const c of String(name)) x = (x * 31 + c.codePointAt(0)) >>> 0;
+  return h('div', { class: cls, style: `--hue:${x % 360}` }, String(name).split(/\s+/).filter(Boolean).slice(0, 2).map(w => w[0]).join('').toUpperCase());
+}
+function avatar(c) {
+  return h('span', { class: 'av' }, c && c.portrait ? picEl(c.portrait, 'thumb', c.name) : mono(c ? c.name : '?'));
+}
+function collage(chars, fallback) {
+  const pics = chars.filter(c => c && c.portrait).slice(0, 4);
+  if (!pics.length) return h('div', { class: 'collage empty' }, mono(fallback || (chars[0] ? chars[0].name : 'Vault'), 'mono'));
+  return h('div', { class: 'collage n' + pics.length }, pics.map(c => picEl(c.portrait, 'card', c.name)));
+}
+
+/* lightbox */
+let LB = { items: [], i: 0 };
+function openLightbox(items, i = 0) { if (!items.length) return; LB = { items, i }; showLB(); }
+function showLB() {
+  const it = LB.items[LB.i];
+  $('#lightbox').hidden = false;
+  const img = $('#lb-img');
+  img.removeAttribute('src'); img.alt = it.label || '';
+  imgUrl(it.image).then(u => { if (LB.items[LB.i] === it && u) { img.src = u; $('#lb-dl').href = u; } });
+  $('#lb-dl').setAttribute('download', basename(it.image));
+  $('#lb-cap').textContent = (it.label || basename(it.image)) + (LB.items.length > 1 ? `  ·  ${LB.i + 1} of ${LB.items.length}` : '');
+  $('#lb-prev').hidden = $('#lb-next').hidden = LB.items.length < 2;
+}
+function stepLB(d) { LB.i = (LB.i + d + LB.items.length) % LB.items.length; showLB(); }
+const closeLB = () => { $('#lightbox').hidden = true; };
+const gallery = pics => pics.map(p => ({ image: p.image, label: basename(p.image).replace(/\.\w+$/, '') }));
+
+/* clipboard */
+let toastTimer;
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 2600); }
+async function copyText(text) {
+  try { await navigator.clipboard.writeText(text); }
+  catch {
+    const ta = h('textarea', { style: 'position:fixed;opacity:0' }); ta.value = text; document.body.append(ta); ta.select();
+    try { document.execCommand('copy'); } catch { /* nothing else to try */ }
+    ta.remove();
+  }
+  toast(`Copied ${text.length > 40 ? 'it' : text}. Paste it into Claude.`);
+}
+async function toPng(blob) {
+  const bmp = await createImageBitmap(blob);
+  const c = h('canvas'); c.width = bmp.width; c.height = bmp.height; c.getContext('2d').drawImage(bmp, 0, 0);
+  return new Promise(r => c.toBlob(r, 'image/png'));
+}
+async function copyImage(path) {
+  try {
+    const blob = await getBlob(path);
+    const png = blob.type === 'image/png' ? blob : await toPng(blob);
+    await navigator.clipboard.write([new ClipboardItem({ 'image/png': png })]);
+    toast('Image copied. Paste it into Claude.');
+  } catch { toast('This browser won’t copy images here. Use Download, then attach it.'); }
+}
+const chatBtn = (label, text, primary) => h('button', { class: 'btn' + (primary ? ' primary' : ''), type: 'button', title: 'Copies ' + text, onclick: () => copyText(text) }, label);
+
+/* ---------- building blocks ---------- */
+const section = (title, ...body) => h('section', { class: 'sec' }, h('div', { class: 'sec-head' }, h('h2', {}, title)), body);
+function chipsFor(s, a) {
+  return h('div', { class: 'chips' }, [s.status, s.mode, a && a.pov, s.world, s.rating].filter(Boolean)
+    .map((x, i) => h('span', { class: 'chip' + (i === 0 && /active/i.test(x) ? ' status-active' : '') }, x)));
+}
+function charCard(c) {
+  return h('a', { class: 'ccard', href: '#/character/' + enc(c.name) },
+    h('div', { class: 'ccard-img' }, c.portrait ? picEl(c.portrait, 'card', c.name) : mono(c.name, 'mono big')),
+    h('div', { class: 'ccard-body' }, h('div', { class: 'ccard-name' }, c.name),
+      h('div', { class: 'muted small' }, [c.age, c.species].filter(Boolean).join(' · ')),
+      c.hook && h('div', { class: 'ccard-hook' }, plain(c.hook))));
+}
+const castOf = (s, a) => ((a && a.cast ? a.cast.map(c => c.name) : s.cast) || []).map(n => byName(IX.characters, n) || { name: n });
+function storyCard(s) {
+  const cast = castOf(s).filter(c => c.portrait !== undefined);
+  return h('a', { class: 'scard', href: '#/story/' + enc(s.name) }, collage(cast, s.name),
+    h('div', { class: 'scard-body' }, h('div', { class: 'scard-name' }, s.name), chipsFor(s), s.lastBeat && h('p', { class: 'clamp3 muted' }, plain(s.lastBeat))));
+}
+function worldChars(s) {
+  // A character belongs to a world by its own page, or by any note of theirs set there (a profile for that world).
+  const keys = [s.world, s.name].filter(Boolean).map(x => x.toLowerCase());
+  const linked = new Set(allNotes().filter(n => n.character && keys.includes((n.world || '').toLowerCase())).map(n => n.character.toLowerCase()));
+  return IX.characters.filter(c => keys.includes(c.world.toLowerCase()) || linked.has(c.name.toLowerCase()));
+}
+function worldCard(s) {
+  const chars = worldChars(s);
+  return h('a', { class: 'wcard', href: '#/world/' + enc(s.name) }, collage(chars, s.name),
+    h('div', { class: 'scard-body' }, h('div', { class: 'scard-name' }, s.name),
+      h('div', { class: 'chips' }, [s.world && s.world !== s.name && s.world, s.status, chars.length && plural(chars.length, 'character')].filter(Boolean).map(x => h('span', { class: 'chip' }, x))),
+      s.hook && h('p', { class: 'clamp3 muted' }, plain(s.hook))));
+}
+function pruneEmptyHeadings(el) {
+  const level = n => (/^H([1-6])$/.exec(n && n.tagName) || [])[1];
+  for (const hd of [...el.querySelectorAll('h1,h2,h3,h4,h5,h6')].reverse()) {
+    const next = hd.nextElementSibling;
+    if (!next || (level(next) && +level(next) <= +level(hd))) hd.remove();
+  }
+}
+function noteArticle(path, opts = {}) {
+  const el = h('article', { class: 'md ' + (opts.cls || '') }, h('p', { class: 'muted' }, 'Loading…'));
+  const n = allNotes().find(x => x.path === path);
+  if (n && !visible(n)) { el.replaceChildren(h('p', { class: 'muted' }, 'Adult file hidden. Turn on adult material in Settings to read it.')); return el; }
+  cachedText(path).then(t => {
+    el.innerHTML = renderMd(t, opts);
+    pruneEmptyHeadings(el);
+    hydrate(el);
+    el.querySelectorAll('img.md-img').forEach(img => img.addEventListener('click', () => openLightbox([{ image: img.dataset.path, label: img.alt }])));
+  }).catch(e => el.replaceChildren(h('p', { class: 'error' }, `Couldn’t load ${path}: ${e.message}`)));
+  return el;
+}
+const crumbs = (...parts) => h('nav', { class: 'crumbs' }, parts.map((p, i) => [i ? ' / ' : '', p]));
+const notFound = what => [h('div', { class: 'card' }, h('h2', {}, 'Not in the vault'), h('p', { class: 'muted' }, `Nothing named “${what}”. It may be on a branch this app isn’t reading; check Settings.`))];
+
+/* ---------- views ---------- */
+function viewHome() {
+  const out = [];
+  const a = IX.active;
+  if (a) {
+    const s = byName(IX.stories, a.story) || { name: a.story };
+    const cast = castOf(s, a);
+    const parts = s.parts || [];
+    out.push(h('section', { class: 'hero' }, collage(cast, s.name),
+      h('div', { class: 'hero-body' }, h('div', { class: 'eyebrow' }, 'Active story'),
+        h('h1', {}, h('a', { href: '#/story/' + enc(s.name) }, s.name)), chipsFor(s, a),
+        (a.lastBeat || s.lastBeat) && h('p', { class: 'beat' }, plain(a.lastBeat || s.lastBeat)),
+        cast.length && h('div', { class: 'avatars' }, cast.map(c => h('a', { href: '#/character/' + enc(c.name), title: c.name }, avatar(c)))),
+        h('div', { class: 'actions' }, chatBtn('Pick up in Claude', 'pick up ' + s.name, true), chatBtn('[state]', '[state]'),
+          parts.length && h('a', { class: 'btn', href: '#/read/' + enc(parts[parts.length - 1].path) }, 'Read the latest part')),
+        a.state && a.state.length && h('details', { class: 'state' }, h('summary', {}, `State · ${a.state.length} items`),
+          h('ul', {}, a.state.map(x => h('li', { html: inline(x) })))))));
+  }
+  const open = IX.stories.filter(s => /^(active|paused)$/i.test(s.status) && (!a || s.name !== a.story));
+  if (open.length) out.push(section('Open stories', h('div', { class: 'sgrid' }, open.map(storyCard))));
+  const pics = IX.characters.filter(c => c.portrait);
+  out.push(section('Characters', h('div', { class: 'strip' }, (pics.length ? pics : IX.characters).slice(0, 16).map(charCard)),
+    h('p', {}, h('a', { href: '#/characters' }, `All ${IX.characters.length} characters →`))));
+  if (IX.settings.length) out.push(section('Worlds', h('div', { class: 'wgrid' }, IX.settings.map(worldCard))));
+  if (IX.coWriters && IX.coWriters.length) out.push(section('Co-writers', h('div', { class: 'cgrid' }, IX.coWriters.map(p =>
+    h('a', { class: 'ccard', href: '#/cowriters' }, h('div', { class: 'ccard-img' }, p.portrait ? picEl(p.portrait, 'card', p.name) : mono(p.name, 'mono big')),
+      h('div', { class: 'ccard-body' }, h('div', { class: 'ccard-name' }, p.name), h('div', { class: 'ccard-hook' }, p.blurb || '')))))));
+  out.push(h('section', { class: 'sec' }, h('details', { class: 'state' }, h('summary', {}, 'Your profile: defaults, style, kinks and limits'), noteArticle('story-profile.md', { skipTitle: true }))));
+  return out;
+}
+
+function viewStories() {
+  const order = ['active', 'paused', 'draft'];
+  const groups = {};
+  for (const s of IX.stories) (groups[(s.status || 'other').toLowerCase()] ||= []).push(s);
+  const keys = Object.keys(groups).sort((x, y) => ((order.indexOf(x) + 1) || 9) - ((order.indexOf(y) + 1) || 9));
+  return [h('div', { class: 'phead' }, h('h1', {}, 'Stories'), h('div', { class: 'muted' }, `${IX.stories.length} stories`)),
+    keys.map(k => section(k[0].toUpperCase() + k.slice(1), h('div', { class: 'sgrid' }, groups[k].map(storyCard))))];
+}
+
+function viewStory(name) {
+  const s = byName(IX.stories, name);
+  if (!s) return notFound(name);
+  const a = IX.active && IX.active.story === s.name ? IX.active : null;
+  const cast = castOf(s, a).map(c => byName(IX.characters, c.name)).filter(Boolean);
+  const parts = s.parts || [];
+  return [crumbs(h('a', { href: '#/stories' }, 'Stories'), s.name),
+    h('div', { class: 'phead' }, h('h1', {}, s.name), chipsFor(s, a), (s.lastBeat) && h('p', { class: 'beat' }, plain(s.lastBeat)),
+      h('div', { class: 'actions' }, chatBtn('Pick up in Claude', 'pick up ' + s.name, true), chatBtn('Copy [state]', `[state ${s.name}]`))),
+    cast.length && section('Cast', h('div', { class: 'strip' }, cast.map(charCard))),
+    parts.length && section('Story text', h('ol', { class: 'parts' }, parts.map(p => h('li', {}, h('a', { href: '#/read/' + enc(p.path) }, p.name),
+      p.words ? h('span', { class: 'muted small' }, ` · ${p.words.toLocaleString()} words`) : '')))),
+    section('Story note', noteArticle(s.path || `Stories/${s.name}.md`, { skipTitle: true }))];
+}
+
+function viewRead(path) {
+  const s = IX.stories.find(x => (x.parts || []).some(p => p.path === path));
+  const parts = s ? s.parts : [];
+  const i = parts.findIndex(p => p.path === path);
+  const pager = () => h('div', { class: 'pager' },
+    i > 0 ? h('a', { class: 'btn', href: '#/read/' + enc(parts[i - 1].path) }, '← Previous') : h('span'),
+    s ? h('a', { href: '#/story/' + enc(s.name) }, s.name) : h('span'),
+    i >= 0 && i < parts.length - 1 ? h('a', { class: 'btn', href: '#/read/' + enc(parts[i + 1].path) }, 'Next →') : h('span'));
+  return [pager(), noteArticle(path, { prose: true, cls: 'reader' }), pager()];
+}
+
+let charWorld = 'All', charQuery = '';
+function viewCharacters() {
+  const worlds = ['All', ...new Set(IX.characters.map(c => c.world))];
+  if (!worlds.includes(charWorld)) charWorld = 'All';
+  const grid = h('div');
+  const chips = h('div', { class: 'chips' });
+  const draw = () => {
+    const list = IX.characters.filter(c => (charWorld === 'All' || c.world === charWorld) &&
+      (!charQuery || [c.name, c.species, c.hook, c.world].join(' ').toLowerCase().includes(charQuery)));
+    const ws = charWorld === 'All' ? worlds.slice(1).sort((x, y) => (x === 'No world') - (y === 'No world')) : [charWorld];
+    const groups = ws.map(w => [w, list.filter(c => c.world === w).sort((x, y) => (!x.portrait - !y.portrait) || x.name.localeCompare(y.name))]).filter(g => g[1].length);
+    grid.replaceChildren(...(groups.length ? groups.map(([w, cs]) => h('div', { class: 'world-group' }, h('h2', {}, w), h('div', { class: 'cgrid' }, cs.map(charCard))))
+      : [h('p', { class: 'muted' }, 'No characters match.')]));
+    hydrate(grid);
+  };
+  const drawChips = () => chips.replaceChildren(...worlds.map(w => h('button', { class: 'chip' + (w === charWorld ? ' on' : ''), type: 'button', onclick: () => { charWorld = w; drawChips(); draw(); } }, w)));
+  drawChips(); draw();
+  return [h('div', { class: 'phead' }, h('h1', {}, 'Characters'), h('div', { class: 'muted' }, `${plural(IX.characters.length, 'character')} in ${plural(worlds.length - 1, 'world')}`)),
+    h('div', { class: 'toolbar' }, h('input', { type: 'search', placeholder: 'Filter by name, species, world', value: charQuery, 'aria-label': 'Filter characters', oninput: e => { charQuery = e.target.value.toLowerCase(); draw(); } }), chips),
+    grid];
+}
+
+function viewCharacter(name, sub) {
+  const c = byName(IX.characters, name);
+  if (!c) return notFound(name);
+  const folder = c.folder || (c.path ? c.path.split('/').slice(0, -1).join('/') : 'Characters/' + c.name);
+  const depth = folder.split('/').length + 1;
+  const rank = n => n.path === c.path ? 0 : n.type === 'profile' ? 1 : / - Prompt - /.test(n.name) ? 2 : n.type === 'adult' ? 4 : 3;
+  const files = allNotes().filter(n => n.path.startsWith(folder + '/') && n.path.split('/').length === depth && visible(n))
+    .sort((x, y) => rank(x) - rank(y) || x.name.localeCompare(y.name));
+  const current = files.find(n => n.path === sub) || files.find(n => n.path === c.path) || files[0];
+  const label = n => n.path === c.path ? 'Page' : n.name.startsWith(c.name + ' - ') ? n.name.slice(c.name.length + 3) : n.name;
+  const pics = [...(c.gallery || (c.portrait ? [c.portrait] : [])), ...(adultOn() ? c.adultImages || [] : [])];
+  const items = gallery(pics);
+  const stories = IX.stories.filter(s => (s.cast || []).includes(c.name));
+  return [crumbs(h('a', { href: '#/characters' }, 'Characters'), c.world, c.name),
+    h('section', { class: 'chero' },
+      h('div', { class: 'chero-img' }, pics.length ? h('button', { class: 'imgbtn', type: 'button', 'aria-label': 'Open image', onclick: () => openLightbox(items, 0) }, picEl(pics[0], 'card', c.name)) : mono(c.name, 'mono big')),
+      h('div', {}, h('div', { class: 'eyebrow' }, c.world), h('h1', {}, c.name),
+        h('div', { class: 'muted' }, [c.age && 'age ' + c.age, c.species].filter(Boolean).join(' · ')),
+        c.hook && h('p', { class: 'lede', html: inline(c.hook) }),
+        h('div', { class: 'actions' }, chatBtn('Show in Claude', `[show ${c.name}]`, true), chatBtn('Pitch with them', `[pitch: ${c.name}]`),
+          pics.length && h('button', { class: 'btn', type: 'button', onclick: () => copyImage(pics[0].image) }, 'Copy portrait')),
+        pics.length > 1 && h('div', { class: 'thumbs' }, pics.map((p, i) => h('button', { class: 'thumb', type: 'button', title: items[i].label, onclick: () => openLightbox(items, i) }, picEl(p, 'thumb', items[i].label)))),
+        stories.length && h('p', { class: 'small muted' }, 'In ', stories.map((s, i) => [i ? ', ' : '', h('a', { href: '#/story/' + enc(s.name) }, s.name)])))),
+    files.length > 1 && h('div', { class: 'tabs' }, files.map(n => h('a', { class: 'tab' + (n === current ? ' on' : ''), href: '#/character/' + enc(c.name) + '/' + enc(n.path) }, label(n), n.type === 'adult' && h('span', { class: 'badge' }, '18+')))),
+    current ? noteArticle(current.path, { skipTitle: current.path === c.path }) : h('p', { class: 'muted' }, 'No notes listed for this character; rebuild the index with vault.py index.')];
+}
+
+function viewWorlds() {
+  return [h('div', { class: 'phead' }, h('h1', {}, 'Worlds'), h('div', { class: 'muted' }, `${IX.settings.length} settings`)),
+    h('div', { class: 'wgrid' }, IX.settings.map(worldCard))];
+}
+
+function viewWorld(name) {
+  const s = byName(IX.settings, name);
+  if (!s) return notFound(name);
+  const chars = worldChars(s);
+  const keys = [s.world, s.name].filter(Boolean).map(x => x.toLowerCase());
+  const stories = IX.stories.filter(x => keys.includes((x.world || '').toLowerCase()));
+  return [crumbs(h('a', { href: '#/worlds' }, 'Worlds'), s.name),
+    h('div', { class: 'phead' }, h('h1', {}, s.name), s.hook && h('p', { class: 'lede', html: inline(s.hook) }),
+      h('div', { class: 'actions' }, chatBtn('Pitch here', `[pitch: ${s.name}]`, true), chatBtn('Show in Claude', `[show ${s.name}]`))),
+    chars.length && section('Characters', h('div', { class: 'strip' }, chars.map(charCard))),
+    stories.length && section('Stories', h('div', { class: 'sgrid' }, stories.map(storyCard))),
+    section('Setting', noteArticle(s.path || `Settings/${s.name}.md`, { skipTitle: true }))];
+}
+
+function viewCowriters() {
+  const list = IX.coWriters || [];
+  if (!list.length) return [h('h1', {}, 'Co-writers'), h('p', { class: 'muted' }, 'No co-writers yet. In Claude, send [persona] to make one.')];
+  return [h('div', { class: 'phead' }, h('h1', {}, 'Co-writers'), h('div', { class: 'muted' }, 'The voice Claude uses out of character. Pick one at the start of a session.')),
+    list.map(p => {
+      const moods = Object.entries(p.moods || {});
+      const items = gallery(moods.map(m => m[1])).map((it, i) => ({ ...it, label: `${p.name}: ${moods[i][0]}` }));
+      return h('section', { class: 'cw sec' },
+        h('div', { class: 'cw-portrait' }, p.portrait ? h('button', { class: 'imgbtn', type: 'button', 'aria-label': 'Open portrait', onclick: () => openLightbox(gallery([p.portrait])) }, picEl(p.portrait, 'card', p.name)) : mono(p.name, 'mono big')),
+        h('div', {}, h('h2', {}, p.name), p.blurb && h('p', { class: 'lede' }, p.blurb),
+          h('div', { class: 'actions' }, chatBtn('Use in Claude', `[persona: ${p.short || p.name}]`, true)),
+          moods.length ? h('div', { class: 'moods' }, moods.map(([m, pic], i) => h('figure', { class: 'mood' },
+            h('button', { type: 'button', 'aria-label': m, onclick: () => openLightbox(items, i) }, picEl(pic, 'thumb', m)), h('figcaption', {}, m))))
+            : h('p', { class: 'muted small' }, 'No mood images yet.'),
+          p.path && h('details', { class: 'state' }, h('summary', {}, 'Persona file'), noteArticle(p.path, { skipTitle: true }))));
+    })];
+}
+
+function viewNote(path) {
+  const n = allNotes().find(x => x.path === path);
+  return [crumbs(h('a', { href: '#/' }, 'Home'), n ? n.name : basename(path)), h('h1', {}, n ? n.name : basename(path).replace(/\.md$/, '')), noteArticle(path, { skipTitle: true })];
+}
+
+function viewSearch(q) {
+  const k = q.toLowerCase().trim();
+  if (!k) return [h('p', { class: 'muted' }, 'Type in the search box.')];
+  const has = (...xs) => xs.join(' ').toLowerCase().includes(k);
+  const chars = IX.characters.filter(c => has(c.name, c.species, c.hook, c.world));
+  const stories = IX.stories.filter(s => has(s.name, s.lastBeat, s.world, (s.cast || []).join(' ')));
+  const worlds = IX.settings.filter(s => has(s.name, s.hook, s.world));
+  const others = allNotes().filter(n => visible(n) && has(n.name) && !['character', 'story', 'setting'].includes(n.type)).slice(0, 40);
+  const none = !chars.length && !stories.length && !worlds.length && !others.length;
+  return [h('h1', {}, `Search: ${q}`), none && h('p', { class: 'muted' }, 'Nothing matches.'),
+    chars.length && section('Characters', h('div', { class: 'cgrid' }, chars.map(charCard))),
+    stories.length && section('Stories', h('div', { class: 'sgrid' }, stories.map(storyCard))),
+    worlds.length && section('Worlds', h('div', { class: 'wgrid' }, worlds.map(worldCard))),
+    others.length && section('Other notes', h('ul', {}, others.map(n => h('li', {}, h('a', { href: noteHref(n) }, n.name), h('span', { class: 'muted small' }, ` · ${n.type || 'note'}`)))))];
+}
+
+/* ---------- setup and settings ---------- */
+function settingsForm(inDialog) {
+  const f = h('form', { class: 'form', method: 'dialog' });
+  const source = h('select', { name: 'source' }, [['auto', 'Automatic'], ['local', 'This machine (vault.py app)'], ['github', 'GitHub']]
+    .map(([v, t]) => h('option', { value: v, selected: store.get('source', 'auto') === v }, t)));
+  const repo = h('input', { type: 'text', name: 'repo', placeholder: 'owner/repo', value: store.get('repo', ''), autocomplete: 'off', spellcheck: 'false' });
+  const token = h('input', { type: 'password', name: 'token', placeholder: 'github_pat_…', value: store.get('token', ''), autocomplete: 'off' });
+  const branch = h('select', { name: 'branch' }, h('option', { value: 'auto' }, 'Newest vault (automatic)'),
+    (S.branches || []).map(b => h('option', { value: b, selected: store.get('branch', 'auto') === b }, b + (b === S.def ? ' (default)' : ''))));
+  const adult = h('input', { type: 'checkbox', name: 'adult', checked: adultOn() });
+  const theme = h('select', { name: 'theme' }, [['auto', 'Match the system'], ['light', 'Light'], ['dark', 'Dark']]
+    .map(([v, t]) => h('option', { value: v, selected: store.get('theme', 'auto') === v }, t)));
+  f.append(
+    h('h2', {}, inDialog ? 'Settings' : 'Connect your vault'),
+    h('label', {}, 'Read the vault from', source, h('span', { class: 'hint' }, 'Automatic uses this machine when the app is served by vault.py app, otherwise GitHub.')),
+    h('label', {}, 'GitHub repository', repo),
+    h('label', {}, 'Read-only token', token, h('span', { class: 'hint', html: 'A fine-grained token with <b>Contents: read-only</b> on this one repository (GitHub → Settings → Developer settings → Fine-grained tokens). It stays in this browser and is only sent to api.github.com.' })),
+    h('label', {}, 'Branch', branch, h('span', { class: 'hint' }, 'Cloud sessions save to their own branch until it’s merged. Automatic reads whichever branch has the newest vault.')),
+    h('label', { class: 'row' }, adult, 'Show adult files and adult images'),
+    h('label', {}, 'Theme', theme),
+    h('div', { class: 'form-actions' }, inDialog && h('button', { class: 'btn', type: 'button', onclick: () => $('#settings').close() }, 'Cancel'), h('button', { class: 'btn primary', type: 'submit' }, 'Save')));
+  f.addEventListener('submit', e => {
+    e.preventDefault();
+    store.set('source', source.value); store.set('repo', repo.value.trim()); store.set('token', token.value.trim());
+    store.set('branch', branch.value); store.set('adult', adult.checked ? '1' : '0'); store.set('theme', theme.value);
+    if (inDialog) $('#settings').close();
+    boot();
+  });
+  return f;
+}
+function viewWelcome() {
+  return [h('div', { class: 'welcome' },
+    h('div', {}, h('div', { class: 'eyebrow' }, 'Story Vault'), h('h1', {}, 'Your stories, characters and worlds in one place'),
+      h('p', { class: 'lede muted' }, 'This app reads your vault and shows it: covers, galleries, story text and notes. It never changes a file.')),
+    h('div', { class: 'card' }, h('h2', {}, 'On this machine'),
+      h('p', { html: 'In the vault folder, run <code>python3 .claude/scripts/vault.py app</code> and open the address it prints. No token needed.' })),
+    h('div', { class: 'card' }, settingsForm(false)))];
+}
+
+/* ---------- shell ---------- */
+function parseRoute() {
+  const [head = '', ...rest] = location.hash.replace(/^#\/?/, '').split('/');
+  return { head, args: rest.map(x => { try { return decodeURIComponent(x); } catch { return x; } }) };
+}
+function page() {
+  if (S.error) return [h('div', { class: 'welcome' }, h('div', { class: 'card' }, h('h2', {}, 'Couldn’t read the vault'), h('p', { class: 'error' }, S.error)), h('div', { class: 'card' }, settingsForm(false)))];
+  if (!S.mode) return viewWelcome();
+  if (!IX) return [h('p', { class: 'muted' }, 'Reading the vault…')];
+  const { head, args } = parseRoute();
+  const old = (IX.schemaVersion || 1) < 2 && h('div', { class: 'notice' }, 'This vault’s index is from an older version: galleries and notes are limited. Run python3 .claude/scripts/vault.py index and commit to get everything.');
+  const views = {
+    '': viewHome, stories: viewStories, story: () => viewStory(args[0]), read: () => viewRead(args[0]),
+    characters: viewCharacters, character: () => viewCharacter(args[0], args[1]), worlds: viewWorlds, world: () => viewWorld(args[0]),
+    cowriters: viewCowriters, note: () => viewNote(args[0]), search: () => viewSearch(args[0] || ''),
+  };
+  return [old, (views[head] || viewHome)()];
+}
+function render() {
+  const view = $('#view');
+  view.replaceChildren(...[page()].flat(Infinity).filter(x => x instanceof Node));
+  hydrate(view);
+  const { head } = parseRoute();
+  document.querySelectorAll('#nav a').forEach(a => a.classList.toggle('on', a.dataset.r.split(' ').includes(head)));
+  const st = $('#status');
+  st.replaceChildren(
+    h('span', {}, S.mode === 'local' ? 'Reading the files on this machine' : S.mode === 'github' ? `GitHub · ${S.repo} · ${S.branch}${S.branchNote ? ` (${S.branchNote})` : ''}` : 'Not connected'),
+    IX && h('span', {}, `${IX.characters.length} characters · ${IX.stories.length} stories · ${IX.settings.length} worlds`),
+    h('button', { type: 'button', onclick: boot }, 'Refresh'), h('button', { type: 'button', onclick: openSettings }, 'Settings'));
+}
+function openSettings() { const d = $('#settings'); d.replaceChildren(settingsForm(true)); d.showModal(); }
+function applyTheme() {
+  const t = store.get('theme', 'auto');
+  if (t === 'auto') delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = t;
+}
+
+window.addEventListener('hashchange', () => { render(); window.scrollTo(0, 0); });
+$('#gear').addEventListener('click', openSettings);
+$('#search').addEventListener('keydown', e => { if (e.key === 'Enter') location.hash = '#/search/' + enc(e.target.value); });
+$('#lb-prev').addEventListener('click', () => stepLB(-1));
+$('#lb-next').addEventListener('click', () => stepLB(1));
+$('#lb-close').addEventListener('click', closeLB);
+$('#lb-copy').addEventListener('click', () => copyImage(LB.items[LB.i].image));
+$('#lightbox').addEventListener('click', e => { if (e.target.classList.contains('lb-stage')) closeLB(); });
+document.addEventListener('keydown', e => {
+  if ($('#lightbox').hidden) return;
+  if (e.key === 'Escape') closeLB(); else if (e.key === 'ArrowLeft') stepLB(-1); else if (e.key === 'ArrowRight') stepLB(1);
+});
+boot();
+</script>
+</body>
+</html>

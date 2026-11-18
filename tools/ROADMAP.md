@@ -2,9 +2,25 @@
 
 What's planned for the vault's machinery, so a new session can pick it up cold. Newest decisions first.
 
+## Where we are relative to sharing
+
+The shared template (`AmbiguousProphet/CiC-Vault`) gets the machinery and docs, never notes, images, the profile or the style library.
+
+| Piece | Ready to share? | What's left |
+|---|---|---|
+| Co-writer fixes, session-start sync, mood lint | Yes, once PR #29 merges | — |
+| Vault app v1 (read-only: home, stories and reader, characters and galleries, worlds, co-writers, search, settings) | Yes | Real-phone check over GitHub. Write side (Inbox) not built. |
+| Index schema 2, `vault.py app`, card thumbnails | Yes | — |
+| Userscript | No, frozen | Stays out of releases. |
+| Image prompt controls | Personal | Your version only, added to the app later. |
+| Release tool (`vault.py release`, leak check) | Not built | Until then, copy by hand and strip the personal sections listed in vault-dev. |
+| Continuity reader | Not built | Design below. |
+
 ## 1. Vault app (replaces the userscript as the main UI)
 
-One static web app the template ships and anyone can copy: `app/index.html` plus plain JS, no build step.
+**v1 is built:** `app/index.html`, one file, no build step, read-only. Home (active story with cast, state and last beat; open stories; characters; worlds; co-writers; profile), stories with a reader for the text parts, characters by world with galleries, lightbox, tabs for every note in their folder, worlds with the characters linked to them, co-writers with mood faces, search, settings (local or GitHub, branch, adult toggle, theme). Copy buttons put a message or an image on the clipboard for the chat. `vault.py app` serves it locally; GitHub mode picks the branch with the newest vault index.
+
+Next for the app: image prompt controls (personal build), the Inbox write side, and an ideas/drafts board.
 
 - **Reads** the repo through the GitHub API with a fine-grained token (Contents: read on the vault repo only). Runs from the file, a private host, or as a starting point in AI Studio.
 - **Data:** `.claude/ui/vault-index.json` and `personas.json` become the one contract, with a `schemaVersion`. v2 adds each story's text parts and word counts, every image per character (portraits, moods, adult kept separate), lore entries and an ideas/drafts list.

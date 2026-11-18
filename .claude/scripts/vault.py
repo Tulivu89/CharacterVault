@@ -847,25 +847,49 @@ def _cells(im, px):
     return base64.b64encode(struct.pack(f"<{len(words)}I", *words)).decode()
 
 
+IMAGE_EXTS = {".png", ".jpg", ".jpeg", ".webp"}
+CARD_PX = 512  # the vault app's gallery cards
+
+
+def character_images(folder):
+    """Image files in a character folder's images/ (and images/adult/), never the .thumbs copies."""
+    base = folder / "images"
+    if not base.is_dir():
+        return []
+    return sorted(p for p in base.rglob("*") if p.is_file() and p.suffix.lower() in IMAGE_EXTS
+                  and ".thumbs" not in p.relative_to(base).parts)
+
+
+def _thumb_paths(img):
+    d = img.parent / ".thumbs"
+    return d / (img.stem + ".png"), d / (img.stem + ".cells"), d / (img.stem + ".card.webp")
+
+
 def cmd_thumbs(_args):
-    """Small copies of character images in images/.thumbs/, for the UI mod and userscript."""
+    """Small copies of character images in images/.thumbs/: a 160 px thumbnail and terminal cells for the
+    UI mod and userscript, and a 512 px card for the vault app."""
     try:
         from PIL import Image
     except ImportError:
         sys.exit("Needs Pillow: pip install pillow (or apt install python3-pil).")
     made = 0
-    for img in sorted(ROOT.glob("Characters/*/images/*.png")):
-        out = img.parent / ".thumbs" / img.name
-        if out.exists() and out.stat().st_mtime >= img.stat().st_mtime:
+    folders = [n.path.parent for n in all_notes() if n.type == "character"]
+    for img in sorted({i for f in folders for i in character_images(f)}):
+        outs = _thumb_paths(img)
+        if all(o.exists() and o.stat().st_mtime >= img.stat().st_mtime for o in outs):
             continue
-        out.parent.mkdir(exist_ok=True)
+        thumb, cells, card = outs
+        thumb.parent.mkdir(exist_ok=True)
         im = Image.open(img).convert("RGBA")
+        big = im.copy()
+        big.thumbnail((CARD_PX, CARD_PX * 2))
+        big.save(card, "WEBP", quality=82, method=6)
         small = im.copy()
         im.thumbnail((160, 160))
-        im.quantize(colors=128, method=Image.Quantize.FASTOCTREE).save(out, optimize=True)
-        out.with_suffix(".cells").write_text(_cells(small, CELL_PX), encoding="ascii")
+        im.quantize(colors=128, method=Image.Quantize.FASTOCTREE).save(thumb, optimize=True)
+        cells.write_text(_cells(small, CELL_PX), encoding="ascii")
         made += 1
-    print(f"{made} thumbnail(s) made.")
+    print(f"{made} image(s) given thumbnails.")
 
 
 # ---------- UI index ----------
@@ -876,16 +900,21 @@ UI_INDEX = ROOT / ".claude" / "ui" / "vault-index.json"
 
 
 def _picture(path):
-    thumb = path.parent / ".thumbs" / path.name
-    cells = thumb.with_suffix(".cells")
+    thumb, cells, card = _thumb_paths(path)
     rel = lambda p: p.relative_to(ROOT).as_posix()
     return {"image": rel(path), "thumb": rel(thumb) if thumb.exists() else "",
-            "cells": rel(cells) if cells.exists() else ""}
+            "cells": rel(cells) if cells.exists() else "", "card": rel(card) if card.exists() else ""}
+
+
+def _gallery(note):
+    """A character's own images (not moods, not adult/), the `cover` one first."""
+    pics = [p for p in character_images(note.path.parent) if p.parent.name == "images" and " - mood - " not in p.name]
+    cover = link_name(note.fm.get("cover") or "").lower()
+    return sorted(pics, key=lambda p: (p.name.lower() != cover, p.name.lower()))
 
 
 def _portrait(note):
-    folder = note.path.parent / "images"
-    pics = sorted(p for p in folder.glob("*.png") if " - mood - " not in p.name) if folder.is_dir() else []
+    pics = _gallery(note)
     return _picture(pics[0]) if pics else None
 
 
@@ -893,15 +922,30 @@ def _bullets(text):
     return [l[2:].strip() for l in text.splitlines() if l.startswith("- ") and l[2:].strip()]
 
 
+INDEX_SCHEMA = 2
+APP_TYPES = {"character", "profile", "adult", "setting", "story", "text", "cowriter", "prompt", "comic"}
+
+
 def build_index(notes=None):
+    """Schema 2 adds, for the vault app: `notes` (every note's path and type), each character's folder,
+    gallery, adult images and notes, each story's path, cast names and text parts, each setting's path."""
     notes = notes if notes is not None else all_notes()
     by_name = {n.name.lower(): n for n in notes}
-    out = {"stories": [], "characters": [], "settings": [], "active": None, "coWriter": None,
-           "profile": {"defaults": [], "style": [], "kinks": [], "limits": []}}
+    out = {"schemaVersion": INDEX_SCHEMA, "stories": [], "characters": [], "settings": [], "active": None, "coWriter": None,
+           "profile": {"defaults": [], "style": [], "kinks": [], "limits": []}, "notes": [], "images": {}}
+    for n in sorted(notes, key=lambda n: n.rel()):
+        if n.type in APP_TYPES or n.rel().startswith(("Characters/", "Settings/", "Stories/", "Co-writers/", "Modules/")):
+            out["notes"].append({"name": n.name, "path": n.rel(), "type": n.type, "world": world_of(n.fm),
+                                 "rating": str(n.fm.get("rating") or ""), "character": link_name(n.fm.get("character") or "")})
     for s in sorted((n for n in notes if n.type == "story"), key=lambda n: n.name):
         fm = s.fm
-        out["stories"].append({"name": s.name, "status": str(fm.get("status", "")), "mode": str(fm.get("mode", "")),
-                               "world": world_of(fm), "lastBeat": str(fm.get("last_beat") or "")})
+        cast = [re.sub(r"[\[\]]", "", l.split("(")[0]).split(" as ")[0].strip() for l in _bullets(section(s.body, "Cast"))]
+        parts = [{"name": p.name, "path": p.rel(), "part": first_int(p.fm.get("part")) or 0,
+                  "words": first_int(p.fm.get("words")) or 0} for p in text_parts(notes, s)]
+        out["stories"].append({"name": s.name, "path": s.rel(), "status": str(fm.get("status", "")), "mode": str(fm.get("mode", "")),
+                               "world": world_of(fm), "rating": str(fm.get("rating") or ""),
+                               "lastBeat": str(fm.get("last_beat") or ""), "parts": parts,
+                               "cast": [c for c in cast if getattr(by_name.get(c.lower()), "type", "") == "character"]})
     act = active_story(notes)
     if act:
         cast = []
@@ -915,12 +959,20 @@ def build_index(notes=None):
                          "state": _bullets(section(act.body, "State")), "cast": cast}
     for c in sorted((n for n in notes if n.type == "character"), key=lambda n: (world_of(n.fm).lower(), n.name)):
         hook = re.search(r"^>\s*(.+)$", c.body, flags=re.M)
-        out["characters"].append({"name": c.name, "world": world_of(c.fm) or "No world",
+        folder = c.path.parent
+        imgs = character_images(folder)
+        for p in imgs:
+            out["images"].setdefault(p.name.lower(), p.relative_to(ROOT).as_posix())
+        capable = adult_capable(c, notes)
+        out["characters"].append({"name": c.name, "path": c.rel(), "folder": folder.relative_to(ROOT).as_posix(),
+                                  "world": world_of(c.fm) or "No world",
                                   "species": str(c.fm.get("species") or ""), "age": str(c.fm.get("age") or ""),
-                                  "hook": hook.group(1).strip() if hook else "", "portrait": _portrait(c)})
+                                  "hook": hook.group(1).strip() if hook else "", "portrait": _portrait(c),
+                                  "gallery": [_picture(p) for p in _gallery(c)],
+                                  "adultImages": [_picture(p) for p in imgs if p.parent.name == "adult"] if capable else []})
     for s in sorted((n for n in notes if n.type == "setting"), key=lambda n: n.name):
         hook = re.search(r"^>\s*(.+)$", s.body, flags=re.M)
-        out["settings"].append({"name": s.name, "world": world_of(s.fm), "status": str(s.fm.get("status", "")),
+        out["settings"].append({"name": s.name, "path": s.rel(), "world": world_of(s.fm), "status": str(s.fm.get("status", "")),
                                 "hook": hook.group(1).strip() if hook else ""})
     prof = ROOT / "story-profile.md"
     if prof.exists():
@@ -935,7 +987,8 @@ def build_index(notes=None):
     ps = personas(notes)
     if ps:
         d = find_persona(ps, persona_default()) or ps[0]
-        out["coWriters"] = [{"name": p["name"], "short": p["short"], "portrait": p["portrait"], "moods": p["moodImages"]} for p in ps]
+        out["coWriters"] = [{"name": p["name"], "short": p["short"], "portrait": p["portrait"], "moods": p["moodImages"],
+                             "path": p["source"], "blurb": p["blurb"]} for p in ps]
         out["coWriter"] = {"name": d["name"], "short": d["short"], "portrait": d["portrait"], "moods": d["moodImages"]}
     return out
 
@@ -957,6 +1010,22 @@ def cmd_index(_args):
     path = write_personas()
     print(f"Wrote {path.relative_to(ROOT).as_posix()}" if path else "Personas file unchanged.")
 
+
+
+def cmd_app(args):
+    """Serve the vault on this machine for the vault app (app/index.html): no token, reads the files directly."""
+    import functools
+    import http.server
+    write_index()
+    write_personas()
+    handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=str(ROOT))
+    handler.log_message = lambda *a, **k: None
+    srv = http.server.ThreadingHTTPServer((args.host, args.port), handler)
+    print(f"Vault app: http://{'127.0.0.1' if args.host in ('', '0.0.0.0') else args.host}:{srv.server_address[1]}/app/  (Ctrl+C stops it)")
+    try:
+        srv.serve_forever()
+    except KeyboardInterrupt:
+        pass
 
 
 # ---------- co-writer personas ----------
@@ -1413,6 +1482,10 @@ def main():
     p = sub.add_parser("help"); p.set_defaults(fn=cmd_help)
     p = sub.add_parser("thumbs"); p.set_defaults(fn=cmd_thumbs)
     p = sub.add_parser("index"); p.set_defaults(fn=cmd_index)
+    p = sub.add_parser("app", help="serve the vault app on this machine")
+    p.add_argument("--port", type=int, default=8765)
+    p.add_argument("--host", default="127.0.0.1", help="0.0.0.0 to reach it from other devices on your network")
+    p.set_defaults(fn=cmd_app)
     p = sub.add_parser("persona"); p.add_argument("--name"); p.add_argument("--all", action="store_true")
     p.add_argument("--json", action="store_true"); p.add_argument("--system", action="store_true")
     p.add_argument("--bundle", action="store_true", help="one paste-ready system instruction: the startup choice plus every co-writer")
