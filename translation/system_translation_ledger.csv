@@ -12,21 +12,21 @@ data/System.json,/elements/8,属性攻撃,Đòn nguyên tố,Elemental attack,FI
 data/System.json,/elements/9,必殺,Tuyệt kỹ,Finishing move,FIRST_PASS_UNREVIEWED
 data/System.json,/terms/basic/0,レベル,Cấp độ,Level,FIRST_PASS_UNREVIEWED
 data/System.json,/terms/basic/8,経験値,Kinh nghiệm,Experience,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/0,battle,Chiến đấu,Fight,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/1,escape,Rút lui,Escape,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/2,attack,Tấn công,Attack,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/3,guard,Phòng thủ,Guard,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/4,item,Vật phẩm,Item,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/5,skill,Kỹ năng,Skill,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/6,equip,Trang bị,Equipment,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/7,status,Trạng thái,Status,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/8,change,Đổi đội hình,Formation,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/9,save,Lưu,Save,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/10,shutdown,Thoát trò chơi,Quit game,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/11,option,Tùy chọn,Options,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/12,weapon,Vũ khí,Weapon,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/13,armor,Giáp,Armor,FIRST_PASS_UNREVIEWED
-data/System.json,/terms/commands/14,key item,Vật phẩm quan trọng,Key item,FIRST_PASS_UNREVIEWED
+data/System.json,/terms/commands/0,battle,battle,Fight; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/1,escape,escape,Escape; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/2,attack,attack,Attack; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/3,guard,guard,Guard; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/4,item,item,Item; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/5,skill,skill,Skill; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/6,equip,equip,Equipment; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/7,status,status,Status; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/8,change,change,Formation; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/9,save,save,Save; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/10,shutdown,shutdown,Quit game; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/11,option,option,Options; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/12,weapon,weapon,Weapon; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/13,armor,armor,Armor; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
+data/System.json,/terms/commands/14,key item,key item,Key item; reverted: the battle/menu command plugin loads img/SoRBatCom/Com_<name>.png from this value,KEPT_SOURCE_IMAGE_KEY
 data/System.json,/terms/commands/15,装備,Trang bị,Equip,FIRST_PASS_UNREVIEWED
 data/System.json,/terms/commands/16,最強装備,Trang bị tối ưu,Optimize equipment,FIRST_PASS_UNREVIEWED
 data/System.json,/terms/commands/17,全て外す,Tháo tất cả,Remove all equipment,FIRST_PASS_UNREVIEWED
