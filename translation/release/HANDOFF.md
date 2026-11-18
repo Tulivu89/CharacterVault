@@ -13,7 +13,7 @@
 - **All dialogue, choices and speaker names.** Lara Translate did the machine draft, followed by a pass that rejoined sentences split across lines, plus 36 lines fixed by hand.
 - **Database text:** item, skill, weapon, armour, enemy and state names and descriptions, and battle messages.
 - **Map names, objective text, picture text** (TIPS, profiles, status pop-ups) and battle-log text.
-- **Menus and UI terms** (System.json).
+- **Menus and UI terms** (System.json). The 15 command names that were English in the original (`attack`, `guard`, `item`, `skill`, `escape`, `equip`, `status`, `save`, `option` …) stay in English. The game's command plugin loads a picture for each one from `img/SoRBatCom/Com_<name>.png`, so translating them broke the battle menu ("Failed to load … Com_Tấn công.png"). Those buttons are pictures, so translating their labels means editing the images.
 - **By hand:** outfit and underwear names, body-status values and recent-event lines on the status screen, NPC pop-up chatter, and one battle-log script line.
 
 Every file was checked automatically against the original: same structure, same event commands, same RPG Maker escape codes (`\c[n]`, `\v[n]`, `\i[n]` …). Nothing has been tested in game yet.
