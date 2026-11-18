@@ -1212,10 +1212,10 @@ def persona_choose(session_id, token, ps=None):
     return None
 
 
-def persona_context(session_id, force_full=False):
+def persona_context(session_id, force_full=False, ask=True):
     """Text to inject for the co-writer on this turn, or None when there is nothing to say (no co-writers, or
-    the user chose none). Unchosen on an `ask` default: the instruction to ask. Chosen: the full block when
-    it is new to this session, changed, or force_full, else a one-line status."""
+    the user chose none). Unchosen on an `ask` default: the instruction to ask (None when ask is False).
+    Chosen: the full block when it is new to this session, changed, or force_full, else a one-line status."""
     import hashlib
     ps = personas()
     if not ps:
@@ -1231,8 +1231,10 @@ def persona_context(session_id, force_full=False):
     if choice == "none":
         return None
     p = find_persona(ps, choice) if choice else None
+    if p is None and not ask:
+        return None
     if p is None:
-        opts = [(x["short"] if x["short"] != x["name"] else x["name"]) for x in ps]
+        opts =[(x["short"] if x["short"] != x["name"] else x["name"]) for x in ps]
         shown = ps[:3]
         listing = "; ".join(f"{(x['short'] if x['short'] != x['name'] else x['name'])} ({x['blurb']})" for x in shown)
         rest = ", ".join(opts[3:])
@@ -1371,6 +1373,15 @@ def cmd_lint(_args):
 
     if universe:
         warns.append(f"{universe} note(s) use `universe`; rename the key to `world`")
+    for p in personas(notes):
+        if not p["moods"]:
+            continue
+        if p["examples"] and not any(re.match(r"\[\{[a-z-]+\}", e["reply"]) for e in p["examples"]):
+            warns.append(f"{p['source']}: lists moods but no example reply opens with one, like [{{{p['moods'][0]}}} ...]; "
+                         "the examples teach the format, so moods get dropped")
+        missing = [m for m in p["moods"] if m not in p["moodImages"]]
+        if missing:
+            warns.append(f"{p['source']}: no reaction image for mood(s) {', '.join(missing)}; the UI shows the portrait instead")
     for e in errors:
         print(f"ERROR {e}")
     for w in warns:

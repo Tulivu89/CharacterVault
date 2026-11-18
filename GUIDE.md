@@ -428,4 +428,6 @@ The quickest way to never be asked: put `age` (and `body_age` or `mind` where th
 
 **Session start says the vault pull failed.** You have uncommitted local changes or no network. Commit or stash, then pull. Set `VAULT_AUTOPULL=0` to turn the pull off.
 
+**Session start names unmerged branches.** Cloud sessions save to their own `claude/...` branch. Until its pull request is merged, new sessions (which start from the main branch) and the vault UI don't see that work. Merge the pull request, or ask Claude to merge the branch into the current one.
+
 **Two skills with similar names.** If your claude.ai account syncs skills called `rp-session` or `pulp-voice`, those are account copies. The vault uses its own `vault-session` and `pulp-voice`. Turning the account copies off saves context on every turn and keeps Claude from picking the wrong one.
