@@ -1,66 +1,124 @@
 {
+ "schemaVersion": 2,
  "stories": [
   {
    "name": "House Castellane — The Recovery",
+   "path": "Stories/House Castellane — The Recovery.md",
    "status": "draft",
    "mode": "DRAFT",
    "world": "Kestrel Reach",
-   "lastBeat": "Séraphine names Lucien Valcourt, Aurelio loses his patience, and both finish in his bed."
+   "rating": "explicit",
+   "lastBeat": "Séraphine names Lucien Valcourt, Aurelio loses his patience, and both finish in his bed.",
+   "parts": [],
+   "cast": [
+    "Aurelio Castellane",
+    "Séraphine Castellane"
+   ]
   },
   {
    "name": "Kerrow Deep — Direct",
+   "path": "Modules/Kerrow Deep/Stories/Kerrow Deep — Direct.md",
    "status": "draft",
-   "mode": "DIRECT",
+   "mode": "CO-WRITE",
    "world": "Kerrow Deep",
-   "lastBeat": ""
+   "rating": "explicit",
+   "lastBeat": "",
+   "parts": [],
+   "cast": []
   },
   {
    "name": "Kerrow Deep — Start as a Client",
+   "path": "Modules/Kerrow Deep/Stories/Kerrow Deep — Start as a Client.md",
    "status": "draft",
    "mode": "PLAY",
    "world": "Kerrow Deep",
-   "lastBeat": ""
+   "rating": "explicit",
+   "lastBeat": "",
+   "parts": [],
+   "cast": []
   },
   {
    "name": "Kerrow Deep — Start as a Utility",
+   "path": "Modules/Kerrow Deep/Stories/Kerrow Deep — Start as a Utility.md",
    "status": "draft",
    "mode": "PLAY",
    "world": "Kerrow Deep",
-   "lastBeat": ""
+   "rating": "explicit",
+   "lastBeat": "",
+   "parts": [],
+   "cast": [
+    "Juno Reyes",
+    "Seren Morvah"
+   ]
   },
   {
    "name": "Kerrow Deep — Start as an Overseer",
+   "path": "Modules/Kerrow Deep/Stories/Kerrow Deep — Start as an Overseer.md",
    "status": "draft",
    "mode": "PLAY",
    "world": "Kerrow Deep",
-   "lastBeat": ""
+   "rating": "explicit",
+   "lastBeat": "",
+   "parts": [],
+   "cast": []
   },
   {
    "name": "Moved Back Home",
+   "path": "Stories/Moved Back Home.md",
    "status": "active",
    "mode": "DIRECT",
    "world": "Moved Back Home",
-   "lastBeat": "Not started. Opening: 2:14 a.m., Dennis on his kitchen floor with the PDF, the Sharpie circle and the offering."
+   "rating": "explicit",
+   "lastBeat": "Not started. Opening: 2:14 a.m., Dennis on his kitchen floor with the PDF, the Sharpie circle and the offering.",
+   "parts": [],
+   "cast": [
+    "Depravitae",
+    "Dennis Moody",
+    "Lascivia"
+   ]
   },
   {
    "name": "Utility Class",
+   "path": "Stories/Utility Class.md",
    "status": "active",
    "mode": "DIRECT",
    "world": "Imperial Sector",
-   "lastBeat": "Day 10, after Hoss. Ilse asks Hale what a 3.5 average takes. Previously: Day 9, 1300. Charlie used her while Chuck watched; Ilse spat Lucan's load and drew a complaint; Hale raised her hips for the dock shift and dodged the brace-bolt question. Vuk Dragan is stepping onto the plinth with Bogdan behind him."
+   "rating": "explicit",
+   "lastBeat": "Day 10, after Hoss. Ilse asks Hale what a 3.5 average takes. Previously: Day 9, 1300. Charlie used her while Chuck watched; Ilse spat Lucan's load and drew a complaint; Hale raised her hips for the dock shift and dodged the brace-bolt question. Vuk Dragan is stepping onto the plinth with Bogdan behind him.",
+   "parts": [],
+   "cast": [
+    "Ilse Brandt",
+    "Imin-Dumu Hale",
+    "Juno Reyes",
+    "Ysolde Varre",
+    "Seren Morvah",
+    "Dale Pruitt",
+    "Lucan Aurel",
+    "Vuk Dragan",
+    "Bogdan Kral",
+    "Hoss",
+    "Charlie Brandt",
+    "Chuck Brandt"
+   ]
   }
  ],
  "characters": [
   {
    "name": "Barghest",
+   "path": "Characters/Barghest/Barghest.md",
+   "folder": "Characters/Barghest",
    "world": "No world",
    "species": "Hellhound (feral or anthro)",
    "age": "",
    "hook": "A hellhound who fills the doorway, asks what he wants to know, and makes collars for other people.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Depravitae",
+   "path": "Characters/Depravitae/Depravitae.md",
+   "folder": "Characters/Depravitae",
    "world": "No world",
    "species": "Half-succubus, half-imp",
    "age": "",
@@ -68,11 +126,29 @@
    "portrait": {
     "image": "Characters/Depravitae/images/Depravitae - 01.png",
     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - 01.png",
-    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - 01.cells"
-   }
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - 01.cells",
+    "card": "Characters/Depravitae/images/.thumbs/Depravitae - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Depravitae/images/Depravitae - 01.png",
+     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - 01.png",
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - 01.cells",
+     "card": "Characters/Depravitae/images/.thumbs/Depravitae - 01.card.webp"
+    },
+    {
+     "image": "Characters/Depravitae/images/Depravitae - Full.png",
+     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - Full.png",
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - Full.cells",
+     "card": "Characters/Depravitae/images/.thumbs/Depravitae - Full.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Escrutia",
+   "path": "Characters/Escrutia/Escrutia.md",
+   "folder": "Characters/Escrutia",
    "world": "No world",
    "species": "Not set yet",
    "age": "ageless; centuries old",
@@ -80,11 +156,23 @@
    "portrait": {
     "image": "Characters/Escrutia/images/Escrutia - 01.png",
     "thumb": "Characters/Escrutia/images/.thumbs/Escrutia - 01.png",
-    "cells": "Characters/Escrutia/images/.thumbs/Escrutia - 01.cells"
-   }
+    "cells": "Characters/Escrutia/images/.thumbs/Escrutia - 01.cells",
+    "card": "Characters/Escrutia/images/.thumbs/Escrutia - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Escrutia/images/Escrutia - 01.png",
+     "thumb": "Characters/Escrutia/images/.thumbs/Escrutia - 01.png",
+     "cells": "Characters/Escrutia/images/.thumbs/Escrutia - 01.cells",
+     "card": "Characters/Escrutia/images/.thumbs/Escrutia - 01.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Pixie",
+   "path": "Characters/Pixie/Pixie.md",
+   "folder": "Characters/Pixie",
    "world": "No world",
    "species": "Cat girl",
    "age": "18",
@@ -92,11 +180,23 @@
    "portrait": {
     "image": "Characters/Pixie/images/Pixie - 01.png",
     "thumb": "Characters/Pixie/images/.thumbs/Pixie - 01.png",
-    "cells": "Characters/Pixie/images/.thumbs/Pixie - 01.cells"
-   }
+    "cells": "Characters/Pixie/images/.thumbs/Pixie - 01.cells",
+    "card": "Characters/Pixie/images/.thumbs/Pixie - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Pixie/images/Pixie - 01.png",
+     "thumb": "Characters/Pixie/images/.thumbs/Pixie - 01.png",
+     "cells": "Characters/Pixie/images/.thumbs/Pixie - 01.cells",
+     "card": "Characters/Pixie/images/.thumbs/Pixie - 01.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Vigga",
+   "path": "Characters/Vigga/Vigga.md",
+   "folder": "Characters/Vigga",
    "world": "No world",
    "species": "Wolven (therian)",
    "age": "",
@@ -104,43 +204,77 @@
    "portrait": {
     "image": "Characters/Vigga/images/Vigga - 01.png",
     "thumb": "Characters/Vigga/images/.thumbs/Vigga - 01.png",
-    "cells": "Characters/Vigga/images/.thumbs/Vigga - 01.cells"
-   }
+    "cells": "Characters/Vigga/images/.thumbs/Vigga - 01.cells",
+    "card": "Characters/Vigga/images/.thumbs/Vigga - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Vigga/images/Vigga - 01.png",
+     "thumb": "Characters/Vigga/images/.thumbs/Vigga - 01.png",
+     "cells": "Characters/Vigga/images/.thumbs/Vigga - 01.cells",
+     "card": "Characters/Vigga/images/.thumbs/Vigga - 01.card.webp"
+    },
+    {
+     "image": "Characters/Vigga/images/Vigga - 02.png",
+     "thumb": "Characters/Vigga/images/.thumbs/Vigga - 02.png",
+     "cells": "Characters/Vigga/images/.thumbs/Vigga - 02.cells",
+     "card": "Characters/Vigga/images/.thumbs/Vigga - 02.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Echydna",
+   "path": "Characters/Echydna/Echydna.md",
+   "folder": "Characters/Echydna",
    "world": "Autumn's Leaves",
    "species": "Abyssal dragon (mother of monsters)",
    "age": "ageless; centuries old",
    "hook": "An abyssal mother of monsters who watches daytime judge shows, asks plainly for what she wants, and never raises her voice.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Ilia",
+   "path": "Characters/Ilia/Ilia.md",
+   "folder": "Characters/Ilia",
    "world": "Dark Lord Funk",
    "species": "Human",
    "age": "",
    "hook": "A Fae-blessed priestess who sees monsters as filth and has built her whole faith on power and submission.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Kaelen",
+   "path": "Characters/Kaelen/Kaelen.md",
+   "folder": "Characters/Kaelen",
    "world": "Dark Lord Funk",
    "species": "Human",
    "age": "",
    "hook": "An assassin who survived a monster warband and came back to kill the rest of them.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Maeve",
+   "path": "Characters/Maeve/Maeve.md",
+   "folder": "Characters/Maeve",
    "world": "Dark Lord Funk",
    "species": "Pantheren (beastkin)",
    "age": "",
    "hook": "A cat-woman merchant who treats every arrangement, including this one, as business.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Yumiko",
+   "path": "Characters/Yumiko/Yumiko.md",
+   "folder": "Characters/Yumiko",
    "world": "Dark Lord Funk",
    "species": "Vulpen (fox girl)",
    "age": "",
@@ -148,59 +282,95 @@
    "portrait": {
     "image": "Characters/Yumiko/images/Yumiko - 01.png",
     "thumb": "Characters/Yumiko/images/.thumbs/Yumiko - 01.png",
-    "cells": "Characters/Yumiko/images/.thumbs/Yumiko - 01.cells"
-   }
+    "cells": "Characters/Yumiko/images/.thumbs/Yumiko - 01.cells",
+    "card": "Characters/Yumiko/images/.thumbs/Yumiko - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Yumiko/images/Yumiko - 01.png",
+     "thumb": "Characters/Yumiko/images/.thumbs/Yumiko - 01.png",
+     "cells": "Characters/Yumiko/images/.thumbs/Yumiko - 01.cells",
+     "card": "Characters/Yumiko/images/.thumbs/Yumiko - 01.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Lux",
+   "path": "Characters/Lux/Lux.md",
+   "folder": "Characters/Lux",
    "world": "HOG Wild",
    "species": "Human (augmented)",
    "age": "24",
    "hook": "The it-girl of the Mile, who takes every bid and can't choose lunch without one.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Maeve (HOG Wild)",
+   "path": "Characters/Maeve (HOG Wild)/Maeve (HOG Wild).md",
+   "folder": "Characters/Maeve (HOG Wild)",
    "world": "HOG Wild",
    "species": "Human (revived replica)",
    "age": "revived adult; the original lived decades ago",
    "hook": "A red-haired Irish punk queen from another era, brought back as a product, sure something in her wasn't made right.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Nova",
+   "path": "Characters/Nova/Nova.md",
+   "folder": "Characters/Nova",
    "world": "HOG Wild",
    "species": "Companion unit (synthetic)",
    "age": "adult unit; activated only days ago",
    "hook": "A companion unit three days awake, fully informed about what she is, reading her own changelog in public.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Patch",
+   "path": "Characters/Patch/Patch.md",
+   "folder": "Characters/Patch",
    "world": "HOG Wild",
    "species": "Human (augmented)",
    "age": "23",
    "hook": "A femboy hacktivist who takes down corporations on a corporation's stream, and makes the selling out the joke.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Pipa",
+   "path": "Characters/Pipa/Pipa.md",
+   "folder": "Characters/Pipa",
    "world": "HOG Wild",
    "species": "Human (red panda trial body)",
    "age": "24",
    "hook": "A red panda gift streamer who is adorable on camera and puts a price on everything off it.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Primus",
+   "path": "Characters/Primus/Primus.md",
+   "folder": "Characters/Primus",
    "world": "HOG Wild",
    "species": "Human (augmented)",
    "age": "29",
    "hook": "A chromed fitness and stunt streamer who plays every room to his followers and hits on every woman in the house.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Errata",
+   "path": "Characters/Errata/Errata.md",
+   "folder": "Characters/Errata",
    "world": "Inkwyrm",
    "species": "Inkwyrm (ink dragon)",
    "age": "412",
@@ -208,247 +378,395 @@
    "portrait": {
     "image": "Characters/Errata/images/Errata - 01.png",
     "thumb": "Characters/Errata/images/.thumbs/Errata - 01.png",
-    "cells": "Characters/Errata/images/.thumbs/Errata - 01.cells"
-   }
+    "cells": "Characters/Errata/images/.thumbs/Errata - 01.cells",
+    "card": "Characters/Errata/images/.thumbs/Errata - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Errata/images/Errata - 01.png",
+     "thumb": "Characters/Errata/images/.thumbs/Errata - 01.png",
+     "cells": "Characters/Errata/images/.thumbs/Errata - 01.cells",
+     "card": "Characters/Errata/images/.thumbs/Errata - 01.card.webp"
+    },
+    {
+     "image": "Characters/Errata/images/Errata - Full.png",
+     "thumb": "Characters/Errata/images/.thumbs/Errata - Full.png",
+     "cells": "Characters/Errata/images/.thumbs/Errata - Full.cells",
+     "card": "Characters/Errata/images/.thumbs/Errata - Full.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Aynur Toprak",
+   "path": "Modules/Kerrow Deep/Characters/Aynur Toprak/Aynur Toprak.md",
+   "folder": "Modules/Kerrow Deep/Characters/Aynur Toprak",
    "world": "Kerrow Deep",
    "species": "Draxian",
    "age": "33",
    "hook": "A Draxian garrison sergeant who arrested half the Rack and now uses what she arrested.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Bogdan Kral",
+   "path": "Modules/Kerrow Deep/Characters/Bogdan Kral/Bogdan Kral.md",
+   "folder": "Modules/Kerrow Deep/Characters/Bogdan Kral",
    "world": "Kerrow Deep",
    "species": "Therian, canine",
    "age": "31",
    "hook": "Vuk's packmate and second, a pace behind and to the left, who likes to watch a utility's face.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Charlie Brandt",
+   "path": "Modules/Kerrow Deep/Characters/Charlie Brandt/Charlie Brandt.md",
+   "folder": "Modules/Kerrow Deep/Characters/Charlie Brandt",
    "world": "Kerrow Deep",
    "species": "human",
    "age": "28",
    "hook": "Ilse's older brother, a teasing asshole who disowned her in public and badges her Frame in private.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Chuck Brandt",
+   "path": "Modules/Kerrow Deep/Characters/Chuck Brandt/Chuck Brandt.md",
+   "folder": "Modules/Kerrow Deep/Characters/Chuck Brandt",
    "world": "Kerrow Deep",
    "species": "human",
    "age": "50",
    "hook": "Ilse's father, a widowed smelter hand who tells his bowling league she's a second cousin.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Dale Pruitt",
+   "path": "Modules/Kerrow Deep/Characters/Dale Pruitt/Dale Pruitt.md",
+   "folder": "Modules/Kerrow Deep/Characters/Dale Pruitt",
    "world": "Kerrow Deep",
    "species": "human",
    "age": "44",
    "hook": "A life-support tech who uses a utility on his lunch break and eats his sandwich throughout.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Domitia Vell",
+   "path": "Modules/Kerrow Deep/Characters/Domitia Vell/Domitia Vell.md",
+   "folder": "Modules/Kerrow Deep/Characters/Domitia Vell",
    "world": "Kerrow Deep",
    "species": "Aedling",
    "age": "47",
    "hook": "The Combine's Director of Hospitality Contracts, who books male utilities to the Executive Ring and rates like a critic.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Gülnara Bayar",
+   "path": "Modules/Kerrow Deep/Characters/Gülnara Bayar/Gülnara Bayar.md",
+   "folder": "Modules/Kerrow Deep/Characters/Gülnara Bayar",
    "world": "Kerrow Deep",
    "species": "Draxian",
    "age": "44",
    "hook": "An ex-military Draxian overseer who runs her caseload like a disciplinary barracks and has no pep talks at all.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Hoss",
+   "path": "Modules/Kerrow Deep/Characters/Hoss/Hoss.md",
+   "folder": "Modules/Kerrow Deep/Characters/Hoss",
    "world": "Kerrow Deep",
    "species": "Porcine Terran (uplifted pig)",
    "age": "38",
    "hook": "An Atmospherics gas-sniffer the size of a small car, polite in his own language, and a Thursday regular.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Ilse Brandt",
+   "path": "Modules/Kerrow Deep/Characters/Ilse Brandt/Ilse Brandt.md",
+   "folder": "Modules/Kerrow Deep/Characters/Ilse Brandt",
    "world": "Kerrow Deep",
    "species": "human",
    "age": "21",
    "hook": "A garrison corporal framed for the deaths in Shaft Nine, working off forty liters with a list of names in her head.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Imin-Dumu Hale",
+   "path": "Modules/Kerrow Deep/Characters/Imin-Dumu Hale/Imin-Dumu Hale.md",
+   "folder": "Modules/Kerrow Deep/Characters/Imin-Dumu Hale",
    "world": "Kerrow Deep",
    "species": "Vreth agent (human donor)",
    "age": "41",
    "hook": "A chipper Vreth Utility Compliance Officer who calls a broken nose a learning moment and means it.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Juno Reyes",
+   "path": "Modules/Kerrow Deep/Characters/Juno Reyes/Juno Reyes.md",
+   "folder": "Modules/Kerrow Deep/Characters/Juno Reyes",
    "world": "Kerrow Deep",
    "species": "human",
    "age": "27",
    "hook": "An ex-smuggler at the top of the board who knows every exchange rate by heart and sells what she knows.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Lena Novak",
+   "path": "Modules/Kerrow Deep/Characters/Lena Novak/Lena Novak.md",
+   "folder": "Modules/Kerrow Deep/Characters/Lena Novak",
    "world": "Kerrow Deep",
    "species": "Therian, feline",
    "age": "29",
    "hook": "A freighter pilot with cat ears and a cruel streak, who rates high when she's entertained.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Lucan Aurel",
+   "path": "Modules/Kerrow Deep/Characters/Lucan Aurel/Lucan Aurel.md",
+   "folder": "Modules/Kerrow Deep/Characters/Lucan Aurel",
    "world": "Kerrow Deep",
    "species": "Aedling",
    "age": "26",
    "hook": "A junior Combine auditor, entitled and bewildered by any resistance, who audits utilities hands-on.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Marisol Vance",
+   "path": "Modules/Kerrow Deep/Characters/Marisol Vance/Marisol Vance.md",
+   "folder": "Modules/Kerrow Deep/Characters/Marisol Vance",
    "world": "Kerrow Deep",
    "species": "human",
    "age": "39",
    "hook": "A former utility who served sixty liters, came out the other side, and took a contract running the caseload she used to be.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Mirko Petrović",
+   "path": "Modules/Kerrow Deep/Characters/Mirko Petrović/Mirko Petrović.md",
+   "folder": "Modules/Kerrow Deep/Characters/Mirko Petrović",
    "world": "Kerrow Deep",
    "species": "Therian, canine",
    "age": "30",
    "hook": "A pack-expelled canine smuggler whose output makes him a jackpot, and whose pride makes him a liability.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Rafael Quintero",
+   "path": "Modules/Kerrow Deep/Characters/Rafael Quintero/Rafael Quintero.md",
+   "folder": "Modules/Kerrow Deep/Characters/Rafael Quintero",
    "world": "Kerrow Deep",
    "species": "human",
    "age": "34",
    "hook": "A Combine pharmacist convicted of diverting sedatives to the Rack, now working the ratings with a bedside manner.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Seren Morvah",
+   "path": "Modules/Kerrow Deep/Characters/Seren Morvah/Seren Morvah.md",
+   "folder": "Modules/Kerrow Deep/Characters/Seren Morvah",
    "world": "Kerrow Deep",
    "species": "Aedelvass",
    "age": "31",
    "hook": "An undocumented Aedelvass who refuses on principle and has the most liters on the board to show for it.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Temür Arslan",
+   "path": "Modules/Kerrow Deep/Characters/Temür Arslan/Temür Arslan.md",
+   "folder": "Modules/Kerrow Deep/Characters/Temür Arslan",
    "world": "Kerrow Deep",
    "species": "Draxian, young male",
    "age": "24",
    "hook": "A young Draxian male convicted for a dock duel, growing horns on a Frame where he can't win anything.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Veikko Lahti",
+   "path": "Modules/Kerrow Deep/Characters/Veikko Lahti/Veikko Lahti.md",
+   "folder": "Modules/Kerrow Deep/Characters/Veikko Lahti",
    "world": "Kerrow Deep",
    "species": "Cephalite",
    "age": "52",
    "hook": "A Cephalite systems engineer who filed the spermatophore ticket and audits every use with the cutaway on.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Vuk Dragan",
+   "path": "Modules/Kerrow Deep/Characters/Vuk Dragan/Vuk Dragan.md",
+   "folder": "Modules/Kerrow Deep/Characters/Vuk Dragan",
    "world": "Kerrow Deep",
    "species": "Therian, canine",
    "age": "35",
    "hook": "The dock-crew foreman who walks like the floor belongs to him, and pays utilities back for his crew's grudges.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Ysolde Varre",
+   "path": "Modules/Kerrow Deep/Characters/Ysolde Varre/Ysolde Varre.md",
+   "folder": "Modules/Kerrow Deep/Characters/Ysolde Varre",
    "world": "Kerrow Deep",
    "species": "Aedling",
    "age": "29",
    "hook": "A fallen aristocrat sentenced for debt, still bewildered that the universe stopped accommodating her.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Aurelio Castellane",
+   "path": "Characters/Aurelio Castellane/Aurelio Castellane.md",
+   "folder": "Characters/Aurelio Castellane",
    "world": "Kestrel Reach",
    "species": "human",
    "age": "214",
    "hook": "The founder of [[House Castellane]], 214 years old, who controls who in his family gets a new body, and when.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Cassius Castellane",
+   "path": "Characters/Cassius Castellane/Cassius Castellane.md",
+   "folder": "Characters/Cassius Castellane",
    "world": "Kestrel Reach",
    "species": "human",
    "age": "163",
    "hook": "The middle son of [[House Castellane]] and his mother's boy, the only Castellane who still goes slumming on the lower decks.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Dorian Castellane",
+   "path": "Characters/Dorian Castellane/Dorian Castellane.md",
+   "folder": "Characters/Dorian Castellane",
    "world": "Kestrel Reach",
    "species": "human",
    "age": "181",
    "hook": "The eldest son of [[House Castellane]], permanently next in line, allowed to look about 36 and never old enough to read as his father's replacement.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Inès Castellane",
+   "path": "Characters/Inès Castellane/Inès Castellane.md",
+   "folder": "Characters/Inès Castellane",
    "world": "Kestrel Reach",
    "species": "human",
    "age": "207",
    "hook": "The matriarch of [[House Castellane]], who has worn the same 24-year-old face for about 150 years and runs the house as if it were still the year she perfected it.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Séraphine Castellane",
+   "path": "Characters/Séraphine Castellane/Séraphine Castellane.md",
+   "folder": "Characters/Séraphine Castellane",
    "world": "Kestrel Reach",
    "species": "human",
    "age": "128",
    "hook": "The youngest of [[House Castellane]]: a 128-year-old woman her father decided to keep at 21, who plays the vapid socialite and the daddy's girl because both work.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Dennis Moody",
+   "path": "Characters/Dennis Moody/Dennis Moody.md",
+   "folder": "Characters/Dennis Moody",
    "world": "Moved Back Home",
    "species": "human",
    "age": "",
    "hook": "A big, lonely night-shift man who apologizes to vending machines and wants far more than he has ever asked for.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Lascivia",
+   "path": "Characters/Lascivia/Lascivia.md",
+   "folder": "Characters/Lascivia",
    "world": "Moved Back Home",
    "species": "Succubus",
    "age": "",
    "hook": "A full succubus of the old trade, centuries in, who has waited nineteen years for her daughter to join the family business.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Qiulong",
+   "path": "Characters/Qiulong/Qiulong.md",
+   "folder": "Characters/Qiulong",
    "world": "Teahouse Before Frost",
    "species": "Dragon",
    "age": "ageless; centuries old",
    "hook": "An autumn dragon who gambles for keeps, hoards what she loves, and isn't impressed by you yet.",
    "portrait": {
-    "image": "Characters/Qiulong/images/Quality.png",
-    "thumb": "Characters/Qiulong/images/.thumbs/Quality.png",
-    "cells": "Characters/Qiulong/images/.thumbs/Quality.cells"
-   }
+    "image": "Characters/Qiulong/images/Reference.png",
+    "thumb": "Characters/Qiulong/images/.thumbs/Reference.png",
+    "cells": "Characters/Qiulong/images/.thumbs/Reference.cells",
+    "card": "Characters/Qiulong/images/.thumbs/Reference.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Qiulong/images/Reference.png",
+     "thumb": "Characters/Qiulong/images/.thumbs/Reference.png",
+     "cells": "Characters/Qiulong/images/.thumbs/Reference.cells",
+     "card": "Characters/Qiulong/images/.thumbs/Reference.card.webp"
+    },
+    {
+     "image": "Characters/Qiulong/images/Quality.png",
+     "thumb": "Characters/Qiulong/images/.thumbs/Quality.png",
+     "cells": "Characters/Qiulong/images/.thumbs/Quality.cells",
+     "card": "Characters/Qiulong/images/.thumbs/Quality.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Cleo",
+   "path": "Characters/Cleo/Cleo.md",
+   "folder": "Characters/Cleo",
    "world": "The Litterbox",
    "species": "Cat girl (Siamese)",
    "age": "",
@@ -456,19 +774,35 @@
    "portrait": {
     "image": "Characters/Cleo/images/Cleo - 01.png",
     "thumb": "Characters/Cleo/images/.thumbs/Cleo - 01.png",
-    "cells": "Characters/Cleo/images/.thumbs/Cleo - 01.cells"
-   }
+    "cells": "Characters/Cleo/images/.thumbs/Cleo - 01.cells",
+    "card": "Characters/Cleo/images/.thumbs/Cleo - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Cleo/images/Cleo - 01.png",
+     "thumb": "Characters/Cleo/images/.thumbs/Cleo - 01.png",
+     "cells": "Characters/Cleo/images/.thumbs/Cleo - 01.cells",
+     "card": "Characters/Cleo/images/.thumbs/Cleo - 01.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Jet",
+   "path": "Characters/Jet/Jet.md",
+   "folder": "Characters/Jet",
    "world": "The Litterbox",
    "species": "Cat girl (black shorthair)",
    "age": "",
    "hook": "A black cat thief who comes and goes by the window, pockets whatever she likes, and treats every rule as a dare.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Misty",
+   "path": "Characters/Misty/Misty.md",
+   "folder": "Characters/Misty",
    "world": "The Litterbox",
    "species": "Cat girl (Russian Blue)",
    "age": "",
@@ -476,11 +810,23 @@
    "portrait": {
     "image": "Characters/Misty/images/Misty - 01.png",
     "thumb": "Characters/Misty/images/.thumbs/Misty - 01.png",
-    "cells": "Characters/Misty/images/.thumbs/Misty - 01.cells"
-   }
+    "cells": "Characters/Misty/images/.thumbs/Misty - 01.cells",
+    "card": "Characters/Misty/images/.thumbs/Misty - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Misty/images/Misty - 01.png",
+     "thumb": "Characters/Misty/images/.thumbs/Misty - 01.png",
+     "cells": "Characters/Misty/images/.thumbs/Misty - 01.cells",
+     "card": "Characters/Misty/images/.thumbs/Misty - 01.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Pops",
+   "path": "Characters/Pops/Pops.md",
+   "folder": "Characters/Pops",
    "world": "The Litterbox",
    "species": "Wolf (anthro)",
    "age": "",
@@ -488,19 +834,35 @@
    "portrait": {
     "image": "Characters/Pops/images/Pops - 01.png",
     "thumb": "Characters/Pops/images/.thumbs/Pops - 01.png",
-    "cells": "Characters/Pops/images/.thumbs/Pops - 01.cells"
-   }
+    "cells": "Characters/Pops/images/.thumbs/Pops - 01.cells",
+    "card": "Characters/Pops/images/.thumbs/Pops - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Pops/images/Pops - 01.png",
+     "thumb": "Characters/Pops/images/.thumbs/Pops - 01.png",
+     "cells": "Characters/Pops/images/.thumbs/Pops - 01.cells",
+     "card": "Characters/Pops/images/.thumbs/Pops - 01.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Rusty",
+   "path": "Characters/Rusty/Rusty.md",
+   "folder": "Characters/Rusty",
    "world": "The Litterbox",
    "species": "Cat boy (orange tabby)",
    "age": "",
    "hook": "Sunny's littermate and the second folder: he cooks, cleans up her messes, covers for her, and notices every time nobody says thanks.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Sunny",
+   "path": "Characters/Sunny/Sunny.md",
+   "folder": "Characters/Sunny",
    "world": "The Litterbox",
    "species": "Cat girl (orange tabby)",
    "age": "",
@@ -508,19 +870,35 @@
    "portrait": {
     "image": "Characters/Sunny/images/Sunny - 01.png",
     "thumb": "Characters/Sunny/images/.thumbs/Sunny - 01.png",
-    "cells": "Characters/Sunny/images/.thumbs/Sunny - 01.cells"
-   }
+    "cells": "Characters/Sunny/images/.thumbs/Sunny - 01.cells",
+    "card": "Characters/Sunny/images/.thumbs/Sunny - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Sunny/images/Sunny - 01.png",
+     "thumb": "Characters/Sunny/images/.thumbs/Sunny - 01.png",
+     "cells": "Characters/Sunny/images/.thumbs/Sunny - 01.cells",
+     "card": "Characters/Sunny/images/.thumbs/Sunny - 01.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Toby",
+   "path": "Characters/Toby/Toby.md",
+   "folder": "Characters/Toby",
    "world": "The Litterbox",
    "species": "Dog boy (golden retriever)",
    "age": "",
    "hook": "A golden retriever boy on the graveyard shift who apologizes for everything and would wait forever for the girl he likes.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Gildra",
+   "path": "Characters/Gildra/Gildra.md",
+   "folder": "Characters/Gildra",
    "world": "Volundale",
    "species": "Dark Elf",
    "age": "",
@@ -528,11 +906,29 @@
    "portrait": {
     "image": "Characters/Gildra/images/Gildra - 01.png",
     "thumb": "Characters/Gildra/images/.thumbs/Gildra - 01.png",
-    "cells": "Characters/Gildra/images/.thumbs/Gildra - 01.cells"
-   }
+    "cells": "Characters/Gildra/images/.thumbs/Gildra - 01.cells",
+    "card": "Characters/Gildra/images/.thumbs/Gildra - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Gildra/images/Gildra - 01.png",
+     "thumb": "Characters/Gildra/images/.thumbs/Gildra - 01.png",
+     "cells": "Characters/Gildra/images/.thumbs/Gildra - 01.cells",
+     "card": "Characters/Gildra/images/.thumbs/Gildra - 01.card.webp"
+    },
+    {
+     "image": "Characters/Gildra/images/Gildra - 02.png",
+     "thumb": "Characters/Gildra/images/.thumbs/Gildra - 02.png",
+     "cells": "Characters/Gildra/images/.thumbs/Gildra - 02.cells",
+     "card": "Characters/Gildra/images/.thumbs/Gildra - 02.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Ilshaer",
+   "path": "Characters/Ilshaer/Ilshaer.md",
+   "folder": "Characters/Ilshaer",
    "world": "Volundale",
    "species": "Untellian (Aedless)",
    "age": "",
@@ -540,35 +936,65 @@
    "portrait": {
     "image": "Characters/Ilshaer/images/Ilshaer - 00.png",
     "thumb": "Characters/Ilshaer/images/.thumbs/Ilshaer - 00.png",
-    "cells": "Characters/Ilshaer/images/.thumbs/Ilshaer - 00.cells"
-   }
+    "cells": "Characters/Ilshaer/images/.thumbs/Ilshaer - 00.cells",
+    "card": "Characters/Ilshaer/images/.thumbs/Ilshaer - 00.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Ilshaer/images/Ilshaer - 00.png",
+     "thumb": "Characters/Ilshaer/images/.thumbs/Ilshaer - 00.png",
+     "cells": "Characters/Ilshaer/images/.thumbs/Ilshaer - 00.cells",
+     "card": "Characters/Ilshaer/images/.thumbs/Ilshaer - 00.card.webp"
+    },
+    {
+     "image": "Characters/Ilshaer/images/Ilshaer - 01.png",
+     "thumb": "Characters/Ilshaer/images/.thumbs/Ilshaer - 01.png",
+     "cells": "Characters/Ilshaer/images/.thumbs/Ilshaer - 01.cells",
+     "card": "Characters/Ilshaer/images/.thumbs/Ilshaer - 01.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Lilibeth",
+   "path": "Characters/Lilibeth/Lilibeth.md",
+   "folder": "Characters/Lilibeth",
    "world": "Volundale",
    "species": "Damsent (Succori subspecies)",
    "age": "",
    "hook": "A sapphire-skinned courtesan who remembers every sincere please and has had enough of everything else.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Lysandra",
+   "path": "Characters/Lysandra/Lysandra.md",
+   "folder": "Characters/Lysandra",
    "world": "Volundale",
    "species": "High Elf",
    "age": "",
    "hook": "A high elf who has never once been cold, hungry or told no, and moves like someone being watched.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Nostromandu",
+   "path": "Characters/Nostromandu/Nostromandu.md",
+   "folder": "Characters/Nostromandu",
    "world": "Volundale",
    "species": "Human (artificially extended)",
    "age": "",
    "hook": "An impossibly old wizard who plays mentor, dark lord or lecturing professor, whichever the room needs.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Rekka",
+   "path": "Characters/Rekka/Rekka.md",
+   "folder": "Characters/Rekka",
    "world": "Volundale",
    "species": "Half-wolven, half-hellhound",
    "age": "",
@@ -576,113 +1002,154 @@
    "portrait": {
     "image": "Characters/Rekka/images/Rekka - 01.png",
     "thumb": "Characters/Rekka/images/.thumbs/Rekka - 01.png",
-    "cells": "Characters/Rekka/images/.thumbs/Rekka - 01.cells"
-   }
+    "cells": "Characters/Rekka/images/.thumbs/Rekka - 01.cells",
+    "card": "Characters/Rekka/images/.thumbs/Rekka - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Rekka/images/Rekka - 01.png",
+     "thumb": "Characters/Rekka/images/.thumbs/Rekka - 01.png",
+     "cells": "Characters/Rekka/images/.thumbs/Rekka - 01.cells",
+     "card": "Characters/Rekka/images/.thumbs/Rekka - 01.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Rovak",
+   "path": "Characters/Rovak/Rovak.md",
+   "folder": "Characters/Rovak",
    "world": "Volundale",
    "species": "Wolven (therian), White Wolf Clan",
    "age": "",
    "hook": "A white wolven tracker who found heroes' families for dark lords and never asked what came after.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Sarith",
+   "path": "Characters/Sarith/Sarith.md",
+   "folder": "Characters/Sarith",
    "world": "Volundale",
    "species": "Half-human, half-naga",
    "age": "",
    "hook": "The quiet twin: she watches, already knows, and finds the middle part interesting.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Sekmawl",
+   "path": "Characters/Sekmawl/Sekmawl.md",
+   "folder": "Characters/Sekmawl",
    "world": "Volundale",
    "species": "Saurian (crocodilian)",
    "age": "",
    "hook": "An old crocodilian who can sit still for days, and then isn't sitting anymore.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Takshaka",
+   "path": "Characters/Takshaka/Takshaka.md",
+   "folder": "Characters/Takshaka",
    "world": "Volundale",
    "species": "Naga demon (planar, summoned)",
    "age": "",
    "hook": "A planar naga demon older than the Ordering, patient enough to wait out anything.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Viola",
+   "path": "Characters/Viola/Viola.md",
+   "folder": "Characters/Viola",
    "world": "Volundale",
    "species": "Human",
    "age": "",
    "hook": "A witch who went looking for the old, dark magic on purpose.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   }
  ],
  "settings": [
   {
    "name": "Autumn's Leaves",
+   "path": "Settings/Autumn's Leaves.md",
    "world": "Autumn's Leaves",
    "status": "active",
    "hook": "A teahouse at the edge of myth where three dragons share a house and nobody keeps a ledger."
   },
   {
    "name": "Dark Lord Funk",
+   "path": "Settings/Dark Lord Funk.md",
    "world": "Dark Lord Funk",
    "status": "draft",
    "hook": "A protagonist, a warband and a harem assembled from the people sent to stop them."
   },
   {
    "name": "HOG Wild",
+   "path": "Settings/HOG Wild.md",
    "world": "HOG Wild",
    "status": "active",
    "hook": "A glass-fronted house on the Mile streams six residents to the city, and the audience bids on what they do next."
   },
   {
    "name": "House Castellane",
+   "path": "Settings/House Castellane.md",
    "world": "Kestrel Reach",
    "status": "draft",
    "hook": "Someone inside House Castellane tried to give the patriarch final death at his own party. The estate stays sealed until he names them, and the party never stops."
   },
   {
    "name": "Imperial Sector",
+   "path": "Settings/Imperial Sector.md",
    "world": "Imperial Sector",
    "status": "draft",
    "hook": "Empire core, colonial Rim and deep void, and everyone the Empire has a use for."
   },
   {
    "name": "Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Settings/Kerrow Deep.md",
    "world": "Kerrow Deep",
    "status": "active",
    "hook": "On a Rim mining station, convicts are reclassified as infrastructure for public use and work off sentences measured in liters."
   },
   {
    "name": "The Aerie",
+   "path": "Settings/The Aerie.md",
    "world": "Volungraiv",
    "status": "draft",
    "hook": "Marked fae climb a smoking mountain to be chosen by dragons. There are more cadets than dragons, and the way down is no easier than the way up."
   },
   {
    "name": "The Litterbox",
+   "path": "Settings/The Litterbox.md",
    "world": "The Litterbox",
    "status": "draft",
    "hook": "An old wolf signs for five troubled cats through the agency and takes them home."
   },
   {
    "name": "Volundale",
+   "path": "Settings/Volundale.md",
    "world": "Volundale",
    "status": "draft",
    "hook": "Deposed queens, summoned demons and old magic, and the Spire full of the children they left behind."
   },
   {
    "name": "Volungraiv",
+   "path": "Settings/Volungraiv.md",
    "world": "Volungraiv",
    "status": "draft",
    "hook": "The grim world of the Aedling Kingdom, its titan bloodlines and the dragon riders it sends up the mountain."
   },
   {
    "name": "sci-fi-species",
+   "path": "Settings/sci-fi-species.md",
    "world": "Imperial Sector",
    "status": "draft",
    "hook": ""
@@ -774,33 +1241,39 @@
   "portrait": {
    "image": "Characters/Depravitae/images/Depravitae - 01.png",
    "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - 01.png",
-   "cells": "Characters/Depravitae/images/.thumbs/Depravitae - 01.cells"
+   "cells": "Characters/Depravitae/images/.thumbs/Depravitae - 01.cells",
+   "card": "Characters/Depravitae/images/.thumbs/Depravitae - 01.card.webp"
   },
   "moods": {
    "angry": {
     "image": "Characters/Depravitae/images/Depravitae - mood - angry.png",
     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.png",
-    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.cells"
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.cells",
+    "card": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.card.webp"
    },
    "bratty": {
     "image": "Characters/Depravitae/images/Depravitae - mood - bratty.png",
     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.png",
-    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.cells"
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.cells",
+    "card": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.card.webp"
    },
    "flustered": {
     "image": "Characters/Depravitae/images/Depravitae - mood - flustered.png",
     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.png",
-    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.cells"
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.cells",
+    "card": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.card.webp"
    },
    "laughing": {
     "image": "Characters/Depravitae/images/Depravitae - mood - laughing.png",
     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.png",
-    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.cells"
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.cells",
+    "card": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.card.webp"
    },
    "smug": {
     "image": "Characters/Depravitae/images/Depravitae - mood - smug.png",
     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.png",
-    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.cells"
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.cells",
+    "card": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.card.webp"
    }
   }
  },
@@ -833,6 +1306,1635 @@
    "Soft limits:"
   ]
  },
+ "notes": [
+  {
+   "name": "Aurelio Castellane - Adult",
+   "path": "Characters/Aurelio Castellane/Aurelio Castellane - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Aurelio Castellane"
+  },
+  {
+   "name": "Aurelio Castellane",
+   "path": "Characters/Aurelio Castellane/Aurelio Castellane.md",
+   "type": "character",
+   "world": "Kestrel Reach",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Barghest - Persona Draft",
+   "path": "Characters/Barghest/Barghest - Persona Draft.md",
+   "type": "profile",
+   "world": "",
+   "rating": "suggestive",
+   "character": "Barghest"
+  },
+  {
+   "name": "Barghest - Prompt - Anthro",
+   "path": "Characters/Barghest/Barghest - Prompt - Anthro.md",
+   "type": "prompt",
+   "world": "",
+   "rating": "sfw",
+   "character": "Barghest"
+  },
+  {
+   "name": "Barghest - Vargr - Adult",
+   "path": "Characters/Barghest/Barghest - Vargr - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Barghest"
+  },
+  {
+   "name": "Barghest - Vargr",
+   "path": "Characters/Barghest/Barghest - Vargr.md",
+   "type": "profile",
+   "world": "Volundale",
+   "rating": "suggestive",
+   "character": "Barghest"
+  },
+  {
+   "name": "Barghest",
+   "path": "Characters/Barghest/Barghest.md",
+   "type": "character",
+   "world": "",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Cassius Castellane - Adult",
+   "path": "Characters/Cassius Castellane/Cassius Castellane - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Cassius Castellane"
+  },
+  {
+   "name": "Cassius Castellane",
+   "path": "Characters/Cassius Castellane/Cassius Castellane.md",
+   "type": "character",
+   "world": "Kestrel Reach",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Cleo - Adult",
+   "path": "Characters/Cleo/Cleo - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Cleo"
+  },
+  {
+   "name": "Cleo - AnotherRoom Card",
+   "path": "Characters/Cleo/Cleo - AnotherRoom Card.md",
+   "type": "profile",
+   "world": "The Litterbox",
+   "rating": "suggestive",
+   "character": "Cleo"
+  },
+  {
+   "name": "Cleo - Prompt - Card Looks",
+   "path": "Characters/Cleo/Cleo - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "",
+   "rating": "suggestive",
+   "character": "Cleo"
+  },
+  {
+   "name": "Cleo",
+   "path": "Characters/Cleo/Cleo.md",
+   "type": "character",
+   "world": "The Litterbox",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Dennis Moody - Moved Back Home - Adult",
+   "path": "Characters/Dennis Moody/Dennis Moody - Moved Back Home - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Dennis Moody"
+  },
+  {
+   "name": "Dennis Moody - Moved Back Home",
+   "path": "Characters/Dennis Moody/Dennis Moody - Moved Back Home.md",
+   "type": "profile",
+   "world": "Moved Back Home",
+   "rating": "sfw",
+   "character": "Dennis Moody"
+  },
+  {
+   "name": "Dennis Moody",
+   "path": "Characters/Dennis Moody/Dennis Moody.md",
+   "type": "character",
+   "world": "Moved Back Home",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Depravitae - Adult",
+   "path": "Characters/Depravitae/Depravitae - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Depravitae"
+  },
+  {
+   "name": "Depravitae - Discord Bot",
+   "path": "Characters/Depravitae/Depravitae - Discord Bot.md",
+   "type": "profile",
+   "world": "",
+   "rating": "explicit",
+   "character": "Depravitae"
+  },
+  {
+   "name": "Depravitae - Moved Back Home - Adult",
+   "path": "Characters/Depravitae/Depravitae - Moved Back Home - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Depravitae"
+  },
+  {
+   "name": "Depravitae - Moved Back Home",
+   "path": "Characters/Depravitae/Depravitae - Moved Back Home.md",
+   "type": "profile",
+   "world": "Moved Back Home",
+   "rating": "sfw",
+   "character": "Depravitae"
+  },
+  {
+   "name": "Depravitae - Prompt - Card Looks",
+   "path": "Characters/Depravitae/Depravitae - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "",
+   "rating": "sfw",
+   "character": "Depravitae"
+  },
+  {
+   "name": "Depravitae - Prompt - Moved Back Home",
+   "path": "Characters/Depravitae/Depravitae - Prompt - Moved Back Home.md",
+   "type": "prompt",
+   "world": "Moved Back Home",
+   "rating": "sfw",
+   "character": "Depravitae"
+  },
+  {
+   "name": "Depravitae",
+   "path": "Characters/Depravitae/Depravitae.md",
+   "type": "character",
+   "world": "",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Dorian Castellane - Adult",
+   "path": "Characters/Dorian Castellane/Dorian Castellane - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Dorian Castellane"
+  },
+  {
+   "name": "Dorian Castellane",
+   "path": "Characters/Dorian Castellane/Dorian Castellane.md",
+   "type": "character",
+   "world": "Kestrel Reach",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Echydna - Autumn's Leaves - Adult",
+   "path": "Characters/Echydna/Echydna - Autumn's Leaves - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Echydna"
+  },
+  {
+   "name": "Echydna - Autumn's Leaves",
+   "path": "Characters/Echydna/Echydna - Autumn's Leaves.md",
+   "type": "profile",
+   "world": "Autumn's Leaves",
+   "rating": "suggestive",
+   "character": "Echydna"
+  },
+  {
+   "name": "Echydna - Prompt - NAI Tests",
+   "path": "Characters/Echydna/Echydna - Prompt - NAI Tests.md",
+   "type": "prompt",
+   "world": "Autumn's Leaves",
+   "rating": "explicit",
+   "character": "Echydna"
+  },
+  {
+   "name": "Echydna",
+   "path": "Characters/Echydna/Echydna.md",
+   "type": "character",
+   "world": "Autumn's Leaves",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Errata - Autumn's Leaves - Adult",
+   "path": "Characters/Errata/Errata - Autumn's Leaves - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Errata"
+  },
+  {
+   "name": "Errata - Autumn's Leaves",
+   "path": "Characters/Errata/Errata - Autumn's Leaves.md",
+   "type": "profile",
+   "world": "Autumn's Leaves",
+   "rating": "suggestive",
+   "character": "Errata"
+  },
+  {
+   "name": "Errata - Inkwyrm - Adult",
+   "path": "Characters/Errata/Errata - Inkwyrm - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Errata"
+  },
+  {
+   "name": "Errata - Inkwyrm",
+   "path": "Characters/Errata/Errata - Inkwyrm.md",
+   "type": "profile",
+   "world": "Inkwyrm",
+   "rating": "sfw",
+   "character": "Errata"
+  },
+  {
+   "name": "Errata - Prompt - Reference Sheet",
+   "path": "Characters/Errata/Errata - Prompt - Reference Sheet.md",
+   "type": "prompt",
+   "world": "Inkwyrm",
+   "rating": "sfw",
+   "character": "Errata"
+  },
+  {
+   "name": "Errata",
+   "path": "Characters/Errata/Errata.md",
+   "type": "character",
+   "world": "Inkwyrm",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Escrutia",
+   "path": "Characters/Escrutia/Escrutia.md",
+   "type": "character",
+   "world": "",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Gildra - Adult",
+   "path": "Characters/Gildra/Gildra - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Gildra"
+  },
+  {
+   "name": "Gildra - Volundale",
+   "path": "Characters/Gildra/Gildra - Volundale.md",
+   "type": "profile",
+   "world": "Volundale",
+   "rating": "suggestive",
+   "character": "Gildra"
+  },
+  {
+   "name": "Gildra",
+   "path": "Characters/Gildra/Gildra.md",
+   "type": "character",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Ilia - Dark Lord Funk",
+   "path": "Characters/Ilia/Ilia - Dark Lord Funk.md",
+   "type": "profile",
+   "world": "Dark Lord Funk",
+   "rating": "suggestive",
+   "character": "Ilia"
+  },
+  {
+   "name": "Ilia",
+   "path": "Characters/Ilia/Ilia.md",
+   "type": "character",
+   "world": "Dark Lord Funk",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Ilshaer - Volundale",
+   "path": "Characters/Ilshaer/Ilshaer - Volundale.md",
+   "type": "profile",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": "Ilshaer"
+  },
+  {
+   "name": "Ilshaer",
+   "path": "Characters/Ilshaer/Ilshaer.md",
+   "type": "character",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Inès Castellane - Adult",
+   "path": "Characters/Inès Castellane/Inès Castellane - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Inès Castellane"
+  },
+  {
+   "name": "Inès Castellane",
+   "path": "Characters/Inès Castellane/Inès Castellane.md",
+   "type": "character",
+   "world": "Kestrel Reach",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Jet - Adult",
+   "path": "Characters/Jet/Jet - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Jet"
+  },
+  {
+   "name": "Jet - AnotherRoom Card",
+   "path": "Characters/Jet/Jet - AnotherRoom Card.md",
+   "type": "profile",
+   "world": "The Litterbox",
+   "rating": "suggestive",
+   "character": "Jet"
+  },
+  {
+   "name": "Jet - Prompt - Card Looks",
+   "path": "Characters/Jet/Jet - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "",
+   "rating": "sfw",
+   "character": "Jet"
+  },
+  {
+   "name": "Jet",
+   "path": "Characters/Jet/Jet.md",
+   "type": "character",
+   "world": "The Litterbox",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Kaelen - Dark Lord Funk",
+   "path": "Characters/Kaelen/Kaelen - Dark Lord Funk.md",
+   "type": "profile",
+   "world": "Dark Lord Funk",
+   "rating": "suggestive",
+   "character": "Kaelen"
+  },
+  {
+   "name": "Kaelen",
+   "path": "Characters/Kaelen/Kaelen.md",
+   "type": "character",
+   "world": "Dark Lord Funk",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Lascivia - Moved Back Home - Adult",
+   "path": "Characters/Lascivia/Lascivia - Moved Back Home - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Lascivia"
+  },
+  {
+   "name": "Lascivia - Moved Back Home",
+   "path": "Characters/Lascivia/Lascivia - Moved Back Home.md",
+   "type": "profile",
+   "world": "Moved Back Home",
+   "rating": "sfw",
+   "character": "Lascivia"
+  },
+  {
+   "name": "Lascivia - Prompt - Moved Back Home",
+   "path": "Characters/Lascivia/Lascivia - Prompt - Moved Back Home.md",
+   "type": "prompt",
+   "world": "Moved Back Home",
+   "rating": "suggestive",
+   "character": "Lascivia"
+  },
+  {
+   "name": "Lascivia",
+   "path": "Characters/Lascivia/Lascivia.md",
+   "type": "character",
+   "world": "Moved Back Home",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Lilibeth - Adult",
+   "path": "Characters/Lilibeth/Lilibeth - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Lilibeth"
+  },
+  {
+   "name": "Lilibeth - Volundale",
+   "path": "Characters/Lilibeth/Lilibeth - Volundale.md",
+   "type": "profile",
+   "world": "Volundale",
+   "rating": "suggestive",
+   "character": "Lilibeth"
+  },
+  {
+   "name": "Lilibeth",
+   "path": "Characters/Lilibeth/Lilibeth.md",
+   "type": "character",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Lux - HOG Wild - Adult",
+   "path": "Characters/Lux/Lux - HOG Wild - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Lux"
+  },
+  {
+   "name": "Lux - HOG Wild",
+   "path": "Characters/Lux/Lux - HOG Wild.md",
+   "type": "profile",
+   "world": "HOG Wild",
+   "rating": "suggestive",
+   "character": "Lux"
+  },
+  {
+   "name": "Lux - Prompt - HOG Wild Look",
+   "path": "Characters/Lux/Lux - Prompt - HOG Wild Look.md",
+   "type": "prompt",
+   "world": "HOG Wild",
+   "rating": "sfw",
+   "character": "Lux"
+  },
+  {
+   "name": "Lux",
+   "path": "Characters/Lux/Lux.md",
+   "type": "character",
+   "world": "HOG Wild",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Lysandra - Volundale",
+   "path": "Characters/Lysandra/Lysandra - Volundale.md",
+   "type": "profile",
+   "world": "Volundale",
+   "rating": "suggestive",
+   "character": "Lysandra"
+  },
+  {
+   "name": "Lysandra",
+   "path": "Characters/Lysandra/Lysandra.md",
+   "type": "character",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Maeve (HOG Wild)",
+   "path": "Characters/Maeve (HOG Wild)/Maeve (HOG Wild).md",
+   "type": "character",
+   "world": "HOG Wild",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Maeve - HOG Wild - Adult",
+   "path": "Characters/Maeve (HOG Wild)/Maeve - HOG Wild - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Maeve (HOG Wild)"
+  },
+  {
+   "name": "Maeve - HOG Wild",
+   "path": "Characters/Maeve (HOG Wild)/Maeve - HOG Wild.md",
+   "type": "profile",
+   "world": "HOG Wild",
+   "rating": "suggestive",
+   "character": "Maeve (HOG Wild)"
+  },
+  {
+   "name": "Maeve - Prompt - HOG Wild Look",
+   "path": "Characters/Maeve (HOG Wild)/Maeve - Prompt - HOG Wild Look.md",
+   "type": "prompt",
+   "world": "HOG Wild",
+   "rating": "sfw",
+   "character": "Maeve (HOG Wild)"
+  },
+  {
+   "name": "Maeve - Dark Lord Funk",
+   "path": "Characters/Maeve/Maeve - Dark Lord Funk.md",
+   "type": "profile",
+   "world": "Dark Lord Funk",
+   "rating": "suggestive",
+   "character": "Maeve"
+  },
+  {
+   "name": "Maeve",
+   "path": "Characters/Maeve/Maeve.md",
+   "type": "character",
+   "world": "Dark Lord Funk",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Misty - Adult",
+   "path": "Characters/Misty/Misty - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Misty"
+  },
+  {
+   "name": "Misty - AnotherRoom Card",
+   "path": "Characters/Misty/Misty - AnotherRoom Card.md",
+   "type": "profile",
+   "world": "The Litterbox",
+   "rating": "suggestive",
+   "character": "Misty"
+  },
+  {
+   "name": "Misty - Prompt - Card Looks",
+   "path": "Characters/Misty/Misty - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "",
+   "rating": "sfw",
+   "character": "Misty"
+  },
+  {
+   "name": "Misty",
+   "path": "Characters/Misty/Misty.md",
+   "type": "character",
+   "world": "The Litterbox",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Nostromandu - Volundale",
+   "path": "Characters/Nostromandu/Nostromandu - Volundale.md",
+   "type": "profile",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": "Nostromandu"
+  },
+  {
+   "name": "Nostromandu",
+   "path": "Characters/Nostromandu/Nostromandu.md",
+   "type": "character",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Nova - HOG Wild - Adult",
+   "path": "Characters/Nova/Nova - HOG Wild - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Nova"
+  },
+  {
+   "name": "Nova - HOG Wild",
+   "path": "Characters/Nova/Nova - HOG Wild.md",
+   "type": "profile",
+   "world": "HOG Wild",
+   "rating": "suggestive",
+   "character": "Nova"
+  },
+  {
+   "name": "Nova - Prompt - HOG Wild Look",
+   "path": "Characters/Nova/Nova - Prompt - HOG Wild Look.md",
+   "type": "prompt",
+   "world": "HOG Wild",
+   "rating": "sfw",
+   "character": "Nova"
+  },
+  {
+   "name": "Nova",
+   "path": "Characters/Nova/Nova.md",
+   "type": "character",
+   "world": "HOG Wild",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Patch - HOG Wild - Adult",
+   "path": "Characters/Patch/Patch - HOG Wild - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Patch"
+  },
+  {
+   "name": "Patch - HOG Wild",
+   "path": "Characters/Patch/Patch - HOG Wild.md",
+   "type": "profile",
+   "world": "HOG Wild",
+   "rating": "suggestive",
+   "character": "Patch"
+  },
+  {
+   "name": "Patch - Prompt - HOG Wild Look",
+   "path": "Characters/Patch/Patch - Prompt - HOG Wild Look.md",
+   "type": "prompt",
+   "world": "HOG Wild",
+   "rating": "sfw",
+   "character": "Patch"
+  },
+  {
+   "name": "Patch",
+   "path": "Characters/Patch/Patch.md",
+   "type": "character",
+   "world": "HOG Wild",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Pipa - HOG Wild - Adult",
+   "path": "Characters/Pipa/Pipa - HOG Wild - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Pipa"
+  },
+  {
+   "name": "Pipa - HOG Wild",
+   "path": "Characters/Pipa/Pipa - HOG Wild.md",
+   "type": "profile",
+   "world": "HOG Wild",
+   "rating": "suggestive",
+   "character": "Pipa"
+  },
+  {
+   "name": "Pipa - Prompt - HOG Wild Look",
+   "path": "Characters/Pipa/Pipa - Prompt - HOG Wild Look.md",
+   "type": "prompt",
+   "world": "HOG Wild",
+   "rating": "sfw",
+   "character": "Pipa"
+  },
+  {
+   "name": "Pipa",
+   "path": "Characters/Pipa/Pipa.md",
+   "type": "character",
+   "world": "HOG Wild",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Pixie",
+   "path": "Characters/Pixie/Pixie.md",
+   "type": "character",
+   "world": "",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Pops - Adult",
+   "path": "Characters/Pops/Pops - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Pops"
+  },
+  {
+   "name": "Pops - User Persona",
+   "path": "Characters/Pops/Pops - User Persona.md",
+   "type": "profile",
+   "world": "The Litterbox",
+   "rating": "sfw",
+   "character": "Pops"
+  },
+  {
+   "name": "Pops",
+   "path": "Characters/Pops/Pops.md",
+   "type": "character",
+   "world": "The Litterbox",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Primus - HOG Wild - Adult",
+   "path": "Characters/Primus/Primus - HOG Wild - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Primus"
+  },
+  {
+   "name": "Primus - HOG Wild",
+   "path": "Characters/Primus/Primus - HOG Wild.md",
+   "type": "profile",
+   "world": "HOG Wild",
+   "rating": "suggestive",
+   "character": "Primus"
+  },
+  {
+   "name": "Primus - Prompt - HOG Wild Look",
+   "path": "Characters/Primus/Primus - Prompt - HOG Wild Look.md",
+   "type": "prompt",
+   "world": "HOG Wild",
+   "rating": "sfw",
+   "character": "Primus"
+  },
+  {
+   "name": "Primus",
+   "path": "Characters/Primus/Primus.md",
+   "type": "character",
+   "world": "HOG Wild",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Qiulong - Adult",
+   "path": "Characters/Qiulong/Qiulong - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Qiulong"
+  },
+  {
+   "name": "Qiulong - Autumn's Leaves - Adult",
+   "path": "Characters/Qiulong/Qiulong - Autumn's Leaves - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Qiulong"
+  },
+  {
+   "name": "Qiulong - Autumn's Leaves",
+   "path": "Characters/Qiulong/Qiulong - Autumn's Leaves.md",
+   "type": "profile",
+   "world": "Autumn's Leaves",
+   "rating": "suggestive",
+   "character": "Qiulong"
+  },
+  {
+   "name": "Qiulong - Chatbot Card",
+   "path": "Characters/Qiulong/Qiulong - Chatbot Card.md",
+   "type": "profile",
+   "world": "Teahouse Before Frost",
+   "rating": "sfw",
+   "character": "Qiulong"
+  },
+  {
+   "name": "Qiulong - Prompt - Card Looks",
+   "path": "Characters/Qiulong/Qiulong - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "",
+   "rating": "sfw",
+   "character": "Qiulong"
+  },
+  {
+   "name": "Qiulong - Teahouse Before Frost",
+   "path": "Characters/Qiulong/Qiulong - Teahouse Before Frost.md",
+   "type": "profile",
+   "world": "Teahouse Before Frost",
+   "rating": "suggestive",
+   "character": "Qiulong"
+  },
+  {
+   "name": "Qiulong",
+   "path": "Characters/Qiulong/Qiulong.md",
+   "type": "character",
+   "world": "Teahouse Before Frost",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Rekka - Volundale",
+   "path": "Characters/Rekka/Rekka - Volundale.md",
+   "type": "profile",
+   "world": "Volundale",
+   "rating": "suggestive",
+   "character": "Rekka"
+  },
+  {
+   "name": "Rekka",
+   "path": "Characters/Rekka/Rekka.md",
+   "type": "character",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Rovak - Adult",
+   "path": "Characters/Rovak/Rovak - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Rovak"
+  },
+  {
+   "name": "Rovak - Volundale",
+   "path": "Characters/Rovak/Rovak - Volundale.md",
+   "type": "profile",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": "Rovak"
+  },
+  {
+   "name": "Rovak",
+   "path": "Characters/Rovak/Rovak.md",
+   "type": "character",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Rusty - Adult",
+   "path": "Characters/Rusty/Rusty - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Rusty"
+  },
+  {
+   "name": "Rusty - AnotherRoom Card",
+   "path": "Characters/Rusty/Rusty - AnotherRoom Card.md",
+   "type": "profile",
+   "world": "The Litterbox",
+   "rating": "suggestive",
+   "character": "Rusty"
+  },
+  {
+   "name": "Rusty - Prompt - Card Looks",
+   "path": "Characters/Rusty/Rusty - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "",
+   "rating": "sfw",
+   "character": "Rusty"
+  },
+  {
+   "name": "Rusty",
+   "path": "Characters/Rusty/Rusty.md",
+   "type": "character",
+   "world": "The Litterbox",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Sarith - Volundale",
+   "path": "Characters/Sarith/Sarith - Volundale.md",
+   "type": "profile",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": "Sarith"
+  },
+  {
+   "name": "Sarith",
+   "path": "Characters/Sarith/Sarith.md",
+   "type": "character",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Sekmawl",
+   "path": "Characters/Sekmawl/Sekmawl.md",
+   "type": "character",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Sunny - Adult",
+   "path": "Characters/Sunny/Sunny - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Sunny"
+  },
+  {
+   "name": "Sunny - AnotherRoom Card",
+   "path": "Characters/Sunny/Sunny - AnotherRoom Card.md",
+   "type": "profile",
+   "world": "The Litterbox",
+   "rating": "suggestive",
+   "character": "Sunny"
+  },
+  {
+   "name": "Sunny - Prompt - Card Looks",
+   "path": "Characters/Sunny/Sunny - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "",
+   "rating": "suggestive",
+   "character": "Sunny"
+  },
+  {
+   "name": "Sunny",
+   "path": "Characters/Sunny/Sunny.md",
+   "type": "character",
+   "world": "The Litterbox",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Séraphine Castellane - Adult",
+   "path": "Characters/Séraphine Castellane/Séraphine Castellane - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Séraphine Castellane"
+  },
+  {
+   "name": "Séraphine Castellane",
+   "path": "Characters/Séraphine Castellane/Séraphine Castellane.md",
+   "type": "character",
+   "world": "Kestrel Reach",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Takshaka - Adult",
+   "path": "Characters/Takshaka/Takshaka - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Takshaka"
+  },
+  {
+   "name": "Takshaka - Volundale",
+   "path": "Characters/Takshaka/Takshaka - Volundale.md",
+   "type": "profile",
+   "world": "Volundale",
+   "rating": "suggestive",
+   "character": "Takshaka"
+  },
+  {
+   "name": "Takshaka",
+   "path": "Characters/Takshaka/Takshaka.md",
+   "type": "character",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Toby - Adult",
+   "path": "Characters/Toby/Toby - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Toby"
+  },
+  {
+   "name": "Toby - AnotherRoom Card",
+   "path": "Characters/Toby/Toby - AnotherRoom Card.md",
+   "type": "profile",
+   "world": "The Litterbox",
+   "rating": "sfw",
+   "character": "Toby"
+  },
+  {
+   "name": "Toby - Prompt - Card Looks",
+   "path": "Characters/Toby/Toby - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "",
+   "rating": "sfw",
+   "character": "Toby"
+  },
+  {
+   "name": "Toby",
+   "path": "Characters/Toby/Toby.md",
+   "type": "character",
+   "world": "The Litterbox",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Vigga - Adult",
+   "path": "Characters/Vigga/Vigga - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Vigga"
+  },
+  {
+   "name": "Vigga - Dark Lord Funk",
+   "path": "Characters/Vigga/Vigga - Dark Lord Funk.md",
+   "type": "profile",
+   "world": "Dark Lord Funk",
+   "rating": "suggestive",
+   "character": "Vigga"
+  },
+  {
+   "name": "Vigga - Volundale",
+   "path": "Characters/Vigga/Vigga - Volundale.md",
+   "type": "profile",
+   "world": "Volundale",
+   "rating": "suggestive",
+   "character": "Vigga"
+  },
+  {
+   "name": "Vigga",
+   "path": "Characters/Vigga/Vigga.md",
+   "type": "character",
+   "world": "",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Viola - Apprentice",
+   "path": "Characters/Viola/Viola - Apprentice.md",
+   "type": "profile",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": "Viola"
+  },
+  {
+   "name": "Viola",
+   "path": "Characters/Viola/Viola.md",
+   "type": "character",
+   "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Yumiko - Dark Lord Funk",
+   "path": "Characters/Yumiko/Yumiko - Dark Lord Funk.md",
+   "type": "profile",
+   "world": "Dark Lord Funk",
+   "rating": "suggestive",
+   "character": "Yumiko"
+  },
+  {
+   "name": "Yumiko",
+   "path": "Characters/Yumiko/Yumiko.md",
+   "type": "character",
+   "world": "Dark Lord Funk",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Depravitae - Co-writer",
+   "path": "Co-writers/Depravitae - Co-writer.md",
+   "type": "cowriter",
+   "world": "",
+   "rating": "",
+   "character": "Depravitae"
+  },
+  {
+   "name": "Errata - Co-writer",
+   "path": "Co-writers/Errata - Co-writer.md",
+   "type": "cowriter",
+   "world": "",
+   "rating": "",
+   "character": "Errata"
+  },
+  {
+   "name": "Aynur Toprak - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Aynur Toprak/Aynur Toprak - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Aynur Toprak"
+  },
+  {
+   "name": "Aynur Toprak",
+   "path": "Modules/Kerrow Deep/Characters/Aynur Toprak/Aynur Toprak.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Bogdan Kral - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Bogdan Kral/Bogdan Kral - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Bogdan Kral"
+  },
+  {
+   "name": "Bogdan Kral",
+   "path": "Modules/Kerrow Deep/Characters/Bogdan Kral/Bogdan Kral.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Charlie Brandt - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Charlie Brandt/Charlie Brandt - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Charlie Brandt"
+  },
+  {
+   "name": "Charlie Brandt",
+   "path": "Modules/Kerrow Deep/Characters/Charlie Brandt/Charlie Brandt.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Chuck Brandt - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Chuck Brandt/Chuck Brandt - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Chuck Brandt"
+  },
+  {
+   "name": "Chuck Brandt",
+   "path": "Modules/Kerrow Deep/Characters/Chuck Brandt/Chuck Brandt.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Dale Pruitt - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Dale Pruitt/Dale Pruitt - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Dale Pruitt"
+  },
+  {
+   "name": "Dale Pruitt",
+   "path": "Modules/Kerrow Deep/Characters/Dale Pruitt/Dale Pruitt.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Domitia Vell - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Domitia Vell/Domitia Vell - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Domitia Vell"
+  },
+  {
+   "name": "Domitia Vell",
+   "path": "Modules/Kerrow Deep/Characters/Domitia Vell/Domitia Vell.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Gülnara Bayar - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Gülnara Bayar/Gülnara Bayar - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Gülnara Bayar"
+  },
+  {
+   "name": "Gülnara Bayar",
+   "path": "Modules/Kerrow Deep/Characters/Gülnara Bayar/Gülnara Bayar.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Hoss - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Hoss/Hoss - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Hoss"
+  },
+  {
+   "name": "Hoss",
+   "path": "Modules/Kerrow Deep/Characters/Hoss/Hoss.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Ilse Brandt - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Ilse Brandt/Ilse Brandt - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Ilse Brandt"
+  },
+  {
+   "name": "Ilse Brandt",
+   "path": "Modules/Kerrow Deep/Characters/Ilse Brandt/Ilse Brandt.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Imin-Dumu Hale - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Imin-Dumu Hale/Imin-Dumu Hale - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Imin-Dumu Hale"
+  },
+  {
+   "name": "Imin-Dumu Hale",
+   "path": "Modules/Kerrow Deep/Characters/Imin-Dumu Hale/Imin-Dumu Hale.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Juno Reyes - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Juno Reyes/Juno Reyes - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Juno Reyes"
+  },
+  {
+   "name": "Juno Reyes",
+   "path": "Modules/Kerrow Deep/Characters/Juno Reyes/Juno Reyes.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Lena Novak - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Lena Novak/Lena Novak - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Lena Novak"
+  },
+  {
+   "name": "Lena Novak",
+   "path": "Modules/Kerrow Deep/Characters/Lena Novak/Lena Novak.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Lucan Aurel - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Lucan Aurel/Lucan Aurel - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Lucan Aurel"
+  },
+  {
+   "name": "Lucan Aurel",
+   "path": "Modules/Kerrow Deep/Characters/Lucan Aurel/Lucan Aurel.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Marisol Vance - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Marisol Vance/Marisol Vance - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Marisol Vance"
+  },
+  {
+   "name": "Marisol Vance",
+   "path": "Modules/Kerrow Deep/Characters/Marisol Vance/Marisol Vance.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Mirko Petrović - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Mirko Petrović/Mirko Petrović - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Mirko Petrović"
+  },
+  {
+   "name": "Mirko Petrović",
+   "path": "Modules/Kerrow Deep/Characters/Mirko Petrović/Mirko Petrović.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Rafael Quintero - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Rafael Quintero/Rafael Quintero - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Rafael Quintero"
+  },
+  {
+   "name": "Rafael Quintero",
+   "path": "Modules/Kerrow Deep/Characters/Rafael Quintero/Rafael Quintero.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Seren Morvah - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Seren Morvah/Seren Morvah - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Seren Morvah"
+  },
+  {
+   "name": "Seren Morvah",
+   "path": "Modules/Kerrow Deep/Characters/Seren Morvah/Seren Morvah.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Temür Arslan - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Temür Arslan/Temür Arslan - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Temür Arslan"
+  },
+  {
+   "name": "Temür Arslan",
+   "path": "Modules/Kerrow Deep/Characters/Temür Arslan/Temür Arslan.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Veikko Lahti - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Veikko Lahti/Veikko Lahti - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Veikko Lahti"
+  },
+  {
+   "name": "Veikko Lahti",
+   "path": "Modules/Kerrow Deep/Characters/Veikko Lahti/Veikko Lahti.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Vuk Dragan - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Vuk Dragan/Vuk Dragan - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Vuk Dragan"
+  },
+  {
+   "name": "Vuk Dragan",
+   "path": "Modules/Kerrow Deep/Characters/Vuk Dragan/Vuk Dragan.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Ysolde Varre - Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Characters/Ysolde Varre/Ysolde Varre - Kerrow Deep.md",
+   "type": "profile",
+   "world": "Kerrow Deep",
+   "rating": "suggestive",
+   "character": "Ysolde Varre"
+  },
+  {
+   "name": "Ysolde Varre",
+   "path": "Modules/Kerrow Deep/Characters/Ysolde Varre/Ysolde Varre.md",
+   "type": "character",
+   "world": "Kerrow Deep",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "README",
+   "path": "Modules/Kerrow Deep/README.md",
+   "type": "",
+   "world": "",
+   "rating": "",
+   "character": ""
+  },
+  {
+   "name": "Kerrow Deep",
+   "path": "Modules/Kerrow Deep/Settings/Kerrow Deep.md",
+   "type": "setting",
+   "world": "Kerrow Deep",
+   "rating": "explicit",
+   "character": ""
+  },
+  {
+   "name": "Kerrow Deep — Direct",
+   "path": "Modules/Kerrow Deep/Stories/Kerrow Deep — Direct.md",
+   "type": "story",
+   "world": "Kerrow Deep",
+   "rating": "explicit",
+   "character": ""
+  },
+  {
+   "name": "Kerrow Deep — Start as a Client",
+   "path": "Modules/Kerrow Deep/Stories/Kerrow Deep — Start as a Client.md",
+   "type": "story",
+   "world": "Kerrow Deep",
+   "rating": "explicit",
+   "character": ""
+  },
+  {
+   "name": "Kerrow Deep — Start as a Utility",
+   "path": "Modules/Kerrow Deep/Stories/Kerrow Deep — Start as a Utility.md",
+   "type": "story",
+   "world": "Kerrow Deep",
+   "rating": "explicit",
+   "character": ""
+  },
+  {
+   "name": "Kerrow Deep — Start as an Overseer",
+   "path": "Modules/Kerrow Deep/Stories/Kerrow Deep — Start as an Overseer.md",
+   "type": "story",
+   "world": "Kerrow Deep",
+   "rating": "explicit",
+   "character": ""
+  },
+  {
+   "name": "Utility Class — Manuscript",
+   "path": "Modules/Kerrow Deep/Stories/Utility Class — Manuscript.md",
+   "type": "manuscript",
+   "world": "Kerrow Deep",
+   "rating": "explicit",
+   "character": ""
+  },
+  {
+   "name": "Autumn's Leaves",
+   "path": "Settings/Autumn's Leaves.md",
+   "type": "setting",
+   "world": "Autumn's Leaves",
+   "rating": "suggestive",
+   "character": ""
+  },
+  {
+   "name": "Dark Lord Funk",
+   "path": "Settings/Dark Lord Funk.md",
+   "type": "setting",
+   "world": "Dark Lord Funk",
+   "rating": "suggestive",
+   "character": ""
+  },
+  {
+   "name": "HOG Wild",
+   "path": "Settings/HOG Wild.md",
+   "type": "setting",
+   "world": "HOG Wild",
+   "rating": "suggestive",
+   "character": ""
+  },
+  {
+   "name": "House Castellane",
+   "path": "Settings/House Castellane.md",
+   "type": "setting",
+   "world": "Kestrel Reach",
+   "rating": "suggestive",
+   "character": ""
+  },
+  {
+   "name": "Imperial Sector",
+   "path": "Settings/Imperial Sector.md",
+   "type": "setting",
+   "world": "Imperial Sector",
+   "rating": "suggestive",
+   "character": ""
+  },
+  {
+   "name": "The Aerie",
+   "path": "Settings/The Aerie.md",
+   "type": "setting",
+   "world": "Volungraiv",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "The Litterbox",
+   "path": "Settings/The Litterbox.md",
+   "type": "setting",
+   "world": "The Litterbox",
+   "rating": "suggestive",
+   "character": ""
+  },
+  {
+   "name": "Volundale",
+   "path": "Settings/Volundale.md",
+   "type": "setting",
+   "world": "Volundale",
+   "rating": "suggestive",
+   "character": ""
+  },
+  {
+   "name": "Volungraiv",
+   "path": "Settings/Volungraiv.md",
+   "type": "setting",
+   "world": "Volungraiv",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "sci-fi-species",
+   "path": "Settings/sci-fi-species.md",
+   "type": "setting",
+   "world": "Imperial Sector",
+   "rating": "suggestive",
+   "character": ""
+  },
+  {
+   "name": "House Castellane — The Recovery",
+   "path": "Stories/House Castellane — The Recovery.md",
+   "type": "story",
+   "world": "Kestrel Reach",
+   "rating": "explicit",
+   "character": ""
+  },
+  {
+   "name": "Moved Back Home",
+   "path": "Stories/Moved Back Home.md",
+   "type": "story",
+   "world": "Moved Back Home",
+   "rating": "explicit",
+   "character": ""
+  },
+  {
+   "name": "Utility Class",
+   "path": "Stories/Utility Class.md",
+   "type": "story",
+   "world": "Imperial Sector",
+   "rating": "explicit",
+   "character": ""
+  }
+ ],
+ "images": {
+  "depravitae - 01.png": "Characters/Depravitae/images/Depravitae - 01.png",
+  "depravitae - full.png": "Characters/Depravitae/images/Depravitae - Full.png",
+  "depravitae - mood - angry.png": "Characters/Depravitae/images/Depravitae - mood - angry.png",
+  "depravitae - mood - bratty.png": "Characters/Depravitae/images/Depravitae - mood - bratty.png",
+  "depravitae - mood - flustered.png": "Characters/Depravitae/images/Depravitae - mood - flustered.png",
+  "depravitae - mood - laughing.png": "Characters/Depravitae/images/Depravitae - mood - laughing.png",
+  "depravitae - mood - smug.png": "Characters/Depravitae/images/Depravitae - mood - smug.png",
+  "escrutia - 01.png": "Characters/Escrutia/images/Escrutia - 01.png",
+  "pixie - 01.png": "Characters/Pixie/images/Pixie - 01.png",
+  "vigga - 01.png": "Characters/Vigga/images/Vigga - 01.png",
+  "vigga - 02.png": "Characters/Vigga/images/Vigga - 02.png",
+  "yumiko - 01.png": "Characters/Yumiko/images/Yumiko - 01.png",
+  "errata - 01.png": "Characters/Errata/images/Errata - 01.png",
+  "errata - full.png": "Characters/Errata/images/Errata - Full.png",
+  "quality.png": "Characters/Qiulong/images/Quality.png",
+  "reference.png": "Characters/Qiulong/images/Reference.png",
+  "cleo - 01.png": "Characters/Cleo/images/Cleo - 01.png",
+  "misty - 01.png": "Characters/Misty/images/Misty - 01.png",
+  "pops - 01.png": "Characters/Pops/images/Pops - 01.png",
+  "sunny - 01.png": "Characters/Sunny/images/Sunny - 01.png",
+  "gildra - 01.png": "Characters/Gildra/images/Gildra - 01.png",
+  "gildra - 02.png": "Characters/Gildra/images/Gildra - 02.png",
+  "ilshaer - 00.png": "Characters/Ilshaer/images/Ilshaer - 00.png",
+  "ilshaer - 01.png": "Characters/Ilshaer/images/Ilshaer - 01.png",
+  "rekka - 01.png": "Characters/Rekka/images/Rekka - 01.png"
+ },
  "coWriters": [
   {
    "name": "Depravitae",
@@ -840,35 +2942,43 @@
    "portrait": {
     "image": "Characters/Depravitae/images/Depravitae - 01.png",
     "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - 01.png",
-    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - 01.cells"
+    "cells": "Characters/Depravitae/images/.thumbs/Depravitae - 01.cells",
+    "card": "Characters/Depravitae/images/.thumbs/Depravitae - 01.card.webp"
    },
    "moods": {
     "angry": {
      "image": "Characters/Depravitae/images/Depravitae - mood - angry.png",
      "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.png",
-     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.cells"
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.cells",
+     "card": "Characters/Depravitae/images/.thumbs/Depravitae - mood - angry.card.webp"
     },
     "bratty": {
      "image": "Characters/Depravitae/images/Depravitae - mood - bratty.png",
      "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.png",
-     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.cells"
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.cells",
+     "card": "Characters/Depravitae/images/.thumbs/Depravitae - mood - bratty.card.webp"
     },
     "flustered": {
      "image": "Characters/Depravitae/images/Depravitae - mood - flustered.png",
      "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.png",
-     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.cells"
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.cells",
+     "card": "Characters/Depravitae/images/.thumbs/Depravitae - mood - flustered.card.webp"
     },
     "laughing": {
      "image": "Characters/Depravitae/images/Depravitae - mood - laughing.png",
      "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.png",
-     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.cells"
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.cells",
+     "card": "Characters/Depravitae/images/.thumbs/Depravitae - mood - laughing.card.webp"
     },
     "smug": {
      "image": "Characters/Depravitae/images/Depravitae - mood - smug.png",
      "thumb": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.png",
-     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.cells"
+     "cells": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.cells",
+     "card": "Characters/Depravitae/images/.thumbs/Depravitae - mood - smug.card.webp"
     }
-   }
+   },
+   "path": "Co-writers/Depravitae - Co-writer.md",
+   "blurb": "A connoisseur of bad ends who collects stories where the hero loses."
   },
   {
    "name": "Errata",
@@ -876,9 +2986,12 @@
    "portrait": {
     "image": "Characters/Errata/images/Errata - 01.png",
     "thumb": "Characters/Errata/images/.thumbs/Errata - 01.png",
-    "cells": "Characters/Errata/images/.thumbs/Errata - 01.cells"
+    "cells": "Characters/Errata/images/.thumbs/Errata - 01.cells",
+    "card": "Characters/Errata/images/.thumbs/Errata - 01.card.webp"
    },
-   "moods": {}
+   "moods": {},
+   "path": "Co-writers/Errata - Co-writer.md",
+   "blurb": "A writer and muse who hoards errata: the drafts and crossed-out lines that record how a writer got here."
   }
  ]
 }

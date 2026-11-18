@@ -344,6 +344,21 @@ The persona is a voice, not a replacement. Claude stays Claude underneath, with 
 
 **Using them in another app (such as a Gemini app).** Every commit rebuilds `.claude/ui/personas.json`: each co-writer's fields, examples, mood images and a ready-to-paste `systemInstruction`, the `default`, a one-line `menu` to show at startup, and a `bundle`. For an app that can run code, show `menu` (the names plus None), then send only the chosen co-writer's `systemInstruction` and track on/off itself. For an app that is only a system prompt (an AI Studio prompt, say), paste `python3 .claude/scripts/vault.py persona --bundle`: it tells the model to ask which co-writer you want at the start of a chat, unless your first message names one, and carries every co-writer as an option. `--system`, `--name <name>` and `--json` print the other forms. The block adds voice only; scope and limits come from the host app's own prompt.
 
+## The vault app
+
+`app/index.html` shows the whole vault in a browser: the active story with its cast and state, every story with a reader for its saved text, characters by world with their galleries and every profile and prompt note, worlds with the characters who belong there, and co-writers with their mood faces. It only reads; it never changes a file.
+
+**Open it one of two ways.**
+
+- **On the machine with the vault** (a computer, or Termux on a phone): run `python3 .claude/scripts/vault.py app` and open the address it prints. It reads the files directly, so no token is needed and unsaved edits show up. `--host 0.0.0.0` lets other devices on your network reach it.
+- **From GitHub, anywhere:** open `app/index.html` in a browser (from a download, or any private place you host it), choose GitHub in its settings, and give it your repository name and a fine-grained token with **Contents: read-only** on that one repository (GitHub → Settings → Developer settings → Fine-grained tokens). The token stays in that browser and is sent only to api.github.com. Cloud sessions save to their own branch until it's merged, so the app reads whichever branch has the newest vault unless you pick one.
+
+**Into the chat.** Buttons copy a ready message: *Pick up in Claude*, *Show in Claude*, *Pitch with them*, *Use in Claude* for a co-writer. *Copy image* puts a picture on the clipboard to paste into Claude's message box; where the browser won't allow that, *Download* it and attach it.
+
+**Adult material** is hidden until you turn it on in the app's settings: adult files and anything in `images/adult/`.
+
+**Images.** A character's gallery is every image in `Characters/<Name>/images/`, with the `cover` image first; mood faces are left out of the gallery. After adding images, run `python3 .claude/scripts/vault.py thumbs` (needs Pillow) so the app gets small, fast copies; it shows the originals until then.
+
 ## The style library
 
 `Style/reference.md` collects passages you liked and passages you didn't.
@@ -427,5 +442,9 @@ The quickest way to never be asked: put `age` (and `body_age` or `mind` where th
 **Free commands reach Claude anyway.** The message must be only the command, like `[state]`, with nothing else in it.
 
 **Session start says the vault pull failed.** You have uncommitted local changes or no network. Commit or stash, then pull. Set `VAULT_AUTOPULL=0` to turn the pull off.
+
+**The vault app is missing something new.** It reads `.claude/ui/vault-index.json`, which every vault commit rebuilds. Run `python3 .claude/scripts/vault.py index` to rebuild it by hand, and check the app's branch in its settings.
+
+**Session start names unmerged branches.** Cloud sessions save to their own `claude/...` branch. Until its pull request is merged, new sessions (which start from the main branch) and the vault UI don't see that work. Merge the pull request, or ask Claude to merge the branch into the current one.
 
 **Two skills with similar names.** If your claude.ai account syncs skills called `rp-session` or `pulp-voice`, those are account copies. The vault uses its own `vault-session` and `pulp-voice`. Turning the account copies off saves context on every turn and keeps Claude from picking the wrong one.

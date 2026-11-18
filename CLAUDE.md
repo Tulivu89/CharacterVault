@@ -9,8 +9,8 @@ Scope, content limits, craft, the co-writer persona and the bracket controls are
 - **Images.** `[img]` or `[img: …]`, or a request for an image or NovelAI prompt, runs `nai-v5-images`: an out-of-character V5 setup for the current beat or the brief. It doesn't advance the story or touch notes unless asked to save; the next message resumes at the same beat.
 - **Maintenance.** Changes to scripts, hooks, skills, templates, settings, docs, this file or the output style run `vault-dev`.
 - **Canon.** `story-profile.md` holds the user's defaults, style, kinks, limits, completed stories and the co-writer default (`ask`, `none` or a name). A story's note in `Stories/` holds its cast and ages, premise, rules, state and last beat; its prose is in its text parts.
-- **Co-writers.** Each co-writer persona is a file in `Co-writers/`. A hook asks which one at session start (AskUserQuestion), keeps the choice and `[persona: off/on]` per session, and `vault.py persona` exports them.
-- **Hooks.** Session start brings the active story's state and cast, and either asks which co-writer to use or loads the default. `[help]`, `[cast]`, `[state]`, `[show]`, `[list]`, `[lint]` and `[lore]` are answered without reaching Claude. Lore entries the user's message mentions arrive marked "Lore from the vault"; treat them as canon. After each story turn the Stop hook saves the reply word for word to the story's text part and commits it. Without hooks, run the vault script for those commands and print its output.
+- **Co-writers.** Each co-writer persona is a file in `Co-writers/`. A hook asks which one on the session's first prompt that isn't a viewer command (AskUserQuestion), keeps the choice and `[persona: off/on]` per session, and `vault.py persona` exports them.
+- **Hooks.** Session start pulls, names note work stranded on unmerged branches, brings the active story's state and cast, and loads the default co-writer (or the first real prompt asks which one). `[help]`, `[cast]`, `[state]`, `[show]`, `[list]`, `[lint]` and `[lore]` are answered without reaching Claude. Lore entries the user's message mentions arrive marked "Lore from the vault"; treat them as canon. After each story turn the Stop hook saves the reply word for word to the story's text part and commits it. Without hooks, run the vault script for those commands and print its output.
 
 ## The vault
 
@@ -37,5 +37,6 @@ An Obsidian vault (`Home.md` is the dashboard); Claude reads and writes the same
 - `new <character|roleplay|persona|bio|adult|setting|story> "<Title>" [--character NAME] [--profile NAME]`, then fill the sections with edits.
 - `show <note> [<note> …] [--canon]`: notes without `base` blocks or template guidance, several per call. `--canon` in play unless the story has `drafts: on`. Refuses an adult file that fails the stage rules.
 - `cast <story>`, `state <story>`, `text <story> --status`, `list [type] [--world W] [--character NAME]`, `seeds`, `lint`, `help`.
+- `thumbs` after adding images; `app` serves the vault app (`app/index.html`) on this machine.
 
 **Git.** Pull before editing notes. Commit note changes in one call: `vault.py save "<story>"` after [save], otherwise `vault.py commit "<message>"` (`Done: <story>`, `Profile: …`, `Add <note>`, `Style: K-n`). Both lint, commit only the note folders, and push.
