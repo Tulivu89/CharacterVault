@@ -10,6 +10,8 @@ Story Vault turns Claude into a co-writer for roleplay and fiction that **rememb
 - **A Claude plan that includes Claude Code** (Pro or Max).
 - *Optional:* [Obsidian](https://obsidian.md) (free), if you want to browse and edit your notes on your computer.
 
+> **Already have a vault from an earlier version?** Skip to [Updating](#updating-a-vault-you-already-have). Your characters and stories stay as they are.
+
 ---
 
 ## Step 1: Make your own private copy
@@ -131,6 +133,34 @@ The key stays in that browser and only ever goes to GitHub. It can read your vau
 ### Obsidian
 
 If your vault is on your computer (setup B), open Obsidian, choose **Open folder as vault**, and pick the vault folder. `Home.md` is a dashboard of your open stories, characters and worlds. In Obsidian's settings, under **Core plugins → Templates**, set the template folder to `Templates`.
+
+---
+
+## Updating a vault you already have
+
+Your vault is your own copy, so it doesn't change when the template does. The update brings in the new tools (scripts, hooks, skills, the app, the guides) and **never touches your notes**: characters, worlds, stories, your profile and your style examples stay exactly as they are.
+
+**In a session** (browser, app or computer), send this to Claude:
+
+```
+Update my vault from the template: download https://raw.githubusercontent.com/AmbiguousProphet/CiC-Vault/main/.claude/scripts/vault.py to .claude/scripts/vault.py, then run python3 .claude/scripts/vault.py update
+```
+
+**Or on your computer**, in the vault folder:
+
+```
+curl -fsSL https://raw.githubusercontent.com/AmbiguousProphet/CiC-Vault/main/.claude/scripts/vault.py -o .claude/scripts/vault.py
+python3 .claude/scripts/vault.py update
+```
+
+You only need the download the first time. After that, `python3 .claude/scripts/vault.py update` (or "update my vault") is enough, and `update --check` lists the changes without making them.
+
+What the update does:
+
+- **Replaces the tools that changed**, adds new ones, and removes retired ones.
+- **Keeps a backup** of anything it replaces that you'd edited yourself, in `.claude/update-backup/`. On the very first update it backs up everything it replaces, because it can't yet tell your edits apart.
+- **Moves old-style settings to the new format.** A co-writer written into your profile becomes its own file in `Co-writers/` and stays your default. `universe` in a note becomes `world`.
+- **Saves the result.** In a browser session, merge the pull request as usual (Step 2A). Then start a new session so the new tools load.
 
 ---
 

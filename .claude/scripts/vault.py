@@ -1052,7 +1052,7 @@ def _glob_re(glob):
 
 
 def _release_rules():
-    rules = {"include": [], "exclude": [], "keep": [], "edits": [], "forbid": [], "allow": set()}
+    rules = {"include": [], "exclude": [], "keep": [], "edits": [], "forbid": [], "allow": set(), "retired": []}
     if not RELEASE_RULES.exists():
         sys.exit("No release.txt at the vault root.")
     for n, line in enumerate(RELEASE_RULES.read_text(encoding="utf-8").splitlines(), 1):
@@ -1065,6 +1065,8 @@ def _release_rules():
             rules[kind].append(_glob_re(rest))
         elif kind == "allow":
             rules["allow"].add(rest)
+        elif kind == "retired":
+            rules["retired"].append(rest)
         elif kind in ("drop-line", "drop-section", "replace", "forbid"):
             target, sep, arg = rest.partition(" :: ")
             if not sep or not arg:
@@ -1154,6 +1156,14 @@ def build_release():
             if m:
                 problems.append(f"{f} (released line {ln}): names `{m.group(1)}` from this vault, in: {line.strip()[:120]}"
                                 f" (add `allow {m.group(1)}` to release.txt if it's a false positive)")
+    if not problems:
+        import hashlib
+        import json
+        head = git("rev-parse", "--short", "HEAD").stdout.strip()
+        manifest = {"version": f"{datetime.date.today().isoformat()}-{head}",
+                    "files": {f: hashlib.sha256(d).hexdigest() for f, d in sorted(files.items())},
+                    "retired": sorted(rules["retired"])}
+        files[MANIFEST_PATH] = (json.dumps(manifest, indent=1) + "\n").encode("utf-8")
     return files, rules["keep"], problems
 
 
@@ -1201,6 +1211,186 @@ def cmd_release(args):
         r = subprocess.run(cmd, cwd=out, capture_output=True, text=True, timeout=300)
         last = (r.stdout + r.stderr).strip().splitlines()
         print(f"Template {label}: {'pass' if r.returncode == 0 else 'FAIL'} · {last[-1] if last else ''}")
+
+
+# ---------- update and migrate (for vaults made from the template) ----------
+# The template carries .claude/release.json: every machinery file it ships, with a hash. `update` fetches
+# the template, replaces the machinery files that changed, removes retired ones, and never touches notes.
+# A local file that differs from what the last update installed is the user's own edit: it is still
+# replaced (the machinery has to match), but the old copy is kept in .claude/update-backup/<time>/.
+
+MANIFEST_PATH = ".claude/release.json"
+TEMPLATE_URL = "https://github.com/AmbiguousProphet/CiC-Vault.git"
+
+
+def _sha(path):
+    import hashlib
+    return hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else None
+
+
+def cmd_update(args):
+    import json
+    import shutil
+    import tempfile
+    if RELEASE_RULES.exists():
+        sys.exit("This vault makes the template releases (it has release.txt). Update the template from it with "
+                 "`vault.py release`, not the other way round.")
+    with tempfile.TemporaryDirectory() as tmp:
+        up = Path(tmp) / "template"
+        r = subprocess.run(["git", "clone", "-q", "--depth", "1", args.source, str(up)], capture_output=True, text=True, timeout=600)
+        if r.returncode != 0:
+            sys.exit("Couldn't download the template: " + ((r.stderr.strip().splitlines() or ["unknown error"])[-1]))
+        if not (up / MANIFEST_PATH).exists():
+            sys.exit("The template has no release manifest yet; nothing to update from.")
+        new = json.loads((up / MANIFEST_PATH).read_text(encoding="utf-8"))
+        local_path = ROOT / MANIFEST_PATH
+        old = json.loads(local_path.read_text(encoding="utf-8")) if local_path.exists() else {"version": "", "files": {}}
+        if old.get("version") == new["version"] and not args.check:
+            print(f"Already up to date ({new['version']}).")
+        stamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+        backup = ROOT / ".claude" / "update-backup" / stamp
+        added, changed, edited, removed = [], [], [], []
+
+        def save_backup(rel):
+            dest = backup / rel
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(ROOT / rel, dest)
+
+        for rel, h in new["files"].items():
+            cur = _sha(ROOT / rel)
+            if cur == h:
+                continue
+            if cur is None:
+                added.append(rel)
+            else:
+                changed.append(rel)
+                if cur != old["files"].get(rel):
+                    edited.append(rel)
+            if not args.check:
+                if cur is not None and cur != old["files"].get(rel):
+                    save_backup(rel)
+                (ROOT / rel).parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(up / rel, ROOT / rel)
+        gone = (set(old["files"]) | set(new.get("retired", []))) - set(new["files"])
+        for rel in sorted(gone):
+            if (ROOT / rel).is_file():
+                removed.append(rel)
+                if not args.check:
+                    save_backup(rel)
+                    (ROOT / rel).unlink()
+        if not args.check:
+            local_path.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(up / MANIFEST_PATH, local_path)
+    print(f"Template {new['version']} (you had {old.get('version') or 'a version from before updates existed'}).")
+    for now, done_, items in (("add", "Added", added), ("update", "Updated", changed), ("remove", "Removed", removed)):
+        if items:
+            print(f"{'Would ' + now if args.check else done_}: " + ", ".join(items))
+    if edited and not old["files"]:
+        print("First update: there's no record of what you had installed, so every replaced file is "
+              + ("backed up first." if args.check else f"backed up in {backup.relative_to(ROOT).as_posix()}/ in case you'd edited it."))
+    elif edited:
+        print(("These had your own edits; " + ("they would be backed up first" if args.check else
+               f"your versions are saved in {backup.relative_to(ROOT).as_posix()}/") + ": ") + ", ".join(edited))
+    if args.check or not (added or changed or removed):
+        if not (added or changed or removed):
+            print("No machinery changes.")
+        return
+    # Run the migration with the new script, so it knows the new note formats.
+    m = subprocess.run([sys.executable, "-B", str(ROOT / ".claude/scripts/vault.py"), "migrate", "--no-commit"],
+                       capture_output=True, text=True, timeout=120)
+    print((m.stdout + m.stderr).strip())
+    if args.no_commit or not (ROOT / ".git").exists():
+        return
+    paths = sorted(set(list(new["files"]) + removed + [MANIFEST_PATH, ".claude/update-backup"] + NOTE_PATHS))
+    git("add", "-A", "--", *[p for p in paths if (ROOT / p).exists() or p in removed])
+    c = git("commit", "-q", "-m", f"Update: template {new['version']}")
+    print("Committed. " + git_push() if c.returncode == 0 else "Nothing to commit.")
+    print("Start a new session (or /clear) so the new hooks and instructions load.")
+
+
+def _cowriter_note(p):
+    """A Co-writers/ file for a persona dict (the legacy profile block's fields)."""
+    title = f"{p['name']} ({p['short']})" if p["short"] and p["short"] != p["name"] else p["name"]
+    blurb = re.split(r"(?<=[.!?])\s", p["personality"].strip(), maxsplit=1)[0] if p["personality"] else ""
+    ex = []
+    for e in p["examples"]:
+        ex += [f"> **You:** {e['user']}", f"> **{p['short'] or p['name']}:** {e['reply']}", ">"]
+    if ex:
+        ex.pop()
+    moods = ", ".join(p["moods"])
+    return "\n".join([
+        "---", "type: cowriter", f"name: {p['name']}", f"short: {p['short'] or p['name']}", "character:",
+        f"moods: [{moods}]", f"created: {datetime.date.today().isoformat()}", "---",
+        f"# {title}", f"> {blurb}" if blurb else "", "",
+        "## Look", p["look"], "", "## Personality", p["personality"], "", "## Voice", p["voice"], "",
+        "## Taste", p["taste"], "", "## Examples", *ex, ""])
+
+
+CO_WRITER_SECTION = ("## Co-writer\n*Which co-writer a session uses. Each one is a file in `Co-writers/`. `ask` offers the "
+                     "choice at the start of every session, `none` means plain Claude, or name one to load it without asking. "
+                     "Naming one in a message, like `[persona: <name>]`, overrides it for that session.*\n- Default: {default}\n\n")
+
+
+def migrate():
+    """Brings notes made with older versions up to the current formats. Safe to run again. Returns change lines."""
+    done = []
+    notes = all_notes()
+    # Co-writers kept in the profile (one under `## Co-writer`, more under `## Other co-writers`) become files.
+    prof = ROOT / "story-profile.md"
+    if prof.exists() and not any(n.type == "cowriter" for n in notes):
+        legacy = []
+        lines = _legacy_lines()
+        if lines:
+            legacy.append(_persona_from_legacy(lines))
+        other = _profile_section(_profile_text(), "Other co-writers")
+        for m in re.finditer(r"^###\s+(.+?)\s*\n(.*?)(?=^###\s|\Z)", other, flags=re.M | re.S):
+            legacy.append(_persona_from_legacy([l.rstrip() for l in m.group(2).splitlines() if l.strip()]))
+        legacy = [p for p in legacy if p["name"]]
+        if legacy:
+            CO_WRITERS.mkdir(exist_ok=True)
+            for p in legacy:
+                path = CO_WRITERS / f"{p['name']} - Co-writer.md"
+                if not path.exists():
+                    path.write_text(_cowriter_note(p), encoding="utf-8")
+                    done.append(f"co-writer {p['name']} moved from the profile to {path.relative_to(ROOT).as_posix()}")
+            text = prof.read_text(encoding="utf-8")
+            text = re.sub(r"^## Other co-writers\s*\n.*?(?=^##\s|\Z)", "", text, flags=re.M | re.S)
+            new_sec = CO_WRITER_SECTION.format(default=legacy[0]["name"])
+            text = re.sub(r"^## Co-writer\s*\n.*?(?=^##\s|\Z)", lambda _m: new_sec, text, count=1, flags=re.M | re.S)
+            prof.write_text(text, encoding="utf-8")
+            done.append(f"profile's Co-writer section now reads `- Default: {legacy[0]['name']}`")
+    elif prof.exists() and not re.search(r"^-\s*Default:", _profile_section(_profile_text(), "Co-writer"), flags=re.M):
+        text = prof.read_text(encoding="utf-8")
+        sec = CO_WRITER_SECTION.format(default="ask")
+        if re.search(r"^## Co-writer\s*$", text, flags=re.M):
+            text = re.sub(r"^## Co-writer\s*\n.*?(?=^##\s|\Z)", lambda _m: sec, text, count=1, flags=re.M | re.S)
+        else:
+            text = re.sub(r"^(## Style\s*$)", lambda m: sec + m.group(1), text, count=1, flags=re.M) if "## Style" in text else text.rstrip() + "\n\n" + sec
+        prof.write_text(text, encoding="utf-8")
+        done.append("profile gained a Co-writer section (`- Default: ask`)")
+    # `universe` became `world`.
+    for n in notes:
+        if "universe" in n.fm and "world" not in n.fm:
+            text = n.path.read_text(encoding="utf-8")
+            text = re.sub(r"^universe:", "world:", text, count=1, flags=re.M)
+            n.path.write_text(text, encoding="utf-8")
+            done.append(f"{n.rel()}: `universe` renamed to `world`")
+    try:
+        if write_index():
+            done.append("vault app index rebuilt")
+        if write_personas():
+            done.append("co-writer export rebuilt")
+    except Exception as e:
+        done.append(f"index not rebuilt: {e}")
+    return done
+
+
+def cmd_migrate(args):
+    done = migrate()
+    print("Migrate: " + ("; ".join(done) if done else "nothing to change."))
+    if done and not args.no_commit:
+        for line in commit_notes("Migrate: notes to the current formats"):
+            print(line)
 
 
 # ---------- co-writer personas ----------
@@ -1661,6 +1851,14 @@ def main():
     p.add_argument("dir", nargs="?", help="a checkout of the template repo; leave out to only check")
     p.add_argument("--prune", action="store_true", help="remove files the release no longer has (never .git or kept files)")
     p.set_defaults(fn=cmd_release)
+    p = sub.add_parser("update", help="bring this vault's machinery up to the latest template")
+    p.add_argument("--check", action="store_true", help="list what would change, change nothing")
+    p.add_argument("--no-commit", action="store_true")
+    p.add_argument("--source", default=TEMPLATE_URL, help="the template's git URL")
+    p.set_defaults(fn=cmd_update)
+    p = sub.add_parser("migrate", help="bring older notes to the current formats (update runs it)")
+    p.add_argument("--no-commit", action="store_true")
+    p.set_defaults(fn=cmd_migrate)
     p = sub.add_parser("app", help="serve the vault app on this machine")
     p.add_argument("--port", type=int, default=8765)
     p.add_argument("--host", default="127.0.0.1", help="0.0.0.0 to reach it from other devices on your network")

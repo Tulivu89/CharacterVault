@@ -60,3 +60,6 @@ forbid *.md :: nai-v5-images
 forbid *.md :: NovelAI
 forbid ** :: Tulivu89
 forbid ** :: CharacterVault
+
+# Files the template once had and no longer ships; update removes them.
+retired .claude/skills/vault-session/references/persona-example.md

@@ -15,6 +15,7 @@ A Claude Code setup for adult roleplay and fiction, built as an Obsidian vault. 
 - [Images](#images)
 - [How the scope checks work](#how-the-scope-checks-work)
 - [Customizing](#customizing)
+- [Updating](#updating)
 - [Bringing in an existing vault](#bringing-in-an-existing-vault)
 - [Troubleshooting](#troubleshooting)
 
@@ -407,6 +408,10 @@ The quickest way to never be asked: put `age` (and `body_age` or `mind` where th
 - your co-writer persona (`[persona]`).
 
 **Leave as is:** the Scope section of the Story Vault style and the scope check in the session skill. The rest of the system is built to work with them.
+
+## Updating
+
+A vault made from the template doesn't change when the template does. `python3 .claude/scripts/vault.py update` fetches the latest template and replaces the machinery (scripts, hooks, skills, output style, templates, the app and these guides) without touching your notes. It records what it installed in `.claude/release.json`. On the next update, a file that differs from that record counts as your own edit: the update still replaces it, but first saves your copy in `.claude/update-backup/<time>/`. It then runs `vault.py migrate`, which brings older notes to the current formats: a co-writer in the profile becomes a `Co-writers/` file, and `universe` becomes `world`. `update --check` lists the changes without making them. A vault from before updates existed needs the new script once first; [SETUP.md](SETUP.md#updating-a-vault-you-already-have) has the one-line download.
 
 ## Bringing in an existing vault
 
