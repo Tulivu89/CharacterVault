@@ -43,6 +43,13 @@
    "lastBeat": "Not started. Opening: 2:14 a.m., Dennis on his kitchen floor with the PDF, the Sharpie circle and the offering."
   },
   {
+   "name": "The Decree",
+   "status": "active",
+   "mode": "DRAFT",
+   "world": "Hallett College",
+   "lastBeat": ""
+  },
+  {
    "name": "Utility Class",
    "status": "active",
    "mode": "DIRECT",
@@ -791,81 +798,20 @@
   }
  ],
  "active": {
-  "story": "Utility Class",
-  "mode": "DIRECT",
+  "story": "The Decree",
+  "mode": "DRAFT",
   "pov": "third past",
-  "lastBeat": "Day 10, after Hoss. Ilse asks Hale what a 3.5 average takes. Previously: Day 9, 1300. Charlie used her while Chuck watched; Ilse spat Lucan's load and drew a complaint; Hale raised her hips for the dock shift and dodged the brace-bolt question. Vuk Dragan is stepping onto the plinth with Bogdan behind him.",
-  "state": [
-   "Day 9 of Ilse's sentence. **39.2 L remaining.**",
-   "Ilse is on **Tier 0** for 5 days, with 2 L added, for breaking a dockhand's nose. This is day 3 of the 5.",
-   "Ilse is certain she was framed for Shaft Nine and keeps a mental list of names from that night. Hale knows something about Shaft Nine that isn't in her file.",
-   "Hale let slip that the Shaft Nine brace bolts were cut halfway through. The tribunal never mentioned bolts. Pressed, he deflected.",
-   "Day 9 shift so far: 31.6 mL by 1200 (Charlie 3.7; Lucan 0.0, spat). Column still reads 39.2 L.",
-   "Lucan's complaint (*Deliberate Waste of Deposit*) ended in a written warning; Hale called it an allergic response.",
-   "Day 10 (Thursday): Hoss set a Concourse single-deposit record, +438.2 mL. **38.5 L remaining.** Seven-day average 2.4. Hale used the exceptional yield clause to commute Tier 0 day 5: she moves to **Tier 1, Concourse Stand**, on Day 11.",
-   "Hoss is a Thursday regular and uses the Stand too. Porcine Terrans don't use the Shower Block (they have their own wallow deck). Ilse has asked Hale what a 3.5 takes.",
-   "Hale reset the Frame at 1200: hips higher, feet back and wider, \"for tie geometry.\"",
-   "Charlie and Chuck have seen her on the Frame. Chuck tells coworkers she's a second cousin. Charlie rated her 2 stars. The Yield brochure is still in the yoke."
-  ],
+  "lastBeat": "",
+  "state": [],
   "cast": [
    {
-    "name": "Ilse Brandt",
-    "line": "Ilse Brandt (21, human): lead. Corporal, framed for Shaft Nine, Utility Class with 40 L to serve.",
+    "name": "Adeline Baek",
+    "line": "[[Adeline Baek]] (19, human): the backup heir. Under the Act, and under Grandmother's order to keep the line pure.",
     "portrait": null
    },
    {
-    "name": "Imin-Dumu Hale",
-    "line": "Imin-Dumu Hale (41 standard, sapient Vreth agent, human donor): her handler, an Overseer and Utility Compliance Officer. Chipper.",
-    "portrait": null
-   },
-   {
-    "name": "Juno Reyes",
-    "line": "Juno Reyes (27, human): utility, Tier 3 veteran.",
-    "portrait": null
-   },
-   {
-    "name": "Ysolde Varre",
-    "line": "Ysolde Varre (29, sapient Aedling): utility, a fallen aristocrat. Her penal service is inscribed on her inner thighs.",
-    "portrait": null
-   },
-   {
-    "name": "Seren Morvah",
-    "line": "Seren Morvah (31, sapient Aedelvass): utility, undocumented. Her glow gives her away.",
-    "portrait": null
-   },
-   {
-    "name": "Dale Pruitt",
-    "line": "Dale Pruitt (44, human): user, a life-support tech.",
-    "portrait": null
-   },
-   {
-    "name": "Lucan Aurel",
-    "line": "Lucan Aurel (26, sapient Aedling): user, a junior Combine auditor.",
-    "portrait": null
-   },
-   {
-    "name": "Vuk Dragan",
-    "line": "Vuk Dragan (35, sapient Therian canine): user, dock-crew foreman.",
-    "portrait": null
-   },
-   {
-    "name": "Bogdan Kral",
-    "line": "Bogdan Kral (31, sapient Therian canine): user, Vuk's packmate.",
-    "portrait": null
-   },
-   {
-    "name": "Hoss",
-    "line": "Hoss (38, sapient uplifted Terran pig): user, Day 10. Vocal in the porcine Terran language of grunts and oinks, which Ilse doesn't speak.",
-    "portrait": null
-   },
-   {
-    "name": "Charlie Brandt",
-    "line": "Charlie Brandt (28, human): user, Ilse's older brother. Station crew. Teasing asshole; has distanced himself since her conviction.",
-    "portrait": null
-   },
-   {
-    "name": "Chuck Brandt",
-    "line": "Chuck Brandt (50, human): Ilse's father. Station crew, widower. Calls her rebellious; tells coworkers she's no relation.",
+    "name": "Julian Baek",
+    "line": "[[Julian Baek]] (22, human): her brother, the heir who broke. The family orders him to breed good lines.",
     "portrait": null
    }
   ]
