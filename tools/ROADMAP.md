@@ -13,7 +13,8 @@ The shared template (`AmbiguousProphet/CiC-Vault`) gets the machinery and docs, 
 | Index schema 2, `vault.py app`, card thumbnails | Yes | — |
 | Userscript | No, frozen | Stays out of releases. |
 | Image prompt controls | Personal | Your version only, added to the app later. |
-| Release tool (`vault.py release`, leak check) | Not built | Until then, copy by hand and strip the personal sections listed in vault-dev. |
+| Release tool (`vault.py release`, `release.txt`) | Built | Run `vault.py release <template checkout> --prune`, review, commit and push the template. |
+| Layman setup guide (`SETUP.md`) | Yes | Needs on the template repo: *Template repository* ticked, and GitHub Pages on (main, root) for the hosted app link. |
 | Continuity reader | Not built | Design below. |
 
 ## 1. Vault app (replaces the userscript as the main UI)
@@ -48,7 +49,7 @@ A cheap model flags what the main session should keep in front of it, especially
 
 ## 4. Release
 
-`vault.py release <dir>`: copy an allowlist (`release.txt`) to the template, strip sections marked personal (the Images subsection, the `[img]` row, image lines), and fail if any name from `Characters/` appears in the output.
+Built: `vault.py release [<dir>] [--prune]` reads `release.txt` (what ships, what the template keeps, what to strip, forbidden text), refuses when a strip rule matches nothing or a name from this vault appears, writes nothing until every check passes, then runs the template's lint and tests. `tests/test_age_gate.py` now lives here too.
 
 ## 5. Agents
 

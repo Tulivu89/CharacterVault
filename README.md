@@ -2,7 +2,7 @@
 
 A Claude Code setup for adult roleplay and fiction writing, built as an Obsidian vault. Obsidian is the viewer and editor; Claude Code reads and writes the same notes.
 
-**New here? Read [GUIDE.md](GUIDE.md)** for setup, note types, age variants, play controls and troubleshooting.
+**New here? Start with [SETUP.md](SETUP.md)**: a step-by-step setup with no coding needed. [GUIDE.md](GUIDE.md) is the full manual: note types, age variants, play controls and troubleshooting.
 
 ## What's here
 

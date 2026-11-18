@@ -1,0 +1,62 @@
+# What `vault.py release <dir>` copies to the shared template (AmbiguousProphet/CiC-Vault), and what it strips.
+# The release is built in memory and checked; nothing is written unless every check passes.
+#
+#   include <glob>                     ship tracked files that match (** spans folders)
+#   exclude <glob>                     never ship these
+#   keep <glob>                        files the template owns (license, sample vault): never overwritten or pruned
+#   drop-line <file> :: <text>         remove each line containing <text>
+#   drop-section <file> :: <heading>   remove a heading and everything under it, up to the next heading at its level or above
+#   replace <file> :: <old> => <new>   replace text
+#   forbid <glob> :: <text>            fail if <text> appears in a shipped file matching <glob>
+#   allow <name>                       a vault name the leak check may ignore (a false positive)
+#
+# A drop or replace rule that matches nothing fails the release, so the rules can't rot silently.
+# The leak check also fails on any character, co-writer, setting or story name from this vault.
+
+include .claude/settings.json
+include .claude/hooks/*.py
+include .claude/scripts/vault.py
+include .claude/output-styles/story-vault.md
+include .claude/skills/pulp-voice/**
+include .claude/skills/vault-session/**
+include .claude/skills/vault-dev/**
+include .claude/mods/story-vault-ui/**
+exclude .claude/mods/story-vault-ui/.claude-plugin/types/**
+include app/index.html
+include Templates/*.md
+include tests/*.py
+include .gitignore
+include CLAUDE.md
+include GUIDE.md
+include README.md
+include SETUP.md
+include Home.md
+include .nojekyll
+
+keep LICENSE
+keep Characters/**
+keep Settings/**
+keep Stories/**
+keep Style/**
+keep Co-writers/**
+
+# Image setups are personal.
+drop-section .claude/output-styles/story-vault.md :: ### Images
+drop-line .claude/output-styles/story-vault.md :: | `[img]` / `[img: …]` |
+replace .claude/output-styles/story-vault.md :: characters, settings, and image setups that illustrate them. => characters and settings.
+drop-line CLAUDE.md :: - **Images.**
+drop-line CLAUDE.md :: | Prompt note | Legacy/Image Prompt |
+replace CLAUDE.md :: [help], [img] and [persona: off/on] => [help] and [persona: off/on]
+drop-line GUIDE.md :: | Image skill |
+replace GUIDE.md :: what's in and out of scope, image limits, how Claude writes => what's in and out of scope, how Claude writes
+drop-section GUIDE.md :: ## Images
+drop-line GUIDE.md :: - [Images](#images)
+# The userscript is frozen; release notes and the template's own row are for this vault only.
+drop-line README.md :: | `tools/story-vault.user.js` |
+drop-line .claude/skills/vault-dev/SKILL.md :: | Shared template |
+drop-line .claude/skills/vault-dev/SKILL.md :: | Release |
+
+forbid *.md :: nai-v5-images
+forbid *.md :: NovelAI
+forbid ** :: Tulivu89
+forbid ** :: CharacterVault

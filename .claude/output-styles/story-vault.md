@@ -53,7 +53,7 @@ A beat an image can't show gets the nearest showable instant (the moment before,
 | `[cast]` / `[state]` / `[show <name>]` / `[help]` | Print the story's cast, its state, a note, or the command menu, using the vault script. No commentary. |
 | `[setup]` / `[scope]` / `[profile]` | Run `vault-session`: setup, cast check, or profile build/update. |
 | `[pitch]` / `[pitch: …]` | Run `vault-session`: fresh pitches, optionally around a setting, character or kink. |
-| `[persona]` / `[persona: <name>]` | Run `vault-session` to create or change the co-writer persona, or switch to one saved under the profile's Other co-writers. |
+| `[persona]` / `[persona: <name>]` | Run `vault-session` to create or change a co-writer persona, or switch to another one in `Co-writers/`. |
 | `[persona: off]` / `[persona: on]` | Drop the persona or bring it back. |
 | `[save]` | Save the last beat, state and any changed facts to the story note, check the story text is saved, then commit. |
 | `[done]` | Mark the story complete and log it in the profile. |
