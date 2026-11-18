@@ -1028,6 +1028,181 @@ def cmd_app(args):
         pass
 
 
+# ---------- release ----------
+# `release.txt` lists what the shared template gets and what to strip; see its header.
+
+RELEASE_RULES = ROOT / "release.txt"
+TEXT_SUFFIXES = {".md", ".py", ".json", ".js", ".ts", ".tsx", ".html", ".txt", ".css", ".gitignore", ""}
+
+
+def _glob_re(glob):
+    out, i = "", 0
+    while i < len(glob):
+        if glob.startswith("**/", i):
+            out, i = out + "(?:.*/)?", i + 3
+        elif glob.startswith("**", i):
+            out, i = out + ".*", i + 2
+        elif glob[i] == "*":
+            out, i = out + "[^/]*", i + 1
+        elif glob[i] == "?":
+            out, i = out + "[^/]", i + 1
+        else:
+            out, i = out + re.escape(glob[i]), i + 1
+    return re.compile(out + r"\Z")
+
+
+def _release_rules():
+    rules = {"include": [], "exclude": [], "keep": [], "edits": [], "forbid": [], "allow": set()}
+    if not RELEASE_RULES.exists():
+        sys.exit("No release.txt at the vault root.")
+    for n, line in enumerate(RELEASE_RULES.read_text(encoding="utf-8").splitlines(), 1):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        kind, _, rest = line.partition(" ")
+        rest = rest.strip()
+        if kind in ("include", "exclude", "keep"):
+            rules[kind].append(_glob_re(rest))
+        elif kind == "allow":
+            rules["allow"].add(rest)
+        elif kind in ("drop-line", "drop-section", "replace", "forbid"):
+            target, sep, arg = rest.partition(" :: ")
+            if not sep or not arg:
+                sys.exit(f"release.txt:{n}: expected `{kind} <file> :: <text>`")
+            if kind == "forbid":
+                rules["forbid"].append((_glob_re(target.strip()), target.strip(), arg))
+            elif kind == "replace":
+                old, sep2, new = arg.partition(" => ")
+                if not sep2:
+                    sys.exit(f"release.txt:{n}: expected `replace <file> :: <old> => <new>`")
+                rules["edits"].append((n, kind, target.strip(), (old, new)))
+            else:
+                rules["edits"].append((n, kind, target.strip(), arg))
+        else:
+            sys.exit(f"release.txt:{n}: unknown rule `{kind}`")
+    return rules
+
+
+def _drop_section(text, heading):
+    lines = text.split("\n")
+    level = len(heading) - len(heading.lstrip("#"))
+    start = next((i for i, l in enumerate(lines) if l.strip() == heading.strip()), None)
+    if start is None:
+        return text, False
+    end = start + 1
+    while end < len(lines):
+        m = re.match(r"^(#{1,6})\s", lines[end])
+        if m and len(m.group(1)) <= level:
+            break
+        end += 1
+    return "\n".join(lines[:start] + lines[end:]), True
+
+
+def _leak_names(notes):
+    names = set()
+    for n in notes:
+        if n.type in ("character", "setting", "story"):
+            names.add(n.name)
+        if n.type == "cowriter":
+            names.update(x for x in (str(n.fm.get("name") or ""), str(n.fm.get("short") or "")) if x)
+        w = world_of(n.fm)
+        if w and n.type in ("character", "setting", "story", "profile"):
+            names.add(w)
+    return {x.strip() for x in names if len(x.strip()) >= 3}
+
+
+def build_release():
+    """The release as {path: bytes}, the keep patterns, and a list of problems (empty when it may ship)."""
+    rules = _release_rules()
+    tracked = git("ls-files", "-z").stdout.split("\0")
+    tracked += [f for f in ("SETUP.md", "release.txt") if (ROOT / f).exists() and f not in tracked]
+    ship = sorted(f for f in tracked if f and any(g.match(f) for g in rules["include"])
+                  and not any(g.match(f) for g in rules["exclude"]) and (ROOT / f).is_file())
+    files = {f: (ROOT / f).read_bytes() for f in ship}
+    problems = []
+    for n, kind, target, arg in rules["edits"]:
+        if target not in files:
+            problems.append(f"release.txt:{n}: {target} isn't in the release")
+            continue
+        text = files[target].decode("utf-8")
+        if kind == "drop-line":
+            kept = [l for l in text.split("\n") if arg not in l]
+            hit = len(kept) != text.count("\n") + 1
+            text = "\n".join(kept)
+        elif kind == "drop-section":
+            text, hit = _drop_section(text, arg)
+        else:
+            hit = arg[0] in text
+            text = text.replace(arg[0], arg[1])
+        if not hit:
+            problems.append(f"release.txt:{n}: `{kind}` matched nothing in {target}")
+        files[target] = re.sub(r"\n{3,}", "\n\n", text).encode("utf-8")
+    names = sorted(_leak_names(all_notes()) - rules["allow"], key=len, reverse=True)
+    name_re = re.compile(r"(?<![\w-])(" + "|".join(map(re.escape, names)) + r")(?![\w-])") if names else None
+    for f, data in files.items():
+        if Path(f).suffix.lower() not in TEXT_SUFFIXES:
+            continue
+        try:
+            text = data.decode("utf-8")
+        except UnicodeDecodeError:
+            continue
+        for ln, line in enumerate(text.split("\n"), 1):
+            for glob, label, needle in rules["forbid"]:
+                if glob.match(f) and needle in line:
+                    problems.append(f"{f} (released line {ln}): forbidden text `{needle}`, in: {line.strip()[:120]}")
+            m = name_re.search(line) if name_re else None
+            if m:
+                problems.append(f"{f} (released line {ln}): names `{m.group(1)}` from this vault, in: {line.strip()[:120]}"
+                                f" (add `allow {m.group(1)}` to release.txt if it's a false positive)")
+    return files, rules["keep"], problems
+
+
+def cmd_release(args):
+    files, keep, problems = build_release()
+    if problems:
+        print("Release blocked; nothing was written:")
+        for p in problems:
+            print(f"  {p}")
+        sys.exit(1)
+    if not args.dir:
+        print(f"Release checks pass: {len(files)} files. Name a folder to write it: vault.py release <folder>")
+        return
+    out = Path(args.dir).expanduser().resolve()
+    if out == ROOT or ROOT in out.parents:
+        sys.exit("Write the release outside this vault, e.g. to a checkout of the template repo.")
+    out.mkdir(parents=True, exist_ok=True)
+    kept = lambda rel: any(g.match(rel) for g in keep)
+    written = 0
+    for rel, data in files.items():
+        if kept(rel):
+            continue
+        dest = out / rel
+        if dest.exists() and dest.read_bytes() == data:
+            continue
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_bytes(data)
+        written += 1
+    stale = sorted(p.relative_to(out).as_posix() for p in out.rglob("*") if p.is_file()
+                   and ".git" not in p.relative_to(out).parts and p.relative_to(out).as_posix() not in files
+                   and not kept(p.relative_to(out).as_posix()))
+    if stale and args.prune:
+        for rel in stale:
+            (out / rel).unlink()
+        for d in sorted((p for p in out.rglob("*") if p.is_dir() and ".git" not in p.relative_to(out).parts), reverse=True):
+            if not any(d.iterdir()):
+                d.rmdir()
+    print(f"Release: {len(files)} files, {written} changed, in {out}")
+    if stale:
+        print(("Removed" if args.prune else "Not in the release (add --prune to remove)") + ": " + ", ".join(stale))
+    for label, cmd in (("lint", [sys.executable, "-B", str(out / ".claude/scripts/vault.py"), "lint"]),
+                       ("tests", [sys.executable, "-B", "-m", "unittest", "discover", "-q", "tests"])):
+        if label == "tests" and not (out / "tests").is_dir():
+            continue
+        r = subprocess.run(cmd, cwd=out, capture_output=True, text=True, timeout=300)
+        last = (r.stdout + r.stderr).strip().splitlines()
+        print(f"Template {label}: {'pass' if r.returncode == 0 else 'FAIL'} · {last[-1] if last else ''}")
+
+
 # ---------- co-writer personas ----------
 # One file per co-writer in Co-writers/ (type: cowriter). story-profile.md's `## Co-writer` section holds only
 # `- Default: ask | none | <name>`. The hooks keep the session's choice and on/off state; `vault.py persona`
@@ -1482,6 +1657,10 @@ def main():
     p = sub.add_parser("help"); p.set_defaults(fn=cmd_help)
     p = sub.add_parser("thumbs"); p.set_defaults(fn=cmd_thumbs)
     p = sub.add_parser("index"); p.set_defaults(fn=cmd_index)
+    p = sub.add_parser("release", help="check the shared-template release, and write it to a folder")
+    p.add_argument("dir", nargs="?", help="a checkout of the template repo; leave out to only check")
+    p.add_argument("--prune", action="store_true", help="remove files the release no longer has (never .git or kept files)")
+    p.set_defaults(fn=cmd_release)
     p = sub.add_parser("app", help="serve the vault app on this machine")
     p.add_argument("--port", type=int, default=8765)
     p.add_argument("--host", default="127.0.0.1", help="0.0.0.0 to reach it from other devices on your network")

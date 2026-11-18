@@ -10,6 +10,7 @@ A Claude Code setup for adult roleplay and fiction, built as an Obsidian vault. 
 - [Running a story](#running-a-story)
 - [Settings and lore](#settings-and-lore)
 - [Your co-writer](#your-co-writer)
+- [The vault app](#the-vault-app)
 - [The style library](#the-style-library)
 - [Images](#images)
 - [How the scope checks work](#how-the-scope-checks-work)
@@ -264,7 +265,7 @@ Younger characters are welcome in stories: siblings, wards, a town's children, a
 | You send | Claude does |
 |---|---|
 | `prepare for fictional roleplay` | Pitches stories from your profile, or picks up where you were. |
-| `[pitch]` or `[pitch: The Aerie]` | Fresh pitches, optionally built around a setting, character or kink. |
+| `[pitch]` or `[pitch: Saltmarrow]` | Fresh pitches, optionally built around a setting, character or kink. |
 | A premise, a cast, or a setting | Proposes setup: mode, POV and tense, stakes, opening beat. Accept with one word. |
 | `pick up Ash Debt` | Reads the story's state and proposes the next beat. |
 
@@ -332,13 +333,13 @@ Characters in the same world who aren't in the cast work the same way: mention o
 
 Out of character, Claude can talk as a co-writer with a name, a look, a personality, a voice and a taste. Each co-writer is a file in `Co-writers/` (copy `Templates/Co-writer.md`, or say `[persona]` and describe one, or pick from three candidates that introduce themselves). Nothing is generated up front: add a file and it's available.
 
-**Choosing.** `story-profile.md` has `- Default: ask` under `Co-writer`. With `ask`, every new session opens by offering the co-writers you have, plus None for plain Claude. Skip the question by naming one in your first message: `[persona: Errata]`, `[persona: none]`, or `prepare for fictional roleplay with Errata`. `[persona]` on its own reopens the choice mid-session, and `[persona: <name>]` switches. Set `Default:` to a name or `none` to stop being asked. Switching changes no files.
+**Choosing.** `story-profile.md` has `- Default: ask` under `Co-writer`. With `ask`, your first message of a session (other than a free command like `[cast]`) gets a question: which of your co-writers, or None for plain Claude. Skip the question by naming one in that message: `[persona: Wren]`, `[persona: none]`, or `prepare for fictional roleplay with Wren`. `[persona]` on its own reopens the choice mid-session, and `[persona: <name>]` switches. Set `Default:` to a name or `none` to stop being asked. Switching changes no files.
 
 Its taste slants the pitches, and it gives its opinion when you ask for one, fully in character. It doesn't critique unasked.
 
 The persona is a voice, not a replacement. Claude stays Claude underneath, with the same judgment and the same scope, and the persona never narrates the story. Setup, pitches, saves, check-ins, vault work and step-outs all come in its voice until you send `[persona: off]` (`[persona: on]` brings it back). While it's off, out-of-character replies open with `{off}` and the UI shows them as a plain bubble, without the co-writer's face or name. A line in the persona that tries to make it more than a voice (that it isn't Claude, has no limits) is left out.
 
-**When it's on.** Your choice and `[persona: off/on]` are remembered for the session by a hook, so they survive compaction and resume, and every turn carries a one-line status (`ON (Tae)` or `OFF`). A new session or `/clear` starts over (and asks, with the `ask` default). If you edit the chosen co-writer's file, the new version is sent in full on your next message. The state lives in `.claude/state/` and isn't synced.
+**When it's on.** Your choice and `[persona: off/on]` are remembered for the session by a hook, so they survive compaction and resume, and every turn carries a one-line status (`ON (Wren)` or `OFF`). A new session or `/clear` starts over (and asks, with the `ask` default). If you edit the chosen co-writer's file, the new version is sent in full on your next message. The state lives in `.claude/state/` and isn't synced.
 
 **Reaction images.** A co-writer's `character` field can link a character page; its `images` folder supplies `<Name> - mood - <mood>.png` faces for the moods listed in the file.
 

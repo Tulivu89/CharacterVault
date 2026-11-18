@@ -22,6 +22,7 @@ The Story Vault output style leaves out Claude Code's built-in software-engineer
 | Docs | `GUIDE.md`, `README.md` | User-facing. Update them when behavior changes. |
 | Modules | `Modules/<Name>/` | Drop-in settings for other vaults; they defer to the host vault's scope. |
 | Shared template | `AmbiguousProphet/CiC-Vault` (public) | Gets the machinery and docs, never the user's notes, profile or style library. `nai-v5-images`, the output style's Images subsection, the `[img]` row and image lines in `CLAUDE.md` and `GUIDE.md` are personal and stay out. |
+| Release | `release.txt`, `vault.py release` | What the template gets and what's stripped. `vault.py release` checks (rules that match nothing, forbidden text, any name from this vault) and writes nothing unless all pass; `vault.py release <checkout> --prune` writes it into a clone of the template, then runs the template's lint and tests. Add a rule there whenever a personal line lands in a shipped file. |
 
 ## How to work
 
