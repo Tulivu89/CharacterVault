@@ -149,6 +149,13 @@ views:
 - **Cast rules (user):** there are no gay men. Men are straight, or bi at most, and no romance between men is written. No relationship pairs two lesbians. A lesbian with a bi or pan woman, or any other mix of orientations among women, is fine.
 - The visual bible is the Witch Cast handoff (2026-10-20). Before the visual pass: remove `teenage` from Saga's headshot box, the exact Dev body box is recovered from the old gen metadata; build Selam on the Willow kit with the East African overlay.
 
+## Handoff (2026-11-18)
+- **Done:** the setting (v2), 12 character pages with locked names, cast rules, and men's academic dress (draft).
+- **Visual pass, waiting on the user's gens:** a face and body test bench for Adeline, Dev, Cata, Linh, Saga and Selam (new) was delivered in chat 2026-11-18. It's saved as **[[Hallett College - Images - Adult]]**: toned-down face kits, a body template per girl (runway willowy, compact athletic, petite pear, dancer, tall hourglass, slender), settings recovered from the user's old gens' metadata (19 steps, 5.0 guidance, 0.4 rescale), and `incredibly absurdres` cut. Next: the user runs the bench on one locked seed and reports. Then lock each look into a `- Prompt -` note and build the men (Julian, Wes, Gabe, Marcus, Bekele, Ray) and the men's dress.
+- **Selam's look is a proposal:** close-cropped natural coils, the Willow kit with the East African overlay, a slender build.
+- **Alt story:** [[The Decree]] (active, test). Its Rules and Falls sections hold the pitch, and Part 01 holds the first test scene. Both await review.
+- **Known hook quirk:** the Stop hook autosaves any non-bracketed reply as story text once vault-session has run in a session. An image setup posted on a later turn got captured into Utility Class on 2026-11-17 and was reverted. Keep image replies bracketed, or ask vault-dev to make the hook skip them.
+
 ## Changelog
 - v1 (2026-11-17): created from the Witch Cast bible and the cast workshop
 - v2 (2026-11-17): names locked; the protagonist is male and takes Caleb's bed; Julian and Gabe are straight (Julian is drawn to Linh, Gabe likes Cata); cast rules added; character pages linked

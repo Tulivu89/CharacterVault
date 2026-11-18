@@ -47,7 +47,7 @@
    "status": "active",
    "mode": "DRAFT",
    "world": "Hallett College",
-   "lastBeat": ""
+   "lastBeat": "Test scene 1 (Part 01): Adeline and Julian in his North Hall room, Sunday at four. Grandmother calls mid-act; he finishes inside her while she reports her grades. He signs her Register in black pen and leaves the lamp on."
   },
   {
    "name": "Utility Class",
@@ -801,8 +801,11 @@
   "story": "The Decree",
   "mode": "DRAFT",
   "pov": "third past",
-  "lastBeat": "",
-  "state": [],
+  "lastBeat": "Test scene 1 (Part 01): Adeline and Julian in his North Hall room, Sunday at four. Grandmother calls mid-act; he finishes inside her while she reports her grades. He signs her Register in black pen and leaves the lamp on.",
+  "state": [
+   "Test only. Part 01 holds one trial scene (about 1,300 words) for the user to review: voice, dual-track interiority, and his climax in full.",
+   "In the test, Julian is on medication that delays orgasm, Grandmother calls at four on Sundays, and two strangers signed Adeline's sheet that morning (T. Delacroix at 7:10, someone from Oxblood at 12:40)."
+  ],
   "cast": [
    {
     "name": "Adeline Baek",
