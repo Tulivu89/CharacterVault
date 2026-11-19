@@ -38,5 +38,6 @@ An Obsidian vault (`Home.md` is the dashboard); Claude reads and writes the same
 - `show <note> [<note> …] [--canon]`: notes without `base` blocks or template guidance, several per call. `--canon` in play unless the story has `drafts: on`. Refuses an adult file that fails the stage rules.
 - `cast <story>`, `state <story>`, `text <story> --status`, `list [type] [--world W] [--character NAME]`, `seeds`, `lint`, `help`.
 - `thumbs` after adding images; `app` serves the vault app (`app/index.html`) on this machine.
+- `update [--check]` brings the machinery up to the latest template and runs `migrate` (notes to current formats); notes are never replaced. On "update my vault", run it and report what changed and what was backed up.
 
 **Git.** Pull before editing notes. Commit note changes in one call: `vault.py save "<story>"` after [save], otherwise `vault.py commit "<message>"` (`Done: <story>`, `Profile: …`, `Add <note>`, `Style: K-n`). Both lint, commit only the note folders, and push.
