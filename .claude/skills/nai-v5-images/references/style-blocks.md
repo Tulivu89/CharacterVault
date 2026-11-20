@@ -200,6 +200,8 @@ lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifac
 ```
 - Tested settings: Euler (not Ancestral), karras, 23 steps, Guidance 6.0, Rescale 0.1, 832×1216.
 
+**Detail pass ✓ (HAL-04b, 2026-11-20):** img2img **Enhance** on the Painterly v3 gen. Prompt: the gen's scene prose, then the Lacquer · Occult v0 style text, then the lens-splatter line on its own paragraph, then the Lacquer tail. UC: the Lacquer · Occult v0 UC plus `sex toy`. Prompt Guidance 6, Euler, Prompt Guidance Rescale 0.4, with extra steps past the guide's defaults (the count wasn't recorded). The paint keeps the composition, and the pass adds wet skin, specular highlights and fluid detail.
+
 Lacquer · Occult v0 (after the scene prose)
 ```
 horror (theme). High-finish semi-realistic dark occult fantasy art, polished modern digital concept art rendering with a horror film's mood. Smooth airbrushed skin with warm subsurface glow set against cold surroundings, crisp tapered edges, form carried by value and light rather than heavy outline. Hard low-key light carves bodies into sculpted planes, cold rim light knifes along hair, shoulders and thighs. Deep inky blacks pool in corners and swallow edges of frame, shadows bleeding outward like wet black ink. Sharp specular highlights on sweat-slick skin, sheer stockings, wet tile and gold jewelry. Faint haze hangs in light beams, catching drifting motes. Pearl-white skin and rose-gold glints against oxblood red light and deep teal shadow. 
@@ -215,10 +217,10 @@ lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifac
 - Run settings: Euler, karras, 23 steps, Guidance 5.5, Rescale 0.1.
 
 **Work list**
-1. Record the detail-pass recipe (img2img or Enhance strength, steps, which Lacquer text) from the user's next pass.
+1. ~~Record the detail-pass recipe~~ Done 2026-11-20 (Detail pass, below).
 2. Alone: try the dragon-girl lean, `0.5::pinup (style)::, western comics (style)` at the head of the tail with `0.5::colored lineart::`, which held in FB-11.
 3. Cut `horror (theme)` on a locked seed and check it does anything.
-4. Trim the Occult prose (about 230 tokens) until the scene prose fits under the ~400-token warning.
+4. Length isn't the problem (V5 allows 1471 tokens, and HAL-04b's pass ran about 450). Test whether the Occult prose's two lighting sentences do anything alone, on a locked seed.
 
 ## Anime Pinup — v1
 
