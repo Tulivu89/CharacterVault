@@ -60,7 +60,7 @@ On "save that", `[img save]` or similar:
 **Reference files** (in this skill's `references/` folder), in priority order:
 * **General tags:** `tags/core-and-environment.md`, `tags/character-design-and-fashion.md`, `tags/poses-and-explicit.md` (adults only), `tags/furry-taxonomy.md`. Pull tags from these first. Anything not in them and not on the off-file list (§7) becomes prose.
 * **Artists:** `v5-artist-shortlist.md`. Only propose artists from it unless the user names one.
-* **Named style blocks:** `style-blocks.md` (Vivid Pop, Painterly Comic and its theme add-ons, Anime Pinup, Semirealistic). When the user names a block, paste it verbatim; its UC replaces the lean Base UC.
+* **Named style blocks:** `style-blocks.md` (Vivid Pop and Arcane Night, Painterly Comic v2 and its theme add-ons, Painterly Comic v3 · Occult and its vibe sets, the Lacquer semi-real series, Cyber Comic and Occult Noir, Anime Pinup, Semirealistic). When the user names a block, paste it verbatim; its UC replaces the lean Base UC.
 * **UC strings:** `v5-uc-presets.md` (verbatim preset text).
 * **Positioning:** `v5-positioning.md`.
 * **Faces:** `face-kits.md` (structure kits, ethnicity overlays, counter-UCs).
@@ -206,7 +206,8 @@ Tags are precise and add nothing beyond what they name. Prose handles relationsh
 * Plain declarative sentences ending in periods, placed after the tags. Clarity, not literary quality; both flowery and telegraphic prose fail.
 * **Strip articles and pronouns; name the subject each time:** "witch looms over kneeling boy", not "she is looming over him".
 * Say "viewer", never "camera" (a literal camera can appear).
-* **Less is more.** There is a real token ceiling; past it the tail of the prompt is silently ignored, and the tail is where style, year, rating and complexity live. If something keeps getting dropped, shorten the prose before adding emphasis.
+* **Less is more.** There is a real token ceiling; past it the tail of the prompt is silently ignored, and the tail is where style, year, rating and complexity live. V5's counter in the NovelAI UI tops out at 1471 tokens (the user's reading, 2026-11-20), and that counter is the only authority. Vault estimates (words × 1.3) are rough, and the Prompt Forge's 400-token warning is a V4.5-era default, not a V5 limit. Length is still a quality lever, because every word is read. If something keeps getting dropped, shorten the prose before adding emphasis.
+* **Revisit note (2026-11-20).** Until this date the vault held prompts to a false ~400-token cap. Every style block, kit, character box and pose module made before then was trimmed to fit it. When you revisit one, assume it has room to grow, and be more thorough in the prose: lighting, materials, texture, contact and motion. Then test the longer version on a locked seed against the old one.
 * **Nothing is inert.** Every word is read: no labels, scaffolding, boilerplate or stray text. Don't pad with generic "coherent rather than dissolving" sentences.
 * Never wrap narration in quotes; quotes mean rendered text (§18).
 

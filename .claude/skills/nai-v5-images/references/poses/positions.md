@@ -62,6 +62,11 @@ Contact: `Woman's palms flat on wall. Man presses woman's hips back against own 
 Cameras: from side, fully from behind (offset him and name her visible hands and feet), low from behind. → WAL.
 Heavy: `Woman's feet leave floor, held up by man's hips.`
 
+**Standing leg lift** · base `sex from behind, standing sex` · her `leaning forward, arched back, standing on one leg, leg up` · him `standing`
+Contact: `Man stands behind woman, one hand gripping woman's hip, other hand hooked under woman's raised thigh holding it up.` The lifted leg opens the join to a low camera from behind.
+Cameras: from below (worm's eye, the camera beside her lifted leg, not under her), from side. Wants a landscape canvas, `2::dutch angle::`, her body diagonal and face turned back to the lens, and him in frame behind her with his own box. → HAL-04a, HAL-04b (read its "What it needs" list first).
+Heavy: `Man's belly presses into woman's lower back, raised thigh resting on top of man's forearm.`
+
 **Full nelson** (`full nelson` ?) · base `sex from behind` · her `legs up, spread legs` · him `standing` or `sitting`
 Contact: `Man's arms hook under woman's knees and lock behind woman's neck, woman's legs folded up and spread.`
 Cameras: straight-on (front), from below.

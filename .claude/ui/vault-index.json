@@ -79,10 +79,24 @@
   },
   {
    "name": "The Decree",
+   "path": "Stories/The Decree.md",
    "status": "active",
    "mode": "DRAFT",
    "world": "Hallett College",
-   "lastBeat": "Test scene 1 (Part 01): Adeline and Julian in his North Hall room, Sunday at four. Grandmother calls mid-act; he finishes inside her while she reports her grades. He signs her Register in black pen and leaves the lamp on."
+   "rating": "explicit",
+   "lastBeat": "Test scene 1 (Part 01): Adeline and Julian in his North Hall room, Sunday at four. Grandmother calls mid-act; he finishes inside her while she reports her grades. He signs her Register in black pen and leaves the lamp on.",
+   "parts": [
+    {
+     "name": "The Decree - Part 01",
+     "path": "Stories/The Decree/The Decree - Part 01.md",
+     "part": 1,
+     "words": 1429
+    }
+   ],
+   "cast": [
+    "Adeline Baek",
+    "Julian Baek"
+   ]
   },
   {
    "name": "Utility Class",
@@ -304,99 +318,247 @@
   },
   {
    "name": "Adeline Baek",
+   "path": "Characters/Adeline Baek/Adeline Baek.md",
+   "folder": "Characters/Adeline Baek",
    "world": "Hallett College",
    "species": "human",
    "age": "19",
    "hook": "The backup heir of an old Abyssal family, top of every section so nobody can say \"legacy.\"",
-   "portrait": null
+   "portrait": {
+    "image": "Characters/Adeline Baek/images/Adeline Baek - 01.webp",
+    "thumb": "Characters/Adeline Baek/images/.thumbs/Adeline Baek - 01.png",
+    "cells": "Characters/Adeline Baek/images/.thumbs/Adeline Baek - 01.cells",
+    "card": "Characters/Adeline Baek/images/.thumbs/Adeline Baek - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Adeline Baek/images/Adeline Baek - 01.webp",
+     "thumb": "Characters/Adeline Baek/images/.thumbs/Adeline Baek - 01.png",
+     "cells": "Characters/Adeline Baek/images/.thumbs/Adeline Baek - 01.cells",
+     "card": "Characters/Adeline Baek/images/.thumbs/Adeline Baek - 01.card.webp"
+    }
+   ],
+   "adultImages": [
+    {
+     "image": "Characters/Adeline Baek/images/adult/Adeline Baek - HAL-01 Lecture Notes.webp",
+     "thumb": "Characters/Adeline Baek/images/adult/.thumbs/Adeline Baek - HAL-01 Lecture Notes.png",
+     "cells": "Characters/Adeline Baek/images/adult/.thumbs/Adeline Baek - HAL-01 Lecture Notes.cells",
+     "card": "Characters/Adeline Baek/images/adult/.thumbs/Adeline Baek - HAL-01 Lecture Notes.card.webp"
+    }
+   ]
   },
   {
    "name": "Almaz Bekele",
+   "path": "Characters/Almaz Bekele/Almaz Bekele.md",
+   "folder": "Characters/Almaz Bekele",
    "world": "Hallett College",
    "species": "human",
    "age": "48",
    "hook": "The professor whose course drops a third of the first-year class, and who put her daughter in a room with the student she tried to keep out.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Catalina Salgado",
+   "path": "Characters/Catalina Salgado/Catalina Salgado.md",
+   "folder": "Characters/Catalina Salgado",
    "world": "Hallett College",
    "species": "human",
    "age": "18",
    "hook": "The work-study girl in the archive basement whose grandfather's name was cut off the dorm she lives in.",
-   "portrait": null
+   "portrait": {
+    "image": "Characters/Catalina Salgado/images/Catalina Salgado - 01.webp",
+    "thumb": "Characters/Catalina Salgado/images/.thumbs/Catalina Salgado - 01.png",
+    "cells": "Characters/Catalina Salgado/images/.thumbs/Catalina Salgado - 01.cells",
+    "card": "Characters/Catalina Salgado/images/.thumbs/Catalina Salgado - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Catalina Salgado/images/Catalina Salgado - 01.webp",
+     "thumb": "Characters/Catalina Salgado/images/.thumbs/Catalina Salgado - 01.png",
+     "cells": "Characters/Catalina Salgado/images/.thumbs/Catalina Salgado - 01.cells",
+     "card": "Characters/Catalina Salgado/images/.thumbs/Catalina Salgado - 01.card.webp"
+    }
+   ],
+   "adultImages": []
   },
   {
    "name": "Devika Rao",
+   "path": "Characters/Devika Rao/Devika Rao.md",
+   "folder": "Characters/Devika Rao",
    "world": "Hallett College",
    "species": "human",
    "age": "19",
    "hook": "A hurl scholarship with a 2.5 problem, running on black coffee and spite.",
-   "portrait": null
+   "portrait": {
+    "image": "Characters/Devika Rao/images/Devika Rao - 01.webp",
+    "thumb": "Characters/Devika Rao/images/.thumbs/Devika Rao - 01.png",
+    "cells": "Characters/Devika Rao/images/.thumbs/Devika Rao - 01.cells",
+    "card": "Characters/Devika Rao/images/.thumbs/Devika Rao - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Devika Rao/images/Devika Rao - 01.webp",
+     "thumb": "Characters/Devika Rao/images/.thumbs/Devika Rao - 01.png",
+     "cells": "Characters/Devika Rao/images/.thumbs/Devika Rao - 01.cells",
+     "card": "Characters/Devika Rao/images/.thumbs/Devika Rao - 01.card.webp"
+    }
+   ],
+   "adultImages": [
+    {
+     "image": "Characters/Devika Rao/images/adult/Devika Rao - HAL-03 Inside the Circle.webp",
+     "thumb": "Characters/Devika Rao/images/adult/.thumbs/Devika Rao - HAL-03 Inside the Circle.png",
+     "cells": "Characters/Devika Rao/images/adult/.thumbs/Devika Rao - HAL-03 Inside the Circle.cells",
+     "card": "Characters/Devika Rao/images/adult/.thumbs/Devika Rao - HAL-03 Inside the Circle.card.webp"
+    }
+   ]
   },
   {
    "name": "Gabe Thibodeau",
+   "path": "Characters/Gabe Thibodeau/Gabe Thibodeau.md",
+   "folder": "Characters/Gabe Thibodeau",
    "world": "Hallett College",
    "species": "human",
    "age": "19",
    "hook": "The facilities supervisor's son, on tuition remission, who knows the building better than housing does.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Julian Baek",
+   "path": "Characters/Julian Baek/Julian Baek.md",
+   "folder": "Characters/Julian Baek",
    "world": "Hallett College",
    "species": "human",
    "age": "22",
    "hook": "The Baek heir who broke in a practical, came back three years later as a first year, and is the best-liked person in the building.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Linh Tran",
+   "path": "Characters/Linh Tran/Linh Tran.md",
+   "folder": "Characters/Linh Tran",
    "world": "Hallett College",
    "species": "human",
    "age": "18",
    "hook": "A polite girl from a closed hermetic order who treats college as fieldwork and everyone in it as a subject.",
-   "portrait": null
+   "portrait": {
+    "image": "Characters/Linh Tran/images/Linh Tran - 01.webp",
+    "thumb": "Characters/Linh Tran/images/.thumbs/Linh Tran - 01.png",
+    "cells": "Characters/Linh Tran/images/.thumbs/Linh Tran - 01.cells",
+    "card": "Characters/Linh Tran/images/.thumbs/Linh Tran - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Linh Tran/images/Linh Tran - 01.webp",
+     "thumb": "Characters/Linh Tran/images/.thumbs/Linh Tran - 01.png",
+     "cells": "Characters/Linh Tran/images/.thumbs/Linh Tran - 01.cells",
+     "card": "Characters/Linh Tran/images/.thumbs/Linh Tran - 01.card.webp"
+    }
+   ],
+   "adultImages": [
+    {
+     "image": "Characters/Linh Tran/images/adult/Linh Tran - HAL-02 Office Hours.webp",
+     "thumb": "Characters/Linh Tran/images/adult/.thumbs/Linh Tran - HAL-02 Office Hours.png",
+     "cells": "Characters/Linh Tran/images/adult/.thumbs/Linh Tran - HAL-02 Office Hours.cells",
+     "card": "Characters/Linh Tran/images/adult/.thumbs/Linh Tran - HAL-02 Office Hours.card.webp"
+    }
+   ]
   },
   {
    "name": "Marcus Webb",
+   "path": "Characters/Marcus Webb/Marcus Webb.md",
+   "folder": "Characters/Marcus Webb",
    "world": "Hallett College",
    "species": "human",
    "age": "20",
    "hook": "The third-floor RA, tired and decent, whose tuition is paid by reports on his residents.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Ray Thibodeau",
+   "path": "Characters/Ray Thibodeau/Ray Thibodeau.md",
+   "folder": "Characters/Ray Thibodeau",
    "world": "Hallett College",
    "species": "human",
    "age": "52",
    "hook": "North Hall's live-in facilities supervisor for twenty-four years, who keeps the tunnels locked and salt on the sills.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Saga Lindqvist",
+   "path": "Characters/Saga Lindqvist/Saga Lindqvist.md",
+   "folder": "Characters/Saga Lindqvist",
    "world": "Hallett College",
    "species": "human",
    "age": "19",
    "hook": "The reagent heiress whose name is on the stadium: bored, loud, and fixated on the one girl who stopped looking at her.",
-   "portrait": null
+   "portrait": {
+    "image": "Characters/Saga Lindqvist/images/Saga Lindqvist - 01.webp",
+    "thumb": "Characters/Saga Lindqvist/images/.thumbs/Saga Lindqvist - 01.png",
+    "cells": "Characters/Saga Lindqvist/images/.thumbs/Saga Lindqvist - 01.cells",
+    "card": "Characters/Saga Lindqvist/images/.thumbs/Saga Lindqvist - 01.card.webp"
+   },
+   "gallery": [
+    {
+     "image": "Characters/Saga Lindqvist/images/Saga Lindqvist - 01.webp",
+     "thumb": "Characters/Saga Lindqvist/images/.thumbs/Saga Lindqvist - 01.png",
+     "cells": "Characters/Saga Lindqvist/images/.thumbs/Saga Lindqvist - 01.cells",
+     "card": "Characters/Saga Lindqvist/images/.thumbs/Saga Lindqvist - 01.card.webp"
+    }
+   ],
+   "adultImages": [
+    {
+     "image": "Characters/Saga Lindqvist/images/adult/Saga Lindqvist - HAL-04a Leg Lift.webp",
+     "thumb": "Characters/Saga Lindqvist/images/adult/.thumbs/Saga Lindqvist - HAL-04a Leg Lift.png",
+     "cells": "Characters/Saga Lindqvist/images/adult/.thumbs/Saga Lindqvist - HAL-04a Leg Lift.cells",
+     "card": "Characters/Saga Lindqvist/images/adult/.thumbs/Saga Lindqvist - HAL-04a Leg Lift.card.webp"
+    },
+    {
+     "image": "Characters/Saga Lindqvist/images/adult/Saga Lindqvist - HAL-04b Fertilization (Lacquer pass).webp",
+     "thumb": "Characters/Saga Lindqvist/images/adult/.thumbs/Saga Lindqvist - HAL-04b Fertilization (Lacquer pass).png",
+     "cells": "Characters/Saga Lindqvist/images/adult/.thumbs/Saga Lindqvist - HAL-04b Fertilization (Lacquer pass).cells",
+     "card": "Characters/Saga Lindqvist/images/adult/.thumbs/Saga Lindqvist - HAL-04b Fertilization (Lacquer pass).card.webp"
+    },
+    {
+     "image": "Characters/Saga Lindqvist/images/adult/Saga Lindqvist - HAL-04b Fertilization.webp",
+     "thumb": "Characters/Saga Lindqvist/images/adult/.thumbs/Saga Lindqvist - HAL-04b Fertilization.png",
+     "cells": "Characters/Saga Lindqvist/images/adult/.thumbs/Saga Lindqvist - HAL-04b Fertilization.cells",
+     "card": "Characters/Saga Lindqvist/images/adult/.thumbs/Saga Lindqvist - HAL-04b Fertilization.card.webp"
+    }
+   ]
   },
   {
    "name": "Selam Girma",
+   "path": "Characters/Selam Girma/Selam Girma.md",
+   "folder": "Characters/Selam Girma",
    "world": "Hallett College",
    "species": "human",
    "age": "18",
    "hook": "The best student in PRAC 101, whose professor is secretly her mother.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Wes Harlan",
+   "path": "Characters/Wes Harlan/Wes Harlan.md",
+   "folder": "Characters/Wes Harlan",
    "world": "Hallett College",
    "species": "human",
    "age": "19",
    "hook": "Saga's boyfriend since sophomore year, the most normal person on the floor, and the one everyone confides in.",
-   "portrait": null
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
   },
   {
    "name": "Lux",
@@ -1203,6 +1365,7 @@
   },
   {
    "name": "Hallett College",
+   "path": "Settings/Hallett College.md",
    "world": "Hallett College",
    "status": "draft",
    "hook": "A first-year dorm at a magic college on the Maine coast, where everyone is paying for something and the building is older than the school admits."
@@ -1277,7 +1440,12 @@
    {
     "name": "Adeline Baek",
     "line": "[[Adeline Baek]] (19, human): the backup heir. Under the Act, and under Grandmother's order to keep the line pure.",
-    "portrait": null
+    "portrait": {
+     "image": "Characters/Adeline Baek/images/Adeline Baek - 01.webp",
+     "thumb": "Characters/Adeline Baek/images/.thumbs/Adeline Baek - 01.png",
+     "cells": "Characters/Adeline Baek/images/.thumbs/Adeline Baek - 01.cells",
+     "card": "Characters/Adeline Baek/images/.thumbs/Adeline Baek - 01.card.webp"
+    }
    },
    {
     "name": "Julian Baek",
@@ -1359,6 +1527,22 @@
  },
  "notes": [
   {
+   "name": "Adeline Baek",
+   "path": "Characters/Adeline Baek/Adeline Baek.md",
+   "type": "character",
+   "world": "Hallett College",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Almaz Bekele",
+   "path": "Characters/Almaz Bekele/Almaz Bekele.md",
+   "type": "character",
+   "world": "Hallett College",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
    "name": "Aurelio Castellane - Adult",
    "path": "Characters/Aurelio Castellane/Aurelio Castellane - Adult.md",
    "type": "adult",
@@ -1427,6 +1611,14 @@
    "path": "Characters/Cassius Castellane/Cassius Castellane.md",
    "type": "character",
    "world": "Kestrel Reach",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Catalina Salgado",
+   "path": "Characters/Catalina Salgado/Catalina Salgado.md",
+   "type": "character",
+   "world": "Hallett College",
    "rating": "sfw",
    "character": ""
   },
@@ -1543,6 +1735,14 @@
    "character": ""
   },
   {
+   "name": "Devika Rao",
+   "path": "Characters/Devika Rao/Devika Rao.md",
+   "type": "character",
+   "world": "Hallett College",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
    "name": "Dorian Castellane - Adult",
    "path": "Characters/Dorian Castellane/Dorian Castellane - Adult.md",
    "type": "adult",
@@ -1643,6 +1843,14 @@
    "path": "Characters/Escrutia/Escrutia.md",
    "type": "character",
    "world": "",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Gabe Thibodeau",
+   "path": "Characters/Gabe Thibodeau/Gabe Thibodeau.md",
+   "type": "character",
+   "world": "Hallett College",
    "rating": "sfw",
    "character": ""
   },
@@ -1751,6 +1959,14 @@
    "character": ""
   },
   {
+   "name": "Julian Baek",
+   "path": "Characters/Julian Baek/Julian Baek.md",
+   "type": "character",
+   "world": "Hallett College",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
    "name": "Kaelen - Dark Lord Funk",
    "path": "Characters/Kaelen/Kaelen - Dark Lord Funk.md",
    "type": "profile",
@@ -1819,6 +2035,14 @@
    "path": "Characters/Lilibeth/Lilibeth.md",
    "type": "character",
    "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Linh Tran",
+   "path": "Characters/Linh Tran/Linh Tran.md",
+   "type": "character",
+   "world": "Hallett College",
    "rating": "sfw",
    "character": ""
   },
@@ -1915,6 +2139,14 @@
    "path": "Characters/Maeve/Maeve.md",
    "type": "character",
    "world": "Dark Lord Funk",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Marcus Webb",
+   "path": "Characters/Marcus Webb/Marcus Webb.md",
+   "type": "character",
+   "world": "Hallett College",
    "rating": "sfw",
    "character": ""
   },
@@ -2183,6 +2415,14 @@
    "character": ""
   },
   {
+   "name": "Ray Thibodeau",
+   "path": "Characters/Ray Thibodeau/Ray Thibodeau.md",
+   "type": "character",
+   "world": "Hallett College",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
    "name": "Rekka - Volundale",
    "path": "Characters/Rekka/Rekka - Volundale.md",
    "type": "profile",
@@ -2255,6 +2495,14 @@
    "character": ""
   },
   {
+   "name": "Saga Lindqvist",
+   "path": "Characters/Saga Lindqvist/Saga Lindqvist.md",
+   "type": "character",
+   "world": "Hallett College",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
    "name": "Sarith - Volundale",
    "path": "Characters/Sarith/Sarith - Volundale.md",
    "type": "profile",
@@ -2275,6 +2523,14 @@
    "path": "Characters/Sekmawl/Sekmawl.md",
    "type": "character",
    "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Selam Girma",
+   "path": "Characters/Selam Girma/Selam Girma.md",
+   "type": "character",
+   "world": "Hallett College",
    "rating": "sfw",
    "character": ""
   },
@@ -2427,6 +2683,14 @@
    "path": "Characters/Viola/Viola.md",
    "type": "character",
    "world": "Volundale",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Wes Harlan",
+   "path": "Characters/Wes Harlan/Wes Harlan.md",
+   "type": "character",
+   "world": "Hallett College",
    "rating": "sfw",
    "character": ""
   },
@@ -2879,6 +3143,14 @@
    "character": ""
   },
   {
+   "name": "Hallett College",
+   "path": "Settings/Hallett College.md",
+   "type": "setting",
+   "world": "Hallett College",
+   "rating": "suggestive",
+   "character": ""
+  },
+  {
    "name": "House Castellane",
    "path": "Settings/House Castellane.md",
    "type": "setting",
@@ -2943,10 +3215,34 @@
    "character": ""
   },
   {
+   "name": "Hallett College - Images - Adult",
+   "path": "Stories/Images/Hallett College - Images - Adult.md",
+   "type": "images",
+   "world": "Hallett College",
+   "rating": "explicit",
+   "character": ""
+  },
+  {
    "name": "Moved Back Home",
    "path": "Stories/Moved Back Home.md",
    "type": "story",
    "world": "Moved Back Home",
+   "rating": "explicit",
+   "character": ""
+  },
+  {
+   "name": "The Decree",
+   "path": "Stories/The Decree.md",
+   "type": "story",
+   "world": "Hallett College",
+   "rating": "explicit",
+   "character": ""
+  },
+  {
+   "name": "The Decree - Part 01",
+   "path": "Stories/The Decree/The Decree - Part 01.md",
+   "type": "text",
+   "world": "Hallett College",
    "rating": "explicit",
    "character": ""
   },
@@ -2972,6 +3268,17 @@
   "vigga - 01.png": "Characters/Vigga/images/Vigga - 01.png",
   "vigga - 02.png": "Characters/Vigga/images/Vigga - 02.png",
   "yumiko - 01.png": "Characters/Yumiko/images/Yumiko - 01.png",
+  "adeline baek - 01.webp": "Characters/Adeline Baek/images/Adeline Baek - 01.webp",
+  "adeline baek - hal-01 lecture notes.webp": "Characters/Adeline Baek/images/adult/Adeline Baek - HAL-01 Lecture Notes.webp",
+  "catalina salgado - 01.webp": "Characters/Catalina Salgado/images/Catalina Salgado - 01.webp",
+  "devika rao - 01.webp": "Characters/Devika Rao/images/Devika Rao - 01.webp",
+  "devika rao - hal-03 inside the circle.webp": "Characters/Devika Rao/images/adult/Devika Rao - HAL-03 Inside the Circle.webp",
+  "linh tran - 01.webp": "Characters/Linh Tran/images/Linh Tran - 01.webp",
+  "linh tran - hal-02 office hours.webp": "Characters/Linh Tran/images/adult/Linh Tran - HAL-02 Office Hours.webp",
+  "saga lindqvist - 01.webp": "Characters/Saga Lindqvist/images/Saga Lindqvist - 01.webp",
+  "saga lindqvist - hal-04a leg lift.webp": "Characters/Saga Lindqvist/images/adult/Saga Lindqvist - HAL-04a Leg Lift.webp",
+  "saga lindqvist - hal-04b fertilization (lacquer pass).webp": "Characters/Saga Lindqvist/images/adult/Saga Lindqvist - HAL-04b Fertilization (Lacquer pass).webp",
+  "saga lindqvist - hal-04b fertilization.webp": "Characters/Saga Lindqvist/images/adult/Saga Lindqvist - HAL-04b Fertilization.webp",
   "errata - 01.png": "Characters/Errata/images/Errata - 01.png",
   "errata - full.png": "Characters/Errata/images/Errata - Full.png",
   "quality.png": "Characters/Qiulong/images/Quality.png",
