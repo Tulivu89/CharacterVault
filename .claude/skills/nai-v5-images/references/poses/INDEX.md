@@ -28,6 +28,7 @@ What the user gets is paste-ready. Before delivering any module:
 ## Status
 
 `○ untested` · `△ tried` (ran but didn't hold; Results says what broke and the next try) · `✓ tested` (held at least once; Results line says how) · `★ favorite` (the user's pick: keep its wording and don't retune it unasked).
+Every module made before 2026-11-20 was written under a false ~400-token cap. When you rerun or adapt one, consider fuller prose for contact, motion and light (`SKILL.md`, Less is more).
 When the user reports a result, update the module's status and add a line under its tag line: `Results: <date> ✓ seed <n>, <what held or broke>`. When the user says to save a setup as a pose: add it to the set it fits (or a new `sets/<name>.md` with a new 3-letter prefix) as ○, kits turned into markers, plus its row here and its grid cells. Commit as `Dev: poses — <change>`.
 
 ---

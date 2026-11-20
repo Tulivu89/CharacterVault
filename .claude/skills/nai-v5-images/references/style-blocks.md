@@ -22,6 +22,7 @@ Snapshot of the "Style Block Library" doc (master copy: https://claude.ai/artifa
 - Base Prompt order: subject → scene → camera → state → prose → style base → theme add-on (Painterly only) → tail. Vivid Pop and Anime Pinup carry their own year/quality tail; Painterly ends with `year 2026, rating:general, high complexity`.
 - The block's UC replaces the lean Base UC. Quality Tags toggle off, UC Preset None.
 - Changing a block: lock a seed, change one thing, keep it only if it helps, bump the version, add a Changelog row.
+- Every block dated before 2026-11-20 was written under a false ~400-token cap (V5 allows 1471; `SKILL.md`, Less is more). When you revisit one, try fuller descriptive prose against the current text on a locked seed.
 
 ## Vivid Pop — v1
 
@@ -200,7 +201,7 @@ lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifac
 ```
 - Tested settings: Euler (not Ancestral), karras, 23 steps, Guidance 6.0, Rescale 0.1, 832×1216.
 
-**Detail pass ✓ (HAL-04b, 2026-11-20):** img2img **Enhance** on the Painterly v3 gen. Prompt: the gen's scene prose, then the Lacquer · Occult v0 style text, then the lens-splatter line on its own paragraph, then the Lacquer tail. UC: the Lacquer · Occult v0 UC plus `sex toy`. Prompt Guidance 6, Euler, Prompt Guidance Rescale 0.4, with extra steps past the guide's defaults (the count wasn't recorded). The paint keeps the composition, and the pass adds wet skin, specular highlights and fluid detail.
+**Detail pass (HAL-04b ✓):** img2img Enhance over a Painterly v3 gen, with a Lacquer style text applied on top. Enhance weights and extra steps vary with the style added and the source image, so the block records no fixed recipe.
 
 Lacquer · Occult v0 (after the scene prose)
 ```
@@ -217,10 +218,9 @@ lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifac
 - Run settings: Euler, karras, 23 steps, Guidance 5.5, Rescale 0.1.
 
 **Work list**
-1. ~~Record the detail-pass recipe~~ Done 2026-11-20 (Detail pass, below).
-2. Alone: try the dragon-girl lean, `0.5::pinup (style)::, western comics (style)` at the head of the tail with `0.5::colored lineart::`, which held in FB-11.
-3. Cut `horror (theme)` on a locked seed and check it does anything.
-4. Length isn't the problem (V5 allows 1471 tokens, and HAL-04b's pass ran about 450). Test whether the Occult prose's two lighting sentences do anything alone, on a locked seed.
+1. Alone: try the dragon-girl lean, `0.5::pinup (style)::, western comics (style)` at the head of the tail with `0.5::colored lineart::`, which held in FB-11.
+2. Cut `horror (theme)` on a locked seed and check it does anything.
+3. Length isn't the problem (V5 allows 1471 tokens, and HAL-04b's pass ran about 450). Test whether the Occult prose's two lighting sentences do anything alone, on a locked seed.
 
 ## Anime Pinup — v1
 

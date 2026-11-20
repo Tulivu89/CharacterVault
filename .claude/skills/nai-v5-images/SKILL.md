@@ -207,6 +207,7 @@ Tags are precise and add nothing beyond what they name. Prose handles relationsh
 * **Strip articles and pronouns; name the subject each time:** "witch looms over kneeling boy", not "she is looming over him".
 * Say "viewer", never "camera" (a literal camera can appear).
 * **Less is more.** There is a real token ceiling; past it the tail of the prompt is silently ignored, and the tail is where style, year, rating and complexity live. V5's counter in the NovelAI UI tops out at 1471 tokens (the user's reading, 2026-11-20), and that counter is the only authority. Vault estimates (words × 1.3) are rough, and the Prompt Forge's 400-token warning is a V4.5-era default, not a V5 limit. Length is still a quality lever, because every word is read. If something keeps getting dropped, shorten the prose before adding emphasis.
+* **Revisit note (2026-11-20).** Until this date the vault held prompts to a false ~400-token cap. Every style block, kit, character box and pose module made before then was trimmed to fit it. When you revisit one, assume it has room to grow, and be more thorough in the prose: lighting, materials, texture, contact and motion. Then test the longer version on a locked seed against the old one.
 * **Nothing is inert.** Every word is read: no labels, scaffolding, boilerplate or stray text. Don't pad with generic "coherent rather than dissolving" sentences.
 * Never wrap narration in quotes; quotes mean rendered text (§18).
 

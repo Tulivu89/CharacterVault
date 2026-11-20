@@ -228,7 +228,7 @@ jersey, red shirt, shirt lift. Oxblood red hurl jersey shoved up over chest.
 
 ## HAL-04b — Leg Lift: Fertilization
 `pulse · standing leg lift from behind · motion · fertilization bubble · lens splatter · from below · dutch angle · 1216×832` · ✓ tested
-Results: 2026-11-20 ✓ seed 1709982200. Same settings as HAL-04a. The fertilization bubble rendered cleanly. Motion lines, sweat beads, the breast swing, the cum gushing and the user's lens-splatter line all held. Her hair went more red than rose. A detail pass in the Lacquer style gave the best version (`Saga Lindqvist - HAL-04b Fertilization (Lacquer pass).webp`): Enhance with Lacquer · Occult v0, Prompt Guidance 6, Euler, Prompt Guidance Rescale 0.4 and extra steps (`style-blocks.md`, Lacquer, Detail pass).
+Results: 2026-11-20 ✓ seed 1709982200. Same settings as HAL-04a. The fertilization bubble rendered cleanly. Motion lines, sweat beads, the breast swing, the cum gushing and the user's lens-splatter line all held. Her hair went more red than rose. A detail pass in the Lacquer style gave the best version (`Saga Lindqvist - HAL-04b Fertilization (Lacquer pass).webp`): Enhance with Lacquer · Occult v0 on top (`style-blocks.md`, Lacquer, Detail pass).
 HAL-04a one rung later: he slams in and empties, cum gushes out, sweat flies, her breasts swing, and a speech bubble by her belly shows the egg being fertilized. Cum splashes the lens.
 
 **[UC: Painterly v3]** + `censored, mosaic censoring, sex toy`, without `watermark, signature` (speech bubble)
