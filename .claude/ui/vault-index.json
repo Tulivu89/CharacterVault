@@ -95,7 +95,10 @@
    ],
    "cast": [
     "Adeline Baek",
-    "Julian Baek"
+    "Julian Baek",
+    "Odile Marchand",
+    "Gideon Whitlock",
+    "Devika Rao"
    ]
   },
   {
@@ -427,6 +430,18 @@
    "adultImages": []
   },
   {
+   "name": "Gideon Whitlock",
+   "path": "Characters/Gideon Whitlock/Gideon Whitlock.md",
+   "folder": "Characters/Gideon Whitlock",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "61",
+   "hook": "Chancellor of the Conclave: a soft-spoken statistician who has read the census and decided what women are for.",
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
+  },
+  {
    "name": "Julian Baek",
    "path": "Characters/Julian Baek/Julian Baek.md",
    "folder": "Characters/Julian Baek",
@@ -477,6 +492,18 @@
    "species": "human",
    "age": "20",
    "hook": "The third-floor RA, tired and decent, whose tuition is paid by reports on his residents.",
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
+  },
+  {
+   "name": "Odile Marchand",
+   "path": "Characters/Odile Marchand/Odile Marchand.md",
+   "folder": "Characters/Odile Marchand",
+   "world": "Hallett College",
+   "species": "human",
+   "age": "39",
+   "hook": "Hallett's Wardcraft professor and women's hurl ward coach: warm, unhurried, and on the side of whoever's winning.",
    "portrait": null,
    "gallery": [],
    "adultImages": []
@@ -1451,6 +1478,26 @@
     "name": "Julian Baek",
     "line": "[[Julian Baek]] (22, human): her brother, the heir who broke. The family orders him to breed good lines.",
     "portrait": null
+   },
+   {
+    "name": "Odile Marchand",
+    "line": "[[Odile Marchand]] (39, human): Wardcraft professor and women's hurl ward coach; announces the Act and is under it.",
+    "portrait": null
+   },
+   {
+    "name": "Gideon Whitlock",
+    "line": "[[Gideon Whitlock]] (61, human): Chancellor of the Conclave; the Act is his.",
+    "portrait": null
+   },
+   {
+    "name": "Devika Rao",
+    "line": "[[Devika Rao]] (19, human): the comic's rebel. Refuses, is cited, ends in the stockade, fights back.",
+    "portrait": {
+     "image": "Characters/Devika Rao/images/Devika Rao - 01.webp",
+     "thumb": "Characters/Devika Rao/images/.thumbs/Devika Rao - 01.png",
+     "cells": "Characters/Devika Rao/images/.thumbs/Devika Rao - 01.cells",
+     "card": "Characters/Devika Rao/images/.thumbs/Devika Rao - 01.card.webp"
+    }
    }
   ]
  },
@@ -1855,6 +1902,14 @@
    "character": ""
   },
   {
+   "name": "Gideon Whitlock",
+   "path": "Characters/Gideon Whitlock/Gideon Whitlock.md",
+   "type": "character",
+   "world": "Hallett College",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
    "name": "Gildra - Adult",
    "path": "Characters/Gildra/Gildra - Adult.md",
    "type": "adult",
@@ -2227,6 +2282,14 @@
    "path": "Characters/Nova/Nova.md",
    "type": "character",
    "world": "HOG Wild",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Odile Marchand",
+   "path": "Characters/Odile Marchand/Odile Marchand.md",
+   "type": "character",
+   "world": "Hallett College",
    "rating": "sfw",
    "character": ""
   },
