@@ -72,7 +72,19 @@ An inset sentence goes in base prose after the act; `cross-section` ✓ and `x-r
 - Throat: `Cross-section inset shows penis down woman's throat, neck bulging.`
 - Knot (anthro canine): `Cross-section inset shows swollen knot locked inside pussy, cum flooding womb.` (+ `knotting` ✓)
 - Bulge from outside instead of an inset: `stomach bulge` ✓ + `Outline of penis pushes up under woman's navel.` Strong with size difference.
+- **Speech-bubble view (✓ HAL-04b, ref 17), the most reliable internal view in a medium or wide shot:** base `fertilization, sperm cell, ovum, speech bubble` + `Speech bubble beside woman's belly shows fertilization, sperm swarming egg.` Drop `watermark, signature` from the UC. A corner `cross-section` inset in the same frame rendered as an object (HAL-04, Not working).
 - Close-up inset panel (ref 3, not an x-ray): `Inset panel in upper right corner shows close-up of joined hips, cum spilling out.` (`inset` ?)
+
+## Motion (✓ HAL-04b)
+
+Impact and fluids that move. Use it on the Hero, His peak and Pulse rungs.
+- **Base:** `motion lines, speed lines`, plus `excessive cum`. Prose: `Thick cum gushes out around shaft and splatters down, sweat flying off both bodies.`
+- **His box:** `afterimage` + `Hips blur with motion.` (motion goes in the mover's box; from ref 17's `hips moving, motion lines, speed lines, afterimage`).
+- **Her box:** `bouncing breasts` + base `Woman's breasts swing hard with impact.`
+- **Lens splatter (the user's line, from below or POV):** a blank line, then `Fluid splatters on viewer lense, view smudged at corner by cum.`, then a blank line before the style.
+- Leave out `motion blur`, which smears the whole frame. If the lines take over, drop `speed lines` first.
+
+---
 
 ## Close-up lines
 

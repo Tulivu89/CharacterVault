@@ -109,6 +109,12 @@ When the user reports a result, update the module's status and add a line under 
 | CLU-05 | Inside the Canal | — | entry | inside view | zero pictured |
 | CLU-06 | Tied | Frame, from behind, anal | tie | full body, side, panel | knot, canine, hologram x-ray, restraints |
 | CLU-07 | Corkscrew Lock | — | tie, pulse | inside view | porcine, cervical lock, zero pictured |
+| **HAL** | *Hallett set, The Decree cast; Painterly v3, Occult Noir, Vivid Pop · Arcane Night* | | | | |
+| HAL-01 ✓ | Lecture Notes | bent over desk | his peak | full body, side | bored, writing, uniform, tally marks |
+| HAL-02 ✓ | Office Hours | solo, sitting on desk | tease | full body, above | stockings, candle, questionable |
+| HAL-03 ✓ | Inside the Circle | mating press, desk | pulse | full body, side | angry sex, ritual circle, socks |
+| HAL-04a ✓ | Leg Lift, Worm's Eye | standing leg lift from behind | rhythm | from below, dutch | worm's eye, stockings |
+| HAL-04b ✓ | Leg Lift: Fertilization | standing leg lift from behind | pulse | from below, dutch | motion, fertilization bubble, lens splatter |
 
 ---
 
@@ -125,18 +131,18 @@ Where each position family has coverage, by rung and angle. **✗** marks a gap 
 | Hero | MIS-10, 12 | ✗ | MIS-11 | ✗ | ✗ |
 | His peak | ✗ | ✗ | ✗ | ✗ | ✗ |
 | Her peak | MIS-14 · LHS-04 | ✗ | ✗ | ✗ | ✗ |
-| Pulse / spill | ✗ | ✗ | ✗ | ✗ | MIS-13 |
+| Pulse / spill | HAL-03 | ✗ | ✗ | ✗ | MIS-13 |
 | After | MIS-15 | ✗ | ✗ | ✗ | ✗ |
 
-**From behind** (doggystyle, bent over, prone, wall)
+**From behind** (doggystyle, bent over, prone, wall, standing leg lift)
 | Rung | Side | Behind / low | Front (her face) | Below | Close-up |
 |---|---|---|---|---|---|
 | Lead-in | WAL-06 | WAL-01, 02 | ✗ | ✗ | ✗ |
-| Rhythm | OFC-04 · WAL-04 · LHS-01 | WAL-03, 05 | ✗ | OFC-09 | OFC-11a · WAL-10a · FB-08a |
+| Rhythm | OFC-04 · WAL-04 · LHS-01 | WAL-03, 05 | ✗ | OFC-09 · HAL-04a | OFC-11a · WAL-10a · FB-08a |
 | Hero | WAL-07 | WAL-08 | ✗ | ✗ | ✗ |
-| His peak | OFC-10 | ✗ | FB-11 | OFC-10 | ✗ |
+| His peak | OFC-10 · HAL-01 | ✗ | FB-11 | OFC-10 | ✗ |
 | Her peak | WAL-09 · FB-03 | ✗ | ✗ | ✗ | ✗ |
-| Pulse | ✗ | FB-10 | ✗ | ✗ | OFC-11b · WAL-10b · FB-08b |
+| Pulse | ✗ | FB-10 | ✗ | HAL-04b | OFC-11b · WAL-10b · FB-08b |
 | Spill | ✗ | FB-02 | ✗ | ✗ | OFC-11c · WAL-10c |
 | After | ✗ | ✗ | ✗ | ✗ | ✗ |
 
@@ -151,7 +157,7 @@ Where each position family has coverage, by rung and angle. **✗** marks a gap 
 
 **Close-ups and internals:** their own grid is in `sets/closeups.md`.
 
-**Outside the act:** tease OFC-01, 02 · LHS-03; lead-in OFC-03; after OFC-07, 08; epilogue OFC-12.
+**Outside the act:** tease OFC-01, 02 · LHS-03 · HAL-02; lead-in OFC-03; after OFC-07, 08; epilogue OFC-12.
 
 **Biggest gaps:** *his peak* outside the from-behind family; *her face from the front* except FB-11; the whole on-top climax; fat-bastard *after* shots (her starfished under his arm, the walk-away) and fat-bastard oral (belly over her forehead).
 
@@ -159,7 +165,7 @@ Where each position family has coverage, by rung and angle. **✗** marks a gap 
 
 ## References
 
-The user's reference images, by what they taught. Metadata was read from NovelAI's alpha-channel info where present. The images themselves aren't stored here.
+The user's reference images, by what they taught. Metadata was read from NovelAI's alpha-channel info where present. Reference images aren't stored here; the user's own gens of vault characters are in each character's `images/adult/` folder.
 
 | Ref | What it shows | Used in | What held |
 |---|---|---|---|
@@ -181,5 +187,11 @@ The user's reference images, by what they taught. Metadata was read from NovelAI
 | ref 14 | Low side macro, huge dark scaled hands gripping her ass, thick shaft in, impact stars | partner hands as framing | a hand can be the contrast cue |
 | ref 15 | Anthro wolf knotted under a woman, tall cross-section panel down the left third (knot locked, womb flooded) | CLU-06; CANINE·KNOT kit | the internal panel takes a third of the canvas |
 | ref 16 | From low behind, heavy testicles hanging over the join, drip running to her anus | CLU-04 | prominent balls in mating press and prone |
+
+| ref 17 | Emilia (Re:Zero) gen, user-supplied V5 prompt: worm's eye, legs held up, fertilization shown in a speech bubble | HAL-04b | `speech bubble` + `fertilization` beats an x-ray inset; motion tags (`hips moving, motion lines, speed lines, afterimage, excessive cum`) in his box; a short prompt |
+| ref 18 | Camera directly beneath, her front to the lens, arms behind head, man hidden but for hands and groin (no metadata) | HAL-04 "Not working" | the straight-under target; unsolved |
+| ref 19 | User's V4.5-era prompt run on V5: latina bent over, very dark man behind, from below, landscape | HAL-04a | "image of standing sex from behind, his hands on her hips, view from below"; a landscape canvas; the man in frame. Seed 1071120446, Euler karras, Guidance 5.0, Rescale 0.1 |
+| ref 20 ✓ | The user's HAL-04a run | HAL-04a | the leg lift, the offset low camera, the diagonal; Painterly v3 · Locker Room |
+| ref 21 ✓ | The user's HAL-04b run, plus a Lacquer detail pass of it | HAL-04b | motion kit, fertilization bubble, the lens-splatter line; Lacquer adds skin and fluid detail over the paint |
 
 Missionary references are in `sets/missionary-castellane.md`, Reference map.

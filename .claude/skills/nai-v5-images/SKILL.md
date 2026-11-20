@@ -60,7 +60,7 @@ On "save that", `[img save]` or similar:
 **Reference files** (in this skill's `references/` folder), in priority order:
 * **General tags:** `tags/core-and-environment.md`, `tags/character-design-and-fashion.md`, `tags/poses-and-explicit.md` (adults only), `tags/furry-taxonomy.md`. Pull tags from these first. Anything not in them and not on the off-file list (§7) becomes prose.
 * **Artists:** `v5-artist-shortlist.md`. Only propose artists from it unless the user names one.
-* **Named style blocks:** `style-blocks.md` (Vivid Pop, Painterly Comic and its theme add-ons, Anime Pinup, Semirealistic). When the user names a block, paste it verbatim; its UC replaces the lean Base UC.
+* **Named style blocks:** `style-blocks.md` (Vivid Pop and Arcane Night, Painterly Comic v2 and its theme add-ons, Painterly Comic v3 · Occult and its vibe sets, the Lacquer semi-real series, Cyber Comic and Occult Noir, Anime Pinup, Semirealistic). When the user names a block, paste it verbatim; its UC replaces the lean Base UC.
 * **UC strings:** `v5-uc-presets.md` (verbatim preset text).
 * **Positioning:** `v5-positioning.md`.
 * **Faces:** `face-kits.md` (structure kits, ethnicity overlays, counter-UCs).
