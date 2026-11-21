@@ -11,6 +11,7 @@ Markers are expanded at delivery (`poses/INDEX.md`, Assembly). Every woman's leg
 - `[STYLE: Painterly v3 · <vibe>]`: Painterly Comic v3, then the named vibe from `style-blocks.md`. Tail `year 2026, rating:<level>, high complexity`.
 - `[STYLE: Occult Noir · <color line>]`: the Cyber Comic · Occult Noir block, then the module's color line, then the tail.
 - `[STYLE: Vivid Pop · Arcane Night]`: the user's block, which carries its own tail.
+- `[STYLE: Painterly v3c · Gilded Classroom]`: Painterly Comic v3 · Occult v2c, then the Gilded Classroom vibe (`style-blocks.md`), then the tail. The Decree comic's classroom look.
 - `[UC: <block>]`: that block's UC, with any edits the module lists.
 
 ## Kits
@@ -104,6 +105,42 @@ boy, tall male, muscular male. Fair skin.
 short hair, messy hair, brown hair, stubble. Short brown hair falls over forehead.
 broad shoulders, defined arms.
 ```
+**ODILE·FULL** (Odile Marchand, 39; level almond eyes, never downturned)
+```
+girl, voluptuous, mature female. Fair skin with warm undertone.
+single hair bun, hair stick, red hair. Deep black-cherry red hair, nearly black in shadow, twisted into loose low chignon, slim black wand pushed through bun as hair stick, loose strands at temples.
+long eyelashes, eyeshadow. Face oval, softly tapered chin, almond-shaped eyes with level outer corners, straight nose with rounded tip.
+green eyes, red lips, lipstick,
+mole under mouth,
+medium breasts,
+Soft rounded belly.
+wide hips, pussy,
+```
+**ODILE UC**
+```
+fat, chubby, plump, obese, large breasts, huge breasts, thick arms,
+tareme, tsurime, petite, freckles, pointed chin, thin lips, smeared lipstick,
+orange hair, pink hair, blonde hair, black hair, brown hair, hair down, dark-skinned female, tan, glasses, wrinkles,
+robe, cloak, necktie, peaked cap, hat, swastika, iron cross, pantyhose, bare legs, green jacket, brown jacket, khaki, panties, nipples, tattoo,
+```
+**ODILE TUNIC·OPEN** (her uniform opened for sex)
+```
+military uniform, military jacket, black jacket, double-breasted, hooded jacket, hood down, open jacket, armband. Black military tunic unbuttoned and spread open, silver runes along collar and cuffs. Oxblood red armband on left upper arm.
+black bra, lace bra, push-up bra. Black lace push-up bra lifting breasts high.
+pencil skirt, black skirt, skirt lift, no panties. Black pencil skirt shoved up around waist.
+black thighhighs, seamed legwear. Sheer black seamed stockings.
+```
+**REG·STUDENT** (an unnamed male student, 20; lean, brown-haired)
+```
+boy, tall male, toned male. Fair skin.
+short hair, messy hair, brown hair. Short brown hair falls over forehead, clean-shaven.
+collarbone, narrow waist. Long lean muscle.
+```
+**REG·STUDENT UC**
+```
+fat, muscular male, large pectorals, beard, mustache, stubble, old man, grey hair, long hair, red hair, dark-skinned male, military uniform, armband, thighhighs, bra, breasts,
+```
+
 **MEN'S DRESS** (men's academic dress, opened)
 ```
 pendant, black jacket, hooded jacket, hood down, open jacket, white shirt, open shirt, black pants, pants down, shoes. Silver pentagram pendant hangs from neck. Black slacks shoved down around thighs.
@@ -257,6 +294,128 @@ jersey, red shirt, shirt lift. Oxblood red hurl jersey shoved up over chest.
 ```
 
 **Motion kit** (also in `layers.md`, Motion): `motion lines, speed lines` in the base, `afterimage` plus "Hips blur with motion" in his box, `bouncing breasts` in hers plus "breasts swing hard with impact", `excessive cum` plus "gushes out around shaft and splatters down, sweat flying off both bodies". Leave `motion blur` out, because it smears the whole frame.
+
+---
+
+## DEM-01 — Show and Tell
+`rhythm · 1216×832` · △
+Results: △ v1 (2026-11-21): reads well, but her hips sat mid-desk. v2 puts them at the edge.
+Rhythm, from side, full body (OFC-06 layout on the oak teacher's desk). She keeps lecturing: propped on one elbow, chalk raised toward the board, eyes on the class (the viewer). He stands at the desk edge with both hands on her hips. One heel dangles from the raised foot. No student desks in frame; the class is implied.
+
+**[UC: Painterly v3 + `school desk, chair`]**
+
+**Base Prompt**
+```
+1girl, 1boy, hetero, sex, vaginal, missionary, exhibitionism, classroom, indoors, chalkboard, window, afternoon, sunlight, detailed background, full body, from side. Woman with dark red hair bun lies back along massive carved gothic oak teacher's desk, head at left end, hips at very edge of right end with ass half off desktop, propped on one elbow, other hand raised holding stick of chalk toward chalkboard. Woman's stockinged legs spread wide around man's waist, one high heel dangling from toes of raised foot. Brown-haired young man stands on floor at right end of desk between woman's thighs, both hands gripping woman's hips, black slacks pushed down to thighs, hips flush against woman. Tall chalkboard behind desk covered in chalk ward diagrams and hexagonal sigils. Tall arched window at left edge. Sweat shines on skin and sheer stockings. [STYLE: Painterly v3c · Gilded Classroom · rating:explicit]
+```
+**Character 1 — Position: x≈0.36 y≈0.55** · UC: ODILE UC
+```
+[ODILE·FULL]
+lying, on back, spread legs, looking at viewer, light smile, open mouth, blush, holding chalk, skindentation,
+[ODILE TUNIC·OPEN minus stockings line]
+black thighhighs, seamed legwear, high heels, shoe dangle. Sheer black seamed stockings. One black high heel dangles from toes of raised foot.
+```
+**Character 2 — Position: x≈0.68 y≈0.36** · UC: REG·STUDENT UC
+```
+[REG·STUDENT]
+standing, looking down, blush, sweat, clenched teeth. Both hands grip woman's hips.
+[MEN'S DRESS minus shoes]
+```
+
+---
+
+## DEM-02 — Front Row Seat
+`hero · 1216×832` · △ (v2 untested)
+Results: △ v1: she propped up and read as sitting; the POV was weak. v2 rebuilt on the user's ref 13 (landscape, lying flat, diagonal).
+Hero, POV rebuilt on your ref 13: landscape canvas, viewer standing at the desk edge looking down, her body lying flat and running diagonally across the desktop, head on the scattered papers at upper right, hips at the edge at bottom left, thighs spread around the viewer. Lying flat instead of propped on elbows, so she can't sit up.
+
+**[UC: Painterly v3 + `school desk, chair`]**
+
+**Base Prompt**
+```
+1girl, 1boy, hetero, sex, vaginal, missionary, pov, pov hands, penis, classroom, indoors, desk, paper, afternoon, sunlight, from above, cowboy shot. View looking down from standing viewer at edge of massive carved gothic oak teacher's desk. Woman lies flat on back across desktop, body running diagonally from lower left to upper right of frame, head and shoulders resting on scattered papers at upper right, face turned up toward viewer. Woman's hips at very edge of desk at lower left, knees bent, stockinged thighs spread wide on either side of viewer. Viewer's hands grip woman's thighs just above dark stocking tops, fingers sinking into soft flesh. Penis enters woman's pussy at bottom edge of frame. One of woman's hands lies flat on desktop beside head, other hand rests on own soft belly. Black military tunic falls open on either side of woman's ribs, black lace bra pushing breasts up, skirt bunched at waist. Gold window light from left falls across desktop and woman's body, far end of desk in teal shade. Sweat shines on skin. [STYLE: Painterly v3c · Gilded Classroom · rating:explicit]
+```
+**Character 1** · UC: ODILE UC + `sitting, kneeling`
+```
+[ODILE·FULL]
+lying, on back, spread legs, looking at viewer, smirk, blush, sweat, bouncing breasts, skindentation,
+[ODILE TUNIC·OPEN minus stockings line]
+black thighhighs, seamed legwear. Sheer black seamed stockings.
+```
+
+---
+
+## DEM-03 — Dangling
+`rhythm (insert) · 1216×832` · ○ untested
+Results: ○ not run yet.
+Insert panel: close-up from the side on her raised calf and foot, the heel hanging off her toes and swinging with each thrust, toes and arch showing through the sheer stocking, the seam up the calf. His hand at the frame edge on her thigh. The room melts into gold and teal blur.
+
+**[UC: Painterly v3 + `school desk, chair`]**
+
+**Base Prompt**
+```
+1girl, 1boy, hetero, sex, classroom, indoors, afternoon, sunlight, blurry background, depth of field, close-up, from side, foot focus. Woman's stockinged calf and foot raised in air beside man's bare hip, black high heel hanging from toes, heel swinging loose. Sheer black stocking shows toes and arch, dark seam running up back of calf. Man's hand grips woman's thigh at left edge of frame. Classroom blurs behind into gold light and teal shadow. Warm gold rim light along calf, ankle and heel. [STYLE: Painterly v3c · Gilded Classroom · rating:explicit]
+```
+**Character 1** · UC: as written
+```
+girl. Fair skin with warm undertone.
+feet, toes, soles, legs up,
+black thighhighs, seamed legwear, see-through legwear, high heels, shoe dangle. Sheer black seamed stockings. Black high heel hangs from toes.
+```
+**Character 1 UC**
+```
+bare legs, barefoot, pantyhose, socks, boots, white thighhighs, extra toes, bad feet,
+```
+
+---
+
+## DEM-04 — Practical Demonstration
+`pulse / her peak · 1216×832` · ✓ tested
+Results: ✓ v1 (2026-11-21): fertilization bubble, cum down the carved desk front, chalk on the floor, dutch angle. v2 changes only her eyes and the desk wording.
+Pulse and her peak together, from side, cowboy shot, dutch angle. He buries in and finishes, head back; she arches across the desk with her head hanging off the edge, the chalk falling from her hand, the heel slipping off. The fertilization speech bubble (the HAL-04b view that works) shows it taking. Motion lines on the thrust.
+
+**[UC: Painterly v3 + `school desk, chair` (no `watermark, signature`: speech bubble)]**
+
+**Base Prompt**
+```
+1girl, 1boy, hetero, sex, vaginal, missionary, internal cumshot, ejaculation, cum overflow, motion lines, fertilization, sperm cell, ovum, speech bubble, classroom, indoors, desk, afternoon, sunlight, cowboy shot, from side, 2::dutch angle::. Woman lies arched across carved gothic oak teacher's desk on left, head thrown back over desk edge, chalk falling from open hand. Brown-haired young man on right buries hips flush against woman, both hands clamping woman's hips, head thrown back. Thick cum gushes out around shaft and drips down front of desk. Woman's raised foot points, high heel slipping off toes. Speech bubble beside woman's belly shows fertilization, sperm swarming egg. Sweat flies off both bodies. [STYLE: Painterly v3c · Gilded Classroom · rating:explicit]
+```
+**Character 1 — Position: x≈0.38 y≈0.55** · UC: ODILE UC
+```
+[ODILE·FULL minus face lines]
+cum in pussy,
+lying, on back, arched back, spread legs, orgasm, female orgasm, head back, open mouth, closed eyes, blush, sweat, trembling, bouncing breasts,
+[ODILE TUNIC·OPEN minus stockings line]
+black thighhighs, seamed legwear, high heels, shoe dangle. Sheer black seamed stockings. High heel slipping off toes.
+```
+**Character 2 — Position: x≈0.68 y≈0.36** · UC: REG·STUDENT UC
+```
+[REG·STUDENT]
+penis, testicles,
+standing, head back, clenched teeth, sweat, blush, afterimage. Both hands clamp woman's hips. Hips blur with motion.
+[MEN'S DRESS minus shoes]
+```
+
+---
+
+## DEM-05 — Any Questions
+`after · 832×1216` · ✓ tested
+Results: ✓ v1 (2026-11-21): the lettered bubble came out clean, the shoe on the floor, the pool in the light. v2 changes only her eyes and the desk wording.
+After, straight-on, full body, solo. He's gone. She sits up on the front edge of the desk, knees apart, cum dripping down the desk front into a small pool, one heel on its side on the floor. She signs the Register on her knee and looks at the class. One text element: the speech bubble.
+
+**[UC: Painterly v3 + `school desk, chair` (no `watermark, signature`: speech bubble)]**
+
+**Base Prompt**
+```
+1girl, solo, after vaginal, cum pool, speech bubble, classroom, indoors, chalkboard, window, afternoon, sunlight, detailed background, full body, straight-on, -1::close-up::, sitting on desk, spread legs, holding clipboard, holding pen, looking at viewer, light smile, blush, sweat. Woman sits on front edge of massive carved gothic oak teacher's desk, knees apart, clipboard balanced on one thigh, pen in other hand signing sheet. Cum drips from woman's pussy down front of desk into small pool on floorboards. One black high heel lies on its side on floor, other still on foot. Tall chalkboard behind covered in chalk ward diagrams and hexagonal sigils. Tall arched window at left. Speech bubble beside woman's head, text that says "Any questions, ladies?" [STYLE: Painterly v3c · Gilded Classroom · rating:explicit]
+```
+**Character 1** · UC: ODILE UC
+```
+[ODILE·FULL]
+cumdrip,
+[ODILE TUNIC·OPEN minus stockings line]
+black thighhighs, seamed legwear, single shoe, high heels. Sheer black seamed stockings. One stockinged foot bare of shoe.
+```
 
 ---
 

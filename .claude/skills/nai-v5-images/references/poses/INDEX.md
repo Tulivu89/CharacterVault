@@ -116,6 +116,11 @@ When the user reports a result, update the module's status and add a line under 
 | HAL-03 ✓ | Inside the Circle | mating press, desk | pulse | full body, side | angry sex, ritual circle, socks |
 | HAL-04a ✓ | Leg Lift, Worm's Eye | standing leg lift from behind | rhythm | from below, dutch | worm's eye, stockings |
 | HAL-04b ✓ | Leg Lift: Fertilization | standing leg lift from behind | pulse | from below, dutch | motion, fertilization bubble, lens splatter |
+| DEM-01 △ | Show and Tell | missionary, desk edge | rhythm | full body, side | teacher, exhibitionism, lecturing, shoe dangle |
+| DEM-02 △ | Front Row Seat | missionary, desk edge | hero | POV, above | teacher, pov hands, stockings |
+| DEM-03 | Dangling | — (insert) | rhythm | close-up, side | foot focus, shoe dangle, stockings |
+| DEM-04 ✓ | Practical Demonstration | missionary, desk edge | pulse, her peak | cowboy, side, dutch | fertilization bubble, motion, cum down desk |
+| DEM-05 ✓ | Any Questions | solo, sitting on desk | after | full body, straight-on | cumdrip, cum pool, speech bubble text, one shoe off |
 
 ---
 

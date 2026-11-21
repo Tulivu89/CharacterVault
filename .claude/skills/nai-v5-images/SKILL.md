@@ -352,16 +352,15 @@ Only add artist tags when the user asks for a style or vibe, names a style block
 **Principle:** every UC entry should answer something you've seen go wrong. Generic "bad image" negation does little, and eye-related negatives can make eyes worse. Grow UC by testing, never by inheriting lists. Plain entries in UC; inversions belong in the prompt as negative emphasis.
 
 ### Base UC (preset None, written explicitly)
-* **Default (lean):** the documented Light string, plus `nsfw` for SFW:
-  `lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifacts, multiple views, very displeasing, too many watermarks, negative space, blank page, nsfw`
-* **Anime polish:** the Human Focus string from `v5-uc-presets.md`, plus `nsfw` for SFW. It imposes a stronger style; don't use it for western or stylized work.
+* **Default (lean):** the documented Light string. No `nsfw` in any UC (the user's preference, 2026-11-21); add it only when a SFW image actually drifts explicit:
+  `lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifacts, multiple views, very displeasing, too many watermarks, negative space, blank page`
+* **Anime polish:** the Human Focus string from `v5-uc-presets.md`. It imposes a stronger style; don't use it for western or stylized work.
 * **Named style block:** the block's own UC replaces both.
 * **Never combine strings, and never set a preset on top of these.**
 * **Adjust:**
   * Comics, reference sheets, multiple views: drop `multiple views`.
   * Rendered text: drop `too many watermarks` (and never add `watermark`, `logo`, `text`).
   * Intentional negative space: drop `negative space, blank page`.
-  * Explicit content: drop `nsfw`.
 * **Targeted additions** (only when the problem appears): `diorama` against the empty white halo; `white outline, character outer glow, aura` against glow; `no text, timestamp` against stray signatures; an offending artist cast color; `<series>` at weight to strip a copyright style.
 
 ### Character UC
@@ -426,7 +425,7 @@ Exclude backstory, lore, thoughts, named emotions, time-sequence words and non-v
 
 **Rating and UC**
 * `rating:explicit` for sex and exposed genitals; `rating:questionable` for nudity and suggestive framing without explicit acts.
-* Base UC: the lean default with `nsfw` removed (or the style block's UC without it). Add nothing else until a problem appears.
+* Base UC: the lean default (or the style block's UC). Add nothing else until a problem appears.
 
 **Tag source:** `tags/poses-and-explicit.md` first, then the general tag files. Same never-invent rule. Pose modules: `poses/INDEX.md` (A5).
 
@@ -498,7 +497,7 @@ Quality Tags toggle: OFF | UC Preset: None
 
 **Base UC**
 ```
-lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifacts, multiple views, very displeasing, too many watermarks, negative space, blank page, nsfw
+lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifacts, multiple views, very displeasing, too many watermarks, negative space, blank page
 ```
 
 **Character 1 — Position: x≈0.30 y≈0.38 (left third, upper body)**
@@ -542,7 +541,7 @@ Notes: Lean UC, no quality tags (clean cel style, no artist mix, so no stabilize
 - [ ] Base UC is one lean string (or the block's UC) adjusted for the image; Character UC has identity guard (+ bleed guard)
 - [ ] Every weight closed with `::`; no digit-before-`::`; emphasis on ≤3 content entries
 - [ ] Unverified artist/character counts flagged with `verify count`
-- [ ] Rating matches content; `nsfw` removed from base UC only when explicit
+- [ ] Rating matches content; no `nsfw` in any UC unless a SFW image drifted explicit
 - [ ] Frame reads as the chosen beat
 - [ ] Each act prefixed in the actor's box; anatomy in its owner's box; contact named in prose
 - [ ] One sex position tag; hidden anatomy dropped
