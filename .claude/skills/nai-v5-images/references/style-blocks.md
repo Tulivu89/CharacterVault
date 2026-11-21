@@ -34,7 +34,7 @@ UC
 ```
 artist:yone kinji, artist:shichimenchou, lowres, adversarial noise, jpeg artifacts, photograph, flat color, worst quality, very displeasing,
 ```
-- Add `rating:general` (or matching rating) before `year 2026`. Append `nsfw` to UC for SFW.
+- Add `rating:general` (or matching rating) before `year 2026`.
 
 ## Vivid Pop · Arcane Night — v1
 
@@ -87,7 +87,7 @@ Golden-hour color: amber, rose and violet, low sunlight raking across forms, war
 ```
 UC
 ```
-1::artist:urushihara satoshi, artist:shirow masamune,::, lowres, worst quality, low quality, bad anatomy, bad hands, jpeg artifacts, watermark, signature, photorealistic, 3d, 2.5d, limited palette, thick lineart, monochrome, greyscale, simple background, halftone, sketch, glossy, shiny, dark, in shadows, multiple views, nsfw
+1::artist:urushihara satoshi, artist:shirow masamune,::, lowres, worst quality, low quality, bad anatomy, bad hands, jpeg artifacts, watermark, signature, photorealistic, 3d, 2.5d, limited palette, thick lineart, monochrome, greyscale, simple background, halftone, sketch, glossy, shiny, dark, in shadows, multiple views
 ```
 - With Dark fantasy or Moonlit, delete `dark, in shadows` from the UC. For transparent-background assets, delete `simple background`.
 
@@ -99,7 +99,7 @@ Base
 ```
 1.5::artist:lesly oh::, 1::artist:aleksandra skiba::, 1.2::artist:emmanuel viola::, 0.9::artist:russell dauterman::, 1::artist:dan mora::, 1.5::painterly, cel shading, colored lineart, western comics (style), oil painting (medium)::, Fantasy illustration blending crisp graphic-novel inking with loose painterly color. Thin elegant ink lines with tapering strokes define forms, while visible brushstrokes texture color fills. Shading falls in clear confident shapes with soft painted edges where light meets shadow.
 ```
-UC (explicit; append `nsfw` for SFW)
+UC
 ```
 1::artist:urushihara satoshi, artist:shirow masamune,::
 
@@ -166,7 +166,7 @@ Iron Door · untested; the steam tunnels
 dark fantasy, high contrast, Low-key color: wet black stone and verdigris green, one failing work light swinging overhead, heavy cast shadows. Rust and verdigris glint on iron pipes, shadows pool like wet black ink, cold sweat shines on skin.
 ```
 
-UC (explicit; append `nsfw` for SFW)
+UC
 ```
 1::artist:urushihara satoshi, artist:shirow masamune,::
 
@@ -234,7 +234,7 @@ UC
 ```
 lowres, artistic error, film grain, scan artifacts, worst quality, bad quality, jpeg artifacts, very displeasing, chromatic aberration, dithering, halftone, screentone, multiple views, logo, too many watermarks, negative space, blank page, @_@, mismatched pupils, glowing eyes, bad anatomy, company name, copyright name, 
 ```
-- Remove `glowing eyes` from UC for characters with glowing eyes or markings. Append `nsfw` for SFW.
+- Remove `glowing eyes` from UC for characters with glowing eyes or markings.
 
 ## Semirealistic mix — v0 (WIP)
 
@@ -259,10 +259,9 @@ Cinematic film still from big-budget fantasy film, shot on full-frame camera wit
 ```
 UC
 ```
-doll, figure, 3d, anime coloring, cel shading, lineart, painterly, lowres, artistic error, worst quality, bad quality, jpeg artifacts, multiple views, very displeasing, artist:sakimichan, nsfw
+doll, figure, 3d, anime coloring, cel shading, lineart, painterly, lowres, artistic error, worst quality, bad quality, jpeg artifacts, multiple views, very displeasing, artist:sakimichan
 ```
 - Character boxes: describe appeal through structure and expression, never "attractive", "soft" or "glow". Leave out `mature female`, `toned` and `collarbone` (they age the face in photo mode), and art-medium words in prose ("drawn", "brushstrokes", "inked").
-- Drop `nsfw` from the UC for explicit setups.
 
 ## Cyber Comic (Style B) — v1
 
@@ -272,7 +271,7 @@ Base
 ```
 chromatic aberration, 1.2::artist:lesly oh::, 1.7::artist:aleksandra skiba::, 1::artist:dan mora::, 0.8::artist:emmanuel viola::, 2::cel shading, colored lineart, western comics (style), clip studio paint (medium)::. -1::sketch::, Sci-fi illustration blending crisp graphic-novel inking with cyberpunk vivid color. Thin elegant ink lines with tapering strokes define forms, while airbrush texture color fills. Shading falls in clear confident shapes with soft brushed edges where light meets shadow.
 ```
-UC (explicit; add `nsfw` for SFW)
+UC
 ```
 artist:urushihara satoshi, artist:shirow masamune, artist:yone kinji, artist:shichimenchou,
 
@@ -293,7 +292,7 @@ Color lines (tested)
 - `Warm candle amber against cold sickly green sigil glow, everything else sinks into black.` (HAL-02)
 - `Hellish red glow from below against cold blue moonlight through tall windows.` (HAL-03)
 
-UC (explicit; append `nsfw` for SFW)
+UC
 ```
 artist:urushihara satoshi, artist:shirow masamune, artist:yone kinji, artist:shichimenchou,
 
@@ -349,6 +348,7 @@ tall female, muscular, fat, inflation, plump, old, pale skin, tanlines, extra ea
 
 | Date | Block | Change |
 | --- | --- | --- |
+| 2026-11-21 | All UCs | No `nsfw` appended to UCs by default (the user's preference) |
 | 2026-11-20 | Painterly Comic v3 · Occult v1 | Added: the user's mix, six vibe sets (Locker Room tested) (vault-only) |
 | 2026-11-20 | Lacquer series | The semireal line named: Tail (Comic lean × Semireal), Cyber v1, Occult v0 WIP (vault-only) |
 | 2026-11-20 | Cyber Comic · Occult Noir v0 | Added from HAL-02 and HAL-03 (vault-only) |
