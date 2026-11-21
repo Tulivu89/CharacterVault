@@ -29,8 +29,8 @@ created: 2026-11-20
 - **Build:** Voluptuous and mature: medium breasts, wide hips, a soft belly when it shows. Not exaggerated.
 - **Skin:** Fair, with a warm undertone.
 - **Hair:** Long, deep black-cherry red (near black in shadow), in a loose low chignon held by her wand.
-- **Eyes:** Green, heavy-lidded and downturned.
-- **Face:** Oval, softly tapered chin, straight nose with a rounded tip, full lips (Siren kit). French.
+- **Eyes:** Green and almond-shaped, with level outer corners. Never downturned (`tareme` stays in her UC).
+- **Face:** Oval, softly tapered chin, straight nose with a rounded tip, full lips. French.
 - **Distinguishing marks:** A small beauty mark below the left corner of her lower lip.
 - **Default outfit:** White collared blouse with the top two buttons open, black high-waist pencil skirt to the knee, the black hooded faculty gown worn open, a small silver pentagram pendant, seamed black stockings and heels. Oxblood lipstick.
 
