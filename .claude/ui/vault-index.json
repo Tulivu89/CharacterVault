@@ -3286,6 +3286,14 @@
    "character": ""
   },
   {
+   "name": "The Decree - Images",
+   "path": "Stories/Images/The Decree - Images.md",
+   "type": "images",
+   "world": "Hallett College",
+   "rating": "general",
+   "character": ""
+  },
+  {
    "name": "Moved Back Home",
    "path": "Stories/Moved Back Home.md",
    "type": "story",

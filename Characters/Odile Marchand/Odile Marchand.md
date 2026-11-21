@@ -32,7 +32,7 @@ created: 2026-11-20
 - **Eyes:** Green and almond-shaped, with level outer corners. Never downturned (`tareme` stays in her UC).
 - **Face:** Oval, softly tapered chin, straight nose with a rounded tip, full lips. French.
 - **Distinguishing marks:** A small beauty mark below the left corner of her lower lip.
-- **Default outfit:** White collared blouse with the top two buttons open, black high-waist pencil skirt to the knee, the black hooded faculty gown worn open, a small silver pentagram pendant, seamed black stockings and heels. Oxblood lipstick.
+- **Default outfit:** The faculty cut of the uniform: a fitted black double-breasted military tunic with silver buttons, the students' hood folded down at the back, silver runes on collar and cuffs, a silver pentagram pin at the throat, an oxblood armband on the left upper arm and a black belt at the waist. Black high-waist pencil skirt to just above the knee, sheer seamed black stockings, black heels. Oxblood lipstick.
 
 ## Personality
 - Warm, amused and patient. She calls her students "ladies" and means it fondly.
