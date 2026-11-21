@@ -10,6 +10,7 @@ Snapshot of the "Style Block Library" doc (master copy: https://claude.ai/artifa
 | Painterly Comic v2 | base + 6 theme add-ons + UC | Stable | Western painterly look that holds faces best; one theme add-on per image |
 | Painterly Comic v2 · Comic lean | base + the v2 add-ons + UC | Tested once (FB-02 ★) | Less paint, more comic line; holds tricky compositions better. Vault-only |
 | Comic lean × Semireal (Lacquer · Tail) | Comic lean base + add-on + semireal tail + UC | Tested once (FB-11 ✓) | Comic line with semireal skin and highlights; flesh and close-ups. Vault-only. Pushes men muscular |
+| Painterly Comic v3 · Occult v2c | base + Gilded Classroom, Lamp Office + v1 UC | Tested ✓ (Decree comic, DEM-04/05) | The Decree comic look; fuller rendering prose. Vault-only |
 | Painterly Comic v3 · Occult v1 | base + 6 vibe sets + UC | Tested (HAL-04a/b ✓, Locker Room vibe) | The user's mix for dark occult Hallett work; the worm's-eye leg lift. Vault-only |
 | Lacquer series | Tail · Cyber v1 · Occult v0 | Tail ✓, Cyber ✓, Occult WIP | Semi-real finish; best as a detail pass over Painterly v3. Vault-only |
 | Vivid Pop · Arcane Night v1 | base + UC | Tested once (HAL-01 ✓) | The user's jewel-dark pinup comic with arcane glow. Vault-only |
@@ -176,6 +177,26 @@ lowres, worst quality, low quality, bad anatomy, bad hands, jpeg artifacts, wate
 - `dark, in shadows` stays out of this UC; every vibe is low-key. `sex toy` answers a corner inset that rendered as an object. Speech bubbles: delete `watermark, signature`.
 - Best finish so far: a detail pass with a Lacquer block (below) over the painterly gen (HAL-04b).
 - Lens splatter and motion lines go in the scene prose and tags (`poses/layers.md`, Motion), not in the style.
+
+## Painterly Comic v3 · Occult — v2c
+
+Vault-only (2026-11-21); the Decree comic's look. Same artists and medium group as v1; the rendering prose is fuller (written after the false cap was lifted). Tested ✓ on Odile and Whitlock (look tests), the Page 1 classroom panels and DEM-04/05. Order: scene prose → base → one vibe → `year 2026, rating:<level>, high complexity`. Settings: Euler, karras, 20 steps, Guidance 5.0, Rescale 0.1, prefer_brownian off.
+
+Base
+```
+1.5::artist:lesly oh::, 1.3::artist:aleksandra skiba::, 1.2::artist:emmanuel viola::, 0.6::artist:russell dauterman::, 0.8::artist:dan mora::, 1.5::painterly, cel shading, colored lineart, western comics (style), oil painting (medium)::, Dark occult fantasy illustration blending crisp graphic-novel inking with loose painterly color. Thin elegant ink lines with tapering strokes define forms, heavier on outer contours and finer inside. Visible brushstrokes texture color fills, dry-brush grain in shadows, smoother blended paint on skin. Shading falls in clear confident shapes with soft painted edges where light meets shadow. Faces drawn with care: clear eyelids, defined lips, structured nose, natural adult proportions. Fabric shows weight and fold, matte wool and crisp cotton.
+```
+Gilded Classroom ✓ (the Wardcraft classroom, K1 v2; keep "desks" out of it, or student desks appear)
+```
+dark fantasy, high contrast, Low-key saturated color: deep black shadows with jewel accents of teal, violet and amber. Low sun rakes through tall arched window from left, laying long gold bars of light across floor and walls, strong warm rim light on hair, shoulder and hip. Dust hangs gold in light beams. Right side of room sinks into cool teal shade.
+```
+Lamp Office ✓ (the Chancellor's office, K4)
+```
+dark fantasy, high contrast, Low-key color: near-black shadows and warm lamp amber. Green-shaded banker's lamp at left lights face and hands from low and to side. Cold blue night light from rain-streaked windows edges hair and shoulders. Shadows pool like wet black ink in corners of room, warm highlights catch gold chain, rings and polished wood.
+```
+UC: the v1 UC. Add `school desk, chair` when only the teacher's desk should appear; drop `watermark, signature` for speech bubbles.
+- Crowds mush unless the prose names a small number of people in set rows with varied hair; otherwise keep them out of frame. Furniture other than one named piece mushes too: composite it (the user's pipeline: NAI cutout on `transparent background`, a room or set-piece plate from another model, then an img2img harmonize).
+- **Lacquer over v2c:** the semi-real candidate (Lacquer · Occult v1, 2026-11-20) isn't good alone yet; it's the detail pass over v2c gens.
 
 ## Lacquer series (semi-real finish) — WIP
 
@@ -348,6 +369,7 @@ tall female, muscular, fat, inflation, plump, old, pale skin, tanlines, extra ea
 
 | Date | Block | Change |
 | --- | --- | --- |
+| 2026-11-21 | Painterly Comic v3 · Occult v2c | Added: fuller rendering prose, Gilded Classroom and Lamp Office vibes ✓; Lacquer confirmed as its detail pass (vault-only) |
 | 2026-11-21 | All UCs | No `nsfw` appended to UCs by default (the user's preference) |
 | 2026-11-20 | Painterly Comic v3 · Occult v1 | Added: the user's mix, six vibe sets (Locker Room tested) (vault-only) |
 | 2026-11-20 | Lacquer series | The semireal line named: Tail (Comic lean × Semireal), Cyber v1, Occult v0 WIP (vault-only) |
