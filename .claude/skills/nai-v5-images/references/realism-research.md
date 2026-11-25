@@ -34,7 +34,7 @@ They're pulled by different levers and fight each other. Pick one per block.
 - Real-person names are out of scope for the vault; the bench doesn't use that lever. That includes cosplayer "artist" tags from Gelbooru (mizuhara arisa, sweetie fox and the like): on photo posts the artist tag is the person photographed, so it summons her face. None of the ten checked are in the forge's Danbooru/e621 vocab either.
 - `real life` is a copyright tag (18.2k): photos and photo-like posts. Test it as a medium anchor beside `photo (medium)`.
 - The bare realism face drifts soft, round and East Asian (the cosplay-photo average). Counter it with a positive ethnicity overlay and a face kit, not with `asian` in UC alone.
-- Age-lowering tags (`teenage`, `teenager`) stay out of suggestive or explicit setups; use the Doll kit with `0.4::mature female::` for a softer adult face.
+- Age-lowering tags (`teenage`, `teenager`) stay out of suggestive or explicit setups; use the Doll kit for a softer adult face.
 
 ## Tag counts (forge vocab, merged Danbooru+e621)
 

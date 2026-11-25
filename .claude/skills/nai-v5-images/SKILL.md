@@ -49,6 +49,16 @@ On "save that", `[img save]` or similar:
 - For an explicit beat, prefer the climactic rungs and vary the angle across a run (`layers.md`, Climax ladder).
 - "Save that pose" and reported results update the library per INDEX (Status). These are skill files, which `vault.py commit` doesn't cover: commit them with git as `Dev: poses — <change>` and push.
 
+## A6. Import PNGs
+
+NovelAI imports settings from a PNG's metadata (drag the file onto the canvas → import settings). With every delivered setup, offer a blank PNG that carries it, or attach them when the user asks:
+
+1. Write the setups to a JSON file in the scratchpad: `name`, `prompt` (Base Prompt), `uc` (Base UC), `chars` (each box's `prompt`, `uc`, `x`, `y`), plus `width`, `height`, `steps`, `scale`, `rescale`, `sampler` (`k_euler_ancestral`), `noise_schedule` (`karras`). Leave `seed` out for a random one.
+2. `python3 .claude/skills/nai-v5-images/scripts/nai_png.py <file.json> --out <scratchpad dir>`. One flat-grey PNG per setup.
+3. Send the PNGs with SendUserFile (`display: attach`). They hold the exact text of the code blocks, so build them from the blocks as delivered.
+
+After import, the user checks that Quality Tags is off and the UC Preset is None, and that character positions are on for multi-character setups.
+
 ---
 
 # PART B — V5 PROMPT RULES (v8)
@@ -228,7 +238,7 @@ Tags are precise and add nothing beyond what they name. Prose handles relationsh
 
 * **Framing sets the crop; it only works if the rest of the prompt supports it.** Name what should be visible at the crop's bottom edge (knees, socks, shoes). `cowboy shot` with only face tags still gives a face.
 * **Framing is not placement.** Where the subject sits in the frame is positioning or prose. Naming the setting (`indoors`, `living room`, `location`) pulls focus off the character.
-* **Balance detail across the image.** Whatever gets the most description gets enlarged: face-heavy slots force close-ups; an over-described prop renders oversized. For a full body, trim face tags, describe garments and ground, use a portrait canvas, add `full body` and `-1::close-up::` (up to `-4::`).
+* **Balance detail across the image.** Whatever gets the most description gets enlarged: face-heavy slots force close-ups; an over-described prop renders oversized. For a full body, keep the face (§11) and balance it instead: describe garments and ground, use a portrait canvas, add `full body` and `-1::close-up::` (up to `-4::`).
 * `depth of field`/`bokeh` suit portraits; they flatten wide scenes.
 * `from below` + `foot focus` + `feet out of frame` overrides pose tags; for a low camera use `from below` alone.
 * `rule of thirds` off-centers the subject. `dutch angle` often needs `2::` to register.
@@ -272,13 +282,13 @@ Order: identity → head-to-toe appearance → (multi-character state) → outfi
 ```
 
 * **Build to the standard** (`character-standard.md`): one slot per line, each line ending in a comma or period, outfits separate. With no prompt note, build the box from the character page in that layout and offer to save it.
-* **Sheet anchors are hard constraints** for the character (the prompt note's fields, A2), but **prompt what the viewer sees:** for a given image, drop anchors the framing or pose hides (eye color with closed eyes, footwear in a cowboy shot, toes inside boots). Tagged hidden features get forced visible. Note what you dropped.
+* **Sheet anchors are hard constraints** for the character (the prompt note's fields, A2), but **prompt what the viewer sees:** for a given image, drop anchors the framing or pose hides (eye color with closed eyes, footwear in a cowboy shot, toes inside boots). Tagged hidden features get forced visible. Note what you dropped. **The face is never trimmed for framing:** a visible face keeps its full kit (tags and both sentences) from close-up to wide shot; it goes only when the face is out of frame, covered or turned away (the user's rule, 2026-11-25).
 * **Outfit comes from the story state** when the beat has one (a torn dress, a borrowed coat, nothing). Otherwise use the sheet's matching `outfit_N`.
 * **Dark skin:** add `dark-skinned female`/`dark-skinned male`; the model drifts light. Untagged tones (fair skin) can be prose.
 * **One color per feature;** repeating a color across unrelated tags bleeds.
 * **Specific tags over generic:** `colored tips`, `animal ear fluff`, `fluffy tail`.
 * **Hairstyles are combinations.** `short hair` alone is unstable; stack shape tags (`parted bangs`, `asymmetrical hair`, `bob cut`). `pixie cut` is weak and steerable; `bowl cut` overrides everything. If no combination works, describe the cut in a sentence.
-* **Faces:** distinct faces come from a coherent feature cluster plus its counter-UC (`face-kits.md`). Age tags are face-shape levers, not ages: `mature female` at `0.4::`–`0.6::` sharpens and lengthens; `teenage` softens.
+* **Faces:** distinct faces come from a coherent feature cluster plus its counter-UC (`face-kits.md`). **Never emit `mature female`,** at any weight, in boxes or UCs (the user's rule, 2026-11-25); strip it from any note or module you paste from. An adult read comes from the face kit's structure. `teenage` softens (`rating:general` only, §1).
 * **Heights:** say it from one side only. Put `tall female`/`tall male` in the taller character's box and leave the other neutral; shrinking the short one gives dwarf proportions. Measurements in cm or feet do nothing. Avoid "standing next to each other" when heights differ.
 * **Kemonomimi:** `extra ears` in that character's UC against a second pair of human ears.
 * **Shared traits must be repeated** in every box that has them.

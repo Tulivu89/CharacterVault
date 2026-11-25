@@ -18,6 +18,7 @@ Snapshot of the "Style Block Library" doc (master copy: https://claude.ai/artifa
 | Cinematic Real v0 | base + UC | WIP | Photographic fantasy film still; artist slot before the tail |
 | Cyber Comic (Style B) v1 | base + UC, color line per image | Vault-only | Cyberpunk comic look of the Castellane missionary set; not in the master doc yet |
 | Cyber Comic · Occult Noir v0 | base + UC, color line per image | Tested (HAL-02, HAL-03 ✓) | Cyber Comic re-lit for candle, sigil and blood-circle horror. Vault-only |
+| Toon Gloss v0 | base + frame add-on + UC | Untested | Western toon pinup: thick dark outlines, flat color, gloss highlights. Vault-only |
 
 - Base Prompt order: subject → scene → camera → state → prose → style base → theme add-on (Painterly only) → tail. Vivid Pop and Anime Pinup carry their own year/quality tail; Painterly ends with `year 2026, rating:general, high complexity`.
 - The block's UC replaces the lean Base UC. Quality Tags toggle off, UC Preset None.
@@ -302,6 +303,27 @@ lowres, worst quality, low quality, bad anatomy, bad hands, jpeg artifacts, wate
 - Tested settings: Euler Ancestral, karras, 23 steps, Guidance 6.3 solo / 5.3 two bodies, Rescale 0.
 - `dark, in shadows` is out of the Cyber Comic UC here, and `washed out colors, overexposed, white haze` come in, because V5 brightens dark scenes.
 
+## Toon Gloss — v0 (untested)
+
+Western cartoon pinup built from the user's reference (2026-11-25): bold, even dark outlines; flat bright fills with one soft shadow tone; glossy white highlights on skin; rounded, simplified anatomy; big expressive grins; a pastel gradient panel inside a white inset border. Settings: Euler Ancestral, karras, 24 steps, Guidance 3.5, Rescale 0. Paste after the scene prose, before the tail (`year 2026, rating:<level>, medium complexity`).
+
+Base
+```
+0.7::artist:tarakanovich::, 0.4::artist:obj shep::, 1.2::toon (style), western comics (style), thick lineart, cel shading::, shiny skin, Clean western cartoon illustration with bold even dark outlines around every form, down to fingers and toes. Flat bright colors with one soft shadow tone per surface and crisp white gloss highlights on shoulders, knees, cheeks and soles. Rounded simplified anatomy with smooth shapes, expressive faces with wide grins and sharp eye shapes. Smooth vector-clean finish.
+```
+Frame add-on (optional; the reference's border. It replaces the background tag in the scene slot)
+```
+gradient background, white border, Pale pastel gradient from mint at top to sky blue at bottom inside thin white inset border, slate-blue margin around border.
+```
+UC
+```
+lowres, artistic error, scan artifacts, worst quality, bad quality, jpeg artifacts, multiple views, very displeasing, too many watermarks, blank page, realistic, 3d, painterly, sketch, anime coloring, blurry, watercolor (medium), oil painting (medium), colored lineart
+```
+- Append `nsfw` to the UC for SFW images. `negative space` stays out because the frame margin is intentional.
+- Untested. Build it on a locked seed: the style tags and sentence alone first, then add tarakanovich, then obj shep; keep each artist only if it moves the image toward the reference.
+- The reference's own artist (`artist:naytlayt`, from the signature) isn't on the shortlist. `verify count` before trying it at `0.5::`.
+- If skin goes plastic or wet, drop `shiny skin` and keep the highlight sentence.
+
 ## Character UC templates
 
 | Character has | Add to that character's UC |
@@ -312,7 +334,6 @@ lowres, worst quality, low quality, bad anatomy, bad hands, jpeg artifacts, wate
 | Pale or white skin | `dark-skinned female, tan` |
 | Grey or colored skin | `pale skin, tan` |
 | Animal ears | `extra ears` |
-| Softer face wanted | `0.4::mature female::` |
 | Sharper face wanted | `0.4::teenage::` |
 | Other characters in frame | their signature hair color, ears, garment |
 
@@ -349,6 +370,7 @@ tall female, muscular, fat, inflation, plump, old, pale skin, tanlines, extra ea
 
 | Date | Block | Change |
 | --- | --- | --- |
+| 2026-11-25 | Toon Gloss v0 | Added from the user's western toon reference (vault-only) |
 | 2026-11-20 | Painterly Comic v3 · Occult v1 | Added: the user's mix, six vibe sets (Locker Room tested) (vault-only) |
 | 2026-11-20 | Lacquer series | The semireal line named: Tail (Comic lean × Semireal), Cyber v1, Occult v0 WIP (vault-only) |
 | 2026-11-20 | Cyber Comic · Occult Noir v0 | Added from HAL-02 and HAL-03 (vault-only) |

@@ -34,7 +34,7 @@ petite, flat chest, small breasts, huge breasts, muscular, fat, dark-skinned fem
 
 **DEV·FULL** (Devika Rao, 19)
 ```
-girl, dark-skinned female, petite, 0.3::mature female::, 0.7::toned, abs::. Warm brown skin.
+girl, dark-skinned female, petite, 0.7::toned, abs::. Warm brown skin.
 short hair, undercut, asymmetrical hair, swept bangs, purple-black hair, colored inner hair. Deep crimson underlayer beneath purple-black hair.
 thick eyebrows, green eyes. South Asian features, heart-shaped face, small firm chin.
 nose piercing. Bandaid across one cheek.

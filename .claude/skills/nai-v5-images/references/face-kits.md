@@ -8,13 +8,13 @@ Distinct faces in V5 come from coherent feature clusters plus a counter-UC, not 
 - Three layers, trimmed by style and framing:
   - Tags: frame tag, eye shape, lashes, makeup, marks. Survive every style.
   - Sentence 1, silhouette: face outline, chin, eye shape and spacing, nose type. Toon keeps this.
-  - Sentence 2, modeling: cheekbones, jaw, brow ridge, lips, eyebrow shape. Semi-real yes, comic partly, toon drop.
+  - Sentence 2, modeling: cheekbones, jaw, brow ridge, lips, eyebrow shape. Semi-real yes, comic partly, toon lightly; keep it in and A/B before cutting it.
 - Box placement: frame/skin tags after `girl`; eye/lash/makeup/mark tags in the face slot; both sentences in the detail slot before the outfit.
-- Framing: portrait/upper body = full kit; cowboy = tags + Sentence 1; full body/wide = tags only, `-1::close-up::` if it crops in.
+- Framing: the full kit (tags and both sentences) at every framing where the face is visible (the user's rule, 2026-11-25). At full body or wide, hold the crop with `-1::close-up::` and garment, legwear and ground detail rather than cutting the face. Drop the kit only when the face is out of frame or turned away.
 - Hair: blunt bangs and sidelocks hide the kit; parted, swept or tied-back hair shows it.
 - Expression reshapes faces; heavy brows read as a frown.
 - Lead artist's face template is the main override: lead to `0.7::` first; counter-UC survives mixes better than the positive side.
-- Age tags are shape levers, not ages (all characters 18+). `mature female` (`0.4::`–`0.6::`) sharpens and lengthens; `teenage` or `aged down` (`0.3::`–`0.5::`) soften and round features a style pushes older. Age-lowering tags only in non-suggestive `rating:general` images, and never in a UC: there they push faces younger (tested 2026-11-11).
+- No `mature female`, at any weight, in any box or UC (the user's rule, 2026-11-25): it aged faces and turned small builds heavy and dwarfish. Strip it from older notes and modules when pasting. An adult read comes from the kit's structure: eye shape, defined cheekbones, makeup. `teenage` or `aged down` (`0.3::`–`0.5::`) soften and round features a style pushes older. Age-lowering tags only in non-suggestive `rating:general` images, and never in a UC: there they push faces younger (tested 2026-11-11).
 - Prose UC entries not confirmed as tags (A/B first if a UC seems inert): `round face`, `chubby cheeks`, `long face`, `sharp cheekbones`, `pointed chin`, `thin lips`, `broad nose`, `double eyelids`, `high nose bridge`, `light skin`.
 - Never `thick lips` (deforms); full lips = `lips` + prose.
 
@@ -24,13 +24,13 @@ Bench hair/outfit shown (`long hair, low ponytail, brown hair, brown eyes`, `gre
 
 Willow (tall, long, angular)
 ```
-girl, tall female, 0.6::mature female::, long hair, low ponytail, brown hair, brown eyes, tsurime, long eyelashes, eyeliner, collarbone. Face long and narrow, pointed chin, almond-shaped eyes, long straight nose. High sharp cheekbones, defined jawline, thin straight eyebrows, narrow lips. grey tank top
+girl, tall female, long hair, low ponytail, brown hair, brown eyes, tsurime, long eyelashes, eyeliner, collarbone. Face long and narrow, pointed chin, almond-shaped eyes, long straight nose. High sharp cheekbones, defined jawline, thin straight eyebrows, narrow lips. grey tank top
 ```
 UC: `tareme, petite, round face, chubby cheeks, button nose, thick eyebrows`
 
-Doll (petite, round, soft) — always keep the mature female anchor
+Doll (petite, round, soft)
 ```
-girl, petite, 0.4::mature female::, small breasts, long hair, low ponytail, brown hair, brown eyes, tareme, long eyelashes, pink lips. Face round and soft, small rounded chin, large round eyes set wide apart, small button nose. Full rounded cheeks, gently arched eyebrows, small full mouth with pronounced cupid's bow. grey tank top
+girl, petite, small breasts, long hair, low ponytail, brown hair, brown eyes, tareme, long eyelashes, pink lips. Face round and soft, small rounded chin, large round eyes set wide apart, small button nose. Full rounded cheeks, gently arched eyebrows, small full mouth with pronounced cupid's bow. grey tank top
 ```
 UC: `tsurime, tall female, long face, sharp cheekbones, pointed chin`
 
@@ -54,7 +54,7 @@ UC: `tareme, petite, long eyelashes, makeup, round face, button nose, furrowed b
 
 Tomboy Vixen (petite, sharp, unmade-up) — v0, untested
 ```
-girl, petite, 0.4::mature female::, toned, medium hair, straight hair, black hair, grey eyes, tsurime. Face heart-shaped, wide cheekbones tapering to small pointed chin, upturned eyes, small straight nose. Straight dark eyebrows, clean angular cheekbones, wide mouth with full lower lip, no makeup. grey tank top
+girl, petite, toned, medium hair, straight hair, black hair, grey eyes, tsurime. Face heart-shaped, wide cheekbones tapering to small pointed chin, upturned eyes, small straight nose. Straight dark eyebrows, clean angular cheekbones, wide mouth with full lower lip, no makeup. grey tank top
 ```
 UC: `tareme, round face, chubby cheeks, button nose, freckles, makeup, eyeliner, eyeshadow, long eyelashes, lipstick, thick eyebrows`
 
@@ -111,7 +111,7 @@ Caricatured result: cut the descriptor to region word + one feature.
 
 Example, Willow + West African:
 ```
-girl, tall female, 0.6::mature female::, dark-skinned female, very dark skin, long hair, low ponytail, curly hair, black hair, dark brown eyes, tsurime, long eyelashes, eyeliner, collarbone. Face long and narrow, pointed chin, almond-shaped eyes. West African features, broad nose, full lips, high sharp cheekbones, defined jawline, thin straight eyebrows. grey tank top
+girl, tall female, dark-skinned female, very dark skin, long hair, low ponytail, curly hair, black hair, dark brown eyes, tsurime, long eyelashes, eyeliner, collarbone. Face long and narrow, pointed chin, almond-shaped eyes. West African features, broad nose, full lips, high sharp cheekbones, defined jawline, thin straight eyebrows. grey tank top
 ```
 UC: `pale skin, straight hair, tareme, petite, round face, chubby cheeks, button nose`
 
@@ -129,10 +129,10 @@ Natural pairings: Willow + East African, Siren + Middle Eastern, Doll + East Asi
 
 | Symptom | Fix |
 | --- | --- |
-| Gaunt, older (Willow) | no hollow cheeks; `mature female` at `0.6::` |
-| Reads too young (Doll) | `0.4::mature female::` in box, never in UC |
+| Gaunt, older (Willow) | no hollow cheeks; soften Sentence 2 (cheekbones, jaw) |
+| Reads too young (Doll) | `tsurime` or eyeliner, defined cheekbones in Sentence 2; never age tags |
 | Scowl, sweat-shine (Ranger) | `furrowed brow, frown, sweat, shiny skin` in UC |
 | Kit vanishes under artists | lead `0.7::`; keep counter-UC; face traits to a `0.3::` sub-artist |
 | Bangs appear on every kit | name a parted/swept style; `blunt bangs` in UC |
-| Close-up forced | drop Sentence 2; `-1::close-up::` |
+| Close-up forced | `-1::close-up::` (up to `-4::`), more garment, legwear and ground detail; keep the face |
 | Two characters share a face | different kits, each with its counter-UC |
