@@ -22,6 +22,10 @@ Heavy: `Man's broad body covers woman from shoulders to knees, only woman's feet
 Contact: `Woman's ankles rest on man's shoulders, man kneeling upright gripping woman's thighs.`
 Heavy: `Woman's calves rest on top of man's belly.`
 
+**Twisted side** (no tag; the user's reference, 2026-11-25) · base `sex` · her `lying, on side, spread legs, leg up` · him `kneeling`
+Contact: `Viewer slightly above floor behind man's hip. Woman's chest on floor at right, torso twisted so hips roll up and crotch faces upper left. Woman's one thigh runs out left under man's hips, knee bent at far left, shin rising to top left. Woman's other knee on floor at bottom center in front of man, shin straight up past man's chest. Man kneels upright between woman's legs, knees wide, soles toward viewer, hips pressed down onto woman's crotch, one hand on woman's head.`
+Avoid: `top-down bottom-up` (V5 folds the woman's knees under her and the pose turns into doggystyle).
+
 **Piledriver** (`piledriver (sex)` ?) · base `sex` · her `upside-down`, `legs up` · him `squatting`
 Contact: `Woman's shoulders on mattress, hips raised overhead, man squatting over woman's upturned ass driving straight down.`
 Cameras: from side, from below.
