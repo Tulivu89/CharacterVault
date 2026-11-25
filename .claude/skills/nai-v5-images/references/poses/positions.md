@@ -36,6 +36,7 @@ Contact: `Man lies flat on woman's back from behind, hips pinning woman's hips i
 Cameras: from side (her squashed face), from behind and below.
 Heavy, the crush: `Man's belly and chest flatten woman into sheets, woman's cheek squashed against mattress, hands clawing sheets beside man's forearm.` → FB-03, FB-11.
 Heavy, the cover from straight behind (★ FB-02): her head out of frame; `Woman's thin arms stretched under man's hips gripping sheets, small bare feet between man's calves, soles toward viewer.`
+Results (Izzy ladder, 2026-11-25): him upright with `head back` from the side came out lanky and lost the size difference. Him `on top`, bent low over her back with a forearm beside her face, in a cowboy crop holds his bulk and drops his feet (FB-03's male pose). A join close-up with `from below` turned into a cowgirl view from underneath; shoot it `from behind` from just behind his knees instead. Deep penetration reads from `deep penetration` plus hips ground flush, with no penis tag.
 
 **Spooning** (`spooning` ?) · base `sex from behind` · her `lying, on side, leg up` · him `lying, on side`
 Contact: `Man curled behind woman, one arm under woman's neck, other hand hooking woman's knee up.`
