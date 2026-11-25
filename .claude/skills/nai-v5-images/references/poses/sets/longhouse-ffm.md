@@ -56,7 +56,7 @@ girl, petite, long hair, wavy hair, messy hair, red hair, green eyes, freckles. 
 ```
 **Character 2 — Position: x≈0.50 y≈0.55 (center, all fours)** · UC: WIFE UC
 ```
-girl, mature female, tall female, broad shoulders, long hair, blonde hair, single braid, freckles. pale ash-blonde hair, fair skin, high cheekbones, strong square jaw, straight nose, pale eyebrows. medium breasts, hanging breasts, nipples, ass, all fours, closed eyes, blush, heavy breathing, target#sex, mutual#french kiss. nude, bead necklace. amber beads swing below throat.
+girl, tall female, broad shoulders, long hair, blonde hair, single braid, freckles. pale ash-blonde hair, fair skin, high cheekbones, strong square jaw, straight nose, pale eyebrows. medium breasts, hanging breasts, nipples, ass, all fours, closed eyes, blush, heavy breathing, target#sex, mutual#french kiss. nude, bead necklace. amber beads swing below throat.
 ```
 **Character 3 — Position: x≈0.75 y≈0.40 (right, kneeling)** · UC: LAD UC
 ```
@@ -81,7 +81,7 @@ girl, petite, long hair, wavy hair, red hair, freckles. freckles dust shoulders,
 ```
 **Character 2 — Position: x≈0.68 y≈0.36 (right, straddling)** · UC: WIFE UC
 ```
-girl, mature female, tall female, broad shoulders, long hair, blonde hair, single braid, freckles. pale ash-blonde hair, fair skin, high cheekbones, strong square jaw, straight nose, pale eyebrows. medium breasts, nipples, straddling, closed eyes, blush, heavy breathing, target#cunnilingus, mutual#french kiss. nude, bead necklace
+girl, tall female, broad shoulders, long hair, blonde hair, single braid, freckles. pale ash-blonde hair, fair skin, high cheekbones, strong square jaw, straight nose, pale eyebrows. medium breasts, nipples, straddling, closed eyes, blush, heavy breathing, target#cunnilingus, mutual#french kiss. nude, bead necklace
 ```
 **Character 3 — Position: x≈0.30 y≈0.38 (left, kneeling)** · UC: LAD UC
 ```
@@ -106,7 +106,7 @@ girl, petite, long hair, wavy hair, messy hair, red hair, green eyes, freckles. 
 ```
 **Character 2 — Position: x≈0.72 y≈0.35 (right, lying)** · UC: WIFE UC
 ```
-girl, mature female, tall female, broad shoulders, long hair, blonde hair, single braid, grey eyes, freckles. pale ash-blonde hair, fair skin, high cheekbones, strong square jaw, straight nose, pale eyebrows. medium breasts, nipples, pussy, lying, on back, spread legs, seductive smile, half-closed eyes, grabbing own breast, masturbation. nude, bead necklace
+girl, tall female, broad shoulders, long hair, blonde hair, single braid, grey eyes, freckles. pale ash-blonde hair, fair skin, high cheekbones, strong square jaw, straight nose, pale eyebrows. medium breasts, nipples, pussy, lying, on back, spread legs, seductive smile, half-closed eyes, grabbing own breast, masturbation. nude, bead necklace
 ```
 
 ---
@@ -127,7 +127,7 @@ girl, petite, long hair, wavy hair, messy hair, red hair, green eyes, freckles. 
 ```
 **Character 2 — Position: x≈0.75 y≈0.45 (right, kneeling)** · UC: WIFE UC
 ```
-girl, mature female, tall female, broad shoulders, long hair, blonde hair, single braid, grey eyes, freckles. pale ash-blonde hair, fair skin, high cheekbones, strong square jaw, straight nose, pale eyebrows. medium breasts, nipples, kneeling, looking down, smile, blush. nude, bead necklace
+girl, tall female, broad shoulders, long hair, blonde hair, single braid, grey eyes, freckles. pale ash-blonde hair, fair skin, high cheekbones, strong square jaw, straight nose, pale eyebrows. medium breasts, nipples, kneeling, looking down, smile, blush. nude, bead necklace
 ```
 **Character 3 — Position: x≈0.42 y≈0.38 (center, on top)** · UC: LAD UC
 ```
@@ -152,7 +152,7 @@ girl, petite, long hair, wavy hair, messy hair, red hair, green eyes, freckles. 
 ```
 **Character 2 — Position: x≈0.50 y≈0.35 (center, riding)** · UC: WIFE UC
 ```
-girl, mature female, tall female, broad shoulders, long hair, blonde hair, single braid, freckles. pale ash-blonde hair, fair skin, high cheekbones, strong square jaw, straight nose, pale eyebrows. medium breasts, bouncing breasts, nipples, straddling, arched back, head back, closed eyes, open mouth, blush, sweat, target#sex. nude, bead necklace
+girl, tall female, broad shoulders, long hair, blonde hair, single braid, freckles. pale ash-blonde hair, fair skin, high cheekbones, strong square jaw, straight nose, pale eyebrows. medium breasts, bouncing breasts, nipples, straddling, arched back, head back, closed eyes, open mouth, blush, sweat, target#sex. nude, bead necklace
 ```
 **Character 3 — Position: x≈0.35 y≈0.70 (left-center, lying)** · UC: LAD UC
 ```

@@ -47,17 +47,17 @@ Aurelio's bedroom: oxblood walls and sheets, a warm amber bedside lamp, rain-str
 
 **SÉRA·FACE** — face-readable shots (her face is a main subject). Tested sheet, outfit removed.
 ```
-girl, petite, 0.4::mature female::, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, frosty ice-blue eyes, tsurime, black eyeliner, thick eyelashes, heart-shaped face, wide cheekbones tapering to small pointed chin, upturned eyes, small upturned nose, fiber-optic hair glowing gold at the tips, three small clear diamond implants along each cheekbone, cool-toned cyberpunk eye makeup, cyan lower lash line, thin smudged teal lower liner, ultraviolet lip liner, glossy pink lips, luminous organic glow,
+girl, petite, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, frosty ice-blue eyes, tsurime, black eyeliner, thick eyelashes, heart-shaped face, wide cheekbones tapering to small pointed chin, upturned eyes, small upturned nose, fiber-optic hair glowing gold at the tips, three small clear diamond implants along each cheekbone, cool-toned cyberpunk eye makeup, cyan lower lash line, thin smudged teal lower liner, ultraviolet lip liner, glossy pink lips, luminous organic glow,
 ```
 
 **SÉRA·SHORT** — two-shots where faces are mid-size. A full face kit in a two-shot forces a close-up.
 ```
-girl, petite, 0.4::mature female::, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, frosty ice-blue eyes, tsurime, black eyeliner, glossy pink lips. Fiber-optic hair glows gold at tips. Three small clear diamond implants along each cheekbone.
+girl, petite, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, frosty ice-blue eyes, tsurime, black eyeliner, glossy pink lips. Fiber-optic hair glows gold at tips. Three small clear diamond implants along each cheekbone.
 ```
 
 **SÉRA·BODY** — face and hair out of frame.
 ```
-girl, petite, 0.4::mature female::,
+girl, petite, 
 ```
 
 **Outfit close:** `nude, black choker` (she keeps the choker on). Drop `black choker` when the neck is out of frame.
@@ -332,7 +332,7 @@ Him kneeling upright, one ankle in each hand, her legs spread high in a V, head 
 
 **Character 1 — Position: x≈0.30 y≈0.62 (left, lying)**
 ```
-girl, petite, 0.4::mature female::, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, tsurime, black eyeliner, glossy pink lips. Fiber-optic hair glows gold at tips. Three small clear diamond implants along each cheekbone. pussy, nipples, on back, legs up, spread legs, target#ankle grab, head back, open mouth, closed eyes, blush, sweat. Thin red strap marks cross tops of both feet. nude, black choker
+girl, petite, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, tsurime, black eyeliner, glossy pink lips. Fiber-optic hair glows gold at tips. Three small clear diamond implants along each cheekbone. pussy, nipples, on back, legs up, spread legs, target#ankle grab, head back, open mouth, closed eyes, blush, sweat. Thin red strap marks cross tops of both feet. nude, black choker
 ```
 Character 1 UC: SÉRA UC
 
@@ -391,7 +391,7 @@ Knees pressed to her chest, soles up beside his head, his weight driving straigh
 
 **Character 1 — Position: x≈0.34 y≈0.60 (left, folded)**
 ```
-girl, petite, 0.4::mature female::, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, glossy pink lips. Fiber-optic hair glows gold at tips. pussy, knees to chest, legs up, soles, mutual#kiss, closed eyes, blush, sweat, heavy breathing. Thin red strap marks cross tops of both feet. nude, black choker
+girl, petite, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, glossy pink lips. Fiber-optic hair glows gold at tips. pussy, knees to chest, legs up, soles, mutual#kiss, closed eyes, blush, sweat, heavy breathing. Thin red strap marks cross tops of both feet. nude, black choker
 ```
 Character 1 UC: SÉRA UC
 
@@ -454,7 +454,7 @@ Hard strokes shove her up the bed, pillow knocked askew, her heels skidding on t
 
 **Character 1 — Position: x≈0.32 y≈0.55 (left, lying)**
 ```
-girl, petite, 0.4::mature female::, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, tsurime, black eyeliner, glossy pink lips. Fiber-optic hair glows gold at tips. Three small clear diamond implants along each cheekbone. nipples, on back, spread legs, bouncing breasts, head back, open mouth, smile, closed eyes, blush, sweat. nude, black choker
+girl, petite, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, tsurime, black eyeliner, glossy pink lips. Fiber-optic hair glows gold at tips. Three small clear diamond implants along each cheekbone. nipples, on back, spread legs, bouncing breasts, head back, open mouth, smile, closed eyes, blush, sweat. nude, black choker
 ```
 Character 1 UC: SÉRA UC
 
@@ -522,7 +522,7 @@ Her orgasm in side profile. His face buried in her glowing hair, hips ground dee
 
 **Character 1 — Position: x≈0.36 y≈0.55 (left, arched)**
 ```
-girl, petite, 0.4::mature female::, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, glossy pink lips. Fiber-optic hair glows gold at tips. Three small clear diamond implants along each cheekbone. nipples, on back, arched back, leg lock, crossed ankles, head back, open mouth, closed eyes, tears, trembling, blush, sweat. nude, black choker
+girl, petite, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, glossy pink lips. Fiber-optic hair glows gold at tips. Three small clear diamond implants along each cheekbone. nipples, on back, arched back, leg lock, crossed ankles, head back, open mouth, closed eyes, tears, trembling, blush, sweat. nude, black choker
 ```
 Character 1 UC: SÉRA UC
 
@@ -611,7 +611,7 @@ Character 1 UC: SÉRA UC
 
 **Character 1 — Position: x≈0.35 y≈0.45 (left, reclined)**
 ```
-girl, petite, 0.4::mature female::, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, glossy pink lips. Fiber-optic hair glows gold at tips. Three small clear diamond implants along each cheekbone. pussy, nipples, on back, leg up, mutual#kiss, closed eyes, blush. nude, black choker
+girl, petite, medium hair, angled bob, rose-gold hair, glowing hair, swept bangs, glossy pink lips. Fiber-optic hair glows gold at tips. Three small clear diamond implants along each cheekbone. pussy, nipples, on back, leg up, mutual#kiss, closed eyes, blush. nude, black choker
 ```
 Character 1 UC: SÉRA UC
 

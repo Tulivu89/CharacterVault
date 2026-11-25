@@ -15,12 +15,12 @@ Every prompt note (`type: prompt`) and every character box is built to this stan
 
 | # | Slot | Contents |
 |---|---|---|
-| 1 | Identity | `girl` / `boy` / `other` first, then species or type, skin-tone tag, ONE frame tag (from a body kit below), optional age-shape lever (`0.4::mature female::`; on a very small build it can come out dwarfish and heavy, so A/B it). `dark-skinned female`/`male` for dark skin. Sentence: skin tone when no tag fits. |
+| 1 | Identity | `girl` / `boy` / `other` first, then species or type, skin-tone tag, ONE frame tag (from a body kit below). No age tags: `mature female` is retired (the user's rule, 2026-11-25); strip it from any older note or module you paste from. `dark-skinned female`/`male` for dark skin. Sentence: skin tone when no tag fits. |
 | 2 | Hair | length → style → color → color effects → bangs/sidelocks → ahoge. Sentence: the cut or color story. |
 | 3 | Hair, hidden part | Anything that shows from one angle only: undercut, shaved nape, back braid, hair tie. Own line so front views can drop it. |
 | 4 | Head extras | Animal ears + `animal ear fluff`, horns, halo, `pointy ears`. Nonhumans: muzzle or snout here. |
 | 5 | Face shape | Face-kit tags (eye shape, lashes) + kit Sentence 1: outline, chin, eye shape and spacing, nose. |
-| 6 | Face modeling | Kit Sentence 2: cheekbones, jaw, brow ridge, lips, eyebrow shape. Dropped at cowboy shot and wider. |
+| 6 | Face modeling | Kit Sentence 2: cheekbones, jaw, brow ridge, lips, eyebrow shape. Kept at every framing that shows the face. |
 | 7 | Eyes and brows | Eye color, pupils, sclera, eyebrows, makeup or `no makeup` prose. |
 | 8 | Face marks | Scars, freckles, moles, piercings, facial tattoos. Sentence gives the location. |
 | 9 | Skin and markings | Fur, scale or chitin color and pattern for nonhumans; body tattoos, scars, brands, glow markings, each placed in a sentence. |
@@ -66,11 +66,11 @@ One guard per line, each ending with a comma:
 |---|---|---|
 | Portrait, close-up | 1, 2, 4–8 | 10–13, most of the outfit below the collar |
 | Upper body | 1, 2, 4–10 | 12–13, legwear, footwear |
-| Cowboy shot | 1, 2, 4, 5 (tags + Sentence 1), 7–11 | 6, feet, footwear |
-| Full body, wide | 1, 2, 4, 5 (tags only), 7, 9–13 | 6, Sentence 1 when the face is small |
+| Cowboy shot | 1, 2, 4–11 | feet, footwear |
+| Full body, wide | 1, 2, 4–13 | nothing from the face; add `-1::close-up::` and describe garments, legwear and ground so the face doesn't pull the crop in |
 | From behind, head down | 1, 2, 3, 9–13 | 5–8 |
 
-Claude applies these trims before delivering. Each framing variant goes out as a complete, already-trimmed box (SKILL.md §4); the user never edits lines out. Note dropped anchors in the setup's notes (SKILL.md §11).
+**The face stays.** Slots 5–8 (both kit sentences included) go in at every framing where the face is visible; framing alone never trims them (the user's rule, 2026-11-25). They're dropped only when the face is out of frame, covered, or turned away. Claude applies these trims before delivering. Each framing variant goes out as a complete, already-trimmed box (SKILL.md §4); the user never edits lines out. Note dropped anchors in the setup's notes (SKILL.md §11).
 
 ## Body kits (v0, untested)
 
@@ -78,7 +78,7 @@ The face kits were bench-tested. These have not been: A/B them on a locked seed 
 
 | Kit | Box tags and sentence | Counter-UC |
 |---|---|---|
-| **Hard petite** (soldier, gymnast) | `petite, 0.4::mature female::, toned, abs, obliques, small breasts,` Compact shoulders, hard flat stomach, lean muscular thighs. | `tall female, curvy, plump, wide hips, large breasts, flat chest,` |
+| **Hard petite** (soldier, gymnast) | `petite, toned, abs, obliques, small breasts,` Compact shoulders, hard flat stomach, lean muscular thighs. | `tall female, curvy, plump, wide hips, large breasts, flat chest,` |
 | **Athletic** | `toned, muscular female, abs, broad shoulders, medium breasts, thick thighs,` Swimmer's shoulders, defined arms, strong legs. | `petite, skinny, plump,` |
 | **Willowy** | `tall female, skinny, small breasts, long legs, narrow waist, collarbone,` Long limbs, narrow hips. | `petite, curvy, thick thighs, plump,` |
 | **Curvy** | `curvy, large breasts, narrow waist, wide hips, thick thighs,` Soft hourglass figure. | `skinny, muscular, abs, flat chest,` |
