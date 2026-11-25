@@ -25,6 +25,7 @@ Heavy: `Woman's calves rest on top of man's belly.`
 **Twisted side** (no tag; the user's reference, 2026-11-25) · base `sex` · her `lying, on side, spread legs, leg up` · him `kneeling`
 Contact: `Viewer slightly above floor behind man's hip. Woman's chest on floor at right, torso twisted so hips roll up and crotch faces upper left. Woman's one thigh runs out left under man's hips, knee bent at far left, shin rising to top left. Woman's other knee on floor at bottom center in front of man, shin straight up past man's chest. Man kneels upright between woman's legs, knees wide, soles toward viewer, hips pressed down onto woman's crotch, one hand on woman's head.`
 Avoid: `top-down bottom-up` (V5 folds the woman's knees under her and the pose turns into doggystyle).
+What held (the user's solo, 2026-11-25 ✓ seed 2722854114): base `from side, from behind, 3/4 view, prone, spread legs, feet up, toes pointed` with short prose (`Girl's elbows lie on floor at right edge, cheek resting on crossed forearms. Girl's chest presses flat to floor. Thighs spread wide apart.`). Her knees stay down and her lower legs rise. Tags carry this pose better than limb-by-limb prose.
 
 **Piledriver** (`piledriver (sex)` ?) · base `sex` · her `upside-down`, `legs up` · him `squatting`
 Contact: `Woman's shoulders on mattress, hips raised overhead, man squatting over woman's upturned ass driving straight down.`
