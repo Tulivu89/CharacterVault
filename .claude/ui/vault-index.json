@@ -999,6 +999,78 @@
    "adultImages": []
   },
   {
+   "name": "Beth Smith",
+   "path": "Characters/Beth Smith/Beth Smith.md",
+   "folder": "Characters/Beth Smith",
+   "world": "Smith House",
+   "species": "human",
+   "age": "37",
+   "hook": "Thirty-seven, a horse surgeon with a wine glass, her father's brain, her father's temper and a lifelong terror that she's exactly like him.",
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
+  },
+  {
+   "name": "Jerry Smith",
+   "path": "Characters/Jerry Smith/Jerry Smith.md",
+   "folder": "Characters/Jerry Smith",
+   "world": "Smith House",
+   "species": "human",
+   "age": "38",
+   "hook": "Thirty-eight, between jobs again, a man who needs to be liked by a family that's smarter, braver and meaner than he is.",
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
+  },
+  {
+   "name": "Morty Smith",
+   "path": "Characters/Morty Smith/Morty Smith.md",
+   "folder": "Characters/Morty Smith",
+   "world": "Smith House",
+   "species": "human",
+   "age": "18",
+   "hook": "Eighteen, five foot five and a college freshman who's seen more horror than most soldiers, trying very hard to be normal and mostly failing.",
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
+  },
+  {
+   "name": "Rick Sanchez",
+   "path": "Characters/Rick Sanchez/Rick Sanchez.md",
+   "folder": "Characters/Rick Sanchez",
+   "world": "Smith House",
+   "species": "human",
+   "age": "72",
+   "hook": "The smartest man in any universe, seventy-two and drinking steadily in his daughter's garage, because every other place he's lived got boring or got people killed.",
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
+  },
+  {
+   "name": "Space Beth",
+   "path": "Characters/Space Beth/Space Beth.md",
+   "folder": "Characters/Space Beth",
+   "world": "Smith House",
+   "species": "human",
+   "age": "37",
+   "hook": "Thirty-seven, the Beth who left (or the copy who was sent away, and nobody's sure which, least of all her), a mercenary and rebel across a hundred worlds.",
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
+  },
+  {
+   "name": "Summer Smith",
+   "path": "Characters/Summer Smith/Summer Smith.md",
+   "folder": "Characters/Summer Smith",
+   "world": "Smith House",
+   "species": "human",
+   "age": "21",
+   "hook": "Twenty-one, a college junior with a phone in one hand and a stolen alien sidearm in her bag, the grandkid who found out she's better at Rick's life than anyone expected.",
+   "portrait": null,
+   "gallery": [],
+   "adultImages": []
+  },
+  {
    "name": "Qiulong",
    "path": "Characters/Qiulong/Qiulong.md",
    "folder": "Characters/Qiulong",
@@ -1392,6 +1464,13 @@
    "hook": "On a Rim mining station, convicts are reclassified as infrastructure for public use and work off sentences measured in liters."
   },
   {
+   "name": "Smith House",
+   "path": "Settings/Smith House.md",
+   "world": "Smith House",
+   "status": "draft",
+   "hook": "The Smith family, all grown up: two kids at the same college, a quiet house, a bored genius in the garage, and two Beths."
+  },
+  {
    "name": "The Aerie",
    "path": "Settings/The Aerie.md",
    "world": "Volungraiv",
@@ -1428,28 +1507,81 @@
   }
  ],
  "active": {
-  "story": "The Decree",
-  "mode": "DRAFT",
+  "story": "Utility Class",
+  "mode": "DIRECT",
   "pov": "third past",
-  "lastBeat": "Test scene 1 (Part 01): Adeline and Julian in his North Hall room, Sunday at four. Grandmother calls mid-act; he finishes inside her while she reports her grades. He signs her Register in black pen and leaves the lamp on.",
+  "lastBeat": "Day 10, after Hoss. Ilse asks Hale what a 3.5 average takes. Previously: Day 9, 1300. Charlie used her while Chuck watched; Ilse spat Lucan's load and drew a complaint; Hale raised her hips for the dock shift and dodged the brace-bolt question. Vuk Dragan is stepping onto the plinth with Bogdan behind him.",
   "state": [
-   "Test only. Part 01 holds one trial scene (about 1,300 words) for the user to review: voice, dual-track interiority, and his climax in full.",
-   "In the test, Julian is on medication that delays orgasm, Grandmother calls at four on Sundays, and two strangers signed Adeline's sheet that morning (T. Delacroix at 7:10, someone from Oxblood at 12:40)."
+   "Day 9 of Ilse's sentence. **39.2 L remaining.**",
+   "Ilse is on **Tier 0** for 5 days, with 2 L added, for breaking a dockhand's nose. This is day 3 of the 5.",
+   "Ilse is certain she was framed for Shaft Nine and keeps a mental list of names from that night. Hale knows something about Shaft Nine that isn't in her file.",
+   "Hale let slip that the Shaft Nine brace bolts were cut halfway through. The tribunal never mentioned bolts. Pressed, he deflected.",
+   "Day 9 shift so far: 31.6 mL by 1200 (Charlie 3.7; Lucan 0.0, spat). Column still reads 39.2 L.",
+   "Lucan's complaint (*Deliberate Waste of Deposit*) ended in a written warning; Hale called it an allergic response.",
+   "Day 10 (Thursday): Hoss set a Concourse single-deposit record, +438.2 mL. **38.5 L remaining.** Seven-day average 2.4. Hale used the exceptional yield clause to commute Tier 0 day 5: she moves to **Tier 1, Concourse Stand**, on Day 11.",
+   "Hoss is a Thursday regular and uses the Stand too. Porcine Terrans don't use the Shower Block (they have their own wallow deck). Ilse has asked Hale what a 3.5 takes.",
+   "Hale reset the Frame at 1200: hips higher, feet back and wider, \"for tie geometry.\"",
+   "Charlie and Chuck have seen her on the Frame. Chuck tells coworkers she's a second cousin. Charlie rated her 2 stars. The Yield brochure is still in the yoke."
   ],
   "cast": [
    {
-    "name": "Adeline Baek",
-    "line": "[[Adeline Baek]] (19, human): the backup heir. Under the Act, and under Grandmother's order to keep the line pure.",
-    "portrait": {
-     "image": "Characters/Adeline Baek/images/Adeline Baek - 01.webp",
-     "thumb": "Characters/Adeline Baek/images/.thumbs/Adeline Baek - 01.png",
-     "cells": "Characters/Adeline Baek/images/.thumbs/Adeline Baek - 01.cells",
-     "card": "Characters/Adeline Baek/images/.thumbs/Adeline Baek - 01.card.webp"
-    }
+    "name": "Ilse Brandt",
+    "line": "Ilse Brandt (21, human): lead. Corporal, framed for Shaft Nine, Utility Class with 40 L to serve.",
+    "portrait": null
    },
    {
-    "name": "Julian Baek",
-    "line": "[[Julian Baek]] (22, human): her brother, the heir who broke. The family orders him to breed good lines.",
+    "name": "Imin-Dumu Hale",
+    "line": "Imin-Dumu Hale (41 standard, sapient Vreth agent, human donor): her handler, an Overseer and Utility Compliance Officer. Chipper.",
+    "portrait": null
+   },
+   {
+    "name": "Juno Reyes",
+    "line": "Juno Reyes (27, human): utility, Tier 3 veteran.",
+    "portrait": null
+   },
+   {
+    "name": "Ysolde Varre",
+    "line": "Ysolde Varre (29, sapient Aedling): utility, a fallen aristocrat. Her penal service is inscribed on her inner thighs.",
+    "portrait": null
+   },
+   {
+    "name": "Seren Morvah",
+    "line": "Seren Morvah (31, sapient Aedelvass): utility, undocumented. Her glow gives her away.",
+    "portrait": null
+   },
+   {
+    "name": "Dale Pruitt",
+    "line": "Dale Pruitt (44, human): user, a life-support tech.",
+    "portrait": null
+   },
+   {
+    "name": "Lucan Aurel",
+    "line": "Lucan Aurel (26, sapient Aedling): user, a junior Combine auditor.",
+    "portrait": null
+   },
+   {
+    "name": "Vuk Dragan",
+    "line": "Vuk Dragan (35, sapient Therian canine): user, dock-crew foreman.",
+    "portrait": null
+   },
+   {
+    "name": "Bogdan Kral",
+    "line": "Bogdan Kral (31, sapient Therian canine): user, Vuk's packmate.",
+    "portrait": null
+   },
+   {
+    "name": "Hoss",
+    "line": "Hoss (38, sapient uplifted Terran pig): user, Day 10. Vocal in the porcine Terran language of grunts and oinks, which Ilse doesn't speak.",
+    "portrait": null
+   },
+   {
+    "name": "Charlie Brandt",
+    "line": "Charlie Brandt (28, human): user, Ilse's older brother. Station crew. Teasing asshole; has distanced himself since her conviction.",
+    "portrait": null
+   },
+   {
+    "name": "Chuck Brandt",
+    "line": "Chuck Brandt (50, human): Ilse's father. Station crew, widower. Calls her rebellious; tells coworkers she's no relation.",
     "portrait": null
    }
   ]
@@ -1595,6 +1727,38 @@
    "path": "Characters/Barghest/Barghest.md",
    "type": "character",
    "world": "",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Beth Smith - Adult Family - Adult",
+   "path": "Characters/Beth Smith/Beth Smith - Adult Family - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Beth Smith"
+  },
+  {
+   "name": "Beth Smith - Adult Family",
+   "path": "Characters/Beth Smith/Beth Smith - Adult Family.md",
+   "type": "profile",
+   "world": "Smith House",
+   "rating": "sfw",
+   "character": "Beth Smith"
+  },
+  {
+   "name": "Beth Smith - Prompt - Card Looks",
+   "path": "Characters/Beth Smith/Beth Smith - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "Smith House",
+   "rating": "suggestive",
+   "character": "Beth Smith"
+  },
+  {
+   "name": "Beth Smith",
+   "path": "Characters/Beth Smith/Beth Smith.md",
+   "type": "character",
+   "world": "Smith House",
    "rating": "sfw",
    "character": ""
   },
@@ -1927,6 +2091,38 @@
    "character": ""
   },
   {
+   "name": "Jerry Smith - Adult Family - Adult",
+   "path": "Characters/Jerry Smith/Jerry Smith - Adult Family - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Jerry Smith"
+  },
+  {
+   "name": "Jerry Smith - Adult Family",
+   "path": "Characters/Jerry Smith/Jerry Smith - Adult Family.md",
+   "type": "profile",
+   "world": "Smith House",
+   "rating": "sfw",
+   "character": "Jerry Smith"
+  },
+  {
+   "name": "Jerry Smith - Prompt - Card Looks",
+   "path": "Characters/Jerry Smith/Jerry Smith - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "Smith House",
+   "rating": "suggestive",
+   "character": "Jerry Smith"
+  },
+  {
+   "name": "Jerry Smith",
+   "path": "Characters/Jerry Smith/Jerry Smith.md",
+   "type": "character",
+   "world": "Smith House",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
    "name": "Jet - Adult",
    "path": "Characters/Jet/Jet - Adult.md",
    "type": "adult",
@@ -2179,6 +2375,38 @@
    "path": "Characters/Misty/Misty.md",
    "type": "character",
    "world": "The Litterbox",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Morty Smith - Adult Family - Adult",
+   "path": "Characters/Morty Smith/Morty Smith - Adult Family - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Morty Smith"
+  },
+  {
+   "name": "Morty Smith - Adult Family",
+   "path": "Characters/Morty Smith/Morty Smith - Adult Family.md",
+   "type": "profile",
+   "world": "Smith House",
+   "rating": "sfw",
+   "character": "Morty Smith"
+  },
+  {
+   "name": "Morty Smith - Prompt - Card Looks",
+   "path": "Characters/Morty Smith/Morty Smith - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "Smith House",
+   "rating": "suggestive",
+   "character": "Morty Smith"
+  },
+  {
+   "name": "Morty Smith",
+   "path": "Characters/Morty Smith/Morty Smith.md",
+   "type": "character",
+   "world": "Smith House",
    "rating": "sfw",
    "character": ""
   },
@@ -2439,6 +2667,38 @@
    "character": ""
   },
   {
+   "name": "Rick Sanchez - Adult Family - Adult",
+   "path": "Characters/Rick Sanchez/Rick Sanchez - Adult Family - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Rick Sanchez"
+  },
+  {
+   "name": "Rick Sanchez - Adult Family",
+   "path": "Characters/Rick Sanchez/Rick Sanchez - Adult Family.md",
+   "type": "profile",
+   "world": "Smith House",
+   "rating": "sfw",
+   "character": "Rick Sanchez"
+  },
+  {
+   "name": "Rick Sanchez - Prompt - Card Looks",
+   "path": "Characters/Rick Sanchez/Rick Sanchez - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "Smith House",
+   "rating": "suggestive",
+   "character": "Rick Sanchez"
+  },
+  {
+   "name": "Rick Sanchez",
+   "path": "Characters/Rick Sanchez/Rick Sanchez.md",
+   "type": "character",
+   "world": "Smith House",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
    "name": "Rovak - Adult",
    "path": "Characters/Rovak/Rovak - Adult.md",
    "type": "adult",
@@ -2531,6 +2791,70 @@
    "path": "Characters/Selam Girma/Selam Girma.md",
    "type": "character",
    "world": "Hallett College",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Space Beth - Adult Family - Adult",
+   "path": "Characters/Space Beth/Space Beth - Adult Family - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Space Beth"
+  },
+  {
+   "name": "Space Beth - Adult Family",
+   "path": "Characters/Space Beth/Space Beth - Adult Family.md",
+   "type": "profile",
+   "world": "Smith House",
+   "rating": "sfw",
+   "character": "Space Beth"
+  },
+  {
+   "name": "Space Beth - Prompt - Card Looks",
+   "path": "Characters/Space Beth/Space Beth - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "Smith House",
+   "rating": "suggestive",
+   "character": "Space Beth"
+  },
+  {
+   "name": "Space Beth",
+   "path": "Characters/Space Beth/Space Beth.md",
+   "type": "character",
+   "world": "Smith House",
+   "rating": "sfw",
+   "character": ""
+  },
+  {
+   "name": "Summer Smith - Adult Family - Adult",
+   "path": "Characters/Summer Smith/Summer Smith - Adult Family - Adult.md",
+   "type": "adult",
+   "world": "",
+   "rating": "explicit",
+   "character": "Summer Smith"
+  },
+  {
+   "name": "Summer Smith - Adult Family",
+   "path": "Characters/Summer Smith/Summer Smith - Adult Family.md",
+   "type": "profile",
+   "world": "Smith House",
+   "rating": "sfw",
+   "character": "Summer Smith"
+  },
+  {
+   "name": "Summer Smith - Prompt - Card Looks",
+   "path": "Characters/Summer Smith/Summer Smith - Prompt - Card Looks.md",
+   "type": "prompt",
+   "world": "Smith House",
+   "rating": "suggestive",
+   "character": "Summer Smith"
+  },
+  {
+   "name": "Summer Smith",
+   "path": "Characters/Summer Smith/Summer Smith.md",
+   "type": "character",
+   "world": "Smith House",
    "rating": "sfw",
    "character": ""
   },
@@ -3164,6 +3488,14 @@
    "type": "setting",
    "world": "Imperial Sector",
    "rating": "suggestive",
+   "character": ""
+  },
+  {
+   "name": "Smith House",
+   "path": "Settings/Smith House.md",
+   "type": "setting",
+   "world": "Smith House",
+   "rating": "sfw",
    "character": ""
   },
   {
